@@ -188,6 +188,15 @@ window.dash = (() => {
   .cp-tag.bad { background: var(--cp-bad-bg); color: var(--cp-bad-fg); }
   .cp-btn.added { background: #1E3A66; color: #CFE1FF; }
   .cp-panel { padding-bottom: 72px; }
+  .cp-bk { display: flex; gap: 8px; overflow-x: auto; padding: 2px 0 4px; scrollbar-width: none; }
+  .cp-bk button { font: inherit; font-size: .9rem; font-weight: 600; white-space: nowrap; background: #161E2C; color: #C9D1DE; border: 1px solid #33405A; border-radius: 999px; padding: 0 14px; min-height: 40px; cursor: pointer; }
+  .cp-bk button[aria-pressed="true"] { background: var(--cp-accent); color: var(--cp-ink); border-color: var(--cp-accent); }
+  .cp-bk-note { font-size: .82rem; color: #A9B3C4; margin: 0; }
+  .pp-h { display: flex; align-items: baseline; gap: 10px; margin: 18px 0 8px; font-family: var(--cp-head); font-weight: 800; font-stretch: condensed; text-transform: uppercase; font-size: 1.3rem; letter-spacing: .02em; }
+  .pp-h:first-child { margin-top: 4px; }
+  .pp-h span { font-family: inherit; font-size: .85rem; color: #A9B3C4; text-transform: none; letter-spacing: 0; font-weight: 500; font-stretch: normal; }
+  .pp-jump { display: flex; gap: 8px; flex-wrap: wrap; margin: 4px 0 6px; }
+  .pp-jump button { font: inherit; font-size: .85rem; font-weight: 600; background: #161E2C; color: #C9D1DE; border: 1px solid #33405A; border-radius: 999px; padding: 0 12px; min-height: 36px; cursor: pointer; }
   .cp-sheet-bg { position: fixed; inset: 0; background: rgba(5, 8, 14, .6); z-index: 30; }
   .cp-bs { position: fixed; z-index: 31; right: 16px; bottom: 16px; width: min(26rem, calc(100vw - 32px)); max-height: calc(100vh - 32px); display: flex; flex-direction: column; background: #121925; border: 1px solid #33405A; border-radius: 16px; box-shadow: 0 12px 40px rgba(0,0,0,.6); overflow: hidden; }
   .cp-bs[hidden] { display: none; }
@@ -226,6 +235,7 @@ window.dash = (() => {
   .cp-bs-go { grid-column: 1 / -1; margin: 8px 0 0 0; width: 100%; min-height: 50px; font-size: 1rem; }
   .cp-bs-note { grid-column: 1 / -1; margin: 6px 0 0; font-size: .72rem; color: #8592A6; }
   .cp-bs-bar { position: fixed; z-index: 20; right: 16px; bottom: 16px; width: min(22rem, calc(100vw - 32px)); display: flex; align-items: center; gap: 10px; font: inherit; font-weight: 700; background: var(--cp-accent); color: var(--cp-ink); border: 0; border-radius: 12px; padding: 0 16px; min-height: 52px; box-shadow: 0 6px 20px rgba(0,0,0,.45); cursor: pointer; text-transform: uppercase; letter-spacing: .03em; }
+  .cp-bs-bar[hidden], .cp-bk[hidden], .pp-jump[hidden] { display: none; }
   .cp-bs-bar .cp-bs-n { background: var(--cp-ink); color: var(--cp-accent); }
   .cp-bs-bar .r { margin-left: auto; text-transform: none; letter-spacing: 0; font-weight: 600; font-size: .9rem; }
   @media (max-width: 560px) { .cp-bs-bar { left: 0; right: 0; bottom: 0; width: auto; border-radius: 14px 14px 0 0; } }
@@ -298,7 +308,9 @@ window.dash = (() => {
       <div class="cp-stat"><div class="cp-stat-l">Last settled day</div><div class="cp-stat-v" data-source="today_stats" data-field="last_day">—</div></div>
       <div class="cp-stat"><div class="cp-stat-l">Running total</div><div class="cp-stat-v" data-source="today_stats" data-field="running">—</div></div>
     </div>
-    <div class="cp-sub"><h2 class="cp-h">Best bets</h2><p><b data-source="best_summary" data-field="n_bet" class="dash-skeleton">—</b> of <span data-source="best_summary" data-field="n_cat" class="dash-skeleton">—</span> categories have a bet worth taking: each category's best pick at odds under 3.00, at the bookie with the best price. Check team news before tip-off.</p></div>
+    <div class="cp-bk" id="bk-chips" role="group" aria-label="Show bets for one bookie"></div>
+    <p class="cp-bk-note" id="bk-note" hidden></p>
+    <div class="cp-sub"><h2 class="cp-h">Best bets</h2><p><b data-source="best_summary" data-field="n_bet" class="dash-skeleton">—</b> of <span data-source="best_summary" data-field="n_cat" class="dash-skeleton">—</span> categories have a bet worth taking: the best game bet in each category and up to 3 per player-prop type, at odds under 3.00, at <span id="bk-where">the bookie with the best price</span>. Check team news before tip-off.</p></div>
     <div class="cp-slip" id="best-cards" data-source="best"></div>
     <button type="button" class="cp-btn ghost cp-more" id="best-more" hidden>Show the leans too</button>
   </section>
@@ -434,7 +446,9 @@ window.dash = (() => {
         <label for="p-book" class="mb-note">Bookie</label><select id="p-book" class="mb-input book-filter"><option value="">Best price anywhere</option></select>
         <label for="p-search" class="mb-note">Search</label><input id="p-search" class="mb-input" type="search" placeholder="Player or team">
       </div>
-      <div class="mb-scroll mb-tall"><table class="mb-table" id="props-table" data-source="props" data-row-key="rank">
+      <div class="pp-jump" id="pp-jump" aria-label="Jump to a prop type"></div>
+      <div id="props-groups"></div>
+      <div class="mb-scroll mb-tall" hidden><table class="mb-table" id="props-table" data-source="props" data-row-key="rank" hidden>
         <thead><tr>
           <th data-field="rank" class="num">#</th><th data-field="verdict">Verdict</th><th data-field="player">Player</th><th data-field="team">Team</th><th data-field="opp">Opp</th>
           <th data-field="stat">Stat</th><th data-field="side">Side</th><th data-field="line" class="num">Line</th><th data-field="odds" class="num">Best odds</th><th data-field="book">Bookie</th>
@@ -734,8 +748,12 @@ window.dash = (() => {
   dash.calc('best_summary', {
     inputs: ['best'],
     title: 'Categories with a bet',
-    description: 'Counts the categories whose best pick clears the value bar.',
-    fn: (best) => { best = best.filter(b => b.section !== 'value'); return [{ n_bet: best.filter(b => b.verdict === 'Bet').length, n_cat: best.length }]; }
+    description: "Per view (best price anywhere, or one bookie's own prices): how many categories have a pick that clears the value bar, out of all categories.",
+    fn: (best) => {
+      const views = [...new Set(best.map(b => b.view || 'best'))];
+      return views.map(v => { const B = best.filter(b => (b.view || 'best') === v && b.section !== 'value');
+        return { view: v, n_bet: new Set(B.filter(b => b.verdict === 'Bet').map(b => b.category)).size, n_cat: new Set(B.filter(b => b.verdict !== 'None').map(b => b.category)).size }; });
+    }
   });
   const VERDICT = { 'Bet': 'bet', 'Lean': 'lean', 'Check': 'check', 'No value': 'pass', 'None': 'pass', 'Daily': 'lean' };
   function goTo(link) {
@@ -782,7 +800,7 @@ window.dash = (() => {
     description: "For each pick on the card (best bets and value bets): the fair odds its chance is worth (100 / chance %) and whether the price beats it.",
     fn: (best) => best.filter(b => b.prob !== '' && Number(b.prob) > 0).map(b => {
       const fair = 100 / Number(b.prob), ev = Number(b.ev_pct);
-      return { category: b.category, pick: b.pick, fair: fair.toFixed(2), value: ev > 0 ? `Good value · fair ${fair.toFixed(2)}` : `Overpriced · fair ${fair.toFixed(2)}` };
+      return { view: b.view || 'best', category: b.category, pick: b.pick, fair: fair.toFixed(2), value: ev > 0 ? `Good value · fair ${fair.toFixed(2)}` : `Overpriced · fair ${fair.toFixed(2)}` };
     })
   });
   dash.calc('multi80_legs', {
@@ -910,13 +928,36 @@ window.dash = (() => {
   $('#my-close').addEventListener('click', closeMy);
   $('#my-bg').addEventListener('click', closeMy);
   document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && myOpen) closeMy(); });
+  // ---------- Today: bookie filter (each bookie's own card, built by the model at that bookie's prices) ----------
+  let bkView = '';
+  try { bkView = localStorage.getItem('cp-bk') || ''; } catch (e) {}
+  function drawBookChips(rows) {
+    const have = [...new Set(rows.map(r => r.view).filter(v => v && v !== 'best'))];
+    const books = BOOKS.filter(b => have.includes(b));
+    if (bkView && !books.includes(bkView)) bkView = '';
+    const box = $('#bk-chips');
+    box.hidden = books.length === 0;
+    box.innerHTML = '';
+    [['', 'Best price anywhere']].concat(books.map(b => [b, b])).forEach(([v, t]) => {
+      const b = document.createElement('button'); b.type = 'button'; b.textContent = t; b.setAttribute('aria-pressed', String(bkView === v));
+      b.addEventListener('click', () => { bkView = v; try { localStorage.setItem('cp-bk', v); } catch (e) {} drawBest(); });
+      box.appendChild(b);
+    });
+    $('#bk-where').textContent = bkView ? `${bkView}'s own prices and lines` : 'the bookie with the best price';
+    $('#bk-note').hidden = !bkView;
+    $('#bk-note').textContent = bkView ? `Showing only bets you can take at ${bkView}, judged at ${bkView}'s prices, so some picks differ from the main card. The ledger tracks the main card (best price anywhere).` : '';
+  }
   let showLeans = false;
   $('#best-more').addEventListener('click', () => { showLeans = !showLeans; drawBest(); });
   function drawBest() {
     drawMy();
     const S = dash.data('best_summary');
+    const V = bkView || 'best';
     document.querySelectorAll('[data-source="best_summary"]').forEach(el => {
-      if (S.status === 'ok' && S.data[0]) { el.textContent = S.data[0][el.dataset.field]; skel(el, false); }
+      const row = S.status === 'ok' ? S.data.find(x => x.view === V) : null;
+      el.dataset.where = 'view=' + encodeURIComponent(V);
+      if (row) { el.textContent = row[el.dataset.field]; skel(el, false); }
+      else if (S.status === 'ok') { el.textContent = '0'; skel(el, false); }
       else if (S.status !== 'loading') skel(el, false);
     });
     const TS = dash.data('today_stats');
@@ -925,8 +966,10 @@ window.dash = (() => {
     if (B.status === 'error') { fail(box); return; }
     if (B.status !== 'ok') return;
     const tips = {}; if (G.status === 'ok') G.data.forEach(g => { tips[g.game] = g.tip_aedt; });
-    const slip = {}; if (SL.status === 'ok') SL.data.forEach(s => { slip[s.pick] = s; });
-    const rows = B.data.filter(r => r.category !== '80% multi' && r.odds !== '' && r.section !== 'value');
+    drawBookChips(B.data);
+    const slip = {}; if (SL.status === 'ok') SL.data.forEach(s => { slip[s.view + '|' + s.pick] = s; });
+    const inView = (r) => (r.view || 'best') === V || (V !== 'best' && (r.view || 'best') === 'best' && /multi/i.test(r.category) && r.book === V);
+    const rows = B.data.filter(r => inView(r) && r.category !== '80% multi' && r.odds !== '' && r.section !== 'value');
     const bets = rows.filter(r => r.verdict === 'Bet'), leans = rows.filter(r => r.verdict !== 'Bet');
     $('#best-more').hidden = leans.length === 0;
     $('#best-more').textContent = showLeans ? 'Hide the leans' : `Show ${leans.length} lean${leans.length === 1 ? '' : 's'} too (below the value bar)`;
@@ -934,7 +977,7 @@ window.dash = (() => {
     const list = showLeans ? bets.concat(leans) : bets;
     if (!list.length) { const d = document.createElement('div'); d.className = 'cp-meta'; d.textContent = 'No bet clears the value bar yet today.'; box.appendChild(d); }
     const card = (r, box) => {
-      const where = 'pick=' + encodeURIComponent(r.pick);
+      const where = 'view=' + encodeURIComponent(r.view || 'best') + '&pick=' + encodeURIComponent(r.pick);
       const mark = (el, f, src) => { el.dataset.source = src || 'best'; el.dataset.where = where; el.dataset.field = f; return el; };
       const c = document.createElement('article'); c.className = 'cp-card' + (r.verdict === 'Bet' ? '' : ' is-lean');
       const top = document.createElement('div'); top.className = 'cp-card-top';
@@ -950,7 +993,7 @@ window.dash = (() => {
       const bk = mark(document.createElement('div'), 'book'); bk.className = 'cp-book'; bk.textContent = r.book;
       price.append(od, bk); mid.append(pick, price);
       const row = document.createElement('div'); row.className = 'cp-row';
-      const s = slip[r.pick];
+      const s = slip[(r.view || 'best') + '|' + r.pick];
       if (s) { const tag = document.createElement('span'); tag.className = 'cp-tag' + (Number(r.ev_pct) > 0 ? '' : ' bad'); tag.dataset.source = 'slip'; tag.dataset.where = where; tag.dataset.field = 'value'; tag.textContent = s.value; row.append(tag); }
       const meta = document.createElement('span'); meta.className = 'cp-meta';
       const pr = mark(document.createElement('span'), 'prob'); pr.textContent = r.prob + '%';
@@ -968,11 +1011,12 @@ window.dash = (() => {
     };
     for (const r of list) card(r, box);
     const vbox = $('#value-cards'); vbox.innerHTML = '';
-    const vals = B.data.filter(r => r.section === 'value' && r.odds !== '');
-    if (!vals.length) { const d = document.createElement('div'); d.className = 'cp-meta'; d.textContent = 'No value bet at 3.00 or longer today.'; vbox.appendChild(d); }
+    const vals = B.data.filter(r => inView(r) && r.section === 'value' && r.odds !== '');
+    if (!vals.length) { const d = document.createElement('div'); d.className = 'cp-meta'; d.textContent = V === 'best' ? 'No value bet at 3.00 or longer today.' : `No value bet at 3.00 or longer at ${V} today.`; vbox.appendChild(d); }
     for (const r of vals) card(r, vbox);
     // 80% multi
     const m = B.data.find(r => r.category === '80% multi'), L = dash.data('multi80_legs'), legsBox = $('#m80-legs');
+    $('#m80').hidden = V !== 'best' && !(m && m.book === V);
     const mm = (id, f) => { const el = $(id); el.dataset.source = 'best'; el.dataset.where = 'category=' + encodeURIComponent('80% multi'); el.dataset.field = f; return el; };
     if (!m || m.odds === '') {
       $('#m80-odds').textContent = '—'; $('#m80-prob').textContent = '—'; $('#m80-ev').textContent = '—';
@@ -1242,14 +1286,33 @@ window.dash = (() => {
     let rows = atBook(P.data, $('#p-book').value, 'blend_prob')
       .filter(r => (!stat || r.stat === stat) && (!q || (r.player + ' ' + r.team + ' ' + r.opp).toLowerCase().includes(q)));
     if (show === 'bets') rows = rows.filter(r => r.verdict === 'Bet' || r.verdict === 'Check status' || r.verdict === 'Check news');
-    if (show === 'top') rows = rows.slice(0, 40);
-    fillTable(tb, rows, [
+    const cols = [
       { f: 'rank', cls: 'num' }, { f: 'verdict', render: pill({ 'Bet': 'bet', 'Check status': 'check', 'Check news': 'check', 'Pass': 'pass' }) },
       { f: 'player' }, { f: 'team' }, { f: 'opp', cls: 'pos' }, { f: 'stat' }, { f: 'side' }, { f: 'line', cls: 'num' }, { f: 'odds', cls: 'num' }, { f: 'book' },
       { f: 'proj', cls: 'num' }, { f: 'minutes', cls: 'num' }, { f: 'model_prob', cls: 'num' }, { f: 'market_prob', cls: 'num' },
       { f: 'ev_pct', cls: 'num' }, { f: 'stake_pct', cls: 'num' }, { f: 'reason', cls: 'why' }, { f: 'history', cls: 'why' }, { f: 'all_odds', cls: 'why' }
-    ], 'rank', r => r.verdict === 'Pass' ? 'pass' : '');
-    $('#props-table').hidden = rows.length === 0; $('#props-none').hidden = rows.length !== 0;
+    ];
+    // one table per prop type, each under its own heading
+    const groups = $('#props-groups'), jump = $('#pp-jump'), tpl = $('#props-table');
+    groups.innerHTML = ''; jump.innerHTML = '';
+    let shown = 0;
+    [['Points', 'Player points'], ['Rebounds', 'Player rebounds'], ['Assists', 'Player assists'], ['PRA', 'Player P+R+A']].forEach(([st, title]) => {
+      let g = rows.filter(r => r.stat === st);
+      if (show === 'top') g = g.slice(0, 40);
+      if (!g.length) return;
+      shown += g.length;
+      const id = 'props-' + st.toLowerCase();
+      const h = document.createElement('h3'); h.className = 'pp-h'; h.id = id; h.textContent = title;
+      const n = document.createElement('span'); n.textContent = `${g.length} market${g.length === 1 ? '' : 's'} · ${g.filter(r => r.verdict === 'Bet').length} bet${g.filter(r => r.verdict === 'Bet').length === 1 ? '' : 's'}`; h.append(n);
+      const wrap = document.createElement('div'); wrap.className = 'mb-scroll mb-tall';
+      const t = tpl.cloneNode(true); t.removeAttribute('id'); t.hidden = false; t.dataset.where = 'stat=' + st;
+      fillTable(t.querySelector('tbody'), g, cols, 'rank', r => r.verdict === 'Pass' ? 'pass' : '');
+      wrap.append(t); groups.append(h, wrap);
+      const jb = document.createElement('button'); jb.type = 'button'; jb.textContent = { Points: 'Points', Rebounds: 'Rebounds', Assists: 'Assists', PRA: 'P+R+A' }[st];
+      jb.addEventListener('click', () => h.scrollIntoView({ behavior: 'smooth' })); jump.append(jb);
+    });
+    jump.hidden = jump.children.length < 2;
+    $('#props-none').hidden = shown !== 0;
   }
 
   // ---------- alternate lines ----------

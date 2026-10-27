@@ -199,6 +199,7 @@ window.dash = (() => {
   .pp-h:first-child { margin-top: 4px; }
   .pp-h span { font-family: inherit; font-size: .85rem; color: #A9B3C4; text-transform: none; letter-spacing: 0; font-weight: 500; font-stretch: normal; }
   .pp-jump { display: flex; gap: 8px; flex-wrap: wrap; margin: 4px 0 6px; }
+  .pp-jump button[aria-pressed="true"] { background: var(--cp-accent); color: var(--cp-ink); border-color: var(--cp-accent); }
   .pp-jump button { font: inherit; font-size: .85rem; font-weight: 600; background: #161E2C; color: #C9D1DE; border: 1px solid #33405A; border-radius: 999px; padding: 0 12px; min-height: 36px; cursor: pointer; }
   .cp-sheet-bg { position: fixed; inset: 0; background: rgba(5, 8, 14, .6); z-index: 30; }
   .cp-bs { position: fixed; z-index: 31; right: 16px; bottom: 16px; width: min(26rem, calc(100vw - 32px)); max-height: calc(100vh - 32px); display: flex; flex-direction: column; background: #121925; border: 1px solid #33405A; border-radius: 16px; box-shadow: 0 12px 40px rgba(0,0,0,.6); overflow: hidden; }
@@ -505,6 +506,18 @@ window.dash = (() => {
         <label for="c-val" class="mb-note">Value</label>
         <select id="c-val" class="mb-input"><option value="">Any</option><option value="pos">Positive EV only</option></select>
         <label for="c-search" class="mb-note">Search</label><input id="c-search" class="mb-input" type="search" placeholder="Player, team or game">
+      </div>
+      <div class="mb-filters">
+        <label for="c-book" class="mb-note">Bookie</label><select id="c-book" class="mb-input book-filter"><option value="">Best price anywhere</option></select>
+        <label for="c-game" class="mb-note">Game</label><select id="c-game" class="mb-input"><option value="">All games</option></select>
+        <label for="c-omin" class="mb-note">Odds from</label><input id="c-omin" class="mb-input" type="number" min="1" step="0.05" placeholder="1.01" style="width:5.5em">
+        <label for="c-omax" class="mb-note">to</label><input id="c-omax" class="mb-input" type="number" min="1" step="0.05" placeholder="any" style="width:5.5em">
+        <label for="c-side" class="mb-note">Over / under</label><select id="c-side" class="mb-input"><option value="">Both</option><option>Over</option><option>Under</option></select>
+        <label for="c-sort" class="mb-note">Sort by</label><select id="c-sort" class="mb-input"><option value="prob">Chance</option><option value="ev">Value</option><option value="odds">Odds</option><option value="tip">Tip-off time</option></select>
+      </div>
+      <div class="pp-jump" id="c-presets" aria-label="Quick chance ranges">
+        <button type="button" data-r="90,100">90%+</button><button type="button" data-r="80,90">80–90%</button><button type="button" data-r="70,80">70–80%</button>
+        <button type="button" data-r="60,70">60–70%</button><button type="button" data-r="50,60">50–60%</button><button type="button" data-r="0,50">Under 50%</button><button type="button" data-r="0,100">All</button>
       </div>
       <p class="mb-note" id="c-count"></p>
       <div class="mb-scroll mb-tall"><table class="mb-table" id="chance-table" data-source="chances" data-row-key="rid">
@@ -1404,9 +1417,22 @@ window.dash = (() => {
     if (C.status === 'error' || C.status === 'missing') { tb.innerHTML = '<tr><td colspan="11"><div class="mb-fail">' + (C.status === 'missing' ? 'No data yet' : 'Failed to load') + '</div></td></tr>'; return; }
     if (C.status !== 'ok') return;
     const lo = Number($('#c-min').value || 0), hi = Number($('#c-max').value || 100), cat = $('#c-cat').value, val = $('#c-val').value, q = $('#c-search').value.trim().toLowerCase();
-    const rows = C.data.filter(r => { const p = Number(r.prob); return p >= lo && p <= hi && (!cat || (cat === 'alt' ? /^Alt /.test(r.category) || r.category === 'Alt line' : r.category === cat || r.category.toLowerCase() === ('alt ' + cat).toLowerCase() || (r.category === 'Alt line' && ({ Points: 'Points', Rebounds: 'Rebounds', Assists: 'Assists', 'P+R+A': 'PRA' })[cat] === r.stat))) && (!val || Number(r.ev_pct) > 0)
+    fillBookSelect($('#c-book'), BOOKS);
+    const gsel = $('#c-game'), gcur = gsel.value, gms = [...new Set(C.data.map(r => r.game))].sort();
+    gsel.innerHTML = '<option value="">All games</option>' + gms.map(g => `<option>${g}</option>`).join(''); gsel.value = gms.includes(gcur) ? gcur : '';
+    const bk = $('#c-book').value, gm = gsel.value, side = $('#c-side').value, sort = $('#c-sort').value;
+    const omin = Number($('#c-omin').value) || 0, omax = Number($('#c-omax').value) || Infinity;
+    // a bookie chosen: re-price each outcome at that bookie (dropped if it doesn't offer it) and redo the value
+    const base = !bk ? C.data : C.data.map(r => { const o = priceAt(r, bk); if (!o) return null;
+      return Object.assign({}, r, { odds: o.toFixed(2), book: bk, ev_pct: +((Number(r.prob) / 100 * o - 1) * 100).toFixed(1) }); }).filter(Boolean);
+    const sideOf = (r) => r.side || (/\bover\b|\+ /i.test(r.pick) || /\d\+/.test(r.pick) ? 'Over' : /\bunder\b/i.test(r.pick) ? 'Under' : '');
+    const rows = base.filter(r => { const p = Number(r.prob), o = Number(r.odds); return p >= lo && p <= hi && o >= omin && o <= omax && (!gm || r.game === gm) && (!side || sideOf(r) === side)
+      && (!cat || (cat === 'alt' ? /^Alt /.test(r.category) || r.category === 'Alt line' : r.category === cat || r.category.toLowerCase() === ('alt ' + cat).toLowerCase() || (r.category === 'Alt line' && ({ Points: 'Points', Rebounds: 'Rebounds', Assists: 'Assists', 'P+R+A': 'PRA' })[cat] === r.stat))) && (!val || Number(r.ev_pct) > 0)
       && (!q || (r.pick + ' ' + r.game).toLowerCase().includes(q)); });
-    $('#c-count').textContent = rows.length + ' outcome' + (rows.length === 1 ? '' : 's') + ' between ' + lo + '% and ' + hi + '%' + (rows.length > 300 ? ' (first 300 shown)' : '');
+    const key = { prob: r => -Number(r.prob), ev: r => -Number(r.ev_pct), odds: r => Number(r.odds), tip: r => String(r.tip) }[sort];
+    rows.sort((a, b) => { const x = key(a), y = key(b); return x < y ? -1 : x > y ? 1 : Number(b.prob) - Number(a.prob); });
+    document.querySelectorAll('#c-presets button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.r === `${lo},${hi}`)));
+    $('#c-count').textContent = rows.length + ' outcome' + (rows.length === 1 ? '' : 's') + ' between ' + lo + '% and ' + hi + '%' + (bk ? ` at ${bk}` : '') + (rows.length > 300 ? ' (first 300 shown)' : '');
     fillTable(tb, rows.slice(0, 300), [
       { f: 'prob', cls: 'num' }, { f: 'fair_odds', cls: 'num' }, { f: 'odds', cls: 'num' }, { f: 'book' }, { f: 'ev_pct', cls: 'num' },
       { f: 'category' }, { f: 'pick' }, { f: 'game', cls: 'pos' }, { f: 'tip', cls: 'pos' },
@@ -1414,8 +1440,9 @@ window.dash = (() => {
     ], 'rid', r => Number(r.ev_pct) > 0 ? '' : 'pass');
     $('#chance-table').hidden = rows.length === 0; $('#chance-none').hidden = rows.length !== 0;
   }
-  ['#c-min', '#c-max', '#c-cat', '#c-val'].forEach(s => $(s).addEventListener('change', drawChance));
-  ['#c-min', '#c-max', '#c-search'].forEach(s => $(s).addEventListener('input', drawChance));
+  ['#c-min', '#c-max', '#c-cat', '#c-val', '#c-book', '#c-game', '#c-side', '#c-sort', '#c-omin', '#c-omax'].forEach(s => $(s).addEventListener('change', drawChance));
+  ['#c-min', '#c-max', '#c-search', '#c-omin', '#c-omax'].forEach(s => $(s).addEventListener('input', drawChance));
+  document.querySelectorAll('#c-presets button').forEach(b => b.addEventListener('click', () => { const [l, h] = b.dataset.r.split(','); $('#c-min').value = l; $('#c-max').value = h; drawChance(); }));
 
   // ---------- first basket ----------
   const tipRec = (v) => { const m = String(v || '').match(/^(\d+)\/(\d+)$/); if (!m) return ''; const w = +m[1], n = +m[2]; return n ? `${w} of ${n} (${Math.round(w / n * 100)}%)` : 'no tips yet'; };

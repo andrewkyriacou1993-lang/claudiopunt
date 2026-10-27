@@ -227,6 +227,11 @@ window.dash = (() => {
   .cp-bs-st label:focus-within, .cp-bs-all label:focus-within { border-color: #8DBBFF; }
   .cp-bs-st .r { margin-left: auto; text-align: right; font-size: .78rem; color: #A9B3C4; }
   .cp-bs-st .r b { display: block; font-size: 1rem; color: #E8ECF3; font-variant-numeric: tabular-nums; }
+  .cp-bs-price { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+  .cp-bs-price label { display: flex; align-items: center; gap: 6px; font-size: .8rem; color: #A9B3C4; }
+  .cp-bs-price select, .cp-bs-price input { font: inherit; font-size: .9rem; background: #0B101A; color: #E8ECF3; border: 1px solid #33405A; border-radius: 8px; min-height: 38px; padding: 0 8px; }
+  .cp-bs-price input { width: 5.2rem; font-weight: 700; }
+  .cp-bs-price .cp-bs-txt { margin-left: 0; min-height: 38px; }
   .cp-bs-all { display: flex; align-items: center; gap: 10px; font-size: .85rem; color: #C9D1DE; }
   .cp-bs-warn { font-size: .82rem; color: #FFC79E; background: #3A2512; border-radius: 10px; padding: 8px 12px; }
   .cp-bs-mult { display: flex; align-items: baseline; gap: 8px; font-size: .85rem; color: #A9B3C4; }
@@ -926,14 +931,35 @@ window.dash = (() => {
       items.forEach((it, k) => {
         const c = el('div', 'cp-bs-item');
         const t = el('div', 't'); const p = el('div', 'p', it.pick);
-        p.append(el('div', 's', [it.cat, it.game, it.book, it.prob ? `our chance ${it.prob}%` : ''].filter(Boolean).join(' · ')));
+        p.append(el('div', 's', [it.cat, it.game, it.prob ? `our chance ${it.prob}%` : ''].filter(Boolean).join(' · ')));
         const o = el('span', 'cp-bs-odds', it.odds.toFixed(2));
+        if (it.orig == null) { it.orig = it.odds; it.origBook = it.book; }
         const x = el('button', 'x', '×'); x.type = 'button'; x.setAttribute('aria-label', 'Remove ' + it.pick);
         x.addEventListener('click', () => { items.splice(k, 1); mySave(); drawMy(); });
         t.append(p, o, x);
         const st = el('div', 'cp-bs-st');
         st.append(stakeBox(it.stake, `Stake for ${it.pick}, units`, (v) => { it.stake = v; mySave(); drawMy(); }), retBox(it.stake * it.odds));
-        c.append(t, st); body.append(c);
+        // price box: the odds you can actually get (bet365 or any bookie), checked against our chance
+        const pr = el('div', 'cp-bs-price');
+        const bsel = document.createElement('select'); bsel.setAttribute('aria-label', `Bookie for ${it.pick}`);
+        [...new Set(BOOKS.concat(['bet365', 'Other', it.book]))].forEach(b => { const op = document.createElement('option'); op.textContent = b; bsel.append(op); });
+        bsel.value = it.book;
+        bsel.addEventListener('change', () => { it.book = bsel.value; mySave(); drawMy(); });
+        const oin = document.createElement('input'); oin.type = 'number'; oin.inputMode = 'decimal'; oin.min = '1.01'; oin.step = '0.01'; oin.value = it.odds.toFixed(2);
+        oin.setAttribute('aria-label', `Odds you can get for ${it.pick}`);
+        oin.addEventListener('change', () => { const v = Number(oin.value); if (v > 1) { it.odds = v; mySave(); drawMy(); } });
+        const lab = el('label', ''); lab.append(document.createTextNode('Price at'), bsel, oin);
+        pr.append(lab);
+        if (it.prob) {
+          const ev = it.prob / 100 * it.odds - 1, fair = 100 / it.prob;
+          const tag = el('span', 'cp-tag' + (ev > 0 ? '' : ' bad'), `${ev > 0 ? 'Value' : 'No value'} ${ev >= 0 ? '+' : '−'}${Math.abs(ev * 100).toFixed(1)}% · fair ${fair.toFixed(2)}`);
+          pr.append(tag);
+        }
+        if (it.orig != null && (it.odds !== it.orig || it.book !== it.origBook)) {
+          const rs = el('button', 'cp-bs-txt', `Reset to ${it.origBook} ${Number(it.orig).toFixed(2)}`); rs.type = 'button';
+          rs.addEventListener('click', () => { it.odds = it.orig; it.book = it.origBook; mySave(); drawMy(); }); pr.append(rs);
+        }
+        c.append(t, st, pr); body.append(c);
       });
     } else {
       const c = el('div', 'cp-bs-item');

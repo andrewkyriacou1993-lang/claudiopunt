@@ -30,7 +30,7 @@
 <script>
 /* Minimal stand-in for the Claude dashboard runtime: loads data/<name>.csv and runs the same page code. */
 window.dash = (() => {
-  const FILES = ['best', 'history', 'meta', 'bets', 'props', 'alts', 'chances', 'games', 'teams', 'injuries', 'matchups', 'usage', 'usage_fit', 'firstbasket'];
+  const FILES = ['best', 'history', 'meta', 'bets', 'props', 'alts', 'chances', 'games', 'teams', 'injuries', 'matchups', 'usage', 'usage_fit', 'firstbasket', 'sgm'];
   const D = {}, calcs = {}, subs = [];
   let queued = false;
   const fire = () => { if (queued) return; queued = true; requestAnimationFrame(() => { queued = false; subs.forEach(fn => { try { fn(); } catch (e) { console.error(e); } }); }); };
@@ -350,6 +350,7 @@ window.dash = (() => {
       <button type="button" class="cp-link" data-go="props"><b>Player props</b><span>Every bookie's lines, with each player's record</span></button>
       <button type="button" class="cp-link" data-go="alts"><b>Alt lines</b><span>Ladders like 30+ points, priced rung by rung</span></button>
       <button type="button" class="cp-link" data-go="firstbasket"><b>First basket</b><span>Each starter's chance to score first vs the bookies</span></button>
+      <button type="button" class="cp-link" data-go="sgm"><b>Same-game multis</b><span>PointsBet SGMs where our legs compound into value</span></button>
       <button type="button" class="cp-link" data-go="bets"><b>Game bets</b><span>Moneylines, lines and totals ranked by value</span></button>
     </div>
   </section>
@@ -555,6 +556,26 @@ window.dash = (() => {
         <tbody></tbody></table></div>
       <p class="mb-note" id="fb-none" hidden>No first-basket prices yet. Bookies post this market closer to tip-off, so it may only appear at the 10:16 update.</p>
       <p class="mb-note">"Bookie's chance" is the best bookie's price with its margin removed. "First baskets / Starts" count since the start of 2025-26. "Wins tip (model)" is the model's chance his team wins tonight's opening jump ball, from both jumpers' records. "His team's jumper" and "Opponent's jumper" are the players likely to take tonight's tip and the opening tips each has won since the start of 2025-26 (as a player, whichever team he was on).</p>
+    </div>
+  </section>
+  <section class="mb-sec" id="sgm">
+    <h2 class="mb-h2">Same-game multis</h2>
+    <p class="mb-note">Two-leg same-game multis priced by PointsBet (the only bookie that quotes them without logging in), against our chance of both legs landing. Legs in one game move together, so the chance isn't the two chances multiplied: we link them with correlations measured on 1,275 games of 2024-25 (team result and game total against each player's stats, and a player's stats against each other). One finding shapes everything: <b>PointsBet's SGM prices already allow for these links closely</b>, including the blowout effect (a big favourite's starters sit, so their stats barely rise with the margin), and they carry a margin of roughly 10-25%. So we only pair legs our model already rates above PointsBet's single price; the value is those leg edges compounding. A bet needs 10%+ value and a 15%+ chance of landing, at a flat 0.25u, one per game, and every one is tracked in the ledger.</p>
+    <div class="mb-card">
+      <div class="mb-filters">
+        <label for="s-show" class="mb-note">Show</label>
+        <select id="s-show" class="mb-input"><option value="bets">Bets only</option><option value="pos">Positive value</option><option value="all">Every pair priced</option></select>
+        <label for="s-game" class="mb-note">Game</label><select id="s-game" class="mb-input"><option value="">All games</option></select>
+      </div>
+      <div class="mb-scroll mb-tall"><table class="mb-table" id="sgm-table" data-source="sgm" data-row-key="rid">
+        <thead><tr>
+          <th data-field="verdict">Verdict</th><th data-field="game">Game</th><th data-field="tip">Tip (AEDT)</th><th data-field="leg1">Leg 1</th><th data-field="leg2">Leg 2</th>
+          <th data-field="sgm_price" class="num">SGM price</th><th data-field="product" class="num">Singles multiplied</th><th data-field="joint" class="num">Our chance both %</th><th data-field="fair_odds" class="num">Fair odds</th>
+          <th data-field="ev_pct" class="num">EV %</th><th data-field="p1" class="num">Leg 1 chance %</th><th data-field="p2" class="num">Leg 2 chance %</th><th data-field="rho" class="num">Link</th><th>Slip</th>
+        </tr></thead>
+        <tbody></tbody></table></div>
+      <p class="mb-note" id="sgm-none" hidden>No same-game multis priced yet today.</p>
+      <p class="mb-note">"Singles multiplied" is the two PointsBet prices multiplied, what a normal multi would pay; the SGM price above or below it shows how PointsBet adjusted for the link. "Link" is the correlation we used: positive when the legs tend to land together, negative when one landing makes the other less likely. Build these at PointsBet with Same Game Multi.</p>
     </div>
   </section>
   </div>
@@ -1228,7 +1249,7 @@ window.dash = (() => {
     title: 'Ledger by category',
     description: 'Settled bets, won–lost, units staked, profit (units), return on stakes, average model win probability vs actual win rate, and average closing-line value for each category.',
     fn: (history) => {
-      const cats = ['Moneyline', 'Line', 'Total', 'Points', 'Rebounds', 'Assists', 'P+R+A', 'Alt line', 'First basket', 'Multi', '80% multi'];
+      const cats = ['Moneyline', 'Line', 'Total', 'Points', 'Rebounds', 'Assists', 'P+R+A', 'Alt line', 'First basket', 'Multi', '80% multi', 'SGM'];
       return cats.map(c => {
         const s = history.filter(h => h.category === c && ['win', 'loss', 'push', 'void'].includes(h.result));
         const w = s.filter(h => h.result === 'win').length, l = s.filter(h => h.result === 'loss').length;
@@ -1497,6 +1518,28 @@ window.dash = (() => {
   }
   ['#f-show', '#f-game'].forEach(s => $(s).addEventListener('change', drawFB));
 
+  // ---------- same-game multis ----------
+  function drawSGM() {
+    const S = dash.data('sgm'), tb = $('#sgm-table tbody');
+    if (S.status === 'error') { tb.innerHTML = '<tr><td colspan="14"><div class="mb-fail">Failed to load</div></td></tr>'; return; }
+    if (S.status === 'missing') { $('#sgm-table').hidden = true; $('#sgm-none').hidden = false; return; }
+    if (S.status !== 'ok') return;
+    const gsel = $('#s-game'), cur = gsel.value, gms = [...new Set(S.data.map(r => r.game))];
+    gsel.innerHTML = '<option value="">All games</option>' + gms.map(g => `<option>${g}</option>`).join(''); gsel.value = gms.includes(cur) ? cur : '';
+    const show = $('#s-show').value;
+    const rows = S.data.filter(r => (!gsel.value || r.game === gsel.value) && (show === 'all' || (show === 'bets' ? r.verdict === 'Bet' : Number(r.ev_pct) > 0)));
+    fillTable(tb, rows, [
+      { f: 'verdict', render: pill({ 'Bet': 'bet', 'Pass': 'pass' }) }, { f: 'game', cls: 'pos' }, { f: 'tip', cls: 'pos' }, { f: 'leg1' }, { f: 'leg2' },
+      { f: 'sgm_price', cls: 'num' }, { f: 'product', cls: 'num' }, { f: 'joint', cls: 'num' }, { f: 'fair_odds', cls: 'num' }, { f: 'ev_pct', cls: 'num', render: signed },
+      { f: 'p1', cls: 'num' }, { f: 'p2', cls: 'num' }, { f: 'rho', cls: 'num' },
+      { f: 'rid', render: (td, v, r) => { td.appendChild(addBtn({ pick: `${r.leg1} + ${r.leg2}`, odds: Number(r.sgm_price), book: 'PointsBet', game: r.game, prob: Number(r.joint), stake: Number(r.stake_pct) || 0.25, cat: 'SGM' })); } }
+    ], 'rid', r => r.verdict === 'Bet' ? '' : 'pass');
+    $('#sgm-table').hidden = rows.length === 0;
+    $('#sgm-none').hidden = rows.length !== 0;
+    $('#sgm-none').textContent = S.data.length ? 'Nothing matches these filters (try "Every pair priced").' : 'No same-game multis priced yet today.';
+  }
+  ['#s-show', '#s-game'].forEach(s => $(s).addEventListener('change', drawSGM));
+
   // ---------- player usage ----------
   let TONIGHT = new Set();
   let uSort = { f: 'usg', dir: -1 };
@@ -1585,7 +1628,7 @@ window.dash = (() => {
     ev.preventDefault(); const el = document.getElementById(a.getAttribute('href').slice(1)); if (el) { el.scrollIntoView({ behavior: 'smooth' }); dash.setLink(el.id); }
   }));
 
-  redrawAll = () => { drawMeta(); drawBest(); drawTodayGames(); drawTrack(); draw(); drawProps(); drawAlts(); drawChance(); drawFB(); drawUsage(); };
+  redrawAll = () => { drawMeta(); drawBest(); drawTodayGames(); drawTrack(); draw(); drawProps(); drawAlts(); drawChance(); drawFB(); drawSGM(); drawUsage(); };
   dash.onData(redrawAll);
 
   const hash = location.hash.slice(1), tabNames = ['today', 'explore', 'games', 'ledger', 'method'];

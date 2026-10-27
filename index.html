@@ -1,0 +1,1205 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ClaudioPunt NBA</title>
+<meta name="description" content="Daily NBA betting board: model chances, best prices across Australian bookies, and a settled track record.">
+<style>
+  :root {
+    --font-anthropic-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --font-anthropic-serif: Georgia, "Times New Roman", serif;
+    --cds-pad-xs: 6px; --cds-pad-sm: 10px; --cds-pad-md: 14px; --cds-pad-lg: 20px;
+    --cds-gap-xs: 6px; --cds-gap-sm: 10px; --cds-gap-md: 14px; --cds-gap-lg: 20px; --cds-gap-xl: 28px;
+    --cds-font-size-caption: 0.85rem; --cds-font-size-body: 1rem; --cds-font-size-heading: 1.15rem; --cds-font-size-title: 1.9rem;
+    --cds-font-weight-medium: 600; --cds-radius: 12px; --cds-dur-slow: 200ms;
+    --cds-surface-popover: #0B101A; --cds-border: #33405A; --cds-shadow-popover: 0 8px 24px rgba(0,0,0,.4); --cds-text-secondary: #A9B3C4;
+    --cds-chart-grid: #222B3B; --cds-chart-muted: #6B778C; --cds-chart-reference: #4A5670;
+    --color-fg: #E8ECF3; --color-fg-muted: #A9B3C4; --color-bg: #0E1420; --color-panel: #161E2C; --color-border-line: #263043;
+    --color-ok: #8DBBFF; --color-bad: #FF9A57; --color-warn: #FFC79E;
+    color-scheme: dark;
+  }
+  html, body { margin: 0; background: #070B12; color: #E8ECF3; }
+  #dash-root { padding: 16px; }
+  .dash-skeleton { color: transparent !important; background: #222B3B; border-radius: 4px; }
+  .site-foot { max-width: 1240px; margin: 16px auto 32px; padding: 0 16px; font-family: var(--font-anthropic-sans); font-size: .85rem; color: #A9B3C4; line-height: 1.5; }
+  .site-foot b { color: #E8ECF3; }
+  @media (max-width: 640px) { #dash-root { padding: 0; } .mb { border-radius: 0; } .cp-bar { border-radius: 0; } }
+</style>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+<script>
+/* Minimal stand-in for the Claude dashboard runtime: loads data/<name>.csv and runs the same page code. */
+window.dash = (() => {
+  const FILES = ['best', 'history', 'meta', 'bets', 'props', 'alts', 'chances', 'games', 'teams', 'injuries', 'matchups', 'usage', 'usage_fit'];
+  const D = {}, calcs = {}, subs = [];
+  let queued = false;
+  const fire = () => { if (queued) return; queued = true; requestAnimationFrame(() => { queued = false; subs.forEach(fn => { try { fn(); } catch (e) { console.error(e); } }); }); };
+  const load = () => FILES.forEach(f => fetch(`data/${f}.csv?v=${Date.now()}`)
+    .then(r => r.ok ? r.text() : Promise.reject(r.status))
+    .then(t => { const rows = d3.csvParse(t.replace(/\r/g, '')); D[f] = { status: 'ok', data: rows, columns: rows.columns, meta: [] }; fire(); })
+    .catch(() => { D[f] = { status: 'missing', data: [], columns: [], meta: [] }; fire(); }));
+  function data(id) {
+    if (calcs[id]) {
+      const c = calcs[id], ins = c.inputs.map(data);
+      if (ins.some(x => x.status === 'loading')) return { status: 'loading', data: [] };
+      try { return { status: 'ok', data: c.fn(...ins.map(x => x.data)) }; } catch (e) { console.error(e); return { status: 'error', data: [], message: String(e) }; }
+    }
+    return D[id] || { status: 'loading', data: [] };
+  }
+  window.addEventListener('resize', fire);
+  setInterval(load, 15 * 60 * 1000);           // pick up the 8:16 / 10:16 updates without a reload
+  document.addEventListener('DOMContentLoaded', load);
+  return {
+    data, calc: (id, o) => { calcs[id] = o; }, loader: () => {},
+    onData: (fn) => { subs.push(fn); try { fn(); } catch (e) { console.error(e); } },
+    colors: ['#6FA8FF', '#FF8A3D', '#4FD1C5', '#F6C343', '#C792EA', '#FF6B9A', '#9AE66E', '#B0BEC5'],
+    setLink: (n) => { try { history.replaceState(null, '', '#' + n); } catch (e) {} },
+    params: () => ({}), setParams: () => {}, resetParams: () => {}, refresh: load
+  };
+})();
+</script>
+</head>
+<body>
+<div id="dash-root">
+<style>
+  #dash-root { --dash-gutter: var(--cds-pad-lg); }
+  .mb { display: flex; flex-direction: column; gap: var(--cds-gap-xl); font-family: var(--font-anthropic-sans); max-width: 1200px; margin-inline: auto; }
+  .mb-head { display: flex; flex-direction: column; gap: var(--cds-gap-xs); }
+  .mb-title { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); margin: 0; text-wrap: balance; }
+  .mb-lede { color: var(--color-fg-muted); font-size: var(--cds-font-size-body); margin: 0; max-width: 70ch; }
+  .mb-lede b { color: var(--color-fg); font-weight: 600; }
+  .mb-sec { display: flex; flex-direction: column; gap: var(--cds-gap-md); }
+  .mb-h2 { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); margin: 0; }
+  .mb-note { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); margin: 0; max-width: 80ch; }
+  .mb-card { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); display: flex; flex-direction: column; gap: var(--cds-gap-sm); min-width: 0; }
+  .mb-card h3 { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); margin: 0; }
+  .mb-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr)); gap: var(--cds-gap-md); }
+  .mb-scroll { overflow-x: auto; }
+  .mb-table { width: 100%; border-collapse: collapse; font-size: var(--cds-font-size-caption); font-variant-numeric: tabular-nums; }
+  .mb-table th { text-align: left; color: var(--color-fg-muted); font-weight: var(--cds-font-weight-medium); padding: var(--cds-pad-xs) var(--cds-pad-sm); border-bottom: 1px solid var(--color-border-line); white-space: nowrap; position: sticky; top: 0; background: var(--color-panel); }
+  .mb-table td { padding: var(--cds-pad-xs) var(--cds-pad-sm); border-bottom: 1px solid var(--color-border-line); vertical-align: top; }
+  .mb-table td.num, .mb-table th.num { text-align: right; }
+  .mb-table td.why { color: var(--color-fg-muted); min-width: 18rem; }
+  .mb-table tr.pass td { color: var(--color-fg-muted); }
+  .mb-table .side { border-left: 1px solid var(--color-border-line); }
+  .pill { display: inline-block; padding: 0 var(--cds-pad-sm); border-radius: 999px; border: 1px solid currentColor; font-size: var(--cds-font-size-caption); white-space: nowrap; }
+  .pill.bet { color: var(--color-ok); }
+  .pill.check { color: var(--color-warn); }
+  .pill.pass { color: var(--color-fg-muted); }
+  .pill.dtd { color: var(--color-warn); }
+  .pill.out { color: var(--color-bad); }
+  .pos { color: var(--color-fg-muted); }
+  .good { color: var(--color-ok); }
+  .bad { color: var(--color-bad); }
+  .mb-tabs { display: flex; flex-wrap: wrap; gap: var(--cds-gap-xs); }
+  .mb-tab { font: inherit; font-size: var(--cds-font-size-caption); padding: var(--cds-pad-xs) var(--cds-pad-sm); border-radius: 999px; border: 1px solid var(--color-border-line); background: transparent; color: var(--color-fg); cursor: pointer; }
+  .mb-tab[aria-pressed="true"] { background: var(--color-fg); color: var(--color-bg); border-color: var(--color-fg); }
+  .mb-tab:focus-visible { outline: 2px solid var(--color-fg); outline-offset: 2px; }
+  .mb-chart { position: relative; min-height: 18rem; }
+  .mb-tip { position: absolute; pointer-events: none; background: var(--cds-surface-popover); border: 1px solid var(--cds-border); border-radius: var(--cds-radius); box-shadow: var(--cds-shadow-popover); padding: var(--cds-pad-xs) var(--cds-pad-sm); font-size: var(--cds-font-size-caption); white-space: nowrap; }
+  .mb-tip .t { color: var(--cds-text-secondary); }
+  .mb-legend { display: flex; flex-wrap: wrap; gap: var(--cds-gap-md); font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+  .mb-legend span::before { content: ""; display: inline-block; width: .6rem; height: .6rem; border-radius: 50%; margin-right: .35rem; vertical-align: middle; background: var(--sw); }
+  .mb-fail { display: flex; align-items: center; justify-content: center; gap: .4rem; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); min-height: 4rem; }
+  .mb-fail::before { content: ""; width: .375rem; height: .375rem; border-radius: 50%; background: var(--color-bad); }
+  [data-dash-source-state=empty] { color: transparent; }
+  [data-dash-source-state=refreshing] { opacity: .5; transition: opacity var(--cds-dur-slow); }
+  .mb-defs { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr)); gap: var(--cds-gap-sm) var(--cds-gap-lg); font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+  .mb-defs b { color: var(--color-fg); font-weight: 600; }
+  .mb-best { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 16rem), 1fr)); gap: var(--cds-gap-md); min-height: 10rem; }
+  .mb-bcard { text-align: left; font: inherit; color: inherit; cursor: pointer; background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-md) var(--cds-pad-lg); display: flex; flex-direction: column; gap: var(--cds-gap-xs); min-width: 0; transition: border-color var(--cds-dur-slow); }
+  .mb-bcard:hover { border-color: var(--color-fg-muted); }
+  .mb-bcard:focus-visible { outline: 2px solid var(--color-fg); outline-offset: 2px; }
+  .mb-bcard.is-bet { border-color: var(--color-ok); }
+  .mb-bcard-top { display: flex; justify-content: space-between; align-items: center; gap: var(--cds-gap-sm); }
+  .mb-bcard-cat { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); letter-spacing: .04em; text-transform: uppercase; }
+  .mb-bcard-pick { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); line-height: 1.3; overflow-wrap: anywhere; }
+  .mb-bcard-game { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+  .mb-bcard-nums { display: flex; flex-wrap: wrap; gap: var(--cds-gap-md); font-size: var(--cds-font-size-caption); font-variant-numeric: tabular-nums; color: var(--color-fg-muted); }
+  .mb-bcard-nums b { color: var(--color-fg); font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-heading); }
+  .mb-bcard-why { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+  .pill.lean { color: var(--color-fg-muted); }
+  .pill.win { color: var(--color-ok); } .pill.loss { color: var(--color-bad); } .pill.void, .pill.push, .pill.pending { color: var(--color-fg-muted); }
+  .mb-tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 9rem), 1fr)); gap: var(--cds-gap-md); }
+  .mb-tile { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-md); display: flex; flex-direction: column; gap: var(--cds-gap-xs); }
+  .mb-tile-l { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+  .mb-tile-v { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); font-variant-numeric: tabular-nums; }
+  .mb-note b { color: var(--color-fg); font-weight: 600; }
+  .mb-nav { display: flex; flex-wrap: wrap; gap: var(--cds-gap-md); font-size: var(--cds-font-size-caption); }
+  .mb-nav a { color: var(--color-fg-muted); }
+  .mb-filters { display: flex; flex-wrap: wrap; align-items: center; gap: var(--cds-gap-sm); }
+  .mb-input { font: inherit; font-size: var(--cds-font-size-caption); padding: var(--cds-pad-xs) var(--cds-pad-sm); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); background: var(--color-bg); color: var(--color-fg); }
+  .mb-tall { max-height: 32rem; overflow: auto; }
+  .mb-table th[data-sort] { cursor: pointer; }
+  .mb-table th[aria-sort="ascending"]::after { content: " ↑"; }
+  .mb-table th[aria-sort="descending"]::after { content: " ↓"; }
+
+  /* ===== A+B look: dark navy, orange accent, condensed caps headings; blue = value, orange = overpriced ===== */
+  .mb { --color-fg: #E8ECF3; --color-fg-muted: #A9B3C4; --color-bg: #0E1420; --color-panel: #161E2C; --color-border-line: #263043;
+        --color-ok: #8DBBFF; --color-bad: #FF9A57; --color-warn: #FFC79E;
+        --cds-chart-grid: #222B3B; --cds-chart-muted: #6B778C; --cds-chart-reference: #4A5670;
+        --cp-accent: #FF8A3D; --cp-ink: #1A0E04; --cp-good-bg: #1E3A66; --cp-good-fg: #CFE1FF; --cp-bad-bg: #3A2512; --cp-bad-fg: #FFC79E;
+        --cp-head: var(--font-anthropic-sans);
+        background: #0E1420; color: var(--color-fg); border-radius: 18px; padding: 0 0 32px 0; gap: 28px; max-width: 1240px; }
+  .mb a { color: #8DBBFF; }
+  .mb-sec, .cp-panel > * { padding-inline: 28px; }
+  .mb-h2, .cp-h { font-family: var(--cp-head); font-weight: 800; font-stretch: condensed; text-transform: uppercase; letter-spacing: .02em; font-size: 1.6rem; margin: 0; line-height: 1.1; }
+  .mb-card h3 { text-transform: uppercase; letter-spacing: .04em; font-size: .95rem; font-weight: 700; color: var(--color-fg-muted); }
+  .mb-card { border-radius: 14px; }
+  .mb-table th { background: var(--color-panel); text-transform: uppercase; letter-spacing: .05em; font-size: .72rem; }
+  .mb-tile { border-radius: 14px; }
+  .mb-tile-l { text-transform: uppercase; letter-spacing: .06em; font-weight: 600; }
+  .mb-tile-v, .mb-bcard-nums b { font-family: var(--cp-head); font-weight: 800; font-stretch: condensed; }
+  .mb-tip { background: #0B101A; border-color: #33405A; color: #E8ECF3; }
+  .mb-tip .t { color: #A9B3C4; }
+  .mb-tab[aria-pressed="true"] { background: var(--cp-accent); color: var(--cp-ink); border-color: var(--cp-accent); }
+  .mb-input { background: #0B101A; color: var(--color-fg); border-color: #33405A; min-height: 40px; }
+  .pill { border-radius: 999px; }
+  /* app bar + tabs */
+  .cp-bar { position: sticky; top: 0; z-index: 2; background: #0B101A; border-bottom: 1px solid #222B3B; border-radius: 18px 18px 0 0; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 20px; padding: 10px 28px; }
+  .cp-brand { font-family: var(--cp-head); font-weight: 800; font-stretch: condensed; text-transform: uppercase; font-size: 1.45rem; letter-spacing: .02em; }
+  .cp-brand span { color: var(--cp-accent); }
+  .cp-tabs { display: flex; flex-wrap: wrap; gap: 2px; }
+  .cp-tab { font: inherit; font-weight: 600; font-size: .95rem; color: #A9B3C4; background: none; border: 0; padding: 12px 14px; min-height: 44px; cursor: pointer; }
+  .cp-tab[aria-selected="true"] { color: #FFFFFF; box-shadow: inset 0 -3px 0 var(--cp-accent); }
+  .cp-tab:focus-visible, .cp-btn:focus-visible, .cp-game:focus-visible, .cp-link:focus-visible { outline: 2px solid #8DBBFF; outline-offset: 2px; }
+  .cp-upd { margin-left: auto; font-size: .85rem; color: #A9B3C4; }
+  .cp-panel { display: flex; flex-direction: column; gap: 28px; }
+  .cp-panel[hidden] { display: none; }
+  .cp-sub { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 14px; }
+  .cp-sub p { margin: 0; font-size: .9rem; color: #A9B3C4; }
+  /* today */
+  .cp-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr)); gap: 14px; }
+  .cp-stat { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: 14px; padding: 14px 18px; }
+  .cp-stat-l { font-size: .75rem; color: #A9B3C4; text-transform: uppercase; letter-spacing: .07em; font-weight: 600; }
+  .cp-stat-v { font-family: var(--cp-head); font-weight: 800; font-stretch: condensed; font-size: 2.2rem; line-height: 1.15; font-variant-numeric: tabular-nums; }
+  .cp-slip { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 30rem), 1fr)); gap: 14px; min-height: 8rem; }
+  .cp-card { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: 14px; padding: 16px 18px; display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+  .cp-card.is-lean { opacity: .85; }
+  .cp-card-top { display: flex; align-items: center; gap: 8px; font-size: .75rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--cp-accent); }
+  .cp-card-top .g { margin-left: auto; text-transform: none; letter-spacing: 0; font-weight: 500; color: #A9B3C4; font-size: .85rem; }
+  .cp-card-mid { display: flex; align-items: flex-end; gap: 14px; }
+  .cp-pick { font-family: var(--cp-head); font-weight: 800; font-stretch: condensed; text-transform: uppercase; font-size: 1.55rem; line-height: 1.1; flex: 1; overflow-wrap: anywhere; }
+  .cp-price { text-align: right; background: #0B101A; border: 1px solid #33405A; border-radius: 10px; padding: 6px 12px; }
+  .cp-odds { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 1.5rem; font-weight: 600; color: #FFFFFF; }
+  .cp-book { font-size: .75rem; color: #A9B3C4; }
+  .cp-row { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+  .cp-tag { font-weight: 600; font-size: .8rem; padding: 6px 10px; border-radius: 999px; background: var(--cp-good-bg); color: var(--cp-good-fg); white-space: nowrap; }
+  .cp-tag.bad { background: var(--cp-bad-bg); color: var(--cp-bad-fg); }
+  .cp-tag.neutral { background: #222B3B; color: #C9D1DE; }
+  .cp-meta { font-size: .85rem; color: #C9D1DE; }
+  .cp-btn { margin-left: auto; font: inherit; font-size: .9rem; font-weight: 700; background: var(--cp-accent); color: var(--cp-ink); border: 0; border-radius: 8px; padding: 0 16px; min-height: 44px; cursor: pointer; }
+  .cp-btn.ghost { background: transparent; color: #E8ECF3; border: 1px solid #33405A; margin-left: 0; }
+  .cp-why { font-size: .85rem; color: #A9B3C4; line-height: 1.45; }
+  .cp-why[hidden] { display: none; }
+  .cp-more { align-self: flex-start; }
+  .cp-multi { background: var(--color-panel); border: 1px solid var(--cp-accent); border-radius: 16px; padding: 20px 22px; display: flex; flex-direction: column; gap: 14px; margin-inline: 28px; }
+  .cp-multi-head { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 22px; }
+  .cp-nums { margin-left: auto; display: flex; gap: 24px; }
+  .cp-nums div { display: flex; flex-direction: column; }
+  .cp-nums span { font-size: .72rem; color: #A9B3C4; text-transform: uppercase; letter-spacing: .06em; }
+  .cp-nums b { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 1.6rem; font-weight: 600; }
+  .cp-legs { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr)); gap: 12px; }
+  .cp-leg { background: #0B101A; border: 1px solid #222B3B; border-radius: 12px; padding: 12px 14px; }
+  .cp-leg .p { font-family: var(--cp-head); font-weight: 800; font-stretch: condensed; text-transform: uppercase; font-size: 1.2rem; margin-top: 2px; }
+  .cp-leg .o { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: .9rem; color: #C9D1DE; margin-top: 4px; }
+  .cp-games { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 18rem), 1fr)); gap: 12px; }
+  .cp-game { text-align: left; font: inherit; color: inherit; background: var(--color-panel); border: 1px solid #222B3B; border-radius: 14px; padding: 14px 16px; display: flex; flex-direction: column; gap: 6px; cursor: pointer; min-height: 44px; }
+  .cp-game.has-bet { border-color: var(--cp-accent); }
+  .cp-game.started { opacity: .5; }
+  .cp-game .t { display: flex; justify-content: space-between; font-size: .8rem; color: #A9B3C4; }
+  .cp-game .n { font-family: var(--cp-head); font-weight: 800; font-stretch: condensed; text-transform: uppercase; font-size: 1.3rem; }
+  .cp-game .n i { font-style: normal; color: #6B778C; }
+  .cp-game .b { font-size: .8rem; color: #A9B3C4; }
+  .cp-game.has-bet .b { color: var(--cp-bad-fg); }
+  .cp-explore { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr)); gap: 12px; }
+  .cp-link { text-align: left; font: inherit; color: inherit; background: var(--color-panel); border: 1px solid #222B3B; border-radius: 14px; padding: 16px 18px; cursor: pointer; min-height: 44px; }
+  .cp-link b { display: block; font-size: 1.05rem; }
+  .cp-link span { display: block; font-size: .85rem; color: #A9B3C4; margin-top: 4px; }
+  .cp-toast { position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%); background: var(--cp-accent); color: var(--cp-ink); font-weight: 700; padding: 10px 16px; border-radius: 10px; z-index: 5; }
+  @media (max-width: 640px) { .mb-sec, .cp-panel > * { padding-inline: 14px; } .cp-multi { margin-inline: 14px; } .cp-bar { padding-inline: 14px; } .cp-upd { margin-left: 0; width: 100%; } .cp-nums { margin-left: 0; } .cp-pick { font-size: 1.3rem; } }
+</style>
+
+<div class="mb">
+  <header class="cp-bar">
+    <div class="cp-brand" id="top">ClaudioPunt <span>NBA</span></div>
+    <div class="cp-tabs" role="tablist" aria-label="Sections">
+      <button type="button" class="cp-tab" role="tab" data-tab="today" aria-selected="true">Today</button>
+      <button type="button" class="cp-tab" role="tab" data-tab="explore" aria-selected="false">Explore</button>
+      <button type="button" class="cp-tab" role="tab" data-tab="games" aria-selected="false">Games</button>
+      <button type="button" class="cp-tab" role="tab" data-tab="ledger" aria-selected="false">Ledger</button>
+      <button type="button" class="cp-tab" role="tab" data-tab="method" aria-selected="false">How it works</button>
+    </div>
+    <div class="cp-upd"><span data-source="meta" data-field="date_label" class="dash-skeleton">—</span> · updated <span data-source="meta" data-field="updated" class="dash-skeleton">—</span> · <span data-source="meta" data-field="games" class="dash-skeleton">—</span> games · first tip <span data-source="meta" data-field="first_tip" class="dash-skeleton">—</span></div>
+  </header>
+
+  <div class="cp-panel" data-panel="today" role="tabpanel" aria-label="Today">
+  <section class="mb-sec" id="best" aria-label="Today at a glance">
+    <div class="cp-stats">
+      <div class="cp-stat"><div class="cp-stat-l">Bets today</div><div class="cp-stat-v" data-source="today_stats" data-field="bets">—</div></div>
+      <div class="cp-stat"><div class="cp-stat-l">Staked today</div><div class="cp-stat-v" data-source="today_stats" data-field="staked">—</div></div>
+      <div class="cp-stat"><div class="cp-stat-l">Last settled day</div><div class="cp-stat-v" data-source="today_stats" data-field="last_day">—</div></div>
+      <div class="cp-stat"><div class="cp-stat-l">Running total</div><div class="cp-stat-v" data-source="today_stats" data-field="running">—</div></div>
+    </div>
+    <div class="cp-sub"><h2 class="cp-h">Today's bets</h2><p><b data-source="best_summary" data-field="n_bet" class="dash-skeleton">—</b> of <span data-source="best_summary" data-field="n_cat" class="dash-skeleton">—</span> categories have a bet worth taking. Best price for each, at the bookie shown. Check team news before tip-off.</p></div>
+    <div class="cp-slip" id="best-cards" data-source="best"></div>
+    <button type="button" class="cp-btn ghost cp-more" id="best-more" hidden>Show the leans too</button>
+  </section>
+  <section class="cp-multi" id="m80" data-source="best multi80_legs" aria-labelledby="m80-h">
+    <div class="cp-multi-head">
+      <h2 class="cp-h" id="m80-h">80% multi</h2>
+      <span class="cp-meta" id="m80-sub">Every leg 80%+ · one per game · one bookie</span>
+      <div class="cp-nums"><div><span>Odds</span><b id="m80-odds">—</b></div><div><span>All land</span><b id="m80-prob">—</b></div><div><span>Value</span><b id="m80-ev">—</b></div></div>
+    </div>
+    <div class="cp-legs" id="m80-legs"></div>
+    <div class="cp-row"><span class="cp-meta" id="m80-note">Logged every day at a flat stake. Negative value is each leg's bookie margin, multiplied.</span><button type="button" class="cp-btn" id="m80-copy">Copy multi</button></div>
+  </section>
+  <section class="mb-sec" aria-labelledby="tg-h">
+    <div class="cp-sub"><h2 class="cp-h" id="tg-h">Tonight's games</h2><p>Orange edge: we have a bet. Tap a game for its lines, ratings, injuries and starters.</p></div>
+    <div class="cp-games" id="today-games" data-source="games history"></div>
+  </section>
+  <section class="mb-sec" aria-labelledby="ex-h">
+    <h2 class="cp-h" id="ex-h" style="font-size: 1.2rem; color: #A9B3C4">Explore</h2>
+    <div class="cp-explore">
+      <button type="button" class="cp-link" data-go="chance"><b>By chance</b><span>Every outcome sorted by how likely it is</span></button>
+      <button type="button" class="cp-link" data-go="props"><b>Player props</b><span>Every bookie's lines, with each player's record</span></button>
+      <button type="button" class="cp-link" data-go="alts"><b>Alt lines</b><span>Ladders like 30+ points, priced rung by rung</span></button>
+      <button type="button" class="cp-link" data-go="bets"><b>Game bets</b><span>Moneylines, lines and totals ranked by value</span></button>
+    </div>
+  </section>
+  </div>
+
+  <div class="cp-panel" data-panel="ledger" role="tabpanel" aria-label="Ledger" hidden>
+  <section class="mb-sec" id="track">
+    <h2 class="mb-h2">Bet ledger</h2>
+    <p class="mb-note">Every bet recommended here, locked at the odds and stake when it was first given (later updates never change or remove a pick), settled from ESPN final scores and box scores. Stakes and profit are in <b>units</b>: 1u = 1% of your bankroll. A player who doesn't play is a void (stake returned). Judge it over hundreds of bets, not days.
+      <b>Closing-line value (CLV)</b> is the early signal: our odds × the fair win chance at tip-off − 1, where the fair price is Sportsbet's closing price with its margin removed. Beating the close consistently is what long-run winners do, long before the profit column can tell luck from skill.</p>
+    <div class="mb-tiles">
+      <div class="mb-tile"><span class="mb-tile-l">Settled</span><span class="mb-tile-v" data-source="track" data-field="settled">—</span></div>
+      <div class="mb-tile"><span class="mb-tile-l">Won–lost</span><span class="mb-tile-v" data-source="track" data-field="record">—</span></div>
+      <div class="mb-tile"><span class="mb-tile-l">Running total</span><span class="mb-tile-v" data-source="track" data-field="pl">—</span></div>
+      <div class="mb-tile"><span class="mb-tile-l">Units staked</span><span class="mb-tile-v" data-source="track" data-field="staked">—</span></div>
+      <div class="mb-tile"><span class="mb-tile-l">Return on stakes</span><span class="mb-tile-v" data-source="track" data-field="roi">—</span></div>
+      <div class="mb-tile"><span class="mb-tile-l">Waiting to settle</span><span class="mb-tile-v" data-source="track" data-field="pending">—</span></div>
+      <div class="mb-tile"><span class="mb-tile-l">Units at risk</span><span class="mb-tile-v" data-source="track" data-field="at_risk">—</span></div>
+      <div class="mb-tile"><span class="mb-tile-l">Average CLV</span><span class="mb-tile-v" data-source="track" data-field="clv">—</span></div>
+      <div class="mb-tile"><span class="mb-tile-l">Beat the close</span><span class="mb-tile-v" data-source="track" data-field="beat">—</span></div>
+    </div>
+    <div class="mb-card" aria-labelledby="bestrec-h"><h3 id="bestrec-h">Best of the day only (recorded from 27 Oct)</h3>
+      <p class="mb-note">Just the pick shown on the Today tab for each category, plus the multis: the record to judge the daily card by.</p>
+      <div class="mb-tiles">
+        <div class="mb-tile"><span class="mb-tile-l">Best picks</span><span class="mb-tile-v" data-source="track_best" data-field="picks">—</span></div>
+        <div class="mb-tile"><span class="mb-tile-l">Settled</span><span class="mb-tile-v" data-source="track_best" data-field="settled">—</span></div>
+        <div class="mb-tile"><span class="mb-tile-l">Won–lost</span><span class="mb-tile-v" data-source="track_best" data-field="record">—</span></div>
+        <div class="mb-tile"><span class="mb-tile-l">Profit</span><span class="mb-tile-v" data-source="track_best" data-field="pl">—</span></div>
+        <div class="mb-tile"><span class="mb-tile-l">Return on stakes</span><span class="mb-tile-v" data-source="track_best" data-field="roi">—</span></div>
+        <div class="mb-tile"><span class="mb-tile-l">Average CLV</span><span class="mb-tile-v" data-source="track_best" data-field="clv">—</span></div>
+      </div>
+    </div>
+    <div class="mb-grid">
+      <div class="mb-card"><h3>Running total, bet by bet (units)</h3>
+        <p class="mb-note" id="track-empty" hidden>The line starts once the first bets are settled, after today's games finish.</p>
+        <div class="mb-chart" id="chart-track" data-source="history" style="min-height: 14rem"></div></div>
+      <div class="mb-card"><h3>By category</h3>
+        <div class="mb-scroll"><table class="mb-table" id="cat-table" data-source="track_cat" data-row-key="category">
+          <thead><tr><th data-field="category">Category</th><th data-field="bets" class="num">Settled</th><th data-field="record" class="num">W–L</th>
+            <th data-field="staked" class="num">Staked (u)</th><th data-field="pl" class="num">Profit (u)</th><th data-field="roi" class="num">ROI %</th>
+            <th data-field="model_win" class="num">Model / actual win %</th><th data-field="clv" class="num">Avg CLV %</th></tr></thead><tbody></tbody></table></div></div>
+    </div>
+    <div class="mb-card"><h3>By bookie</h3>
+      <div class="mb-scroll"><table class="mb-table" id="book-table" data-source="track_book" data-row-key="book">
+        <thead><tr><th data-field="book">Bookie</th><th data-field="bets" class="num">Bets</th><th data-field="settled" class="num">Settled</th><th data-field="record" class="num">W–L</th>
+          <th data-field="staked" class="num">Staked (u)</th><th data-field="pl" class="num">Profit (u)</th><th data-field="roi" class="num">ROI %</th>
+          <th data-field="pending_u" class="num">At risk (u)</th><th data-field="clv" class="num">Avg CLV %</th></tr></thead><tbody></tbody></table></div></div>
+    <div class="mb-card"><h3>Every bet</h3>
+      <div class="mb-filters">
+        <label for="h-date" class="mb-note">Slate</label><select id="h-date" class="mb-input"><option value="">All days</option></select>
+        <label for="h-res" class="mb-note">Show</label>
+        <select id="h-res" class="mb-input"><option value="">All</option><option value="pending">Waiting</option><option value="settled">Settled</option></select>
+        <label for="h-book" class="mb-note">Bookie</label><select id="h-book" class="mb-input book-filter"><option value="">All bookies</option></select>
+        <label for="h-best" class="mb-note">Picks</label><select id="h-best" class="mb-input"><option value="">Every bet</option><option value="1">Best of the day only</option></select>
+      </div>
+      <div class="mb-scroll mb-tall"><table class="mb-table" id="hist-table" data-source="history" data-row-key="id">
+        <thead><tr><th data-field="posted">Posted (AEDT)</th><th data-field="category">Category</th><th data-field="pick">Bet</th><th data-field="game">Game</th>
+          <th data-field="odds" class="num">Odds</th><th data-field="book">Bookie</th><th data-field="close_prob" class="num">Fair at close %</th><th data-field="clv_pct" class="num">CLV %</th><th data-field="stake_u" class="num">Stake (u)</th><th data-field="result">Result</th><th data-field="profit_u" class="num">Profit (u)</th><th data-field="running_u" class="num">Running total (u)</th></tr></thead>
+        <tbody></tbody></table></div>
+    </div>
+  </section>
+  </div>
+
+  <div class="cp-panel" data-panel="explore" role="tabpanel" aria-label="Explore" hidden>
+  <section class="mb-sec" id="bets">
+    <h2 class="mb-h2">Today's 20 best-priced bets</h2>
+    <p class="mb-note">Ranked by expected value. Every side is priced at Sportsbet, TAB, Ladbrokes, PointsBet and Betr, and the best one is shown with its bookie. <b>Bet</b> means EV ≥ 3% and either the model's win chance is ≥ 2 points above the fair price, or the bookie's price alone beats the bookie-consensus fair value by ≥ 3%. The fair price is the average of every bookie's price with its margin removed, moved to each bookie's line. TAB's whole-number lines can push, so they are not compared. Stakes are in units, 1u = 1% of bankroll (quarter-Kelly, capped at 2u).</p>
+    <div class="mb-card">
+      <div class="mb-filters">
+        <label for="b-book" class="mb-note">Bookie</label><select id="b-book" class="mb-input book-filter"><option value="">Best price anywhere</option></select>
+        <span class="mb-note" id="b-book-note"></span>
+      </div>
+      <div class="mb-scroll">
+        <table class="mb-table" id="bets-table" data-source="bets" data-row-key="rank">
+          <thead><tr>
+            <th data-field="rank" class="num">#</th><th data-field="verdict">Verdict</th><th data-field="game">Game</th>
+            <th data-field="bet">Bet</th><th data-field="odds" class="num">Best odds</th><th data-field="book">Bookie</th><th data-field="model_prob" class="num">Model %</th>
+            <th data-field="market_prob" class="num">Fair %</th><th data-field="ev_pct" class="num">EV %</th><th data-field="stake_pct" class="num">Stake (u)</th>
+            <th data-field="reason">Why</th><th data-field="all_odds">All prices (same line)</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="mb-sec" id="props">
+    <h2 class="mb-h2">Player props</h2>
+    <p class="mb-note">Points, rebounds, assists and P+R+A over/unders from Sportsbet, Ladbrokes, PointsBet, Betr and TAB (TAB posts points only), priced from expected minutes × role-based rates. Each team's projected points add up to the score its game line implies, so the model only decides how points are shared, not how many there are. Shooting streaks are mostly regressed; usage and AST%/TRB% partly. The fair price is the average of every bookie's no-margin price at that line; final probability blends the two in log-odds (market weight 0.95, model 0.34, fitted in the backtest), so the model only nudges the market, and the bet goes to the bookie with the best odds, and only a player's single best market can be a bet (his points, rebounds and assists move together). Assists also get a small adjustment for tonight's opponent (how many assists that defence allows to his position, guards / forwards / centres): it was the only matchup factor the backtest found the market under-prices. Points and rebounds matchups are shown in "Why" as context only. Stakes are capped at 1u (1% of bankroll). Props are void if the player doesn't play. Games with no props posted at update time: <span data-source="meta" data-field="missing_props">—</span>.</p>
+    <div class="mb-card">
+      <div class="mb-filters">
+        <label for="p-show" class="mb-note">Show</label>
+        <select id="p-show" class="mb-input"><option value="bets">Bets and status checks</option><option value="top">Top 40 by value</option><option value="all">All markets</option></select>
+        <label for="p-stat" class="mb-note">Stat</label>
+        <select id="p-stat" class="mb-input"><option value="">All</option><option>Points</option><option>Rebounds</option><option>Assists</option><option>PRA</option></select>
+        <label for="p-book" class="mb-note">Bookie</label><select id="p-book" class="mb-input book-filter"><option value="">Best price anywhere</option></select>
+        <label for="p-search" class="mb-note">Search</label><input id="p-search" class="mb-input" type="search" placeholder="Player or team">
+      </div>
+      <div class="mb-scroll mb-tall"><table class="mb-table" id="props-table" data-source="props" data-row-key="rank">
+        <thead><tr>
+          <th data-field="rank" class="num">#</th><th data-field="verdict">Verdict</th><th data-field="player">Player</th><th data-field="team">Team</th><th data-field="opp">Opp</th>
+          <th data-field="stat">Stat</th><th data-field="side">Side</th><th data-field="line" class="num">Line</th><th data-field="odds" class="num">Best odds</th><th data-field="book">Bookie</th>
+          <th data-field="proj" class="num">Proj</th><th data-field="minutes" class="num">Min</th><th data-field="model_prob" class="num">Model %</th><th data-field="market_prob" class="num">Market %</th>
+          <th data-field="ev_pct" class="num">EV %</th><th data-field="stake_pct" class="num">Stake (u)</th><th data-field="reason">Why</th><th data-field="history">His record over this line</th><th data-field="all_odds">All prices (same line)</th>
+        </tr></thead>
+        <tbody></tbody></table></div>
+      <p class="mb-note" id="props-none" hidden>No props match these filters.</p>
+      <p class="mb-note">"His record" counts games he cleared tonight's line (for the side shown): last 5, last 10, this season, last season and against tonight's opponent (his numbers in those games, latest first), then the lines bookies set him in recent games (line@over odds&gt;what he did). The backtest found none of these predict results once the price is known (52,000 lines), so they are shown for context only and do not change the probability.</p>
+    </div>
+  </section>
+
+  <section class="mb-sec" id="alts">
+    <h2 class="mb-h2">Alternate lines</h2>
+    <p class="mb-note">"To score 30+" style ladders from Sportsbet, Ladbrokes and PointsBet. Each rung is priced from the same player's main line: the blended main-line price sets his expected average, and a count distribution fitted on 52,000 past lines (including the chance of a short-minutes night) gives the chance of every other number. Above the main line those chances are calibrated to within about a point on the 2024-25 test period. Bookies charge bigger margins on ladders (typically 5–12% here, more on far rungs), so only rungs at least 8% better than fair, with a 12%+ chance and odds up to 8.0, are bets, at most one per player and capped at 0.5u. There is no history of Australian ladder prices to backtest against, so treat these as unproven until the ledger has a track record.</p>
+    <div class="mb-card">
+      <div class="mb-filters">
+        <label for="a-show" class="mb-note">Show</label>
+        <select id="a-show" class="mb-input"><option value="bets">Bets and status checks</option><option value="top">Top 40 by value</option><option value="all">All rungs</option></select>
+        <label for="a-stat" class="mb-note">Stat</label>
+        <select id="a-stat" class="mb-input"><option value="">All</option><option>Points</option><option>Rebounds</option><option>Assists</option><option>PRA</option></select>
+        <label for="a-book" class="mb-note">Bookie</label><select id="a-book" class="mb-input book-filter"><option value="">Best price anywhere</option></select>
+        <label for="a-search" class="mb-note">Search</label><input id="a-search" class="mb-input" type="search" placeholder="Player or team">
+      </div>
+      <div class="mb-scroll mb-tall"><table class="mb-table" id="alts-table" data-source="alts" data-row-key="rid">
+        <thead><tr>
+          <th data-field="verdict">Verdict</th><th data-field="player">Player</th><th data-field="team">Team</th><th data-field="opp">Opp</th><th data-field="stat">Stat</th>
+          <th data-field="target">Target</th><th data-field="odds" class="num">Best odds</th><th data-field="book">Bookie</th><th data-field="fair_odds" class="num">Fair odds</th>
+          <th data-field="fair_prob" class="num">Chance %</th><th data-field="ev_pct" class="num">EV %</th><th data-field="stake_pct" class="num">Stake (u)</th>
+          <th data-field="main_line" class="num">Main line</th><th data-field="implied_mean" class="num">Avg implied</th><th data-field="proj" class="num">Model proj</th>
+          <th data-field="history">His record over this line</th><th data-field="reason">Why</th><th data-field="all_odds">All prices</th>
+        </tr></thead>
+        <tbody></tbody></table></div>
+      <p class="mb-note" id="alts-none" hidden>No alternate lines match these filters.</p>
+    </div>
+  </section>
+
+  <section class="mb-sec" id="chance">
+    <h2 class="mb-h2">By chance of happening</h2>
+    <p class="mb-note">Every outcome the model priced today, sorted by its chance of happening: game results, lines and totals (both sides), player props and every alternate-line rung, at the best price anywhere. The chance is the model's blended probability (bookie consensus plus the model; alternate lines from the calibrated ladder). "Fair odds" is what that chance is worth; when the bookie's odds are below it, the bet has negative value however likely it is. The daily 80% multi in Best today is built from the 80%+ rows here: one leg per game, all at one bookie. Games that have started are left out.</p>
+    <div class="mb-card">
+      <div class="mb-filters">
+        <label for="c-min" class="mb-note">Chance from</label><input id="c-min" class="mb-input" type="number" min="0" max="100" step="5" value="80" style="width:5em">
+        <label for="c-max" class="mb-note">to</label><input id="c-max" class="mb-input" type="number" min="0" max="100" step="5" value="100" style="width:5em">
+        <label for="c-cat" class="mb-note">Type</label>
+        <select id="c-cat" class="mb-input"><option value="">All</option><option>Moneyline</option><option>Line</option><option>Total</option><option>Points</option><option>Rebounds</option><option>Assists</option><option>P+R+A</option><option>Alt line</option></select>
+        <label for="c-val" class="mb-note">Value</label>
+        <select id="c-val" class="mb-input"><option value="">Any</option><option value="pos">Positive EV only</option></select>
+        <label for="c-search" class="mb-note">Search</label><input id="c-search" class="mb-input" type="search" placeholder="Player, team or game">
+      </div>
+      <p class="mb-note" id="c-count"></p>
+      <div class="mb-scroll mb-tall"><table class="mb-table" id="chance-table" data-source="chances" data-row-key="rid">
+        <thead><tr>
+          <th data-field="prob" class="num">Chance %</th><th data-field="fair_odds" class="num">Fair odds</th><th data-field="odds" class="num">Best odds</th><th data-field="book">Bookie</th>
+          <th data-field="ev_pct" class="num">EV %</th><th data-field="category">Type</th><th data-field="pick">Pick</th><th data-field="game">Game</th><th data-field="tip">Tip (AEDT)</th>
+          <th data-field="verdict">Verdict</th><th data-field="all_odds">All prices</th>
+        </tr></thead>
+        <tbody></tbody></table></div>
+      <p class="mb-note" id="chance-none" hidden>Nothing in that range.</p>
+    </div>
+  </section>
+  </div>
+
+  <div class="cp-panel" data-panel="games" role="tabpanel" aria-label="Games" hidden>
+  <section class="mb-sec" id="lines">
+    <h2 class="mb-h2">Model vs Sportsbet line</h2>
+    <p class="mb-note">Home team's expected winning margin and total points. Where the dots sit close, the market and the player-based model agree; a wide gap is either an edge or news the model doesn't have.</p>
+    <div class="mb-grid">
+      <div class="mb-card"><h3>Home margin (points)</h3>
+        <div class="mb-legend"><span style="--sw: var(--cds-chart-muted)">Sportsbet line</span><span id="lg-model">Model</span></div>
+        <div class="mb-chart" id="chart-margin" data-source="games"></div></div>
+      <div class="mb-card"><h3>Total points</h3>
+        <div class="mb-legend"><span style="--sw: var(--cds-chart-muted)">Sportsbet line</span><span id="lg-model2">Model</span></div>
+        <div class="mb-chart" id="chart-total" data-source="games"></div></div>
+    </div>
+  </section>
+
+  <section class="mb-sec" id="games">
+    <h2 class="mb-h2">Game by game</h2>
+    <div class="mb-tabs" id="game-tabs" role="group" aria-label="Choose a game"></div>
+    <div class="mb-grid">
+      <div class="mb-card"><h3 id="team-h">Team ratings</h3>
+        <p class="mb-note">Points per 100 possessions. Net now = this season's results blended with the player-based rating for tonight's roster; injury adj = how much the listed absences cost.</p>
+        <div class="mb-scroll"><table class="mb-table" id="team-table" data-source="teams" data-row-key="team">
+          <thead><tr><th data-field="team">Team</th><th data-field="ortg" class="num">Off rtg</th><th data-field="drtg" class="num">Def rtg</th>
+            <th data-field="net" class="num">Net now</th><th data-field="old_net" class="num">Net before</th><th data-field="injury_adj" class="num">Injury adj</th></tr></thead>
+          <tbody></tbody></table></div></div>
+      <div class="mb-card"><h3>Injuries in these rotations</h3>
+        <p class="mb-note">Players with minutes this season who are out or day-to-day (ESPN). Day-to-day players are counted at half their minutes.</p>
+        <div class="mb-scroll"><table class="mb-table" id="inj-table" data-source="injuries" data-row-key="player">
+          <thead><tr><th data-field="player">Player</th><th data-field="team">Team</th><th data-field="pos">Pos</th><th data-field="status">Status</th>
+            <th data-field="mpg" class="num">Min/g</th><th data-field="bpm" class="num">BPM</th></tr></thead>
+          <tbody></tbody></table></div>
+        <p class="mb-note" id="inj-none" hidden>No listed injuries among players who have played this season.</p></div>
+    </div>
+    <div class="mb-card"><h3>Starting five, position by position</h3>
+      <p class="mb-note">Off/Def are each player's points produced / allowed per 100 possessions (this season blended with last). Edge = attacker's offence above league average plus the defender's rating above average; positive favours the attacker. Efficient low-usage bigs score high on Off, so read big-man edges with care.</p>
+      <div class="mb-scroll"><table class="mb-table" id="mu-table" data-source="matchups" data-row-key="key">
+        <thead><tr>
+          <th data-field="away_player" id="mu-away">Away</th><th data-field="away_pos">Pos</th><th data-field="away_status">Status</th><th data-field="away_off" class="num">Off</th><th data-field="away_def" class="num">Def</th><th data-field="away_bpm" class="num">BPM</th>
+          <th data-field="home_player" class="side" id="mu-home">Home</th><th data-field="home_pos">Pos</th><th data-field="home_status">Status</th><th data-field="home_off" class="num">Off</th><th data-field="home_def" class="num">Def</th><th data-field="home_bpm" class="num">BPM</th>
+          <th data-field="away_edge" class="num side">Away edge</th><th data-field="home_edge" class="num">Home edge</th>
+        </tr></thead>
+        <tbody></tbody></table></div></div>
+  </section>
+
+  <section class="mb-sec" id="usage">
+    <h2 class="mb-h2">Player usage vs points, assists and rebounds</h2>
+    <p class="mb-note">Usage % is the share of team plays a player finishes (shot, free throws or turnover) while on court. Across <span data-source="usage_fit" data-where="stat=pts" data-field="players" class="dash-skeleton">—</span> players with 20+ minutes a game, usage alone lines up with points per 36 minutes at r = <b data-source="usage_fit" data-where="stat=pts" data-field="correlation" class="dash-skeleton">—</b>; the rest is shooting efficiency. Assists track AST% (share of teammates' baskets he assisted) at r = <b data-source="usage_fit" data-where="stat=ast" data-field="correlation" class="dash-skeleton">—</b> and rebounds track TRB% at r = <b data-source="usage_fit" data-where="stat=reb" data-field="correlation" class="dash-skeleton">—</b>, so for assists and rebounds the questions are minutes and role, not luck.</p>
+    <div class="mb-card">
+      <h3>Usage % vs points per 36 minutes</h3>
+      <p class="mb-note">Each dot is a player (15+ min a game). The line is the league-wide fit; dots above it are scoring more than their usage suggests (efficient or running hot), dots below are scoring less. Tonight's teams are coloured by how their role changed from last season.</p>
+      <div class="mb-legend" id="sc-legend"></div>
+      <div class="mb-chart" id="chart-usage" data-source="usage usage_fit" style="min-height: 22rem"></div>
+    </div>
+    <div class="mb-card">
+      <h3>Role vs shooting, player by player</h3>
+      <p class="mb-note"><b>Role pts</b> = last season's points scaled by this season's minutes and usage, i.e. what he'd score at last year's efficiency. <b>Shooting</b> = actual points minus role pts. Usage settles within a few games; shooting takes far longer, so after 2–4 games trust a role change more than a hot or cold start. Click a header to sort.</p>
+      <div class="mb-filters">
+        <label for="u-search" class="mb-note">Search</label><input id="u-search" class="mb-input" type="search" placeholder="Player or team">
+        <label for="u-scope" class="mb-note">Show</label>
+        <select id="u-scope" class="mb-input"><option value="tonight">Today's teams</option><option value="all">All teams</option></select>
+      </div>
+      <div class="mb-scroll mb-tall"><table class="mb-table" id="usage-table" data-source="usage" data-row-key="player">
+        <thead><tr>
+          <th data-field="player" data-sort="s">Player</th><th data-field="team" data-sort="s">Team</th><th data-field="pos">Pos</th>
+          <th data-field="mpg" class="num" data-sort="n">Min</th><th data-field="usg" class="num" data-sort="n">Usg %</th><th data-field="usg_change" class="num" data-sort="n">Usg vs last yr</th>
+          <th data-field="pts" class="num" data-sort="n">Pts</th><th data-field="role_pts" class="num" data-sort="n">Role pts</th><th data-field="shooting_pts" class="num" data-sort="n">Shooting</th><th data-field="ts" class="num" data-sort="n">TS%</th>
+          <th data-field="ast" class="num" data-sort="n">Ast</th><th data-field="ast_pct" class="num" data-sort="n">AST%</th><th data-field="prev_ast_pct" class="num" data-sort="n">AST% last yr</th>
+          <th data-field="reb" class="num" data-sort="n">Reb</th><th data-field="trb_pct" class="num" data-sort="n">TRB%</th><th data-field="prev_trb_pct" class="num" data-sort="n">TRB% last yr</th>
+          <th data-field="pra" class="num" data-sort="n">P+R+A</th><th data-field="read" data-sort="s">Read</th>
+        </tr></thead>
+        <tbody></tbody></table></div>
+    </div>
+  </section>
+  </div>
+
+  <div class="cp-panel" data-panel="method" role="tabpanel" aria-label="How it works" hidden>
+  <section class="mb-sec" id="method">
+    <h2 class="mb-h2">How the numbers are made</h2>
+    <div class="mb-defs">
+      <p><b>Player ratings.</b> Basketball-Reference per-100 Off/Def rating and Box Plus/Minus (BPM). This season's 2–4 games are blended with last season's (or 2024-25 for players who missed it), weighted by minutes.</p>
+      <p><b>Team ratings.</b> Expected minutes × player BPM sets each team's net rating for tonight; missing minutes go to replacement level (−2 BPM). That prior is blended with the team's actual results so far.</p>
+      <p><b>Game projection.</b> Pace × offence vs opposing defence, plus 1.9 points home court, then adjusted for schedule: back-to-back (−2.5), rest advantage (+0.45 a day, up to 2) and distance flown (−0.3 per 1,000 miles, up to −1). A team on a back-to-back also takes 1 point off the total.</p>
+      <p><b>Market anchor.</b> The final number is 70% the bookie consensus and 30% model. The consensus averages every bookie's moneyline, half-point line and total with the margin removed (Sportsbet, TAB, Ladbrokes, PointsBet, Betr); when only one bookie prices the game it is 65% that bookie and 35% model. Only firm disagreements become bets, and a bet only exists if the bookie's price beats that fair price.</p>
+      <p><b>Probabilities.</b> Final margins are whole numbers with no draws, so margin chances come from a normal curve (SD 13.7) over whole numbers with zero left out; totals use a normal curve (SD 17.9). Bookie prices have their margin removed, and when lines differ the fair price is moved to each bookie's line on the same curve.</p>
+      <p><b>Props sanity checks.</b> Minutes freed by injuries that no regular can absorb go to the deep bench, and team scoring is never scaled more than 25% either way. A projection more than 30% from the line is marked <i>Check news</i>, not Bet.</p>
+      <p><b>Bookmakers.</b> Prices come from Sportsbet, TAB, Ladbrokes (Neds runs on the same platform and usually matches it), PointsBet and Betr, read from their public pages without logging in. Each bookie's main line is compared and the best price wins. A multi uses legs that are all priced at one bookie, because a multi can't be split across bookmakers. bet365 blocks automated reading, so it isn't included.</p>
+      <p><b>Backtest.</b> The game model was replayed on 3,744 games (2023-24 to now) using only results known before each game, then compared with DraftKings / ESPN BET / Caesars lines. Settings were tuned on 2024-25 and checked untouched on 2025-26. The model's win chances are well calibrated, but it is less accurate than the closing line and adds nothing to it; betting it at closing prices lost 8–10%. Against the <i>opening</i> line it does carry information: lines move toward the model (strongly significant), and betting openers it disagreed with by 2.5+ points won 55% (2024-25) and 52% (2025-26). So the edge is small and only exists when betting early, before the market moves. The backtest also set home court (1.9), the spreads (13.7 / 17.9) and the schedule adjustments; 3-in-4 nights and altitude did not hold up and were removed.</p>
+      <p><b>Removing the bookie's margin.</b> Every chance starts from bookie odds with the margin taken out. For games this uses the power method, which tested best on 3,736 past games: the usual "scale both sides to 100%" method under-rates favourites (bookies put more of their margin on the longshot), e.g. a 1.14 / 6.00 moneyline is 86% for the favourite, not 84%. Player props sit near 50/50, where every method gives the same answer. One-sided markets (alternate lines, "30+ points") can't be de-margined directly, so they are priced from the de-margined main line.</p>
+      <p><b>Props backtest.</b> The props model was replayed on 52,000 player lines (ESPN BET 2024-25, DraftKings 2026-27) using only box scores from earlier games. On its own it is less accurate than the bookie's price (log loss 0.699 vs 0.689) and betting it at closing prices lost about 4% (−189u over 4,400 bets in Feb–Apr 2025). It does know something the opening price doesn't: when a line moved, it moved the model's way 79–86% of the time. But betting openers was only break-even (−0.5% to +3% depending on the season and edge size). So the live model now leans on the market (log-odds weights 0.95 market / 0.34 model, wider projection spread), which means far fewer prop bets: most surviving edges come from one bookie being out of line with the others.</p>
+      <p><b>Grading the model.</b> Every pick is compared with the last fair price before tip-off (CLV), and win rates are compared with the model's own probabilities by category, so miscalibrated markets show up early.</p>
+    </div>
+  </section>
+  </div>
+</div>
+
+<script>
+(() => {
+  let chosen = null;
+  const $ = (s) => document.querySelector(s);
+  const skel = (el, on) => el && el.classList.toggle('dash-skeleton', on);
+  const fail = (box) => { box.innerHTML = ''; const d = document.createElement('div'); d.className = 'mb-fail'; d.textContent = 'Failed to load'; box.appendChild(d); };
+
+  function fillTable(tbody, rows, cols, keyCol, rowClass) {
+    tbody.innerHTML = '';
+    rows.forEach(r => {
+      const tr = document.createElement('tr');
+      tr.dataset.key = r[keyCol];
+      if (rowClass) { const c = rowClass(r); if (c) tr.className = c; }
+      cols.forEach(c => {
+        const td = document.createElement('td');
+        if (c.cls) td.className = c.cls;
+        if (c.render) c.render(td, r[c.f], r); else td.textContent = r[c.f];
+        tr.appendChild(td);
+      });
+      tbody.appendChild(tr);
+    });
+  }
+  const pill = (map) => (td, v) => { const s = document.createElement('span'); s.className = 'pill ' + (map[v] || ''); s.textContent = v; td.appendChild(s); };
+  const statusPill = pill({ 'Day-To-Day': 'dtd', 'Out': 'out' });
+  const statusCell = (td, v) => { if (v === 'Available') { td.textContent = v; td.className += ' pos'; } else statusPill(td, v); };
+  const signed = (td, v) => { const n = Number(v); td.textContent = v; td.classList.add(n >= 3 ? 'good' : n <= -3 ? 'bad' : 'pos'); };
+
+  function dumbbell(box, rows, lineKey, modelKey, fmt) {
+    box.innerHTML = '';
+    const W = box.clientWidth || 360, rowH = 30, m = { t: 8, r: 16, b: 28, l: 10 };
+    const svg = d3.select(box).append('svg').attr('width', '100%');
+    const labels = rows.map(r => r.game);
+    // measure the widest game label
+    const probe = svg.append('text').attr('font-size', 12);
+    let lw = 0; labels.forEach(t => { probe.text(t); lw = Math.max(lw, probe.node().getComputedTextLength()); }); probe.remove();
+    m.l = Math.min(lw + 12, W * 0.45);
+    const H = m.t + m.b + rows.length * rowH;
+    svg.attr('viewBox', `0 0 ${W} ${H}`).attr('height', H);
+    const vals = rows.flatMap(r => [Number(r[lineKey]), Number(r[modelKey])]);
+    const ext = d3.extent(vals); const pad = (ext[1] - ext[0]) * 0.08 || 2;
+    const x = d3.scaleLinear([ext[0] - pad, ext[1] + pad], [m.l, W - m.r]).nice();
+    const y = d3.scaleBand(labels, [m.t, H - m.b]).padding(0.3);
+    svg.append('g').selectAll('line').data(x.ticks(Math.max(2, Math.floor((W - m.l) / 70)))).join('line')
+      .attr('x1', d => x(d)).attr('x2', d => x(d)).attr('y1', m.t).attr('y2', H - m.b).attr('stroke', 'var(--cds-chart-grid)');
+    if (x.domain()[0] < 0 && x.domain()[1] > 0) svg.append('line').attr('x1', x(0)).attr('x2', x(0)).attr('y1', m.t).attr('y2', H - m.b).attr('stroke', 'var(--cds-chart-reference)');
+    const ax = svg.append('g').attr('transform', `translate(0,${H - m.b})`).call(d3.axisBottom(x).ticks(Math.max(2, Math.floor((W - m.l) / 70))).tickSize(0).tickPadding(8));
+    ax.attr('font-size', null).attr('font-family', null); ax.select('.domain').remove(); ax.selectAll('text').attr('fill', 'var(--color-fg-muted)').style('font-size', '12px');
+    svg.append('g').selectAll('text').data(rows).join('text').attr('x', m.l - 10).attr('y', r => y(r.game) + y.bandwidth() / 2).attr('dy', '0.35em')
+      .attr('text-anchor', 'end').attr('fill', r => r.game === chosen ? 'var(--color-fg)' : 'var(--color-fg-muted)').style('font-size', '12px').style('font-weight', r => r.game === chosen ? 600 : 400).text(r => r.game);
+    const g = svg.append('g').selectAll('g').data(rows).join('g');
+    g.append('line').attr('x1', r => x(Number(r[lineKey]))).attr('x2', r => x(Number(r[modelKey]))).attr('y1', r => y(r.game) + y.bandwidth() / 2).attr('y2', r => y(r.game) + y.bandwidth() / 2)
+      .attr('stroke', 'var(--cds-chart-muted)').attr('stroke-width', 2).attr('stroke-linecap', 'round');
+    g.append('circle').attr('cx', r => x(Number(r[lineKey]))).attr('cy', r => y(r.game) + y.bandwidth() / 2).attr('r', 5).attr('fill', 'var(--cds-chart-muted)');
+    g.append('circle').attr('cx', r => x(Number(r[modelKey]))).attr('cy', r => y(r.game) + y.bandwidth() / 2).attr('r', 5).attr('fill', dash.colors[0]);
+    const tip = d3.select(box).append('div').attr('class', 'mb-tip').style('display', 'none');
+    g.append('rect').attr('x', m.l).attr('width', W - m.l - m.r).attr('y', r => y(r.game) - 4).attr('height', y.bandwidth() + 8).attr('fill', 'transparent')
+      .on('mousemove', (ev, r) => {
+        tip.style('display', null).html('');
+        tip.append('div').attr('class', 't').text(r.game);
+        tip.append('div').text(`Sportsbet ${fmt(r[lineKey])}`);
+        tip.append('div').text(`Model ${fmt(r[modelKey])}`);
+        const [px, py] = d3.pointer(ev, box); const tw = tip.node().offsetWidth;
+        tip.style('left', Math.min(Math.max(0, px + 12), W - tw) + 'px').style('top', (py + 12) + 'px');
+      })
+      .on('mouseleave', () => tip.style('display', 'none'))
+      .on('click', (ev, r) => { chosen = r.game; draw(); });
+  }
+
+  function draw() {
+    const G = dash.data('games'), B = dash.data('bets'), T = dash.data('teams'), I = dash.data('injuries'), M = dash.data('matchups');
+    $('#lg-model').style.setProperty('--sw', dash.colors[0]);
+    $('#lg-model2').style.setProperty('--sw', dash.colors[0]);
+
+    // bets
+    const bt = $('#bets-table tbody');
+    if (B.status === 'ok') {
+      fillBookSelect($('#b-book'), BOOKS);
+      const bb = $('#b-book').value, brows = atBook(B.data, bb, 'model_prob');
+      $('#b-book-note').textContent = bb ? `${bb}'s own lines and prices; Bet / Pass judged at ${bb}'s odds.` : '';
+      fillTable(bt, brows, [
+        { f: 'rank', cls: 'num' }, { f: 'verdict', render: pill({ 'Bet': 'bet', 'Check news': 'check', 'Pass': 'pass' }) },
+        { f: 'game' }, { f: 'bet' }, { f: 'odds', cls: 'num' }, { f: 'book' }, { f: 'model_prob', cls: 'num' }, { f: 'market_prob', cls: 'num' },
+        { f: 'ev_pct', cls: 'num' }, { f: 'stake_pct', cls: 'num' }, { f: 'reason', cls: 'why' }, { f: 'all_odds', cls: 'why' }
+      ], 'rank', r => r.verdict === 'Pass' ? 'pass' : '');
+    } else if (B.status === 'error') { bt.innerHTML = '<tr><td colspan="12"><div class="mb-fail">Failed to load</div></td></tr>'; }
+
+    // charts + tabs
+    const cm = $('#chart-margin'), ct = $('#chart-total');
+    if (G.status === 'ok') {
+      if (!chosen) chosen = G.data[0].game;
+      dumbbell(cm, G.data, 'line_home_margin', 'model_home_margin', v => { const n = Number(v); return (n > 0 ? 'home by ' : n < 0 ? 'away by ' : 'level ') + Math.abs(n); });
+      dumbbell(ct, G.data, 'line_total', 'model_total', v => String(v));
+      const tabs = $('#game-tabs'); tabs.innerHTML = '';
+      G.data.forEach(r => {
+        const b = document.createElement('button'); b.className = 'mb-tab'; b.type = 'button';
+        b.textContent = `${r.game} · ${r.tip_aedt}`; b.setAttribute('aria-pressed', r.game === chosen);
+        b.addEventListener('click', () => { chosen = r.game; draw(); }); tabs.appendChild(b);
+      });
+    } else if (G.status === 'error') { fail(cm); fail(ct); }
+
+    if (!chosen) return;
+    const [aw, hm] = chosen.split(' @ ');
+    $('#team-h').textContent = `Team ratings · ${chosen}`;
+    $('#mu-away').textContent = aw; $('#mu-home').textContent = hm;
+
+    if (T.status === 'ok') {
+      fillTable($('#team-table tbody'), T.data.filter(r => r.game === chosen), [
+        { f: 'team' }, { f: 'ortg', cls: 'num' }, { f: 'drtg', cls: 'num' }, { f: 'net', cls: 'num' }, { f: 'old_net', cls: 'num' },
+        { f: 'injury_adj', cls: 'num', render: (td, v) => { td.textContent = v; const n = Number(v); if (n <= -1) td.classList.add('bad'); } }
+      ], 'team');
+    }
+    if (I.status === 'ok') {
+      const rows = I.data.filter(r => r.game === chosen);
+      fillTable($('#inj-table tbody'), rows, [
+        { f: 'player' }, { f: 'team' }, { f: 'pos', cls: 'pos' }, { f: 'status', render: statusPill }, { f: 'mpg', cls: 'num' }, { f: 'bpm', cls: 'num' }
+      ], 'player');
+      $('#inj-table').hidden = rows.length === 0; $('#inj-none').hidden = rows.length !== 0;
+    }
+    if (M.status === 'ok') {
+      fillTable($('#mu-table tbody'), M.data.filter(r => r.game === chosen), [
+        { f: 'away_player' }, { f: 'away_pos', cls: 'pos' }, { f: 'away_status', render: statusCell }, { f: 'away_off', cls: 'num' }, { f: 'away_def', cls: 'num' }, { f: 'away_bpm', cls: 'num' },
+        { f: 'home_player', cls: 'side' }, { f: 'home_pos', cls: 'pos' }, { f: 'home_status', render: statusCell }, { f: 'home_off', cls: 'num' }, { f: 'home_def', cls: 'num' }, { f: 'home_bpm', cls: 'num' },
+        { f: 'away_edge', cls: 'num side', render: signed }, { f: 'home_edge', cls: 'num', render: signed }
+      ], 'key');
+    }
+    const cmBox = $('#chart-margin'); if (G.status === 'ok') { /* highlight handled in dumbbell */ }
+  }
+
+  // ---------- header facts ----------
+  function drawMeta() {
+    const M = dash.data('meta');
+    document.querySelectorAll('[data-source="meta"]').forEach(el => {
+      if (M.status === 'ok' && M.data[0]) { el.textContent = M.data[0][el.dataset.field]; skel(el, false); }
+      else if (M.status !== 'loading') skel(el, false);
+    });
+    if (M.status === 'ok' && M.data[0]) TONIGHT = new Set(String(M.data[0].teams_today || '').split(' ').filter(Boolean));
+  }
+
+  // ---------- best of today ----------
+  dash.calc('best_summary', {
+    inputs: ['best'],
+    title: 'Categories with a bet',
+    description: 'Counts the categories whose best pick clears the value bar.',
+    fn: (best) => [{ n_bet: best.filter(b => b.verdict === 'Bet').length, n_cat: best.length }]
+  });
+  const VERDICT = { 'Bet': 'bet', 'Lean': 'lean', 'Check': 'check', 'No value': 'pass', 'None': 'pass', 'Daily': 'lean' };
+  function goTo(link) {
+    if (!link) return;
+    const target = link.startsWith('prop:') ? 'props' : link === 'multi80' ? 'chance' : link === 'multi' ? 'track' : 'bets';
+    showFor(document.getElementById(target));
+    if (link.startsWith('prop:')) {
+      $('#p-show').value = 'all'; $('#p-stat').value = ''; $('#p-search').value = link.slice(5); drawProps();
+      const el = $('#props'); el.scrollIntoView({ behavior: 'smooth' }); dash.setLink('props');
+    } else if (link === 'multi80') {
+      $('#c-min').value = 80; $('#c-max').value = 100; $('#c-cat').value = ''; $('#c-search').value = ''; drawChance();
+      const el = $('#chance'); el.scrollIntoView({ behavior: 'smooth' }); dash.setLink('chance');
+    } else if (link === 'multi') {
+      const el = $('#track'); el.scrollIntoView({ behavior: 'smooth' }); dash.setLink('track');
+    } else {
+      const el = $('#bets'); el.scrollIntoView({ behavior: 'smooth' }); dash.setLink('bets');
+    }
+  }
+  // ---------- Today: slip, 80% multi, games ----------
+  const fmtU = (n) => (n >= 0 ? '+' : '−') + Math.abs(n).toFixed(2) + 'u';
+  dash.calc('today_stats', {
+    inputs: ['history', 'meta'],
+    title: 'Today at a glance',
+    description: "Today's logged bets and multis, units staked today, the last settled day's profit, and the running total (multi legs logged at 0u are left out).",
+    fn: (history, meta) => {
+      const d = meta[0] ? meta[0].date : '';
+      const real = history.filter(h => h.category !== 'Multi leg');
+      const today = real.filter(h => h.date === d);
+      const multis = today.filter(h => h.kind === 'multi').length;
+      const staked = today.reduce((t, h) => t + (Number(h.stake_u) || 0), 0);
+      const settled = real.filter(h => ['win', 'loss', 'push', 'void'].includes(h.result));
+      const days = [...new Set(settled.map(h => h.date))].sort();
+      const last = days[days.length - 1];
+      const lastPl = settled.filter(h => h.date === last).reduce((t, h) => t + (Number(h.profit_u) || 0), 0);
+      const run = settled.length ? Number(settled[settled.length - 1].running_u || 0) : 0;
+      return [{ bets: `${today.length - multis}${multis ? ' + ' + multis + (multis > 1 ? ' multis' : ' multi') : ''}`,
+        staked: staked.toFixed(1) + 'u', last_day: last ? `${(lastPl >= 0 ? '+' : '−') + Math.abs(lastPl).toFixed(2)}u` : 'none yet',
+        running: (run >= 0 ? '+' : '−') + Math.abs(run).toFixed(2) + 'u' }];
+    }
+  });
+  dash.calc('slip', {
+    inputs: ['best'],
+    title: 'Fair odds and value tag',
+    description: "For each category's pick: the fair odds its chance is worth (100 / chance %) and whether the price beats it.",
+    fn: (best) => best.filter(b => b.prob !== '' && Number(b.prob) > 0).map(b => {
+      const fair = 100 / Number(b.prob), ev = Number(b.ev_pct);
+      return { category: b.category, fair: fair.toFixed(2), value: ev > 0 ? `Good value · fair ${fair.toFixed(2)}` : `Overpriced · fair ${fair.toFixed(2)}` };
+    })
+  });
+  dash.calc('multi80_legs', {
+    inputs: ['best'],
+    title: '80% multi legs',
+    description: "The 80% multi's legs with each leg's odds and chance, read from its pick and reason.",
+    fn: (best) => {
+      const m = best.find(b => b.category === '80% multi' && b.odds !== '');
+      if (!m) return [];
+      const legs = m.pick.split(' + ');
+      const ch = ((m.reason.match(/chance \(([^)]*)\)/) || [])[1] || '').split(',').map(s => s.trim());
+      const od = ((m.reason.match(/\(([\d.]+(?: x [\d.]+)+)\)/) || [])[1] || '').split(' x ');
+      return legs.map((p, k) => ({ leg: p, odds: od[k] || '', chance: ch[k] || '' }));
+    }
+  });
+  function toast(msg) { const t = document.createElement('div'); t.className = 'cp-toast'; t.setAttribute('role', 'status'); t.textContent = msg; document.body.appendChild(t); setTimeout(() => t.remove(), 1600); }
+  function copyText(txt) {
+    const done = () => toast('Copied: ' + txt);
+    const fallback = () => { const ta = document.createElement('textarea'); ta.value = txt; ta.style.position = 'fixed'; ta.style.opacity = '0'; document.body.appendChild(ta); ta.select(); try { document.execCommand('copy'); done(); } catch (e) { toast(txt); } ta.remove(); };
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(txt).then(done, fallback); else fallback();
+  }
+  let showLeans = false;
+  $('#best-more').addEventListener('click', () => { showLeans = !showLeans; drawBest(); });
+  function drawBest() {
+    const S = dash.data('best_summary');
+    document.querySelectorAll('[data-source="best_summary"]').forEach(el => {
+      if (S.status === 'ok' && S.data[0]) { el.textContent = S.data[0][el.dataset.field]; skel(el, false); }
+      else if (S.status !== 'loading') skel(el, false);
+    });
+    const TS = dash.data('today_stats');
+    document.querySelectorAll('[data-source="today_stats"]').forEach(el => { el.textContent = TS.status === 'ok' && TS.data[0] ? TS.data[0][el.dataset.field] : '—'; });
+    const B = dash.data('best'), SL = dash.data('slip'), G = dash.data('games'), box = $('#best-cards');
+    if (B.status === 'error') { fail(box); return; }
+    if (B.status !== 'ok') return;
+    const tips = {}; if (G.status === 'ok') G.data.forEach(g => { tips[g.game] = g.tip_aedt; });
+    const slip = {}; if (SL.status === 'ok') SL.data.forEach(s => { slip[s.category] = s; });
+    const rows = B.data.filter(r => r.category !== '80% multi' && r.odds !== '');
+    const bets = rows.filter(r => r.verdict === 'Bet'), leans = rows.filter(r => r.verdict !== 'Bet');
+    $('#best-more').hidden = leans.length === 0;
+    $('#best-more').textContent = showLeans ? 'Hide the leans' : `Show ${leans.length} lean${leans.length === 1 ? '' : 's'} too (below the value bar)`;
+    box.innerHTML = '';
+    const list = showLeans ? bets.concat(leans) : bets;
+    if (!list.length) { const d = document.createElement('div'); d.className = 'cp-meta'; d.textContent = 'No bet clears the value bar yet today.'; box.appendChild(d); }
+    for (const r of list) {
+      const where = 'category=' + encodeURIComponent(r.category);
+      const mark = (el, f, src) => { el.dataset.source = src || 'best'; el.dataset.where = where; el.dataset.field = f; return el; };
+      const c = document.createElement('article'); c.className = 'cp-card' + (r.verdict === 'Bet' ? '' : ' is-lean');
+      const top = document.createElement('div'); top.className = 'cp-card-top';
+      const cat = mark(document.createElement('span'), 'category'); cat.textContent = r.category;
+      const vd = mark(document.createElement('span'), 'verdict'); vd.className = 'pill ' + (VERDICT[r.verdict] || 'pass'); vd.textContent = r.verdict;
+      const g = document.createElement('span'); g.className = 'g'; const gg = mark(document.createElement('span'), 'game'); gg.textContent = r.game;
+      g.append(gg); if (tips[r.game]) g.append(document.createTextNode(' · ' + tips[r.game]));
+      top.append(cat); if (r.verdict !== 'Bet') top.append(vd); top.append(g);
+      const mid = document.createElement('div'); mid.className = 'cp-card-mid';
+      const pick = mark(document.createElement('div'), 'pick'); pick.className = 'cp-pick'; pick.textContent = r.pick;
+      const price = document.createElement('div'); price.className = 'cp-price';
+      const od = mark(document.createElement('div'), 'odds'); od.className = 'cp-odds'; od.textContent = Number(r.odds).toFixed(2);
+      const bk = mark(document.createElement('div'), 'book'); bk.className = 'cp-book'; bk.textContent = r.book;
+      price.append(od, bk); mid.append(pick, price);
+      const row = document.createElement('div'); row.className = 'cp-row';
+      const s = slip[r.category];
+      if (s) { const tag = document.createElement('span'); tag.className = 'cp-tag' + (Number(r.ev_pct) > 0 ? '' : ' bad'); tag.dataset.source = 'slip'; tag.dataset.where = where; tag.dataset.field = 'value'; tag.textContent = s.value; row.append(tag); }
+      const meta = document.createElement('span'); meta.className = 'cp-meta';
+      const pr = mark(document.createElement('span'), 'prob'); pr.textContent = r.prob + '%';
+      const st = mark(document.createElement('span'), 'stake_pct'); st.textContent = (r.stake_pct === '' ? '0' : r.stake_pct) + 'u';
+      meta.append(document.createTextNode('Our chance '), pr, document.createTextNode(' · Stake '), st);
+      const whyB = document.createElement('button'); whyB.type = 'button'; whyB.className = 'cp-btn ghost'; whyB.textContent = 'Why';
+      const copy = document.createElement('button'); copy.type = 'button'; copy.className = 'cp-btn'; copy.textContent = 'Copy bet';
+      copy.setAttribute('aria-label', `Copy ${r.pick} at ${r.odds} with ${r.book}`);
+      copy.addEventListener('click', () => copyText(`${r.pick} @ ${Number(r.odds).toFixed(2)} (${r.book})`));
+      row.append(meta, copy, whyB);
+      const why = mark(document.createElement('div'), 'reason'); why.className = 'cp-why'; why.textContent = r.reason; why.hidden = true;
+      if (r.all_odds) { const ao = mark(document.createElement('div'), 'all_odds'); ao.textContent = 'Every price: ' + r.all_odds; why.append(document.createElement('br'), ao); }
+      whyB.setAttribute('aria-expanded', 'false');
+      whyB.addEventListener('click', () => { why.hidden = !why.hidden; whyB.setAttribute('aria-expanded', String(!why.hidden)); whyB.textContent = why.hidden ? 'Why' : 'Hide'; });
+      c.append(top, mid, row, why);
+      box.appendChild(c);
+    }
+    // 80% multi
+    const m = B.data.find(r => r.category === '80% multi'), L = dash.data('multi80_legs'), legsBox = $('#m80-legs');
+    const mm = (id, f) => { const el = $(id); el.dataset.source = 'best'; el.dataset.where = 'category=' + encodeURIComponent('80% multi'); el.dataset.field = f; return el; };
+    if (!m || m.odds === '') {
+      $('#m80-odds').textContent = '—'; $('#m80-prob').textContent = '—'; $('#m80-ev').textContent = '—';
+      $('#m80-sub').textContent = m ? m.pick : 'No 80% multi today'; legsBox.innerHTML = ''; $('#m80-copy').hidden = true;
+    } else {
+      mm('#m80-odds', 'odds').textContent = Number(m.odds).toFixed(2);
+      mm('#m80-prob', 'prob').textContent = m.prob + '%';
+      const ev = mm('#m80-ev', 'ev_pct'); ev.textContent = (Number(m.ev_pct) > 0 ? '+' : '') + m.ev_pct + '%'; ev.style.color = Number(m.ev_pct) > 0 ? '#8DBBFF' : '#FFB37F';
+      $('#m80-sub').textContent = `Every leg 80%+ · one per game · all at ${m.book} · ${m.stake_pct}u`;
+      $('#m80-copy').hidden = false;
+      $('#m80-copy').onclick = () => copyText(`${m.pick} @ ${Number(m.odds).toFixed(2)} (${m.book})`);
+      legsBox.innerHTML = '';
+      if (L.status === 'ok') L.data.forEach((l, k) => {
+        const d = document.createElement('div'); d.className = 'cp-leg';
+        const p = document.createElement('div'); p.className = 'p'; p.dataset.source = 'multi80_legs'; p.dataset.row = k; p.dataset.field = 'leg'; p.textContent = l.leg;
+        const o = document.createElement('div'); o.className = 'o'; o.textContent = [l.odds, l.chance].filter(Boolean).join(' · ');
+        d.append(p, o); legsBox.appendChild(d);
+      });
+    }
+  }
+  function drawTodayGames() {
+    const G = dash.data('games'), H = dash.data('history'), M = dash.data('meta'), box = $('#today-games');
+    if (G.status === 'error') { fail(box); return; }
+    if (G.status !== 'ok') return;
+    const d = M.status === 'ok' && M.data[0] ? M.data[0].date : '';
+    const now = new Intl.DateTimeFormat('en-CA', { timeZone: 'Australia/Sydney', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', hour12: false }).format(new Date()).replace(',', '');
+    const byGame = {};
+    if (H.status === 'ok') H.data.filter(h => h.date === d && h.category !== 'Multi leg' && h.kind !== 'multi').forEach(h => { (byGame[h.game] = byGame[h.game] || []).push(h.pick); });
+    box.innerHTML = '';
+    G.data.slice().sort((a, b) => String(a.tip_aedt).localeCompare(String(b.tip_aedt))).forEach(g => {
+      const [aw, hm] = g.game.split(' @ ');
+      const hmg = Number(g.line_home_margin), fav = hmg >= 0 ? hm : aw;
+      const btn = document.createElement('button'); btn.type = 'button';
+      const bets = byGame[g.game] || [];
+      const started = d && g.tip_aedt && `${d} ${g.tip_aedt}` <= now;
+      btn.className = 'cp-game' + (bets.length ? ' has-bet' : '') + (started ? ' started' : '');
+      const t = document.createElement('div'); t.className = 't';
+      const tip = document.createElement('span'); tip.textContent = (g.tip_aedt || '') + (started ? ' · started' : '');
+      const ln = document.createElement('span'); ln.textContent = `${fav} −${Math.abs(hmg)} · ${g.line_total}`;
+      t.append(tip, ln);
+      const n = document.createElement('div'); n.className = 'n'; n.append(document.createTextNode(aw + ' '), Object.assign(document.createElement('i'), { textContent: '@' }), document.createTextNode(' ' + hm));
+      const b = document.createElement('div'); b.className = 'b'; b.textContent = bets.length ? bets.slice(0, 3).join(' · ') + (bets.length > 3 ? ` · +${bets.length - 3} more` : '') : 'No bets';
+      btn.append(t, n, b);
+      btn.setAttribute('aria-label', `${g.game}, ${g.tip_aedt}, ${bets.length} bets. Open game details`);
+      btn.addEventListener('click', () => { chosen = g.game; showTab('games'); draw(); const el = $('#games'); if (el) el.scrollIntoView({ behavior: 'smooth' }); dash.setLink('games'); });
+      box.appendChild(btn);
+    });
+  }
+  // ---------- tabs ----------
+  let redrawAll = () => {};
+  function showTab(name) {
+    document.querySelectorAll('.cp-tab').forEach(t => t.setAttribute('aria-selected', String(t.dataset.tab === name)));
+    document.querySelectorAll('.cp-panel').forEach(p => { p.hidden = p.dataset.panel !== name; });
+    redrawAll();
+  }
+  function showFor(el) { const p = el && el.closest('.cp-panel'); if (p) showTab(p.dataset.panel); }
+  document.querySelectorAll('.cp-tab').forEach(t => t.addEventListener('click', () => { showTab(t.dataset.tab); dash.setLink(t.dataset.tab); }));
+  document.querySelectorAll('.cp-link').forEach(b => b.addEventListener('click', () => {
+    const el = document.getElementById(b.dataset.go); showFor(el); if (el) { el.scrollIntoView({ behavior: 'smooth' }); dash.setLink(el.id); }
+  }));
+
+  // ---------- track record ----------
+  const settledRes = new Set(['win', 'loss', 'push', 'void']);
+  const withClv = (rows) => rows.filter(h => h.clv_pct !== '' && h.clv_pct != null && !isNaN(Number(h.clv_pct)));
+  const clvAvg = (rows) => { const c = withClv(rows); if (!c.length) return '—'; const a = c.reduce((t, h) => t + Number(h.clv_pct), 0) / c.length; return (a >= 0 ? '+' : '') + a.toFixed(1) + '%'; };
+  const clvBeat = (rows) => { const c = withClv(rows); return c.length ? Math.round(c.filter(h => Number(h.clv_pct) > 0).length / c.length * 100) + '% of ' + c.length : '—'; };
+  dash.calc('track', {
+    inputs: ['history'],
+    title: 'Ledger totals',
+    description: 'Settled bets, won–lost, running total (units), units staked on settled wins and losses, return on stakes, bets and units still waiting to settle, average closing-line value and share of bets that beat the close.',
+    fn: (history) => {
+      history = history.filter(h => h.category !== 'Multi leg');   // legs of the 80% multi are logged at 0u for grading only
+      const s = history.filter(h => ['win', 'loss', 'push', 'void'].includes(h.result));
+      const w = s.filter(h => h.result === 'win').length, l = s.filter(h => h.result === 'loss').length;
+      const pl = s.reduce((t, h) => t + (Number(h.profit_u) || 0), 0);
+      const staked = s.filter(h => h.result === 'win' || h.result === 'loss').reduce((t, h) => t + (Number(h.stake_u) || 0), 0);
+      const open = history.filter(h => h.result === 'pending');
+      return [{ settled: s.length, record: `${w}–${l}`, pl: (pl >= 0 ? '+' : '') + pl.toFixed(2) + 'u',
+        staked: staked.toFixed(2) + 'u',
+        roi: staked ? (pl / staked * 100 >= 0 ? '+' : '') + (pl / staked * 100).toFixed(1) + '%' : '—',
+        pending: open.length, at_risk: open.reduce((t, h) => t + (Number(h.stake_u) || 0), 0).toFixed(2) + 'u',
+        clv: clvAvg(history), beat: clvBeat(history) }];
+    }
+  });
+  dash.calc('track_best', {
+    inputs: ['history'],
+    title: 'Best-of-day record',
+    description: "Only the day's best pick per category and the multis (flagged best = 1): picks, settled, won–lost, profit, return on stakes and average closing-line value.",
+    fn: (history) => {
+      const H = history.filter(h => h.best === '1');
+      const s = H.filter(h => ['win', 'loss', 'push', 'void'].includes(h.result)), wl = s.filter(h => h.result === 'win' || h.result === 'loss');
+      const w = s.filter(h => h.result === 'win').length, pl = s.reduce((t, h) => t + (Number(h.profit_u) || 0), 0);
+      const st = wl.reduce((t, h) => t + (Number(h.stake_u) || 0), 0);
+      return [{ picks: H.length, settled: s.length, record: `${w}–${wl.length - w}`, pl: (pl >= 0 ? '+' : '−') + Math.abs(pl).toFixed(2) + 'u',
+        roi: st ? (pl / st * 100 >= 0 ? '+' : '') + (pl / st * 100).toFixed(1) + '%' : '—', clv: clvAvg(H) }];
+    }
+  });
+  dash.calc('track_cat', {
+    inputs: ['history'],
+    title: 'Ledger by category',
+    description: 'Settled bets, won–lost, units staked, profit (units), return on stakes, average model win probability vs actual win rate, and average closing-line value for each category.',
+    fn: (history) => {
+      const cats = ['Moneyline', 'Line', 'Total', 'Points', 'Rebounds', 'Assists', 'P+R+A', 'Alt line', 'Multi', '80% multi'];
+      return cats.map(c => {
+        const s = history.filter(h => h.category === c && ['win', 'loss', 'push', 'void'].includes(h.result));
+        const w = s.filter(h => h.result === 'win').length, l = s.filter(h => h.result === 'loss').length;
+        const pl = s.reduce((t, h) => t + (Number(h.profit_u) || 0), 0);
+        const st = s.filter(h => h.result === 'win' || h.result === 'loss').reduce((t, h) => t + (Number(h.stake_u) || 0), 0);
+        const wl = s.filter(h => h.result === 'win' || h.result === 'loss');
+        const mp = wl.length ? wl.reduce((t, h) => t + Number(h.prob), 0) / wl.length : null;
+        const cv = withClv(history.filter(h => h.category === c));
+        return { category: c, bets: s.length, record: `${w}–${l}`, staked: +st.toFixed(2), pl: +pl.toFixed(2), roi: st ? +(pl / st * 100).toFixed(1) : '',
+          model_win: wl.length ? `${mp.toFixed(0)} / ${(w / wl.length * 100).toFixed(0)}` : '—',
+          clv: cv.length ? +(cv.reduce((t, h) => t + Number(h.clv_pct), 0) / cv.length).toFixed(1) : '' };
+      });
+    }
+  });
+  dash.calc('track_book', {
+    inputs: ['history'],
+    title: 'Ledger by bookie',
+    description: 'For each bookmaker the bet was logged at: bets, settled, won–lost, units staked, profit (units), return on stakes, units still waiting to settle, and average closing-line value.',
+    fn: (history) => {
+      history = history.filter(h => h.category !== 'Multi leg');
+      const books = [...new Set(history.map(h => h.book || 'Sportsbet'))].sort();
+      return books.map(b => {
+        const H = history.filter(h => (h.book || 'Sportsbet') === b);
+        const s = H.filter(h => settledRes.has(h.result)), wl = s.filter(h => h.result === 'win' || h.result === 'loss');
+        const w = s.filter(h => h.result === 'win').length;
+        const pl = s.reduce((t, h) => t + (Number(h.profit_u) || 0), 0), st = wl.reduce((t, h) => t + (Number(h.stake_u) || 0), 0);
+        const cv = withClv(H);
+        return { book: b, bets: H.length, settled: s.length, record: `${w}–${wl.length - w}`, staked: +st.toFixed(2), pl: +pl.toFixed(2),
+          roi: st ? +(pl / st * 100).toFixed(1) : '', pending_u: +H.filter(h => h.result === 'pending').reduce((t, h) => t + (Number(h.stake_u) || 0), 0).toFixed(2),
+          clv: cv.length ? +(cv.reduce((t, h) => t + Number(h.clv_pct), 0) / cv.length).toFixed(1) : '' };
+      });
+    }
+  });
+  // bookie filter helpers: a bookie's own price for a row (its best price, or from the "all prices" list)
+  const BOOKS = ['Sportsbet', 'TAB', 'Ladbrokes', 'PointsBet', 'Betr'];
+  const priceAt = (r, bk) => {
+    if (r.book === bk) return Number(r.odds);
+    const m = String(r.all_odds || '').split(' (other lines')[0].match(new RegExp(bk + ' (\\d+\\.\\d+)'));
+    return m ? Number(m[1]) : null;
+  };
+  function fillBookSelect(sel, books) {
+    const cur = sel.value, first = sel.options[0].outerHTML;
+    sel.innerHTML = first + books.map(b => `<option value="${b}">${b}</option>`).join('');
+    sel.value = books.includes(cur) ? cur : '';
+  }
+  // the models write one view per bookie: "best" = best price anywhere, otherwise that bookie's own
+  // lines and prices, each judged (EV, Bet/Pass) at that bookie's price
+  function atBook(rows, bk, probField) {
+    if (rows.length && rows[0].view !== undefined) {
+      const v = bk || 'best';
+      return rows.filter(r => (r.view || 'best') === v);
+    }
+    if (!bk) return rows;                       // older data without views: re-price from the "all prices" list
+    return rows.map(r => {
+      const o = priceAt(r, bk); if (!o) return null;
+      const ev = +((Number(r[probField]) / 100 * o - 1) * 100).toFixed(1);
+      return Object.assign({}, r, { odds: o.toFixed(2), book: bk, ev_pct: ev, verdict: r.verdict === 'Bet' && ev <= 0 ? 'Pass' : r.verdict });
+    }).filter(Boolean).sort((a, b) => b.ev_pct - a.ev_pct);
+  }
+  function drawTrackChart(box, rows) {
+    box.innerHTML = '';
+    const W = box.clientWidth || 360, H = 220, m = { t: 12, r: 64, b: 28, l: 44 };
+    const svg = d3.select(box).append('svg').attr('width', '100%').attr('height', H).attr('viewBox', `0 0 ${W} ${H}`);
+    const pts = [{ n: 0, cum: 0, r: null }].concat(rows.map((r, i) => ({ n: i + 1, cum: Number(r.running_u), r })));
+    const x = d3.scaleLinear([0, Math.max(1, pts.length - 1)], [m.l, W - m.r]);
+    const ext = d3.extent(pts, p => p.cum); const pad = Math.max(0.5, (ext[1] - ext[0]) * 0.15);
+    const y = d3.scaleLinear([Math.min(0, ext[0]) - pad, Math.max(0, ext[1]) + pad], [H - m.b, m.t]).nice();
+    svg.append('g').selectAll('line').data(y.ticks(5)).join('line').attr('x1', m.l).attr('x2', W - m.r).attr('y1', d => y(d)).attr('y2', d => y(d)).attr('stroke', 'var(--cds-chart-grid)');
+    svg.append('line').attr('x1', m.l).attr('x2', W - m.r).attr('y1', y(0)).attr('y2', y(0)).attr('stroke', 'var(--cds-chart-reference)');
+    const ay = svg.append('g').attr('transform', `translate(${m.l},0)`).call(d3.axisLeft(y).ticks(5).tickSize(0).tickPadding(6).tickFormat(d => d + 'u'));
+    const ax = svg.append('g').attr('transform', `translate(0,${H - m.b})`).call(d3.axisBottom(x).ticks(Math.min(pts.length - 1, Math.max(2, Math.floor((W - m.l - m.r) / 60)))).tickFormat(d3.format('d')).tickSize(0).tickPadding(8));
+    [ax, ay].forEach(a => { a.attr('font-size', null).attr('font-family', null); a.select('.domain').remove(); a.selectAll('text').attr('fill', 'var(--color-fg-muted)').style('font-size', '12px'); });
+    svg.append('text').attr('x', W - m.r).attr('y', H - 4).attr('text-anchor', 'end').attr('fill', 'var(--color-fg-muted)').style('font-size', '12px').text('bets settled');
+    const line = d3.line().x(p => x(p.n)).y(p => y(p.cum));
+    svg.append('path').datum(pts).attr('d', line).attr('fill', 'none').attr('stroke', dash.colors[0]).attr('stroke-width', 2).attr('stroke-linecap', 'round').attr('stroke-linejoin', 'round');
+    const last = pts[pts.length - 1];
+    svg.append('circle').attr('cx', x(last.n)).attr('cy', y(last.cum)).attr('r', 4).attr('fill', dash.colors[0]);
+    svg.append('text').attr('x', x(last.n) + 8).attr('y', y(last.cum)).attr('dy', '0.35em').attr('fill', 'var(--color-fg)').style('font-size', '12px').text((last.cum >= 0 ? '+' : '') + last.cum.toFixed(2) + 'u');
+    const tip = d3.select(box).append('div').attr('class', 'mb-tip').style('display', 'none');
+    const dot = svg.append('circle').attr('r', 4).attr('fill', dash.colors[0]).style('display', 'none');
+    svg.append('rect').attr('x', m.l).attr('y', m.t).attr('width', W - m.l - m.r).attr('height', H - m.t - m.b).attr('fill', 'transparent')
+      .on('mousemove', (ev) => {
+        const [px] = d3.pointer(ev); const n = Math.max(1, Math.min(pts.length - 1, Math.round(x.invert(px)))); const p = pts[n]; if (!p || !p.r) return;
+        dot.style('display', null).attr('cx', x(p.n)).attr('cy', y(p.cum));
+        tip.style('display', null).html('');
+        tip.append('div').attr('class', 't').text(`Bet ${p.n} · ${p.r.posted}`);
+        tip.append('div').text(`${p.r.pick} @ ${p.r.odds}`);
+        tip.append('div').text(`${p.r.result}, ${Number(p.r.profit_u) >= 0 ? '+' : ''}${p.r.profit_u}u → running ${p.cum >= 0 ? '+' : ''}${p.cum.toFixed(2)}u`);
+        const [bx, by] = d3.pointer(ev, box); const tw = tip.node().offsetWidth;
+        tip.style('left', Math.min(Math.max(0, bx + 12), W - tw) + 'px').style('top', (by + 12) + 'px');
+      })
+      .on('mouseleave', () => { tip.style('display', 'none'); dot.style('display', 'none'); });
+  }
+  function drawTrack() {
+    const TB = dash.data('track_best');
+    document.querySelectorAll('[data-source="track_best"]').forEach(el => { el.textContent = TB.status === 'ok' && TB.data[0] ? TB.data[0][el.dataset.field] : '—'; });
+    const T = dash.data('track');
+    document.querySelectorAll('#track [data-source="track"]').forEach(el => {
+      if (T.status === 'ok' && T.data[0]) el.textContent = T.data[0][el.dataset.field];
+    });
+    const C = dash.data('track_cat');
+    const signedCell = (td, v) => { td.textContent = v; if (Number(v) > 0) td.classList.add('good'); else if (Number(v) < 0) td.classList.add('bad'); };
+    if (C.status === 'ok') fillTable($('#cat-table tbody'), C.data, [
+      { f: 'category' }, { f: 'bets', cls: 'num' }, { f: 'record', cls: 'num' }, { f: 'staked', cls: 'num' },
+      { f: 'pl', cls: 'num', render: signedCell }, { f: 'roi', cls: 'num' }, { f: 'model_win', cls: 'num' }, { f: 'clv', cls: 'num', render: signedCell }
+    ], 'category');
+    const K = dash.data('track_book');
+    if (K.status === 'ok') fillTable($('#book-table tbody'), K.data, [
+      { f: 'book' }, { f: 'bets', cls: 'num' }, { f: 'settled', cls: 'num' }, { f: 'record', cls: 'num' }, { f: 'staked', cls: 'num' },
+      { f: 'pl', cls: 'num', render: signedCell }, { f: 'roi', cls: 'num' }, { f: 'pending_u', cls: 'num' }, { f: 'clv', cls: 'num', render: signedCell }
+    ], 'book');
+    const H = dash.data('history'), box = $('#chart-track');
+    if (H.status === 'error') { fail(box); $('#hist-table tbody').innerHTML = '<tr><td colspan="12"><div class="mb-fail">Failed to load</div></td></tr>'; return; }
+    if (H.status !== 'ok') return;
+    const settled = H.data.filter(h => settledRes.has(h.result) && h.running_u !== '');
+    $('#track-empty').hidden = settled.length > 0;
+    if (settled.length) drawTrackChart(box, settled); else box.innerHTML = '';
+    const sel = $('#h-date'), cur = sel.value;
+    const dates = [...new Set(H.data.map(h => h.date))].sort().reverse();
+    sel.innerHTML = '<option value="">All days</option>' + dates.map(d => `<option value="${d}">${d}</option>`).join('');
+    sel.value = dates.includes(cur) ? cur : '';
+    const res = $('#h-res').value;
+    fillBookSelect($('#h-book'), [...new Set(H.data.map(h => h.book || 'Sportsbet'))].sort());
+    const hb = $('#h-book').value;
+    const rows = H.data.filter(h => (!sel.value || h.date === sel.value) && (!res || (res === 'pending' ? h.result === 'pending' : settledRes.has(h.result)))
+      && (!hb || (h.book || 'Sportsbet') === hb) && (!$('#h-best').value || h.best === '1'))
+      .slice().reverse();
+    fillTable($('#hist-table tbody'), rows, [
+      { f: 'posted', cls: 'pos' }, { f: 'category' }, { f: 'pick' }, { f: 'game', cls: 'pos' }, { f: 'odds', cls: 'num' }, { f: 'book' }, { f: 'close_prob', cls: 'num' }, { f: 'clv_pct', cls: 'num', render: signedCell }, { f: 'stake_u', cls: 'num' },
+      { f: 'result', render: pill({ win: 'win', loss: 'loss', push: 'push', void: 'void', pending: 'pending' }) },
+      { f: 'profit_u', cls: 'num', render: signedCell }, { f: 'running_u', cls: 'num', render: signedCell }
+    ], 'id');
+  }
+  $('#h-date').addEventListener('change', drawTrack);
+  $('#h-res').addEventListener('change', drawTrack);
+  $('#h-book').addEventListener('change', drawTrack);
+  $('#h-best').addEventListener('change', drawTrack);
+
+  // ---------- player props ----------
+  function drawProps() {
+    const P = dash.data('props');
+    const tb = $('#props-table tbody');
+    if (P.status === 'error') { tb.innerHTML = '<tr><td colspan="16"><div class="mb-fail">Failed to load</div></td></tr>'; return; }
+    if (P.status !== 'ok') return;
+    const show = $('#p-show').value, stat = $('#p-stat').value, q = $('#p-search').value.trim().toLowerCase();
+    fillBookSelect($('#p-book'), BOOKS);
+    let rows = atBook(P.data, $('#p-book').value, 'blend_prob')
+      .filter(r => (!stat || r.stat === stat) && (!q || (r.player + ' ' + r.team + ' ' + r.opp).toLowerCase().includes(q)));
+    if (show === 'bets') rows = rows.filter(r => r.verdict === 'Bet' || r.verdict === 'Check status' || r.verdict === 'Check news');
+    if (show === 'top') rows = rows.slice(0, 40);
+    fillTable(tb, rows, [
+      { f: 'rank', cls: 'num' }, { f: 'verdict', render: pill({ 'Bet': 'bet', 'Check status': 'check', 'Check news': 'check', 'Pass': 'pass' }) },
+      { f: 'player' }, { f: 'team' }, { f: 'opp', cls: 'pos' }, { f: 'stat' }, { f: 'side' }, { f: 'line', cls: 'num' }, { f: 'odds', cls: 'num' }, { f: 'book' },
+      { f: 'proj', cls: 'num' }, { f: 'minutes', cls: 'num' }, { f: 'model_prob', cls: 'num' }, { f: 'market_prob', cls: 'num' },
+      { f: 'ev_pct', cls: 'num' }, { f: 'stake_pct', cls: 'num' }, { f: 'reason', cls: 'why' }, { f: 'history', cls: 'why' }, { f: 'all_odds', cls: 'why' }
+    ], 'rank', r => r.verdict === 'Pass' ? 'pass' : '');
+    $('#props-table').hidden = rows.length === 0; $('#props-none').hidden = rows.length !== 0;
+  }
+
+  // ---------- alternate lines ----------
+  function drawAlts() {
+    const A = dash.data('alts');
+    const tb = $('#alts-table tbody');
+    if (A.status === 'error' || A.status === 'missing') { tb.innerHTML = '<tr><td colspan="18"><div class="mb-fail">' + (A.status === 'missing' ? 'No alternate lines yet' : 'Failed to load') + '</div></td></tr>'; return; }
+    if (A.status !== 'ok') return;
+    const show = $('#a-show').value, stat = $('#a-stat').value, q = $('#a-search').value.trim().toLowerCase();
+    fillBookSelect($('#a-book'), BOOKS);
+    let rows = atBook(A.data, $('#a-book').value, 'fair_prob')
+      .filter(r => (!stat || r.stat === stat) && (!q || (r.player + ' ' + r.team + ' ' + r.opp).toLowerCase().includes(q)));
+    if (show === 'bets') rows = rows.filter(r => r.verdict === 'Bet' || r.verdict === 'Check status' || r.verdict === 'Check news');
+    if (show === 'top') rows = rows.slice(0, 40);
+    fillTable(tb, rows, [
+      { f: 'verdict', render: pill({ 'Bet': 'bet', 'Check status': 'check', 'Check news': 'check', 'Pass': 'pass' }) },
+      { f: 'player' }, { f: 'team' }, { f: 'opp', cls: 'pos' }, { f: 'stat' }, { f: 'target' }, { f: 'odds', cls: 'num' }, { f: 'book' },
+      { f: 'fair_odds', cls: 'num' }, { f: 'fair_prob', cls: 'num' }, { f: 'ev_pct', cls: 'num' }, { f: 'stake_pct', cls: 'num' },
+      { f: 'main_line', cls: 'num' }, { f: 'implied_mean', cls: 'num' }, { f: 'proj', cls: 'num' },
+      { f: 'history', cls: 'why' }, { f: 'reason', cls: 'why' }, { f: 'all_odds', cls: 'why' }
+    ], 'rid', r => r.verdict === 'Pass' ? 'pass' : '');
+    $('#alts-table').hidden = rows.length === 0; $('#alts-none').hidden = rows.length !== 0;
+  }
+  ['#a-show', '#a-stat', '#a-book'].forEach(s => $(s).addEventListener('change', drawAlts));
+  $('#a-search').addEventListener('input', drawAlts);
+  ['#p-show', '#p-stat', '#p-book'].forEach(s => $(s).addEventListener('change', drawProps));
+  $('#b-book').addEventListener('change', draw);
+  $('#p-search').addEventListener('input', drawProps);
+
+  // ---------- by chance ----------
+  function drawChance() {
+    const C = dash.data('chances');
+    const tb = $('#chance-table tbody');
+    if (C.status === 'error' || C.status === 'missing') { tb.innerHTML = '<tr><td colspan="11"><div class="mb-fail">' + (C.status === 'missing' ? 'No data yet' : 'Failed to load') + '</div></td></tr>'; return; }
+    if (C.status !== 'ok') return;
+    const lo = Number($('#c-min').value || 0), hi = Number($('#c-max').value || 100), cat = $('#c-cat').value, val = $('#c-val').value, q = $('#c-search').value.trim().toLowerCase();
+    const rows = C.data.filter(r => { const p = Number(r.prob); return p >= lo && p <= hi && (!cat || r.category === cat) && (!val || Number(r.ev_pct) > 0)
+      && (!q || (r.pick + ' ' + r.game).toLowerCase().includes(q)); });
+    $('#c-count').textContent = rows.length + ' outcome' + (rows.length === 1 ? '' : 's') + ' between ' + lo + '% and ' + hi + '%' + (rows.length > 300 ? ' (first 300 shown)' : '');
+    fillTable(tb, rows.slice(0, 300), [
+      { f: 'prob', cls: 'num' }, { f: 'fair_odds', cls: 'num' }, { f: 'odds', cls: 'num' }, { f: 'book' }, { f: 'ev_pct', cls: 'num' },
+      { f: 'category' }, { f: 'pick' }, { f: 'game', cls: 'pos' }, { f: 'tip', cls: 'pos' },
+      { f: 'verdict', render: pill({ 'Bet': 'bet', 'Check status': 'check', 'Check news': 'check', 'Pass': 'pass' }) }, { f: 'all_odds', cls: 'why' }
+    ], 'rid', r => Number(r.ev_pct) > 0 ? '' : 'pass');
+    $('#chance-table').hidden = rows.length === 0; $('#chance-none').hidden = rows.length !== 0;
+  }
+  ['#c-min', '#c-max', '#c-cat', '#c-val'].forEach(s => $(s).addEventListener('change', drawChance));
+  ['#c-min', '#c-max', '#c-search'].forEach(s => $(s).addEventListener('input', drawChance));
+
+  // ---------- player usage ----------
+  let TONIGHT = new Set();
+  let uSort = { f: 'usg', dir: -1 };
+  const roleOf = (read) => (read || '').split(' · ')[0];
+  const roleColor = (read) => { const r = roleOf(read); return r === 'Bigger role' ? dash.colors[0] : r === 'Smaller role' ? dash.colors[1] : 'var(--cds-chart-muted)'; };
+  const inScope = (r) => $('#u-scope').value === 'all' || TONIGHT.has(r.team);
+  const matchQ = (r) => { const q = $('#u-search').value.trim().toLowerCase(); return !q || (r.player + ' ' + r.team).toLowerCase().includes(q); };
+
+  function drawScatter(box, rows, fit) {
+    box.innerHTML = '';
+    const W = box.clientWidth || 360, H = Math.max(300, Math.min(440, W * 0.55)), m = { t: 12, r: 16, b: 40, l: 44 };
+    const svg = d3.select(box).append('svg').attr('width', '100%').attr('height', H).attr('viewBox', `0 0 ${W} ${H}`);
+    const pts = rows.map(r => ({ r, x: Number(r.usg), y: Number(r.pts36) })).filter(d => isFinite(d.x) && isFinite(d.y));
+    const x = d3.scaleLinear([d3.min(pts, d => d.x) - 1, d3.max(pts, d => d.x) + 1], [m.l, W - m.r]).nice();
+    const y = d3.scaleLinear([0, d3.max(pts, d => d.y) + 2], [H - m.b, m.t]).nice();
+    const nx = Math.max(3, Math.floor(W / 90));
+    svg.append('g').selectAll('line').data(y.ticks(6)).join('line').attr('x1', m.l).attr('x2', W - m.r).attr('y1', d => y(d)).attr('y2', d => y(d)).attr('stroke', 'var(--cds-chart-grid)');
+    const ax = svg.append('g').attr('transform', `translate(0,${H - m.b})`).call(d3.axisBottom(x).ticks(nx).tickSize(0).tickPadding(8));
+    const ay = svg.append('g').attr('transform', `translate(${m.l},0)`).call(d3.axisLeft(y).ticks(6).tickSize(0).tickPadding(8));
+    [ax, ay].forEach(a => { a.attr('font-size', null).attr('font-family', null); a.select('.domain').remove(); a.selectAll('text').attr('fill', 'var(--color-fg-muted)').style('font-size', '12px'); });
+    svg.append('text').attr('x', W - m.r).attr('y', H - 6).attr('text-anchor', 'end').attr('fill', 'var(--color-fg-muted)').style('font-size', '12px').text('Usage %');
+    svg.append('text').attr('x', m.l).attr('y', m.t - 2).attr('dy', '0.7em').attr('dx', 6).attr('fill', 'var(--color-fg-muted)').style('font-size', '12px').text('Points per 36 min');
+    if (fit) {
+      const a = Number(fit.intercept), b = Number(fit.slope), [x0, x1] = x.domain();
+      svg.append('line').attr('x1', x(x0)).attr('x2', x(x1)).attr('y1', y(a + b * x0)).attr('y2', y(a + b * x1))
+        .attr('stroke', 'var(--cds-chart-reference)').attr('stroke-dasharray', '4 4').attr('stroke-width', 1.5);
+    }
+    const sorted = pts.slice().sort((p, q) => (inScope(p.r) && matchQ(p.r)) - (inScope(q.r) && matchQ(q.r)));
+    const dots = svg.append('g').selectAll('circle').data(sorted).join('circle')
+      .attr('cx', d => x(d.x)).attr('cy', d => y(d.y)).attr('r', d => inScope(d.r) && matchQ(d.r) ? 4.5 : 3)
+      .attr('fill', d => inScope(d.r) && matchQ(d.r) ? roleColor(d.r.read) : 'var(--cds-chart-grid)')
+      .attr('fill-opacity', d => inScope(d.r) && matchQ(d.r) ? 0.9 : 0.6);
+    const tip = d3.select(box).append('div').attr('class', 'mb-tip').style('display', 'none');
+    const delaunay = d3.Delaunay.from(sorted, d => x(d.x), d => y(d.y));
+    const ring = svg.append('circle').attr('r', 7).attr('fill', 'none').attr('stroke', 'var(--color-fg)').attr('stroke-width', 1.5).style('display', 'none');
+    svg.append('rect').attr('x', m.l).attr('y', m.t).attr('width', W - m.l - m.r).attr('height', H - m.t - m.b).attr('fill', 'transparent')
+      .on('mousemove', (ev) => {
+        const [px, py] = d3.pointer(ev); const d = sorted[delaunay.find(px, py)]; if (!d) return;
+        ring.style('display', null).attr('cx', x(d.x)).attr('cy', y(d.y));
+        tip.style('display', null).html('');
+        tip.append('div').attr('class', 't').text(`${d.r.player} · ${d.r.team}`);
+        tip.append('div').text(`Usage ${d.r.usg}% · ${d.r.pts36} pts/36`);
+        tip.append('div').text(`${d.r.pts} pts, ${d.r.ast} ast, ${d.r.reb} reb in ${d.r.mpg} min`);
+        tip.append('div').attr('class', 't').text(d.r.read);
+        const [bx, by] = d3.pointer(ev, box); const tw = tip.node().offsetWidth;
+        tip.style('left', Math.min(Math.max(0, bx + 12), W - tw) + 'px').style('top', (by + 12) + 'px');
+      })
+      .on('mouseleave', () => { tip.style('display', 'none'); ring.style('display', 'none'); });
+  }
+
+  function drawUsage() {
+    const U = dash.data('usage'), UF = dash.data('usage_fit');
+    document.querySelectorAll('[data-source="usage_fit"]').forEach(el => {
+      if (UF.status === 'ok') { const row = UF.data.find(r => `stat=${r.stat}` === el.dataset.where); el.textContent = row ? row[el.dataset.field] : '—'; skel(el, false); }
+      else if (UF.status !== 'loading') skel(el, false);
+    });
+    const lg = $('#sc-legend'); lg.innerHTML = '';
+    [['Bigger role', dash.colors[0]], ['Smaller role', dash.colors[1]], ['Same role / no history', 'var(--cds-chart-muted)']].forEach(([t, c]) => { const s = document.createElement('span'); s.style.setProperty('--sw', c); s.textContent = t; lg.appendChild(s); });
+    const box = $('#chart-usage');
+    if (U.status === 'ok') drawScatter(box, U.data, UF.status === 'ok' ? UF.data.find(r => r.stat === 'pts') : null);
+    else if (U.status === 'error') fail(box);
+    if (U.status !== 'ok') return;
+    const rows = U.data.filter(r => inScope(r) && matchQ(r)).slice().sort((a, b) => {
+      const va = a[uSort.f], vb = b[uSort.f]; const na = Number(va), nb = Number(vb);
+      const num = va !== '' && vb !== '' && isFinite(na) && isFinite(nb);
+      if (va === '' && vb !== '') return 1; if (vb === '' && va !== '') return -1;
+      return (num ? na - nb : String(va).localeCompare(String(vb))) * uSort.dir;
+    });
+    const delta = (td, v) => { td.textContent = v; const n = Number(v); if (v !== '' && n >= 3) td.classList.add('good'); else if (v !== '' && n <= -3) td.classList.add('bad'); };
+    const readCell = (td, v) => { const s = document.createElement('span'); const role = roleOf(v); s.className = 'pill ' + (role === 'Bigger role' ? 'bet' : role === 'Smaller role' ? 'out' : 'pass'); s.textContent = v; td.appendChild(s); };
+    fillTable($('#usage-table tbody'), rows, [
+      { f: 'player' }, { f: 'team' }, { f: 'pos', cls: 'pos' }, { f: 'mpg', cls: 'num' }, { f: 'usg', cls: 'num' }, { f: 'usg_change', cls: 'num', render: delta },
+      { f: 'pts', cls: 'num' }, { f: 'role_pts', cls: 'num' }, { f: 'shooting_pts', cls: 'num', render: delta }, { f: 'ts', cls: 'num' },
+      { f: 'ast', cls: 'num' }, { f: 'ast_pct', cls: 'num' }, { f: 'prev_ast_pct', cls: 'num pos' },
+      { f: 'reb', cls: 'num' }, { f: 'trb_pct', cls: 'num' }, { f: 'prev_trb_pct', cls: 'num pos' },
+      { f: 'pra', cls: 'num' }, { f: 'read', render: readCell }
+    ], 'player');
+    document.querySelectorAll('#usage-table th[data-sort]').forEach(th => th.setAttribute('aria-sort', th.dataset.field === uSort.f ? (uSort.dir === 1 ? 'ascending' : 'descending') : 'none'));
+  }
+  document.querySelectorAll('#usage-table th[data-sort]').forEach(th => th.addEventListener('click', () => {
+    const f = th.dataset.field; uSort = { f, dir: uSort.f === f ? -uSort.dir : (th.dataset.sort === 'n' ? -1 : 1) }; drawUsage();
+  }));
+  $('#u-search').addEventListener('input', drawUsage);
+  $('#u-scope').addEventListener('change', drawUsage);
+  document.querySelectorAll('.mb-nav a').forEach(a => a.addEventListener('click', (ev) => {
+    ev.preventDefault(); const el = document.getElementById(a.getAttribute('href').slice(1)); if (el) { el.scrollIntoView({ behavior: 'smooth' }); dash.setLink(el.id); }
+  }));
+
+  redrawAll = () => { drawMeta(); drawBest(); drawTodayGames(); drawTrack(); draw(); drawProps(); drawAlts(); drawChance(); drawUsage(); };
+  dash.onData(redrawAll);
+
+  const hash = location.hash.slice(1), tabNames = ['today', 'explore', 'games', 'ledger', 'method'];
+  if (tabNames.includes(hash)) showTab(hash);
+  else { const named = document.getElementById(hash); if (named) { showFor(named); named.scrollIntoView(); dash.setLink(named.id); } }
+})();
+</script>
+</div>
+<footer class="site-foot">
+  <p><b>Information only, not betting advice.</b> Chances come from a model blended with bookmaker prices; they can be wrong, and past results don't guarantee future ones. Only bet what you can afford to lose. Prices change: check the bookie before you bet.</p>
+  <p><b>Gamble responsibly.</b> For free, confidential support call the National Gambling Helpline on 1800 858 858 or visit gamblinghelponline.org.au. 18+ only.</p>
+</footer>
+</body>
+</html>

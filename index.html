@@ -545,12 +545,11 @@ window.dash = (() => {
         <p class="mb-note" id="inj-none" hidden>No listed injuries among players who have played this season.</p></div>
     </div>
     <div class="mb-card"><h3>Starting five, position by position</h3>
-      <p class="mb-note">Off/Def are each player's points produced / allowed per 100 possessions (this season blended with last). Edge = attacker's offence above league average plus the defender's rating above average; positive favours the attacker. Efficient low-usage bigs score high on Off, so read big-man edges with care.</p>
+      <p class="mb-note">Off/Def are each player's points produced / allowed per 100 possessions (this season blended with last). Edge (next to each team) = how that player should go attacking the opposing starter at his position: his offence above league average plus his opponent's defence above average. Positive (blue) favours him, negative (orange) favours the defender. Efficient low-usage bigs score high on Off, so read big-man edges with care.</p>
       <div class="mb-scroll"><table class="mb-table" id="mu-table" data-source="matchups" data-row-key="key">
         <thead><tr>
-          <th data-field="away_player" id="mu-away">Away</th><th data-field="away_pos">Pos</th><th data-field="away_status">Status</th><th data-field="away_off" class="num">Off</th><th data-field="away_def" class="num">Def</th><th data-field="away_bpm" class="num">BPM</th>
-          <th data-field="home_player" class="side" id="mu-home">Home</th><th data-field="home_pos">Pos</th><th data-field="home_status">Status</th><th data-field="home_off" class="num">Off</th><th data-field="home_def" class="num">Def</th><th data-field="home_bpm" class="num">BPM</th>
-          <th data-field="away_edge" class="num side">Away edge</th><th data-field="home_edge" class="num">Home edge</th>
+          <th data-field="away_player" id="mu-away">Away</th><th data-field="away_pos">Pos</th><th data-field="away_status">Status</th><th data-field="away_off" class="num">Off</th><th data-field="away_def" class="num">Def</th><th data-field="away_bpm" class="num">BPM</th><th data-field="away_edge" class="num">Edge</th>
+          <th data-field="home_player" class="side" id="mu-home">Home</th><th data-field="home_pos">Pos</th><th data-field="home_status">Status</th><th data-field="home_off" class="num">Off</th><th data-field="home_def" class="num">Def</th><th data-field="home_bpm" class="num">BPM</th><th data-field="home_edge" class="num">Edge</th>
         </tr></thead>
         <tbody></tbody></table></div></div>
   </section>
@@ -726,9 +725,8 @@ window.dash = (() => {
     }
     if (M.status === 'ok') {
       fillTable($('#mu-table tbody'), M.data.filter(r => r.game === chosen), [
-        { f: 'away_player' }, { f: 'away_pos', cls: 'pos' }, { f: 'away_status', render: statusCell }, { f: 'away_off', cls: 'num' }, { f: 'away_def', cls: 'num' }, { f: 'away_bpm', cls: 'num' },
-        { f: 'home_player', cls: 'side' }, { f: 'home_pos', cls: 'pos' }, { f: 'home_status', render: statusCell }, { f: 'home_off', cls: 'num' }, { f: 'home_def', cls: 'num' }, { f: 'home_bpm', cls: 'num' },
-        { f: 'away_edge', cls: 'num side', render: signed }, { f: 'home_edge', cls: 'num', render: signed }
+        { f: 'away_player' }, { f: 'away_pos', cls: 'pos' }, { f: 'away_status', render: statusCell }, { f: 'away_off', cls: 'num' }, { f: 'away_def', cls: 'num' }, { f: 'away_bpm', cls: 'num' }, { f: 'away_edge', cls: 'num', render: signed },
+        { f: 'home_player', cls: 'side' }, { f: 'home_pos', cls: 'pos' }, { f: 'home_status', render: statusCell }, { f: 'home_off', cls: 'num' }, { f: 'home_def', cls: 'num' }, { f: 'home_bpm', cls: 'num' }, { f: 'home_edge', cls: 'num', render: signed }
       ], 'key');
     }
     const cmBox = $('#chart-margin'); if (G.status === 'ok') { /* highlight handled in dumbbell */ }

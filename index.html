@@ -188,9 +188,12 @@ window.dash = (() => {
   .cp-tag.bad { background: var(--cp-bad-bg); color: var(--cp-bad-fg); }
   .cp-btn.added { background: #1E3A66; color: #CFE1FF; }
   .cp-panel { padding-bottom: 72px; }
-  .cp-bk { display: flex; gap: 8px; overflow-x: auto; padding: 2px 0 4px; scrollbar-width: none; }
+  .cp-bk { display: flex; flex-wrap: wrap; gap: 8px; padding: 2px 0 4px; }
   .cp-bk button { font: inherit; font-size: .9rem; font-weight: 600; white-space: nowrap; background: #161E2C; color: #C9D1DE; border: 1px solid #33405A; border-radius: 999px; padding: 0 14px; min-height: 40px; cursor: pointer; }
   .cp-bk button[aria-pressed="true"] { background: var(--cp-accent); color: var(--cp-ink); border-color: var(--cp-accent); }
+  .cp-bkbar { display: flex; flex-direction: column; gap: 6px; background: #0B101A; border: 1px solid #222B3B; border-radius: 14px; padding: 10px 12px; margin: 0 28px 14px; }
+  @media (max-width: 640px) { .cp-panel > .cp-bkbar { margin-inline: 14px; padding-inline: 12px; } }
+  .cp-bkbar-l { font-size: .72rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: #A9B3C4; }
   .cp-bk-note { font-size: .82rem; color: #A9B3C4; margin: 0; }
   .pp-h { display: flex; align-items: baseline; gap: 10px; margin: 18px 0 8px; font-family: var(--cp-head); font-weight: 800; font-stretch: condensed; text-transform: uppercase; font-size: 1.3rem; letter-spacing: .02em; }
   .pp-h:first-child { margin-top: 4px; }
@@ -301,6 +304,11 @@ window.dash = (() => {
   </section>
   <button type="button" class="cp-bs-bar" id="my-fab" aria-haspopup="dialog" aria-controls="mybets" hidden><span class="l">Bet slip</span><span class="cp-bs-n" id="my-fab-n">0</span><span class="r" id="my-fab-r"></span><span aria-hidden="true">▲</span></button>
   <div class="cp-panel" data-panel="today" role="tabpanel" aria-label="Today">
+  <div class="cp-bkbar">
+    <span class="cp-bkbar-l" id="bk-label">My bookie</span>
+    <div class="cp-bk" id="bk-chips" role="group" aria-labelledby="bk-label"></div>
+    <p class="cp-bk-note" id="bk-note" hidden></p>
+  </div>
   <section class="mb-sec" id="best" aria-label="Today at a glance">
     <div class="cp-stats">
       <div class="cp-stat"><div class="cp-stat-l">Bets today</div><div class="cp-stat-v" data-source="today_stats" data-field="bets">—</div></div>
@@ -308,8 +316,6 @@ window.dash = (() => {
       <div class="cp-stat"><div class="cp-stat-l">Last settled day</div><div class="cp-stat-v" data-source="today_stats" data-field="last_day">—</div></div>
       <div class="cp-stat"><div class="cp-stat-l">Running total</div><div class="cp-stat-v" data-source="today_stats" data-field="running">—</div></div>
     </div>
-    <div class="cp-bk" id="bk-chips" role="group" aria-label="Show bets for one bookie"></div>
-    <p class="cp-bk-note" id="bk-note" hidden></p>
     <div class="cp-sub"><h2 class="cp-h">Best bets</h2><p><b data-source="best_summary" data-field="n_bet" class="dash-skeleton">—</b> of <span data-source="best_summary" data-field="n_cat" class="dash-skeleton">—</span> categories have a bet worth taking: the best game bet in each category and up to 3 per player-prop type, at odds under 3.00, at <span id="bk-where">the bookie with the best price</span>. Check team news before tip-off.</p></div>
     <div class="cp-slip" id="best-cards" data-source="best"></div>
     <button type="button" class="cp-btn ghost cp-more" id="best-more" hidden>Show the leans too</button>
@@ -929,21 +935,39 @@ window.dash = (() => {
   // ---------- Today: bookie filter (each bookie's own card, built by the model at that bookie's prices) ----------
   let bkView = '';
   try { bkView = localStorage.getItem('cp-bk') || ''; } catch (e) {}
+  const poss = (b) => /s$/.test(b) ? b + "'" : b + "'s";
   function drawBookChips(rows) {
     const have = [...new Set(rows.map(r => r.view).filter(v => v && v !== 'best'))];
-    const books = BOOKS.filter(b => have.includes(b));
+    const books = BOOKS;
     if (bkView && !books.includes(bkView)) bkView = '';
     const box = $('#bk-chips');
-    box.hidden = books.length === 0;
     box.innerHTML = '';
-    [['', 'Best price anywhere']].concat(books.map(b => [b, b])).forEach(([v, t]) => {
+    [['', 'All bookies']].concat(books.map(b => [b, b])).forEach(([v, t]) => {
       const b = document.createElement('button'); b.type = 'button'; b.textContent = t; b.setAttribute('aria-pressed', String(bkView === v));
-      b.addEventListener('click', () => { bkView = v; try { localStorage.setItem('cp-bk', v); } catch (e) {} drawBest(); });
+      b.addEventListener('click', () => { bkView = v; try { localStorage.setItem('cp-bk', v); } catch (e) {} drawBest(); drawTodayGames(); });
       box.appendChild(b);
     });
-    $('#bk-where').textContent = bkView ? `${bkView}'s own prices and lines` : 'the bookie with the best price';
+    $('#bk-where').textContent = bkView ? `${poss(bkView)} own prices and lines` : 'the bookie with the best price';
     $('#bk-note').hidden = !bkView;
-    $('#bk-note').textContent = bkView ? `Showing only bets you can take at ${bkView}, judged at ${bkView}'s prices, so some picks differ from the main card. The ledger tracks the main card (best price anywhere).` : '';
+    $('#bk-note').textContent = !bkView ? '' : have.includes(bkView)
+      ? `Showing only bets you can take at ${bkView}, picked and judged at ${poss(bkView)} own prices and lines, so some picks differ from the main card. The ledger tracks the main card (best price anywhere).`
+      : `Showing the main card's picks at ${poss(bkView)} prices; picks ${bkView} doesn't offer are hidden. From the next update, ${bkView} gets its own picks.`;
+  }
+  let TODAY_VIEW = null;
+  const B0 = () => dash.data('best');
+  // one bookie's card: its own rows when the update built them (view = bookie), otherwise the main card re-priced
+  // at that bookie's odds from the "every price" list (picks it doesn't offer are dropped)
+  function viewRows(all, V) {
+    if (V === 'best') return all.filter(r => (r.view || 'best') === 'best');
+    const own = all.filter(r => r.view === V);
+    const multis = all.filter(r => (r.view || 'best') === 'best' && /multi/i.test(r.category) && r.book === V);
+    if (own.length) return own.concat(multis);
+    return all.filter(r => (r.view || 'best') === 'best' && !/multi/i.test(r.category) && r.odds !== '').map(r => {
+      const o = priceAt(r, V); if (!o) return null;
+      const ev = +((Number(r.prob) / 100 * o - 1) * 100).toFixed(1);
+      const bet = r.verdict === 'Bet' && ev > 0;
+      return Object.assign({}, r, { odds: o.toFixed(2), book: V, ev_pct: ev, verdict: bet ? 'Bet' : (ev > 0 ? 'Lean' : 'No value'), stake_pct: bet ? r.stake_pct : 0, _repriced: true });
+    }).filter(Boolean).concat(multis);
   }
   let showLeans = false;
   $('#best-more').addEventListener('click', () => { showLeans = !showLeans; drawBest(); });
@@ -958,6 +982,11 @@ window.dash = (() => {
       else if (S.status === 'ok') { el.textContent = '0'; skel(el, false); }
       else if (S.status !== 'loading') skel(el, false);
     });
+    if (bkView && S.status === 'ok' && !S.data.find(x => x.view === bkView) && B0().status === 'ok') {
+      const R = viewRows(B0().data, bkView).filter(r => r.section !== 'value');
+      const nb = new Set(R.filter(r => r.verdict === 'Bet').map(r => r.category)).size, nc = new Set(R.filter(r => r.verdict !== 'None').map(r => r.category)).size;
+      document.querySelectorAll('[data-source="best_summary"]').forEach(el => { el.textContent = el.dataset.field === 'n_bet' ? nb : nc; });
+    }
     const TS = dash.data('today_stats');
     document.querySelectorAll('[data-source="today_stats"]').forEach(el => { el.textContent = TS.status === 'ok' && TS.data[0] ? TS.data[0][el.dataset.field] : '—'; });
     const B = dash.data('best'), SL = dash.data('slip'), G = dash.data('games'), box = $('#best-cards');
@@ -965,9 +994,12 @@ window.dash = (() => {
     if (B.status !== 'ok') return;
     const tips = {}; if (G.status === 'ok') G.data.forEach(g => { tips[g.game] = g.tip_aedt; });
     drawBookChips(B.data);
+    const V2 = bkView || 'best';
     const slip = {}; if (SL.status === 'ok') SL.data.forEach(s => { slip[s.view + '|' + s.pick] = s; });
-    const inView = (r) => (r.view || 'best') === V || (V !== 'best' && (r.view || 'best') === 'best' && /multi/i.test(r.category) && r.book === V);
-    const rows = B.data.filter(r => inView(r) && r.category !== '80% multi' && r.odds !== '' && r.section !== 'value');
+    const ALL = viewRows(B.data, V2);
+    TODAY_VIEW = ALL;
+    if (V2 !== V) { drawBest(); return; }
+    const rows = ALL.filter(r => r.category !== '80% multi' && r.odds !== '' && r.section !== 'value');
     const bets = rows.filter(r => r.verdict === 'Bet'), leans = rows.filter(r => r.verdict !== 'Bet');
     $('#best-more').hidden = leans.length === 0;
     $('#best-more').textContent = showLeans ? 'Hide the leans' : `Show ${leans.length} lean${leans.length === 1 ? '' : 's'} too (below the value bar)`;
@@ -992,6 +1024,7 @@ window.dash = (() => {
       price.append(od, bk); mid.append(pick, price);
       const row = document.createElement('div'); row.className = 'cp-row';
       const s = slip[(r.view || 'best') + '|' + r.pick];
+      if (!s && r.prob) { const tag = document.createElement('span'); tag.className = 'cp-tag' + (Number(r.ev_pct) > 0 ? '' : ' bad'); tag.textContent = `${Number(r.ev_pct) > 0 ? 'Good value' : 'Overpriced'} · fair ${(100 / Number(r.prob)).toFixed(2)}`; row.append(tag); }
       if (s) { const tag = document.createElement('span'); tag.className = 'cp-tag' + (Number(r.ev_pct) > 0 ? '' : ' bad'); tag.dataset.source = 'slip'; tag.dataset.where = where; tag.dataset.field = 'value'; tag.textContent = s.value; row.append(tag); }
       const meta = document.createElement('span'); meta.className = 'cp-meta';
       const pr = mark(document.createElement('span'), 'prob'); pr.textContent = r.prob + '%';
@@ -1009,7 +1042,7 @@ window.dash = (() => {
     };
     for (const r of list) card(r, box);
     const vbox = $('#value-cards'); vbox.innerHTML = '';
-    const vals = B.data.filter(r => inView(r) && r.section === 'value' && r.odds !== '');
+    const vals = ALL.filter(r => r.section === 'value' && r.odds !== '');
     if (!vals.length) { const d = document.createElement('div'); d.className = 'cp-meta'; d.textContent = V === 'best' ? 'No value bet at 3.00 or longer today.' : `No value bet at 3.00 or longer at ${V} today.`; vbox.appendChild(d); }
     for (const r of vals) card(r, vbox);
     // 80% multi
@@ -1044,7 +1077,8 @@ window.dash = (() => {
     const d = M.status === 'ok' && M.data[0] ? M.data[0].date : '';
     const now = new Intl.DateTimeFormat('en-CA', { timeZone: 'Australia/Sydney', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', hour12: false }).format(new Date()).replace(',', '');
     const byGame = {};
-    if (H.status === 'ok') H.data.filter(h => h.date === d && h.category !== 'Multi leg' && h.kind !== 'multi').forEach(h => { (byGame[h.game] = byGame[h.game] || []).push(h.pick); });
+    if (bkView && TODAY_VIEW) TODAY_VIEW.filter(r => r.verdict === 'Bet' && !/multi/i.test(r.category)).forEach(r => { (byGame[r.game] = byGame[r.game] || []).push(r.pick); });
+    else if (H.status === 'ok') H.data.filter(h => h.date === d && h.category !== 'Multi leg' && h.kind !== 'multi').forEach(h => { (byGame[h.game] = byGame[h.game] || []).push(h.pick); });
     box.innerHTML = '';
     G.data.slice().sort((a, b) => String(a.tip_aedt).localeCompare(String(b.tip_aedt))).forEach(g => {
       const [aw, hm] = g.game.split(' @ ');

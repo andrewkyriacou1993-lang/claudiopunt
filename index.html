@@ -186,6 +186,22 @@ window.dash = (() => {
   .cp-row { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
   .cp-tag { font-weight: 600; font-size: .8rem; padding: 6px 10px; border-radius: 999px; background: var(--cp-good-bg); color: var(--cp-good-fg); white-space: nowrap; }
   .cp-tag.bad { background: var(--cp-bad-bg); color: var(--cp-bad-fg); }
+  .cp-btn.added { background: #1E3A66; color: #CFE1FF; }
+  .cp-my { background: var(--color-panel); border: 1px solid #8DBBFF; border-radius: 16px; padding: 18px 20px; display: flex; flex-direction: column; gap: 12px; }
+  .cp-my-list { display: flex; flex-direction: column; }
+  .cp-my-item { display: grid; grid-template-columns: minmax(0, 1fr) auto auto; align-items: center; gap: 6px 10px; padding: 10px 0; border-top: 1px solid #222B3B; }
+  @media (max-width: 560px) { .cp-my-item { grid-template-columns: minmax(0, 1fr) auto; } .cp-my-item > div:first-child { grid-column: 1 / -1; } .cp-my-item .o { text-align: left; } }
+  .cp-panel[data-panel="today"] { padding-bottom: 72px; }
+  .cp-my-item .p { font-weight: 700; overflow-wrap: anywhere; }
+  .cp-my-item .s { font-size: .8rem; color: #A9B3C4; }
+  .cp-my-item .o { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; text-align: right; white-space: nowrap; }
+  .cp-my-item input { width: 4.2rem; font: inherit; background: #0B101A; color: #E8ECF3; border: 1px solid #33405A; border-radius: 6px; padding: 4px 6px; }
+  .cp-x { font: inherit; background: transparent; color: #A9B3C4; border: 1px solid #33405A; border-radius: 8px; min-width: 44px; min-height: 44px; cursor: pointer; }
+  .cp-my-sum { display: grid; grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr)); gap: 10px; }
+  .cp-my-sum div { background: #0B101A; border: 1px solid #222B3B; border-radius: 10px; padding: 8px 12px; }
+  .cp-my-sum span { display: block; font-size: .72rem; text-transform: uppercase; letter-spacing: .06em; color: #A9B3C4; font-weight: 600; }
+  .cp-my-sum b { font-family: var(--cp-head); font-weight: 800; font-stretch: condensed; font-size: 1.4rem; font-variant-numeric: tabular-nums; }
+  .cp-fab { position: fixed; right: 16px; bottom: 16px; z-index: 20; font: inherit; font-weight: 700; background: var(--cp-accent); color: var(--cp-ink); border: 0; border-radius: 999px; padding: 0 18px; min-height: 48px; box-shadow: 0 6px 20px rgba(0,0,0,.45); cursor: pointer; }
   .cp-tag.neutral { background: #222B3B; color: #C9D1DE; }
   .cp-meta { font-size: .85rem; color: #C9D1DE; }
   .cp-btn { margin-left: auto; font: inherit; font-size: .9rem; font-weight: 700; background: var(--cp-accent); color: var(--cp-ink); border: 0; border-radius: 8px; padding: 0 16px; min-height: 44px; cursor: pointer; }
@@ -234,6 +250,14 @@ window.dash = (() => {
   </header>
 
   <div class="cp-panel" data-panel="today" role="tabpanel" aria-label="Today">
+  <section class="cp-my" id="mybets" aria-labelledby="my-h" hidden>
+    <div class="cp-row"><h2 class="cp-h" id="my-h" style="font-size: 1.3rem">My bets</h2><span class="cp-meta" id="my-sub"></span></div>
+    <div class="cp-my-list" id="my-list"></div>
+    <div class="cp-my-sum" id="my-sum"></div>
+    <p class="cp-meta" id="my-multi"></p>
+    <div class="cp-row"><span class="cp-meta">Saved in this browser only, for today. Stakes in units (1u = 1% of bankroll); change them if you like.</span><button type="button" class="cp-btn ghost" id="my-clear">Clear all</button><button type="button" class="cp-btn" id="my-copy">Copy my bets</button></div>
+  </section>
+  <button type="button" class="cp-fab" id="my-fab" hidden></button>
   <section class="mb-sec" id="best" aria-label="Today at a glance">
     <div class="cp-stats">
       <div class="cp-stat"><div class="cp-stat-l">Bets today</div><div class="cp-stat-v" data-source="today_stats" data-field="bets">—</div></div>
@@ -256,7 +280,7 @@ window.dash = (() => {
       <div class="cp-nums"><div><span>Odds</span><b id="m80-odds">—</b></div><div><span>All land</span><b id="m80-prob">—</b></div><div><span>Value</span><b id="m80-ev">—</b></div></div>
     </div>
     <div class="cp-legs" id="m80-legs"></div>
-    <div class="cp-row"><span class="cp-meta" id="m80-note">Logged every day at a flat stake. Negative value is each leg's bookie margin, multiplied.</span><button type="button" class="cp-btn" id="m80-copy">Copy multi</button></div>
+    <div class="cp-row"><span class="cp-meta" id="m80-note">Logged every day at a flat stake. Negative value is each leg's bookie margin, multiplied.</span><button type="button" class="cp-btn" id="m80-copy">Add multi</button></div>
   </section>
   <section class="mb-sec" aria-labelledby="tg-h">
     <div class="cp-sub"><h2 class="cp-h" id="tg-h">Tonight's games</h2><p>Orange edge: we have a bet. Tap a game for its lines, ratings, injuries and starters.</p></div>
@@ -747,9 +771,72 @@ window.dash = (() => {
     const fallback = () => { const ta = document.createElement('textarea'); ta.value = txt; ta.style.position = 'fixed'; ta.style.opacity = '0'; document.body.appendChild(ta); ta.select(); try { document.execCommand('copy'); done(); } catch (e) { toast(txt); } ta.remove(); };
     if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(txt).then(done, fallback); else fallback();
   }
+  // ---------- My bets: the viewer's own picks from the card, kept in this browser for today ----------
+  const MY_KEY = 'cp-mybets';
+  const myDate = () => { const M = dash.data('meta'); return M.status === 'ok' && M.data[0] ? M.data[0].date : ''; };
+  let my = { date: '', items: [] };
+  try { const v = JSON.parse(localStorage.getItem(MY_KEY) || 'null'); if (v && Array.isArray(v.items)) my = v; } catch (e) {}
+  const mySave = () => { try { localStorage.setItem(MY_KEY, JSON.stringify(my)); } catch (e) {} };
+  const myItems = () => { const d = myDate(); if (d && my.date && my.date !== d) { my = { date: d, items: [] }; mySave(); } return my.items; };
+  const myHas = (pick) => myItems().some(i => i.pick === pick);
+  function myToggle(item) {
+    const items = myItems();
+    const k = items.findIndex(i => i.pick === item.pick);
+    if (k >= 0) items.splice(k, 1); else { items.push(item); toast('Added: ' + item.pick); }
+    my.date = myDate() || my.date; mySave(); drawMy();
+  }
+  function addBtn(item) {
+    const b = document.createElement('button'); b.type = 'button'; b.className = 'cp-btn';
+    const set = () => { const on = myHas(item.pick); b.textContent = on ? 'Added ✓' : 'Add bet'; b.classList.toggle('added', on); b.setAttribute('aria-pressed', String(on)); };
+    b.setAttribute('aria-label', `Add ${item.pick} at ${item.odds.toFixed(2)} with ${item.book} to my bets`);
+    b.addEventListener('click', () => { myToggle(item); set(); });
+    set(); b._sync = set; return b;
+  }
+  function drawMy() {
+    const items = myItems(), sec = $('#mybets'), list = $('#my-list'), fab = $('#my-fab');
+    sec.hidden = items.length === 0;
+    fab.hidden = items.length === 0;
+    fab.textContent = `My bets · ${items.length}`;
+    document.querySelectorAll('button.cp-btn[aria-pressed]').forEach(b => b._sync && b._sync());
+    list.innerHTML = '';
+    let stake = 0, ret = 0, exp = 0;
+    items.forEach((it, k) => {
+      const row = document.createElement('div'); row.className = 'cp-my-item';
+      const l = document.createElement('div');
+      const p = document.createElement('div'); p.className = 'p'; p.textContent = it.pick;
+      const sub = document.createElement('div'); sub.className = 's'; sub.textContent = [it.cat, it.game, isFinite(it.prob) && it.prob ? `our chance ${it.prob}%` : ''].filter(Boolean).join(' · ');
+      l.append(p, sub);
+      const o = document.createElement('div'); o.className = 'o';
+      const inp = document.createElement('input'); inp.type = 'number'; inp.min = '0'; inp.step = '0.1'; inp.value = it.stake; inp.setAttribute('aria-label', `Stake for ${it.pick}, units`);
+      inp.addEventListener('change', () => { it.stake = Math.max(0, Number(inp.value) || 0); mySave(); drawMy(); });
+      o.append(document.createTextNode(`${it.odds.toFixed(2)} ${it.book} · `), inp, document.createTextNode('u'));
+      const x = document.createElement('button'); x.type = 'button'; x.className = 'cp-x'; x.textContent = '×'; x.setAttribute('aria-label', 'Remove ' + it.pick);
+      x.addEventListener('click', () => { items.splice(k, 1); mySave(); drawMy(); });
+      row.append(l, o, x); list.appendChild(row);
+      stake += it.stake; ret += it.stake * it.odds; if (it.prob) exp += it.stake * (it.prob / 100 * it.odds - 1);
+    });
+    const u = (n) => (n >= 0 ? '+' : '−') + Math.abs(n).toFixed(2) + 'u';
+    $('#my-sub').textContent = `${items.length} bet${items.length === 1 ? '' : 's'}`;
+    $('#my-sum').innerHTML = '';
+    [['Total stake', stake.toFixed(2) + 'u'], ['Return if all win', ret.toFixed(2) + 'u'], ['Expected profit', u(exp)]].forEach(([a, b]) => {
+      const d = document.createElement('div'); const s1 = document.createElement('span'); s1.textContent = a; const b1 = document.createElement('b'); b1.textContent = b; d.append(s1, b1); $('#my-sum').appendChild(d);
+    });
+    const singles = items.filter(i => !/multi/i.test(i.cat || '') && !/ \+ /.test(i.pick));
+    const games = new Set(singles.map(i => i.game)), books = new Set(singles.map(i => i.book));
+    if (singles.length >= 2) {
+      const odds = singles.reduce((t, i) => t * i.odds, 1), pr = singles.reduce((t, i) => t * (i.prob || 0) / 100, 1);
+      $('#my-multi').textContent = games.size < singles.length
+        ? `As a multi: two or more of these are from the same game, and bookies usually won't combine those.`
+        : `As a multi: odds ${odds.toFixed(2)}, all land ${(pr * 100).toFixed(0)}% of the time (treating legs as independent).` + (books.size > 1 ? ` These prices are at ${[...books].join(', ')}; a multi has to be placed at one bookie, so the odds there may be lower.` : ` All at ${[...books][0]}.`);
+    } else $('#my-multi').textContent = '';
+  }
+  $('#my-clear').addEventListener('click', () => { my.items = []; mySave(); drawMy(); });
+  $('#my-copy').addEventListener('click', () => copyText(myItems().map(i => `${i.pick} @ ${i.odds.toFixed(2)} (${i.book}) ${i.stake}u`).join('\n')));
+  $('#my-fab').addEventListener('click', () => { showTab('today'); const el = $('#mybets'); el.scrollIntoView({ behavior: 'smooth' }); });
   let showLeans = false;
   $('#best-more').addEventListener('click', () => { showLeans = !showLeans; drawBest(); });
   function drawBest() {
+    drawMy();
     const S = dash.data('best_summary');
     document.querySelectorAll('[data-source="best_summary"]').forEach(el => {
       if (S.status === 'ok' && S.data[0]) { el.textContent = S.data[0][el.dataset.field]; skel(el, false); }
@@ -793,10 +880,8 @@ window.dash = (() => {
       const st = mark(document.createElement('span'), 'stake_pct'); st.textContent = (r.stake_pct === '' ? '0' : r.stake_pct) + 'u';
       meta.append(document.createTextNode('Our chance '), pr, document.createTextNode(' · Stake '), st);
       const whyB = document.createElement('button'); whyB.type = 'button'; whyB.className = 'cp-btn ghost'; whyB.textContent = 'Why';
-      const copy = document.createElement('button'); copy.type = 'button'; copy.className = 'cp-btn'; copy.textContent = 'Copy bet';
-      copy.setAttribute('aria-label', `Copy ${r.pick} at ${r.odds} with ${r.book}`);
-      copy.addEventListener('click', () => copyText(`${r.pick} @ ${Number(r.odds).toFixed(2)} (${r.book})`));
-      row.append(meta, copy, whyB);
+      const add = addBtn({ pick: r.pick, odds: Number(r.odds), book: r.book, game: r.game, prob: Number(r.prob), stake: Number(r.stake_pct) || 0, cat: r.category });
+      row.append(meta, add, whyB);
       const why = mark(document.createElement('div'), 'reason'); why.className = 'cp-why'; why.textContent = r.reason; why.hidden = true;
       if (r.all_odds) { const ao = mark(document.createElement('div'), 'all_odds'); ao.textContent = 'Every price: ' + r.all_odds; why.append(document.createElement('br'), ao); }
       whyB.setAttribute('aria-expanded', 'false');
@@ -821,7 +906,9 @@ window.dash = (() => {
       const ev = mm('#m80-ev', 'ev_pct'); ev.textContent = (Number(m.ev_pct) > 0 ? '+' : '') + m.ev_pct + '%'; ev.style.color = Number(m.ev_pct) > 0 ? '#8DBBFF' : '#FFB37F';
       $('#m80-sub').textContent = `Every leg 80%+ · one per game · all at ${m.book} · ${m.stake_pct}u`;
       $('#m80-copy').hidden = false;
-      $('#m80-copy').onclick = () => copyText(`${m.pick} @ ${Number(m.odds).toFixed(2)} (${m.book})`);
+      const mitem = { pick: m.pick, odds: Number(m.odds), book: m.book, game: m.game, prob: Number(m.prob), stake: Number(m.stake_pct) || 0, cat: '80% multi' };
+      const setM = () => { const on = myHas(mitem.pick); $('#m80-copy').textContent = on ? 'Added ✓' : 'Add multi'; $('#m80-copy').classList.toggle('added', on); $('#m80-copy').setAttribute('aria-pressed', String(on)); };
+      $('#m80-copy').onclick = () => { myToggle(mitem); setM(); }; setM();
       legsBox.innerHTML = '';
       if (L.status === 'ok') L.data.forEach((l, k) => {
         const d = document.createElement('div'); d.className = 'cp-leg';

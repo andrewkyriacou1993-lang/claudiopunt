@@ -241,9 +241,13 @@ window.dash = (() => {
       <div class="cp-stat"><div class="cp-stat-l">Last settled day</div><div class="cp-stat-v" data-source="today_stats" data-field="last_day">—</div></div>
       <div class="cp-stat"><div class="cp-stat-l">Running total</div><div class="cp-stat-v" data-source="today_stats" data-field="running">—</div></div>
     </div>
-    <div class="cp-sub"><h2 class="cp-h">Today's bets</h2><p><b data-source="best_summary" data-field="n_bet" class="dash-skeleton">—</b> of <span data-source="best_summary" data-field="n_cat" class="dash-skeleton">—</span> categories have a bet worth taking. Best price for each, at the bookie shown. Check team news before tip-off.</p></div>
+    <div class="cp-sub"><h2 class="cp-h">Best bets</h2><p><b data-source="best_summary" data-field="n_bet" class="dash-skeleton">—</b> of <span data-source="best_summary" data-field="n_cat" class="dash-skeleton">—</span> categories have a bet worth taking: each category's best pick at odds under 3.00, at the bookie with the best price. Check team news before tip-off.</p></div>
     <div class="cp-slip" id="best-cards" data-source="best"></div>
     <button type="button" class="cp-btn ghost cp-more" id="best-more" hidden>Show the leans too</button>
+  </section>
+  <section class="mb-sec" id="value" aria-labelledby="val-h">
+    <div class="cp-sub"><h2 class="cp-h" id="val-h">Value bets</h2><p>Longer odds (3.00 and up) where the model sees the biggest edge, up to 5 a day. They lose more often than they win, so expect long losing runs; the edge only shows over many bets. Stakes are smaller to match.</p></div>
+    <div class="cp-slip" id="value-cards" data-source="best"></div>
   </section>
   <section class="cp-multi" id="m80" data-source="best multi80_legs" aria-labelledby="m80-h">
     <div class="cp-multi-head">
@@ -285,7 +289,7 @@ window.dash = (() => {
       <div class="mb-tile"><span class="mb-tile-l">Average CLV</span><span class="mb-tile-v" data-source="track" data-field="clv">—</span></div>
       <div class="mb-tile"><span class="mb-tile-l">Beat the close</span><span class="mb-tile-v" data-source="track" data-field="beat">—</span></div>
     </div>
-    <div class="mb-card" aria-labelledby="bestrec-h"><h3 id="bestrec-h">Best of the day only (recorded from 27 Oct)</h3>
+    <div class="mb-card" aria-labelledby="bestrec-h"><h3 id="bestrec-h">Best bets only (recorded from 27 Oct)</h3>
       <p class="mb-note">Just the pick shown on the Today tab for each category, plus the multis: the record to judge the daily card by.</p>
       <div class="mb-tiles">
         <div class="mb-tile"><span class="mb-tile-l">Best picks</span><span class="mb-tile-v" data-source="track_best" data-field="picks">—</span></div>
@@ -294,6 +298,17 @@ window.dash = (() => {
         <div class="mb-tile"><span class="mb-tile-l">Profit</span><span class="mb-tile-v" data-source="track_best" data-field="pl">—</span></div>
         <div class="mb-tile"><span class="mb-tile-l">Return on stakes</span><span class="mb-tile-v" data-source="track_best" data-field="roi">—</span></div>
         <div class="mb-tile"><span class="mb-tile-l">Average CLV</span><span class="mb-tile-v" data-source="track_best" data-field="clv">—</span></div>
+      </div>
+    </div>
+    <div class="mb-card" aria-labelledby="valrec-h"><h3 id="valrec-h">Value bets only (recorded from 28 Oct)</h3>
+      <p class="mb-note">The longer-odds picks from the Value bets section. Expect a low strike rate; judge them on profit and closing-line value over months.</p>
+      <div class="mb-tiles">
+        <div class="mb-tile"><span class="mb-tile-l">Value picks</span><span class="mb-tile-v" data-source="track_value" data-field="picks">—</span></div>
+        <div class="mb-tile"><span class="mb-tile-l">Settled</span><span class="mb-tile-v" data-source="track_value" data-field="settled">—</span></div>
+        <div class="mb-tile"><span class="mb-tile-l">Won–lost</span><span class="mb-tile-v" data-source="track_value" data-field="record">—</span></div>
+        <div class="mb-tile"><span class="mb-tile-l">Profit</span><span class="mb-tile-v" data-source="track_value" data-field="pl">—</span></div>
+        <div class="mb-tile"><span class="mb-tile-l">Return on stakes</span><span class="mb-tile-v" data-source="track_value" data-field="roi">—</span></div>
+        <div class="mb-tile"><span class="mb-tile-l">Average CLV</span><span class="mb-tile-v" data-source="track_value" data-field="clv">—</span></div>
       </div>
     </div>
     <div class="mb-grid">
@@ -317,7 +332,7 @@ window.dash = (() => {
         <label for="h-res" class="mb-note">Show</label>
         <select id="h-res" class="mb-input"><option value="">All</option><option value="pending">Waiting</option><option value="settled">Settled</option></select>
         <label for="h-book" class="mb-note">Bookie</label><select id="h-book" class="mb-input book-filter"><option value="">All bookies</option></select>
-        <label for="h-best" class="mb-note">Picks</label><select id="h-best" class="mb-input"><option value="">Every bet</option><option value="1">Best of the day only</option></select>
+        <label for="h-best" class="mb-note">Picks</label><select id="h-best" class="mb-input"><option value="">Every bet</option><option value="1">Best bets only</option><option value="value">Value bets only</option></select>
       </div>
       <div class="mb-scroll mb-tall"><table class="mb-table" id="hist-table" data-source="history" data-row-key="id">
         <thead><tr><th data-field="posted">Posted (AEDT)</th><th data-field="category">Category</th><th data-field="pick">Bet</th><th data-field="game">Game</th>
@@ -663,7 +678,7 @@ window.dash = (() => {
     inputs: ['best'],
     title: 'Categories with a bet',
     description: 'Counts the categories whose best pick clears the value bar.',
-    fn: (best) => [{ n_bet: best.filter(b => b.verdict === 'Bet').length, n_cat: best.length }]
+    fn: (best) => { best = best.filter(b => b.section !== 'value'); return [{ n_bet: best.filter(b => b.verdict === 'Bet').length, n_cat: best.length }]; }
   });
   const VERDICT = { 'Bet': 'bet', 'Lean': 'lean', 'Check': 'check', 'No value': 'pass', 'None': 'pass', 'Daily': 'lean' };
   function goTo(link) {
@@ -707,10 +722,10 @@ window.dash = (() => {
   dash.calc('slip', {
     inputs: ['best'],
     title: 'Fair odds and value tag',
-    description: "For each category's pick: the fair odds its chance is worth (100 / chance %) and whether the price beats it.",
+    description: "For each pick on the card (best bets and value bets): the fair odds its chance is worth (100 / chance %) and whether the price beats it.",
     fn: (best) => best.filter(b => b.prob !== '' && Number(b.prob) > 0).map(b => {
       const fair = 100 / Number(b.prob), ev = Number(b.ev_pct);
-      return { category: b.category, fair: fair.toFixed(2), value: ev > 0 ? `Good value · fair ${fair.toFixed(2)}` : `Overpriced · fair ${fair.toFixed(2)}` };
+      return { category: b.category, pick: b.pick, fair: fair.toFixed(2), value: ev > 0 ? `Good value · fair ${fair.toFixed(2)}` : `Overpriced · fair ${fair.toFixed(2)}` };
     })
   });
   dash.calc('multi80_legs', {
@@ -746,16 +761,16 @@ window.dash = (() => {
     if (B.status === 'error') { fail(box); return; }
     if (B.status !== 'ok') return;
     const tips = {}; if (G.status === 'ok') G.data.forEach(g => { tips[g.game] = g.tip_aedt; });
-    const slip = {}; if (SL.status === 'ok') SL.data.forEach(s => { slip[s.category] = s; });
-    const rows = B.data.filter(r => r.category !== '80% multi' && r.odds !== '');
+    const slip = {}; if (SL.status === 'ok') SL.data.forEach(s => { slip[s.pick] = s; });
+    const rows = B.data.filter(r => r.category !== '80% multi' && r.odds !== '' && r.section !== 'value');
     const bets = rows.filter(r => r.verdict === 'Bet'), leans = rows.filter(r => r.verdict !== 'Bet');
     $('#best-more').hidden = leans.length === 0;
     $('#best-more').textContent = showLeans ? 'Hide the leans' : `Show ${leans.length} lean${leans.length === 1 ? '' : 's'} too (below the value bar)`;
     box.innerHTML = '';
     const list = showLeans ? bets.concat(leans) : bets;
     if (!list.length) { const d = document.createElement('div'); d.className = 'cp-meta'; d.textContent = 'No bet clears the value bar yet today.'; box.appendChild(d); }
-    for (const r of list) {
-      const where = 'category=' + encodeURIComponent(r.category);
+    const card = (r, box) => {
+      const where = 'pick=' + encodeURIComponent(r.pick);
       const mark = (el, f, src) => { el.dataset.source = src || 'best'; el.dataset.where = where; el.dataset.field = f; return el; };
       const c = document.createElement('article'); c.className = 'cp-card' + (r.verdict === 'Bet' ? '' : ' is-lean');
       const top = document.createElement('div'); top.className = 'cp-card-top';
@@ -771,7 +786,7 @@ window.dash = (() => {
       const bk = mark(document.createElement('div'), 'book'); bk.className = 'cp-book'; bk.textContent = r.book;
       price.append(od, bk); mid.append(pick, price);
       const row = document.createElement('div'); row.className = 'cp-row';
-      const s = slip[r.category];
+      const s = slip[r.pick];
       if (s) { const tag = document.createElement('span'); tag.className = 'cp-tag' + (Number(r.ev_pct) > 0 ? '' : ' bad'); tag.dataset.source = 'slip'; tag.dataset.where = where; tag.dataset.field = 'value'; tag.textContent = s.value; row.append(tag); }
       const meta = document.createElement('span'); meta.className = 'cp-meta';
       const pr = mark(document.createElement('span'), 'prob'); pr.textContent = r.prob + '%';
@@ -788,7 +803,12 @@ window.dash = (() => {
       whyB.addEventListener('click', () => { why.hidden = !why.hidden; whyB.setAttribute('aria-expanded', String(!why.hidden)); whyB.textContent = why.hidden ? 'Why' : 'Hide'; });
       c.append(top, mid, row, why);
       box.appendChild(c);
-    }
+    };
+    for (const r of list) card(r, box);
+    const vbox = $('#value-cards'); vbox.innerHTML = '';
+    const vals = B.data.filter(r => r.section === 'value' && r.odds !== '');
+    if (!vals.length) { const d = document.createElement('div'); d.className = 'cp-meta'; d.textContent = 'No value bet at 3.00 or longer today.'; vbox.appendChild(d); }
+    for (const r of vals) card(r, vbox);
     // 80% multi
     const m = B.data.find(r => r.category === '80% multi'), L = dash.data('multi80_legs'), legsBox = $('#m80-legs');
     const mm = (id, f) => { const el = $(id); el.dataset.source = 'best'; el.dataset.where = 'category=' + encodeURIComponent('80% multi'); el.dataset.field = f; return el; };
@@ -881,6 +901,19 @@ window.dash = (() => {
     description: "Only the day's best pick per category and the multis (flagged best = 1): picks, settled, won–lost, profit, return on stakes and average closing-line value.",
     fn: (history) => {
       const H = history.filter(h => h.best === '1');
+      const s = H.filter(h => ['win', 'loss', 'push', 'void'].includes(h.result)), wl = s.filter(h => h.result === 'win' || h.result === 'loss');
+      const w = s.filter(h => h.result === 'win').length, pl = s.reduce((t, h) => t + (Number(h.profit_u) || 0), 0);
+      const st = wl.reduce((t, h) => t + (Number(h.stake_u) || 0), 0);
+      return [{ picks: H.length, settled: s.length, record: `${w}–${wl.length - w}`, pl: (pl >= 0 ? '+' : '−') + Math.abs(pl).toFixed(2) + 'u',
+        roi: st ? (pl / st * 100 >= 0 ? '+' : '') + (pl / st * 100).toFixed(1) + '%' : '—', clv: clvAvg(H) }];
+    }
+  });
+  dash.calc('track_value', {
+    inputs: ['history'],
+    title: 'Value-bet record',
+    description: 'Only the picks from the Value bets section (odds 3.00 and up, flagged best = value): picks, settled, won–lost, profit, return on stakes and average closing-line value.',
+    fn: (history) => {
+      const H = history.filter(h => h.best === 'value');
       const s = H.filter(h => ['win', 'loss', 'push', 'void'].includes(h.result)), wl = s.filter(h => h.result === 'win' || h.result === 'loss');
       const w = s.filter(h => h.result === 'win').length, pl = s.reduce((t, h) => t + (Number(h.profit_u) || 0), 0);
       const st = wl.reduce((t, h) => t + (Number(h.stake_u) || 0), 0);
@@ -990,6 +1023,8 @@ window.dash = (() => {
   function drawTrack() {
     const TB = dash.data('track_best');
     document.querySelectorAll('[data-source="track_best"]').forEach(el => { el.textContent = TB.status === 'ok' && TB.data[0] ? TB.data[0][el.dataset.field] : '—'; });
+    const TV = dash.data('track_value');
+    document.querySelectorAll('[data-source="track_value"]').forEach(el => { el.textContent = TV.status === 'ok' && TV.data[0] ? TV.data[0][el.dataset.field] : '—'; });
     const T = dash.data('track');
     document.querySelectorAll('#track [data-source="track"]').forEach(el => {
       if (T.status === 'ok' && T.data[0]) el.textContent = T.data[0][el.dataset.field];
@@ -1019,7 +1054,7 @@ window.dash = (() => {
     fillBookSelect($('#h-book'), [...new Set(H.data.map(h => h.book || 'Sportsbet'))].sort());
     const hb = $('#h-book').value;
     const rows = H.data.filter(h => (!sel.value || h.date === sel.value) && (!res || (res === 'pending' ? h.result === 'pending' : settledRes.has(h.result)))
-      && (!hb || (h.book || 'Sportsbet') === hb) && (!$('#h-best').value || h.best === '1'))
+      && (!hb || (h.book || 'Sportsbet') === hb) && (!$('#h-best').value || h.best === $('#h-best').value))
       .slice().reverse();
     fillTable($('#hist-table tbody'), rows, [
       { f: 'posted', cls: 'pos' }, { f: 'category' }, { f: 'pick' }, { f: 'game', cls: 'pos' }, { f: 'odds', cls: 'num' }, { f: 'book' }, { f: 'close_prob', cls: 'num' }, { f: 'clv_pct', cls: 'num', render: signedCell }, { f: 'stake_u', cls: 'num' },

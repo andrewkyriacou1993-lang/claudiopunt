@@ -30,7 +30,7 @@
 <script>
 /* Minimal stand-in for the Claude dashboard runtime: loads data/<name>.csv and runs the same page code. */
 window.dash = (() => {
-  const FILES = ['best', 'history', 'meta', 'bets', 'props', 'alts', 'chances', 'games', 'teams', 'injuries', 'matchups', 'usage', 'usage_fit', 'firstbasket', 'sgm', 'combos'];
+  const FILES = ['best', 'history', 'meta', 'bets', 'props', 'alts', 'chances', 'games', 'teams', 'injuries', 'matchups', 'usage', 'usage_fit', 'firstbasket', 'sgm', 'combos', 'lineup_news'];
   const D = {}, calcs = {}, subs = [];
   let queued = false;
   const fire = () => { if (queued) return; queued = true; requestAnimationFrame(() => { queued = false; subs.forEach(fn => { try { fn(); } catch (e) { console.error(e); } }); }); };
@@ -81,6 +81,12 @@ window.dash = (() => {
   .mb-table td.num, .mb-table th.num { text-align: right; }
   .mb-table td.why { color: var(--color-fg-muted); min-width: 18rem; }
   .mb-table td.nw { white-space: nowrap; }
+  #news[hidden] { display: none; }
+  .cp-news { display: flex; flex-direction: column; gap: 6px; }
+  .cp-news-i { display: grid; grid-template-columns: 3.4rem 1fr; gap: 10px; padding: 8px 12px; border-radius: 8px; background: rgba(255,255,255,.04); font-size: .92rem; }
+  .cp-news-i time { color: var(--color-fg-muted); font-variant-numeric: tabular-nums; }
+  .cp-news-i .imp { color: #FF8A3D; margin-top: 2px; }
+  .cp-news-i.bad b { color: #FF8A3D; }
   .mb-table tr.pass td { color: var(--color-fg-muted); }
   .mb-table .side { border-left: 1px solid var(--color-border-line); }
   .pill { display: inline-block; padding: 0 var(--cds-pad-sm); border-radius: 999px; border: 1px solid currentColor; font-size: var(--cds-font-size-caption); white-space: nowrap; }
@@ -316,6 +322,10 @@ window.dash = (() => {
     <div class="cp-bk" id="bk-chips" role="group" aria-labelledby="bk-label"></div>
     <p class="cp-bk-note" id="bk-note" hidden></p>
   </div>
+  <section class="mb-sec" id="news" aria-labelledby="news-h" hidden>
+    <div class="cp-sub"><h2 class="cp-h" id="news-h">Lineup &amp; injury news</h2><p>Picked up within a minute of NBA.com or ESPN posting it (starting fives are confirmed about 30 minutes before each tip). Each item re-prices the board straight away; new bets appear below with their time.</p></div>
+    <div class="cp-news" id="news-list" data-source="lineup_news"></div>
+  </section>
   <section class="mb-sec" id="best" aria-label="Today at a glance">
     <div class="cp-stats">
       <div class="cp-stat"><div class="cp-stat-l">Bets today</div><div class="cp-stat-v" data-source="today_stats" data-field="bets">—</div></div>
@@ -1571,6 +1581,32 @@ window.dash = (() => {
   }
   ['#s-show', '#s-game'].forEach(s => $(s).addEventListener('change', drawSGM));
 
+  // ---------- lineup & injury news (Today) ----------
+  function drawNews() {
+    const N = dash.data('lineup_news'), box = $('#news-list'), sec = $('#news');
+    if (N.status !== 'ok' || !N.data.length) { sec.hidden = true; return; }
+    const M = dash.data('meta'), day = M.status === 'ok' && M.data[0] ? (M.data[0].date || '') : '';
+    const rows = N.data.filter(r => !day || r.date === day).slice().reverse();
+    sec.hidden = rows.length === 0; box.innerHTML = '';
+    const word = { confirmed: 'starters confirmed', starter_in: 'now starting', starter_out: 'no longer starting', inactive: 'inactive', active: 'back on the active list' };
+    rows.slice(0, 40).forEach(r => {
+      const bad = /inactive|starter_out/.test(r.kind) || (r.kind === 'injury' && /(Out|Doubtful)$/.test(r.detail));
+      const d = document.createElement('div'); d.className = 'cp-news-i' + (bad ? ' bad' : '');
+      const t = document.createElement('time'); t.textContent = r.at; d.appendChild(t);
+      const body = document.createElement('div');
+      const head = document.createElement('div');
+      const g = document.createElement('span'); g.className = 'pos'; g.textContent = r.game + ' · ';
+      const b = document.createElement('b');
+      b.textContent = r.kind === 'confirmed' ? `${r.team} ${word.confirmed}` : r.kind === 'injury' ? `${r.player} (${r.team})` : `${r.player} (${r.team}) ${word[r.kind] || r.kind}`;
+      head.append(g, b);
+      if (r.kind === 'confirmed') head.append(': ' + r.detail);
+      if (r.kind === 'injury') head.append(' ' + r.detail.replace('->', '→'));
+      body.appendChild(head);
+      if (r.impact) { const im = document.createElement('div'); im.className = 'imp'; im.textContent = r.impact; body.appendChild(im); }
+      d.appendChild(body); box.appendChild(d);
+    });
+  }
+
   // ---------- same-player combos ----------
   function drawCombos() {
     const S = dash.data('combos'), tb = $('#cb-table tbody');
@@ -1693,7 +1729,7 @@ window.dash = (() => {
     ev.preventDefault(); const el = document.getElementById(a.getAttribute('href').slice(1)); if (el) { el.scrollIntoView({ behavior: 'smooth' }); dash.setLink(el.id); }
   }));
 
-  redrawAll = () => { drawMeta(); drawBest(); drawTodayGames(); drawTrack(); draw(); drawProps(); drawAlts(); drawChance(); drawFB(); drawSGM(); drawCombos(); drawUsage(); };
+  redrawAll = () => { drawMeta(); drawNews(); drawBest(); drawTodayGames(); drawTrack(); draw(); drawProps(); drawAlts(); drawChance(); drawFB(); drawSGM(); drawCombos(); drawUsage(); };
   dash.onData(redrawAll);
 
   const hash = location.hash.slice(1), tabNames = ['today', 'explore', 'games', 'ledger', 'method'];

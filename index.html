@@ -187,21 +187,48 @@ window.dash = (() => {
   .cp-tag { font-weight: 600; font-size: .8rem; padding: 6px 10px; border-radius: 999px; background: var(--cp-good-bg); color: var(--cp-good-fg); white-space: nowrap; }
   .cp-tag.bad { background: var(--cp-bad-bg); color: var(--cp-bad-fg); }
   .cp-btn.added { background: #1E3A66; color: #CFE1FF; }
-  .cp-my { background: var(--color-panel); border: 1px solid #8DBBFF; border-radius: 16px; padding: 18px 20px; display: flex; flex-direction: column; gap: 12px; }
-  .cp-my-list { display: flex; flex-direction: column; }
-  .cp-my-item { display: grid; grid-template-columns: minmax(0, 1fr) auto auto; align-items: center; gap: 6px 10px; padding: 10px 0; border-top: 1px solid #222B3B; }
-  @media (max-width: 560px) { .cp-my-item { grid-template-columns: minmax(0, 1fr) auto; } .cp-my-item > div:first-child { grid-column: 1 / -1; } .cp-my-item .o { text-align: left; } }
-  .cp-panel[data-panel="today"] { padding-bottom: 72px; }
-  .cp-my-item .p { font-weight: 700; overflow-wrap: anywhere; }
-  .cp-my-item .s { font-size: .8rem; color: #A9B3C4; }
-  .cp-my-item .o { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; text-align: right; white-space: nowrap; }
-  .cp-my-item input { width: 4.2rem; font: inherit; background: #0B101A; color: #E8ECF3; border: 1px solid #33405A; border-radius: 6px; padding: 4px 6px; }
-  .cp-x { font: inherit; background: transparent; color: #A9B3C4; border: 1px solid #33405A; border-radius: 8px; min-width: 44px; min-height: 44px; cursor: pointer; }
-  .cp-my-sum { display: grid; grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr)); gap: 10px; }
-  .cp-my-sum div { background: #0B101A; border: 1px solid #222B3B; border-radius: 10px; padding: 8px 12px; }
-  .cp-my-sum span { display: block; font-size: .72rem; text-transform: uppercase; letter-spacing: .06em; color: #A9B3C4; font-weight: 600; }
-  .cp-my-sum b { font-family: var(--cp-head); font-weight: 800; font-stretch: condensed; font-size: 1.4rem; font-variant-numeric: tabular-nums; }
-  .cp-fab { position: fixed; right: 16px; bottom: 16px; z-index: 20; font: inherit; font-weight: 700; background: var(--cp-accent); color: var(--cp-ink); border: 0; border-radius: 999px; padding: 0 18px; min-height: 48px; box-shadow: 0 6px 20px rgba(0,0,0,.45); cursor: pointer; }
+  .cp-panel { padding-bottom: 72px; }
+  .cp-sheet-bg { position: fixed; inset: 0; background: rgba(5, 8, 14, .6); z-index: 30; }
+  .cp-bs { position: fixed; z-index: 31; right: 16px; bottom: 16px; width: min(26rem, calc(100vw - 32px)); max-height: calc(100vh - 32px); display: flex; flex-direction: column; background: #121925; border: 1px solid #33405A; border-radius: 16px; box-shadow: 0 12px 40px rgba(0,0,0,.6); overflow: hidden; }
+  .cp-bs[hidden] { display: none; }
+  @media (max-width: 560px) { .cp-bs { left: 0; right: 0; bottom: 0; width: auto; max-height: 88vh; border-radius: 18px 18px 0 0; border-bottom: 0; } }
+  .cp-bs-head { display: flex; align-items: center; gap: 10px; padding: 10px 12px 10px 18px; background: #0B101A; border-bottom: 1px solid #222B3B; }
+  .cp-bs-head h2 { margin: 0; font-family: var(--cp-head); font-weight: 800; font-stretch: condensed; text-transform: uppercase; font-size: 1.35rem; letter-spacing: .02em; }
+  .cp-bs-n { display: inline-grid; place-items: center; min-width: 1.6rem; height: 1.6rem; padding: 0 6px; border-radius: 999px; background: var(--cp-accent); color: var(--cp-ink); font-weight: 800; font-size: .85rem; }
+  .cp-x { font: inherit; font-size: 1.3rem; background: transparent; color: #C9D1DE; border: 1px solid #33405A; border-radius: 8px; min-width: 44px; min-height: 44px; cursor: pointer; }
+  .cp-bs-txt { margin-left: auto; font: inherit; font-size: .85rem; font-weight: 600; background: none; border: 0; color: #8DBBFF; min-height: 44px; padding: 0 8px; cursor: pointer; }
+  .cp-bs-tabs { display: grid; grid-template-columns: 1fr 1fr; background: #0B101A; }
+  .cp-bs-tabs button { font: inherit; font-weight: 700; font-size: .95rem; background: none; border: 0; color: #A9B3C4; min-height: 46px; cursor: pointer; box-shadow: inset 0 -2px 0 #222B3B; }
+  .cp-bs-tabs button[aria-selected="true"] { color: #FFFFFF; box-shadow: inset 0 -3px 0 var(--cp-accent); }
+  .cp-bs-tabs button:disabled { color: #4E5A70; cursor: default; }
+  .cp-bs-body { overflow-y: auto; padding: 12px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
+  .cp-bs-item { background: var(--color-panel); border: 1px solid #222B3B; border-radius: 12px; padding: 12px 12px 12px 14px; display: flex; flex-direction: column; gap: 8px; }
+  .cp-bs-item .t { display: flex; align-items: flex-start; gap: 10px; }
+  .cp-bs-item .p { flex: 1; font-weight: 700; line-height: 1.25; overflow-wrap: anywhere; }
+  .cp-bs-item .s { font-size: .8rem; color: #A9B3C4; margin-top: 2px; font-weight: 400; }
+  .cp-bs-odds { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-weight: 700; font-size: 1.05rem; background: #0B101A; border: 1px solid #33405A; border-radius: 8px; padding: 6px 10px; white-space: nowrap; }
+  .cp-bs-item .x { font: inherit; background: none; border: 0; color: #A9B3C4; min-width: 36px; min-height: 36px; font-size: 1.2rem; cursor: pointer; margin: -6px -6px 0 0; }
+  .cp-bs-st { display: flex; align-items: center; gap: 10px; }
+  .cp-bs-st label, .cp-bs-all label { display: flex; align-items: center; gap: 6px; background: #0B101A; border: 1px solid #33405A; border-radius: 8px; padding: 0 10px; min-height: 42px; font-size: .8rem; color: #A9B3C4; }
+  .cp-bs-st input, .cp-bs-all input { width: 4.5rem; font: inherit; font-weight: 700; font-size: 1rem; background: transparent; color: #E8ECF3; border: 0; outline: none; text-align: right; }
+  .cp-bs-st label:focus-within, .cp-bs-all label:focus-within { border-color: #8DBBFF; }
+  .cp-bs-st .r { margin-left: auto; text-align: right; font-size: .78rem; color: #A9B3C4; }
+  .cp-bs-st .r b { display: block; font-size: 1rem; color: #E8ECF3; font-variant-numeric: tabular-nums; }
+  .cp-bs-all { display: flex; align-items: center; gap: 10px; font-size: .85rem; color: #C9D1DE; }
+  .cp-bs-warn { font-size: .82rem; color: #FFC79E; background: #3A2512; border-radius: 10px; padding: 8px 12px; }
+  .cp-bs-mult { display: flex; align-items: baseline; gap: 8px; font-size: .85rem; color: #A9B3C4; }
+  .cp-bs-mult b { margin-left: auto; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 1.4rem; color: #FFFFFF; }
+  .cp-bs-foot { border-top: 1px solid #222B3B; background: #0B101A; padding: 10px 16px 14px; display: grid; grid-template-columns: 1fr auto; gap: 4px 12px; }
+  .cp-bs-tot { display: contents; }
+  .cp-bs-tot span { font-size: .9rem; color: #C9D1DE; }
+  .cp-bs-tot b { text-align: right; font-variant-numeric: tabular-nums; font-size: 1.05rem; }
+  .cp-bs-tot.sm span, .cp-bs-tot.sm b { font-size: .8rem; color: #A9B3C4; font-weight: 500; }
+  .cp-bs-go { grid-column: 1 / -1; margin: 8px 0 0 0; width: 100%; min-height: 50px; font-size: 1rem; }
+  .cp-bs-note { grid-column: 1 / -1; margin: 6px 0 0; font-size: .72rem; color: #8592A6; }
+  .cp-bs-bar { position: fixed; z-index: 20; right: 16px; bottom: 16px; width: min(22rem, calc(100vw - 32px)); display: flex; align-items: center; gap: 10px; font: inherit; font-weight: 700; background: var(--cp-accent); color: var(--cp-ink); border: 0; border-radius: 12px; padding: 0 16px; min-height: 52px; box-shadow: 0 6px 20px rgba(0,0,0,.45); cursor: pointer; text-transform: uppercase; letter-spacing: .03em; }
+  .cp-bs-bar .cp-bs-n { background: var(--cp-ink); color: var(--cp-accent); }
+  .cp-bs-bar .r { margin-left: auto; text-transform: none; letter-spacing: 0; font-weight: 600; font-size: .9rem; }
+  @media (max-width: 560px) { .cp-bs-bar { left: 0; right: 0; bottom: 0; width: auto; border-radius: 14px 14px 0 0; } }
   .cp-tag.neutral { background: #222B3B; color: #C9D1DE; }
   .cp-meta { font-size: .85rem; color: #C9D1DE; }
   .cp-btn { margin-left: auto; font: inherit; font-size: .9rem; font-weight: 700; background: var(--cp-accent); color: var(--cp-ink); border: 0; border-radius: 8px; padding: 0 16px; min-height: 44px; cursor: pointer; }
@@ -249,15 +276,21 @@ window.dash = (() => {
     <div class="cp-upd"><span data-source="meta" data-field="date_label" class="dash-skeleton">—</span> · updated <span data-source="meta" data-field="updated" class="dash-skeleton">—</span> · <span data-source="meta" data-field="games" class="dash-skeleton">—</span> games · first tip <span data-source="meta" data-field="first_tip" class="dash-skeleton">—</span></div>
   </header>
 
-  <div class="cp-panel" data-panel="today" role="tabpanel" aria-label="Today">
-  <section class="cp-my" id="mybets" aria-labelledby="my-h" hidden>
-    <div class="cp-row"><h2 class="cp-h" id="my-h" style="font-size: 1.3rem">My bets</h2><span class="cp-meta" id="my-sub"></span></div>
-    <div class="cp-my-list" id="my-list"></div>
-    <div class="cp-my-sum" id="my-sum"></div>
-    <p class="cp-meta" id="my-multi"></p>
-    <div class="cp-row"><span class="cp-meta">Saved in this browser only, for today. Stakes in units (1u = 1% of bankroll); change them if you like.</span><button type="button" class="cp-btn ghost" id="my-clear">Clear all</button><button type="button" class="cp-btn" id="my-copy">Copy my bets</button></div>
+  <div class="cp-sheet-bg" id="my-bg" hidden></div>
+  <section class="cp-bs" id="mybets" role="dialog" aria-modal="true" aria-labelledby="my-h" hidden>
+    <div class="cp-bs-head"><h2 id="my-h">Bet slip</h2><span class="cp-bs-n" id="my-n">0</span><button type="button" class="cp-bs-txt" id="my-clear">Clear all</button><button type="button" class="cp-x" id="my-close" aria-label="Close bet slip">×</button></div>
+    <div class="cp-bs-tabs" role="tablist" aria-label="Bet type"><button type="button" role="tab" id="my-t-singles" aria-selected="true">Singles</button><button type="button" role="tab" id="my-t-multi" aria-selected="false">Multi</button></div>
+    <div class="cp-bs-body" id="my-body"></div>
+    <div class="cp-bs-foot">
+      <div class="cp-bs-tot"><span>Total stake</span><b id="my-stake">0.00u</b></div>
+      <div class="cp-bs-tot"><span>Est. return</span><b id="my-ret">0.00u</b></div>
+      <div class="cp-bs-tot sm"><span>Expected profit (our chances)</span><b id="my-exp">—</b></div>
+      <button type="button" class="cp-btn cp-bs-go" id="my-copy">Copy bet slip</button>
+      <p class="cp-bs-note">Your list only: it isn't placed anywhere. Prices are as found; check them at the bookie. Saved in this browser for today. 1u = 1% of bankroll.</p>
+    </div>
   </section>
-  <button type="button" class="cp-fab" id="my-fab" hidden></button>
+  <button type="button" class="cp-bs-bar" id="my-fab" aria-haspopup="dialog" aria-controls="mybets" hidden><span class="l">Bet slip</span><span class="cp-bs-n" id="my-fab-n">0</span><span class="r" id="my-fab-r"></span><span aria-hidden="true">▲</span></button>
+  <div class="cp-panel" data-panel="today" role="tabpanel" aria-label="Today">
   <section class="mb-sec" id="best" aria-label="Today at a glance">
     <div class="cp-stats">
       <div class="cp-stat"><div class="cp-stat-l">Bets today</div><div class="cp-stat-v" data-source="today_stats" data-field="bets">—</div></div>
@@ -782,57 +815,101 @@ window.dash = (() => {
   function myToggle(item) {
     const items = myItems();
     const k = items.findIndex(i => i.pick === item.pick);
-    if (k >= 0) items.splice(k, 1); else { items.push(item); toast('Added: ' + item.pick); }
+    if (k >= 0) items.splice(k, 1); else { items.push(item); toast(`Added to bet slip (${items.length}): ${item.pick}`); }
     my.date = myDate() || my.date; mySave(); drawMy();
   }
   function addBtn(item) {
     const b = document.createElement('button'); b.type = 'button'; b.className = 'cp-btn';
     const set = () => { const on = myHas(item.pick); b.textContent = on ? 'Added ✓' : 'Add bet'; b.classList.toggle('added', on); b.setAttribute('aria-pressed', String(on)); };
-    b.setAttribute('aria-label', `Add ${item.pick} at ${item.odds.toFixed(2)} with ${item.book} to my bets`);
+    b.setAttribute('aria-label', `Add ${item.pick} at ${item.odds.toFixed(2)} with ${item.book} to bet slip`);
     b.addEventListener('click', () => { myToggle(item); set(); });
     set(); b._sync = set; return b;
   }
-  function drawMy() {
-    const items = myItems(), sec = $('#mybets'), list = $('#my-list'), fab = $('#my-fab');
-    sec.hidden = items.length === 0;
-    fab.hidden = items.length === 0;
-    fab.textContent = `My bets · ${items.length}`;
-    document.querySelectorAll('button.cp-btn[aria-pressed]').forEach(b => b._sync && b._sync());
-    list.innerHTML = '';
-    let stake = 0, ret = 0, exp = 0;
-    items.forEach((it, k) => {
-      const row = document.createElement('div'); row.className = 'cp-my-item';
-      const l = document.createElement('div');
-      const p = document.createElement('div'); p.className = 'p'; p.textContent = it.pick;
-      const sub = document.createElement('div'); sub.className = 's'; sub.textContent = [it.cat, it.game, isFinite(it.prob) && it.prob ? `our chance ${it.prob}%` : ''].filter(Boolean).join(' · ');
-      l.append(p, sub);
-      const o = document.createElement('div'); o.className = 'o';
-      const inp = document.createElement('input'); inp.type = 'number'; inp.min = '0'; inp.step = '0.1'; inp.value = it.stake; inp.setAttribute('aria-label', `Stake for ${it.pick}, units`);
-      inp.addEventListener('change', () => { it.stake = Math.max(0, Number(inp.value) || 0); mySave(); drawMy(); });
-      o.append(document.createTextNode(`${it.odds.toFixed(2)} ${it.book} · `), inp, document.createTextNode('u'));
-      const x = document.createElement('button'); x.type = 'button'; x.className = 'cp-x'; x.textContent = '×'; x.setAttribute('aria-label', 'Remove ' + it.pick);
-      x.addEventListener('click', () => { items.splice(k, 1); mySave(); drawMy(); });
-      row.append(l, o, x); list.appendChild(row);
-      stake += it.stake; ret += it.stake * it.odds; if (it.prob) exp += it.stake * (it.prob / 100 * it.odds - 1);
-    });
-    const u = (n) => (n >= 0 ? '+' : '−') + Math.abs(n).toFixed(2) + 'u';
-    $('#my-sub').textContent = `${items.length} bet${items.length === 1 ? '' : 's'}`;
-    $('#my-sum').innerHTML = '';
-    [['Total stake', stake.toFixed(2) + 'u'], ['Return if all win', ret.toFixed(2) + 'u'], ['Expected profit', u(exp)]].forEach(([a, b]) => {
-      const d = document.createElement('div'); const s1 = document.createElement('span'); s1.textContent = a; const b1 = document.createElement('b'); b1.textContent = b; d.append(s1, b1); $('#my-sum').appendChild(d);
-    });
-    const singles = items.filter(i => !/multi/i.test(i.cat || '') && !/ \+ /.test(i.pick));
-    const games = new Set(singles.map(i => i.game)), books = new Set(singles.map(i => i.book));
-    if (singles.length >= 2) {
-      const odds = singles.reduce((t, i) => t * i.odds, 1), pr = singles.reduce((t, i) => t * (i.prob || 0) / 100, 1);
-      $('#my-multi').textContent = games.size < singles.length
-        ? `As a multi: two or more of these are from the same game, and bookies usually won't combine those.`
-        : `As a multi: odds ${odds.toFixed(2)}, all land ${(pr * 100).toFixed(0)}% of the time (treating legs as independent).` + (books.size > 1 ? ` These prices are at ${[...books].join(', ')}; a multi has to be placed at one bookie, so the odds there may be lower.` : ` All at ${[...books][0]}.`);
-    } else $('#my-multi').textContent = '';
+  const fu = (n) => n.toFixed(2) + 'u';
+  const isMultiItem = (i) => /multi/i.test(i.cat || '') || / \+ /.test(i.pick);
+  function stakeBox(val, label, onSet) {
+    const lab = document.createElement('label'); lab.append(document.createTextNode('Stake'));
+    const inp = document.createElement('input'); inp.type = 'number'; inp.inputMode = 'decimal'; inp.min = '0'; inp.step = '0.1'; inp.value = val; inp.setAttribute('aria-label', label);
+    inp.addEventListener('change', () => onSet(Math.max(0, Number(inp.value) || 0)));
+    lab.append(inp, document.createTextNode('u')); return lab;
   }
+  function retBox(v) { const r = document.createElement('div'); r.className = 'r'; r.append(document.createTextNode('Est. return')); const b = document.createElement('b'); b.textContent = fu(v); r.append(b); return r; }
+  function drawMy() {
+    const items = myItems(), body = $('#my-body'), fab = $('#my-fab');
+    if (my.tab !== 'multi') my.tab = 'singles';
+    if (my.multiStake == null) my.multiStake = 0.5;
+    const legs = items.filter(i => !isMultiItem(i));
+    const multiOk = legs.length >= 2;
+    if (!multiOk && my.tab === 'multi') my.tab = 'singles';
+    // collapsed bar
+    let sStake = 0, sRet = 0, sExp = 0;
+    items.forEach(i => { sStake += i.stake; sRet += i.stake * i.odds; if (i.prob) sExp += i.stake * (i.prob / 100 * i.odds - 1); });
+    const mOdds = legs.reduce((t, i) => t * i.odds, 1), mP = legs.reduce((t, i) => t * (i.prob || 0) / 100, 1);
+    const isM = my.tab === 'multi';
+    const tot = isM ? { st: my.multiStake, ret: my.multiStake * mOdds, exp: my.multiStake * (mP * mOdds - 1) } : { st: sStake, ret: sRet, exp: sExp };
+    fab.hidden = items.length === 0 || myOpen;
+    $('#my-fab-n').textContent = items.length; $('#my-n').textContent = items.length;
+    $('#my-fab-r').textContent = `Est. return ${fu(tot.ret)}`;
+    fab.setAttribute('aria-label', `Open bet slip, ${items.length} bet${items.length === 1 ? '' : 's'}`);
+    document.querySelectorAll('button.cp-btn[aria-pressed]').forEach(b => b._sync && b._sync());
+    // tabs
+    $('#my-t-singles').setAttribute('aria-selected', String(!isM)); $('#my-t-multi').setAttribute('aria-selected', String(isM));
+    $('#my-t-singles').textContent = `Singles (${items.length})`;
+    $('#my-t-multi').disabled = !multiOk; $('#my-t-multi').textContent = multiOk ? `Multi @ ${mOdds.toFixed(2)}` : 'Multi';
+    body.innerHTML = '';
+    const el = (tag, cls, txt) => { const e = document.createElement(tag); if (cls) e.className = cls; if (txt != null) e.textContent = txt; return e; };
+    if (!items.length) { body.append(el('p', 'cp-meta', 'Your bet slip is empty. Tap "Add bet" on any bet to add it.')); }
+    else if (!isM) {
+      if (items.length > 1) {
+        const all = el('div', 'cp-bs-all'); all.append(el('span', '', 'Same stake on every single'));
+        const sb = stakeBox('', 'Stake for every single, units', (v) => { items.forEach(i => { i.stake = v; }); mySave(); drawMy(); });
+        sb.style.marginLeft = 'auto'; sb.querySelector('input').placeholder = '—'; all.append(sb); body.append(all);
+      }
+      items.forEach((it, k) => {
+        const c = el('div', 'cp-bs-item');
+        const t = el('div', 't'); const p = el('div', 'p', it.pick);
+        p.append(el('div', 's', [it.cat, it.game, it.book, it.prob ? `our chance ${it.prob}%` : ''].filter(Boolean).join(' · ')));
+        const o = el('span', 'cp-bs-odds', it.odds.toFixed(2));
+        const x = el('button', 'x', '×'); x.type = 'button'; x.setAttribute('aria-label', 'Remove ' + it.pick);
+        x.addEventListener('click', () => { items.splice(k, 1); mySave(); drawMy(); });
+        t.append(p, o, x);
+        const st = el('div', 'cp-bs-st');
+        st.append(stakeBox(it.stake, `Stake for ${it.pick}, units`, (v) => { it.stake = v; mySave(); drawMy(); }), retBox(it.stake * it.odds));
+        c.append(t, st); body.append(c);
+      });
+    } else {
+      const c = el('div', 'cp-bs-item');
+      c.append(el('div', 'p', `${legs.length}-leg multi`));
+      legs.forEach(l => { const r = el('div', 'cp-bs-mult'); r.append(el('span', '', l.pick)); const b = el('span', '', l.odds.toFixed(2)); b.style.marginLeft = 'auto'; b.style.fontFamily = 'ui-monospace, Menlo, monospace'; r.append(b); c.append(r); });
+      const mo = el('div', 'cp-bs-mult'); mo.append(el('span', '', `Multi odds · all land ${(mP * 100).toFixed(0)}% (our chances)`), el('b', '', mOdds.toFixed(2))); c.append(mo);
+      const st = el('div', 'cp-bs-st'); st.append(stakeBox(my.multiStake, 'Stake for the multi, units', (v) => { my.multiStake = v; mySave(); drawMy(); }), retBox(my.multiStake * mOdds)); c.append(st);
+      body.append(c);
+      const games = new Set(legs.map(i => i.game)), books = new Set(legs.map(i => i.book));
+      if (games.size < legs.length) body.append(el('div', 'cp-bs-warn', 'Two or more legs are from the same game. Bookies usually won’t combine those, and the legs aren’t independent.'));
+      if (books.size > 1) body.append(el('div', 'cp-bs-warn', `These prices are from ${[...books].join(', ')}. A multi has to go on at one bookie, so the odds there may be lower.`));
+      if (items.length > legs.length) body.append(el('p', 'cp-meta', 'Multis already on your slip aren’t included as legs.'));
+    }
+    $('#my-stake').textContent = fu(tot.st); $('#my-ret').textContent = fu(tot.ret);
+    $('#my-exp').textContent = items.length ? (tot.exp >= 0 ? '+' : '−') + fu(Math.abs(tot.exp)) : '—';
+    $('#my-copy').disabled = !items.length;
+  }
+  $('#my-t-singles').addEventListener('click', () => { my.tab = 'singles'; mySave(); drawMy(); });
+  $('#my-t-multi').addEventListener('click', () => { my.tab = 'multi'; mySave(); drawMy(); });
   $('#my-clear').addEventListener('click', () => { my.items = []; mySave(); drawMy(); });
-  $('#my-copy').addEventListener('click', () => copyText(myItems().map(i => `${i.pick} @ ${i.odds.toFixed(2)} (${i.book}) ${i.stake}u`).join('\n')));
-  $('#my-fab').addEventListener('click', () => { showTab('today'); const el = $('#mybets'); el.scrollIntoView({ behavior: 'smooth' }); });
+  $('#my-copy').addEventListener('click', () => {
+    const items = myItems(), legs = items.filter(i => !isMultiItem(i));
+    const txt = my.tab === 'multi'
+      ? `MULTI: ${legs.map(i => i.pick).join(' + ')} @ ${legs.reduce((t, i) => t * i.odds, 1).toFixed(2)} · ${my.multiStake}u`
+      : items.map(i => `${i.pick} @ ${i.odds.toFixed(2)} (${i.book}) · ${i.stake}u`).join('\n');
+    copyText(txt);
+  });
+  let myOpen = false, myBack = null;
+  function openMy() { myBack = document.activeElement; myOpen = true; $('#mybets').hidden = false; $('#my-bg').hidden = false; drawMy(); $('#my-close').focus(); }
+  function closeMy() { myOpen = false; $('#mybets').hidden = true; $('#my-bg').hidden = true; drawMy(); const f = $('#my-fab'); (f.hidden ? document.body : f).focus(); }
+  $('#my-fab').addEventListener('click', openMy);
+  $('#my-close').addEventListener('click', closeMy);
+  $('#my-bg').addEventListener('click', closeMy);
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && myOpen) closeMy(); });
   let showLeans = false;
   $('#best-more').addEventListener('click', () => { showLeans = !showLeans; drawBest(); });
   function drawBest() {

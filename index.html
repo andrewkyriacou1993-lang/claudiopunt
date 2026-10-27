@@ -529,14 +529,14 @@ window.dash = (() => {
       <div class="mb-scroll mb-tall"><table class="mb-table" id="fb-table" data-source="firstbasket" data-row-key="rid">
         <thead><tr>
           <th data-field="verdict">Verdict</th><th data-field="player">Player</th><th data-field="team">Team</th><th data-field="opp">Opponent</th>
-          <th data-field="tipwin" class="num">Wins tip (model)</th><th data-field="team_tips">Team tip record</th><th data-field="opp_tips">Opponent tip record</th><th data-field="jumper_name">Jump ball</th>
+          <th data-field="tipwin" class="num">Wins tip (model)</th><th data-field="jumper_name">His team's jumper</th><th data-field="opp_jumper">Opponent's jumper</th>
           <th data-field="tip">Tip (AEDT)</th><th data-field="prob" class="num">Our chance %</th><th data-field="fair_odds" class="num">Fair odds</th><th data-field="odds" class="num">Best odds</th><th data-field="book">Bookie</th>
           <th data-field="ev_pct" class="num">EV %</th><th data-field="book_fair" class="num">Bookie's chance %</th>
           <th data-field="fb" class="num">First baskets</th><th data-field="starts" class="num">Starts</th><th data-field="all_odds">All prices</th><th>Slip</th>
         </tr></thead>
         <tbody></tbody></table></div>
       <p class="mb-note" id="fb-none" hidden>No first-basket prices yet. Bookies post this market closer to tip-off, so it may only appear at the 10:16 update.</p>
-      <p class="mb-note">"Bookie's chance" is the best bookie's price with its margin removed. "First baskets / Starts" count since the start of 2025-26. "Wins tip (model)" is the model's chance his team wins tonight's opening jump ball, from both jumpers' records. "Team tip record" and "Opponent tip record" are opening tips won since the start of 2025-26; "Jump ball" is each team's likely jumper and his own record over the same period.</p>
+      <p class="mb-note">"Bookie's chance" is the best bookie's price with its margin removed. "First baskets / Starts" count since the start of 2025-26. "Wins tip (model)" is the model's chance his team wins tonight's opening jump ball, from both jumpers' records. "His team's jumper" and "Opponent's jumper" are the players likely to take tonight's tip and the opening tips each has won since the start of 2025-26 (as a player, whichever team he was on).</p>
     </div>
   </section>
   </div>
@@ -1432,8 +1432,8 @@ window.dash = (() => {
     fillTable(tb, rows, [
       { f: 'verdict', render: pill({ 'Bet': 'bet', 'Pass': 'pass' }) }, { f: 'player', render: (td, v, r) => { td.textContent = v; if (r.jumper === 'J') { const t = document.createElement('div'); t.className = 'mb-note'; t.textContent = 'takes the tip'; td.append(t); } } },
       { f: 'team' }, { f: 'opp' }, { f: 'tipwin', cls: 'num', render: (td, v) => { td.textContent = v === '' ? '' : Math.round(Number(v) * 100) + '%'; } },
-      { f: 'team_tips', render: (td, v) => { td.textContent = tipRec(v); } }, { f: 'opp_tips', render: (td, v) => { td.textContent = tipRec(v); } },
-      { f: 'jumper_name', cls: 'why', render: (td, v, r) => { td.textContent = v ? `${v} ${tipRec(r.jumper_tips)} vs ${r.opp_jumper} ${tipRec(r.opp_jumper_tips)}` : ''; } },
+      { f: 'jumper_name', render: (td, v, r) => { td.textContent = v || ''; if (v) { const t = document.createElement('div'); t.className = 'mb-note'; t.textContent = 'won ' + tipRec(r.jumper_tips); td.append(t); } } },
+      { f: 'opp_jumper', render: (td, v, r) => { td.textContent = v || ''; if (v) { const t = document.createElement('div'); t.className = 'mb-note'; t.textContent = 'won ' + tipRec(r.opp_jumper_tips); td.append(t); } } },
       { f: 'tip', cls: 'pos' },
       { f: 'prob', cls: 'num' }, { f: 'fair_odds', cls: 'num' }, { f: 'odds', cls: 'num' }, { f: 'book' }, { f: 'ev_pct', cls: 'num', render: signed },
       { f: 'book_fair', cls: 'num' },

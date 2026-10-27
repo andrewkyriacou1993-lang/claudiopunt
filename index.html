@@ -30,7 +30,7 @@
 <script>
 /* Minimal stand-in for the Claude dashboard runtime: loads data/<name>.csv and runs the same page code. */
 window.dash = (() => {
-  const FILES = ['best', 'history', 'meta', 'bets', 'props', 'alts', 'chances', 'games', 'teams', 'injuries', 'matchups', 'usage', 'usage_fit'];
+  const FILES = ['best', 'history', 'meta', 'bets', 'props', 'alts', 'chances', 'games', 'teams', 'injuries', 'matchups', 'usage', 'usage_fit', 'firstbasket'];
   const D = {}, calcs = {}, subs = [];
   let queued = false;
   const fire = () => { if (queued) return; queued = true; requestAnimationFrame(() => { queued = false; subs.forEach(fn => { try { fn(); } catch (e) { console.error(e); } }); }); };
@@ -343,6 +343,7 @@ window.dash = (() => {
       <button type="button" class="cp-link" data-go="chance"><b>By chance</b><span>Every outcome sorted by how likely it is</span></button>
       <button type="button" class="cp-link" data-go="props"><b>Player props</b><span>Every bookie's lines, with each player's record</span></button>
       <button type="button" class="cp-link" data-go="alts"><b>Alt lines</b><span>Ladders like 30+ points, priced rung by rung</span></button>
+      <button type="button" class="cp-link" data-go="firstbasket"><b>First basket</b><span>Each starter's chance to score first vs the bookies</span></button>
       <button type="button" class="cp-link" data-go="bets"><b>Game bets</b><span>Moneylines, lines and totals ranked by value</span></button>
     </div>
   </section>
@@ -514,6 +515,27 @@ window.dash = (() => {
         </tr></thead>
         <tbody></tbody></table></div>
       <p class="mb-note" id="chance-none" hidden>Nothing in that range.</p>
+    </div>
+  </section>
+  <section class="mb-sec" id="firstbasket">
+    <h2 class="mb-h2">First basket</h2>
+    <p class="mb-note">The model's chance that each starter scores the game's first points, against every bookie's First Basket price. Two things drive it. <b>The tip-off:</b> the team that wins the jump ball scores first 66% of the time, and centres' tip records are tracked jump by jump. <b>Who shoots first:</b> each starter's share of his team's first baskets, built from his scoring (flattened, because first baskets are spread more evenly than points) with a lift for centres and the jumper, and nudged by his own first-basket record. Bench players scored first in 0 of 3,744 games. Tested on 1,278 games (2025-26 and 2026-27, using only earlier games each time): it beat "every starter equally likely" and was well calibrated, but it has <b>never been tested against past first-basket odds</b>, so it only flags a bet at 10%+ value, at a flat 0.25u, and every bet is tracked in the ledger. The chance counts free throws as a first basket (8.5% of first scores are free throws); check your bookie's rule. Bookie margins on this market are about 15%.</p>
+    <div class="mb-card">
+      <div class="mb-filters">
+        <label for="f-show" class="mb-note">Show</label>
+        <select id="f-show" class="mb-input"><option value="all">Every player</option><option value="bets">Bets only</option><option value="pos">Positive value</option></select>
+        <label for="f-game" class="mb-note">Game</label><select id="f-game" class="mb-input"><option value="">All games</option></select>
+      </div>
+      <div class="mb-scroll mb-tall"><table class="mb-table" id="fb-table" data-source="firstbasket" data-row-key="rid">
+        <thead><tr>
+          <th data-field="verdict">Verdict</th><th data-field="player">Player</th><th data-field="game">Game</th><th data-field="tip">Tip (AEDT)</th>
+          <th data-field="prob" class="num">Our chance %</th><th data-field="fair_odds" class="num">Fair odds</th><th data-field="odds" class="num">Best odds</th><th data-field="book">Bookie</th>
+          <th data-field="ev_pct" class="num">EV %</th><th data-field="book_fair" class="num">Bookie's chance %</th><th data-field="tipwin" class="num">Team wins tip</th>
+          <th data-field="jumper">Jumps</th><th data-field="fb" class="num">First baskets</th><th data-field="starts" class="num">Starts</th><th data-field="all_odds">All prices</th><th>Slip</th>
+        </tr></thead>
+        <tbody></tbody></table></div>
+      <p class="mb-note" id="fb-none" hidden>No first-basket prices yet. Bookies post this market closer to tip-off, so it may only appear at the 10:16 update.</p>
+      <p class="mb-note">"Bookie's chance" is the best bookie's price with its margin removed. "First baskets / Starts" count since the start of 2025-26. "Team wins tip" is the model's chance his team wins the opening jump ball.</p>
     </div>
   </section>
   </div>
@@ -1166,7 +1188,7 @@ window.dash = (() => {
     title: 'Ledger by category',
     description: 'Settled bets, won–lost, units staked, profit (units), return on stakes, average model win probability vs actual win rate, and average closing-line value for each category.',
     fn: (history) => {
-      const cats = ['Moneyline', 'Line', 'Total', 'Points', 'Rebounds', 'Assists', 'P+R+A', 'Alt line', 'Multi', '80% multi'];
+      const cats = ['Moneyline', 'Line', 'Total', 'Points', 'Rebounds', 'Assists', 'P+R+A', 'Alt line', 'First basket', 'Multi', '80% multi'];
       return cats.map(c => {
         const s = history.filter(h => h.category === c && ['win', 'loss', 'push', 'void'].includes(h.result));
         const w = s.filter(h => h.result === 'win').length, l = s.filter(h => h.result === 'loss').length;
@@ -1394,6 +1416,28 @@ window.dash = (() => {
   ['#c-min', '#c-max', '#c-cat', '#c-val'].forEach(s => $(s).addEventListener('change', drawChance));
   ['#c-min', '#c-max', '#c-search'].forEach(s => $(s).addEventListener('input', drawChance));
 
+  // ---------- first basket ----------
+  function drawFB() {
+    const F = dash.data('firstbasket'), tb = $('#fb-table tbody');
+    if (F.status === 'error') { tb.innerHTML = '<tr><td colspan="16"><div class="mb-fail">Failed to load</div></td></tr>'; return; }
+    if (F.status === 'missing') { $('#fb-table').hidden = true; $('#fb-none').hidden = false; return; }
+    if (F.status !== 'ok') return;
+    const gsel = $('#f-game'), cur = gsel.value, gms = [...new Set(F.data.map(r => r.game))];
+    gsel.innerHTML = '<option value="">All games</option>' + gms.map(g => `<option>${g}</option>`).join(''); gsel.value = gms.includes(cur) ? cur : '';
+    const show = $('#f-show').value;
+    let rows = F.data.filter(r => (!gsel.value || r.game === gsel.value) && (show === 'all' || (show === 'bets' ? r.verdict === 'Bet' : Number(r.ev_pct) > 0)));
+    rows = rows.slice().sort((a, b) => a.game === b.game ? Number(b.prob) - Number(a.prob) : String(a.tip).localeCompare(String(b.tip)) || a.game.localeCompare(b.game));
+    fillTable(tb, rows, [
+      { f: 'verdict', render: pill({ 'Bet': 'bet', 'Pass': 'pass' }) }, { f: 'player' }, { f: 'game', cls: 'pos' }, { f: 'tip', cls: 'pos' },
+      { f: 'prob', cls: 'num' }, { f: 'fair_odds', cls: 'num' }, { f: 'odds', cls: 'num' }, { f: 'book' }, { f: 'ev_pct', cls: 'num', render: signed },
+      { f: 'book_fair', cls: 'num' }, { f: 'tipwin', cls: 'num', render: (td, v) => { td.textContent = v === '' ? '' : Math.round(Number(v) * 100) + '%'; } },
+      { f: 'jumper', render: (td, v) => { td.textContent = v === 'J' ? 'Takes the tip' : ''; } }, { f: 'fb', cls: 'num' }, { f: 'starts', cls: 'num' }, { f: 'all_odds', cls: 'why' },
+      { f: 'rid', render: (td, v, r) => { td.appendChild(addBtn({ pick: r.player + ' first basket', odds: Number(r.odds), book: r.book, game: r.game, prob: Number(r.prob), stake: Number(r.stake_pct) || 0.25, cat: 'First basket' })); } }
+    ], 'rid', r => r.verdict === 'Bet' ? '' : 'pass');
+    $('#fb-table').hidden = rows.length === 0; $('#fb-none').hidden = F.data.length !== 0;
+  }
+  ['#f-show', '#f-game'].forEach(s => $(s).addEventListener('change', drawFB));
+
   // ---------- player usage ----------
   let TONIGHT = new Set();
   let uSort = { f: 'usg', dir: -1 };
@@ -1482,7 +1526,7 @@ window.dash = (() => {
     ev.preventDefault(); const el = document.getElementById(a.getAttribute('href').slice(1)); if (el) { el.scrollIntoView({ behavior: 'smooth' }); dash.setLink(el.id); }
   }));
 
-  redrawAll = () => { drawMeta(); drawBest(); drawTodayGames(); drawTrack(); draw(); drawProps(); drawAlts(); drawChance(); drawUsage(); };
+  redrawAll = () => { drawMeta(); drawBest(); drawTodayGames(); drawTrack(); draw(); drawProps(); drawAlts(); drawChance(); drawFB(); drawUsage(); };
   dash.onData(redrawAll);
 
   const hash = location.hash.slice(1), tabNames = ['today', 'explore', 'games', 'ledger', 'method'];

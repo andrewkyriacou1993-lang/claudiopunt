@@ -30,7 +30,7 @@
 <script>
 /* Minimal stand-in for the Claude dashboard runtime: loads data/<name>.csv and runs the same page code. */
 window.dash = (() => {
-  const FILES = ['best', 'history', 'meta', 'bets', 'props', 'alts', 'chances', 'games', 'teams', 'injuries', 'matchups', 'usage', 'usage_fit', 'firstbasket', 'sgm', 'combos', 'lineup_news'];
+  const FILES = ['best', 'history', 'meta', 'bets', 'props', 'alts', 'chances', 'games', 'teams', 'injuries', 'matchups', 'usage', 'usage_fit', 'firstbasket', 'sgm', 'combos', 'lineup_news', 'best_next', 'meta_next', 'props_next', 'alts_next', 'chances_next', 'games_next', 'bets_next', 'teams_next', 'injuries_next', 'matchups_next', 'usage_next', 'usage_fit_next', 'firstbasket_next', 'sgm_next', 'combos_next'];
   const D = {}, calcs = {}, subs = [];
   let queued = false;
   const fire = () => { if (queued) return; queued = true; requestAnimationFrame(() => { queued = false; subs.forEach(fn => { try { fn(); } catch (e) { console.error(e); } }); }); };
@@ -82,6 +82,9 @@ window.dash = (() => {
   .mb-table td.why { color: var(--color-fg-muted); min-width: 18rem; }
   .mb-table td.nw { white-space: nowrap; }
   #news[hidden] { display: none; }
+  .cp-daybar { margin: 0 28px; padding: 10px 14px; border-radius: 8px; background: rgba(111,168,255,.12); color: #E8ECF3; font-size: .95rem; }
+  .cp-daybar[hidden] { display: none; }
+  @media (max-width: 640px) { .cp-daybar { margin: 0 14px; } }
   .cp-news { display: flex; flex-direction: column; gap: 6px; }
   .cp-news-i { display: grid; grid-template-columns: 3.4rem 1fr; gap: 10px; padding: 8px 12px; border-radius: 8px; background: rgba(255,255,255,.04); font-size: .92rem; }
   .cp-news-i time { color: var(--color-fg-muted); font-variant-numeric: tabular-nums; }
@@ -168,6 +171,7 @@ window.dash = (() => {
   .cp-brand span { color: var(--cp-accent); }
   .cp-tabs { display: flex; flex-wrap: wrap; gap: 2px; }
   .cp-tab { font: inherit; font-weight: 600; font-size: .95rem; color: #A9B3C4; background: none; border: 0; padding: 12px 14px; min-height: 44px; cursor: pointer; }
+  .cp-tab[hidden] { display: none; }
   .cp-tab[aria-selected="true"] { color: #FFFFFF; box-shadow: inset 0 -3px 0 var(--cp-accent); }
   .cp-tab:focus-visible, .cp-btn:focus-visible, .cp-game:focus-visible, .cp-link:focus-visible { outline: 2px solid #8DBBFF; outline-offset: 2px; }
   .cp-upd { margin-left: auto; font-size: .85rem; color: #A9B3C4; }
@@ -294,6 +298,7 @@ window.dash = (() => {
     <div class="cp-brand" id="top">ClaudioPunt <span>NBA</span></div>
     <div class="cp-tabs" role="tablist" aria-label="Sections">
       <button type="button" class="cp-tab" role="tab" data-tab="today" aria-selected="true">Today</button>
+      <button type="button" class="cp-tab" role="tab" data-tab="tomorrow" aria-selected="false" hidden>Tomorrow</button>
       <button type="button" class="cp-tab" role="tab" data-tab="explore" aria-selected="false">Explore</button>
       <button type="button" class="cp-tab" role="tab" data-tab="games" aria-selected="false">Games</button>
       <button type="button" class="cp-tab" role="tab" data-tab="ledger" aria-selected="false">Ledger</button>
@@ -317,6 +322,7 @@ window.dash = (() => {
   </section>
   <button type="button" class="cp-bs-bar" id="my-fab" aria-haspopup="dialog" aria-controls="mybets" hidden><span class="l">Bet slip</span><span class="cp-bs-n" id="my-fab-n">0</span><span class="r" id="my-fab-r"></span><span aria-hidden="true">▲</span></button>
   <div class="cp-panel" data-panel="today" role="tabpanel" aria-label="Today">
+  <div class="cp-daybar" id="day-bar" hidden></div>
   <div class="cp-bkbar">
     <span class="cp-bkbar-l" id="bk-label">My bookie</span>
     <div class="cp-bk" id="bk-chips" role="group" aria-labelledby="bk-label"></div>
@@ -720,6 +726,28 @@ window.dash = (() => {
   const $ = (s) => document.querySelector(s);
   const skel = (el, on) => el && el.classList.toggle('dash-skeleton', on);
   const fail = (box) => { box.innerHTML = ''; const d = document.createElement('div'); d.className = 'mb-fail'; d.textContent = 'Failed to load'; box.appendChild(d); };
+
+  // ---------- today / tomorrow ----------
+  // The evening run builds tomorrow's board into datasets named <name>_next. "Tomorrow" shows the Today layout with
+  // those; after midnight (AEDT), until the morning run replaces today's board, Today itself uses them.
+  const NEXT = new Set(['best', 'meta', 'props', 'alts', 'chances', 'games', 'bets', 'teams', 'injuries', 'matchups', 'firstbasket', 'sgm', 'combos']);
+  const NEXTC = new Set();
+  let DAY = 'cur';                         // which board the page is showing: 'cur' or 'next'
+  const aedtToday = () => new Date().toLocaleDateString('en-CA', { timeZone: 'Australia/Sydney' });
+  try {
+    const _data = dash.data.bind(dash), _calc = dash.calc.bind(dash);
+    dash.calc = (id, o) => {
+      _calc(id, o);
+      const ins = (o && o.inputs) || [];
+      if (ins.some(i => NEXT.has(i) || NEXTC.has(i))) { NEXTC.add(id); _calc(id + '_next', Object.assign({}, o, { inputs: ins.map(i => (NEXT.has(i) || NEXTC.has(i)) ? i + '_next' : i) })); }
+    };
+    dash.data = (id) => (DAY === 'next' && (NEXT.has(id) || NEXTC.has(id))) ? _data(id + '_next') : _data(id);
+    dash.__raw = _data;
+  } catch (e) { dash.__raw = null; }
+  const metaDate = (id) => { const f = dash.__raw; if (!f) return ''; const M = f(id); return M && M.status === 'ok' && M.data[0] ? (M.data[0].date || '') : ''; };
+  // today's board is stale and tomorrow's board is for today -> Today shows it
+  const swapped = () => { const t = aedtToday(); return metaDate('meta_next') === t && metaDate('meta') !== t; };
+  const hasTomorrow = () => metaDate('meta_next') > aedtToday();
 
   function fillTable(tbody, rows, cols, keyCol, rowClass) {
     tbody.innerHTML = '';
@@ -1226,10 +1254,24 @@ window.dash = (() => {
   // ---------- tabs ----------
   let redrawAll = () => {};
   function showTab(name) {
+    if (name === 'tomorrow') DAY = 'next';
+    else if (name === 'today') DAY = swapped() ? 'next' : 'cur';
+    const panel = name === 'tomorrow' ? 'today' : name;
     document.querySelectorAll('.cp-tab').forEach(t => t.setAttribute('aria-selected', String(t.dataset.tab === name)));
-    document.querySelectorAll('.cp-panel').forEach(p => { p.hidden = p.dataset.panel !== name; });
+    document.querySelectorAll('.cp-panel').forEach(p => { p.hidden = p.dataset.panel !== panel; });
     redrawAll();
   }
+  function drawDay() {
+    const sel = (document.querySelector('.cp-tab[aria-selected="true"]') || {}).dataset || {};
+    const tm = document.querySelector('.cp-tab[data-tab="tomorrow"]');
+    if (tm) tm.hidden = !hasTomorrow();
+    if (sel.tab === 'today' && DAY === 'cur' && swapped()) DAY = 'next';          // midnight passed while the page was open
+    if (sel.tab === 'tomorrow' && !hasTomorrow()) { DAY = swapped() ? 'next' : 'cur'; if (tm) tm.setAttribute('aria-selected', 'false'); const td = document.querySelector('.cp-tab[data-tab="today"]'); if (td) td.setAttribute('aria-selected', 'true'); }
+    const bar = $('#day-bar'), M = dash.data('meta'), lab = M.status === 'ok' && M.data[0] ? M.data[0].date_label : '';
+    if (DAY === 'next' && sel.tab !== 'today') { bar.hidden = false; bar.textContent = `Tomorrow · ${lab}: picks from the evening update at the night-before prices (the earliest prices are where the model's edge has been). They are logged in the ledger now and locked at these odds; the morning and late updates can add bets but never change these. Lineup news before tip-off can change things.`; }
+    else bar.hidden = true;
+  }
+  setInterval(() => { try { const d0 = DAY; drawDay(); if (DAY !== d0) redrawAll(); } catch (e) {} }, 60000);
   function showFor(el) { const p = el && el.closest('.cp-panel'); if (p) showTab(p.dataset.panel); }
   document.querySelectorAll('.cp-tab').forEach(t => t.addEventListener('click', () => { showTab(t.dataset.tab); dash.setLink(t.dataset.tab); }));
   document.querySelectorAll('.cp-link').forEach(b => b.addEventListener('click', () => {
@@ -1729,10 +1771,10 @@ window.dash = (() => {
     ev.preventDefault(); const el = document.getElementById(a.getAttribute('href').slice(1)); if (el) { el.scrollIntoView({ behavior: 'smooth' }); dash.setLink(el.id); }
   }));
 
-  redrawAll = () => { drawMeta(); drawNews(); drawBest(); drawTodayGames(); drawTrack(); draw(); drawProps(); drawAlts(); drawChance(); drawFB(); drawSGM(); drawCombos(); drawUsage(); };
+  redrawAll = () => { drawDay(); drawMeta(); drawNews(); drawBest(); drawTodayGames(); drawTrack(); draw(); drawProps(); drawAlts(); drawChance(); drawFB(); drawSGM(); drawCombos(); drawUsage(); };
   dash.onData(redrawAll);
 
-  const hash = location.hash.slice(1), tabNames = ['today', 'explore', 'games', 'ledger', 'method'];
+  const hash = location.hash.slice(1), tabNames = ['today', 'tomorrow', 'explore', 'games', 'ledger', 'method'];
   if (tabNames.includes(hash)) showTab(hash);
   else { const named = document.getElementById(hash); if (named) { showFor(named); named.scrollIntoView(); dash.setLink(named.id); } }
 })();

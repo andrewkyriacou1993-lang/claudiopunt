@@ -30,7 +30,7 @@
 <script>
 /* Minimal stand-in for the Claude dashboard runtime: loads data/<name>.csv and runs the same page code. */
 window.dash = (() => {
-  const FILES = ['best', 'history', 'meta', 'bets', 'props', 'alts', 'chances', 'games', 'teams', 'injuries', 'matchups', 'usage', 'usage_fit', 'firstbasket', 'sgm'];
+  const FILES = ['best', 'history', 'meta', 'bets', 'props', 'alts', 'chances', 'games', 'teams', 'injuries', 'matchups', 'usage', 'usage_fit', 'firstbasket', 'sgm', 'combos'];
   const D = {}, calcs = {}, subs = [];
   let queued = false;
   const fire = () => { if (queued) return; queued = true; requestAnimationFrame(() => { queued = false; subs.forEach(fn => { try { fn(); } catch (e) { console.error(e); } }); }); };
@@ -80,6 +80,7 @@ window.dash = (() => {
   .mb-table td { padding: var(--cds-pad-xs) var(--cds-pad-sm); border-bottom: 1px solid var(--color-border-line); vertical-align: top; }
   .mb-table td.num, .mb-table th.num { text-align: right; }
   .mb-table td.why { color: var(--color-fg-muted); min-width: 18rem; }
+  .mb-table td.nw { white-space: nowrap; }
   .mb-table tr.pass td { color: var(--color-fg-muted); }
   .mb-table .side { border-left: 1px solid var(--color-border-line); }
   .pill { display: inline-block; padding: 0 var(--cds-pad-sm); border-radius: 999px; border: 1px solid currentColor; font-size: var(--cds-font-size-caption); white-space: nowrap; }
@@ -351,6 +352,7 @@ window.dash = (() => {
       <button type="button" class="cp-link" data-go="alts"><b>Alt lines</b><span>Ladders like 30+ points, priced rung by rung</span></button>
       <button type="button" class="cp-link" data-go="firstbasket"><b>First basket</b><span>Each starter's chance to score first vs the bookies</span></button>
       <button type="button" class="cp-link" data-go="sgm"><b>Same-game multis</b><span>PointsBet SGMs where our legs compound into value</span></button>
+      <button type="button" class="cp-link" data-go="combos"><b>Player combos</b><span>One player clearing 2-3 stats, e.g. 15+ pts &amp; 4+ reb &amp; 4+ ast</span></button>
       <button type="button" class="cp-link" data-go="bets"><b>Game bets</b><span>Moneylines, lines and totals ranked by value</span></button>
     </div>
   </section>
@@ -576,6 +578,35 @@ window.dash = (() => {
         <tbody></tbody></table></div>
       <p class="mb-note" id="sgm-none" hidden>No same-game multis priced yet today.</p>
       <p class="mb-note">"Singles multiplied" is the two PointsBet prices multiplied, what a normal multi would pay; the SGM price above or below it shows how PointsBet adjusted for the link. "Link" is the correlation we used: positive when the legs tend to land together, negative when one landing makes the other less likely. Build these at PointsBet with Same Game Multi.</p>
+    </div>
+  </section>
+  <section class="mb-sec" id="combos">
+    <h2 class="mb-h2">Player combos</h2>
+    <p class="mb-note">Same-game multis on one player: two or three stat milestones together, like 15+ points, 4+ rebounds and 4+ assists. A player's stats rise and fall together (more minutes, a good night), so these land more often than the legs multiplied: on real 2024-25 prop lines, two of a player's stats landed 7.5% more often than the market's chances multiplied, and points + rebounds + assists triples 25% more. <b>Sportsbet prices these at about the legs multiplied (triples slightly above)</b>, so the link is often not paid for there; PointsBet cuts them by about 5%. Our chance starts from each bookie's own single prices with its margin taken off (the market beats a player's game log on single stats), then adds the link for that stat pair. A bet needs 8%+ value and a 25%+ chance, flat 0.25u, one per player, tracked in the ledger as "Combo".</p>
+    <div class="mb-card">
+      <div class="mb-filters">
+        <label for="cb-show" class="mb-note">Show</label>
+        <select id="cb-show" class="mb-input"><option value="pos">Positive value</option><option value="bets">Bets only</option><option value="all">Every combo priced</option></select>
+        <label for="cb-book" class="mb-note">Bookie</label>
+        <select id="cb-book" class="mb-input"><option value="">Best price</option><option>Sportsbet</option><option>PointsBet</option></select>
+        <label for="cb-legs" class="mb-note">Legs</label>
+        <select id="cb-legs" class="mb-input"><option value="">2 or 3</option><option value="2">2 stats</option><option value="3">3 stats</option></select>
+        <label for="cb-min" class="mb-note">Chance at least</label>
+        <select id="cb-min" class="mb-input"><option value="25">25%</option><option value="40">40%</option><option value="50" selected>50%</option><option value="60">60%</option><option value="70">70%</option></select>
+        <label for="cb-game" class="mb-note">Game</label><select id="cb-game" class="mb-input"><option value="">All games</option></select>
+        <label for="cb-sort" class="mb-note">Sort</label>
+        <select id="cb-sort" class="mb-input"><option value="ev">Value</option><option value="chance">Chance</option></select>
+      </div>
+      <div class="mb-scroll mb-tall"><table class="mb-table" id="cb-table" data-source="combos" data-row-key="rid">
+        <thead><tr>
+          <th data-field="verdict">Verdict</th><th data-field="game">Game</th><th data-field="player">Player</th><th data-field="combo">Combo</th>
+          <th data-field="chance" class="num">Our chance %</th><th data-field="fair_odds" class="num">Fair odds</th><th data-field="best_price" class="num">Price</th><th data-field="best_book">Bookie</th>
+          <th data-field="sb_product" class="num">Legs multiplied</th><th data-field="ev_pct" class="num">EV %</th>
+          <th data-field="log_chance" class="num">His log %</th><th data-field="hits10" class="num">Last 10</th><th data-field="opp">Opp</th><th data-field="opp_factor" class="num">Opp combos</th><th>Slip</th>
+        </tr></thead>
+        <tbody></tbody></table></div>
+      <p class="mb-note" id="cb-none" hidden>No player combos priced yet today.</p>
+      <p class="mb-note">"Legs multiplied" is that bookie's single prices multiplied, what an ordinary multi of the legs would pay; a combo price at or above it means the bookie is not charging for the link. "His log %" is the same combo from his own recent games (recency-weighted) and "Last 10" how many of his last 10 games it landed: shown so you can see when his form disagrees with the bookie's lines (often a role or minutes change, which the bookie knows about). "Opp combos" is how often players clear combos against tonight's opponent compared with their usual (above 1 = more), from this season and last; it is context only, because the bookies' single lines already allow for the matchup. Build these at the bookie with Same Game Multi.</p>
     </div>
   </section>
   </div>
@@ -1249,7 +1280,7 @@ window.dash = (() => {
     title: 'Ledger by category',
     description: 'Settled bets, won–lost, units staked, profit (units), return on stakes, average model win probability vs actual win rate, and average closing-line value for each category.',
     fn: (history) => {
-      const cats = ['Moneyline', 'Line', 'Total', 'Points', 'Rebounds', 'Assists', 'P+R+A', 'Alt line', 'First basket', 'Multi', '80% multi', 'SGM'];
+      const cats = ['Moneyline', 'Line', 'Total', 'Points', 'Rebounds', 'Assists', 'P+R+A', 'Alt line', 'First basket', 'Multi', '80% multi', 'SGM', 'Combo'];
       return cats.map(c => {
         const s = history.filter(h => h.category === c && ['win', 'loss', 'push', 'void'].includes(h.result));
         const w = s.filter(h => h.result === 'win').length, l = s.filter(h => h.result === 'loss').length;
@@ -1540,6 +1571,40 @@ window.dash = (() => {
   }
   ['#s-show', '#s-game'].forEach(s => $(s).addEventListener('change', drawSGM));
 
+  // ---------- same-player combos ----------
+  function drawCombos() {
+    const S = dash.data('combos'), tb = $('#cb-table tbody');
+    if (S.status === 'error') { tb.innerHTML = '<tr><td colspan="15"><div class="mb-fail">Failed to load</div></td></tr>'; return; }
+    if (S.status === 'missing') { $('#cb-table').hidden = true; $('#cb-none').hidden = false; return; }
+    if (S.status !== 'ok') return;
+    const gsel = $('#cb-game'), cur = gsel.value, gms = [...new Set(S.data.map(r => r.game))];
+    gsel.innerHTML = '<option value="">All games</option>' + gms.map(g => `<option>${g}</option>`).join(''); gsel.value = gms.includes(cur) ? cur : '';
+    const show = $('#cb-show').value, bk = $('#cb-book').value, legs = $('#cb-legs').value, minc = Number($('#cb-min').value), srt = $('#cb-sort').value;
+    const K = { Sportsbet: ['sb_price', 'ev_sb', 'sb_product'], PointsBet: ['pb_price', 'ev_pb', 'pb_product'] };
+    let rows = S.data.map(r => {
+      if (!bk) return Object.assign({}, r, { _prod: r.best_book === 'PointsBet' ? r.pb_product : r.sb_product });
+      const [pf, ef, qf] = K[bk];
+      if (r[pf] === '' || r[pf] == null) return null;
+      const ev = Number(r[ef]);
+      return Object.assign({}, r, { best_price: r[pf], best_book: bk, ev_pct: r[ef], _prod: r[qf], verdict: ev >= 8 && Number(r.chance) >= 25 ? (r.verdict === 'Bet' && r.best_book === bk ? 'Bet' : 'Value') : 'Pass' });
+    }).filter(Boolean);
+    rows = rows.filter(r => (!gsel.value || r.game === gsel.value) && (!legs || String(r.legs) === legs) && Number(r.chance) >= minc
+      && (show === 'all' || (show === 'bets' ? r.verdict === 'Bet' : Number(r.ev_pct) > 0)));
+    rows.sort((a, b) => srt === 'chance' ? Number(b.chance) - Number(a.chance) : Number(b.ev_pct) - Number(a.ev_pct));
+    fillTable(tb, rows, [
+      { f: 'verdict', render: pill({ 'Bet': 'bet', 'Value': 'bet', 'Pass': 'pass' }) }, { f: 'game', cls: 'pos' }, { f: 'player', cls: 'nw' }, { f: 'combo', cls: 'nw' },
+      { f: 'chance', cls: 'num' }, { f: 'fair_odds', cls: 'num' }, { f: 'best_price', cls: 'num' }, { f: 'best_book' },
+      { f: '_prod', cls: 'num' }, { f: 'ev_pct', cls: 'num', render: signed },
+      { f: 'log_chance', cls: 'num' }, { f: 'hits10', cls: 'num', render: (td, v) => { td.textContent = v === '' || v == null ? '' : v + '/10'; } },
+      { f: 'opp' }, { f: 'opp_factor', cls: 'num' },
+      { f: 'rid', render: (td, v, r) => { td.appendChild(addBtn({ pick: `${r.player} ${r.combo}`, odds: Number(r.best_price), book: r.best_book, game: r.game, prob: Number(r.chance), stake: Number(r.stake_pct) || 0.25, cat: 'Combo' })); } }
+    ], 'rid', r => r.verdict === 'Pass' ? 'pass' : '');
+    $('#cb-table').hidden = rows.length === 0;
+    $('#cb-none').hidden = rows.length !== 0;
+    $('#cb-none').textContent = S.data.length ? 'Nothing matches these filters (try a lower chance or "Every combo priced").' : 'No player combos priced yet today.';
+  }
+  ['#cb-show', '#cb-book', '#cb-legs', '#cb-min', '#cb-game', '#cb-sort'].forEach(s => $(s).addEventListener('change', drawCombos));
+
   // ---------- player usage ----------
   let TONIGHT = new Set();
   let uSort = { f: 'usg', dir: -1 };
@@ -1628,7 +1693,7 @@ window.dash = (() => {
     ev.preventDefault(); const el = document.getElementById(a.getAttribute('href').slice(1)); if (el) { el.scrollIntoView({ behavior: 'smooth' }); dash.setLink(el.id); }
   }));
 
-  redrawAll = () => { drawMeta(); drawBest(); drawTodayGames(); drawTrack(); draw(); drawProps(); drawAlts(); drawChance(); drawFB(); drawSGM(); drawUsage(); };
+  redrawAll = () => { drawMeta(); drawBest(); drawTodayGames(); drawTrack(); draw(); drawProps(); drawAlts(); drawChance(); drawFB(); drawSGM(); drawCombos(); drawUsage(); };
   dash.onData(redrawAll);
 
   const hash = location.hash.slice(1), tabNames = ['today', 'explore', 'games', 'ledger', 'method'];

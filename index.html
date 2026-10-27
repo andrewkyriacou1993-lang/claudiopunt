@@ -494,7 +494,7 @@ window.dash = (() => {
         <label for="c-min" class="mb-note">Chance from</label><input id="c-min" class="mb-input" type="number" min="0" max="100" step="5" value="80" style="width:5em">
         <label for="c-max" class="mb-note">to</label><input id="c-max" class="mb-input" type="number" min="0" max="100" step="5" value="100" style="width:5em">
         <label for="c-cat" class="mb-note">Type</label>
-        <select id="c-cat" class="mb-input"><option value="">All</option><option>Moneyline</option><option>Line</option><option>Total</option><option>Points</option><option>Rebounds</option><option>Assists</option><option>P+R+A</option><option>Alt line</option></select>
+        <select id="c-cat" class="mb-input"><option value="">All</option><option>Moneyline</option><option>Line</option><option>Total</option><option value="Points">Points (main + alt lines)</option><option value="Rebounds">Rebounds (main + alt lines)</option><option value="Assists">Assists (main + alt lines)</option><option value="P+R+A">P+R+A (main + alt lines)</option><option value="alt">Player alt lines only</option></select>
         <label for="c-val" class="mb-note">Value</label>
         <select id="c-val" class="mb-input"><option value="">Any</option><option value="pos">Positive EV only</option></select>
         <label for="c-search" class="mb-note">Search</label><input id="c-search" class="mb-input" type="search" placeholder="Player, team or game">
@@ -1349,7 +1349,7 @@ window.dash = (() => {
     if (C.status === 'error' || C.status === 'missing') { tb.innerHTML = '<tr><td colspan="11"><div class="mb-fail">' + (C.status === 'missing' ? 'No data yet' : 'Failed to load') + '</div></td></tr>'; return; }
     if (C.status !== 'ok') return;
     const lo = Number($('#c-min').value || 0), hi = Number($('#c-max').value || 100), cat = $('#c-cat').value, val = $('#c-val').value, q = $('#c-search').value.trim().toLowerCase();
-    const rows = C.data.filter(r => { const p = Number(r.prob); return p >= lo && p <= hi && (!cat || r.category === cat) && (!val || Number(r.ev_pct) > 0)
+    const rows = C.data.filter(r => { const p = Number(r.prob); return p >= lo && p <= hi && (!cat || (cat === 'alt' ? /^Alt /.test(r.category) || r.category === 'Alt line' : r.category === cat || r.category.toLowerCase() === ('alt ' + cat).toLowerCase() || (r.category === 'Alt line' && ({ Points: 'Points', Rebounds: 'Rebounds', Assists: 'Assists', 'P+R+A': 'PRA' })[cat] === r.stat))) && (!val || Number(r.ev_pct) > 0)
       && (!q || (r.pick + ' ' + r.game).toLowerCase().includes(q)); });
     $('#c-count').textContent = rows.length + ' outcome' + (rows.length === 1 ? '' : 's') + ' between ' + lo + '% and ' + hi + '%' + (rows.length > 300 ? ' (first 300 shown)' : '');
     fillTable(tb, rows.slice(0, 300), [

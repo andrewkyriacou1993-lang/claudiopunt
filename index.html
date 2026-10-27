@@ -169,6 +169,14 @@ window.dash = (() => {
   .cp-bar { position: sticky; top: 0; z-index: 2; background: #0B101A; border-bottom: 1px solid #222B3B; border-radius: 18px 18px 0 0; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 20px; padding: 10px 28px; }
   .cp-brand { font-family: var(--cp-head); font-weight: 800; font-stretch: condensed; text-transform: uppercase; font-size: 1.45rem; letter-spacing: .02em; }
   .cp-brand span { color: var(--cp-accent); }
+  .cp-sport { display: inline-flex; gap: 2px; margin-left: 6px; vertical-align: 2px; background: rgba(255,255,255,.06); border-radius: 8px; padding: 2px; }
+  .cp-sport button { font: inherit; font-size: 1.05rem; letter-spacing: .02em; color: #A9B3C4; background: none; border: 0; border-radius: 6px; padding: 2px 8px; min-height: 32px; cursor: pointer; }
+  .cp-sport button[aria-pressed="true"] { color: #0B1220; background: var(--cp-accent); }
+  .cp-sport button:focus-visible { outline: 2px solid #8DBBFF; outline-offset: 2px; }
+  .cp-nfl { padding: 0 28px; display: flex; flex-direction: column; gap: 16px; }
+  .cp-nfl[hidden], .cp-tabs[hidden], .cp-upd[hidden] { display: none; }
+  .cp-nfl ul { margin: 0; padding-left: 20px; color: #C9D1DE; line-height: 1.6; }
+  @media (max-width: 640px) { .cp-nfl { padding: 0 14px; } }
   .cp-tabs { display: flex; flex-wrap: wrap; gap: 2px; }
   .cp-tab { font: inherit; font-weight: 600; font-size: .95rem; color: #A9B3C4; background: none; border: 0; padding: 12px 14px; min-height: 44px; cursor: pointer; }
   .cp-tab[hidden] { display: none; }
@@ -295,7 +303,7 @@ window.dash = (() => {
 
 <div class="mb">
   <header class="cp-bar">
-    <div class="cp-brand" id="top">ClaudioPunt <span>NBA</span></div>
+    <div class="cp-brand" id="top">ClaudioPunt <span class="cp-sport" role="group" aria-label="Sport"><button type="button" data-sport="nba" aria-pressed="true">NBA</button><button type="button" data-sport="nfl" aria-pressed="false">NFL</button></span></div>
     <div class="cp-tabs" role="tablist" aria-label="Sections">
       <button type="button" class="cp-tab" role="tab" data-tab="today" aria-selected="true">Today</button>
       <button type="button" class="cp-tab" role="tab" data-tab="tomorrow" aria-selected="false" hidden>Tomorrow</button>
@@ -307,6 +315,16 @@ window.dash = (() => {
     <div class="cp-upd"><span data-source="meta" data-field="date_label" class="dash-skeleton">—</span> · updated <span data-source="meta" data-field="updated" class="dash-skeleton">—</span> · <span data-source="meta" data-field="games" class="dash-skeleton">—</span> games · first tip <span data-source="meta" data-field="first_tip" class="dash-skeleton">—</span></div>
   </header>
 
+  <section class="cp-nfl" id="nfl-home" aria-labelledby="nfl-h" hidden>
+    <div class="cp-sub"><h2 class="cp-h" id="nfl-h">NFL board: being set up</h2>
+    <p id="nfl-status">The NFL model is being built and tested the same way as the NBA one: backtests first, and the board only goes live if the model shows an edge.</p></div>
+    <ul>
+      <li>Team model: ratings from every game since 1999 (nflverse), quarterback changes, home field, rest, weather, and the key numbers 3 and 7 for spreads. Tested against the closing lines.</li>
+      <li>Player props: passing, rushing and receiving yards, receptions and anytime touchdown from each player's usage (targets, snaps, carries, red-zone share).</li>
+      <li>Same-game multis: the same correlation work as the NBA, including same-player combos.</li>
+      <li>Prices from Sportsbet, PointsBet, Ladbrokes and Betr, with weekly runs (early-week openers, Friday, game morning) and a game-day inactives watch.</li>
+    </ul>
+  </section>
   <div class="cp-sheet-bg" id="my-bg" hidden></div>
   <section class="cp-bs" id="mybets" role="dialog" aria-modal="true" aria-labelledby="my-h" hidden>
     <div class="cp-bs-head"><h2 id="my-h">Bet slip</h2><span class="cp-bs-n" id="my-n">0</span><button type="button" class="cp-bs-txt" id="my-clear">Clear all</button><button type="button" class="cp-x" id="my-close" aria-label="Close bet slip">×</button></div>
@@ -1271,6 +1289,23 @@ window.dash = (() => {
     if (DAY === 'next' && sel.tab !== 'today') { bar.hidden = false; bar.textContent = `Tomorrow · ${lab}: picks from the evening update at the night-before prices (the earliest prices are where the model's edge has been). They are logged in the ledger now and locked at these odds; the morning and late updates can add bets but never change these. Lineup news before tip-off can change things.`; }
     else bar.hidden = true;
   }
+  // ---------- sport switch (NBA / NFL) ----------
+  let SPORT = 'nba';
+  try { SPORT = localStorage.getItem('cp-sport') || 'nba'; } catch (e) {}
+  if (location.hash.slice(1) === 'nfl') SPORT = 'nfl';
+  function showSport(sp) {
+    SPORT = sp === 'nfl' ? 'nfl' : 'nba';
+    try { localStorage.setItem('cp-sport', SPORT); } catch (e) {}
+    document.querySelectorAll('.cp-sport button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.sport === SPORT)));
+    const nfl = SPORT === 'nfl';
+    $('#nfl-home').hidden = !nfl;
+    document.querySelector('.cp-tabs').hidden = nfl;
+    document.querySelector('.cp-upd').hidden = nfl;
+    document.querySelectorAll('.cp-panel').forEach(p => { if (nfl) p.hidden = true; });
+    const fab = $('#my-fab'); if (fab && nfl) fab.hidden = true;
+    if (!nfl) { const sel = document.querySelector('.cp-tab[aria-selected="true"]'); showTab(sel ? sel.dataset.tab : 'today'); }
+  }
+  document.querySelectorAll('.cp-sport button').forEach(b => b.addEventListener('click', () => { showSport(b.dataset.sport); dash.setLink(SPORT === 'nfl' ? 'nfl' : 'today'); }));
   setInterval(() => { try { const d0 = DAY; drawDay(); if (DAY !== d0) redrawAll(); } catch (e) {} }, 60000);
   function showFor(el) { const p = el && el.closest('.cp-panel'); if (p) showTab(p.dataset.panel); }
   document.querySelectorAll('.cp-tab').forEach(t => t.addEventListener('click', () => { showTab(t.dataset.tab); dash.setLink(t.dataset.tab); }));
@@ -1774,8 +1809,10 @@ window.dash = (() => {
   redrawAll = () => { drawDay(); drawMeta(); drawNews(); drawBest(); drawTodayGames(); drawTrack(); draw(); drawProps(); drawAlts(); drawChance(); drawFB(); drawSGM(); drawCombos(); drawUsage(); };
   dash.onData(redrawAll);
 
+  if (SPORT === 'nfl') showSport('nfl');
   const hash = location.hash.slice(1), tabNames = ['today', 'tomorrow', 'explore', 'games', 'ledger', 'method'];
-  if (tabNames.includes(hash)) showTab(hash);
+  if (SPORT === 'nfl') { /* stay on the NFL page */ }
+  else if (tabNames.includes(hash)) showTab(hash);
   else { const named = document.getElementById(hash); if (named) { showFor(named); named.scrollIntoView(); dash.setLink(named.id); } }
 })();
 </script>

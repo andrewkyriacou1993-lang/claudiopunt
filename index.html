@@ -499,7 +499,7 @@ window.dash = (() => {
         <label for="p-show" class="mb-note">Show</label>
         <select id="p-show" class="mb-input"><option value="bets">Bets and status checks</option><option value="top">Top 40 by value</option><option value="all">All markets</option></select>
         <label for="p-stat" class="mb-note">Stat</label>
-        <select id="p-stat" class="mb-input"><option value="">All</option><option>Points</option><option>Rebounds</option><option>Assists</option><option>PRA</option></select>
+        <select id="p-stat" class="mb-input"><option value="">All</option><option>Points</option><option>Rebounds</option><option>Assists</option><option>PRA</option><option>Threes</option><option>Steals</option><option>Blocks</option></select>
         <label for="p-book" class="mb-note">Bookie</label><select id="p-book" class="mb-input book-filter"><option value="">Best price anywhere</option></select>
         <label for="p-search" class="mb-note">Search</label><input id="p-search" class="mb-input" type="search" placeholder="Player or team">
       </div>
@@ -526,7 +526,7 @@ window.dash = (() => {
         <label for="a-show" class="mb-note">Show</label>
         <select id="a-show" class="mb-input"><option value="bets">Bets and status checks</option><option value="top">Top 40 by value</option><option value="all">All rungs</option></select>
         <label for="a-stat" class="mb-note">Stat</label>
-        <select id="a-stat" class="mb-input"><option value="">All</option><option>Points</option><option>Rebounds</option><option>Assists</option><option>PRA</option></select>
+        <select id="a-stat" class="mb-input"><option value="">All</option><option>Points</option><option>Rebounds</option><option>Assists</option><option>PRA</option><option>Threes</option><option>Steals</option><option>Blocks</option></select>
         <label for="a-book" class="mb-note">Bookie</label><select id="a-book" class="mb-input book-filter"><option value="">Best price anywhere</option></select>
         <label for="a-search" class="mb-note">Search</label><input id="a-search" class="mb-input" type="search" placeholder="Player or team">
       </div>
@@ -551,7 +551,7 @@ window.dash = (() => {
         <label for="c-min" class="mb-note">Chance from</label><input id="c-min" class="mb-input" type="number" min="0" max="100" step="5" value="80" style="width:5em">
         <label for="c-max" class="mb-note">to</label><input id="c-max" class="mb-input" type="number" min="0" max="100" step="5" value="100" style="width:5em">
         <label for="c-cat" class="mb-note">Type</label>
-        <select id="c-cat" class="mb-input"><option value="">All</option><option>Moneyline</option><option>Line</option><option>Total</option><option value="Points">Points (main + alt lines)</option><option value="Rebounds">Rebounds (main + alt lines)</option><option value="Assists">Assists (main + alt lines)</option><option value="P+R+A">P+R+A (main + alt lines)</option><option value="alt">Player alt lines only</option></select>
+        <select id="c-cat" class="mb-input"><option value="">All</option><option>Moneyline</option><option>Line</option><option>Total</option><option value="Points">Points (main + alt lines)</option><option value="Rebounds">Rebounds (main + alt lines)</option><option value="Assists">Assists (main + alt lines)</option><option value="P+R+A">P+R+A (main + alt lines)</option><option value="Threes">Threes (lines + ladders)</option><option value="Steals">Steals (lines + ladders)</option><option value="Blocks">Blocks (lines + ladders)</option><option value="alt">Player alt lines only</option></select>
         <label for="c-val" class="mb-note">Value</label>
         <select id="c-val" class="mb-input"><option value="">Any</option><option value="pos">Positive EV only</option></select>
         <label for="c-search" class="mb-note">Search</label><input id="c-search" class="mb-input" type="search" placeholder="Player, team or game">
@@ -1383,7 +1383,7 @@ window.dash = (() => {
     title: 'Ledger by category',
     description: 'Settled bets, won–lost, units staked, profit (units), return on stakes, average model win probability vs actual win rate, and average closing-line value for each category.',
     fn: (history) => {
-      const cats = ['Moneyline', 'Line', 'Total', 'Points', 'Rebounds', 'Assists', 'P+R+A', 'Alt line', 'First basket', 'Multi', '80% multi', 'SGM', 'Combo'];
+      const cats = ['Moneyline', 'Line', 'Total', 'Points', 'Rebounds', 'Assists', 'P+R+A', 'Threes', 'Steals', 'Blocks', 'Alt line', 'First basket', 'Multi', '80% multi', 'SGM', 'Combo'];
       return cats.map(c => {
         const s = history.filter(h => h.category === c && ['win', 'loss', 'push', 'void'].includes(h.result));
         const w = s.filter(h => h.result === 'win').length, l = s.filter(h => h.result === 'loss').length;
@@ -1545,7 +1545,7 @@ window.dash = (() => {
     const groups = $('#props-groups'), jump = $('#pp-jump'), tpl = $('#props-table');
     groups.innerHTML = ''; jump.innerHTML = '';
     let shown = 0;
-    [['Points', 'Player points'], ['Rebounds', 'Player rebounds'], ['Assists', 'Player assists'], ['PRA', 'Player P+R+A']].forEach(([st, title]) => {
+    [['Points', 'Player points'], ['Rebounds', 'Player rebounds'], ['Assists', 'Player assists'], ['PRA', 'Player P+R+A'], ['Threes', 'Player threes (untested)'], ['Steals', 'Player steals (untested)'], ['Blocks', 'Player blocks (untested)']].forEach(([st, title]) => {
       let g = rows.filter(r => r.stat === st);
       if (show === 'top') g = g.slice(0, 40);
       if (!g.length) return;
@@ -1557,7 +1557,7 @@ window.dash = (() => {
       const t = tpl.cloneNode(true); t.removeAttribute('id'); t.hidden = false; t.dataset.where = 'stat=' + st;
       fillTable(t.querySelector('tbody'), g, cols, 'rank', r => r.verdict === 'Pass' ? 'pass' : '');
       wrap.append(t); groups.append(h, wrap);
-      const jb = document.createElement('button'); jb.type = 'button'; jb.textContent = { Points: 'Points', Rebounds: 'Rebounds', Assists: 'Assists', PRA: 'P+R+A' }[st];
+      const jb = document.createElement('button'); jb.type = 'button'; jb.textContent = { Points: 'Points', Rebounds: 'Rebounds', Assists: 'Assists', PRA: 'P+R+A', Threes: 'Threes', Steals: 'Steals', Blocks: 'Blocks' }[st];
       jb.addEventListener('click', () => h.scrollIntoView({ behavior: 'smooth' })); jump.append(jb);
     });
     jump.hidden = jump.children.length < 2;

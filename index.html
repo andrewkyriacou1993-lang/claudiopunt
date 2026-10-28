@@ -84,6 +84,12 @@ window.dash = (() => {
   #news[hidden] { display: none; }
   .cp-daybar { margin: 0 28px; padding: 10px 14px; border-radius: 8px; background: rgba(111,168,255,.12); color: #E8ECF3; font-size: .95rem; }
   .cp-daybar[hidden] { display: none; }
+  .cp-dsw { display: flex; gap: 2px; margin: 4px 28px 0; width: max-content; background: rgba(255,255,255,.06); border-radius: 8px; padding: 2px; }
+  .cp-dsw[hidden] { display: none; }
+  .cp-dsw button { font: inherit; font-size: .95rem; color: #A9B3C4; background: none; border: 0; border-radius: 6px; padding: 4px 12px; min-height: 36px; cursor: pointer; }
+  .cp-dsw button[aria-pressed="true"] { color: #0B1220; background: var(--cp-accent); }
+  .cp-dsw button:focus-visible { outline: 2px solid #8DBBFF; outline-offset: 2px; }
+  @media (max-width: 640px) { .cp-dsw { margin: 4px 14px 0; } }
   @media (max-width: 640px) { .cp-daybar { margin: 0 14px; } }
   .cp-news { display: flex; flex-direction: column; gap: 6px; }
   .cp-news-i { display: grid; grid-template-columns: 3.4rem 1fr; gap: 10px; padding: 8px 12px; border-radius: 8px; background: rgba(255,255,255,.04); font-size: .92rem; }
@@ -462,6 +468,7 @@ window.dash = (() => {
   </div>
 
   <div class="cp-panel" data-panel="explore" role="tabpanel" aria-label="Explore" hidden>
+  <div class="cp-dsw" role="group" aria-label="Which day" hidden><button type="button" data-day="cur" aria-pressed="true">Today</button><button type="button" data-day="next" aria-pressed="false">Tomorrow</button></div>
   <section class="mb-sec" id="bets">
     <h2 class="mb-h2">Today's 20 best-priced bets</h2>
     <p class="mb-note">Ranked by expected value. Every side is priced at Sportsbet, TAB, Ladbrokes, PointsBet and Betr, and the best one is shown with its bookie. <b>Bet</b> means EV ≥ 3% and either the model's win chance is ≥ 2 points above the fair price, or the bookie's price alone beats the bookie-consensus fair value by ≥ 3%. The fair price is the average of every bookie's price with its margin removed, moved to each bookie's line. TAB's whole-number lines can push, so they are not compared. Stakes are in units, 1u = 1% of bankroll (quarter-Kelly, capped at 2u).</p>
@@ -646,6 +653,7 @@ window.dash = (() => {
   </div>
 
   <div class="cp-panel" data-panel="games" role="tabpanel" aria-label="Games" hidden>
+  <div class="cp-dsw" role="group" aria-label="Which day" hidden><button type="button" data-day="cur" aria-pressed="true">Today</button><button type="button" data-day="next" aria-pressed="false">Tomorrow</button></div>
   <section class="mb-sec" id="lines">
     <h2 class="mb-h2">Model vs Sportsbet line</h2>
     <p class="mb-note">Home team's expected winning margin and total points. Where the dots sit close, the market and the player-based model agree; a wide gap is either an edge or news the model doesn't have.</p>
@@ -750,6 +758,7 @@ window.dash = (() => {
   // those; after midnight (AEDT), until the morning run replaces today's board, Today itself uses them.
   const NEXT = new Set(['best', 'meta', 'props', 'alts', 'chances', 'games', 'bets', 'teams', 'injuries', 'matchups', 'firstbasket', 'sgm', 'combos']);
   const NEXTC = new Set();
+  let VIEWDAY = 'cur';                     // Explore / Games day switch
   let DAY = 'cur';                         // which board the page is showing: 'cur' or 'next'
   const aedtToday = () => new Date().toLocaleDateString('en-CA', { timeZone: 'Australia/Sydney' });
   try {
@@ -1274,6 +1283,7 @@ window.dash = (() => {
   function showTab(name) {
     if (name === 'tomorrow') DAY = 'next';
     else if (name === 'today') DAY = swapped() ? 'next' : 'cur';
+    else if (name === 'explore' || name === 'games') DAY = (VIEWDAY === 'next' && hasTomorrow()) ? 'next' : (swapped() ? 'next' : 'cur');
     const panel = name === 'tomorrow' ? 'today' : name;
     document.querySelectorAll('.cp-tab').forEach(t => t.setAttribute('aria-selected', String(t.dataset.tab === name)));
     document.querySelectorAll('.cp-panel').forEach(p => { p.hidden = p.dataset.panel !== panel; });
@@ -1286,6 +1296,9 @@ window.dash = (() => {
     if (sel.tab === 'today' && DAY === 'cur' && swapped()) DAY = 'next';          // midnight passed while the page was open
     if (sel.tab === 'tomorrow' && !hasTomorrow()) { DAY = swapped() ? 'next' : 'cur'; if (tm) tm.setAttribute('aria-selected', 'false'); const td = document.querySelector('.cp-tab[data-tab="today"]'); if (td) td.setAttribute('aria-selected', 'true'); }
     const bar = $('#day-bar'), M = dash.data('meta'), lab = M.status === 'ok' && M.data[0] ? M.data[0].date_label : '';
+    const dsw = (sel.tab === 'explore' || sel.tab === 'games') && hasTomorrow();
+    document.querySelectorAll('.cp-dsw').forEach(w => { w.hidden = !dsw; w.querySelectorAll('button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.day === DAY))); });
+    const bh = document.querySelector('#bets .mb-h2'); if (bh) bh.textContent = (DAY === 'next' && sel.tab !== 'today' ? "Tomorrow's" : "Today's") + ' 20 best-priced bets';
     if (DAY === 'next' && sel.tab !== 'today') { bar.hidden = false; bar.textContent = `Tomorrow · ${lab}: picks from the evening update at the night-before prices (the earliest prices are where the model's edge has been). They are logged in the ledger now and locked at these odds; the morning and late updates can add bets but never change these. Lineup news before tip-off can change things.`; }
     else bar.hidden = true;
   }
@@ -1307,6 +1320,9 @@ window.dash = (() => {
   }
   document.querySelectorAll('.cp-sport button').forEach(b => b.addEventListener('click', () => { showSport(b.dataset.sport); dash.setLink(SPORT === 'nfl' ? 'nfl' : 'today'); }));
   setInterval(() => { try { const d0 = DAY; drawDay(); if (DAY !== d0) redrawAll(); } catch (e) {} }, 60000);
+  document.querySelectorAll('.cp-dsw button').forEach(b => b.addEventListener('click', () => {
+    VIEWDAY = b.dataset.day; const sel = document.querySelector('.cp-tab[aria-selected="true"]'); showTab(sel ? sel.dataset.tab : 'explore');
+  }));
   function showFor(el) { const p = el && el.closest('.cp-panel'); if (p) showTab(p.dataset.panel); }
   document.querySelectorAll('.cp-tab').forEach(t => t.addEventListener('click', () => { showTab(t.dataset.tab); dash.setLink(t.dataset.tab); }));
   document.querySelectorAll('.cp-link').forEach(b => b.addEventListener('click', () => {

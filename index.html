@@ -30,7 +30,7 @@
 <script>
 /* Minimal stand-in for the Claude dashboard runtime: loads data/<name>.csv and runs the same page code. */
 window.dash = (() => {
-  const FILES = ['best', 'history', 'meta', 'bets', 'props', 'alts', 'chances', 'games', 'teams', 'injuries', 'matchups', 'usage', 'usage_fit', 'firstbasket', 'sgm', 'combos', 'lineup_news', 'best_next', 'meta_next', 'props_next', 'alts_next', 'chances_next', 'games_next', 'bets_next', 'teams_next', 'injuries_next', 'matchups_next', 'usage_next', 'usage_fit_next', 'firstbasket_next', 'sgm_next', 'combos_next'];
+  const FILES = ['best', 'history', 'meta', 'bets', 'props', 'alts', 'chances', 'games', 'teams', 'injuries', 'matchups', 'usage', 'usage_fit', 'firstbasket', 'sgm', 'combos', 'stackers', 'lineup_news', 'best_next', 'meta_next', 'props_next', 'alts_next', 'chances_next', 'games_next', 'bets_next', 'teams_next', 'injuries_next', 'matchups_next', 'usage_next', 'usage_fit_next', 'firstbasket_next', 'sgm_next', 'combos_next', 'stackers_next'];
   const D = {}, calcs = {}, subs = [];
   let queued = false;
   const fire = () => { if (queued) return; queued = true; requestAnimationFrame(() => { queued = false; subs.forEach(fn => { try { fn(); } catch (e) { console.error(e); } }); }); };
@@ -685,6 +685,12 @@ window.dash = (() => {
           <tbody></tbody></table></div>
         <p class="mb-note" id="inj-none" hidden>No listed injuries among players who have played this season.</p></div>
     </div>
+    <div class="mb-card" id="stk-card"><h3 id="stk-h">Stackers</h3>
+      <p class="mb-note">Two rungs of one player's ladder in one Sportsbet Same Game Multi (e.g. 6+ and 8+ rebounds). It only wins if the <b>top</b> rung lands, so it is the same bet as the top rung, at Sportsbet's stacked price. Shown when the stack pays more than the top rung on its own. "Our chance" is the top rung's chance (Sportsbet's single with the margin taken off, averaged with our model when it prices that rung). Logged at 0u until stackers prove they beat the close. Sportsbet can void multis whose legs depend on each other, or cap the payout, so check the slip before betting.</p>
+      <div class="mb-scroll"><table class="mb-table" id="stk-table" data-row-key="rid">
+        <thead><tr><th>Verdict</th><th>Stack</th><th class="num">Stacked price</th><th class="num">Top rung alone</th><th class="num">Pays more</th><th class="num">Our chance %</th><th class="num">Value %</th><th>Slip</th></tr></thead>
+        <tbody></tbody></table></div>
+      <p class="mb-note" id="stk-none" hidden>No stackers priced for this game yet.</p></div>
     <div class="mb-card"><h3>Starting five, position by position</h3>
       <p class="mb-note">Off/Def are each player's points produced / allowed per 100 possessions (this season blended with last). Edge (next to each team) = how that player should go attacking the opposing starter at his position: his offence above league average plus his opponent's defence above average. Positive (blue) favours him, negative (orange) favours the defender. Efficient low-usage bigs score high on Off, so read big-man edges with care.</p>
       <div class="mb-scroll"><table class="mb-table" id="mu-table" data-source="matchups" data-row-key="key">
@@ -756,7 +762,7 @@ window.dash = (() => {
   // ---------- today / tomorrow ----------
   // The evening run builds tomorrow's board into datasets named <name>_next. "Tomorrow" shows the Today layout with
   // those; after midnight (AEDT), until the morning run replaces today's board, Today itself uses them.
-  const NEXT = new Set(['best', 'meta', 'props', 'alts', 'chances', 'games', 'bets', 'teams', 'injuries', 'matchups', 'firstbasket', 'sgm', 'combos']);
+  const NEXT = new Set(['best', 'meta', 'props', 'alts', 'chances', 'games', 'bets', 'teams', 'injuries', 'matchups', 'firstbasket', 'sgm', 'combos', 'stackers']);
   const NEXTC = new Set();
   let VIEWDAY = 'cur';                     // Explore / Games day switch
   let DAY = 'cur';                         // which board the page is showing: 'cur' or 'next'
@@ -859,8 +865,10 @@ window.dash = (() => {
     const cm = $('#chart-margin'), ct = $('#chart-total');
     if (G.status === 'ok') {
       if (!chosen) chosen = G.data[0].game;
-      dumbbell(cm, G.data, 'line_home_margin', 'model_home_margin', v => { const n = Number(v); return (n > 0 ? 'home by ' : n < 0 ? 'away by ' : 'level ') + Math.abs(n); });
-      dumbbell(ct, G.data, 'line_total', 'model_total', v => String(v));
+      try {
+        dumbbell(cm, G.data, 'line_home_margin', 'model_home_margin', v => { const n = Number(v); return (n > 0 ? 'home by ' : n < 0 ? 'away by ' : 'level ') + Math.abs(n); });
+        dumbbell(ct, G.data, 'line_total', 'model_total', v => String(v));
+      } catch (e) { console.error(e); }
       const tabs = $('#game-tabs'); tabs.innerHTML = '';
       G.data.forEach(r => {
         const b = document.createElement('button'); b.className = 'mb-tab'; b.type = 'button';
@@ -893,7 +901,30 @@ window.dash = (() => {
         { f: 'home_player', cls: 'side' }, { f: 'home_pos', cls: 'pos' }, { f: 'home_status', render: statusCell }, { f: 'home_off', cls: 'num' }, { f: 'home_def', cls: 'num' }, { f: 'home_bpm', cls: 'num' }, { f: 'home_edge', cls: 'num', render: signed }
       ], 'key');
     }
+    drawStackers();
     const cmBox = $('#chart-margin'); if (G.status === 'ok') { /* highlight handled in dumbbell */ }
+  }
+
+  // ---------- stackers (game section) ----------
+  function drawStackers() {
+    const K = dash.data('stackers'), tb = $('#stk-table tbody');
+    $('#stk-h').textContent = chosen ? `Stackers · ${chosen}` : 'Stackers';
+    if (K.status === 'error') { tb.innerHTML = '<tr><td colspan="8"><div class="mb-fail">Failed to load</div></td></tr>'; return; }
+    if (K.status !== 'ok') { $('#stk-table').hidden = true; $('#stk-none').hidden = false; return; }
+    const rows = K.data.filter(r => r.game === chosen && Number(r.boost_pct) > 0)
+      .sort((a, b) => (a.verdict !== 'Stack') - (b.verdict !== 'Stack') || Number(b.ev_pct) - Number(a.ev_pct)).slice(0, 8);
+    fillTable(tb, rows, [
+      { f: 'verdict', render: pill({ 'Stack': 'bet', 'Boost': 'pass' }) },
+      { f: 'stack', render: (td, v, r) => { td.textContent = `${r.player} ${v}`; td.style.minWidth = '10em'; } },
+      { f: 'stack_price', cls: 'num', render: (td, v) => { td.textContent = Number(v).toFixed(2); td.style.fontWeight = '600'; } },
+      { f: 'top_price', cls: 'num', render: (td, v) => { td.textContent = Number(v).toFixed(2); } },
+      { f: 'boost_pct', cls: 'num', render: (td, v) => { td.textContent = '+' + v + '%'; td.classList.add('good'); } },
+      { f: 'chance', cls: 'num' }, { f: 'ev_pct', cls: 'num', render: signed },
+      { f: 'rid', render: (td, v, r) => { td.appendChild(addBtn({ pick: `${r.player} ${r.stack} (stack)`, odds: Number(r.stack_price), book: 'Sportsbet', game: r.game, prob: Number(r.chance), stake: 0.25, cat: 'Stacker' })); } }
+    ], 'rid', r => r.verdict === 'Stack' ? '' : 'pass');
+    $('#stk-table').hidden = rows.length === 0;
+    $('#stk-none').hidden = rows.length !== 0;
+    $('#stk-none').textContent = K.data.length ? 'No stack pays more than the top rung for this game.' : 'No stackers priced for this game yet (they are quoted with the player combos).';
   }
 
   // ---------- header facts ----------

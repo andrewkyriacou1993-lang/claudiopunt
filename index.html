@@ -334,11 +334,11 @@ window.dash = (() => {
   .cp-bet .cp-why { grid-column: 1 / -1; padding: 2px 12px 10px; display: flex; flex-direction: column; gap: 6px; }
   .cp-bet .cp-why[hidden], .cp-multi[hidden] { display: none; }
   .cp-glist { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 26rem), 1fr)); gap: 6px; }
-  .cp-gli { display: grid; grid-template-columns: 3rem 1fr auto 4.2rem; align-items: center; gap: 10px; text-align: left; font: inherit; color: inherit; background: var(--color-panel); border: 1px solid #222B3B; border-radius: 10px; padding: 8px 12px; min-height: 44px; cursor: pointer; }
+  .cp-gli { display: grid; grid-template-columns: 3rem 1fr auto auto; align-items: center; gap: 10px; text-align: left; font: inherit; color: inherit; background: var(--color-panel); border: 1px solid #222B3B; border-radius: 10px; padding: 8px 12px; min-height: 44px; cursor: pointer; }
   .cp-gli .t { font-variant-numeric: tabular-nums; color: #A9B3C4; font-size: .85rem; }
   .cp-gli .n { font-weight: 700; }
   .cp-gli .ln { font-size: .8rem; color: #A9B3C4; white-space: nowrap; }
-  .cp-gli .b { font-size: .8rem; color: #A9B3C4; text-align: right; }
+  .cp-gli .b { font-size: .8rem; color: #A9B3C4; text-align: right; white-space: nowrap; min-width: 4rem; }
   .cp-gli.has-bet { border-left: 3px solid var(--cp-accent); }
   .cp-gli.has-bet .b { color: var(--cp-bad-fg); font-weight: 600; }
   .cp-gli.started { opacity: .5; }
@@ -404,10 +404,6 @@ window.dash = (() => {
     <label class="cp-bksel"><span id="bk-label">Bookie</span><select id="bk-select" aria-labelledby="bk-label"></select></label>
     <p class="cp-bk-note" id="bk-note" hidden></p>
   </div>
-  <section class="mb-sec" id="news" aria-labelledby="news-h" hidden>
-    <div class="cp-sub"><h2 class="cp-h" id="news-h">Lineup &amp; injury news</h2><p>Picked up within a minute of NBA.com or ESPN posting it (starting fives are confirmed about 30 minutes before each tip). Each item re-prices the board straight away; new bets appear below with their time.</p></div>
-    <div class="cp-news" id="news-list" data-source="lineup_news"></div>
-  </section>
   <section class="mb-sec" id="best" aria-labelledby="card-h">
     <div class="cp-sub"><h2 class="cp-h" id="card-h">Today's card</h2><p>At <span id="bk-where">the best price across the bookies</span>, grouped by tip time. Tap a bet for why. Check team news before tip-off.</p></div>
     <div class="cp-groups" id="best-cards" data-source="best"></div>
@@ -700,6 +696,10 @@ window.dash = (() => {
   <section class="mb-sec" id="games">
     <h2 class="mb-h2">Game by game</h2>
     <div class="mb-tabs" id="game-tabs" role="group" aria-label="Choose a game"></div>
+    <div class="mb-card" id="gnews-card"><h3 id="gnews-h">Lineup &amp; injury news</h3>
+      <p class="mb-note">From NBA.com and ESPN, picked up within a minute of being posted (starting fives are confirmed about 30 minutes before tip). Latest first; the line under an item says what it means for our bets.</p>
+      <div class="cp-news" id="news-list" data-source="lineup_news"></div>
+      <p class="mb-note" id="gnews-none" hidden>No lineup or injury news for this game today.</p></div>
     <div class="mb-grid">
       <div class="mb-card"><h3 id="team-h">Team ratings</h3>
         <p class="mb-note">Points per 100 possessions. Net now = this season's results blended with the player-based rating for tonight's roster; injury adj = how much the listed absences cost.</p>
@@ -931,7 +931,7 @@ window.dash = (() => {
         { f: 'home_player', cls: 'side' }, { f: 'home_pos', cls: 'pos' }, { f: 'home_status', render: statusCell }, { f: 'home_off', cls: 'num' }, { f: 'home_def', cls: 'num' }, { f: 'home_bpm', cls: 'num' }, { f: 'home_edge', cls: 'num', render: signed }
       ], 'key');
     }
-    drawStackers();
+    drawStackers(); drawNews();
     const cmBox = $('#chart-margin'); if (G.status === 'ok') { /* highlight handled in dumbbell */ }
   }
 
@@ -1333,6 +1333,8 @@ window.dash = (() => {
     if (bkView && TODAY_VIEW) TODAY_VIEW.filter(r => r.verdict === 'Bet' && !/multi/i.test(r.category)).forEach(r => { (byGame[r.game] = byGame[r.game] || []).push(r.pick); });
     else if (H.status === 'ok') H.data.filter(h => h.date === d && h.category !== 'Multi leg' && h.kind !== 'multi').forEach(h => { (byGame[h.game] = byGame[h.game] || []).push(h.pick); });
     box.innerHTML = '';
+    const NW = dash.data('lineup_news'), newsN = {};
+    if (NW.status === 'ok') NW.data.filter(r => !d || r.date === d).forEach(r => { newsN[r.game] = (newsN[r.game] || 0) + 1; });
     G.data.slice().sort((a, b) => String(a.tip_aedt).localeCompare(String(b.tip_aedt))).forEach(g => {
       const [aw, hm] = g.game.split(' @ ');
       const hmg = Number(g.line_home_margin), fav = hmg >= 0 ? hm : aw;
@@ -1343,7 +1345,8 @@ window.dash = (() => {
       const t = document.createElement('span'); t.className = 't'; t.textContent = g.tip_aedt || '';
       const n = document.createElement('span'); n.className = 'n'; n.textContent = g.game;
       const ln = document.createElement('span'); ln.className = 'ln'; ln.textContent = `${fav} −${Math.abs(hmg)} · ${g.line_total}`;
-      const b = document.createElement('span'); b.className = 'b'; b.textContent = started ? 'started' : (bets.length ? `${bets.length} bet${bets.length === 1 ? '' : 's'}` : '—');
+      const nn = newsN[g.game] || 0;
+      const b = document.createElement('span'); b.className = 'b'; b.textContent = started ? 'started' : ([bets.length ? `${bets.length} bet${bets.length === 1 ? '' : 's'}` : '', nn ? `${nn} news` : ''].filter(Boolean).join(' · ') || '—');
       btn.append(t, n, ln, b);
       btn.setAttribute('aria-label', `${g.game}, ${g.tip_aedt}, ${bets.length} bets${started ? ', started' : ''}. Open game details`);
       btn.addEventListener('click', () => { chosen = g.game; showTab('games'); draw(); const el = $('#games'); if (el) el.scrollIntoView({ behavior: 'smooth' }); dash.setLink('games'); });
@@ -1747,29 +1750,41 @@ window.dash = (() => {
   ['#s-show', '#s-game'].forEach(s => $(s).addEventListener('change', drawSGM));
 
   // ---------- lineup & injury news (Today) ----------
+  let newsAll = false;
   function drawNews() {
-    const N = dash.data('lineup_news'), box = $('#news-list'), sec = $('#news');
-    if (N.status !== 'ok' || !N.data.length) { sec.hidden = true; return; }
+    const N = dash.data('lineup_news'), box = $('#news-list');
+    $('#gnews-h').textContent = chosen ? `Lineup & injury news · ${chosen}` : 'Lineup & injury news';
+    box.innerHTML = '';
     const M = dash.data('meta'), day = M.status === 'ok' && M.data[0] ? (M.data[0].date || '') : '';
-    const rows = N.data.filter(r => !day || r.date === day).slice().reverse();
-    sec.hidden = rows.length === 0; box.innerHTML = '';
+    const rows = N.status === 'ok' ? N.data.filter(r => (!day || r.date === day) && r.game === chosen).slice().reverse() : [];
+    $('#gnews-none').hidden = rows.length !== 0;
     const word = { confirmed: 'starters confirmed', starter_in: 'now starting', starter_out: 'no longer starting', inactive: 'inactive', active: 'back on the active list' };
-    rows.slice(0, 40).forEach(r => {
+    const NEWS_N = 6;
+    rows.slice(0, newsAll ? 60 : NEWS_N).forEach(r => {
       const bad = /inactive|starter_out/.test(r.kind) || (r.kind === 'injury' && /(Out|Doubtful)$/.test(r.detail));
       const d = document.createElement('div'); d.className = 'cp-news-i' + (bad ? ' bad' : '');
       const t = document.createElement('time'); t.textContent = r.at; d.appendChild(t);
       const body = document.createElement('div');
       const head = document.createElement('div');
-      const g = document.createElement('span'); g.className = 'pos'; g.textContent = r.game + ' · ';
+      const g = document.createElement('span'); g.className = 'pos'; g.textContent = '';
       const b = document.createElement('b');
       b.textContent = r.kind === 'confirmed' ? `${r.team} ${word.confirmed}` : r.kind === 'injury' ? `${r.player} (${r.team})` : `${r.player} (${r.team}) ${word[r.kind] || r.kind}`;
       head.append(g, b);
       if (r.kind === 'confirmed') head.append(': ' + r.detail);
       if (r.kind === 'injury') head.append(' ' + r.detail.replace('->', '→'));
       body.appendChild(head);
-      if (r.impact) { const im = document.createElement('div'); im.className = 'imp'; im.textContent = r.impact; body.appendChild(im); }
+      if (r.impact) r.impact.split(' | ').forEach(x => {
+        const m = /^your bet '(.+?)' — (.*)$/.exec(x.trim());
+        const im = document.createElement('div'); im.className = 'imp';
+        im.textContent = m ? `↳ ${m[1]}: ${m[2].replace(/^teammate .+? out\/benched: /, '').replace('more minutes and shots for the rest', 'more minutes and shots for him')}` : x;
+        body.appendChild(im);
+      });
       d.appendChild(body); box.appendChild(d);
     });
+    let mb = $('#gnews-more');
+    if (!mb) { mb = document.createElement('button'); mb.type = 'button'; mb.id = 'gnews-more'; mb.className = 'cp-btn ghost cp-more'; box.after(mb); mb.addEventListener('click', () => { newsAll = !newsAll; drawNews(); }); }
+    mb.hidden = rows.length <= NEWS_N;
+    mb.textContent = newsAll ? 'Show the latest only' : `Show all ${rows.length} news items`;
   }
 
   // ---------- same-player combos ----------

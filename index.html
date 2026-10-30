@@ -30,7 +30,7 @@
 <script>
 /* Minimal stand-in for the Claude dashboard runtime: loads data/<name>.csv and runs the same page code. */
 window.dash = (() => {
-  const FILES = ['best', 'history', 'meta', 'bets', 'props', 'alts', 'chances', 'games', 'teams', 'injuries', 'matchups', 'usage', 'usage_fit', 'firstbasket', 'sgm', 'combos', 'stackers', 'lineup_news', 'best_next', 'meta_next', 'props_next', 'alts_next', 'chances_next', 'games_next', 'bets_next', 'teams_next', 'injuries_next', 'matchups_next', 'usage_next', 'usage_fit_next', 'firstbasket_next', 'sgm_next', 'combos_next', 'stackers_next', 'nfl_meta', 'nfl_games', 'nfl_props', 'nfl_best', 'nfl_injuries', 'nfl_history'];
+  const FILES = ['best', 'history', 'meta', 'bets', 'props', 'alts', 'chances', 'games', 'teams', 'injuries', 'matchups', 'usage', 'usage_fit', 'firstbasket', 'sgm', 'combos', 'stackers', 'lineup_news', 'best_next', 'meta_next', 'props_next', 'alts_next', 'chances_next', 'games_next', 'bets_next', 'teams_next', 'injuries_next', 'matchups_next', 'usage_next', 'usage_fit_next', 'firstbasket_next', 'sgm_next', 'combos_next', 'stackers_next', 'nfl_meta', 'nfl_games', 'nfl_props', 'nfl_best', 'nfl_injuries', 'nfl_history', 'nfl_firsttd'];
   const D = {}, calcs = {}, subs = [];
   let queued = false;
   const fire = () => { if (queued) return; queued = true; requestAnimationFrame(() => { queued = false; subs.forEach(fn => { try { fn(); } catch (e) { console.error(e); } }); }); };
@@ -452,6 +452,22 @@ window.dash = (() => {
         <p class="mb-note" id="nc-none" hidden>Nothing in that range.</p>
       </div>
     </section>
+    <section class="mb-sec" id="nf-firsttd">
+      <h2 class="mb-h2">First touchdown scorer</h2>
+      <p class="mb-note">Every player priced to score the game's first touchdown at PointsBet (Sportsbet's first-TD market isn't read yet). There is no price history for this market, so the chance is built from the bookie's own prices: the first-scorer price with its margin removed, averaged with the player's share of the game's scoring implied by his anytime-TD price. First-TD margins are around 20-30%, so a bet only shows when the anytime price says the first-scorer price is clearly too long. Not graded yet (needs play-by-play), so these are not in the ledger.</p>
+      <div class="mb-card">
+        <div class="mb-filters">
+          <label for="nf-f-show" class="mb-note">Show</label>
+          <select id="nf-f-show" class="mb-input"><option value="all">Every player</option><option value="bets">Bets and check-news only</option><option value="pos">Positive value</option></select>
+          <label for="nf-f-game" class="mb-note">Game</label><select id="nf-f-game" class="mb-input"><option value="">All games</option></select>
+          <label for="nf-f-search" class="mb-note">Search</label><input id="nf-f-search" class="mb-input" type="search" placeholder="Player or team">
+        </div>
+        <div class="mb-scroll mb-tall"><table class="mb-table" id="nf-f-table">
+          <thead><tr><th>Verdict</th><th>Player</th><th>Team</th><th>Game</th><th class="num">Odds</th><th class="num">Chance %</th><th class="num">Fair odds</th><th class="num">Value %</th><th class="num">First-TD market %</th><th class="num">Anytime share %</th><th class="num">Anytime odds</th><th>Flags</th></tr></thead>
+          <tbody></tbody></table></div>
+        <p class="mb-note" id="nf-f-none" hidden>No first-touchdown prices yet. Bookies post this market a few days before kick-off.</p>
+      </div>
+    </section>
     <section class="mb-sec" id="nf-lines">
       <h2 class="mb-h2">Game lines</h2>
       <p class="mb-note">Spread and total as posted (spread is for the home team; negative = home favourite). There are no game bets: the NFL team model showed no edge against closing lines over five seasons of backtests.</p>
@@ -529,6 +545,7 @@ window.dash = (() => {
         <p><b>Blend.</b> The bookies' no-vig chance (average across Sportsbet and PointsBet at the same line) is blended with the model in log-odds: 0.954 market + 0.343 model. Those weights were fitted on NBA props and are <b>untested on the NFL</b>. A pick's value is the blended chance times the best price on that side, minus 1; 5% or more is a candidate.</p>
         <p><b>Flags.</b> Each candidate is checked against the injury report (Out, Doubtful, Questionable, limited or no practice), snap counts (a share that moved 20+ points in the last two games), teammates at the same position who are out, history with the current team (under 3 games), and a model/market gap of 25+ points. Any flag turns <i>Tracked</i> into <i>Check news</i>, which is never a pick. Most big model-versus-market gaps turn out to be role information the bookie has and the model doesn't.</p>
         <p><b>Bookmakers.</b> Sportsbet and PointsBet, read from their public pages without logging in. Prop lines can differ by a half step between them; each is priced on its own line. Ladbrokes and Betr are not yet included. Props appear a few days before kick-off, so the board fills in over the week; Sportsbet had props for 5 of 14 games on Friday, PointsBet for all 14.</p>
+        <p><b>First touchdown scorer.</b> Priced from the bookie's own markets, not a trained model: the first-scorer price (margin removed) averaged with each player's share of the game's scoring implied by his anytime-TD price. The margin on this market is large, so bets are rare, and they are not graded yet.</p>
         <p><b>Team model and game bets.</b> A ratings model for games was backtested against closing lines over five seasons: it adds nothing, and any edge is in early-week prices that shrink as lines move toward it. Sportsbet's NFL same-game multis already charge for the links between legs. So there are no game, multi or same-game bets here.</p>
         <p><b>Grading.</b> After each round the logged picks (and every prop priced, not just the picks) are graded against official player stats: log loss for the market, the model and the blend, and the best blend weight on the pooled results. This needs about six weeks of logged prices before the weights mean anything; until then the ledger is a plumbing check, not evidence.</p>
       </div>
@@ -2100,7 +2117,7 @@ window.dash = (() => {
   const dayOf = (tip) => (tip || '').split(' ')[0];
   const timeOf = (tip) => (tip || '').split(' ')[1] || '';
   const tipKey = (tip) => String(DAYS.indexOf(dayOf(tip)) < 0 ? 9 : DAYS.indexOf(dayOf(tip))) + timeOf(tip);
-  const betText = (r) => `${r.player} ${r.side} ${r.line} ${r.stat.toLowerCase()}`;
+  const betText = (r) => (r.first ? `${r.player} first touchdown` : `${r.player} ${r.side} ${r.line} ${r.stat.toLowerCase()}`);
   const fair = (r) => (100 / N(r.blend_prob)).toFixed(2);
 
   function fill(tbody, rows, cols, cls) {
@@ -2152,8 +2169,10 @@ window.dash = (() => {
   const atBook = (P, b) => (b ? P.filter((r) => r.book === b) : P);
 
   function drawToday() {
-    const B = rows('best'), G = rows('games'), box = Q('#nf-cards');
-    if (!B || !G) return;
+    const B0 = rows('best'), G = rows('games'), box = Q('#nf-cards');
+    if (!B0 || !G) return;
+    const FT = (rows('firsttd') || []).filter((r) => r.verdict !== 'Pass').map((r) => Object.assign({}, r, { stat: 'First TD', side: '', line: '', blend_prob: r.prob, market_prob: r.mkt_prob, model_prob: r.any_prob, tip: r.tip, first: true }));
+    const B = B0.concat(FT);
     const book = Q('#nf-bk').value;
     const all = atBook(B, book);
     const picks = all.filter((r) => r.verdict === 'Tracked'), more = all.filter((r) => r.verdict !== 'Tracked');
@@ -2184,7 +2203,7 @@ window.dash = (() => {
         const why = el('div', 'cp-why'); why.hidden = true;
         const facts = el('div', 'cp-row');
         facts.appendChild(el('span', 'cp-tag' + (N(r.ev_pct) > 0 ? '' : ' bad'), `${N(r.ev_pct) > 0 ? 'Good value' : 'Overpriced'} · fair ${fair(r)}`));
-        facts.appendChild(el('span', 'cp-meta', `Our chance ${r.blend_prob}% · model ${r.model_prob}% · market ${r.market_prob}%`));
+        facts.appendChild(el('span', 'cp-meta', r.first ? `Our chance ${r.blend_prob}% · first-TD market ${r.market_prob}% · anytime share ${r.model_prob}%` : `Our chance ${r.blend_prob}% · model ${r.model_prob}% · market ${r.market_prob}%`));
         why.append(facts, el('div', '', r.reason));
         if (r.all_odds) why.appendChild(el('div', '', 'Best price: ' + r.all_odds));
         main.addEventListener('click', () => { why.hidden = !why.hidden; main.setAttribute('aria-expanded', String(!why.hidden)); c.classList.toggle('open', !why.hidden); });
@@ -2263,6 +2282,21 @@ window.dash = (() => {
   });
   ['#nc-min', '#nc-max', '#nc-stat', '#nc-side', '#nc-val', '#nc-flag', '#nc-book', '#nc-game', '#nc-sort'].forEach((s) => Q(s).addEventListener('change', drawChance));
   Q('#nc-search').addEventListener('input', drawChance);
+
+  // ---------- explore: first touchdown ----------
+  function drawFirstTD() {
+    const R0 = rows('firsttd'); if (!R0) return;
+    const games = [...new Set(R0.map((r) => r.game))]; opts(Q('#nf-f-game'), games, 'All games');
+    const show = Q('#nf-f-show').value, game = Q('#nf-f-game').value, qs = Q('#nf-f-search').value.trim().toLowerCase();
+    let R = R0.filter((r) => (!game || r.game === game) && (!qs || (r.player + ' ' + r.team + ' ' + r.game).toLowerCase().includes(qs)));
+    if (show === 'bets') R = R.filter((r) => r.verdict !== 'Pass'); else if (show === 'pos') R = R.filter((r) => N(r.ev_pct) > 0);
+    Q('#nf-f-none').hidden = R.length > 0;
+    fill(Q('#nf-f-table tbody'), R.slice(0, 400), [
+      { f: 'verdict', render: verdictPill }, { f: 'player' }, { f: 'team' }, { f: 'game', cls: 'pos' }, { f: 'odds', cls: 'num' }, { f: 'prob', cls: 'num' }, { f: 'fair_odds', cls: 'num' },
+      { f: 'ev_pct', cls: 'num', render: signed }, { f: 'mkt_prob', cls: 'num' }, { f: 'any_prob', cls: 'num' }, { f: 'anytime_odds', cls: 'num' }, { f: 'flags', cls: 'why' }], (r) => (r.verdict === 'Pass' ? 'pass' : ''));
+  }
+  ['#nf-f-show', '#nf-f-game'].forEach((s) => Q(s).addEventListener('change', drawFirstTD));
+  Q('#nf-f-search').addEventListener('input', drawFirstTD);
 
   // ---------- explore: lines ----------
   function drawLines() {
@@ -2354,7 +2388,7 @@ window.dash = (() => {
       drawMeta();
       const P = rows('props'); if (P) drawBooks(P);
       if (tab === 'today') drawToday();
-      else if (tab === 'explore') { drawProps(); drawChance(); drawLines(); }
+      else if (tab === 'explore') { drawProps(); drawChance(); drawFirstTD(); drawLines(); }
       else if (tab === 'games') drawGames();
       else if (tab === 'ledger') drawLedger();
     } catch (e) { console.error(e); }

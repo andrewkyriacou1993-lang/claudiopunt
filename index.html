@@ -30,7 +30,7 @@
 <script>
 /* Minimal stand-in for the Claude dashboard runtime: loads data/<name>.csv and runs the same page code. */
 window.dash = (() => {
-  const FILES = ['best', 'history', 'meta', 'bets', 'props', 'alts', 'chances', 'games', 'teams', 'injuries', 'matchups', 'usage', 'usage_fit', 'firstbasket', 'sgm', 'combos', 'stackers', 'lineup_news', 'best_next', 'meta_next', 'props_next', 'alts_next', 'chances_next', 'games_next', 'bets_next', 'teams_next', 'injuries_next', 'matchups_next', 'usage_next', 'usage_fit_next', 'firstbasket_next', 'sgm_next', 'combos_next', 'stackers_next', 'nfl_meta', 'nfl_games', 'nfl_props', 'nfl_best', 'nfl_injuries', 'nfl_history', 'nfl_firsttd'];
+  const FILES = ['best', 'history', 'meta', 'bets', 'props', 'alts', 'chances', 'games', 'teams', 'injuries', 'matchups', 'usage', 'usage_fit', 'firstbasket', 'sgm', 'combos', 'stackers', 'lineup_news', 'best_next', 'meta_next', 'props_next', 'alts_next', 'chances_next', 'games_next', 'bets_next', 'teams_next', 'injuries_next', 'matchups_next', 'usage_next', 'usage_fit_next', 'firstbasket_next', 'sgm_next', 'combos_next', 'stackers_next'];
   const D = {}, calcs = {}, subs = [];
   let queued = false;
   const fire = () => { if (queued) return; queued = true; requestAnimationFrame(() => { queued = false; subs.forEach(fn => { try { fn(); } catch (e) { console.error(e); } }); }); };
@@ -179,19 +179,10 @@ window.dash = (() => {
   .cp-sport button { font: inherit; font-size: 1.05rem; letter-spacing: .02em; color: #A9B3C4; background: none; border: 0; border-radius: 6px; padding: 2px 8px; min-height: 32px; cursor: pointer; }
   .cp-sport button[aria-pressed="true"] { color: #0B1220; background: var(--cp-accent); }
   .cp-sport button:focus-visible { outline: 2px solid #8DBBFF; outline-offset: 2px; }
-  .nf-app { display: flex; flex-direction: column; gap: 28px; }
-  .nf-app[hidden], .nf-tabs[hidden], .cp-upd[hidden], .nf-panel[hidden] { display: none; }
-  .nf-panel { display: flex; flex-direction: column; gap: 28px; padding-bottom: 72px; }
-  .nf-panel > * { padding-inline: 28px; }
-  .nf-tabs { display: flex; flex-wrap: wrap; gap: 2px; }
-  .nf-tab { font: inherit; font-weight: 600; font-size: .95rem; color: #A9B3C4; background: none; border: 0; padding: 12px 14px; min-height: 44px; cursor: pointer; }
-  .nf-tab[aria-selected="true"] { color: #FFFFFF; box-shadow: inset 0 -3px 0 var(--cp-accent); }
-  .nf-tab:focus-visible { outline: 2px solid #8DBBFF; outline-offset: 2px; }
-  .nf-panel > .cp-daybar { margin: 0 28px; padding: 10px 14px; }
   .cp-nfl { padding: 0 28px; display: flex; flex-direction: column; gap: 16px; }
   .cp-nfl[hidden], .cp-tabs[hidden], .cp-upd[hidden] { display: none; }
   .cp-nfl ul { margin: 0; padding-left: 20px; color: #C9D1DE; line-height: 1.6; }
-  @media (max-width: 640px) { .cp-nfl { padding: 0 14px; } .nf-panel > * { padding-inline: 14px; } .nf-panel > .cp-daybar { margin: 0 14px; } .nf-panel > .cp-top { margin: 0 14px; } }
+  @media (max-width: 640px) { .cp-nfl { padding: 0 14px; } }
   .cp-tabs { display: flex; flex-wrap: wrap; gap: 2px; }
   .cp-tab { font: inherit; font-weight: 600; font-size: .95rem; color: #A9B3C4; background: none; border: 0; padding: 12px 14px; min-height: 44px; cursor: pointer; }
   .cp-tab[hidden] { display: none; }
@@ -374,184 +365,19 @@ window.dash = (() => {
       <button type="button" class="cp-tab" role="tab" data-tab="ledger" aria-selected="false">Ledger</button>
       <button type="button" class="cp-tab" role="tab" data-tab="method" aria-selected="false">How it works</button>
     </div>
-    <div class="nf-tabs" id="nf-tabs" role="tablist" aria-label="NFL sections" hidden>
-      <button type="button" class="nf-tab" role="tab" data-ntab="today" aria-selected="true">Today</button>
-      <button type="button" class="nf-tab" role="tab" data-ntab="explore" aria-selected="false">Explore</button>
-      <button type="button" class="nf-tab" role="tab" data-ntab="games" aria-selected="false">Games</button>
-      <button type="button" class="nf-tab" role="tab" data-ntab="ledger" aria-selected="false">Ledger</button>
-      <button type="button" class="nf-tab" role="tab" data-ntab="method" aria-selected="false">How it works</button>
-    </div>
     <div class="cp-upd"><span data-source="meta" data-field="date_label" class="dash-skeleton">—</span> · updated <span data-source="meta" data-field="updated" class="dash-skeleton">—</span> · <span data-source="meta" data-field="games" class="dash-skeleton">—</span> games · first tip <span data-source="meta" data-field="first_tip" class="dash-skeleton">—</span></div>
-    <div class="cp-upd" id="nf-upd" hidden><span id="nf-u-wk">—</span> · updated <span id="nf-u-upd">—</span> · <span id="nf-u-g">—</span> games · first kick-off <span id="nf-u-tip">—</span></div>
   </header>
 
-  <div class="nf-app" id="nfl-app" hidden>
-  <div class="nf-panel" data-panel="today" role="tabpanel" aria-label="NFL Today">
-    <div class="cp-daybar" id="nf-banner">NFL board, week <span id="nf-wk">—</span>: <b>tracking only, nothing is staked.</b> The NFL player-prop model has not yet been shown to beat the bookies, so every pick below is logged at a paper 1u and graded after the games. Check game-day inactives before acting on any of it.</div>
-    <div class="cp-top">
-      <div class="cp-sum" aria-label="This week in numbers">
-        <span>Tracked <b id="nf-s-tr">—</b></span>
-        <span>Check news <b id="nf-s-fl">—</b></span>
-        <span>Props priced <b id="nf-s-pr">—</b></span>
-        <span>Settled <b id="nf-s-st">—</b></span>
-        <span>Paper total <b id="nf-s-pl">—</b></span>
-      </div>
-      <label class="cp-bksel"><span id="nf-bk-l">Best price at</span><select id="nf-bk" aria-labelledby="nf-bk-l"><option value="">Any bookie</option></select></label>
-    </div>
-    <section class="mb-sec" aria-labelledby="nf-card-h">
-      <div class="cp-sub"><h2 class="cp-h" id="nf-card-h">This week's card</h2><p>Props where the blended chance beats the best price by 5%+ and nothing in the role or injury data explains the gap, grouped by day (AEDT). Tap a pick for why.</p></div>
-      <div class="cp-groups" id="nf-cards"></div>
-      <button type="button" class="cp-btn ghost cp-more" id="nf-more" hidden>Show more</button>
-    </section>
-    <section class="mb-sec" aria-labelledby="nf-tg-h">
-      <div class="cp-sub"><h2 class="cp-h" id="nf-tg-h">Games</h2><p>Tap a game for its lines, role and injury flags, and every prop priced.</p></div>
-      <div class="cp-glist" id="nf-games-list"></div>
-    </section>
-  </div>
-
-  <div class="nf-panel" data-panel="explore" role="tabpanel" aria-label="NFL Explore" hidden>
-    <section class="mb-sec" id="nf-props">
-      <h2 class="mb-h2">Player props</h2>
-      <p class="mb-note">Every two-way player prop priced this week at Sportsbet and PointsBet. <b>Chance</b> is a blend of the bookies' no-vig price (weight 0.95) and the model (weight 0.34); the blend weights come from the NBA and are untested on the NFL. <i>Check news</i> = the model likes it but the injury report, a role change, a missing teammate, a thin history or a 25+ point gap with the market says to look first.</p>
-      <div class="mb-card">
-        <div class="mb-filters">
-          <label for="np-show" class="mb-note">Show</label>
-          <select id="np-show" class="mb-input"><option value="bets">Tracked and check-news</option><option value="top">Top 40 by value</option><option value="all">All markets</option></select>
-          <label for="np-stat" class="mb-note">Stat</label><select id="np-stat" class="mb-input"><option value="">All</option></select>
-          <label for="np-side" class="mb-note">Side</label><select id="np-side" class="mb-input"><option value="">Both</option><option>Over</option><option>Under</option></select>
-          <label for="np-book" class="mb-note">Best price at</label><select id="np-book" class="mb-input"><option value="">Any bookie</option></select>
-          <label for="np-game" class="mb-note">Game</label><select id="np-game" class="mb-input"><option value="">All games</option></select>
-          <label for="np-search" class="mb-note">Search</label><input id="np-search" class="mb-input" type="search" placeholder="Player or team">
-        </div>
-        <div class="pp-jump" id="np-jump" aria-label="Jump to a prop type"></div>
-        <div id="np-groups"></div>
-        <p class="mb-note" id="np-none" hidden>No props match these filters.</p>
-      </div>
-    </section>
-    <section class="mb-sec" id="nf-chance">
-      <h2 class="mb-h2">Chance finder</h2>
-      <p class="mb-note">Any prop side by its blended chance of landing, with the price it pays. High chance with a short price is usually the bookie's margin, not value: switch on positive value only to see where the price beats the chance.</p>
-      <div class="mb-card">
-        <div class="mb-filters">
-          <label for="nc-min" class="mb-note">Chance from</label><input id="nc-min" class="mb-input" type="number" min="0" max="100" step="5" value="60" style="width:5em">
-          <label for="nc-max" class="mb-note">to</label><input id="nc-max" class="mb-input" type="number" min="0" max="100" step="5" value="100" style="width:5em">
-          <label for="nc-stat" class="mb-note">Stat</label><select id="nc-stat" class="mb-input"><option value="">All</option></select>
-          <label for="nc-side" class="mb-note">Over / under</label><select id="nc-side" class="mb-input"><option value="">Both</option><option>Over</option><option>Under</option></select>
-          <label for="nc-val" class="mb-note">Value</label><select id="nc-val" class="mb-input"><option value="">Any</option><option value="pos">Positive EV only</option></select>
-          <label for="nc-flag" class="mb-note">Flags</label><select id="nc-flag" class="mb-input"><option value="">Any</option><option value="clean">Clean only</option></select>
-          <label for="nc-book" class="mb-note">Best price at</label><select id="nc-book" class="mb-input"><option value="">Any bookie</option></select>
-          <label for="nc-game" class="mb-note">Game</label><select id="nc-game" class="mb-input"><option value="">All games</option></select>
-          <label for="nc-search" class="mb-note">Search</label><input id="nc-search" class="mb-input" type="search" placeholder="Player or team">
-          <label for="nc-sort" class="mb-note">Sort by</label><select id="nc-sort" class="mb-input"><option value="prob">Chance</option><option value="ev">Value</option><option value="odds">Odds</option></select>
-        </div>
-        <div class="pp-jump" id="nc-presets" aria-label="Quick chance ranges"></div>
-        <p class="mb-note" id="nc-count"></p>
-        <div class="mb-scroll mb-tall"><table class="mb-table" id="nc-table">
-          <thead><tr><th>Verdict</th><th>Player</th><th>Team</th><th>Game</th><th>Bet</th><th class="num">Chance %</th><th class="num">Fair odds</th><th class="num">Odds</th><th>Best price</th><th class="num">Value %</th><th class="num">Model %</th><th class="num">Market %</th><th>Flags</th></tr></thead>
-          <tbody></tbody></table></div>
-        <p class="mb-note" id="nc-none" hidden>Nothing in that range.</p>
-      </div>
-    </section>
-    <section class="mb-sec" id="nf-firsttd">
-      <h2 class="mb-h2">First touchdown scorer</h2>
-      <p class="mb-note">Every player priced to score the game's first touchdown at PointsBet (Sportsbet's first-TD market isn't read yet). There is no price history for this market, so the chance is built from the bookie's own prices: the first-scorer price with its margin removed, averaged with the player's share of the game's scoring implied by his anytime-TD price. First-TD margins are around 20-30%, so a bet only shows when the anytime price says the first-scorer price is clearly too long. Not graded yet (needs play-by-play), so these are not in the ledger.</p>
-      <div class="mb-card">
-        <div class="mb-filters">
-          <label for="nf-f-show" class="mb-note">Show</label>
-          <select id="nf-f-show" class="mb-input"><option value="all">Every player</option><option value="bets">Bets and check-news only</option><option value="pos">Positive value</option></select>
-          <label for="nf-f-game" class="mb-note">Game</label><select id="nf-f-game" class="mb-input"><option value="">All games</option></select>
-          <label for="nf-f-search" class="mb-note">Search</label><input id="nf-f-search" class="mb-input" type="search" placeholder="Player or team">
-        </div>
-        <div class="mb-scroll mb-tall"><table class="mb-table" id="nf-f-table">
-          <thead><tr><th>Verdict</th><th>Player</th><th>Team</th><th>Game</th><th class="num">Odds</th><th class="num">Chance %</th><th class="num">Fair odds</th><th class="num">Value %</th><th class="num">First-TD market %</th><th class="num">Anytime share %</th><th class="num">Anytime odds</th><th>Flags</th></tr></thead>
-          <tbody></tbody></table></div>
-        <p class="mb-note" id="nf-f-none" hidden>No first-touchdown prices yet. Bookies post this market a few days before kick-off.</p>
-      </div>
-    </section>
-    <section class="mb-sec" id="nf-lines">
-      <h2 class="mb-h2">Game lines</h2>
-      <p class="mb-note">Spread and total as posted (spread is for the home team; negative = home favourite). There are no game bets: the NFL team model showed no edge against closing lines over five seasons of backtests.</p>
-      <div class="mb-card"><div class="mb-scroll"><table class="mb-table" id="nl-table">
-        <thead><tr><th>Kick-off (AEDT)</th><th>Game</th><th class="num">Home spread</th><th class="num">Total</th><th class="num">Home ML</th><th class="num">Away ML</th><th class="num">Props priced</th><th class="num">Tracked</th><th class="num">Check news</th></tr></thead>
-        <tbody></tbody></table></div></div>
-    </section>
-  </div>
-
-  <div class="nf-panel" data-panel="games" role="tabpanel" aria-label="NFL Games" hidden>
-    <section class="mb-sec" id="nf-gm">
-      <h2 class="mb-h2">Game by game</h2>
-      <div class="mb-tabs" id="nf-game-tabs" role="group" aria-label="Choose a game"></div>
-      <div class="mb-card"><h3 id="ng-h">Lines</h3>
-        <div class="mb-tiles" id="ng-tiles"></div></div>
-      <div class="mb-card"><h3>Role and injury flags</h3>
-        <p class="mb-note">From the NFL injury report (this week's practice and game status) and snap counts. A flagged player's props can never be a tracked pick. The report is only partly published early in the week; the real check is game-day inactives, about 90 minutes before kick-off.</p>
-        <div class="mb-scroll"><table class="mb-table" id="ng-inj"><thead><tr><th>Player</th><th>Team</th><th>Type</th><th>Detail</th></tr></thead><tbody></tbody></table></div>
-        <p class="mb-note" id="ng-inj-none" hidden>No flags among priced players in this game.</p></div>
-      <div class="mb-card"><h3>Props in this game</h3>
-        <div class="mb-filters">
-          <label for="ng-show" class="mb-note">Show</label>
-          <select id="ng-show" class="mb-input"><option value="bets">Tracked and check-news</option><option value="top">Top 40 by value</option><option value="all">All markets</option></select>
-        </div>
-        <div class="mb-scroll mb-tall"><table class="mb-table" id="ng-props">
-          <thead><tr><th>Verdict</th><th>Player</th><th>Team</th><th>Bet</th><th class="num">Odds</th><th>Best price</th><th class="num">Proj</th><th class="num">Model %</th><th class="num">Market %</th><th class="num">Chance %</th><th class="num">Value %</th><th>Why</th></tr></thead>
-          <tbody></tbody></table></div>
-        <p class="mb-note" id="ng-props-none" hidden>No props match.</p></div>
-    </section>
-  </div>
-
-  <div class="nf-panel" data-panel="ledger" role="tabpanel" aria-label="NFL Ledger" hidden>
-    <section class="mb-sec" id="nf-track">
-      <h2 class="mb-h2">Pick ledger</h2>
-      <p class="mb-note">Every tracked pick, locked at the odds when it was first logged (later runs only add new picks), then graded from the official player stats once the games are final. Stakes are a <b>paper 1u</b> per pick, because no real stake is recommended while the model is unproven. Judge it over weeks, not days: a handful of graded props says nothing. A player who doesn't play is left ungraded.</p>
-      <div class="mb-tiles">
-        <div class="mb-tile"><span class="mb-tile-l">Picks logged</span><span class="mb-tile-v" id="nt-all">—</span></div>
-        <div class="mb-tile"><span class="mb-tile-l">Settled</span><span class="mb-tile-v" id="nt-set">—</span></div>
-        <div class="mb-tile"><span class="mb-tile-l">Won–lost</span><span class="mb-tile-v" id="nt-rec">—</span></div>
-        <div class="mb-tile"><span class="mb-tile-l">Paper total</span><span class="mb-tile-v" id="nt-pl">—</span></div>
-        <div class="mb-tile"><span class="mb-tile-l">Return on stakes</span><span class="mb-tile-v" id="nt-roi">—</span></div>
-        <div class="mb-tile"><span class="mb-tile-l">Waiting to settle</span><span class="mb-tile-v" id="nt-pend">—</span></div>
-        <div class="mb-tile"><span class="mb-tile-l">Model / actual win %</span><span class="mb-tile-v" id="nt-cal">—</span></div>
-      </div>
-      <div class="mb-grid">
-        <div class="mb-card"><h3>Running total, pick by pick (paper units)</h3>
-          <p class="mb-note" id="nt-empty" hidden>The line starts once the first picks are settled, after the week's games finish.</p>
-          <div class="mb-chart" id="nt-chart" style="min-height: 14rem"></div></div>
-        <div class="mb-card"><h3>By stat</h3>
-          <div class="mb-scroll"><table class="mb-table" id="nt-stat"><thead><tr><th>Stat</th><th class="num">Picks</th><th class="num">Settled</th><th class="num">W–L</th><th class="num">Profit (u)</th><th class="num">ROI %</th><th class="num">Model / actual win %</th></tr></thead><tbody></tbody></table></div></div>
-      </div>
-      <div class="mb-card"><h3>By bookie</h3>
-        <div class="mb-scroll"><table class="mb-table" id="nt-book"><thead><tr><th>Bookie</th><th class="num">Picks</th><th class="num">Settled</th><th class="num">W–L</th><th class="num">Profit (u)</th><th class="num">ROI %</th></tr></thead><tbody></tbody></table></div></div>
-      <div class="mb-card"><h3>Every pick</h3>
-        <div class="mb-filters">
-          <label for="nh-week" class="mb-note">Week</label><select id="nh-week" class="mb-input"><option value="">All weeks</option></select>
-          <label for="nh-res" class="mb-note">Show</label><select id="nh-res" class="mb-input"><option value="">All</option><option value="pending">Waiting</option><option value="settled">Settled</option></select>
-          <label for="nh-book" class="mb-note">Bookie</label><select id="nh-book" class="mb-input"><option value="">All bookies</option></select>
-          <label for="nh-stat" class="mb-note">Stat</label><select id="nh-stat" class="mb-input"><option value="">All</option></select>
-        </div>
-        <div class="mb-scroll mb-tall"><table class="mb-table" id="nh-table">
-          <thead><tr><th>Posted (AEDT)</th><th>Stat</th><th>Pick</th><th>Game</th><th class="num">Odds</th><th>Bookie</th><th class="num">Our chance %</th><th class="num">Stake (u)</th><th class="num">Actual</th><th>Result</th><th class="num">Profit (u)</th><th class="num">Running (u)</th></tr></thead>
-          <tbody></tbody></table></div>
-      </div>
-    </section>
-  </div>
-
-  <div class="nf-panel" data-panel="method" role="tabpanel" aria-label="NFL How it works" hidden>
-    <section class="mb-sec" id="nf-method">
-      <h2 class="mb-h2">How the NFL numbers are made</h2>
-      <div class="mb-defs">
-        <p><b>Status.</b> The NFL board is in tracking mode. The NBA model showed a small edge in testing; the NFL one has not. Nothing here is a recommended stake: picks are logged at a paper 1u and graded so the model can be judged on real prices.</p>
-        <p><b>Projection.</b> Each player's average for the stat from his games with his <i>current</i> team only (recent games count more: half-life 5 games; this season counts fully, last season 35%), nudged by how much his team is expected to score this week versus its average. The nudge was tuned on five seasons of prop lines built from prior games and turned out small (zero for most stats).</p>
-        <p><b>Chance of clearing the line.</b> The projection is compared with how far real outcomes have landed from projections of that size, by stat and band, to get the model's chance of the over. The model's average is then centred on the bookies' average for that stat (the model runs low on volume stats), so a pick needs a player whose gap differs from his stat's typical gap.</p>
-        <p><b>Blend.</b> The bookies' no-vig chance (average across Sportsbet and PointsBet at the same line) is blended with the model in log-odds: 0.954 market + 0.343 model. Those weights were fitted on NBA props and are <b>untested on the NFL</b>. A pick's value is the blended chance times the best price on that side, minus 1; 5% or more is a candidate.</p>
-        <p><b>Flags.</b> Each candidate is checked against the injury report (Out, Doubtful, Questionable, limited or no practice), snap counts (a share that moved 20+ points in the last two games), teammates at the same position who are out, history with the current team (under 3 games), and a model/market gap of 25+ points. Any flag turns <i>Tracked</i> into <i>Check news</i>, which is never a pick. Most big model-versus-market gaps turn out to be role information the bookie has and the model doesn't.</p>
-        <p><b>Bookmakers.</b> Sportsbet and PointsBet, read from their public pages without logging in. Prop lines can differ by a half step between them; each is priced on its own line. Ladbrokes and Betr are not yet included. Props appear a few days before kick-off, so the board fills in over the week; Sportsbet had props for 5 of 14 games on Friday, PointsBet for all 14.</p>
-        <p><b>First touchdown scorer.</b> Priced from the bookie's own markets, not a trained model: the first-scorer price (margin removed) averaged with each player's share of the game's scoring implied by his anytime-TD price. The margin on this market is large, so bets are rare, and they are not graded yet.</p>
-        <p><b>Team model and game bets.</b> A ratings model for games was backtested against closing lines over five seasons: it adds nothing, and any edge is in early-week prices that shrink as lines move toward it. Sportsbet's NFL same-game multis already charge for the links between legs. So there are no game, multi or same-game bets here.</p>
-        <p><b>Grading.</b> After each round the logged picks (and every prop priced, not just the picks) are graded against official player stats: log loss for the market, the model and the blend, and the best blend weight on the pooled results. This needs about six weeks of logged prices before the weights mean anything; until then the ledger is a plumbing check, not evidence.</p>
-      </div>
-    </section>
-  </div>
-  </div>
+  <section class="cp-nfl" id="nfl-home" aria-labelledby="nfl-h" hidden>
+    <div class="cp-sub"><h2 class="cp-h" id="nfl-h">NFL board: being set up</h2>
+    <p id="nfl-status">The NFL model is being built and tested the same way as the NBA one: backtests first, and the board only goes live if the model shows an edge. First results (last 5 seasons): the team model adds nothing against closing lines, but lines move towards it from midweek, so any edge is in early-week prices. Sportsbet's NFL same-game multis already charge for the links between legs (e.g. a QB's yards and his top receiver's), unlike its NBA same-player combos. Next: player-prop projections against AU prices.</p></div>
+    <ul>
+      <li>Team model: ratings from every game since 1999 (nflverse), quarterback changes, home field, rest, weather, and the key numbers 3 and 7 for spreads. Tested against the closing lines.</li>
+      <li>Player props: passing, rushing and receiving yards, receptions and anytime touchdown from each player's usage (targets, snaps, carries, red-zone share).</li>
+      <li>Same-game multis: the same correlation work as the NBA, including same-player combos.</li>
+      <li>Prices from Sportsbet, PointsBet, Ladbrokes and Betr, with weekly runs (early-week openers, Friday, game morning) and a game-day inactives watch.</li>
+    </ul>
+  </section>
   <div class="cp-sheet-bg" id="my-bg" hidden></div>
   <section class="cp-bs" id="mybets" role="dialog" aria-modal="true" aria-labelledby="my-h" hidden>
     <div class="cp-bs-head"><h2 id="my-h">Bet slip</h2><span class="cp-bs-n" id="my-n">0</span><button type="button" class="cp-bs-txt" id="my-clear">Clear all</button><button type="button" class="cp-x" id="my-close" aria-label="Close bet slip">×</button></div>
@@ -1554,21 +1380,20 @@ window.dash = (() => {
   // ---------- sport switch (NBA / NFL) ----------
   let SPORT = 'nba';
   try { SPORT = localStorage.getItem('cp-sport') || 'nba'; } catch (e) {}
-  if (/^nfl(-|$)/.test(location.hash.slice(1))) SPORT = 'nfl';
+  if (location.hash.slice(1) === 'nfl') SPORT = 'nfl';
   function showSport(sp) {
     SPORT = sp === 'nfl' ? 'nfl' : 'nba';
     try { localStorage.setItem('cp-sport', SPORT); } catch (e) {}
     document.querySelectorAll('.cp-sport button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.sport === SPORT)));
     const nfl = SPORT === 'nfl';
-    $('#nfl-app').hidden = !nfl; $('#nf-tabs').hidden = !nfl; $('#nf-upd').hidden = !nfl;
+    $('#nfl-home').hidden = !nfl;
     document.querySelector('.cp-tabs').hidden = nfl;
     document.querySelector('.cp-upd').hidden = nfl;
     document.querySelectorAll('.cp-panel').forEach(p => { if (nfl) p.hidden = true; });
     const fab = $('#my-fab'); if (fab && nfl) fab.hidden = true;
     if (!nfl) { const sel = document.querySelector('.cp-tab[aria-selected="true"]'); showTab(sel ? sel.dataset.tab : 'today'); }
-    document.dispatchEvent(new Event('cp-sport'));
   }
-  document.querySelectorAll('.cp-sport button').forEach(b => b.addEventListener('click', () => { showSport(b.dataset.sport); if (SPORT !== 'nfl') dash.setLink('today'); }));
+  document.querySelectorAll('.cp-sport button').forEach(b => b.addEventListener('click', () => { showSport(b.dataset.sport); dash.setLink(SPORT === 'nfl' ? 'nfl' : 'today'); }));
   setInterval(() => { try { const d0 = DAY; drawDay(); if (DAY !== d0) redrawAll(); } catch (e) {} }, 60000);
   document.querySelectorAll('.cp-dsw button').forEach(b => b.addEventListener('click', () => {
     VIEWDAY = b.dataset.day; const sel = document.querySelector('.cp-tab[aria-selected="true"]'); showTab(sel ? sel.dataset.tab : 'explore');
@@ -2092,311 +1917,6 @@ window.dash = (() => {
   if (SPORT === 'nfl') { /* stay on the NFL page */ }
   else if (tabNames.includes(hash)) showTab(hash);
   else { const named = document.getElementById(hash); if (named) { showFor(named); named.scrollIntoView(); dash.setLink(named.id); } }
-})();
-</script>
-<script>
-/* NFL board: same layout and styles as the NBA tabs, reading data/nfl_*.csv (written weekly by export_site.py). */
-(function () {
-  const app = document.getElementById('nfl-app');
-  if (!app) return;
-  const Q = (s) => app.querySelector(s), QA = (s) => [...app.querySelectorAll(s)];
-  const D = (n) => dash.data('nfl_' + n);
-  const DAYS = ['Fri', 'Sat', 'Sun', 'Mon', 'Tue', 'Wed', 'Thu'];
-  const DAYNAME = { Fri: 'Friday', Sat: 'Saturday', Sun: 'Sunday', Mon: 'Monday', Tue: 'Tuesday', Wed: 'Wednesday', Thu: 'Thursday' };
-  const STATS = ['Passing yds', 'Passing TDs', 'Completions', 'Pass attempts', 'Rushing yds', 'Rush attempts', 'Receptions', 'Receiving yds'];
-  const SETTLED = new Set(['win', 'loss', 'push']);
-  let tab = 'today', chosen = '', showMore = false;
-  try { const h = location.hash.slice(1); if (/^nfl-/.test(h) && ['today', 'explore', 'games', 'ledger', 'method'].includes(h.slice(4))) tab = h.slice(4); } catch (e) {}
-
-  const el = (t, c, x) => { const e = document.createElement(t); if (c) e.className = c; if (x != null) e.textContent = x; return e; };
-  const N = (v) => Number(v);
-  const sgn = (v, d = 2) => (v >= 0 ? '+' : '−') + Math.abs(v).toFixed(d);
-  const pill = (map) => (td, v) => { const s = el('span', 'pill ' + (map[v] || ''), v); td.appendChild(s); };
-  const verdictPill = pill({ 'Tracked': 'bet', 'Check news': 'check', 'Pass': 'pass' });
-  const signed = (td, v) => { td.textContent = v; if (N(v) > 0) td.classList.add('good'); else if (N(v) < 0) td.classList.add('bad'); };
-  const dayOf = (tip) => (tip || '').split(' ')[0];
-  const timeOf = (tip) => (tip || '').split(' ')[1] || '';
-  const tipKey = (tip) => String(DAYS.indexOf(dayOf(tip)) < 0 ? 9 : DAYS.indexOf(dayOf(tip))) + timeOf(tip);
-  const betText = (r) => (r.first ? `${r.player} first touchdown` : `${r.player} ${r.side} ${r.line} ${r.stat.toLowerCase()}`);
-  const fair = (r) => (100 / N(r.blend_prob)).toFixed(2);
-
-  function fill(tbody, rows, cols, cls) {
-    tbody.innerHTML = '';
-    rows.forEach((r) => {
-      const tr = el('tr', cls ? cls(r) : '');
-      cols.forEach((c) => { const td = el('td', c.cls || ''); if (c.render) c.render(td, r[c.f], r); else td.textContent = c.fn ? c.fn(r) : r[c.f]; tr.appendChild(td); });
-      tbody.appendChild(tr);
-    });
-  }
-  function opts(sel, vals, first) {
-    const cur = sel.value; sel.innerHTML = '';
-    sel.appendChild(Object.assign(el('option', '', first), { value: '' }));
-    vals.forEach((v) => sel.appendChild(Object.assign(el('option', '', v), { value: v })));
-    sel.value = vals.includes(cur) ? cur : '';
-  }
-  const rows = (n) => { const x = D(n); return x.status === 'ok' ? x.data : null; };
-
-  // ---------- tabs ----------
-  function setTab(t) {
-    tab = t;
-    QA('.nf-panel').forEach((p) => { p.hidden = p.dataset.panel !== t; });
-    document.querySelectorAll('.nf-tab').forEach((b) => b.setAttribute('aria-selected', String(b.dataset.ntab === t)));
-    dash.setLink('nfl-' + t);
-    draw();
-  }
-  document.querySelectorAll('.nf-tab').forEach((b) => b.addEventListener('click', () => setTab(b.dataset.ntab)));
-
-  // ---------- header + today ----------
-  function drawMeta() {
-    const M = rows('meta'), m = M && M[0];
-    const set = (id, v) => { const e = document.getElementById(id); if (e) e.textContent = v; };
-    set('nf-u-wk', m ? m.date_label : '—'); set('nf-u-upd', m ? m.updated : '—'); set('nf-u-g', m ? m.games : '—'); set('nf-u-tip', m ? m.first_tip : '—');
-    set('nf-wk', m ? m.week : '—');
-    if (m) { set('nf-s-tr', m.tracked / 1 ? Math.round(N(m.tracked)) : 0); set('nf-s-fl', Math.round(N(m.flagged))); set('nf-s-pr', m.props); }
-    const H = rows('history');
-    if (H) {
-      const st = H.filter((h) => SETTLED.has(h.result)), pl = st.reduce((t, h) => t + N(h.profit_u || 0), 0);
-      set('nf-s-st', st.length); const e = document.getElementById('nf-s-pl'); e.textContent = st.length ? sgn(pl) + 'u' : '—';
-      e.classList.toggle('neg', st.length > 0 && pl < 0); e.classList.toggle('posv', st.length > 0 && pl > 0);
-    }
-  }
-  let BOOKS = [];
-  function drawBooks(P) {
-    BOOKS = [...new Set(P.map((r) => r.book).filter(Boolean))].sort();
-    ['#nf-bk', '#np-book', '#nc-book'].forEach((s) => opts(Q(s), BOOKS, 'Any bookie'));
-    opts(Q('#nh-book'), [...new Set((rows('history') || []).map((r) => r.book).filter(Boolean))].sort(), 'All bookies');
-  }
-  const atBook = (P, b) => (b ? P.filter((r) => r.book === b) : P);
-
-  function drawToday() {
-    const B0 = rows('best'), G = rows('games'), box = Q('#nf-cards');
-    if (!B0 || !G) return;
-    const FT = (rows('firsttd') || []).filter((r) => r.verdict !== 'Pass').map((r) => Object.assign({}, r, { stat: 'First TD', side: '', line: '', blend_prob: r.prob, market_prob: r.mkt_prob, model_prob: r.any_prob, tip: r.tip, first: true }));
-    const B = B0.concat(FT);
-    const book = Q('#nf-bk').value;
-    const all = atBook(B, book);
-    const picks = all.filter((r) => r.verdict === 'Tracked'), more = all.filter((r) => r.verdict !== 'Tracked');
-    Q('#nf-more').hidden = more.length === 0;
-    Q('#nf-more').textContent = showMore ? 'Hide check-news props' : `Show ${more.length} more (flagged: check news first)`;
-    box.innerHTML = '';
-    const list = showMore ? picks.concat(more) : picks;
-    if (!list.length) box.appendChild(el('div', 'cp-meta', book ? `No pick clears the value bar at ${book} yet.` : 'No pick clears the value bar yet. Props fill in through the week.'));
-    const days = [...new Set(list.map((r) => dayOf(r.tip)))].sort((a, b) => DAYS.indexOf(a) - DAYS.indexOf(b));
-    days.forEach((d) => {
-      const g = list.filter((r) => dayOf(r.tip) === d).sort((a, b) => timeOf(a.tip).localeCompare(timeOf(b.tip)) || (a.verdict !== 'Tracked') - (b.verdict !== 'Tracked') || N(b.ev_pct) - N(a.ev_pct));
-      const sec = el('div', 'cp-group'), h = el('h3', 'cp-group-h', DAYNAME[d] || d);
-      const trk = g.filter((r) => r.verdict === 'Tracked');
-      const ts = [...new Set(g.map((r) => timeOf(r.tip)))].sort();
-      h.appendChild(el('span', '', [ts.length > 1 ? `${ts[0]}–${ts[ts.length - 1]} AEDT` : ts[0] + ' AEDT', `${trk.length} tracked`].join(' · ')));
-      sec.appendChild(h);
-      const lst = el('div', 'cp-bets'); sec.appendChild(lst);
-      g.forEach((r) => {
-        const c = el('article', 'cp-bet' + (r.verdict === 'Tracked' ? '' : ' is-lean'));
-        const main = el('button', 'cp-bet-main'); main.type = 'button'; main.setAttribute('aria-expanded', 'false');
-        const l = el('div', 'cp-bet-l'), sub = el('div', 'cp-bet-s');
-        sub.append(r.stat, ' · ', `${r.game} · ${timeOf(r.tip)}`);
-        if (r.verdict !== 'Tracked') { sub.append(' '); sub.appendChild(el('span', 'cp-chip dim', 'Check news')); }
-        l.append(el('div', 'cp-bet-p', betText(r)), sub);
-        const o = el('div', 'cp-bet-o'); o.append(el('b', '', N(r.odds).toFixed(2)), el('span', '', r.book));
-        main.append(l, o);
-        const right = el('div', 'cp-bet-r'); right.appendChild(el('span', 'cp-bet-st', r.verdict === 'Tracked' ? 'paper 1u' : '0u'));
-        const why = el('div', 'cp-why'); why.hidden = true;
-        const facts = el('div', 'cp-row');
-        facts.appendChild(el('span', 'cp-tag' + (N(r.ev_pct) > 0 ? '' : ' bad'), `${N(r.ev_pct) > 0 ? 'Good value' : 'Overpriced'} · fair ${fair(r)}`));
-        facts.appendChild(el('span', 'cp-meta', r.first ? `Our chance ${r.blend_prob}% · first-TD market ${r.market_prob}% · anytime share ${r.model_prob}%` : `Our chance ${r.blend_prob}% · model ${r.model_prob}% · market ${r.market_prob}%`));
-        why.append(facts, el('div', '', r.reason));
-        if (r.all_odds) why.appendChild(el('div', '', 'Best price: ' + r.all_odds));
-        main.addEventListener('click', () => { why.hidden = !why.hidden; main.setAttribute('aria-expanded', String(!why.hidden)); c.classList.toggle('open', !why.hidden); });
-        c.append(main, right, why); lst.appendChild(c);
-      });
-      box.appendChild(sec);
-    });
-    // games list
-    const gl = Q('#nf-games-list'); gl.innerHTML = '';
-    G.slice().sort((a, b) => tipKey(a.tip_aedt).localeCompare(tipKey(b.tip_aedt))).forEach((g) => {
-      const sp = N(g.spread_home), fav = sp <= 0 ? g.home : g.away;
-      const btn = el('button', 'cp-gli' + (N(g.tracked) ? ' has-bet' : '')); btn.type = 'button';
-      btn.append(el('span', 't', g.tip_aedt.replace(/^\w+ /, '')), el('span', 'n', g.game), el('span', 'ln', `${fav} −${Math.abs(sp)} · ${g.total}`),
-        el('span', 'b', [N(g.tracked) ? `${g.tracked} tracked` : '', N(g.flagged) ? `${g.flagged} check` : ''].filter(Boolean).join(' · ') || '—'));
-      btn.title = DAYNAME[dayOf(g.tip_aedt)] || '';
-      btn.setAttribute('aria-label', `${g.game}, ${g.tip_aedt}. Open game details`);
-      btn.addEventListener('click', () => { chosen = g.game; setTab('games'); window.scrollTo({ top: 0 }); });
-      gl.appendChild(btn);
-    });
-  }
-  Q('#nf-bk').addEventListener('change', () => { Q('#np-book').value = Q('#nf-bk').value; drawToday(); });
-  Q('#nf-more').addEventListener('click', () => { showMore = !showMore; drawToday(); });
-
-  // ---------- explore: props ----------
-  const propCols = (extra) => [
-    { f: 'verdict', render: verdictPill }, { f: 'player' }, { f: 'team' }, { f: 'game', cls: 'pos' }, { f: 'side' }, { f: 'line', cls: 'num' }, { f: 'odds', cls: 'num' }, { f: 'book' },
-    { f: 'proj', cls: 'num' }, { f: 'n_games', cls: 'num' }, { f: 'model_prob', cls: 'num' }, { f: 'market_prob', cls: 'num' }, { f: 'blend_prob', cls: 'num' },
-    { f: 'ev_pct', cls: 'num', render: signed }, { f: 'reason', cls: 'why' }];
-  function drawProps() {
-    const P = rows('props'); if (!P) return;
-    drawBooks(P);
-    opts(Q('#np-stat'), STATS.filter((s) => P.some((r) => r.stat === s)), 'All'); opts(Q('#nc-stat'), STATS.filter((s) => P.some((r) => r.stat === s)), 'All');
-    const games = [...new Set(P.map((r) => r.game))]; opts(Q('#np-game'), games, 'All games'); opts(Q('#nc-game'), games, 'All games');
-    const show = Q('#np-show').value, stat = Q('#np-stat').value, side = Q('#np-side').value, game = Q('#np-game').value, qs = Q('#np-search').value.trim().toLowerCase();
-    let R = atBook(P, Q('#np-book').value).filter((r) => (!stat || r.stat === stat) && (!side || r.side === side) && (!game || r.game === game) && (!qs || (r.player + ' ' + r.team + ' ' + r.game).toLowerCase().includes(qs)));
-    if (show === 'bets') R = R.filter((r) => r.verdict !== 'Pass');
-    const groups = Q('#np-groups'), jump = Q('#np-jump'); groups.innerHTML = ''; jump.innerHTML = '';
-    let shown = 0;
-    STATS.forEach((st) => {
-      let g = R.filter((r) => r.stat === st); if (show === 'top') g = g.slice(0, 40); if (!g.length) return;
-      shown += g.length;
-      const id = 'nf-props-' + st.replace(/\W+/g, '-').toLowerCase();
-      const h = el('h3', 'pp-h', 'Player ' + st.toLowerCase()); h.id = id;
-      const nt = g.filter((r) => r.verdict === 'Tracked').length;
-      h.appendChild(el('span', '', `${g.length} side${g.length === 1 ? '' : 's'} · ${nt} tracked`));
-      const wrap = el('div', 'mb-scroll mb-tall'), t = el('table', 'mb-table');
-      t.innerHTML = '<thead><tr><th>Verdict</th><th>Player</th><th>Team</th><th>Game</th><th>Side</th><th class="num">Line</th><th class="num">Odds</th><th>Best price</th><th class="num">Proj</th><th class="num">Games</th><th class="num">Model %</th><th class="num">Market %</th><th class="num">Chance %</th><th class="num">Value %</th><th>Why</th></tr></thead><tbody></tbody>';
-      fill(t.querySelector('tbody'), g, propCols(), (r) => (r.verdict === 'Pass' ? 'pass' : ''));
-      wrap.appendChild(t); groups.append(h, wrap);
-      const jb = el('button', '', st); jb.type = 'button'; jb.addEventListener('click', () => h.scrollIntoView({ behavior: 'smooth' })); jump.appendChild(jb);
-    });
-    jump.hidden = jump.children.length < 2; Q('#np-none').hidden = shown !== 0;
-  }
-  ['#np-show', '#np-stat', '#np-side', '#np-book', '#np-game'].forEach((s) => Q(s).addEventListener('change', drawProps));
-  Q('#np-search').addEventListener('input', drawProps);
-
-  // ---------- explore: chance finder ----------
-  function drawChance() {
-    const P = rows('props'); if (!P) return;
-    const mn = N(Q('#nc-min').value || 0), mx = N(Q('#nc-max').value || 100), stat = Q('#nc-stat').value, side = Q('#nc-side').value, game = Q('#nc-game').value;
-    const qs = Q('#nc-search').value.trim().toLowerCase(), pos = Q('#nc-val').value === 'pos', clean = Q('#nc-flag').value === 'clean', sort = Q('#nc-sort').value;
-    let R = atBook(P, Q('#nc-book').value).filter((r) => N(r.blend_prob) >= mn && N(r.blend_prob) <= mx && (!stat || r.stat === stat) && (!side || r.side === side) && (!game || r.game === game)
-      && (!pos || N(r.ev_pct) > 0) && (!clean || !r.flags) && (!qs || (r.player + ' ' + r.team + ' ' + r.game).toLowerCase().includes(qs)));
-    R.sort((a, b) => sort === 'ev' ? N(b.ev_pct) - N(a.ev_pct) : sort === 'odds' ? N(b.odds) - N(a.odds) : N(b.blend_prob) - N(a.blend_prob));
-    Q('#nc-count').textContent = `${R.length} prop side${R.length === 1 ? '' : 's'} match${R.length > 300 ? ' (first 300 shown)' : ''}.`;
-    Q('#nc-none').hidden = R.length !== 0;
-    fill(Q('#nc-table tbody'), R.slice(0, 300), [
-      { f: 'verdict', render: verdictPill }, { f: 'player' }, { f: 'team' }, { f: 'game', cls: 'pos' }, { fn: betText },
-      { f: 'blend_prob', cls: 'num' }, { fn: fair, cls: 'num' }, { f: 'odds', cls: 'num' }, { f: 'book' }, { f: 'ev_pct', cls: 'num', render: signed },
-      { f: 'model_prob', cls: 'num' }, { f: 'market_prob', cls: 'num' }, { f: 'flags', cls: 'why' }], (r) => (r.verdict === 'Pass' ? 'pass' : ''));
-  }
-  const presets = Q('#nc-presets');
-  [['50–60%', 50, 60], ['60–70%', 60, 70], ['70–80%', 70, 80], ['80–100%', 80, 100]].forEach(([l, a, b]) => {
-    const x = el('button', '', l); x.type = 'button';
-    x.addEventListener('click', () => { Q('#nc-min').value = a; Q('#nc-max').value = b; drawChance(); }); presets.appendChild(x);
-  });
-  ['#nc-min', '#nc-max', '#nc-stat', '#nc-side', '#nc-val', '#nc-flag', '#nc-book', '#nc-game', '#nc-sort'].forEach((s) => Q(s).addEventListener('change', drawChance));
-  Q('#nc-search').addEventListener('input', drawChance);
-
-  // ---------- explore: first touchdown ----------
-  function drawFirstTD() {
-    const R0 = rows('firsttd'); if (!R0) return;
-    const games = [...new Set(R0.map((r) => r.game))]; opts(Q('#nf-f-game'), games, 'All games');
-    const show = Q('#nf-f-show').value, game = Q('#nf-f-game').value, qs = Q('#nf-f-search').value.trim().toLowerCase();
-    let R = R0.filter((r) => (!game || r.game === game) && (!qs || (r.player + ' ' + r.team + ' ' + r.game).toLowerCase().includes(qs)));
-    if (show === 'bets') R = R.filter((r) => r.verdict !== 'Pass'); else if (show === 'pos') R = R.filter((r) => N(r.ev_pct) > 0);
-    Q('#nf-f-none').hidden = R.length > 0;
-    fill(Q('#nf-f-table tbody'), R.slice(0, 400), [
-      { f: 'verdict', render: verdictPill }, { f: 'player' }, { f: 'team' }, { f: 'game', cls: 'pos' }, { f: 'odds', cls: 'num' }, { f: 'prob', cls: 'num' }, { f: 'fair_odds', cls: 'num' },
-      { f: 'ev_pct', cls: 'num', render: signed }, { f: 'mkt_prob', cls: 'num' }, { f: 'any_prob', cls: 'num' }, { f: 'anytime_odds', cls: 'num' }, { f: 'flags', cls: 'why' }], (r) => (r.verdict === 'Pass' ? 'pass' : ''));
-  }
-  ['#nf-f-show', '#nf-f-game'].forEach((s) => Q(s).addEventListener('change', drawFirstTD));
-  Q('#nf-f-search').addEventListener('input', drawFirstTD);
-
-  // ---------- explore: lines ----------
-  function drawLines() {
-    const G = rows('games'); if (!G) return;
-    fill(Q('#nl-table tbody'), G.slice().sort((a, b) => tipKey(a.tip_aedt).localeCompare(tipKey(b.tip_aedt))), [
-      { f: 'tip_aedt', cls: 'pos' }, { f: 'game' }, { f: 'spread_home', cls: 'num' }, { f: 'total', cls: 'num' }, { f: 'ml_home', cls: 'num' }, { f: 'ml_away', cls: 'num' },
-      { f: 'props', cls: 'num' }, { f: 'tracked', cls: 'num' }, { f: 'flagged', cls: 'num' }]);
-  }
-
-  // ---------- games ----------
-  function drawGames() {
-    const G = rows('games'), P = rows('props'), I = rows('injuries'); if (!G || !P) return;
-    const sorted = G.slice().sort((a, b) => tipKey(a.tip_aedt).localeCompare(tipKey(b.tip_aedt)));
-    if (!chosen || !G.some((g) => g.game === chosen)) chosen = sorted[0] ? sorted[0].game : '';
-    const tabs = Q('#nf-game-tabs'); tabs.innerHTML = '';
-    sorted.forEach((g) => { const b = el('button', 'mb-tab', `${g.game} · ${g.tip_aedt}`); b.type = 'button'; b.setAttribute('aria-pressed', String(g.game === chosen)); b.addEventListener('click', () => { chosen = g.game; drawGames(); }); tabs.appendChild(b); });
-    const g = G.find((x) => x.game === chosen); if (!g) return;
-    Q('#ng-h').textContent = `${g.game} · ${g.tip_aedt} AEDT`;
-    const sp = N(g.spread_home), fav = sp <= 0 ? g.home : g.away;
-    const tiles = Q('#ng-tiles'); tiles.innerHTML = '';
-    [['Spread', `${fav} −${Math.abs(sp)}`], ['Total', g.total], [`${g.home} ML`, g.ml_home], [`${g.away} ML`, g.ml_away], ['Props priced', g.props], ['Tracked', g.tracked], ['Check news', g.flagged]].forEach(([l, v]) => {
-      const t = el('div', 'mb-tile'); t.append(el('span', 'mb-tile-l', l), el('span', 'mb-tile-v', v)); tiles.appendChild(t);
-    });
-    const inj = (I || []).filter((r) => r.game === chosen);
-    fill(Q('#ng-inj tbody'), inj, [{ f: 'player' }, { f: 'team' }, { f: 'status' }, { f: 'note', cls: 'why' }]); Q('#ng-inj-none').hidden = inj.length > 0;
-    const show = Q('#ng-show').value;
-    let R = P.filter((r) => r.game === chosen); if (show === 'bets') R = R.filter((r) => r.verdict !== 'Pass'); if (show === 'top') R = R.slice(0, 40);
-    Q('#ng-props-none').hidden = R.length > 0;
-    fill(Q('#ng-props tbody'), R.slice(0, 400), [
-      { f: 'verdict', render: verdictPill }, { f: 'player' }, { f: 'team' }, { fn: (r) => `${r.side} ${r.line} ${r.stat.toLowerCase()}` }, { f: 'odds', cls: 'num' }, { f: 'book' }, { f: 'proj', cls: 'num' },
-      { f: 'model_prob', cls: 'num' }, { f: 'market_prob', cls: 'num' }, { f: 'blend_prob', cls: 'num' }, { f: 'ev_pct', cls: 'num', render: signed }, { f: 'reason', cls: 'why' }], (r) => (r.verdict === 'Pass' ? 'pass' : ''));
-  }
-  Q('#ng-show').addEventListener('change', drawGames);
-
-  // ---------- ledger ----------
-  function summarise(H) {
-    const st = H.filter((h) => SETTLED.has(h.result)), w = st.filter((h) => h.result === 'win').length, l = st.filter((h) => h.result === 'loss').length;
-    const pl = st.reduce((t, h) => t + N(h.profit_u || 0), 0), stake = st.reduce((t, h) => t + N(h.stake_u || 0), 0);
-    const dec = st.filter((h) => h.result !== 'push');
-    return { n: H.length, settled: st.length, w, l, pl, stake, roi: stake ? (pl / stake) * 100 : null, model: dec.length ? dec.reduce((t, h) => t + N(h.prob), 0) / dec.length : null, act: dec.length ? (w / dec.length) * 100 : null };
-  }
-  function chart(box, H) {
-    box.innerHTML = '';
-    const W = box.clientWidth || 360, Ht = 220, m = { t: 12, r: 64, b: 28, l: 44 };
-    const svg = d3.select(box).append('svg').attr('width', '100%').attr('height', Ht).attr('viewBox', `0 0 ${W} ${Ht}`);
-    const pts = [{ n: 0, cum: 0 }].concat(H.map((r, i) => ({ n: i + 1, cum: N(r.running_u), r })));
-    const x = d3.scaleLinear([0, Math.max(1, pts.length - 1)], [m.l, W - m.r]);
-    const ext = d3.extent(pts, (p) => p.cum), pad = Math.max(0.5, (ext[1] - ext[0]) * 0.15);
-    const y = d3.scaleLinear([Math.min(0, ext[0]) - pad, Math.max(0, ext[1]) + pad], [Ht - m.b, m.t]).nice();
-    svg.append('g').selectAll('line').data(y.ticks(5)).join('line').attr('x1', m.l).attr('x2', W - m.r).attr('y1', (d) => y(d)).attr('y2', (d) => y(d)).attr('stroke', 'var(--cds-chart-grid)');
-    svg.append('line').attr('x1', m.l).attr('x2', W - m.r).attr('y1', y(0)).attr('y2', y(0)).attr('stroke', 'var(--cds-chart-reference)');
-    const ay = svg.append('g').attr('transform', `translate(${m.l},0)`).call(d3.axisLeft(y).ticks(5).tickSize(0).tickPadding(6).tickFormat((d) => d + 'u'));
-    const ax = svg.append('g').attr('transform', `translate(0,${Ht - m.b})`).call(d3.axisBottom(x).ticks(Math.min(pts.length - 1, Math.max(2, Math.floor((W - m.l - m.r) / 60)))).tickFormat(d3.format('d')).tickSize(0).tickPadding(8));
-    [ax, ay].forEach((a) => { a.attr('font-size', null).attr('font-family', null); a.select('.domain').remove(); a.selectAll('text').attr('fill', 'var(--color-fg-muted)').style('font-size', '12px'); });
-    svg.append('text').attr('x', W - m.r).attr('y', Ht - 4).attr('text-anchor', 'end').attr('fill', 'var(--color-fg-muted)').style('font-size', '12px').text('picks settled');
-    svg.append('path').datum(pts).attr('d', d3.line().x((p) => x(p.n)).y((p) => y(p.cum))).attr('fill', 'none').attr('stroke', dash.colors[0]).attr('stroke-width', 2);
-    const last = pts[pts.length - 1];
-    svg.append('circle').attr('cx', x(last.n)).attr('cy', y(last.cum)).attr('r', 4).attr('fill', dash.colors[0]);
-    svg.append('text').attr('x', x(last.n) + 8).attr('y', y(last.cum)).attr('dy', '0.35em').attr('fill', 'var(--color-fg)').style('font-size', '12px').text(sgn(last.cum) + 'u');
-  }
-  function breakdown(tbody, H, key, cols) {
-    const keys = [...new Set(H.map((h) => h[key]))].sort();
-    const out = keys.map((k) => { const s = summarise(H.filter((h) => h[key] === k)); return Object.assign({ k }, s); });
-    fill(tbody, out, cols);
-  }
-  function drawLedger() {
-    const H = rows('history'); if (!H) return;
-    const s = summarise(H), set = (id, v) => { Q(id).textContent = v; };
-    set('#nt-all', s.n); set('#nt-set', s.settled); set('#nt-rec', s.settled ? `${s.w}–${s.l}` : '—'); set('#nt-pl', s.settled ? sgn(s.pl) + 'u' : '—');
-    set('#nt-roi', s.roi == null ? '—' : sgn(s.roi, 1) + '%'); set('#nt-pend', H.filter((h) => h.result === 'pending').length);
-    set('#nt-cal', s.model == null ? '—' : `${s.model.toFixed(0)} / ${s.act.toFixed(0)}`);
-    const sh = H.filter((h) => SETTLED.has(h.result) && h.running_u !== '');
-    Q('#nt-empty').hidden = sh.length > 0; if (sh.length) chart(Q('#nt-chart'), sh); else Q('#nt-chart').innerHTML = '';
-    const cols = (lab) => [{ f: 'k' }, { f: 'n', cls: 'num' }, { f: 'settled', cls: 'num' }, { fn: (r) => (r.settled ? `${r.w}–${r.l}` : '—'), cls: 'num' },
-      { fn: (r) => (r.settled ? r.pl.toFixed(2) : '—'), cls: 'num' }, { fn: (r) => (r.roi == null ? '—' : r.roi.toFixed(1)), cls: 'num' }];
-    breakdown(Q('#nt-stat tbody'), H, 'stat', cols().concat([{ fn: (r) => (r.model == null ? '—' : `${r.model.toFixed(0)} / ${r.act.toFixed(0)}`), cls: 'num' }]));
-    breakdown(Q('#nt-book tbody'), H, 'book', cols());
-    const wk = Q('#nh-week'); opts(wk, [...new Set(H.map((h) => h.week))].sort((a, b) => b - a), 'All weeks'); opts(Q('#nh-stat'), [...new Set(H.map((h) => h.stat))].sort(), 'All');
-    const res = Q('#nh-res').value, bk = Q('#nh-book').value, stat = Q('#nh-stat').value;
-    const R = H.filter((h) => (!wk.value || h.week === wk.value) && (!bk || h.book === bk) && (!stat || h.stat === stat) && (!res || (res === 'pending' ? h.result === 'pending' : SETTLED.has(h.result)))).slice().reverse();
-    fill(Q('#nh-table tbody'), R, [{ f: 'posted', cls: 'pos' }, { f: 'stat' }, { f: 'pick' }, { f: 'game', cls: 'pos' }, { f: 'odds', cls: 'num' }, { f: 'book' }, { f: 'prob', cls: 'num' }, { f: 'stake_u', cls: 'num' },
-      { f: 'actual', cls: 'num' }, { f: 'result', render: pill({ win: 'win', loss: 'loss', push: 'push', pending: 'pending' }) }, { f: 'profit_u', cls: 'num', render: signed }, { f: 'running_u', cls: 'num', render: signed }]);
-  }
-  ['#nh-week', '#nh-res', '#nh-book', '#nh-stat'].forEach((s) => Q(s).addEventListener('change', drawLedger));
-
-  function draw() {
-    if (app.hidden) return;
-    try {
-      drawMeta();
-      const P = rows('props'); if (P) drawBooks(P);
-      if (tab === 'today') drawToday();
-      else if (tab === 'explore') { drawProps(); drawChance(); drawFirstTD(); drawLines(); }
-      else if (tab === 'games') drawGames();
-      else if (tab === 'ledger') drawLedger();
-    } catch (e) { console.error(e); }
-  }
-  document.addEventListener('cp-sport', () => { if (!app.hidden) setTab(tab); });
-  dash.onData(draw);
-  window.addEventListener('resize', () => { if (!app.hidden && tab === 'ledger') drawLedger(); });
-  if (!app.hidden) setTab(tab);
 })();
 </script>
 </div>

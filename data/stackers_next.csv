@@ -1,198 +1,209 @@
 rid,game,code,tip,player,team,stat,stack,top_rung,spec,lower_price,top_price,stack_price,boost_pct,mkt_chance,model_chance,chance,ev_mkt,ev_pct,verdict,stake_pct,view
-1,Celtics @ Magic,BOS@ORL,07:40,Desmond Bane,ORL,Rebounds,8+ & 10+ rebounds,10+ rebounds,R10,8,15.0,26.25,75.0,5.8,,5.8,52.5,52.5,Stack,0,best
-2,Clippers @ Warriors,LAC@GSW,12:40,Brandon Williams,GSW,Rebounds,6+ & 8+ rebounds,8+ rebounds,R8,6.5,15.0,26.0,73.3,5.8,,5.8,51.0,51.0,Stack,0,best
-3,Clippers @ Warriors,LAC@GSW,12:40,Kris Dunn,LAC,Points,15+ & 20+ points,20+ points,P20,6,15.0,26.0,73.3,5.8,,5.8,51.0,51.0,Stack,0,best
-4,Clippers @ Warriors,LAC@GSW,12:40,Brandon Williams,GSW,Points,25+ & 30+ points,30+ points,P30,8.5,15.0,25.25,68.3,5.8,,5.8,46.7,46.7,Stack,0,best
-5,Clippers @ Warriors,LAC@GSW,12:40,Isaiah Jackson,LAC,Points,15+ & 20+ points,20+ points,P20,6,15.0,25.25,68.3,5.8,,5.8,46.7,46.7,Stack,0,best
-6,Raptors @ Lakers,TOR@LAL,13:10,Immanuel Quickley,TOR,Rebounds,6+ & 8+ rebounds,8+ rebounds,R8,6,15.0,25.25,68.3,5.8,,5.8,46.7,46.7,Stack,0,best
-7,Raptors @ Lakers,TOR@LAL,13:10,Scottie Barnes,TOR,Rebounds,12+ & 14+ rebounds,14+ rebounds,R14,8,14.0,23.5,67.9,6.2,,6.2,46.3,46.3,Stack,0,best
-8,Nets @ Pacers,BRK@IND,09:10,Andrew Nembhard,IND,Rebounds,6+ & 8+ rebounds,8+ rebounds,R8,5.9,14.0,23.25,66.1,6.2,,6.2,44.8,44.8,Stack,0,best
-9,Celtics @ Magic,BOS@ORL,07:40,Mitchell Robinson,BOS,Rebounds,12+ & 14+ rebounds,14+ rebounds,R14,8.5,14.0,23.25,66.1,6.2,,6.2,44.8,44.8,Stack,0,best
-10,Clippers @ Warriors,LAC@GSW,12:40,Brook Lopez,LAC,Rebounds,8+ & 10+ rebounds,10+ rebounds,R10,8.5,15.0,24.75,65.0,5.8,,5.8,43.7,43.7,Stack,0,best
-11,Celtics @ Magic,BOS@ORL,07:40,Jayson Tatum,BOS,Points,40+ & 45+ points,45+ points,P45,9.5,15.0,24.75,65.0,5.8,,5.8,43.7,43.7,Stack,0,best
-12,Celtics @ Magic,BOS@ORL,07:40,Payton Pritchard,BOS,Points,25+ & 30+ points,30+ points,P30,7.75,15.0,24.75,65.0,5.8,,5.8,43.7,43.7,Stack,0,best
-13,Raptors @ Lakers,TOR@LAL,13:10,Jakob Poeltl,TOR,Points,15+ & 20+ points,20+ points,P20,6.5,15.0,24.5,63.3,5.8,,5.8,42.3,42.3,Stack,0,best
-14,Celtics @ Magic,BOS@ORL,07:40,Franz Wagner,ORL,Points,35+ & 40+ points,40+ points,P40,9.5,17.0,27.75,63.2,5.1,,5.1,42.0,42.0,Stack,0,best
-15,Raptors @ Lakers,TOR@LAL,13:10,Austin Reaves,LAL,Points,35+ & 40+ points,40+ points,P40,8.5,17.0,27.75,63.2,5.1,,5.1,42.0,42.0,Stack,0,best
-16,Raptors @ Lakers,TOR@LAL,13:10,Luka Dončić,LAL,Rebounds,12+ & 14+ rebounds,14+ rebounds,R14,7.5,13.0,21.0,61.5,6.7,,6.7,41.0,41.0,Stack,0,best
-17,Clippers @ Warriors,LAC@GSW,12:40,Georges Niang,GSW,Rebounds,6+ & 8+ rebounds,8+ rebounds,R8,6.5,17.0,27.5,61.8,5.1,,5.1,40.8,40.8,Stack,0,best
-18,Celtics @ Magic,BOS@ORL,07:40,Wendell Carter Jr.,ORL,Rebounds,14+ & 16+ rebounds,16+ rebounds,R16,9.5,17.0,27.5,61.8,5.1,,5.1,40.8,40.8,Stack,0,best
-19,Raptors @ Lakers,TOR@LAL,13:10,Immanuel Quickley,TOR,Assists,10+ & 12+ assists,12+ assists,A12,7.75,15.0,24.25,61.7,5.8,,5.8,40.8,40.8,Stack,0,best
-20,Raptors @ Lakers,TOR@LAL,13:10,Sandro Mamukelashvili,LAL,Points,15+ & 20+ points,20+ points,P20,6,15.0,24.25,61.7,5.8,,5.8,40.8,40.8,Stack,0,best
-21,Celtics @ Magic,BOS@ORL,07:40,Payton Pritchard,BOS,Assists,8+ & 10+ assists,10+ assists,A10,8.5,14.0,22.5,60.7,6.2,,6.2,40.1,40.1,Stack,0,best
-22,Celtics @ Magic,BOS@ORL,07:40,Paul George,BOS,Assists,6+ & 8+ assists,8+ assists,A8,5.9,14.0,22.25,58.9,6.2,,6.2,38.6,38.6,Stack,0,best
-23,Raptors @ Lakers,TOR@LAL,13:10,Luka Dončić,LAL,Assists,12+ & 14+ assists,14+ assists,A14,9.5,17.0,27.0,58.8,5.1,,5.1,38.2,38.2,Stack,0,best
-24,Raptors @ Lakers,TOR@LAL,13:10,Matisse Thybulle,LAL,Rebounds,4+ & 6+ rebounds,6+ rebounds,R6,4.6,13.0,20.5,57.7,6.7,,6.7,37.6,37.6,Stack,0,best
-25,Raptors @ Lakers,TOR@LAL,13:10,Jakob Poeltl,TOR,Rebounds,12+ & 14+ rebounds,14+ rebounds,R14,8,14.0,22.0,57.1,6.2,,6.2,37.0,37.0,Stack,0,best
-26,Clippers @ Warriors,LAC@GSW,12:40,Derrick Jones Jr.,LAC,Rebounds,8+ & 10+ rebounds,10+ rebounds,R10,7,13.0,20.25,55.8,6.7,,6.7,35.9,35.9,Stack,0,best
-27,Clippers @ Warriors,LAC@GSW,12:40,Rui Hachimura,LAC,Rebounds,8+ & 10+ rebounds,10+ rebounds,R10,6.5,13.0,20.25,55.8,6.7,,6.7,35.9,35.9,Stack,0,best
-28,Celtics @ Magic,BOS@ORL,07:40,Desmond Bane,ORL,Points,30+ & 35+ points,35+ points,P35,8,14.0,21.75,55.4,6.2,,6.2,35.4,35.4,Stack,0,best
-29,Raptors @ Lakers,TOR@LAL,13:10,RJ Barrett,TOR,Assists,6+ & 8+ assists,8+ assists,A8,5.4,13.0,20.0,53.8,6.7,,6.7,34.2,34.2,Stack,0,best
-30,Nets @ Pacers,BRK@IND,09:10,Aaron Nesmith,IND,Points,20+ & 25+ points,25+ points,P25,6,13.0,19.75,51.9,6.7,,6.7,32.6,32.6,Stack,0,best
-31,Raptors @ Lakers,TOR@LAL,13:10,Scottie Barnes,TOR,Points,35+ & 40+ points,40+ points,P40,7.5,13.0,19.75,51.9,6.7,,6.7,32.6,32.6,Stack,0,best
-32,Raptors @ Lakers,TOR@LAL,13:10,Collin Murray-Boyles,TOR,Rebounds,10+ & 12+ rebounds,12+ rebounds,R12,7,13.0,19.5,50.0,6.7,,6.7,30.9,30.9,Stack,0,best
-33,Clippers @ Warriors,LAC@GSW,12:40,Darius Garland,LAC,Assists,12+ & 14+ assists,14+ assists,A14,7,14.0,21.0,50.0,6.2,,6.2,30.8,30.8,Stack,0,best
-34,Raptors @ Lakers,TOR@LAL,13:10,Ja'Kobe Walter,TOR,Rebounds,6+ & 8+ rebounds,8+ rebounds,R8,5.4,14.0,21.0,50.0,6.2,,6.2,30.8,30.8,Stack,0,best
-35,Clippers @ Warriors,LAC@GSW,12:40,Brandin Podziemski,GSW,Assists,8+ & 10+ assists,10+ assists,A10,6,12.0,17.75,47.9,7.3,,7.3,29.2,29.2,Stack,0,best
-36,Celtics @ Magic,BOS@ORL,07:40,Paul George,BOS,Rebounds,8+ & 10+ rebounds,10+ rebounds,R10,6,12.0,17.75,47.9,7.3,,7.3,29.2,29.2,Stack,0,best
-37,Raptors @ Lakers,TOR@LAL,13:10,Ziaire Williams,LAL,Points,15+ & 20+ points,20+ points,P20,5.4,13.0,19.0,46.2,6.7,,6.7,27.5,27.5,Stack,0,best
-38,Clippers @ Warriors,LAC@GSW,12:40,De'Anthony Melton,GSW,Points,20+ & 25+ points,25+ points,P25,6,12.0,17.5,45.8,7.3,,7.3,27.4,27.4,Stack,0,best
-39,Nets @ Pacers,BRK@IND,09:10,Day'Ron Sharpe,BRK,Points,15+ & 20+ points,20+ points,P20,5.4,13.0,18.75,44.2,6.7,,6.7,25.9,25.9,Stack,0,best
-40,Celtics @ Magic,BOS@ORL,07:40,Franz Wagner,ORL,Rebounds,10+ & 12+ rebounds,12+ rebounds,R12,6,13.0,18.75,44.2,6.7,,6.7,25.9,25.9,Stack,0,best
-41,Celtics @ Magic,BOS@ORL,07:40,Mitchell Robinson,BOS,Points,10+ & 15+ points,15+ points,P15,4.6,13.0,18.75,44.2,6.7,,6.7,25.9,25.9,Stack,0,best
-42,Raptors @ Lakers,TOR@LAL,13:10,Walker Kessler,LAL,Points,20+ & 25+ points,25+ points,P25,6,13.0,18.75,44.2,6.7,,6.7,25.9,25.9,Stack,0,best
-43,Celtics @ Magic,BOS@ORL,07:40,Tristan Da Silva,ORL,Rebounds,6+ & 8+ rebounds,8+ rebounds,R8,5.2,12.0,17.25,43.8,7.3,,7.3,25.6,25.6,Stack,0,best
-44,Nets @ Pacers,BRK@IND,09:10,Jay Huff,IND,Points,15+ & 20+ points,20+ points,P20,7.75,21.0,30.0,42.9,4.1,,4.1,24.1,24.1,Stack,0,best
-45,Clippers @ Warriors,LAC@GSW,12:40,Isaiah Jackson,LAC,Rebounds,12+ & 14+ rebounds,14+ rebounds,R14,7,12.0,16.75,39.6,7.3,,7.3,21.9,21.9,Stack,0,best
-46,Clippers @ Warriors,LAC@GSW,12:40,Brandin Podziemski,GSW,Points,25+ & 30+ points,30+ points,P30,6,12.0,16.75,39.6,7.3,,7.3,21.9,21.9,Stack,0,best
-47,Clippers @ Warriors,LAC@GSW,12:40,Darius Garland,LAC,Points,35+ & 40+ points,40+ points,P40,7.5,13.0,18.0,38.5,6.7,,6.7,20.8,20.8,Stack,0,best
-48,Clippers @ Warriors,LAC@GSW,12:40,Georges Niang,GSW,Points,15+ & 20+ points,20+ points,P20,5.4,13.0,18.0,38.5,6.7,,6.7,20.8,20.8,Stack,0,best
-49,Clippers @ Warriors,LAC@GSW,12:40,Brandin Podziemski,GSW,Rebounds,10+ & 12+ rebounds,12+ rebounds,R12,8.5,21.0,28.75,36.9,4.1,,4.1,18.9,18.9,Stack,0,best
-50,Celtics @ Magic,BOS@ORL,07:40,Wendell Carter Jr.,ORL,Points,20+ & 25+ points,25+ points,P25,7.75,21.0,28.75,36.9,4.1,,4.1,18.9,18.9,Stack,0,best
-51,Celtics @ Magic,BOS@ORL,07:40,Derrick White,BOS,Rebounds,6+ & 8+ rebounds,8+ rebounds,R8,4.65,12.0,16.25,35.4,7.3,,7.3,18.3,18.3,Stack,0,best
-52,Raptors @ Lakers,TOR@LAL,13:10,Collin Murray-Boyles,TOR,Points,15+ & 20+ points,20+ points,P20,4.65,12.0,16.25,35.4,7.3,,7.3,18.3,18.3,Stack,0,best
-53,Raptors @ Lakers,TOR@LAL,13:10,Ziaire Williams,LAL,Rebounds,4+ & 6+ rebounds,6+ rebounds,R6,4,12.0,16.25,35.4,7.3,,7.3,18.3,18.3,Stack,0,best
-54,Clippers @ Warriors,LAC@GSW,12:40,Derrick Jones Jr.,LAC,Points,20+ & 25+ points,25+ points,P25,7.75,21.0,28.5,35.7,4.1,,4.1,17.9,17.9,Stack,0,best
-55,Celtics @ Magic,BOS@ORL,07:40,Wendell Carter Jr.,ORL,Assists,4+ & 6+ assists,6+ assists,A6,5.4,21.0,28.25,34.5,4.1,,4.1,16.8,16.8,Stack,0,best
-56,Raptors @ Lakers,TOR@LAL,13:10,Ja'Kobe Walter,TOR,Points,20+ & 25+ points,25+ points,P25,8,21.0,28.25,34.5,4.1,,4.1,16.8,16.8,Stack,0,best
-57,Nets @ Pacers,BRK@IND,09:10,Obi Toppin,IND,Points,20+ & 25+ points,25+ points,P25,6,12.0,15.75,31.2,7.3,,7.3,14.6,14.6,Stack,0,best
-58,Nets @ Pacers,BRK@IND,09:10,Nolan Traoré,BRK,Points,20+ & 25+ points,25+ points,P25,6,12.0,15.5,29.2,7.3,,7.3,12.8,12.8,Stack,0,best
-59,Clippers @ Warriors,LAC@GSW,12:40,Kris Dunn,LAC,Assists,8+ & 10+ assists,10+ assists,A10,5.4,11.0,14.0,27.3,8.0,,8.0,11.3,11.3,Stack,0,best
-60,Clippers @ Warriors,LAC@GSW,12:40,Brandon Williams,GSW,Assists,6+ & 8+ assists,8+ assists,A8,4.65,11.0,14.0,27.3,8.0,,8.0,11.3,11.3,Stack,0,best
-61,Raptors @ Lakers,TOR@LAL,13:10,RJ Barrett,TOR,Points,30+ & 35+ points,35+ points,P35,5.5,11.0,13.75,25.0,8.0,,8.0,9.3,9.3,Stack,0,best
-62,Celtics @ Magic,BOS@ORL,07:40,Franz Wagner,ORL,Assists,10+ & 12+ assists,12+ assists,A12,5.4,12.0,15.0,25.0,7.3,,7.3,9.2,9.2,Stack,0,best
-63,Raptors @ Lakers,TOR@LAL,13:10,Immanuel Quickley,TOR,Threes,6+ & 7+ threes,7+ threes,T7,13,26.0,27.75,6.7,3.3,4.5,3.9,-7.4,8.7,Stack,0,best
-64,Clippers @ Warriors,LAC@GSW,12:40,De'Anthony Melton,GSW,Rebounds,6+ & 8+ rebounds,8+ rebounds,R8,4.25,10.0,12.25,22.5,8.8,,8.8,7.3,7.3,Boost,0,best
-65,Raptors @ Lakers,TOR@LAL,13:10,RJ Barrett,TOR,Rebounds,8+ & 10+ rebounds,10+ rebounds,R10,5.4,11.0,13.5,22.7,8.0,,8.0,7.3,7.3,Boost,0,best
-66,Raptors @ Lakers,TOR@LAL,13:10,Immanuel Quickley,TOR,Points,25+ & 30+ points,30+ points,P30,5.2,10.0,12.25,22.5,8.8,,8.8,7.3,7.3,Boost,0,best
-67,Raptors @ Lakers,TOR@LAL,13:10,Jamal Shead,TOR,Assists,8+ & 10+ assists,10+ assists,A10,5.4,11.0,13.25,20.5,8.0,,8.0,5.3,5.3,Boost,0,best
-68,Nets @ Pacers,BRK@IND,09:10,Nolan Traoré,BRK,Rebounds,4+ & 6+ rebounds,6+ rebounds,R6,3.7,10.0,12.0,20.0,8.8,,8.8,5.1,5.1,Boost,0,best
-69,Clippers @ Warriors,LAC@GSW,12:40,Kris Dunn,LAC,Threes,2+ & 4+ threes,4+ threes,T4,2.95,21.0,20.5,-2.4,4.1,6.1,5.1,-15.2,4.9,No boost,0,best
-70,Raptors @ Lakers,TOR@LAL,13:10,Luka Dončić,LAL,Threes,9+ & 10+ threes,10+ threes,T10,17,34.0,31.75,-6.6,2.5,4.0,3.3,-19.1,3.9,No boost,0,best
-71,Celtics @ Magic,BOS@ORL,07:40,Desmond Bane,ORL,Assists,6+ & 8+ assists,8+ assists,A8,4.65,12.0,14.25,18.8,7.3,,7.3,3.7,3.7,Boost,0,best
-72,Nets @ Pacers,BRK@IND,09:10,Jarace Walker,IND,Assists,4+ & 6+ assists,6+ assists,A6,3.96,11.0,13.0,18.2,8.0,,8.0,3.4,3.4,Boost,0,best
-73,Celtics @ Magic,BOS@ORL,07:40,Derrick White,BOS,Assists,8+ & 10+ assists,10+ assists,A10,5.4,11.0,13.0,18.2,8.0,,8.0,3.4,3.4,Boost,0,best
-74,Celtics @ Magic,BOS@ORL,07:40,Jayson Tatum,BOS,Threes,6+ & 7+ threes,7+ threes,T7,11,23.0,23.25,1.1,3.8,5.1,4.4,-12.3,3.2,Boost,0,best
-75,Raptors @ Lakers,TOR@LAL,13:10,Ziaire Williams,LAL,Threes,3+ & 4+ threes,4+ threes,T4,6,15.0,14.5,-3.3,5.8,8.4,7.1,-15.8,3.0,No boost,0,best
-76,Raptors @ Lakers,TOR@LAL,13:10,Collin Sexton,LAL,Points,15+ & 20+ points,20+ points,P20,4.6,10.0,11.5,15.0,8.8,,8.8,0.7,0.7,Boost,0,best
-77,Raptors @ Lakers,TOR@LAL,13:10,Jamal Shead,TOR,Points,10+ & 15+ points,15+ points,P15,3.7,10.0,11.5,15.0,8.8,,8.8,0.7,0.7,Boost,0,best
-78,Nets @ Pacers,BRK@IND,09:10,Day'Ron Sharpe,BRK,Assists,4+ & 6+ assists,6+ assists,A6,4,12.0,15.5,29.2,7.3,5.7,6.5,12.8,0.6,Boost,0,best
-79,Clippers @ Warriors,LAC@GSW,12:40,Brandin Podziemski,GSW,Threes,6+ & 7+ threes,7+ threes,T7,14,31.0,30.0,-3.2,2.8,3.9,3.3,-16.1,0.4,No boost,0,best
-80,Clippers @ Warriors,LAC@GSW,12:40,Gui Santos,GSW,Threes,2+ & 4+ threes,4+ threes,T4,2.9,21.0,20.5,-2.4,4.1,5.6,4.9,-15.2,-0.2,No boost,0,best
-81,Raptors @ Lakers,TOR@LAL,13:10,Austin Reaves,LAL,Threes,5+ & 6+ threes,6+ threes,T6,10,23.0,23.0,0.0,3.8,4.9,4.3,-13.2,-0.2,No boost,0,best
-82,Raptors @ Lakers,TOR@LAL,13:10,Austin Reaves,LAL,Rebounds,6+ & 8+ rebounds,8+ rebounds,R8,4,10.0,11.75,17.5,8.8,8.2,8.5,2.9,-0.4,Boost,0,best
-83,Raptors @ Lakers,TOR@LAL,13:10,RJ Barrett,TOR,Threes,4+ & 5+ threes,5+ threes,T5,9,21.0,21.75,3.6,4.1,5.0,4.6,-10.0,-0.6,Boost,0,best
-84,Celtics @ Magic,BOS@ORL,07:40,Anthony Black,ORL,Threes,4+ & 5+ threes,5+ threes,T5,7.25,17.0,15.5,-8.8,5.1,7.7,6.4,-20.7,-0.7,No boost,0,best
-85,Celtics @ Magic,BOS@ORL,07:40,Paul George,BOS,Threes,6+ & 7+ threes,7+ threes,T7,11,21.0,20.5,-2.4,4.1,5.5,4.8,-15.2,-1.2,No boost,0,best
-86,Nets @ Pacers,BRK@IND,09:10,Kelly Oubre Jr.,IND,Points,15+ & 20+ points,20+ points,P20,4,10.0,11.25,12.5,8.8,,8.8,-1.5,-1.5,Boost,0,best
-87,Celtics @ Magic,BOS@ORL,07:40,Anthony Black,ORL,Points,20+ & 25+ points,25+ points,P25,4.6,10.0,11.25,12.5,8.8,,8.8,-1.5,-1.5,Boost,0,best
-88,Clippers @ Warriors,LAC@GSW,12:40,Rui Hachimura,LAC,Threes,5+ & 6+ threes,6+ threes,T6,11,23.0,23.75,3.3,3.8,4.5,4.1,-10.4,-1.7,Boost,0,best
-89,Raptors @ Lakers,TOR@LAL,13:10,Luka Dončić,LAL,Threes,8+ & 9+ threes,9+ threes,T9,9,17.0,15.75,-7.4,5.1,7.3,6.2,-19.4,-2.2,No boost,0,best
-90,Clippers @ Warriors,LAC@GSW,12:40,De'Anthony Melton,GSW,Threes,4+ & 5+ threes,5+ threes,T5,8,18.0,17.5,-2.8,4.8,6.3,5.6,-15.4,-2.6,No boost,0,best
-91,Clippers @ Warriors,LAC@GSW,12:40,Darius Garland,LAC,Rebounds,4+ & 6+ rebounds,6+ rebounds,R6,3.01,9.5,10.5,10.5,9.2,,9.2,-3.1,-3.1,Boost,0,best
-92,Celtics @ Magic,BOS@ORL,07:40,Desmond Bane,ORL,Threes,6+ & 7+ threes,7+ threes,T7,8.5,17.0,16.25,-4.4,5.1,6.7,5.9,-16.8,-4.0,No boost,0,best
-93,Raptors @ Lakers,TOR@LAL,13:10,Matisse Thybulle,LAL,Threes,3+ & 4+ threes,4+ threes,T4,5.3,14.0,12.5,-10.7,6.2,9.1,7.7,-22.2,-4.2,No boost,0,best
-94,Clippers @ Warriors,LAC@GSW,12:40,Darius Garland,LAC,Threes,6+ & 7+ threes,7+ threes,T7,10,20.0,19.25,-3.7,4.3,5.6,5.0,-16.4,-4.3,No boost,0,best
-95,Raptors @ Lakers,TOR@LAL,13:10,Immanuel Quickley,TOR,Points,30+ & 35+ points,35+ points,P35,10,34.0,37.5,10.3,2.5,,2.5,-4.5,-4.5,Boost,0,best
-96,Raptors @ Lakers,TOR@LAL,13:10,Ja'Kobe Walter,TOR,Threes,5+ & 6+ threes,6+ threes,T6,8.25,18.0,17.0,-5.6,4.8,6.4,5.6,-17.9,-4.5,No boost,0,best
-97,Raptors @ Lakers,TOR@LAL,13:10,Immanuel Quickley,TOR,Threes,5+ & 6+ threes,6+ threes,T6,6.25,13.0,12.0,-7.7,6.7,9.2,8.0,-19.5,-4.5,No boost,0,best
-98,Celtics @ Magic,BOS@ORL,07:40,Payton Pritchard,BOS,Threes,6+ & 7+ threes,7+ threes,T7,15,36.0,34.0,-5.6,2.4,3.2,2.8,-18.2,-4.7,No boost,0,best
-99,Celtics @ Magic,BOS@ORL,07:40,Jayson Tatum,BOS,Threes,5+ & 6+ threes,6+ threes,T6,5.5,11.0,10.5,-4.5,8.0,10.2,9.1,-16.5,-4.7,No boost,0,best
-100,Celtics @ Magic,BOS@ORL,07:40,Payton Pritchard,BOS,Threes,5+ & 6+ threes,6+ threes,T6,7.5,15.0,15.0,0.0,5.8,6.8,6.3,-12.9,-5.4,No boost,0,best
-101,Clippers @ Warriors,LAC@GSW,12:40,Brook Lopez,LAC,Threes,4+ & 5+ threes,5+ threes,T5,11.5,26.0,26.75,2.9,3.3,3.7,3.5,-10.8,-5.9,Boost,0,best
-102,Celtics @ Magic,BOS@ORL,07:40,Anthony Black,ORL,Assists,6+ & 8+ assists,8+ assists,A8,4,10.0,11.5,15.0,8.8,7.6,8.2,0.7,-5.9,Boost,0,best
-103,Celtics @ Magic,BOS@ORL,07:40,Franz Wagner,ORL,Points,30+ & 35+ points,35+ points,P35,4.65,9.5,10.25,7.9,9.2,9.1,9.2,-5.4,-6.1,Boost,0,best
-104,Nets @ Pacers,BRK@IND,09:10,Kelly Oubre Jr.,IND,Rebounds,6+ & 8+ rebounds,8+ rebounds,R8,3.7,9.5,9.75,2.6,9.2,10.0,9.6,-10.0,-6.3,Boost,0,best
-105,Clippers @ Warriors,LAC@GSW,12:40,Kris Dunn,LAC,Rebounds,6+ & 8+ rebounds,8+ rebounds,R8,3.45,9.5,10.5,10.5,9.2,8.6,8.9,-3.1,-6.4,Boost,0,best
-106,Celtics @ Magic,BOS@ORL,07:40,Anthony Black,ORL,Threes,3+ & 4+ threes,4+ threes,T4,3.3,7.25,6.5,-10.3,12.2,16.4,14.3,-21.0,-7.2,No boost,0,best
-107,Celtics @ Magic,BOS@ORL,07:40,Derrick White,BOS,Threes,5+ & 6+ threes,6+ threes,T6,9.25,20.0,20.25,1.2,4.3,4.8,4.6,-12.0,-7.4,Boost,0,best
-108,Celtics @ Magic,BOS@ORL,07:40,Paul George,BOS,Threes,5+ & 6+ threes,6+ threes,T6,5.4,11.0,9.75,-11.4,8.0,11.0,9.5,-22.5,-7.6,No boost,0,best
-109,Raptors @ Lakers,TOR@LAL,13:10,Luka Dončić,LAL,Threes,6+ & 7+ threes,7+ threes,T7,3,5.0,4.75,-5.0,17.8,21.1,19.4,-15.5,-7.6,No boost,0,best
-110,Celtics @ Magic,BOS@ORL,07:40,Wendell Carter Jr.,ORL,Rebounds,12+ & 14+ rebounds,14+ rebounds,R14,5.2,9.5,10.0,5.3,9.2,,9.2,-7.7,-7.7,Boost,0,best
-111,Celtics @ Magic,BOS@ORL,07:40,Anthony Black,ORL,Points,25+ & 30+ points,30+ points,P30,10,34.0,36.0,5.9,2.5,,2.5,-8.3,-8.3,Boost,0,best
-112,Raptors @ Lakers,TOR@LAL,13:10,Scottie Barnes,TOR,Assists,10+ & 12+ assists,12+ assists,A12,8.5,34.0,36.0,5.9,2.5,,2.5,-8.3,-8.3,Boost,0,best
-113,Raptors @ Lakers,TOR@LAL,13:10,Immanuel Quickley,TOR,Threes,4+ & 5+ threes,5+ threes,T5,3.3,6.25,5.75,-8.0,14.1,17.6,15.9,-18.7,-8.7,No boost,0,best
-114,Clippers @ Warriors,LAC@GSW,12:40,De'Anthony Melton,GSW,Threes,3+ & 4+ threes,4+ threes,T4,3.5,8.0,7.25,-9.4,11.0,14.1,12.5,-20.3,-9.0,No boost,0,best
-115,Celtics @ Magic,BOS@ORL,07:40,Jayson Tatum,BOS,Rebounds,12+ & 14+ rebounds,14+ rebounds,R14,5.2,9.5,11.0,15.8,9.2,7.2,8.2,1.5,-9.7,Boost,0,best
-116,Clippers @ Warriors,LAC@GSW,12:40,Brandin Podziemski,GSW,Threes,5+ & 6+ threes,6+ threes,T6,6.5,14.0,12.5,-10.7,6.2,8.2,7.2,-22.2,-9.8,No boost,0,best
-117,Celtics @ Magic,BOS@ORL,07:40,Tristan Da Silva,ORL,Threes,5+ & 6+ threes,6+ threes,T6,10,20.0,19.25,-3.7,4.3,5.0,4.7,-16.4,-10.1,No boost,0,best
-118,Clippers @ Warriors,LAC@GSW,12:40,Derrick Jones Jr.,LAC,Threes,3+ & 4+ threes,4+ threes,T4,5,12.0,10.75,-10.4,7.3,9.4,8.3,-21.7,-10.3,No boost,0,best
-119,Celtics @ Magic,BOS@ORL,07:40,Paul George,BOS,Points,25+ & 30+ points,30+ points,P30,4.6,9.5,10.5,10.5,9.2,7.8,8.5,-3.1,-10.6,Boost,0,best
-120,Celtics @ Magic,BOS@ORL,07:40,Franz Wagner,ORL,Threes,3+ & 4+ threes,4+ threes,T4,4.6,11.5,10.25,-10.9,7.6,9.8,8.7,-22.1,-10.8,No boost,0,best
-121,Raptors @ Lakers,TOR@LAL,13:10,Austin Reaves,LAL,Threes,4+ & 5+ threes,5+ threes,T5,4.75,10.0,9.25,-7.5,8.8,10.5,9.6,-19.0,-10.9,No boost,0,best
-122,Raptors @ Lakers,TOR@LAL,13:10,Ja'Kobe Walter,TOR,Threes,4+ & 5+ threes,5+ threes,T5,4,8.25,7.5,-9.1,10.7,13.1,11.9,-20.1,-10.9,No boost,0,best
-123,Clippers @ Warriors,LAC@GSW,12:40,Darius Garland,LAC,Threes,4+ & 5+ threes,5+ threes,T5,2.8,5.2,4.75,-8.7,17.1,20.4,18.7,-18.8,-11.0,No boost,0,best
-124,Raptors @ Lakers,TOR@LAL,13:10,Scottie Barnes,TOR,Points,30+ & 35+ points,35+ points,P35,3.7,7.5,7.5,0.0,11.7,12.0,11.9,-12.0,-11.0,No boost,0,best
-125,Clippers @ Warriors,LAC@GSW,12:40,Brandin Podziemski,GSW,Threes,4+ & 5+ threes,5+ threes,T5,3.35,6.5,6.0,-7.7,13.6,16.0,14.8,-18.5,-11.2,No boost,0,best
-126,Raptors @ Lakers,TOR@LAL,13:10,Sandro Mamukelashvili,LAL,Threes,3+ & 4+ threes,4+ threes,T4,6.25,16.0,15.0,-6.2,5.4,6.4,5.9,-18.4,-11.2,No boost,0,best
-127,Clippers @ Warriors,LAC@GSW,12:40,Gui Santos,GSW,Points,15+ & 20+ points,20+ points,P20,4,10.0,11.25,12.5,8.8,7.0,7.9,-1.5,-11.4,Boost,0,best
-128,Clippers @ Warriors,LAC@GSW,12:40,Gui Santos,GSW,Rebounds,8+ & 10+ rebounds,10+ rebounds,R10,6,12.0,15.25,27.1,7.3,4.3,5.8,11.0,-11.7,Boost,0,best
-129,Celtics @ Magic,BOS@ORL,07:40,Jayson Tatum,BOS,Threes,4+ & 5+ threes,5+ threes,T5,2.95,5.5,5.0,-9.1,16.1,19.2,17.7,-19.4,-11.7,No boost,0,best
-130,Raptors @ Lakers,TOR@LAL,13:10,Luka Dončić,LAL,Threes,7+ & 8+ threes,8+ threes,T8,5,9.0,7.75,-13.9,9.7,12.8,11.3,-24.5,-12.6,No boost,0,best
-131,Celtics @ Magic,BOS@ORL,07:40,Paul George,BOS,Threes,4+ & 5+ threes,5+ threes,T5,2.95,5.4,4.75,-12.0,16.4,20.3,18.4,-21.9,-12.8,No boost,0,best
-132,Celtics @ Magic,BOS@ORL,07:40,Desmond Bane,ORL,Threes,5+ & 6+ threes,6+ threes,T6,4.4,8.5,7.5,-11.8,10.3,12.9,11.6,-22.5,-12.9,No boost,0,best
-133,Clippers @ Warriors,LAC@GSW,12:40,Brandin Podziemski,GSW,Assists,6+ & 8+ assists,8+ assists,A8,2.65,6.0,6.25,4.2,14.8,13.1,13.9,-7.8,-13.0,Boost,0,best
-134,Celtics @ Magic,BOS@ORL,07:40,Jayson Tatum,BOS,Points,35+ & 40+ points,40+ points,P40,4.8,9.5,9.75,2.6,9.2,8.6,8.9,-10.0,-13.1,Boost,0,best
-135,Celtics @ Magic,BOS@ORL,07:40,Wendell Carter Jr.,ORL,Points,15+ & 20+ points,20+ points,P20,3.09,7.75,7.5,-3.2,11.4,11.8,11.6,-14.9,-13.2,No boost,0,best
-136,Clippers @ Warriors,LAC@GSW,12:40,Rui Hachimura,LAC,Threes,4+ & 5+ threes,5+ threes,T5,5.1,11.0,9.75,-11.4,8.0,9.8,8.9,-22.5,-13.5,No boost,0,best
-137,Celtics @ Magic,BOS@ORL,07:40,Payton Pritchard,BOS,Threes,4+ & 5+ threes,5+ threes,T5,3.8,7.5,6.75,-10.0,11.7,13.9,12.8,-20.8,-13.5,No boost,0,best
-138,Clippers @ Warriors,LAC@GSW,12:40,Darius Garland,LAC,Threes,5+ & 6+ threes,6+ threes,T6,5.2,10.0,8.75,-12.5,8.8,11.0,9.9,-23.4,-13.6,No boost,0,best
-139,Nets @ Pacers,BRK@IND,09:10,Noah Clowney,BRK,Rebounds,6+ & 8+ rebounds,8+ rebounds,R8,4.25,10.0,11.25,12.5,8.8,6.6,7.7,-1.5,-13.6,Boost,0,best
-140,Raptors @ Lakers,TOR@LAL,13:10,Austin Reaves,LAL,Points,30+ & 35+ points,35+ points,P35,4.6,8.5,9.25,8.8,10.3,8.3,9.3,-4.4,-13.8,Boost,0,best
-141,Nets @ Pacers,BRK@IND,09:10,Obi Toppin,IND,Points,15+ & 20+ points,20+ points,P20,2.65,6.0,5.75,-4.2,14.8,15.2,15.0,-15.2,-13.9,No boost,0,best
-142,Clippers @ Warriors,LAC@GSW,12:40,Georges Niang,GSW,Threes,4+ & 5+ threes,5+ threes,T5,7.5,18.0,16.75,-6.9,4.8,5.4,5.1,-19.1,-14.3,No boost,0,best
-143,Clippers @ Warriors,LAC@GSW,12:40,Brook Lopez,LAC,Threes,3+ & 4+ threes,4+ threes,T4,4.7,11.5,10.25,-10.9,7.6,9.1,8.3,-22.1,-14.4,No boost,0,best
-144,Nets @ Pacers,BRK@IND,09:10,Jay Huff,IND,Rebounds,6+ & 8+ rebounds,8+ rebounds,R8,3.35,8.5,8.5,0.0,10.3,9.8,10.1,-12.2,-14.4,No boost,0,best
-145,Celtics @ Magic,BOS@ORL,07:40,Tristan Da Silva,ORL,Threes,4+ & 5+ threes,5+ threes,T5,4.9,10.0,8.75,-12.5,8.8,10.8,9.8,-23.4,-14.4,No boost,0,best
-146,Nets @ Pacers,BRK@IND,09:10,Jarace Walker,IND,Points,15+ & 20+ points,20+ points,P20,4.25,10.0,11.25,12.5,8.8,6.4,7.6,-1.5,-14.7,Boost,0,best
-147,Nets @ Pacers,BRK@IND,09:10,Aaron Nesmith,IND,Points,15+ & 20+ points,20+ points,P20,2.7,6.0,6.0,0.0,14.8,13.7,14.2,-11.5,-14.7,No boost,0,best
-148,Clippers @ Warriors,LAC@GSW,12:40,Brandin Podziemski,GSW,Points,20+ & 25+ points,25+ points,P25,2.84,6.0,5.75,-4.2,14.8,14.8,14.8,-15.2,-15.0,No boost,0,best
-149,Celtics @ Magic,BOS@ORL,07:40,Desmond Bane,ORL,Points,25+ & 30+ points,30+ points,P30,3.96,8.0,8.0,0.0,11.0,10.2,10.6,-12.1,-15.2,No boost,0,best
-150,Clippers @ Warriors,LAC@GSW,12:40,De'Anthony Melton,GSW,Assists,4+ & 6+ assists,6+ assists,A6,2.98,8.5,9.25,8.8,10.3,7.9,9.1,-4.4,-15.7,Boost,0,best
-151,Celtics @ Magic,BOS@ORL,07:40,Jayson Tatum,BOS,Assists,12+ & 14+ assists,14+ assists,A14,9.5,34.0,33.0,-2.9,2.5,,2.5,-15.9,-15.9,No boost,0,best
-152,Clippers @ Warriors,LAC@GSW,12:40,Rui Hachimura,LAC,Rebounds,6+ & 8+ rebounds,8+ rebounds,R8,2.78,6.5,6.75,3.8,13.6,11.3,12.4,-8.3,-16.0,Boost,0,best
-153,Clippers @ Warriors,LAC@GSW,12:40,Rui Hachimura,LAC,Threes,3+ & 4+ threes,4+ threes,T4,2.5,5.1,4.5,-11.8,17.4,19.9,18.7,-21.6,-16.0,No boost,0,best
-154,Celtics @ Magic,BOS@ORL,07:40,Anthony Black,ORL,Rebounds,6+ & 8+ rebounds,8+ rebounds,R8,3.5,9.5,9.75,2.6,9.2,8.0,8.6,-10.0,-16.0,Boost,0,best
-155,Celtics @ Magic,BOS@ORL,07:40,Desmond Bane,ORL,Rebounds,6+ & 8+ rebounds,8+ rebounds,R8,3.31,8.0,8.0,0.0,11.0,10.0,10.5,-12.1,-16.0,No boost,0,best
-156,Raptors @ Lakers,TOR@LAL,13:10,RJ Barrett,TOR,Threes,3+ & 4+ threes,4+ threes,T4,4,9.0,7.75,-13.9,9.7,11.7,10.7,-24.5,-16.9,No boost,0,best
-157,Raptors @ Lakers,TOR@LAL,13:10,Sandro Mamukelashvili,LAL,Rebounds,8+ & 10+ rebounds,10+ rebounds,R10,5.4,11.0,13.0,18.2,8.0,4.8,6.4,3.4,-17.1,Boost,0,best
-158,Raptors @ Lakers,TOR@LAL,13:10,Immanuel Quickley,TOR,Assists,8+ & 10+ assists,10+ assists,A10,3.7,7.75,7.5,-3.2,11.4,10.7,11.0,-14.9,-17.3,No boost,0,best
-159,Clippers @ Warriors,LAC@GSW,12:40,Gui Santos,GSW,Assists,4+ & 6+ assists,6+ assists,A6,3.16,9.5,11.0,15.8,9.2,5.8,7.5,1.5,-17.4,Boost,0,best
-160,Raptors @ Lakers,TOR@LAL,13:10,Austin Reaves,LAL,Assists,8+ & 10+ assists,10+ assists,A10,4.65,9.5,11.0,15.8,9.2,5.8,7.5,1.5,-17.4,Boost,0,best
-161,Clippers @ Warriors,LAC@GSW,12:40,Darius Garland,LAC,Points,30+ & 35+ points,35+ points,P35,4,7.5,7.5,0.0,11.7,10.2,11.0,-12.0,-17.7,No boost,0,best
-162,Clippers @ Warriors,LAC@GSW,12:40,Gui Santos,GSW,Rebounds,6+ & 8+ rebounds,8+ rebounds,R8,2.62,6.0,5.75,-4.2,14.8,13.8,14.3,-15.2,-17.9,No boost,0,best
-163,Celtics @ Magic,BOS@ORL,07:40,Paul George,BOS,Points,30+ & 35+ points,35+ points,P35,9.5,34.0,32.25,-5.1,2.5,,2.5,-17.9,-17.9,No boost,0,best
-164,Celtics @ Magic,BOS@ORL,07:40,Derrick White,BOS,Points,25+ & 30+ points,30+ points,P30,9.5,34.0,32.25,-5.1,2.5,,2.5,-17.9,-17.9,No boost,0,best
-165,Celtics @ Magic,BOS@ORL,07:40,Jayson Tatum,BOS,Assists,10+ & 12+ assists,12+ assists,A12,4.5,9.5,10.5,10.5,9.2,6.4,7.8,-3.1,-18.0,Boost,0,best
-166,Celtics @ Magic,BOS@ORL,07:40,Payton Pritchard,BOS,Points,20+ & 25+ points,25+ points,P25,3.32,7.75,7.5,-3.2,11.4,10.5,10.9,-14.9,-18.1,No boost,0,best
-167,Celtics @ Magic,BOS@ORL,07:40,Franz Wagner,ORL,Rebounds,8+ & 10+ rebounds,10+ rebounds,R10,3.24,6.0,6.0,0.0,14.8,12.5,13.6,-11.5,-18.3,No boost,0,best
-168,Clippers @ Warriors,LAC@GSW,12:40,Georges Niang,GSW,Threes,3+ & 4+ threes,4+ threes,T4,3.5,7.5,6.75,-10.0,11.7,12.4,12.1,-20.8,-18.5,No boost,0,best
-169,Raptors @ Lakers,TOR@LAL,13:10,Luka Dončić,LAL,Points,45+ & 50+ points,50+ points,P50,5.4,9.5,9.75,2.6,9.2,7.5,8.4,-10.0,-18.5,Boost,0,best
-170,Clippers @ Warriors,LAC@GSW,12:40,Derrick Jones Jr.,LAC,Rebounds,6+ & 8+ rebounds,8+ rebounds,R8,2.95,7.0,7.25,3.6,12.6,9.8,11.2,-8.7,-18.8,Boost,0,best
-171,Raptors @ Lakers,TOR@LAL,13:10,Luka Dončić,LAL,Points,40+ & 45+ points,45+ points,P45,3.03,5.4,5.0,-7.4,16.4,16.0,16.2,-17.8,-18.9,No boost,0,best
-172,Clippers @ Warriors,LAC@GSW,12:40,Rui Hachimura,LAC,Points,25+ & 30+ points,30+ points,P30,9.5,34.0,31.75,-6.6,2.5,,2.5,-19.1,-19.1,No boost,0,best
-173,Celtics @ Magic,BOS@ORL,07:40,Jayson Tatum,BOS,Rebounds,14+ & 16+ rebounds,16+ rebounds,R16,9.5,34.0,31.75,-6.6,2.5,,2.5,-19.1,-19.1,No boost,0,best
-174,Clippers @ Warriors,LAC@GSW,12:40,Brook Lopez,LAC,Points,15+ & 20+ points,20+ points,P20,3.7,9.5,9.75,2.6,9.2,7.3,8.3,-10.0,-19.4,Boost,0,best
-175,Celtics @ Magic,BOS@ORL,07:40,Tristan Da Silva,ORL,Points,15+ & 20+ points,20+ points,P20,4.25,9.5,10.25,7.9,9.2,6.5,7.9,-5.4,-19.4,Boost,0,best
-176,Celtics @ Magic,BOS@ORL,07:40,Derrick White,BOS,Points,20+ & 25+ points,25+ points,P25,4.05,9.5,10.0,5.3,9.2,6.9,8.1,-7.7,-19.4,Boost,0,best
-177,Clippers @ Warriors,LAC@GSW,12:40,Brook Lopez,LAC,Rebounds,6+ & 8+ rebounds,8+ rebounds,R8,3.45,8.5,8.5,0.0,10.3,8.6,9.5,-12.2,-19.5,No boost,0,best
-178,Raptors @ Lakers,TOR@LAL,13:10,Walker Kessler,LAL,Rebounds,14+ & 16+ rebounds,16+ rebounds,R16,5.2,9.5,9.5,0.0,9.2,7.7,8.5,-12.3,-19.6,No boost,0,best
-179,Raptors @ Lakers,TOR@LAL,13:10,Luka Dončić,LAL,Assists,10+ & 12+ assists,12+ assists,A12,4,9.5,9.5,0.0,9.2,7.7,8.5,-12.3,-19.6,No boost,0,best
-180,Clippers @ Warriors,LAC@GSW,12:40,Rui Hachimura,LAC,Points,20+ & 25+ points,25+ points,P25,4,9.5,9.5,0.0,9.2,7.6,8.4,-12.3,-20.1,No boost,0,best
-181,Celtics @ Magic,BOS@ORL,07:40,Derrick White,BOS,Threes,4+ & 5+ threes,5+ threes,T5,4.5,9.25,8.0,-13.5,9.5,10.4,9.9,-24.2,-20.5,No boost,0,best
-182,Raptors @ Lakers,TOR@LAL,13:10,Luka Dončić,LAL,Rebounds,10+ & 12+ rebounds,12+ rebounds,R12,3.32,7.5,7.5,0.0,11.7,9.4,10.6,-12.0,-20.7,No boost,0,best
-183,Raptors @ Lakers,TOR@LAL,13:10,Ja'Kobe Walter,TOR,Points,15+ & 20+ points,20+ points,P20,3.31,8.0,8.0,0.0,11.0,8.8,9.9,-12.1,-20.8,No boost,0,best
-184,Clippers @ Warriors,LAC@GSW,12:40,De'Anthony Melton,GSW,Points,15+ & 20+ points,20+ points,P20,2.64,6.0,5.75,-4.2,14.8,12.6,13.7,-15.2,-21.4,No boost,0,best
-185,Raptors @ Lakers,TOR@LAL,13:10,Scottie Barnes,TOR,Assists,8+ & 10+ assists,10+ assists,A10,4.25,8.5,9.0,5.9,10.3,7.0,8.7,-7.0,-22.0,Boost,0,best
-186,Clippers @ Warriors,LAC@GSW,12:40,Derrick Jones Jr.,LAC,Points,15+ & 20+ points,20+ points,P20,3.18,7.75,7.5,-3.2,11.4,9.3,10.3,-14.9,-22.6,No boost,0,best
-187,Clippers @ Warriors,LAC@GSW,12:40,Isaiah Jackson,LAC,Rebounds,10+ & 12+ rebounds,12+ rebounds,R12,3.7,7.0,7.25,3.6,12.6,8.6,10.6,-8.7,-23.2,Boost,0,best
-188,Raptors @ Lakers,TOR@LAL,13:10,Scottie Barnes,TOR,Rebounds,10+ & 12+ rebounds,12+ rebounds,R12,3.7,8.0,7.75,-3.1,11.0,8.8,9.9,-14.8,-23.3,No boost,0,best
-189,Clippers @ Warriors,LAC@GSW,12:40,Darius Garland,LAC,Assists,10+ & 12+ assists,12+ assists,A12,3.45,7.0,7.25,3.6,12.6,8.5,10.5,-8.7,-23.5,Boost,0,best
-190,Clippers @ Warriors,LAC@GSW,12:40,Brandin Podziemski,GSW,Rebounds,8+ & 10+ rebounds,10+ rebounds,R10,4.25,8.5,8.0,-5.9,10.3,8.3,9.3,-17.3,-25.5,No boost,0,best
-191,Celtics @ Magic,BOS@ORL,07:40,Mitchell Robinson,BOS,Rebounds,10+ & 12+ rebounds,12+ rebounds,R12,4.25,8.5,8.75,2.9,10.3,6.7,8.5,-9.6,-25.5,Boost,0,best
-192,Clippers @ Warriors,LAC@GSW,12:40,Brandon Williams,GSW,Points,20+ & 25+ points,25+ points,P25,4,8.5,8.5,0.0,10.3,7.1,8.7,-12.2,-25.9,No boost,0,best
-193,Raptors @ Lakers,TOR@LAL,13:10,Collin Murray-Boyles,TOR,Rebounds,8+ & 10+ rebounds,10+ rebounds,R10,3.8,7.0,7.25,3.6,12.6,7.8,10.2,-8.7,-26.1,Boost,0,best
-194,Nets @ Pacers,BRK@IND,09:10,Nolan Traoré,BRK,Points,15+ & 20+ points,20+ points,P20,2.72,6.0,5.75,-4.2,14.8,10.7,12.7,-15.2,-26.8,No boost,0,best
-195,Celtics @ Magic,BOS@ORL,07:40,Payton Pritchard,BOS,Assists,6+ & 8+ assists,8+ assists,A8,3.45,8.5,8.25,-2.9,10.3,7.2,8.8,-14.8,-27.7,No boost,0,best
-196,Raptors @ Lakers,TOR@LAL,13:10,Collin Sexton,LAL,Threes,3+ & 4+ threes,4+ threes,T4,5.7,14.0,12.5,-10.7,6.2,4.7,5.5,-22.2,-31.7,No boost,0,best
-197,Raptors @ Lakers,TOR@LAL,13:10,Jakob Poeltl,TOR,Rebounds,10+ & 12+ rebounds,12+ rebounds,R12,4,8.0,7.75,-3.1,11.0,6.5,8.7,-14.8,-32.2,No boost,0,best
+1,Pistons @ Hornets,DET@CHO,11:40,Ausar Thompson,DET,Assists,8+ & 10+ assists,10+ assists,A10,7.75,15.0,26.25,75.0,5.8,,5.8,51.8,51.8,Stack,0,best
+2,Bulls @ 76ers,CHI@PHI,11:40,Joel Embiid,PHI,Points,35+ & 40+ points,40+ points,P40,8.5,15.0,26.25,75.0,5.8,,5.8,51.8,51.8,Stack,0,best
+3,Blazers @ Nuggets,POR@DEN,13:10,Christian Braun,DEN,Points,20+ & 25+ points,25+ points,P25,7.5,15.0,26.0,73.3,5.8,,5.8,50.4,50.4,Stack,0,best
+4,Pistons @ Hornets,DET@CHO,11:40,Paul Reed,DET,Rebounds,14+ & 16+ rebounds,16+ rebounds,R16,9.5,15.0,26.0,73.3,5.8,,5.8,50.4,50.4,Stack,0,best
+5,Pistons @ Hornets,DET@CHO,11:40,Ron Holland II,DET,Rebounds,6+ & 8+ rebounds,8+ rebounds,R8,6,15.0,25.5,70.0,5.8,,5.8,47.5,47.5,Stack,0,best
+6,Blazers @ Nuggets,POR@DEN,13:10,Christian Braun,DEN,Assists,4+ & 6+ assists,6+ assists,A6,5.2,15.0,25.25,68.3,5.8,,5.8,46.0,46.0,Stack,0,best
+7,Pistons @ Hornets,DET@CHO,11:40,Cade Cunningham,DET,Points,35+ & 40+ points,40+ points,P40,8.5,15.0,25.25,68.3,5.8,,5.8,46.0,46.0,Stack,0,best
+8,Jazz @ Spurs,UTA@SAS,12:40,Jaxson Hayes,UTA,Assists,4+ & 6+ assists,6+ assists,A6,5.4,15.0,25.25,68.3,5.8,,5.8,46.0,46.0,Stack,0,best
+9,Thunder @ Cavaliers,OKC@CLE,11:10,Evan Mobley,CLE,Points,25+ & 30+ points,30+ points,P30,7.5,15.0,25.25,68.3,5.8,,5.8,46.0,46.0,Stack,0,best
+10,Pistons @ Hornets,DET@CHO,11:40,Brandon Miller,CHO,Points,35+ & 40+ points,40+ points,P40,8.5,14.0,23.5,67.9,6.2,,6.2,45.7,45.7,Stack,0,best
+11,Thunder @ Cavaliers,OKC@CLE,11:10,Bennett Stirtz,OKC,Points,15+ & 20+ points,20+ points,P20,6.5,14.0,23.5,67.9,6.2,,6.2,45.7,45.7,Stack,0,best
+12,Thunder @ Cavaliers,OKC@CLE,11:10,Evan Mobley,CLE,Rebounds,14+ & 16+ rebounds,16+ rebounds,R16,9.5,15.0,25.0,66.7,5.8,,5.8,44.6,44.6,Stack,0,best
+13,Pelicans @ Grizzlies,NOP@MEM,12:10,Ty Jerome,MEM,Rebounds,6+ & 8+ rebounds,8+ rebounds,R8,6,15.0,25.0,66.7,5.8,,5.8,44.6,44.6,Stack,0,best
+14,Pistons @ Hornets,DET@CHO,11:40,Coby White,CHO,Rebounds,4+ & 6+ rebounds,6+ rebounds,R6,5.2,15.0,24.75,65.0,5.8,,5.8,43.1,43.1,Stack,0,best
+15,Bulls @ 76ers,CHI@PHI,11:40,Joel Embiid,PHI,Assists,8+ & 10+ assists,10+ assists,A10,8,15.0,24.75,65.0,5.8,,5.8,43.1,43.1,Stack,0,best
+16,Pelicans @ Grizzlies,NOP@MEM,12:10,Bennedict Mathurin,NOP,Rebounds,6+ & 8+ rebounds,8+ rebounds,R8,6,15.0,24.75,65.0,5.8,,5.8,43.1,43.1,Stack,0,best
+17,Pelicans @ Grizzlies,NOP@MEM,12:10,Saddiq Bey,NOP,Assists,4+ & 6+ assists,6+ assists,A6,5.2,15.0,24.75,65.0,5.8,,5.8,43.1,43.1,Stack,0,best
+18,Nets @ Knicks,BRK@NYK,11:40,Miles McBride,NYK,Points,15+ & 20+ points,20+ points,P20,8,17.0,28.0,64.7,5.1,,5.1,42.7,42.7,Stack,0,best
+19,Bulls @ 76ers,CHI@PHI,11:40,Matas Buzelis,CHI,Assists,4+ & 6+ assists,6+ assists,A6,5.2,17.0,28.0,64.7,5.1,,5.1,42.7,42.7,Stack,0,best
+20,Thunder @ Cavaliers,OKC@CLE,11:10,Donovan Mitchell,CLE,Points,35+ & 40+ points,40+ points,P40,9.5,17.0,28.0,64.7,5.1,,5.1,42.7,42.7,Stack,0,best
+21,Thunder @ Cavaliers,OKC@CLE,11:10,James Harden,CLE,Points,30+ & 35+ points,35+ points,P35,8.5,17.0,28.0,64.7,5.1,,5.1,42.7,42.7,Stack,0,best
+22,Bulls @ 76ers,CHI@PHI,11:40,Matas Buzelis,CHI,Points,25+ & 30+ points,30+ points,P30,7.75,14.0,23.0,64.3,6.2,,6.2,42.6,42.6,Stack,0,best
+23,Bulls @ 76ers,CHI@PHI,11:40,Jalen Smith,CHI,Points,20+ & 25+ points,25+ points,P25,7.5,14.0,23.0,64.3,6.2,,6.2,42.6,42.6,Stack,0,best
+24,Nets @ Knicks,BRK@NYK,11:40,Jalen Brunson,NYK,Rebounds,6+ & 8+ rebounds,8+ rebounds,R8,6,17.0,27.75,63.2,5.1,,5.1,41.4,41.4,Stack,0,best
+25,Pistons @ Hornets,DET@CHO,11:40,Cade Cunningham,DET,Rebounds,10+ & 12+ rebounds,12+ rebounds,R12,8,17.0,27.75,63.2,5.1,,5.1,41.4,41.4,Stack,0,best
+26,Jazz @ Spurs,UTA@SAS,12:40,Isaiah Collier,UTA,Points,15+ & 20+ points,20+ points,P20,7.5,17.0,27.75,63.2,5.1,,5.1,41.4,41.4,Stack,0,best
+27,Thunder @ Cavaliers,OKC@CLE,11:10,Jarrett Allen,CLE,Rebounds,14+ & 16+ rebounds,16+ rebounds,R16,10,17.0,27.75,63.2,5.1,,5.1,41.4,41.4,Stack,0,best
+28,Thunder @ Cavaliers,OKC@CLE,11:10,Peyton Watson,CLE,Rebounds,8+ & 10+ rebounds,10+ rebounds,R10,7,13.0,21.0,61.5,6.7,,6.7,40.4,40.4,Stack,0,best
+29,Nets @ Knicks,BRK@NYK,11:40,Nolan Traore,BRK,Points,20+ & 25+ points,25+ points,P25,7,15.0,24.25,61.7,5.8,,5.8,40.2,40.2,Stack,0,best
+30,Bulls @ 76ers,CHI@PHI,11:40,VJ Edgecombe,PHI,Assists,6+ & 8+ assists,8+ assists,A8,6,17.0,27.5,61.8,5.1,,5.1,40.1,40.1,Stack,0,best
+31,Pistons @ Hornets,DET@CHO,11:40,Moussa Diabaté,CHO,Assists,4+ & 6+ assists,6+ assists,A6,5.2,15.0,24.0,60.0,5.8,,5.8,38.8,38.8,Stack,0,best
+32,Bulls @ 76ers,CHI@PHI,11:40,Josh Giddey,CHI,Assists,12+ & 14+ assists,14+ assists,A14,8,15.0,24.0,60.0,5.8,,5.8,38.8,38.8,Stack,0,best
+33,Thunder @ Cavaliers,OKC@CLE,11:10,Kenrich Williams,OKC,Points,15+ & 20+ points,20+ points,P20,6,13.0,20.75,59.6,6.7,,6.7,38.7,38.7,Stack,0,best
+34,Nets @ Knicks,BRK@NYK,11:40,Landry Shamet,NYK,Points,15+ & 20+ points,20+ points,P20,7,17.0,27.0,58.8,5.1,,5.1,37.6,37.6,Stack,0,best
+35,Bucks @ Timberwolves,MIL@MIN,12:10,Joan Beringer,MIN,Points,15+ & 20+ points,20+ points,P20,7.5,17.0,27.0,58.8,5.1,,5.1,37.6,37.6,Stack,0,best
+36,Nets @ Knicks,BRK@NYK,11:40,Mikel Brown Jr.,BRK,Points,20+ & 25+ points,25+ points,P25,6.5,13.0,20.5,57.7,6.7,,6.7,37.0,37.0,Stack,0,best
+37,Blazers @ Nuggets,POR@DEN,13:10,Cam Johnson,DEN,Points,20+ & 25+ points,25+ points,P25,6,13.0,20.5,57.7,6.7,,6.7,37.0,37.0,Stack,0,best
+38,Pistons @ Hornets,DET@CHO,11:40,John Collins,DET,Points,20+ & 25+ points,25+ points,P25,6,13.0,20.5,57.7,6.7,,6.7,37.0,37.0,Stack,0,best
+39,Jazz @ Spurs,UTA@SAS,12:40,Devin Vassell,SAS,Points,20+ & 25+ points,25+ points,P25,6,13.0,20.5,57.7,6.7,,6.7,37.0,37.0,Stack,0,best
+40,Thunder @ Cavaliers,OKC@CLE,11:10,Aday Mara,OKC,Rebounds,10+ & 12+ rebounds,12+ rebounds,R12,7.75,13.0,20.5,57.7,6.7,,6.7,37.0,37.0,Stack,0,best
+41,Thunder @ Cavaliers,OKC@CLE,11:10,Aday Mara,OKC,Points,15+ & 20+ points,20+ points,P20,6,14.0,22.0,57.1,6.2,,6.2,36.4,36.4,Stack,0,best
+42,Pelicans @ Grizzlies,NOP@MEM,12:10,Jaylen Wells,MEM,Points,20+ & 25+ points,25+ points,P25,6.5,14.0,22.0,57.1,6.2,,6.2,36.4,36.4,Stack,0,best
+43,Pistons @ Hornets,DET@CHO,11:40,Naz Reid,CHO,Rebounds,14+ & 16+ rebounds,16+ rebounds,R16,9.5,17.0,26.75,57.4,5.1,,5.1,36.3,36.3,Stack,0,best
+44,Pistons @ Hornets,DET@CHO,11:40,Naz Reid,CHO,Points,25+ & 30+ points,30+ points,P30,8,17.0,26.75,57.4,5.1,,5.1,36.3,36.3,Stack,0,best
+45,Thunder @ Cavaliers,OKC@CLE,11:10,Jared McCain,OKC,Points,25+ & 30+ points,30+ points,P30,8.5,17.0,26.75,57.4,5.1,,5.1,36.3,36.3,Stack,0,best
+46,Nets @ Knicks,BRK@NYK,11:40,Miles McBride,NYK,Rebounds,4+ & 6+ rebounds,6+ rebounds,R6,4.65,13.0,20.25,55.8,6.7,,6.7,35.4,35.4,Stack,0,best
+47,Bulls @ 76ers,CHI@PHI,11:40,Caleb Wilson,CHI,Points,30+ & 35+ points,35+ points,P35,7.75,13.0,20.25,55.8,6.7,,6.7,35.4,35.4,Stack,0,best
+48,Bulls @ 76ers,CHI@PHI,11:40,Norman Powell,CHI,Assists,4+ & 6+ assists,6+ assists,A6,4.6,13.0,20.25,55.8,6.7,,6.7,35.4,35.4,Stack,0,best
+49,Nets @ Knicks,BRK@NYK,11:40,Michael Porter Jr.,BRK,Assists,4+ & 6+ assists,6+ assists,A6,5.2,17.0,26.5,55.9,5.1,,5.1,35.0,35.0,Stack,0,best
+50,Blazers @ Nuggets,POR@DEN,13:10,Cam Johnson,DEN,Assists,4+ & 6+ assists,6+ assists,A6,5.2,17.0,26.5,55.9,5.1,,5.1,35.0,35.0,Stack,0,best
+51,Bulls @ 76ers,CHI@PHI,11:40,Jalen Smith,CHI,Rebounds,14+ & 16+ rebounds,16+ rebounds,R16,9.5,14.0,21.75,55.4,6.2,,6.2,34.9,34.9,Stack,0,best
+52,Pelicans @ Grizzlies,NOP@MEM,12:10,Isaiah Stewart,MEM,Points,15+ & 20+ points,20+ points,P20,6,14.0,21.75,55.4,6.2,,6.2,34.9,34.9,Stack,0,best
+53,Pelicans @ Grizzlies,NOP@MEM,12:10,Zach Edey,MEM,Points,15+ & 20+ points,20+ points,P20,5.7,14.0,21.75,55.4,6.2,,6.2,34.9,34.9,Stack,0,best
+54,Thunder @ Cavaliers,OKC@CLE,11:10,Donovan Mitchell,CLE,Rebounds,8+ & 10+ rebounds,10+ rebounds,R10,6.5,13.0,20.0,53.8,6.7,,6.7,33.7,33.7,Stack,0,best
+55,Thunder @ Cavaliers,OKC@CLE,11:10,James Harden,CLE,Rebounds,8+ & 10+ rebounds,10+ rebounds,R10,6.5,13.0,20.0,53.8,6.7,,6.7,33.7,33.7,Stack,0,best
+56,Celtics @ Rockets,BOS@HOU,12:40,Fred VanVleet,HOU,Points,20+ & 25+ points,25+ points,P25,6.5,14.0,21.5,53.6,6.2,,6.2,33.3,33.3,Stack,0,best
+57,Bulls @ 76ers,CHI@PHI,11:40,Josh Giddey,CHI,Points,20+ & 25+ points,25+ points,P25,6.5,14.0,21.5,53.6,6.2,,6.2,33.3,33.3,Stack,0,best
+58,Pistons @ Hornets,DET@CHO,11:40,Naz Reid,CHO,Assists,4+ & 6+ assists,6+ assists,A6,4.6,13.0,19.75,51.9,6.7,,6.7,32.0,32.0,Stack,0,best
+59,Bulls @ 76ers,CHI@PHI,11:40,Caleb Wilson,CHI,Rebounds,10+ & 12+ rebounds,12+ rebounds,R12,6.5,13.0,19.75,51.9,6.7,,6.7,32.0,32.0,Stack,0,best
+60,Nets @ Knicks,BRK@NYK,11:40,Nolan Traore,BRK,Rebounds,4+ & 6+ rebounds,6+ rebounds,R6,4.6,14.0,21.25,51.8,6.2,,6.2,31.8,31.8,Stack,0,best
+61,Celtics @ Rockets,BOS@HOU,12:40,Tari Eason,HOU,Points,15+ & 20+ points,20+ points,P20,5.2,12.0,17.75,47.9,7.2,,7.2,28.7,28.7,Stack,0,best
+62,Blazers @ Nuggets,POR@DEN,13:10,DeMar DeRozan,DEN,Points,20+ & 25+ points,25+ points,P25,6,13.0,19.25,48.1,6.7,,6.7,28.7,28.7,Stack,0,best
+63,Pistons @ Hornets,DET@CHO,11:40,Ron Holland II,DET,Points,15+ & 20+ points,20+ points,P20,7.75,13.0,19.25,48.1,6.7,,6.7,28.7,28.7,Stack,0,best
+64,Bulls @ 76ers,CHI@PHI,11:40,Leonard Miller,CHI,Rebounds,8+ & 10+ rebounds,10+ rebounds,R10,6.5,13.0,19.0,46.2,6.7,,6.7,27.0,27.0,Stack,0,best
+65,Pelicans @ Grizzlies,NOP@MEM,12:10,Saddiq Bey,NOP,Points,20+ & 25+ points,25+ points,P25,6,12.0,17.5,45.8,7.2,,7.2,26.9,26.9,Stack,0,best
+66,Celtics @ Rockets,BOS@HOU,12:40,Fred VanVleet,HOU,Rebounds,6+ & 8+ rebounds,8+ rebounds,R8,5.2,13.0,18.75,44.2,6.7,,6.7,25.3,25.3,Stack,0,best
+67,Bulls @ 76ers,CHI@PHI,11:40,VJ Edgecombe,PHI,Rebounds,10+ & 12+ rebounds,12+ rebounds,R12,6,13.0,18.75,44.2,6.7,,6.7,25.3,25.3,Stack,0,best
+68,Pistons @ Hornets,DET@CHO,11:40,Grayson Allen,CHO,Points,20+ & 25+ points,25+ points,P25,6,12.0,17.25,43.8,7.2,,7.2,25.0,25.0,Stack,0,best
+69,Bulls @ 76ers,CHI@PHI,11:40,Leonard Miller,CHI,Points,15+ & 20+ points,20+ points,P20,5.4,12.0,17.25,43.8,7.2,,7.2,25.0,25.0,Stack,0,best
+70,Pelicans @ Grizzlies,NOP@MEM,12:10,Jaylen Wells,MEM,Rebounds,6+ & 8+ rebounds,8+ rebounds,R8,5.2,12.0,17.25,43.8,7.2,,7.2,25.0,25.0,Stack,0,best
+71,Bulls @ 76ers,CHI@PHI,11:40,Norman Powell,CHI,Rebounds,6+ & 8+ rebounds,8+ rebounds,R8,6.5,21.0,30.25,44.0,4.1,,4.1,24.6,24.6,Stack,0,best
+72,Nets @ Knicks,BRK@NYK,11:40,Moritz Wagner,BRK,Points,15+ & 20+ points,20+ points,P20,5.2,12.0,17.0,41.7,7.2,,7.2,23.2,23.2,Stack,0,best
+73,Pistons @ Hornets,DET@CHO,11:40,Duncan Robinson,DET,Assists,4+ & 6+ assists,6+ assists,A6,4.25,12.0,17.0,41.7,7.2,,7.2,23.2,23.2,Stack,0,best
+74,Pistons @ Hornets,DET@CHO,11:40,Dennis Schroder,CHO,Rebounds,6+ & 8+ rebounds,8+ rebounds,R8,6.5,21.0,29.75,41.7,4.1,,4.1,22.5,22.5,Stack,0,best
+75,Bulls @ 76ers,CHI@PHI,11:40,Jaylen Brown,PHI,Points,35+ & 40+ points,40+ points,P40,9.5,21.0,29.75,41.7,4.1,,4.1,22.5,22.5,Stack,0,best
+76,Bucks @ Timberwolves,MIL@MIN,12:10,Terrence Shannon Jr.,MIN,Assists,4+ & 6+ assists,6+ assists,A6,6,21.0,29.75,41.7,4.1,,4.1,22.5,22.5,Stack,0,best
+77,Nets @ Knicks,BRK@NYK,11:40,Mikal Bridges,NYK,Rebounds,6+ & 8+ rebounds,8+ rebounds,R8,6.5,21.0,29.5,40.5,4.1,,4.1,21.5,21.5,Stack,0,best
+78,Nets @ Knicks,BRK@NYK,11:40,Noah Clowney,BRK,Rebounds,6+ & 8+ rebounds,8+ rebounds,R8,5.2,12.0,16.75,39.6,7.2,,7.2,21.4,21.4,Stack,0,best
+79,Thunder @ Cavaliers,OKC@CLE,11:10,Peyton Watson,CLE,Points,20+ & 25+ points,25+ points,P25,5.4,12.0,16.75,39.6,7.2,,7.2,21.4,21.4,Stack,0,best
+80,Jazz @ Spurs,UTA@SAS,12:40,Jaxson Hayes,UTA,Points,15+ & 20+ points,20+ points,P20,7,21.0,29.25,39.3,4.1,,4.1,20.4,20.4,Stack,0,best
+81,Bucks @ Timberwolves,MIL@MIN,12:10,Kyle Kuzma,MIL,Points,20+ & 25+ points,25+ points,P25,8,21.0,29.25,39.3,4.1,,4.1,20.4,20.4,Stack,0,best
+82,Blazers @ Nuggets,POR@DEN,13:10,Jrue Holiday,POR,Points,20+ & 25+ points,25+ points,P25,6,13.0,18.0,38.5,6.7,,6.7,20.3,20.3,Stack,0,best
+83,Celtics @ Rockets,BOS@HOU,12:40,Derrick White,BOS,Rebounds,6+ & 8+ rebounds,8+ rebounds,R8,6.5,21.0,29.0,38.1,4.1,,4.1,19.4,19.4,Stack,0,best
+84,Celtics @ Rockets,BOS@HOU,12:40,Derrick White,BOS,Points,20+ & 25+ points,25+ points,P25,5.7,12.0,16.25,35.4,7.2,,7.2,17.8,17.8,Stack,0,best
+85,Jazz @ Spurs,UTA@SAS,12:40,Keyonte George,UTA,Rebounds,6+ & 8+ rebounds,8+ rebounds,R8,5.2,12.0,16.25,35.4,7.2,,7.2,17.8,17.8,Stack,0,best
+86,Bulls @ 76ers,CHI@PHI,11:40,VJ Edgecombe,PHI,Points,20+ & 25+ points,25+ points,P25,5.4,12.0,16.25,35.4,7.2,,7.2,17.8,17.8,Stack,0,best
+87,Thunder @ Cavaliers,OKC@CLE,11:10,Isaiah Hartenstein,OKC,Assists,6+ & 8+ assists,8+ assists,A8,5.4,12.0,16.25,35.4,7.2,,7.2,17.8,17.8,Stack,0,best
+88,Thunder @ Cavaliers,OKC@CLE,11:10,Jarrett Allen,CLE,Points,20+ & 25+ points,25+ points,P25,7.5,21.0,28.5,35.7,4.1,,4.1,17.4,17.4,Stack,0,best
+89,Jazz @ Spurs,UTA@SAS,12:40,Ace Bailey,UTA,Assists,4+ & 6+ assists,6+ assists,A6,5.4,21.0,28.25,34.5,4.1,,4.1,16.3,16.3,Stack,0,best
+90,Thunder @ Cavaliers,OKC@CLE,11:10,Shai Gilgeous-Alexander,OKC,Points,40+ & 45+ points,45+ points,P45,6.5,12.0,16.0,33.3,7.2,,7.2,16.0,16.0,Stack,0,best
+91,Celtics @ Rockets,BOS@HOU,12:40,Marcus Smart,HOU,Rebounds,4+ & 6+ rebounds,6+ rebounds,R6,4,12.0,15.75,31.2,7.2,,7.2,14.2,14.2,Stack,0,best
+92,Blazers @ Nuggets,POR@DEN,13:10,Toumani Camara,POR,Points,20+ & 25+ points,25+ points,P25,5.4,12.0,15.75,31.2,7.2,,7.2,14.2,14.2,Stack,0,best
+93,Pistons @ Hornets,DET@CHO,11:40,Coby White,CHO,Assists,4+ & 6+ assists,6+ assists,A6,4.05,12.0,15.75,31.2,7.2,,7.2,14.2,14.2,Stack,0,best
+94,Thunder @ Cavaliers,OKC@CLE,11:10,Bennett Stirtz,OKC,Assists,4+ & 6+ assists,6+ assists,A6,4,11.0,14.25,29.5,7.9,,7.9,12.8,12.8,Stack,0,best
+95,Pistons @ Hornets,DET@CHO,11:40,Sion James,CHO,Assists,4+ & 6+ assists,6+ assists,A6,4,12.0,15.5,29.2,7.2,,7.2,12.4,12.4,Stack,0,best
+96,Pistons @ Hornets,DET@CHO,11:40,Duncan Robinson,DET,Rebounds,4+ & 6+ rebounds,6+ rebounds,R6,3.78,12.0,15.5,29.2,7.2,,7.2,12.4,12.4,Stack,0,best
+97,Bulls @ 76ers,CHI@PHI,11:40,Norman Powell,CHI,Points,30+ & 35+ points,35+ points,P35,6,12.0,15.5,29.2,7.2,,7.2,12.4,12.4,Stack,0,best
+98,Bucks @ Timberwolves,MIL@MIN,12:10,Kyle Kuzma,MIL,Assists,4+ & 6+ assists,6+ assists,A6,4,12.0,15.5,29.2,7.2,,7.2,12.4,12.4,Stack,0,best
+99,Pelicans @ Grizzlies,NOP@MEM,12:10,Jerami Grant,MEM,Rebounds,4+ & 6+ rebounds,6+ rebounds,R6,4,12.0,15.5,29.2,7.2,,7.2,12.4,12.4,Stack,0,best
+100,Bucks @ Timberwolves,MIL@MIN,12:10,Terrence Shannon Jr.,MIN,Points,20+ & 25+ points,25+ points,P25,5.2,10.0,12.75,27.5,8.7,,8.7,11.2,11.2,Stack,0,best
+101,Pistons @ Hornets,DET@CHO,11:40,Duncan Robinson,DET,Points,20+ & 25+ points,25+ points,P25,5.2,11.0,14.0,27.3,7.9,,7.9,10.8,10.8,Stack,0,best
+102,Pistons @ Hornets,DET@CHO,11:40,Paul Reed,DET,Points,20+ & 25+ points,25+ points,P25,5.2,11.0,14.0,27.3,7.9,,7.9,10.8,10.8,Stack,0,best
+103,Bulls @ 76ers,CHI@PHI,11:40,Tyrese Maxey,PHI,Points,35+ & 40+ points,40+ points,P40,5.9,11.0,13.75,25.0,7.9,,7.9,8.9,8.9,Stack,0,best
+104,Bucks @ Timberwolves,MIL@MIN,12:10,Rudy Gobert,MIN,Points,15+ & 20+ points,20+ points,P20,4.65,12.0,15.0,25.0,7.2,,7.2,8.7,8.7,Stack,0,best
+105,Bucks @ Timberwolves,MIL@MIN,12:10,Jonathan Kuminga,MIN,Assists,4+ & 6+ assists,6+ assists,A6,3.92,12.0,15.0,25.0,7.2,,7.2,8.7,8.7,Stack,0,best
+106,Thunder @ Cavaliers,OKC@CLE,11:10,Ajay Mitchell,OKC,Rebounds,6+ & 8+ rebounds,8+ rebounds,R8,4.65,12.0,15.0,25.0,7.2,,7.2,8.7,8.7,Stack,0,best
+107,Pelicans @ Grizzlies,NOP@MEM,12:10,Zion Williamson,NOP,Assists,4+ & 6+ assists,6+ assists,A6,3.45,12.0,15.0,25.0,7.2,,7.2,8.7,8.7,Stack,0,best
+108,Pistons @ Hornets,DET@CHO,11:40,Cade Cunningham,DET,Threes,5+ & 6+ threes,6+ threes,T6,12.5,26.0,26.75,2.9,3.3,5.5,4.4,-11.2,18.0,Boost,0,best
+109,Nets @ Knicks,BRK@NYK,11:40,OG Anunoby,NYK,Assists,4+ & 6+ assists,6+ assists,A6,3.7,12.0,14.75,22.9,7.2,,7.2,6.9,6.9,Boost,0,best
+110,Pistons @ Hornets,DET@CHO,11:40,Coby White,CHO,Points,20+ & 25+ points,25+ points,P25,5.4,12.0,14.75,22.9,7.2,,7.2,6.9,6.9,Boost,0,best
+111,Pistons @ Hornets,DET@CHO,11:40,Paul Reed,DET,Assists,4+ & 6+ assists,6+ assists,A6,3.78,12.0,14.75,22.9,7.2,,7.2,6.9,6.9,Boost,0,best
+112,Jazz @ Spurs,UTA@SAS,12:40,Ace Bailey,UTA,Points,20+ & 25+ points,25+ points,P25,5.2,11.0,13.5,22.7,7.9,,7.9,6.9,6.9,Boost,0,best
+113,Thunder @ Cavaliers,OKC@CLE,11:10,Donovan Mitchell,CLE,Assists,8+ & 10+ assists,10+ assists,A10,5.5,12.0,14.75,22.9,7.2,,7.2,6.9,6.9,Boost,0,best
+114,Thunder @ Cavaliers,OKC@CLE,11:10,James Harden,CLE,Assists,10+ & 12+ assists,12+ assists,A12,5.2,12.0,14.75,22.9,7.2,,7.2,6.9,6.9,Boost,0,best
+115,Thunder @ Cavaliers,OKC@CLE,11:10,Sam Merrill,CLE,Rebounds,4+ & 6+ rebounds,6+ rebounds,R6,3.66,11.0,13.5,22.7,7.9,,7.9,6.9,6.9,Boost,0,best
+116,Blazers @ Nuggets,POR@DEN,13:10,DeMar DeRozan,DEN,Rebounds,4+ & 6+ rebounds,6+ rebounds,R6,3.45,10.0,12.25,22.5,8.7,,8.7,6.8,6.8,Boost,0,best
+117,Bulls @ 76ers,CHI@PHI,11:40,Jaylen Brown,PHI,Threes,4+ & 5+ threes,5+ threes,T5,10.5,26.0,26.25,1.0,3.3,4.8,4.1,-12.8,6.6,Boost,0,best
+118,Bulls @ 76ers,CHI@PHI,11:40,Caleb Wilson,CHI,Threes,5+ & 6+ threes,6+ threes,T6,11,23.0,23.5,2.2,3.8,5.2,4.5,-11.7,5.2,Boost,0,best
+119,Nets @ Knicks,BRK@NYK,11:40,Day'Ron Sharpe,BRK,Assists,4+ & 6+ assists,6+ assists,A6,3.78,11.0,13.25,20.5,7.9,,7.9,4.9,4.9,Boost,0,best
+120,Pistons @ Hornets,DET@CHO,11:40,Dennis Schroder,CHO,Assists,8+ & 10+ assists,10+ assists,A10,5.4,11.0,13.25,20.5,7.9,,7.9,4.9,4.9,Boost,0,best
+121,Bulls @ 76ers,CHI@PHI,11:40,Tyrese Maxey,PHI,Assists,8+ & 10+ assists,10+ assists,A10,5.4,11.0,13.25,20.5,7.9,,7.9,4.9,4.9,Boost,0,best
+122,Bulls @ 76ers,CHI@PHI,11:40,Tre Jones,CHI,Assists,6+ & 8+ assists,8+ assists,A8,4.65,11.0,13.25,20.5,7.9,,7.9,4.9,4.9,Boost,0,best
+123,Thunder @ Cavaliers,OKC@CLE,11:10,Kenrich Williams,OKC,Rebounds,8+ & 10+ rebounds,10+ rebounds,R10,6,11.0,13.25,20.5,7.9,,7.9,4.9,4.9,Boost,0,best
+124,Thunder @ Cavaliers,OKC@CLE,11:10,Evan Mobley,CLE,Assists,6+ & 8+ assists,8+ assists,A8,4.25,11.0,13.25,20.5,7.9,,7.9,4.9,4.9,Boost,0,best
+125,Blazers @ Nuggets,POR@DEN,13:10,Cam Johnson,DEN,Rebounds,6+ & 8+ rebounds,8+ rebounds,R8,4.05,10.0,12.0,20.0,8.7,,8.7,4.7,4.7,Boost,0,best
+126,Pistons @ Hornets,DET@CHO,11:40,Daniss Jenkins,DET,Assists,6+ & 8+ assists,8+ assists,A8,4.6,10.0,12.0,20.0,8.7,,8.7,4.7,4.7,Boost,0,best
+127,Pistons @ Hornets,DET@CHO,11:40,Ausar Thompson,DET,Points,15+ & 20+ points,20+ points,P20,4,10.0,12.0,20.0,8.7,,8.7,4.7,4.7,Boost,0,best
+128,Bulls @ 76ers,CHI@PHI,11:40,Tyrese Maxey,PHI,Rebounds,6+ & 8+ rebounds,8+ rebounds,R8,4,10.0,12.0,20.0,8.7,,8.7,4.7,4.7,Boost,0,best
+129,Pelicans @ Grizzlies,NOP@MEM,12:10,Cedric Coward,MEM,Points,20+ & 25+ points,25+ points,P25,4.6,10.0,12.0,20.0,8.7,,8.7,4.7,4.7,Boost,0,best
+130,Pelicans @ Grizzlies,NOP@MEM,12:10,Derik Queen,NOP,Points,15+ & 20+ points,20+ points,P20,4.25,10.0,12.0,20.0,8.7,,8.7,4.7,4.7,Boost,0,best
+131,Pelicans @ Grizzlies,NOP@MEM,12:10,Bennedict Mathurin,NOP,Points,15+ & 20+ points,20+ points,P20,5.2,12.0,14.25,18.8,7.2,,7.2,3.3,3.3,Boost,0,best
+132,Jazz @ Spurs,UTA@SAS,12:40,Darryn Peterson,UTA,Points,20+ & 25+ points,25+ points,P25,5.2,11.0,13.0,18.2,7.9,,7.9,2.9,2.9,Boost,0,best
+133,Jazz @ Spurs,UTA@SAS,12:40,Keldon Johnson,SAS,Points,15+ & 20+ points,20+ points,P20,4.65,11.0,13.0,18.2,7.9,,7.9,2.9,2.9,Boost,0,best
+134,Bulls @ 76ers,CHI@PHI,11:40,Josh Giddey,CHI,Rebounds,10+ & 12+ rebounds,12+ rebounds,R12,5.4,11.0,13.0,18.2,7.9,,7.9,2.9,2.9,Boost,0,best
+135,Bucks @ Timberwolves,MIL@MIN,12:10,Ryan Rollins,MIL,Rebounds,6+ & 8+ rebounds,8+ rebounds,R8,4.6,11.0,13.0,18.2,7.9,,7.9,2.9,2.9,Boost,0,best
+136,Pelicans @ Grizzlies,NOP@MEM,12:10,GG Jackson II,MEM,Rebounds,6+ & 8+ rebounds,8+ rebounds,R8,4.25,10.0,11.75,17.5,8.7,,8.7,2.5,2.5,Boost,0,best
+137,Nets @ Knicks,BRK@NYK,11:40,Mikal Bridges,NYK,Points,15+ & 20+ points,20+ points,P20,3.75,9.5,11.0,15.8,9.2,,9.2,1.1,1.1,Boost,0,best
+138,Blazers @ Nuggets,POR@DEN,13:10,Aaron Gordon,DEN,Points,20+ & 25+ points,25+ points,P25,4.25,9.5,11.0,15.8,9.2,,9.2,1.1,1.1,Boost,0,best
+139,Pistons @ Hornets,DET@CHO,11:40,John Collins,DET,Rebounds,10+ & 12+ rebounds,12+ rebounds,R12,4.65,9.5,11.0,15.8,9.2,,9.2,1.1,1.1,Boost,0,best
+140,Pistons @ Hornets,DET@CHO,11:40,Sion James,CHO,Rebounds,4+ & 6+ rebounds,6+ rebounds,R6,3.22,9.5,11.0,15.8,9.2,,9.2,1.1,1.1,Boost,0,best
+141,Bulls @ 76ers,CHI@PHI,11:40,Matas Buzelis,CHI,Rebounds,8+ & 10+ rebounds,10+ rebounds,R10,5.2,9.5,11.0,15.8,9.2,,9.2,1.1,1.1,Boost,0,best
+142,Bulls @ 76ers,CHI@PHI,11:40,Joel Embiid,PHI,Rebounds,12+ & 14+ rebounds,14+ rebounds,R14,5.2,9.5,11.0,15.8,9.2,,9.2,1.1,1.1,Boost,0,best
+143,Bulls @ 76ers,CHI@PHI,11:40,Jaylen Brown,PHI,Assists,6+ & 8+ assists,8+ assists,A8,3.7,9.5,11.0,15.8,9.2,,9.2,1.1,1.1,Boost,0,best
+144,Thunder @ Cavaliers,OKC@CLE,11:10,Isaiah Hartenstein,OKC,Points,15+ & 20+ points,20+ points,P20,4.05,9.5,11.0,15.8,9.2,,9.2,1.1,1.1,Boost,0,best
+145,Bulls @ 76ers,CHI@PHI,11:40,Jaylen Brown,PHI,Rebounds,10+ & 12+ rebounds,12+ rebounds,R12,5.2,11.0,12.75,15.9,7.9,,7.9,0.9,0.9,Boost,0,best
+146,Bulls @ 76ers,CHI@PHI,11:40,Tre Jones,CHI,Rebounds,4+ & 6+ rebounds,6+ rebounds,R6,3.7,11.0,12.75,15.9,7.9,,7.9,0.9,0.9,Boost,0,best
+147,Blazers @ Nuggets,POR@DEN,13:10,Donovan Clingan,POR,Points,15+ & 20+ points,20+ points,P20,4,10.0,11.5,15.0,8.7,,8.7,0.3,0.3,Boost,0,best
+148,Bulls @ 76ers,CHI@PHI,11:40,LeBron James,PHI,Rebounds,10+ & 12+ rebounds,12+ rebounds,R12,4.65,10.0,11.5,15.0,8.7,,8.7,0.3,0.3,Boost,0,best
+149,Thunder @ Cavaliers,OKC@CLE,11:10,Sam Merrill,CLE,Points,15+ & 20+ points,20+ points,P20,4.6,10.0,11.5,15.0,8.7,,8.7,0.3,0.3,Boost,0,best
+150,Pelicans @ Grizzlies,NOP@MEM,12:10,GG Jackson II,MEM,Points,15+ & 20+ points,20+ points,P20,4.5,10.0,11.5,15.0,8.7,,8.7,0.3,0.3,Boost,0,best
+151,Pelicans @ Grizzlies,NOP@MEM,12:10,Derik Queen,NOP,Assists,4+ & 6+ assists,6+ assists,A6,3.32,10.0,11.5,15.0,8.7,,8.7,0.3,0.3,Boost,0,best
+152,Pistons @ Hornets,DET@CHO,11:40,Ausar Thompson,DET,Rebounds,10+ & 12+ rebounds,12+ rebounds,R12,4.65,9.5,10.75,13.2,9.2,,9.2,-1.2,-1.2,Boost,0,best
+153,Pistons @ Hornets,DET@CHO,11:40,Brandon Miller,CHO,Rebounds,8+ & 10+ rebounds,10+ rebounds,R10,4.65,9.5,10.75,13.2,9.2,,9.2,-1.2,-1.2,Boost,0,best
+154,Pistons @ Hornets,DET@CHO,11:40,Grayson Allen,CHO,Assists,4+ & 6+ assists,6+ assists,A6,3.22,9.5,10.75,13.2,9.2,,9.2,-1.2,-1.2,Boost,0,best
+155,Jazz @ Spurs,UTA@SAS,12:40,Devin Vassell,SAS,Rebounds,6+ & 8+ rebounds,8+ rebounds,R8,3.7,9.5,10.75,13.2,9.2,,9.2,-1.2,-1.2,Boost,0,best
+156,Bulls @ 76ers,CHI@PHI,11:40,Jaylen Brown,PHI,Points,30+ & 35+ points,35+ points,P35,4.65,9.5,10.75,13.2,9.2,,9.2,-1.2,-1.2,Boost,0,best
+157,Bulls @ 76ers,CHI@PHI,11:40,LeBron James,PHI,Points,25+ & 30+ points,30+ points,P30,4.6,9.5,10.75,13.2,9.2,,9.2,-1.2,-1.2,Boost,0,best
+158,Bucks @ Timberwolves,MIL@MIN,12:10,Myles Turner,MIL,Points,15+ & 20+ points,20+ points,P20,4.2,10.0,11.25,12.5,8.7,,8.7,-1.9,-1.9,Boost,0,best
+159,Thunder @ Cavaliers,OKC@CLE,11:10,Jarrett Allen,CLE,Rebounds,12+ & 14+ rebounds,14+ rebounds,R14,5.4,10.0,11.25,12.5,8.7,,8.7,-1.9,-1.9,Boost,0,best
+160,Thunder @ Cavaliers,OKC@CLE,11:10,Shai Gilgeous-Alexander,OKC,Rebounds,6+ & 8+ rebounds,8+ rebounds,R8,3.98,10.0,11.25,12.5,8.7,,8.7,-1.9,-1.9,Boost,0,best
+161,Celtics @ Rockets,BOS@HOU,12:40,Payton Pritchard,BOS,Points,20+ & 25+ points,25+ points,P25,4.25,9.5,10.5,10.5,9.2,,9.2,-3.5,-3.5,Boost,0,best
+162,Blazers @ Nuggets,POR@DEN,13:10,Scoot Henderson,POR,Points,20+ & 25+ points,25+ points,P25,4.25,9.5,10.5,10.5,9.2,,9.2,-3.5,-3.5,Boost,0,best
+163,Blazers @ Nuggets,POR@DEN,13:10,Damian Lillard,POR,Rebounds,6+ & 8+ rebounds,8+ rebounds,R8,3.7,9.5,10.5,10.5,9.2,,9.2,-3.5,-3.5,Boost,0,best
+164,Jazz @ Spurs,UTA@SAS,12:40,Julian Champagnie,SAS,Points,15+ & 20+ points,20+ points,P20,4,9.5,10.5,10.5,9.2,,9.2,-3.5,-3.5,Boost,0,best
+165,Jazz @ Spurs,UTA@SAS,12:40,Darryn Peterson,UTA,Rebounds,6+ & 8+ rebounds,8+ rebounds,R8,3.8,9.5,10.5,10.5,9.2,,9.2,-3.5,-3.5,Boost,0,best
+166,Bulls @ 76ers,CHI@PHI,11:40,LeBron James,PHI,Assists,10+ & 12+ assists,12+ assists,A12,4.3,9.5,10.5,10.5,9.2,,9.2,-3.5,-3.5,Boost,0,best
+167,Bulls @ 76ers,CHI@PHI,11:40,Tre Jones,CHI,Points,15+ & 20+ points,20+ points,P20,4.25,9.5,10.5,10.5,9.2,,9.2,-3.5,-3.5,Boost,0,best
+168,Thunder @ Cavaliers,OKC@CLE,11:10,Ajay Mitchell,OKC,Points,25+ & 30+ points,30+ points,P30,4.65,9.5,10.5,10.5,9.2,,9.2,-3.5,-3.5,Boost,0,best
+169,Blazers @ Nuggets,POR@DEN,13:10,Jrue Holiday,POR,Rebounds,6+ & 8+ rebounds,8+ rebounds,R8,4,10.0,11.0,10.0,8.7,,8.7,-4.1,-4.1,Boost,0,best
+170,Thunder @ Cavaliers,OKC@CLE,11:10,Ajay Mitchell,OKC,Assists,6+ & 8+ assists,8+ assists,A8,4,10.0,11.0,10.0,8.7,,8.7,-4.1,-4.1,Boost,0,best
+171,Jazz @ Spurs,UTA@SAS,12:40,Stephon Castle,SAS,Points,20+ & 25+ points,25+ points,P25,2.94,6.0,6.5,8.3,14.7,,14.7,-4.5,-4.5,Boost,0,best
+172,Pelicans @ Grizzlies,NOP@MEM,12:10,Trey Murphy III,NOP,Points,20+ & 25+ points,25+ points,P25,3.1,6.0,6.5,8.3,14.7,,14.7,-4.5,-4.5,Boost,0,best
+173,Celtics @ Rockets,BOS@HOU,12:40,Jabari Smith,HOU,Points,20+ & 25+ points,25+ points,P25,4,8.5,9.25,8.8,10.3,,10.3,-4.8,-4.8,Boost,0,best
+174,Pistons @ Hornets,DET@CHO,11:40,Moussa Diabaté,CHO,Rebounds,14+ & 16+ rebounds,16+ rebounds,R16,4.65,8.5,9.25,8.8,10.3,,10.3,-4.8,-4.8,Boost,0,best
+175,Bulls @ 76ers,CHI@PHI,11:40,Joel Embiid,PHI,Points,30+ & 35+ points,35+ points,P35,4.6,8.5,9.25,8.8,10.3,,10.3,-4.8,-4.8,Boost,0,best
+176,Thunder @ Cavaliers,OKC@CLE,11:10,James Harden,CLE,Points,25+ & 30+ points,30+ points,P30,4.2,8.5,9.25,8.8,10.3,,10.3,-4.8,-4.8,Boost,0,best
+177,Nets @ Knicks,BRK@NYK,11:40,Mikel Brown Jr.,BRK,Points,15+ & 20+ points,20+ points,P20,3.03,6.5,7.0,7.7,13.5,,13.5,-5.2,-5.2,Boost,0,best
+178,Bulls @ 76ers,CHI@PHI,11:40,Caleb Wilson,CHI,Rebounds,8+ & 10+ rebounds,10+ rebounds,R10,3.7,6.5,7.0,7.7,13.5,,13.5,-5.2,-5.2,Boost,0,best
+179,Bucks @ Timberwolves,MIL@MIN,12:10,Tyler Herro,MIL,Rebounds,6+ & 8+ rebounds,8+ rebounds,R8,2.88,6.5,7.0,7.7,13.5,,13.5,-5.2,-5.2,Boost,0,best
+180,Celtics @ Rockets,BOS@HOU,12:40,Payton Pritchard,BOS,Rebounds,4+ & 6+ rebounds,6+ rebounds,R6,2.98,9.5,10.25,7.9,9.2,,9.2,-5.8,-5.8,Boost,0,best
+181,Nets @ Knicks,BRK@NYK,11:40,Mikel Brown Jr.,BRK,Rebounds,4+ & 6+ rebounds,6+ rebounds,R6,3.1,9.5,10.25,7.9,9.2,,9.2,-5.8,-5.8,Boost,0,best
+182,Pistons @ Hornets,DET@CHO,11:40,Daniss Jenkins,DET,Points,15+ & 20+ points,20+ points,P20,3.75,9.5,10.25,7.9,9.2,,9.2,-5.8,-5.8,Boost,0,best
+183,Pistons @ Hornets,DET@CHO,11:40,Cade Cunningham,DET,Points,30+ & 35+ points,35+ points,P35,4.25,8.5,9.0,5.9,10.3,,10.3,-7.4,-7.4,Boost,0,best
+184,Pistons @ Hornets,DET@CHO,11:40,Cade Cunningham,DET,Assists,12+ & 14+ assists,14+ assists,A14,4,8.5,9.0,5.9,10.3,,10.3,-7.4,-7.4,Boost,0,best
+185,Thunder @ Cavaliers,OKC@CLE,11:10,Jared McCain,OKC,Points,20+ & 25+ points,25+ points,P25,4,8.5,9.0,5.9,10.3,,10.3,-7.4,-7.4,Boost,0,best
+186,Pistons @ Hornets,DET@CHO,11:40,Naz Reid,CHO,Rebounds,12+ & 14+ rebounds,14+ rebounds,R14,4.65,9.5,10.0,5.3,9.2,,9.2,-8.1,-8.1,Boost,0,best
+187,Jazz @ Spurs,UTA@SAS,12:40,De'Aaron Fox,SAS,Rebounds,6+ & 8+ rebounds,8+ rebounds,R8,3.7,9.5,10.0,5.3,9.2,,9.2,-8.1,-8.1,Boost,0,best
+188,Thunder @ Cavaliers,OKC@CLE,11:10,Donovan Mitchell,CLE,Points,30+ & 35+ points,35+ points,P35,4.65,9.5,10.0,5.3,9.2,,9.2,-8.1,-8.1,Boost,0,best
+189,Pelicans @ Grizzlies,NOP@MEM,12:10,Jeremiah Fears,NOP,Points,20+ & 25+ points,25+ points,P25,4.25,9.5,10.0,5.3,9.2,,9.2,-8.1,-8.1,Boost,0,best
+190,Celtics @ Rockets,BOS@HOU,12:40,Fred VanVleet,HOU,Points,15+ & 20+ points,20+ points,P20,2.91,6.5,6.75,3.8,13.5,,13.5,-8.6,-8.6,Boost,0,best
+191,Pelicans @ Grizzlies,NOP@MEM,12:10,Jaylen Wells,MEM,Points,15+ & 20+ points,20+ points,P20,2.87,6.5,6.75,3.8,13.5,,13.5,-8.6,-8.6,Boost,0,best
+192,Bulls @ 76ers,CHI@PHI,11:40,Tyrese Maxey,PHI,Points,40+ & 45+ points,45+ points,P45,11,34.0,36.0,5.9,2.5,,2.5,-8.7,-8.7,Boost,0,best
+193,Thunder @ Cavaliers,OKC@CLE,11:10,Shai Gilgeous-Alexander,OKC,Assists,10+ & 12+ assists,12+ assists,A12,9.5,34.0,36.0,5.9,2.5,,2.5,-8.7,-8.7,Boost,0,best
+194,Celtics @ Rockets,BOS@HOU,12:40,Paul George,BOS,Rebounds,6+ & 8+ rebounds,8+ rebounds,R8,2.88,7.0,7.25,3.6,12.5,,12.5,-9.0,-9.0,Boost,0,best
+195,Nets @ Knicks,BRK@NYK,11:40,Moritz Wagner,BRK,Rebounds,6+ & 8+ rebounds,8+ rebounds,R8,3.08,7.0,7.25,3.6,12.5,,12.5,-9.0,-9.0,Boost,0,best
+196,Nets @ Knicks,BRK@NYK,11:40,Nolan Traore,BRK,Points,15+ & 20+ points,20+ points,P20,3.02,7.0,7.25,3.6,12.5,,12.5,-9.0,-9.0,Boost,0,best
+197,Bulls @ 76ers,CHI@PHI,11:40,LeBron James,PHI,Rebounds,12+ & 14+ rebounds,14+ rebounds,R14,10,34.0,35.5,4.4,2.5,,2.5,-10.0,-10.0,Boost,0,best
+198,Bucks @ Timberwolves,MIL@MIN,12:10,Kasparas Jakucionis,MIL,Rebounds,4+ & 6+ rebounds,6+ rebounds,R6,2.94,8.5,8.75,2.9,10.3,,10.3,-10.0,-10.0,Boost,0,best
+199,Bucks @ Timberwolves,MIL@MIN,12:10,Terrence Shannon Jr.,MIN,Rebounds,4+ & 6+ rebounds,6+ rebounds,R6,2.91,8.5,8.75,2.9,10.3,,10.3,-10.0,-10.0,Boost,0,best
+200,Jazz @ Spurs,UTA@SAS,12:40,Isaiah Collier,UTA,Rebounds,4+ & 6+ rebounds,6+ rebounds,R6,3.11,9.5,9.75,2.6,9.2,,9.2,-10.4,-10.4,Boost,0,best
+201,Jazz @ Spurs,UTA@SAS,12:40,Devin Vassell,SAS,Assists,4+ & 6+ assists,6+ assists,A6,2.84,9.5,9.75,2.6,9.2,,9.2,-10.4,-10.4,Boost,0,best
+202,Bucks @ Timberwolves,MIL@MIN,12:10,Jaime Jaquez Jr.,MIL,Points,20+ & 25+ points,25+ points,P25,4,9.5,9.75,2.6,9.2,,9.2,-10.4,-10.4,Boost,0,best
+203,Bucks @ Timberwolves,MIL@MIN,12:10,Ayo Dosunmu,MIN,Rebounds,6+ & 8+ rebounds,8+ rebounds,R8,3.45,9.5,9.75,2.6,9.2,,9.2,-10.4,-10.4,Boost,0,best
+204,Pelicans @ Grizzlies,NOP@MEM,12:10,Jeremiah Fears,NOP,Rebounds,6+ & 8+ rebounds,8+ rebounds,R8,3.8,9.5,9.75,2.6,9.2,,9.2,-10.4,-10.4,Boost,0,best
+205,Bulls @ 76ers,CHI@PHI,11:40,Norman Powell,CHI,Threes,6+ & 7+ threes,7+ threes,T7,13,23.0,24.0,4.3,3.8,3.6,3.7,-9.8,-11.7,Boost,0,best
+206,Thunder @ Cavaliers,OKC@CLE,11:10,Sam Merrill,CLE,Threes,5+ & 6+ threes,6+ threes,T6,7.5,15.0,15.5,3.3,5.8,5.6,5.7,-10.4,-11.8,Boost,0,best
+207,Thunder @ Cavaliers,OKC@CLE,11:10,Bennett Stirtz,OKC,Threes,4+ & 5+ threes,5+ threes,T5,11.5,26.0,26.5,1.9,3.3,,3.3,-12.0,-12.0,Boost,0,best
+208,Thunder @ Cavaliers,OKC@CLE,11:10,Peyton Watson,CLE,Threes,4+ & 5+ threes,5+ threes,T5,10.5,26.0,26.5,1.9,3.3,,3.3,-12.0,-12.0,Boost,0,best

@@ -1,91 +1,381 @@
 rid,category,game,tip,pick,prob,fair_odds,odds,book,ev_pct,verdict,all_odds,src,market,bet,player,stat,side,line
-1,Moneyline,Jazz @ Spurs,12:40,San Antonio Spurs ML,89.4,1.12,1.09,PointsBet,-2.5,Pass,PointsBet 1.09 · TAB 1.09 · Sportsbet 1.08 · Betr 1.08,game,Moneyline,San Antonio Spurs ML,,,,
-2,Moneyline,Nets @ Knicks,11:40,New York Knicks ML,86.7,1.15,1.12,TAB,-2.9,Pass,TAB 1.12 · Sportsbet 1.11 · PointsBet 1.11 · Betr 1.10,game,Moneyline,New York Knicks ML,,,,
-3,Moneyline,Bulls @ 76ers,11:40,Philadelphia 76ers ML,82.2,1.22,1.19,TAB,-2.2,Pass,TAB 1.19 · Sportsbet 1.18 · Betr 1.16 · PointsBet 1.16,game,Moneyline,Philadelphia 76ers ML,,,,
-4,Moneyline,Bucks @ Timberwolves,12:10,Minnesota Timberwolves ML,80.3,1.25,1.22,TAB,-2.0,Pass,TAB 1.22 · Sportsbet 1.21 · Betr 1.21 · PointsBet 1.20,game,Moneyline,Minnesota Timberwolves ML,,,,
-5,Moneyline,Kings @ Mavericks,12:10,Dallas Mavericks ML,78.2,1.28,1.26,TAB,-1.5,Pass,TAB 1.26 · PointsBet 1.25 · Sportsbet 1.24 · Betr 1.24,game,Moneyline,Dallas Mavericks ML,,,,
-6,Moneyline,Pelicans @ Grizzlies,12:10,Memphis Grizzlies ML,67.0,1.49,1.48,TAB,-0.8,Pass,TAB 1.48 · Sportsbet 1.45 · Betr 1.45 · PointsBet 1.44,game,Moneyline,Memphis Grizzlies ML,,,,
-7,Moneyline,Celtics @ Rockets,12:40,Houston Rockets ML,66.3,1.51,1.50,Sportsbet,-0.5,Pass,Sportsbet 1.50 · Betr 1.50 · PointsBet 1.50 · TAB 1.50,game,Moneyline,Houston Rockets ML,,,,
-8,Moneyline,Raptors @ Clippers,14:10,Toronto Raptors ML,65.0,1.54,1.53,Sportsbet,-0.5,Pass,Sportsbet 1.53 · PointsBet 1.53 · Betr 1.52 · TAB 1.52,game,Moneyline,Toronto Raptors ML,,,,
-9,Moneyline,Hawks @ Pacers,11:40,Atlanta Hawks ML,64.1,1.56,1.54,Sportsbet,-1.3,Pass,Sportsbet 1.54 · Betr 1.52 · TAB 1.52 · PointsBet 1.50,game,Moneyline,Atlanta Hawks ML,,,,
-10,Moneyline,Pistons @ Hornets,11:40,Detroit Pistons ML,63.3,1.58,1.60,TAB,1.3,Pass,TAB 1.60 · Sportsbet 1.59 · Betr 1.58 · PointsBet 1.57,game,Moneyline,Detroit Pistons ML,,,,
-11,Moneyline,Thunder @ Cavaliers,11:10,Cleveland Cavaliers ML,62.3,1.61,1.58,TAB,-1.5,Pass,TAB 1.58 · PointsBet 1.57 · Betr 1.56 · Sportsbet 1.53,game,Moneyline,Cleveland Cavaliers ML,,,,
-12,Moneyline,Blazers @ Nuggets,13:10,Denver Nuggets ML,58.9,1.7,1.61,Sportsbet,-5.2,Pass,Sportsbet 1.61 · PointsBet 1.59 · Betr 1.58 · TAB 1.58,game,Moneyline,Denver Nuggets ML,,,,
-13,Total,Bulls @ 76ers,11:40,Bulls @ 76ers Under 239.5,58.2,1.72,1.90,Sportsbet,10.5,Check news,Sportsbet 1.90 · PointsBet 1.90 · TAB 1.90 · Betr 1.88,game,Total,Under 239.5,,,,
-14,Moneyline,Suns @ Warriors,14:10,Golden State Warriors ML,57.8,1.73,1.57,PointsBet,-9.3,Pass,PointsBet 1.57 · TAB 1.56 · Sportsbet 1.54 · Betr 1.54,game,Moneyline,Golden State Warriors ML,,,,
-15,Moneyline,Heat @ Lakers,14:10,Los Angeles Lakers ML,57.7,1.73,1.77,Betr,2.2,Pass,Betr 1.77 · PointsBet 1.77 · TAB 1.77 · Sportsbet 1.73,game,Moneyline,Los Angeles Lakers ML,,,,
-16,Total,Celtics @ Rockets,12:40,Celtics @ Rockets Over 219.5,57.4,1.74,1.90,PointsBet,9.1,Check news,PointsBet 1.90 · TAB 1.90 · Betr 1.87 · Sportsbet 1.85,game,Total,Over 219.5,,,,
-17,Total,Pistons @ Hornets,11:40,Pistons @ Hornets Over 210.5,54.9,1.82,1.90,PointsBet,4.3,Bet,PointsBet 1.90 · TAB 1.90 · Betr 1.84 (other lines: 211.5 Sportsbet),game,Total,Over 210.5,,,,
-18,Line,Nets @ Knicks,11:40,New York Knicks -13.5,54.8,1.82,1.83,PointsBet,0.3,Pass,"PointsBet 1.83 (other lines: -14.5 Betr, -14.5 Sportsbet, -14.5 TAB)",game,Spread,New York Knicks -13.5,,,,
-19,Moneyline,Wizards @ Magic,11:40,Orlando Magic ML,54.8,1.82,1.71,Sportsbet,-6.3,Pass,Sportsbet 1.71 · Betr 1.70 · TAB 1.70 · PointsBet 1.69,game,Moneyline,Orlando Magic ML,,,,
-20,Line,Pistons @ Hornets,11:40,Detroit Pistons -3.5,54.5,1.83,1.90,Sportsbet,3.5,Bet,Sportsbet 1.90 · TAB 1.90 · Betr 1.87 · PointsBet 1.83,game,Spread,Detroit Pistons -3.5,,,,
-21,Line,Suns @ Warriors,14:10,Phoenix Suns +4.5,54.2,1.85,1.90,Sportsbet,2.9,Pass,Sportsbet 1.90 · PointsBet 1.90 · TAB 1.90 · Betr 1.89,game,Spread,Phoenix Suns +4.5,,,,
-22,Total,Pelicans @ Grizzlies,12:10,Pelicans @ Grizzlies Under 235.5,54.0,1.85,1.90,PointsBet,2.7,Pass,"PointsBet 1.90 · TAB 1.90 (other lines: 234.5 Betr, 234.5 Sportsbet)",game,Total,Under 235.5,,,,
-23,Total,Heat @ Lakers,14:10,Heat @ Lakers Under 238.5,53.8,1.86,1.90,Sportsbet,2.2,Pass,Sportsbet 1.90 · TAB 1.90 · Betr 1.87 (other lines: 237.5 PointsBet),game,Total,Under 238.5,,,,
-24,Line,Kings @ Mavericks,12:10,Dallas Mavericks -9.5,53.7,1.86,1.90,PointsBet,2.1,Pass,PointsBet 1.90 · Sportsbet 1.88 · Betr 1.83,game,Spread,Dallas Mavericks -9.5,,,,
-25,Line,Bucks @ Timberwolves,12:10,Minnesota Timberwolves -10.5,53.7,1.86,1.90,PointsBet,2.0,Pass,PointsBet 1.90 · TAB 1.90 · Betr 1.88 · Sportsbet 1.85,game,Spread,Minnesota Timberwolves -10.5,,,,
-26,Line,Thunder @ Cavaliers,11:10,Cleveland Cavaliers -3.5,53.5,1.87,1.90,PointsBet,1.6,Pass,PointsBet 1.90 · Betr 1.84 (other lines: -4.5 Sportsbet),game,Spread,Cleveland Cavaliers -3.5,,,,
-27,Total,Blazers @ Nuggets,13:10,Blazers @ Nuggets Over 229.5,53.4,1.87,1.90,Sportsbet,1.5,Pass,Sportsbet 1.90 · Betr 1.86 · TAB 1.85 (other lines: 230.5 PointsBet),game,Total,Over 229.5,,,,
-28,Line,Bulls @ 76ers,11:40,Philadelphia 76ers -11.5,53.4,1.87,1.90,Sportsbet,1.5,Pass,Sportsbet 1.90 · PointsBet 1.90 · TAB 1.90 · Betr 1.88,game,Spread,Philadelphia 76ers -11.5,,,,
-29,Total,Hawks @ Pacers,11:40,Hawks @ Pacers Under 232.5,53.3,1.88,1.90,PointsBet,1.3,Pass,PointsBet 1.90 · TAB 1.90 · Betr 1.87 (other lines: 231.5 Sportsbet),game,Total,Under 232.5,,,,
-30,Total,Kings @ Mavericks,12:10,Kings @ Mavericks Under 234.5,53.1,1.88,1.96,Sportsbet,4.0,Bet,Sportsbet 1.96 · TAB 1.90 · Betr 1.88 (other lines: 235.5 PointsBet),game,Total,Under 234.5,,,,
-31,Total,Raptors @ Clippers,14:10,Raptors @ Clippers Over 219.5,52.9,1.89,1.90,PointsBet,0.6,Pass,PointsBet 1.90 · Sportsbet 1.87 · Betr 1.86 (other lines: 220.5 TAB),game,Total,Over 219.5,,,,
-32,Line,Pelicans @ Grizzlies,12:10,Memphis Grizzlies -5.5,52.5,1.9,1.87,PointsBet,-1.9,Pass,PointsBet 1.87 · Sportsbet 1.85 (other lines: -6.5 Betr),game,Spread,Memphis Grizzlies -5.5,,,,
-33,Line,Hawks @ Pacers,11:40,Atlanta Hawks -4.5,52.3,1.91,1.90,PointsBet,-0.6,Pass,PointsBet 1.90 · Sportsbet 1.88 · Betr 1.83,game,Spread,Atlanta Hawks -4.5,,,,
-34,Total,Bucks @ Timberwolves,12:10,Bucks @ Timberwolves Under 233.5,52.1,1.92,1.90,PointsBet,-0.9,Pass,PointsBet 1.90 · TAB 1.90 · Sportsbet 1.86 · Betr 1.85,game,Total,Under 233.5,,,,
-35,Total,Suns @ Warriors,14:10,Suns @ Warriors Over 227.5,52.1,1.92,1.90,TAB,-1.0,Pass,TAB 1.90 · Sportsbet 1.85 · Betr 1.85 (other lines: 228.5 PointsBet),game,Total,Over 227.5,,,,
-36,Line,Heat @ Lakers,14:10,Los Angeles Lakers -2.5,51.8,1.93,1.95,PointsBet,0.9,Pass,PointsBet 1.95 · Betr 1.92 · Sportsbet 1.90,game,Spread,Los Angeles Lakers -2.5,,,,
-37,Line,Celtics @ Rockets,12:40,Houston Rockets -5.5,51.7,1.93,2.00,PointsBet,3.5,Pass,PointsBet 2.00 · Betr 1.93 · Sportsbet 1.90,game,Spread,Houston Rockets -5.5,,,,
-38,Line,Jazz @ Spurs,12:40,San Antonio Spurs -16.5,51.4,1.95,1.95,PointsBet,0.2,Pass,PointsBet 1.95 · Sportsbet 1.94 · Betr 1.89,game,Spread,San Antonio Spurs -16.5,,,,
-39,Total,Thunder @ Cavaliers,11:10,Thunder @ Cavaliers Under 228.5,51.3,1.95,1.90,Sportsbet,-2.4,Pass,Sportsbet 1.90 · PointsBet 1.90 · Betr 1.89 · TAB 1.85,game,Total,Under 228.5,,,,
-40,Total,Nets @ Knicks,11:40,Nets @ Knicks Over 221.5,51.3,1.95,1.90,Sportsbet,-2.6,Pass,Sportsbet 1.90 · PointsBet 1.90 · TAB 1.90 · Betr 1.89,game,Total,Over 221.5,,,,
-41,Line,Wizards @ Magic,11:40,Washington Wizards +2.5,51.2,1.95,1.90,Betr,-2.8,Pass,Betr 1.90 · PointsBet 1.90 · Sportsbet 1.88,game,Spread,Washington Wizards +2.5,,,,
-42,Total,Wizards @ Magic,11:40,Wizards @ Magic Over 224.5,51.0,1.96,1.90,Sportsbet,-3.1,Pass,Sportsbet 1.90 · PointsBet 1.90 · TAB 1.90 · Betr 1.86,game,Total,Over 224.5,,,,
-43,Total,Jazz @ Spurs,12:40,Jazz @ Spurs Under 230.5,50.6,1.98,1.95,PointsBet,-1.3,Pass,PointsBet 1.95 · Betr 1.91 · TAB 1.90 (other lines: 231.5 Sportsbet),game,Total,Under 230.5,,,,
-44,Line,Raptors @ Clippers,14:10,Toronto Raptors -5.5,50.3,1.99,1.95,Sportsbet,-1.9,Pass,Sportsbet 1.95 · PointsBet 1.95 (other lines: -4.5 Betr),game,Spread,Toronto Raptors -5.5,,,,
-45,Line,Blazers @ Nuggets,13:10,Portland Trail Blazers +3.5,50.1,2.0,2.00,PointsBet,0.2,Pass,PointsBet 2.00 · Betr 1.94 (other lines: +4.5 Sportsbet),game,Spread,Portland Trail Blazers +3.5,,,,
-46,Line,Blazers @ Nuggets,13:10,Denver Nuggets -3.5,49.9,2.0,1.83,Betr,-8.7,Pass,Betr 1.83 · PointsBet 1.83 (other lines: -4.5 Sportsbet),game,Spread,Denver Nuggets -3.5,,,,
-47,Line,Raptors @ Clippers,14:10,Los Angeles Clippers +5.5,49.7,2.01,1.87,PointsBet,-7.0,Pass,PointsBet 1.87 · Sportsbet 1.85 (other lines: +4.5 Betr),game,Spread,Los Angeles Clippers +5.5,,,,
-48,Line,Thunder @ Cavaliers,11:10,Oklahoma City Thunder +4.5,49.5,2.02,1.90,Sportsbet,-5.9,Pass,"Sportsbet 1.90 (other lines: +3.5 Betr, +3.5 PointsBet)",game,Spread,Oklahoma City Thunder +4.5,,,,
-49,Total,Jazz @ Spurs,12:40,Jazz @ Spurs Over 230.5,49.4,2.02,1.90,TAB,-6.2,Pass,TAB 1.90 · PointsBet 1.87 · Betr 1.86 (other lines: 231.5 Sportsbet),game,Total,Over 230.5,,,,
-50,Total,Raptors @ Clippers,14:10,Raptors @ Clippers Under 220.5,49.3,2.03,1.90,TAB,-6.3,Pass,"TAB 1.90 (other lines: 219.5 Betr, 219.5 PointsBet, 219.5 Sportsbet)",game,Total,Under 220.5,,,,
-51,Total,Wizards @ Magic,11:40,Wizards @ Magic Under 224.5,49.0,2.04,1.91,Betr,-6.4,Pass,Betr 1.91 · Sportsbet 1.90 · PointsBet 1.90 · TAB 1.90,game,Total,Under 224.5,,,,
-52,Total,Hawks @ Pacers,11:40,Hawks @ Pacers Over 231.5,48.9,2.04,1.86,Sportsbet,-9.1,Pass,"Sportsbet 1.86 (other lines: 232.5 Betr, 232.5 PointsBet, 232.5 TAB)",game,Total,Over 231.5,,,,
-53,Line,Wizards @ Magic,11:40,Orlando Magic -2.5,48.8,2.05,1.92,Sportsbet,-6.3,Pass,Sportsbet 1.92 · PointsBet 1.90 · Betr 1.87,game,Spread,Orlando Magic -2.5,,,,
-54,Total,Blazers @ Nuggets,13:10,Blazers @ Nuggets Under 230.5,48.8,2.05,1.90,PointsBet,-7.3,Pass,"PointsBet 1.90 (other lines: 229.5 Betr, 229.5 Sportsbet, 229.5 TAB)",game,Total,Under 230.5,,,,
-55,Total,Thunder @ Cavaliers,11:10,Thunder @ Cavaliers Over 228.5,48.7,2.05,1.95,TAB,-5.1,Pass,TAB 1.95 · Sportsbet 1.90 · PointsBet 1.90 · Betr 1.88,game,Total,Over 228.5,,,,
-56,Total,Nets @ Knicks,11:40,Nets @ Knicks Under 221.5,48.7,2.05,1.90,Sportsbet,-7.4,Pass,Sportsbet 1.90 · PointsBet 1.90 · TAB 1.90 · Betr 1.88,game,Total,Under 221.5,,,,
-57,Line,Jazz @ Spurs,12:40,Utah Jazz +16.5,48.6,2.06,1.88,Betr,-8.6,Pass,Betr 1.88 · PointsBet 1.87 · Sportsbet 1.86,game,Spread,Utah Jazz +16.5,,,,
-58,Total,Heat @ Lakers,14:10,Heat @ Lakers Over 237.5,48.4,2.07,1.90,PointsBet,-8.0,Pass,"PointsBet 1.90 (other lines: 238.5 Betr, 238.5 Sportsbet, 238.5 TAB)",game,Total,Over 237.5,,,,
-59,Line,Celtics @ Rockets,12:40,Boston Celtics +5.5,48.3,2.07,1.90,Sportsbet,-8.3,Pass,Sportsbet 1.90 · Betr 1.84 · PointsBet 1.83,game,Spread,Boston Celtics +5.5,,,,
-60,Line,Heat @ Lakers,14:10,Miami Heat +2.5,48.2,2.07,1.90,Sportsbet,-8.4,Pass,Sportsbet 1.90 · PointsBet 1.87 · Betr 1.85,game,Spread,Miami Heat +2.5,,,,
-61,Total,Pelicans @ Grizzlies,12:10,Pelicans @ Grizzlies Over 234.5,48.2,2.07,1.90,Sportsbet,-8.4,Pass,"Sportsbet 1.90 · Betr 1.85 (other lines: 235.5 PointsBet, 235.5 TAB)",game,Total,Over 234.5,,,,
-62,Line,Nets @ Knicks,11:40,Brooklyn Nets +14.5,48.1,2.08,1.90,Sportsbet,-8.6,Pass,Sportsbet 1.90 · TAB 1.90 · Betr 1.88 (other lines: +13.5 PointsBet),game,Spread,Brooklyn Nets +14.5,,,,
-63,Total,Suns @ Warriors,14:10,Suns @ Warriors Under 227.5,47.9,2.09,1.96,Sportsbet,-6.1,Pass,Sportsbet 1.96 · Betr 1.92 · TAB 1.90 (other lines: 228.5 PointsBet),game,Total,Under 227.5,,,,
-64,Total,Bucks @ Timberwolves,12:10,Bucks @ Timberwolves Over 233.5,47.9,2.09,1.95,Sportsbet,-6.7,Pass,Sportsbet 1.95 · Betr 1.92 · PointsBet 1.90 · TAB 1.90,game,Total,Over 233.5,,,,
-65,Line,Hawks @ Pacers,11:40,Indiana Pacers +4.5,47.7,2.1,1.94,Betr,-7.5,Pass,Betr 1.94 · Sportsbet 1.92 · PointsBet 1.90,game,Spread,Indiana Pacers +4.5,,,,
-66,Line,Pelicans @ Grizzlies,12:10,New Orleans Pelicans +5.5,47.5,2.11,1.96,Sportsbet,-6.8,Pass,Sportsbet 1.96 · PointsBet 1.95 (other lines: +6.5 Betr),game,Spread,New Orleans Pelicans +5.5,,,,
-67,Total,Pistons @ Hornets,11:40,Pistons @ Hornets Under 211.5,47.3,2.11,1.87,Sportsbet,-11.5,Pass,"Sportsbet 1.87 (other lines: 210.5 Betr, 210.5 PointsBet, 210.5 TAB)",game,Total,Under 211.5,,,,
-68,Total,Kings @ Mavericks,12:10,Kings @ Mavericks Over 234.5,46.9,2.13,1.90,TAB,-10.8,Pass,TAB 1.90 · Betr 1.89 · Sportsbet 1.85 (other lines: 235.5 PointsBet),game,Total,Over 234.5,,,,
-69,Line,Bulls @ 76ers,11:40,Chicago Bulls +11.5,46.6,2.15,1.90,Sportsbet,-11.5,Pass,Sportsbet 1.90 · PointsBet 1.90 · TAB 1.90 · Betr 1.89,game,Spread,Chicago Bulls +11.5,,,,
-70,Line,Bucks @ Timberwolves,12:10,Milwaukee Bucks +10.5,46.3,2.16,1.95,Sportsbet,-9.7,Pass,Sportsbet 1.95 · PointsBet 1.90 · TAB 1.90 · Betr 1.89,game,Spread,Milwaukee Bucks +10.5,,,,
-71,Line,Kings @ Mavericks,12:10,Sacramento Kings +9.5,46.3,2.16,1.94,Betr,-10.2,Pass,Betr 1.94 · Sportsbet 1.92 · PointsBet 1.90,game,Spread,Sacramento Kings +9.5,,,,
-72,Line,Suns @ Warriors,14:10,Golden State Warriors -4.5,45.8,2.18,1.90,Sportsbet,-12.9,Pass,Sportsbet 1.90 · PointsBet 1.90 · TAB 1.90 · Betr 1.88,game,Spread,Golden State Warriors -4.5,,,,
-73,Line,Pistons @ Hornets,11:40,Charlotte Hornets +3.5,45.5,2.2,2.00,PointsBet,-9.0,Pass,PointsBet 2.00 · Sportsbet 1.90 · Betr 1.90 · TAB 1.90,game,Spread,Charlotte Hornets +3.5,,,,
-74,Moneyline,Wizards @ Magic,11:40,Washington Wizards ML,45.2,2.21,2.25,PointsBet,1.7,Pass,PointsBet 2.25 · Betr 2.20 · TAB 2.20 · Sportsbet 2.19,game,Moneyline,Washington Wizards ML,,,,
-75,Total,Celtics @ Rockets,12:40,Celtics @ Rockets Under 219.5,42.6,2.35,1.96,Sportsbet,-16.5,Pass,Sportsbet 1.96 · Betr 1.90 · PointsBet 1.90 · TAB 1.90,game,Total,Under 219.5,,,,
-76,Moneyline,Heat @ Lakers,14:10,Miami Heat ML,42.3,2.36,2.17,Sportsbet,-8.3,Pass,Sportsbet 2.17 · Betr 2.10 · PointsBet 2.10 · TAB 2.10,game,Moneyline,Miami Heat ML,,,,
-77,Moneyline,Suns @ Warriors,14:10,Phoenix Suns ML,42.2,2.37,2.55,Sportsbet,7.7,Bet,Sportsbet 2.55 · Betr 2.55 · TAB 2.50 · PointsBet 2.45,game,Moneyline,Phoenix Suns ML,,,,
-78,Total,Bulls @ 76ers,11:40,Bulls @ 76ers Over 239.5,41.8,2.39,1.90,Sportsbet,-20.5,Pass,Sportsbet 1.90 · PointsBet 1.90 · TAB 1.90 · Betr 1.89,game,Total,Over 239.5,,,,
-79,Moneyline,Blazers @ Nuggets,13:10,Portland Trail Blazers ML,41.1,2.43,2.45,Betr,0.8,Pass,Betr 2.45 · TAB 2.45 · PointsBet 2.40 · Sportsbet 2.39,game,Moneyline,Portland Trail Blazers ML,,,,
-80,Moneyline,Thunder @ Cavaliers,11:10,Oklahoma City Thunder ML,37.7,2.65,2.57,Sportsbet,-3.2,Pass,Sportsbet 2.57 · Betr 2.50 · PointsBet 2.45 · TAB 2.45,game,Moneyline,Oklahoma City Thunder ML,,,,
-81,Moneyline,Pistons @ Hornets,11:40,Charlotte Hornets ML,36.7,2.72,2.45,Betr,-10.1,Pass,Betr 2.45 · PointsBet 2.45 · Sportsbet 2.42 · TAB 2.40,game,Moneyline,Charlotte Hornets ML,,,,
-82,Moneyline,Hawks @ Pacers,11:40,Indiana Pacers ML,35.9,2.79,2.65,PointsBet,-4.9,Pass,PointsBet 2.65 · Betr 2.60 · TAB 2.60 · Sportsbet 2.55,game,Moneyline,Indiana Pacers ML,,,,
-83,Moneyline,Raptors @ Clippers,14:10,Los Angeles Clippers ML,35.0,2.86,2.60,Betr,-9.0,Pass,Betr 2.60 · PointsBet 2.60 · TAB 2.60 · Sportsbet 2.58,game,Moneyline,Los Angeles Clippers ML,,,,
-84,Moneyline,Celtics @ Rockets,12:40,Boston Celtics ML,33.7,2.97,2.67,Sportsbet,-10.1,Pass,Sportsbet 2.67 · Betr 2.65 · PointsBet 2.65 · TAB 2.65,game,Moneyline,Boston Celtics ML,,,,
-85,Moneyline,Pelicans @ Grizzlies,12:10,New Orleans Pelicans ML,33.0,3.03,2.85,Betr,-6.0,Pass,Betr 2.85 · PointsBet 2.85 · Sportsbet 2.84 · TAB 2.70,game,Moneyline,New Orleans Pelicans ML,,,,
-86,Moneyline,Kings @ Mavericks,12:10,Sacramento Kings ML,21.8,4.59,4.25,Sportsbet,-7.2,Pass,Sportsbet 4.25 · Betr 4.25 · PointsBet 4.10 · TAB 4.00,game,Moneyline,Sacramento Kings ML,,,,
-87,Moneyline,Bucks @ Timberwolves,12:10,Milwaukee Bucks ML,19.7,5.08,4.75,PointsBet,-6.6,Pass,PointsBet 4.75 · Sportsbet 4.70 · Betr 4.70 · TAB 4.50,game,Moneyline,Milwaukee Bucks ML,,,,
-88,Moneyline,Bulls @ 76ers,11:40,Chicago Bulls ML,17.8,5.62,5.50,Betr,-2.0,Pass,Betr 5.50 · PointsBet 5.50 · Sportsbet 5.20 · TAB 5.00,game,Moneyline,Chicago Bulls ML,,,,
-89,Moneyline,Nets @ Knicks,11:40,Brooklyn Nets ML,13.3,7.52,7.50,Betr,-0.0,Pass,Betr 7.50 · Sportsbet 7.00 · PointsBet 7.00 · TAB 6.80,game,Moneyline,Brooklyn Nets ML,,,,
-90,Moneyline,Jazz @ Spurs,12:40,Utah Jazz ML,10.6,9.43,8.75,Sportsbet,-7.6,Pass,Sportsbet 8.75 · Betr 8.50 · PointsBet 8.00 · TAB 8.00,game,Moneyline,Utah Jazz ML,,,,
+1,Alt threes,Pistons @ Hornets,11:40,Brandon Miller 1+ threes,95.4,1.05,1.01,Sportsbet,-3.7,Pass,Sportsbet 1.01,alt,Threes,,Brandon Miller,Threes,Over,0.5
+2,Alt threes,Pistons @ Hornets,11:40,Duncan Robinson 1+ threes,93.8,1.07,1.03,Sportsbet,-3.4,Pass,Sportsbet 1.03,alt,Threes,,Duncan Robinson,Threes,Over,0.5
+3,Alt threes,Thunder @ Cavaliers,11:10,James Harden 1+ threes,90.8,1.1,1.04,Sportsbet,-5.6,Pass,Sportsbet 1.04,alt,Threes,,James Harden,Threes,Over,0.5
+4,Alt threes,Thunder @ Cavaliers,11:10,Jared McCain 1+ threes,89.9,1.11,1.04,Sportsbet,-6.5,Pass,Sportsbet 1.04,alt,Threes,,Jared McCain,Threes,Over,0.5
+5,Alt threes,Bulls @ 76ers,11:40,Norman Powell 1+ threes,89.8,1.11,1.05,Sportsbet,-5.8,Pass,Sportsbet 1.05,alt,Threes,,Norman Powell,Threes,Over,0.5
+6,Alt threes,Thunder @ Cavaliers,11:10,Donovan Mitchell 1+ threes,89.8,1.11,1.04,Sportsbet,-6.6,Pass,Sportsbet 1.04,alt,Threes,,Donovan Mitchell,Threes,Over,0.5
+7,Moneyline,Jazz @ Spurs,12:40,San Antonio Spurs ML,89.4,1.12,1.09,PointsBet,-2.5,Pass,PointsBet 1.09 · TAB 1.09 · Sportsbet 1.08 · Betr 1.08,game,Moneyline,San Antonio Spurs ML,,,,
+8,Alt threes,Bulls @ 76ers,11:40,Tyrese Maxey 1+ threes,89.2,1.12,1.05,Sportsbet,-6.3,Pass,Sportsbet 1.05,alt,Threes,,Tyrese Maxey,Threes,Over,0.5
+9,Alt threes,Thunder @ Cavaliers,11:10,Sam Merrill 1+ threes,87.1,1.15,1.07,Sportsbet,-6.8,Pass,Sportsbet 1.07,alt,Threes,,Sam Merrill,Threes,Over,0.5
+10,Alt threes,Pistons @ Hornets,11:40,Cade Cunningham 1+ threes,87.0,1.15,1.09,Sportsbet,-5.2,Pass,Sportsbet 1.09,alt,Threes,,Cade Cunningham,Threes,Over,0.5
+11,Moneyline,Nets @ Knicks,11:40,New York Knicks ML,86.7,1.15,1.12,TAB,-2.9,Pass,TAB 1.12 · Sportsbet 1.11 · PointsBet 1.11 · Betr 1.10,game,Moneyline,New York Knicks ML,,,,
+12,Alt threes,Bulls @ 76ers,11:40,Caleb Wilson 1+ threes,86.4,1.16,1.09,Sportsbet,-5.8,Pass,Sportsbet 1.09,alt,Threes,,Caleb Wilson,Threes,Over,0.5
+13,Alt threes,Pistons @ Hornets,11:40,Grayson Allen 1+ threes,85.5,1.17,1.08,Sportsbet,-7.7,Pass,Sportsbet 1.08,alt,Threes,,Grayson Allen,Threes,Over,0.5
+14,Alt threes,Pistons @ Hornets,11:40,Naz Reid 1+ threes,85.1,1.18,1.07,Sportsbet,-9.0,Pass,Sportsbet 1.07,alt,Threes,,Naz Reid,Threes,Over,0.5
+15,Alt threes,Thunder @ Cavaliers,11:10,Shai Gilgeous-Alexander 1+ threes,83.8,1.19,1.13,Sportsbet,-5.3,Pass,Sportsbet 1.13,alt,Threes,,Shai Gilgeous-Alexander,Threes,Over,0.5
+16,Alt threes,Pistons @ Hornets,11:40,Brandon Miller 2+ threes,83.0,1.2,1.1,Sportsbet,-8.7,Pass,Sportsbet 1.10,alt,Threes,,Brandon Miller,Threes,Over,1.5
+17,Moneyline,Bulls @ 76ers,11:40,Philadelphia 76ers ML,82.2,1.22,1.19,TAB,-2.2,Pass,TAB 1.19 · Sportsbet 1.18 · Betr 1.16 · PointsBet 1.16,game,Moneyline,Philadelphia 76ers ML,,,,
+18,Alt threes,Bulls @ 76ers,11:40,VJ Edgecombe 1+ threes,80.8,1.24,1.15,Sportsbet,-7.1,Pass,Sportsbet 1.15,alt,Threes,,VJ Edgecombe,Threes,Over,0.5
+19,Moneyline,Bucks @ Timberwolves,12:10,Minnesota Timberwolves ML,80.3,1.25,1.22,TAB,-2.0,Pass,TAB 1.22 · Sportsbet 1.21 · Betr 1.21 · PointsBet 1.20,game,Moneyline,Minnesota Timberwolves ML,,,,
+20,Alt threes,Bulls @ 76ers,11:40,Matas Buzelis 1+ threes,79.5,1.26,1.15,Sportsbet,-8.6,Pass,Sportsbet 1.15,alt,Threes,,Matas Buzelis,Threes,Over,0.5
+21,Alt threes,Pistons @ Hornets,11:40,Duncan Robinson 2+ threes,78.8,1.27,1.17,Sportsbet,-7.8,Pass,Sportsbet 1.17,alt,Threes,,Duncan Robinson,Threes,Over,1.5
+22,Moneyline,Kings @ Mavericks,12:10,Dallas Mavericks ML,78.2,1.28,1.26,TAB,-1.5,Pass,TAB 1.26 · PointsBet 1.25 · Sportsbet 1.24 · Betr 1.24,game,Moneyline,Dallas Mavericks ML,,,,
+23,Alt threes,Bulls @ 76ers,11:40,Jaylen Brown 1+ threes,76.5,1.31,1.19,Sportsbet,-8.9,Pass,Sportsbet 1.19,alt,Threes,,Jaylen Brown,Threes,Over,0.5
+24,Alt threes,Bulls @ 76ers,11:40,Jalen Smith 1+ threes,76.2,1.31,1.18,Sportsbet,-10.1,Pass,Sportsbet 1.18,alt,Threes,,Jalen Smith,Threes,Over,0.5
+25,Alt threes,Thunder @ Cavaliers,11:10,James Harden 2+ threes,71.7,1.39,1.29,Sportsbet,-7.6,Pass,Sportsbet 1.29,alt,Threes,,James Harden,Threes,Over,1.5
+26,Alt threes,Bulls @ 76ers,11:40,LeBron James 1+ threes,71.7,1.39,1.28,Sportsbet,-8.3,Pass,Sportsbet 1.28,alt,Threes,,LeBron James,Threes,Over,0.5
+27,Alt threes,Pistons @ Hornets,11:40,Daniss Jenkins 1+ threes,70.1,1.43,1.29,Sportsbet,-9.6,Pass,Sportsbet 1.29,alt,Threes,,Daniss Jenkins,Threes,Over,0.5
+28,Alt threes,Thunder @ Cavaliers,11:10,Jared McCain 2+ threes,69.8,1.43,1.27,Sportsbet,-11.3,Pass,Sportsbet 1.27,alt,Threes,,Jared McCain,Threes,Over,1.5
+29,Alt threes,Thunder @ Cavaliers,11:10,Donovan Mitchell 2+ threes,69.4,1.44,1.33,Sportsbet,-7.6,Pass,Sportsbet 1.33,alt,Threes,,Donovan Mitchell,Threes,Over,1.5
+30,Alt threes,Bulls @ 76ers,11:40,Norman Powell 2+ threes,69.4,1.44,1.31,Sportsbet,-9.1,Pass,Sportsbet 1.31,alt,Threes,,Norman Powell,Threes,Over,1.5
+31,Steals,Thunder @ Cavaliers,11:10,Peyton Watson under 1.5 steals,69.3,1.44,1.36,Sportsbet,-5.7,Pass,Sportsbet 1.36,prop,Steals,,Peyton Watson,Steals,Under,1.5
+32,Steals,Thunder @ Cavaliers,11:10,James Harden over 0.5 steals,68.8,1.45,1.4,Sportsbet,-3.6,Pass,Sportsbet 1.40,prop,Steals,,James Harden,Steals,Over,0.5
+33,Threes,Pistons @ Hornets,11:40,John Collins under 1.5 threes,68.8,1.45,1.36,Sportsbet,-6.5,Pass,Sportsbet 1.36,prop,Threes,,John Collins,Threes,Under,1.5
+34,Threes,Bulls @ 76ers,11:40,Joel Embiid under 1.5 threes,68.5,1.46,1.45,Sportsbet,-0.7,Pass,Sportsbet 1.45,prop,Threes,,Joel Embiid,Threes,Under,1.5
+35,Alt threes,Bulls @ 76ers,11:40,Tyrese Maxey 2+ threes,68.3,1.46,1.34,Sportsbet,-8.5,Pass,Sportsbet 1.34,alt,Threes,,Tyrese Maxey,Threes,Over,1.5
+36,Blocks,Thunder @ Cavaliers,11:10,Evan Mobley under 1.5 blocks,67.3,1.49,1.45,Sportsbet,-2.4,Pass,Sportsbet 1.45,prop,Blocks,,Evan Mobley,Blocks,Under,1.5
+37,Threes,Pistons @ Hornets,11:40,Dennis Schröder under 1.5 threes,67.3,1.49,1.4,Sportsbet,-5.8,Pass,Sportsbet 1.40,prop,Threes,,Dennis Schröder,Threes,Under,1.5
+38,Threes,Bulls @ 76ers,11:40,Josh Giddey under 1.5 threes,67.2,1.49,1.4,Sportsbet,-5.9,Pass,Sportsbet 1.40,prop,Threes,,Josh Giddey,Threes,Under,1.5
+39,Moneyline,Pelicans @ Grizzlies,12:10,Memphis Grizzlies ML,67.0,1.49,1.48,TAB,-0.8,Pass,TAB 1.48 · Sportsbet 1.45 · Betr 1.45 · PointsBet 1.44,game,Moneyline,Memphis Grizzlies ML,,,,
+40,Moneyline,Celtics @ Rockets,12:40,Houston Rockets ML,66.3,1.51,1.50,Sportsbet,-0.5,Pass,Sportsbet 1.50 · Betr 1.50 · PointsBet 1.50 · TAB 1.50,game,Moneyline,Houston Rockets ML,,,,
+41,Blocks,Thunder @ Cavaliers,11:10,Peyton Watson under 1.5 blocks,66.1,1.51,1.45,Sportsbet,-4.1,Pass,Sportsbet 1.45,prop,Blocks,,Peyton Watson,Blocks,Under,1.5
+42,Assists,Pistons @ Hornets,11:40,Naz Reid under 2.5 assists,65.8,1.52,1.5,Sportsbet,-1.2,Pass,Sportsbet 1.50,prop,Assists,,Naz Reid,Assists,Under,2.5
+43,Threes,Pistons @ Hornets,11:40,Sion James over 0.5 threes,65.4,1.53,1.44,Sportsbet,-5.8,Pass,Sportsbet 1.44,prop,Threes,,Sion James,Threes,Over,0.5
+44,Moneyline,Raptors @ Clippers,14:10,Toronto Raptors ML,65.0,1.54,1.53,PointsBet,-0.5,Pass,PointsBet 1.53 · Sportsbet 1.52 · Betr 1.52 · TAB 1.52,game,Moneyline,Toronto Raptors ML,,,,
+45,Alt threes,Bulls @ 76ers,11:40,Josh Giddey 1+ threes,65.0,1.54,1.35,Sportsbet,-12.3,Pass,Sportsbet 1.35,alt,Threes,,Josh Giddey,Threes,Over,0.5
+46,Alt threes,Pistons @ Hornets,11:40,Brandon Miller 3+ threes,64.9,1.54,1.37,Sportsbet,-11.1,Pass,Sportsbet 1.37,alt,Threes,,Brandon Miller,Threes,Over,2.5
+47,Alt threes,Pistons @ Hornets,11:40,Dennis Schröder 1+ threes,64.9,1.54,1.37,Sportsbet,-11.1,Pass,Sportsbet 1.37,alt,Threes,,Dennis Schröder,Threes,Over,0.5
+48,Blocks,Bulls @ 76ers,11:40,Caleb Wilson under 1.5 blocks,64.7,1.55,1.5,Sportsbet,-3.0,Pass,Sportsbet 1.50,prop,Blocks,,Caleb Wilson,Blocks,Under,1.5
+49,Threes,Bulls @ 76ers,11:40,Leonard Miller over 0.5 threes,64.6,1.55,1.44,Sportsbet,-7.0,Pass,Sportsbet 1.44,prop,Threes,,Leonard Miller,Threes,Over,0.5
+50,Steals,Thunder @ Cavaliers,11:10,Donovan Mitchell under 1.5 steals,64.4,1.55,1.45,Sportsbet,-6.6,Pass,Sportsbet 1.45,prop,Steals,,Donovan Mitchell,Steals,Under,1.5
+51,Steals,Thunder @ Cavaliers,11:10,Shai Gilgeous-Alexander under 1.5 steals,64.4,1.55,1.45,Sportsbet,-6.7,Pass,Sportsbet 1.45,prop,Steals,,Shai Gilgeous-Alexander,Steals,Under,1.5
+52,Moneyline,Hawks @ Pacers,11:40,Atlanta Hawks ML,64.1,1.56,1.54,Sportsbet,-1.3,Pass,Sportsbet 1.54 · Betr 1.52 · TAB 1.52 · PointsBet 1.50,game,Moneyline,Atlanta Hawks ML,,,,
+53,Alt threes,Thunder @ Cavaliers,11:10,Sam Merrill 2+ threes,64.1,1.56,1.38,Sportsbet,-11.6,Pass,Sportsbet 1.38,alt,Threes,,Sam Merrill,Threes,Over,1.5
+54,Threes,Pistons @ Hornets,11:40,Cade Cunningham over 1.5 threes,63.8,1.57,1.5,Sportsbet,-4.3,Pass,Sportsbet 1.50,prop,Threes,,Cade Cunningham,Threes,Over,1.5
+55,Alt threes,Bulls @ 76ers,11:40,Joel Embiid 1+ threes,63.7,1.57,1.34,Sportsbet,-14.6,Pass,Sportsbet 1.34,alt,Threes,,Joel Embiid,Threes,Over,0.5
+56,Assists,Bulls @ 76ers,11:40,Norman Powell under 2.5 assists,63.6,1.57,1.52,Sportsbet,-3.4,Pass,Sportsbet 1.52,prop,Assists,,Norman Powell,Assists,Under,2.5
+57,Rebounds,Bulls @ 76ers,11:40,Norman Powell under 3.5 rebounds,63.5,1.57,1.5,Sportsbet,-4.7,Pass,Sportsbet 1.50,prop,Rebounds,,Norman Powell,Rebounds,Under,3.5
+58,Alt threes,Pistons @ Hornets,11:40,John Collins 1+ threes,63.5,1.57,1.4,Sportsbet,-11.2,Pass,Sportsbet 1.40,alt,Threes,,John Collins,Threes,Over,0.5
+59,Moneyline,Pistons @ Hornets,11:40,Detroit Pistons ML,63.3,1.58,1.60,TAB,1.3,Pass,TAB 1.60 · Sportsbet 1.59 · Betr 1.58 · PointsBet 1.57,game,Moneyline,Detroit Pistons ML,,,,
+60,Threes,Pistons @ Hornets,11:40,Naz Reid under 2.5 threes,63.3,1.58,1.56,Sportsbet,-1.3,Pass,Sportsbet 1.56,prop,Threes,,Naz Reid,Threes,Under,2.5
+61,Steals,Bulls @ 76ers,11:40,Caleb Wilson under 1.5 steals,63.2,1.58,1.5,Sportsbet,-5.1,Pass,Sportsbet 1.50,prop,Steals,,Caleb Wilson,Steals,Under,1.5
+62,Threes,Bulls @ 76ers,11:40,Caleb Wilson over 1.5 threes,62.7,1.59,1.5,Sportsbet,-6.0,Pass,Sportsbet 1.50,prop,Threes,,Caleb Wilson,Threes,Over,1.5
+63,Moneyline,Thunder @ Cavaliers,11:10,Cleveland Cavaliers ML,62.3,1.61,1.58,TAB,-1.5,Pass,TAB 1.58 · PointsBet 1.57 · Betr 1.56 · Sportsbet 1.53,game,Moneyline,Cleveland Cavaliers ML,,,,
+64,Threes,Thunder @ Cavaliers,11:10,Ajay Mitchell under 1.5 threes,62.2,1.61,1.52,Sportsbet,-5.5,Pass,Sportsbet 1.52,prop,Threes,,Ajay Mitchell,Threes,Under,1.5
+65,Blocks,Thunder @ Cavaliers,11:10,Shai Gilgeous-Alexander over 0.5 blocks,61.3,1.63,1.52,Sportsbet,-6.8,Pass,Sportsbet 1.52,prop,Blocks,,Shai Gilgeous-Alexander,Blocks,Over,0.5
+66,Assists,Pistons @ Hornets,11:40,Duncan Robinson under 2.5 assists,61.2,1.63,1.58,Sportsbet,-3.3,Pass,Sportsbet 1.58,prop,Assists,,Duncan Robinson,Assists,Under,2.5
+67,Alt threes,Pistons @ Hornets,11:40,Grayson Allen 2+ threes,61.1,1.64,1.49,Sportsbet,-9.0,Pass,Sportsbet 1.49,alt,Threes,,Grayson Allen,Threes,Over,1.5
+68,Assists,Bulls @ 76ers,11:40,Jaylen Brown over 3.5 assists,60.9,1.64,1.6,Sportsbet,-2.6,Pass,Sportsbet 1.60,prop,Assists,,Jaylen Brown,Assists,Over,3.5
+69,Rebounds,Pistons @ Hornets,11:40,Dennis Schröder under 3.5 rebounds,60.9,1.64,1.56,Sportsbet,-5.1,Pass,Sportsbet 1.56,prop,Rebounds,,Dennis Schröder,Rebounds,Under,3.5
+70,Assists,Bulls @ 76ers,11:40,Tyrese Maxey under 5.5 assists,60.5,1.65,1.58,Sportsbet,-4.4,Pass,Sportsbet 1.58,prop,Assists,,Tyrese Maxey,Assists,Under,5.5
+71,Threes,Thunder @ Cavaliers,11:10,Bennett Stirtz under 1.5 threes,60.4,1.66,1.6,Sportsbet,-3.4,Pass,Sportsbet 1.60,prop,Threes,,Bennett Stirtz,Threes,Under,1.5
+72,Alt threes,Pistons @ Hornets,11:40,Naz Reid 2+ threes,60.3,1.66,1.43,Sportsbet,-13.8,Pass,Sportsbet 1.43,alt,Threes,,Naz Reid,Threes,Over,1.5
+73,Rebounds,Pistons @ Hornets,11:40,Ron Holland over 2.5 rebounds,59.9,1.67,1.58,Sportsbet,-5.4,Pass,Sportsbet 1.58,prop,Rebounds,,Ron Holland,Rebounds,Over,2.5
+74,Threes,Bulls @ 76ers,11:40,LeBron James under 1.5 threes,59.6,1.68,1.58,Sportsbet,-5.8,Pass,Sportsbet 1.58,prop,Threes,,LeBron James,Threes,Under,1.5
+75,Assists,Pistons @ Hornets,11:40,Paul Reed under 2.5 assists,59.4,1.68,1.68,Sportsbet,-0.1,Pass,Sportsbet 1.68,prop,Assists,,Paul Reed,Assists,Under,2.5
+76,Threes,Thunder @ Cavaliers,11:10,Sam Merrill under 2.5 threes,59.3,1.69,1.64,Sportsbet,-2.7,Pass,Sportsbet 1.64,prop,Threes,,Sam Merrill,Threes,Under,2.5
+77,Assists,Bulls @ 76ers,11:40,VJ Edgecombe under 3.5 assists,59.2,1.69,1.58,Sportsbet,-6.5,Pass,Sportsbet 1.58,prop,Assists,,VJ Edgecombe,Assists,Under,3.5
+78,Moneyline,Blazers @ Nuggets,13:10,Denver Nuggets ML,58.9,1.7,1.61,Sportsbet,-5.2,Pass,Sportsbet 1.61 · PointsBet 1.59 · Betr 1.58 · TAB 1.58,game,Moneyline,Denver Nuggets ML,,,,
+79,Threes,Pistons @ Hornets,11:40,Duncan Robinson over 2.5 threes,58.9,1.7,1.58,Sportsbet,-7.0,Pass,Sportsbet 1.58,prop,Threes,,Duncan Robinson,Threes,Over,2.5
+80,Assists,Pistons @ Hornets,11:40,Sion James under 2.5 assists,58.8,1.7,1.64,Sportsbet,-3.5,Pass,Sportsbet 1.64,prop,Assists,,Sion James,Assists,Under,2.5
+81,Assists,Thunder @ Cavaliers,11:10,Jared McCain over 1.5 assists,58.4,1.71,1.64,Sportsbet,-4.3,Pass,Sportsbet 1.64,prop,Assists,,Jared McCain,Assists,Over,1.5
+82,Total,Bulls @ 76ers,11:40,Bulls @ 76ers Under 239.5,58.2,1.72,1.90,Sportsbet,10.5,Check news,Sportsbet 1.90 · PointsBet 1.90 · TAB 1.90 · Betr 1.88,game,Total,Under 239.5,,,,
+83,Threes,Thunder @ Cavaliers,11:10,Shai Gilgeous-Alexander over 1.5 threes,58.0,1.72,1.68,Sportsbet,-2.6,Pass,Sportsbet 1.68,prop,Threes,,Shai Gilgeous-Alexander,Threes,Over,1.5
+84,Assists,Thunder @ Cavaliers,11:10,Donovan Mitchell over 4.5 assists,57.9,1.73,1.68,Sportsbet,-2.7,Pass,Sportsbet 1.68,prop,Assists,,Donovan Mitchell,Assists,Over,4.5
+85,Rebounds,Thunder @ Cavaliers,11:10,Shai Gilgeous-Alexander over 3.5 rebounds,57.9,1.73,1.64,Sportsbet,-5.1,Pass,Sportsbet 1.64,prop,Rebounds,,Shai Gilgeous-Alexander,Rebounds,Over,3.5
+86,Moneyline,Heat @ Lakers,14:10,Los Angeles Lakers ML,57.8,1.73,1.77,Betr,2.3,Pass,Betr 1.77 · PointsBet 1.77 · TAB 1.77 · Sportsbet 1.71,game,Moneyline,Los Angeles Lakers ML,,,,
+87,Rebounds,Bulls @ 76ers,11:40,VJ Edgecombe under 6.5 rebounds,57.8,1.73,1.64,Sportsbet,-5.2,Pass,Sportsbet 1.64,prop,Rebounds,,VJ Edgecombe,Rebounds,Under,6.5
+88,Assists,Bulls @ 76ers,11:40,Josh Giddey under 7.5 assists,57.8,1.73,1.64,Sportsbet,-5.2,Pass,Sportsbet 1.64,prop,Assists,,Josh Giddey,Assists,Under,7.5
+89,Moneyline,Suns @ Warriors,14:10,Golden State Warriors ML,57.8,1.73,1.57,PointsBet,-9.3,Pass,PointsBet 1.57 · TAB 1.56 · Sportsbet 1.54 · Betr 1.54,game,Moneyline,Golden State Warriors ML,,,,
+90,Rebounds,Pistons @ Hornets,11:40,Naz Reid under 8.5 rebounds,57.6,1.74,1.74,Sportsbet,0.2,Pass,Sportsbet 1.74,prop,Rebounds,,Naz Reid,Rebounds,Under,8.5
+91,Assists,Pistons @ Hornets,11:40,Ausar Thompson under 4.5 assists,57.6,1.74,1.74,Sportsbet,0.2,Pass,Sportsbet 1.74,prop,Assists,,Ausar Thompson,Assists,Under,4.5
+92,Assists,Thunder @ Cavaliers,11:10,Bennett Stirtz under 2.5 assists,57.6,1.74,1.64,Sportsbet,-5.5,Pass,Sportsbet 1.64,prop,Assists,,Bennett Stirtz,Assists,Under,2.5
+93,Total,Celtics @ Rockets,12:40,Celtics @ Rockets Over 219.5,57.4,1.74,1.90,PointsBet,9.1,Check news,PointsBet 1.90 · TAB 1.90 · Betr 1.87 · Sportsbet 1.85,game,Total,Over 219.5,,,,
+94,Rebounds,Bulls @ 76ers,11:40,Joel Embiid under 8.5 rebounds,57.4,1.74,1.64,Sportsbet,-5.8,Pass,Sportsbet 1.64,prop,Rebounds,,Joel Embiid,Rebounds,Under,8.5
+95,Rebounds,Pistons @ Hornets,11:40,Paul Reed under 8.5 rebounds,56.9,1.76,1.72,Sportsbet,-2.2,Pass,Sportsbet 1.72,prop,Rebounds,,Paul Reed,Rebounds,Under,8.5
+96,Blocks,Thunder @ Cavaliers,11:10,Isaiah Hartenstein over 0.5 blocks,56.8,1.76,1.68,Sportsbet,-4.6,Pass,Sportsbet 1.68,prop,Blocks,,Isaiah Hartenstein,Blocks,Over,0.5
+97,Assists,Thunder @ Cavaliers,11:10,Peyton Watson over 1.5 assists,56.7,1.76,1.78,Sportsbet,1.0,Pass,Sportsbet 1.78,prop,Assists,,Peyton Watson,Assists,Over,1.5
+98,Rebounds,Bulls @ 76ers,11:40,Leonard Miller under 4.5 rebounds,56.7,1.76,1.68,Sportsbet,-4.8,Pass,Sportsbet 1.68,prop,Rebounds,,Leonard Miller,Rebounds,Under,4.5
+99,Steals,Thunder @ Cavaliers,11:10,Ajay Mitchell under 1.5 steals,56.6,1.77,1.68,Sportsbet,-4.9,Pass,Sportsbet 1.68,prop,Steals,,Ajay Mitchell,Steals,Under,1.5
+100,Rebounds,Pistons @ Hornets,11:40,Brandon Miller under 5.5 rebounds,56.1,1.78,1.72,Sportsbet,-3.6,Pass,Sportsbet 1.72,prop,Rebounds,,Brandon Miller,Rebounds,Under,5.5
+101,Assists,Thunder @ Cavaliers,11:10,Isaiah Hartenstein under 3.5 assists,55.9,1.79,1.74,Sportsbet,-2.8,Pass,Sportsbet 1.74,prop,Assists,,Isaiah Hartenstein,Assists,Under,3.5
+102,Rebounds,Thunder @ Cavaliers,11:10,Isaiah Hartenstein under 10.5 rebounds,55.8,1.79,1.72,Sportsbet,-4.0,Pass,Sportsbet 1.72,prop,Rebounds,,Isaiah Hartenstein,Rebounds,Under,10.5
+103,Rebounds,Thunder @ Cavaliers,11:10,Jarrett Allen over 7.5 rebounds,55.7,1.8,1.74,Sportsbet,-3.2,Pass,Sportsbet 1.74,prop,Rebounds,,Jarrett Allen,Rebounds,Over,7.5
+104,Rebounds,Bulls @ 76ers,11:40,Tre Jones under 2.5 rebounds,55.5,1.8,1.72,Sportsbet,-4.5,Pass,Sportsbet 1.72,prop,Rebounds,,Tre Jones,Rebounds,Under,2.5
+105,Threes,Thunder @ Cavaliers,11:10,Peyton Watson under 1.5 threes,55.4,1.81,1.76,Sportsbet,-2.4,Pass,Sportsbet 1.76,prop,Threes,,Peyton Watson,Threes,Under,1.5
+106,Points,Thunder @ Cavaliers,11:10,Jared McCain under 14.5 points,55.3,1.81,1.8,Sportsbet,-0.4,Pass,Sportsbet 1.80,prop,Points,,Jared McCain,Points,Under,14.5
+107,Rebounds,Pistons @ Hornets,11:40,Duncan Robinson under 2.5 rebounds,55.2,1.81,1.72,Sportsbet,-5.0,Pass,Sportsbet 1.72,prop,Rebounds,,Duncan Robinson,Rebounds,Under,2.5
+108,Rebounds,Thunder @ Cavaliers,11:10,Aday Mara under 5.5 rebounds,55.2,1.81,1.72,Sportsbet,-5.1,Pass,Sportsbet 1.72,prop,Rebounds,,Aday Mara,Rebounds,Under,5.5
+109,P+R+A,Thunder @ Cavaliers,11:10,Jared McCain under 19.5 P+R+A,55.0,1.82,1.8,Sportsbet,-1.1,Pass,Sportsbet 1.80,prop,PRA,,Jared McCain,PRA,Under,19.5
+110,Total,Pistons @ Hornets,11:40,Pistons @ Hornets Over 210.5,54.9,1.82,1.90,PointsBet,4.3,Bet,PointsBet 1.90 · TAB 1.90 · Betr 1.84 (other lines: 211.5 Sportsbet),game,Total,Over 210.5,,,,
+111,Line,Nets @ Knicks,11:40,New York Knicks -13.5,54.8,1.82,1.83,PointsBet,0.3,Pass,"PointsBet 1.83 (other lines: -14.5 Betr, -14.5 Sportsbet, -14.5 TAB)",game,Spread,New York Knicks -13.5,,,,
+112,Assists,Bulls @ 76ers,11:40,LeBron James over 6.5 assists,54.8,1.82,1.72,Sportsbet,-5.7,Pass,Sportsbet 1.72,prop,Assists,,LeBron James,Assists,Over,6.5
+113,Moneyline,Wizards @ Magic,11:40,Orlando Magic ML,54.8,1.82,1.71,Sportsbet,-6.3,Pass,Sportsbet 1.71 · Betr 1.70 · TAB 1.70 · PointsBet 1.69,game,Moneyline,Orlando Magic ML,,,,
+114,Points,Thunder @ Cavaliers,11:10,Jarrett Allen over 11.5 points,54.6,1.83,1.8,Sportsbet,-1.7,Pass,Sportsbet 1.80,prop,Points,,Jarrett Allen,Points,Over,11.5
+115,Points,Thunder @ Cavaliers,11:10,Peyton Watson under 13.5 points,54.6,1.83,1.74,Sportsbet,-5.0,Pass,Sportsbet 1.74,prop,Points,,Peyton Watson,Points,Under,13.5
+116,Line,Pistons @ Hornets,11:40,Detroit Pistons -3.5,54.5,1.83,1.90,Sportsbet,3.5,Bet,Sportsbet 1.90 · TAB 1.90 · Betr 1.87 · PointsBet 1.83,game,Spread,Detroit Pistons -3.5,,,,
+117,Assists,Thunder @ Cavaliers,11:10,Evan Mobley over 3.5 assists,54.4,1.84,1.74,Sportsbet,-5.3,Pass,Sportsbet 1.74,prop,Assists,,Evan Mobley,Assists,Over,3.5
+118,Points,Pistons @ Hornets,11:40,Ausar Thompson under 10.5 points,54.3,1.84,1.8,Sportsbet,-2.3,Pass,Sportsbet 1.80,prop,Points,,Ausar Thompson,Points,Under,10.5
+119,Points,Pistons @ Hornets,11:40,Moussa Diabaté over 7.5 points,54.3,1.84,1.74,Sportsbet,-5.5,Pass,Sportsbet 1.74,prop,Points,,Moussa Diabaté,Points,Over,7.5
+120,Line,Suns @ Warriors,14:10,Phoenix Suns +4.5,54.2,1.85,1.90,Sportsbet,2.9,Pass,Sportsbet 1.90 · PointsBet 1.90 · TAB 1.90 · Betr 1.89,game,Spread,Phoenix Suns +4.5,,,,
+121,Threes,Pistons @ Hornets,11:40,Brandon Miller under 3.5 threes,54.2,1.85,1.85,Sportsbet,0.2,Pass,Sportsbet 1.85,prop,Threes,,Brandon Miller,Threes,Under,3.5
+122,Blocks,Thunder @ Cavaliers,11:10,Aday Mara under 1.5 blocks,54.2,1.85,1.8,Sportsbet,-2.4,Pass,Sportsbet 1.80,prop,Blocks,,Aday Mara,Blocks,Under,1.5
+123,P+R+A,Pistons @ Hornets,11:40,Naz Reid under 26.5 P+R+A,54.1,1.85,1.8,Sportsbet,-2.6,Pass,Sportsbet 1.80,prop,PRA,,Naz Reid,PRA,Under,26.5
+124,Total,Pelicans @ Grizzlies,12:10,Pelicans @ Grizzlies Under 235.5,54.0,1.85,1.90,PointsBet,2.7,Pass,"PointsBet 1.90 · TAB 1.90 (other lines: 234.5 Betr, 234.5 Sportsbet)",game,Total,Under 235.5,,,,
+125,P+R+A,Pistons @ Hornets,11:40,Moussa Diabaté under 20.5 P+R+A,54.0,1.85,1.8,Sportsbet,-2.8,Pass,Sportsbet 1.80,prop,PRA,,Moussa Diabaté,PRA,Under,20.5
+126,P+R+A,Bulls @ 76ers,11:40,Matas Buzelis under 22.5 P+R+A,53.9,1.86,1.8,Sportsbet,-2.9,Pass,Sportsbet 1.80,prop,PRA,,Matas Buzelis,PRA,Under,22.5
+127,Total,Heat @ Lakers,14:10,Heat @ Lakers Under 238.5,53.8,1.86,1.90,Sportsbet,2.2,Pass,Sportsbet 1.90 · TAB 1.90 · Betr 1.87 (other lines: 237.5 PointsBet),game,Total,Under 238.5,,,,
+128,Line,Kings @ Mavericks,12:10,Dallas Mavericks -9.5,53.7,1.86,1.90,PointsBet,2.1,Pass,PointsBet 1.90 · Sportsbet 1.88 · Betr 1.83,game,Spread,Dallas Mavericks -9.5,,,,
+129,Line,Bucks @ Timberwolves,12:10,Minnesota Timberwolves -10.5,53.7,1.86,1.90,PointsBet,2.0,Pass,PointsBet 1.90 · TAB 1.90 · Betr 1.88 · Sportsbet 1.85,game,Spread,Minnesota Timberwolves -10.5,,,,
+130,Threes,Bulls @ 76ers,11:40,Jalen Smith under 1.5 threes,53.7,1.86,1.87,Sportsbet,0.4,Pass,Sportsbet 1.87,prop,Threes,,Jalen Smith,Threes,Under,1.5
+131,Points,Pistons @ Hornets,11:40,Duncan Robinson over 12.5 points,53.7,1.86,1.8,Sportsbet,-3.3,Pass,Sportsbet 1.80,prop,Points,,Duncan Robinson,Points,Over,12.5
+132,Points,Pistons @ Hornets,11:40,Grayson Allen over 11.5 points,53.6,1.87,1.8,Sportsbet,-3.6,Pass,Sportsbet 1.80,prop,Points,,Grayson Allen,Points,Over,11.5
+133,Points,Bulls @ 76ers,11:40,Caleb Wilson under 19.5 points,53.6,1.87,1.8,Sportsbet,-3.6,Pass,Sportsbet 1.80,prop,Points,,Caleb Wilson,Points,Under,19.5
+134,Line,Thunder @ Cavaliers,11:10,Cleveland Cavaliers -3.5,53.5,1.87,1.90,PointsBet,1.6,Pass,PointsBet 1.90 · Betr 1.84 (other lines: -4.5 Sportsbet),game,Spread,Cleveland Cavaliers -3.5,,,,
+135,Points,Thunder @ Cavaliers,11:10,Isaiah Hartenstein under 10.5 points,53.5,1.87,1.78,Sportsbet,-4.8,Pass,Sportsbet 1.78,prop,Points,,Isaiah Hartenstein,Points,Under,10.5
+136,Total,Blazers @ Nuggets,13:10,Blazers @ Nuggets Over 229.5,53.4,1.87,1.90,Sportsbet,1.5,Pass,Sportsbet 1.90 · Betr 1.86 · TAB 1.85 (other lines: 230.5 PointsBet),game,Total,Over 229.5,,,,
+137,Line,Bulls @ 76ers,11:40,Philadelphia 76ers -11.5,53.4,1.87,1.90,Sportsbet,1.5,Pass,Sportsbet 1.90 · PointsBet 1.90 · TAB 1.90 · Betr 1.88,game,Spread,Philadelphia 76ers -11.5,,,,
+138,Points,Thunder @ Cavaliers,11:10,Aday Mara under 8.5 points,53.4,1.87,1.8,Sportsbet,-3.8,Pass,Sportsbet 1.80,prop,Points,,Aday Mara,Points,Under,8.5
+139,Total,Hawks @ Pacers,11:40,Hawks @ Pacers Under 232.5,53.3,1.88,1.90,PointsBet,1.3,Pass,PointsBet 1.90 · TAB 1.90 · Betr 1.87 (other lines: 231.5 Sportsbet),game,Total,Under 232.5,,,,
+140,Threes,Bulls @ 76ers,11:40,Norman Powell under 2.5 threes,53.3,1.88,1.8,Sportsbet,-4.1,Pass,Sportsbet 1.80,prop,Threes,,Norman Powell,Threes,Under,2.5
+141,Points,Pistons @ Hornets,11:40,Sion James over 4.5 points,53.2,1.88,1.8,Sportsbet,-4.2,Pass,Sportsbet 1.80,prop,Points,,Sion James,Points,Over,4.5
+142,P+R+A,Bulls @ 76ers,11:40,Norman Powell under 25.5 P+R+A,53.2,1.88,1.8,Sportsbet,-4.2,Pass,Sportsbet 1.80,prop,PRA,,Norman Powell,PRA,Under,25.5
+143,Threes,Thunder @ Cavaliers,11:10,Donovan Mitchell under 2.5 threes,53.2,1.88,1.78,Sportsbet,-5.2,Pass,Sportsbet 1.78,prop,Threes,,Donovan Mitchell,Threes,Under,2.5
+144,Points,Bulls @ 76ers,11:40,VJ Edgecombe over 12.5 points,53.2,1.88,1.78,Sportsbet,-5.3,Pass,Sportsbet 1.78,prop,Points,,VJ Edgecombe,Points,Over,12.5
+145,Total,Kings @ Mavericks,12:10,Kings @ Mavericks Under 234.5,53.1,1.88,1.96,Sportsbet,4.0,Bet,Sportsbet 1.96 · TAB 1.90 · Betr 1.88 (other lines: 235.5 PointsBet),game,Total,Under 234.5,,,,
+146,Threes,Bulls @ 76ers,11:40,VJ Edgecombe over 1.5 threes,53.1,1.88,1.8,Sportsbet,-4.4,Pass,Sportsbet 1.80,prop,Threes,,VJ Edgecombe,Threes,Over,1.5
+147,Points,Bulls @ 76ers,11:40,Tre Jones over 9.5 points,53.0,1.89,1.8,Sportsbet,-4.6,Pass,Sportsbet 1.80,prop,Points,,Tre Jones,Points,Over,9.5
+148,Total,Raptors @ Clippers,14:10,Raptors @ Clippers Over 219.5,52.9,1.89,1.90,PointsBet,0.6,Pass,PointsBet 1.90 · Sportsbet 1.87 · Betr 1.86 (other lines: 220.5 TAB),game,Total,Over 219.5,,,,
+149,P+R+A,Pistons @ Hornets,11:40,Sion James over 9.5 P+R+A,52.9,1.89,1.8,Sportsbet,-4.9,Pass,Sportsbet 1.80,prop,PRA,,Sion James,PRA,Over,9.5
+150,Threes,Thunder @ Cavaliers,11:10,Jared McCain under 2.5 threes,52.8,1.89,1.89,Sportsbet,-0.2,Pass,Sportsbet 1.89,prop,Threes,,Jared McCain,Threes,Under,2.5
+151,Rebounds,Pistons @ Hornets,11:40,Cade Cunningham under 5.5 rebounds,52.8,1.89,1.8,Sportsbet,-5.0,Pass,Sportsbet 1.80,prop,Rebounds,,Cade Cunningham,Rebounds,Under,5.5
+152,P+R+A,Pistons @ Hornets,11:40,Ausar Thompson under 21.5 P+R+A,52.7,1.9,1.87,Sportsbet,-1.5,Pass,Sportsbet 1.87,prop,PRA,,Ausar Thompson,PRA,Under,21.5
+153,P+R+A,Thunder @ Cavaliers,11:10,Shai Gilgeous-Alexander over 38.5 P+R+A,52.7,1.9,1.8,Sportsbet,-5.1,Pass,Sportsbet 1.80,prop,PRA,,Shai Gilgeous-Alexander,PRA,Over,38.5
+154,Rebounds,Pistons @ Hornets,11:40,Daniss Jenkins over 2.5 rebounds,52.6,1.9,1.8,Sportsbet,-5.3,Pass,Sportsbet 1.80,prop,Rebounds,,Daniss Jenkins,Rebounds,Over,2.5
+155,Line,Pelicans @ Grizzlies,12:10,Memphis Grizzlies -5.5,52.5,1.9,1.87,PointsBet,-1.9,Pass,PointsBet 1.87 · Sportsbet 1.85 (other lines: -6.5 Betr),game,Spread,Memphis Grizzlies -5.5,,,,
+156,Points,Pistons @ Hornets,11:40,Naz Reid under 15.5 points,52.5,1.9,1.8,Sportsbet,-5.5,Pass,Sportsbet 1.80,prop,Points,,Naz Reid,Points,Under,15.5
+157,Points,Bulls @ 76ers,11:40,Jalen Smith under 11.5 points,52.5,1.9,1.8,Sportsbet,-5.6,Pass,Sportsbet 1.80,prop,Points,,Jalen Smith,Points,Under,11.5
+158,P+R+A,Bulls @ 76ers,11:40,Tre Jones under 16.5 P+R+A,52.4,1.91,1.8,Sportsbet,-5.7,Pass,Sportsbet 1.80,prop,PRA,,Tre Jones,PRA,Under,16.5
+159,Rebounds,Thunder @ Cavaliers,11:10,Donovan Mitchell over 4.5 rebounds,52.4,1.91,1.8,Sportsbet,-5.7,Pass,Sportsbet 1.80,prop,Rebounds,,Donovan Mitchell,Rebounds,Over,4.5
+160,Line,Hawks @ Pacers,11:40,Atlanta Hawks -4.5,52.3,1.91,1.90,PointsBet,-0.6,Pass,PointsBet 1.90 · Sportsbet 1.88 · Betr 1.83,game,Spread,Atlanta Hawks -4.5,,,,
+161,P+R+A,Pistons @ Hornets,11:40,Daniss Jenkins under 17.5 P+R+A,52.3,1.91,1.8,Sportsbet,-5.8,Pass,Sportsbet 1.80,prop,PRA,,Daniss Jenkins,PRA,Under,17.5
+162,P+R+A,Thunder @ Cavaliers,11:10,Jarrett Allen over 21.5 P+R+A,52.2,1.92,1.88,Sportsbet,-1.8,Pass,Sportsbet 1.88,prop,PRA,,Jarrett Allen,PRA,Over,21.5
+163,P+R+A,Bulls @ 76ers,11:40,Jalen Smith under 21.5 P+R+A,52.2,1.92,1.85,Sportsbet,-3.5,Pass,Sportsbet 1.85,prop,PRA,,Jalen Smith,PRA,Under,21.5
+164,Points,Bulls @ 76ers,11:40,Joel Embiid over 22.5 points,52.2,1.92,1.8,Sportsbet,-6.0,Pass,Sportsbet 1.80,prop,Points,,Joel Embiid,Points,Over,22.5
+165,P+R+A,Bulls @ 76ers,11:40,LeBron James over 31.5 P+R+A,52.2,1.92,1.8,Sportsbet,-6.1,Pass,Sportsbet 1.80,prop,PRA,,LeBron James,PRA,Over,31.5
+166,Assists,Thunder @ Cavaliers,11:10,James Harden over 6.5 assists,52.1,1.92,1.91,Sportsbet,-0.5,Pass,Sportsbet 1.91,prop,Assists,,James Harden,Assists,Over,6.5
+167,Total,Bucks @ Timberwolves,12:10,Bucks @ Timberwolves Under 233.5,52.1,1.92,1.90,PointsBet,-0.9,Pass,PointsBet 1.90 · TAB 1.90 · Sportsbet 1.86 · Betr 1.85,game,Total,Under 233.5,,,,
+168,Total,Suns @ Warriors,14:10,Suns @ Warriors Over 227.5,52.1,1.92,1.90,TAB,-1.0,Pass,TAB 1.90 · Sportsbet 1.85 · Betr 1.85 (other lines: 228.5 PointsBet),game,Total,Over 227.5,,,,
+169,Assists,Bulls @ 76ers,11:40,Jalen Smith under 1.5 assists,52.0,1.92,1.87,Sportsbet,-2.7,Pass,Sportsbet 1.87,prop,Assists,,Jalen Smith,Assists,Under,1.5
+170,Assists,Bulls @ 76ers,11:40,Tre Jones under 3.5 assists,52.0,1.92,1.85,Sportsbet,-3.8,Pass,Sportsbet 1.85,prop,Assists,,Tre Jones,Assists,Under,3.5
+171,P+R+A,Bulls @ 76ers,11:40,Josh Giddey under 25.5 P+R+A,51.9,1.93,1.85,Sportsbet,-4.0,Pass,Sportsbet 1.85,prop,PRA,,Josh Giddey,PRA,Under,25.5
+172,P+R+A,Pistons @ Hornets,11:40,Duncan Robinson over 17.5 P+R+A,51.9,1.93,1.84,Sportsbet,-4.4,Pass,Sportsbet 1.84,prop,PRA,,Duncan Robinson,PRA,Over,17.5
+173,Line,Heat @ Lakers,14:10,Los Angeles Lakers -2.5,51.8,1.93,1.95,PointsBet,1.1,Pass,PointsBet 1.95 · Betr 1.92 · Sportsbet 1.90,game,Spread,Los Angeles Lakers -2.5,,,,
+174,P+R+A,Thunder @ Cavaliers,11:10,Aday Mara under 15.5 P+R+A,51.8,1.93,1.85,Sportsbet,-4.1,Pass,Sportsbet 1.85,prop,PRA,,Aday Mara,PRA,Under,15.5
+175,Line,Celtics @ Rockets,12:40,Houston Rockets -5.5,51.7,1.93,2.00,PointsBet,3.5,Pass,PointsBet 2.00 · Betr 1.93 · Sportsbet 1.90,game,Spread,Houston Rockets -5.5,,,,
+176,Assists,Thunder @ Cavaliers,11:10,Shai Gilgeous-Alexander under 5.5 assists,51.7,1.93,1.85,Sportsbet,-4.3,Pass,Sportsbet 1.85,prop,Assists,,Shai Gilgeous-Alexander,Assists,Under,5.5
+177,Rebounds,Bulls @ 76ers,11:40,LeBron James under 6.5 rebounds,51.7,1.93,1.85,Sportsbet,-4.4,Pass,Sportsbet 1.85,prop,Rebounds,,LeBron James,Rebounds,Under,6.5
+178,P+R+A,Thunder @ Cavaliers,11:10,Evan Mobley over 28.5 P+R+A,51.6,1.94,1.86,Sportsbet,-4.0,Pass,Sportsbet 1.86,prop,PRA,,Evan Mobley,PRA,Over,28.5
+179,Rebounds,Bulls @ 76ers,11:40,Caleb Wilson over 5.5 rebounds,51.6,1.94,1.84,Sportsbet,-5.1,Pass,Sportsbet 1.84,prop,Rebounds,,Caleb Wilson,Rebounds,Over,5.5
+180,P+R+A,Bulls @ 76ers,11:40,Tyrese Maxey over 34.5 P+R+A,51.5,1.94,1.84,Sportsbet,-5.3,Pass,Sportsbet 1.84,prop,PRA,,Tyrese Maxey,PRA,Over,34.5
+181,Line,Jazz @ Spurs,12:40,San Antonio Spurs -16.5,51.4,1.95,1.95,PointsBet,0.2,Pass,PointsBet 1.95 · Sportsbet 1.94 · Betr 1.89,game,Spread,San Antonio Spurs -16.5,,,,
+182,Total,Thunder @ Cavaliers,11:10,Thunder @ Cavaliers Under 228.5,51.3,1.95,1.90,Sportsbet,-2.4,Pass,Sportsbet 1.90 · PointsBet 1.90 · Betr 1.89 · TAB 1.85,game,Total,Under 228.5,,,,
+183,Total,Nets @ Knicks,11:40,Nets @ Knicks Over 221.5,51.3,1.95,1.90,Sportsbet,-2.6,Pass,Sportsbet 1.90 · PointsBet 1.90 · TAB 1.90 · Betr 1.89,game,Total,Over 221.5,,,,
+184,Points,Pistons @ Hornets,11:40,Brandon Miller over 22.5 points,51.3,1.95,1.85,Sportsbet,-5.1,Pass,Sportsbet 1.85,prop,Points,,Brandon Miller,Points,Over,22.5
+185,P+R+A,Pistons @ Hornets,11:40,Paul Reed under 24.5 P+R+A,51.2,1.95,1.92,Sportsbet,-1.7,Pass,Sportsbet 1.92,prop,PRA,,Paul Reed,PRA,Under,24.5
+186,Line,Wizards @ Magic,11:40,Washington Wizards +2.5,51.2,1.95,1.90,Betr,-2.8,Pass,Betr 1.90 · PointsBet 1.90 · Sportsbet 1.88,game,Spread,Washington Wizards +2.5,,,,
+187,Rebounds,Pistons @ Hornets,11:40,John Collins under 6.5 rebounds,51.2,1.95,1.89,Sportsbet,-3.2,Pass,Sportsbet 1.89,prop,Rebounds,,John Collins,Rebounds,Under,6.5
+188,Assists,Pistons @ Hornets,11:40,Daniss Jenkins over 3.5 assists,51.1,1.96,1.87,Sportsbet,-4.4,Pass,Sportsbet 1.87,prop,Assists,,Daniss Jenkins,Assists,Over,3.5
+189,Points,Bulls @ 76ers,11:40,Jaylen Brown over 22.5 points,51.1,1.96,1.86,Sportsbet,-5.0,Pass,Sportsbet 1.86,prop,Points,,Jaylen Brown,Points,Over,22.5
+190,Points,Thunder @ Cavaliers,11:10,James Harden over 18.5 points,51.1,1.96,1.86,Sportsbet,-5.0,Pass,Sportsbet 1.86,prop,Points,,James Harden,Points,Over,18.5
+191,Total,Wizards @ Magic,11:40,Wizards @ Magic Over 224.5,51.0,1.96,1.90,Sportsbet,-3.1,Pass,Sportsbet 1.90 · PointsBet 1.90 · TAB 1.90 · Betr 1.86,game,Total,Over 224.5,,,,
+192,P+R+A,Pistons @ Hornets,11:40,Grayson Allen over 17.5 P+R+A,51.0,1.96,1.87,Sportsbet,-4.7,Pass,Sportsbet 1.87,prop,PRA,,Grayson Allen,PRA,Over,17.5
+193,Rebounds,Bulls @ 76ers,11:40,Jaylen Brown under 6.5 rebounds,50.9,1.96,1.87,Sportsbet,-4.8,Pass,Sportsbet 1.87,prop,Rebounds,,Jaylen Brown,Rebounds,Under,6.5
+194,Rebounds,Pistons @ Hornets,11:40,Ausar Thompson under 6.5 rebounds,50.8,1.97,1.89,Sportsbet,-4.1,Pass,Sportsbet 1.89,prop,Rebounds,,Ausar Thompson,Rebounds,Under,6.5
+195,Total,Jazz @ Spurs,12:40,Jazz @ Spurs Under 230.5,50.6,1.98,1.95,PointsBet,-1.3,Pass,PointsBet 1.95 · Betr 1.91 · TAB 1.90 (other lines: 231.5 Sportsbet),game,Total,Under 230.5,,,,
+196,Rebounds,Pistons @ Hornets,11:40,Sion James over 2.5 rebounds,50.6,1.98,1.89,Sportsbet,-4.4,Pass,Sportsbet 1.89,prop,Rebounds,,Sion James,Rebounds,Over,2.5
+197,Points,Thunder @ Cavaliers,11:10,Donovan Mitchell over 22.5 points,50.6,1.98,1.88,Sportsbet,-4.8,Pass,Sportsbet 1.88,prop,Points,,Donovan Mitchell,Points,Over,22.5
+198,Assists,Pistons @ Hornets,11:40,Grayson Allen over 2.5 assists,50.5,1.98,1.89,Sportsbet,-4.5,Pass,Sportsbet 1.89,prop,Assists,,Grayson Allen,Assists,Over,2.5
+199,Rebounds,Thunder @ Cavaliers,11:10,James Harden over 4.5 rebounds,50.5,1.98,1.88,Sportsbet,-5.1,Pass,Sportsbet 1.88,prop,Rebounds,,James Harden,Rebounds,Over,4.5
+200,P+R+A,Bulls @ 76ers,11:40,Jaylen Brown over 33.5 P+R+A,50.5,1.98,1.88,Sportsbet,-5.2,Pass,Sportsbet 1.88,prop,PRA,,Jaylen Brown,PRA,Over,33.5
+201,Rebounds,Thunder @ Cavaliers,11:10,Ajay Mitchell under 3.5 rebounds,50.4,1.98,1.89,Sportsbet,-4.7,Pass,Sportsbet 1.89,prop,Rebounds,,Ajay Mitchell,Rebounds,Under,3.5
+202,Line,Raptors @ Clippers,14:10,Toronto Raptors -5.5,50.3,1.99,1.95,Sportsbet,-1.9,Pass,Sportsbet 1.95 · PointsBet 1.95 (other lines: -4.5 Betr),game,Spread,Toronto Raptors -5.5,,,,
+203,Line,Blazers @ Nuggets,13:10,Portland Trail Blazers +3.5,50.1,2.0,2.00,PointsBet,0.2,Pass,PointsBet 2.00 · Betr 1.94 (other lines: +4.5 Sportsbet),game,Spread,Portland Trail Blazers +3.5,,,,
+204,Points,Pistons @ Hornets,11:40,Daniss Jenkins under 10.5 points,50.1,2.0,1.88,Sportsbet,-5.8,Pass,Sportsbet 1.88,prop,Points,,Daniss Jenkins,Points,Under,10.5
+205,Points,Pistons @ Hornets,11:40,Paul Reed under 13.5 points,50.0,2.0,1.93,Sportsbet,-3.5,Pass,Sportsbet 1.93,prop,Points,,Paul Reed,Points,Under,13.5
+206,P+R+A,Pistons @ Hornets,11:40,John Collins under 20.5 P+R+A,49.9,2.0,1.92,Sportsbet,-4.2,Pass,Sportsbet 1.92,prop,PRA,,John Collins,PRA,Under,20.5
+207,Points,Bulls @ 76ers,11:40,Tyrese Maxey over 25.5 points,49.9,2.0,1.92,Sportsbet,-4.2,Pass,Sportsbet 1.92,prop,Points,,Tyrese Maxey,Points,Over,25.5
+208,P+R+A,Thunder @ Cavaliers,11:10,Donovan Mitchell over 32.5 P+R+A,49.9,2.0,1.91,Sportsbet,-4.6,Pass,Sportsbet 1.91,prop,PRA,,Donovan Mitchell,PRA,Over,32.5
+209,Points,Pistons @ Hornets,11:40,Dennis Schröder over 11.5 points,49.9,2.0,1.89,Sportsbet,-5.7,Pass,Sportsbet 1.89,prop,Points,,Dennis Schröder,Points,Over,11.5
+210,Line,Blazers @ Nuggets,13:10,Denver Nuggets -3.5,49.9,2.0,1.83,Betr,-8.7,Pass,Betr 1.83 · PointsBet 1.83 (other lines: -4.5 Sportsbet),game,Spread,Denver Nuggets -3.5,,,,
+211,P+R+A,Thunder @ Cavaliers,11:10,Ajay Mitchell under 25.5 P+R+A,49.8,2.01,1.96,Sportsbet,-2.3,Pass,Sportsbet 1.96,prop,PRA,,Ajay Mitchell,PRA,Under,25.5
+212,P+R+A,Bulls @ 76ers,11:40,VJ Edgecombe under 22.5 P+R+A,49.7,2.01,1.9,Sportsbet,-5.6,Pass,Sportsbet 1.90,prop,PRA,,VJ Edgecombe,PRA,Under,22.5
+213,Points,Pistons @ Hornets,11:40,John Collins over 12.5 points,49.7,2.01,1.89,Sportsbet,-6.0,Pass,Sportsbet 1.89,prop,Points,,John Collins,Points,Over,12.5
+214,Line,Raptors @ Clippers,14:10,Los Angeles Clippers +5.5,49.7,2.01,1.87,PointsBet,-7.1,Pass,PointsBet 1.87 · Sportsbet 1.85 (other lines: +4.5 Betr),game,Spread,Los Angeles Clippers +5.5,,,,
+215,P+R+A,Bulls @ 76ers,11:40,Caleb Wilson under 27.5 P+R+A,49.6,2.02,1.93,Sportsbet,-4.3,Pass,Sportsbet 1.93,prop,PRA,,Caleb Wilson,PRA,Under,27.5
+216,P+R+A,Thunder @ Cavaliers,11:10,Peyton Watson over 19.5 P+R+A,49.5,2.02,1.91,Sportsbet,-5.4,Pass,Sportsbet 1.91,prop,PRA,,Peyton Watson,PRA,Over,19.5
+217,Line,Thunder @ Cavaliers,11:10,Oklahoma City Thunder +4.5,49.5,2.02,1.90,Sportsbet,-5.9,Pass,"Sportsbet 1.90 (other lines: +3.5 Betr, +3.5 PointsBet)",game,Spread,Oklahoma City Thunder +4.5,,,,
+218,Points,Pistons @ Hornets,11:40,Ron Holland under 6.5 points,49.4,2.02,1.93,Sportsbet,-4.8,Pass,Sportsbet 1.93,prop,Points,,Ron Holland,Points,Under,6.5
+219,Threes,Thunder @ Cavaliers,11:10,James Harden over 2.5 threes,49.4,2.02,1.91,Sportsbet,-5.6,Pass,Sportsbet 1.91,prop,Threes,,James Harden,Threes,Over,2.5
+220,Total,Jazz @ Spurs,12:40,Jazz @ Spurs Over 230.5,49.4,2.02,1.90,TAB,-6.2,Pass,TAB 1.90 · PointsBet 1.87 · Betr 1.86 (other lines: 231.5 Sportsbet),game,Total,Over 230.5,,,,
+221,Points,Bulls @ 76ers,11:40,Norman Powell under 19.5 points,49.3,2.03,1.93,Sportsbet,-4.8,Pass,Sportsbet 1.93,prop,Points,,Norman Powell,Points,Under,19.5
+222,Total,Raptors @ Clippers,14:10,Raptors @ Clippers Under 220.5,49.3,2.03,1.90,TAB,-6.3,Pass,"TAB 1.90 (other lines: 219.5 Betr, 219.5 PointsBet, 219.5 Sportsbet)",game,Total,Under 220.5,,,,
+223,Points,Bulls @ 76ers,11:40,Leonard Miller under 8.5 points,49.1,2.04,1.92,Sportsbet,-5.7,Pass,Sportsbet 1.92,prop,Points,,Leonard Miller,Points,Under,8.5
+224,Assists,Pistons @ Hornets,11:40,Brandon Miller under 2.5 assists,49.0,2.04,1.96,Sportsbet,-3.9,Pass,Sportsbet 1.96,prop,Assists,,Brandon Miller,Assists,Under,2.5
+225,Points,Bulls @ 76ers,11:40,Matas Buzelis under 14.5 points,49.0,2.04,1.96,Sportsbet,-4.0,Pass,Sportsbet 1.96,prop,Points,,Matas Buzelis,Points,Under,14.5
+226,Points,Thunder @ Cavaliers,11:10,Sam Merrill over 9.5 points,49.0,2.04,1.93,Sportsbet,-5.4,Pass,Sportsbet 1.93,prop,Points,,Sam Merrill,Points,Over,9.5
+227,P+R+A,Bulls @ 76ers,11:40,Joel Embiid under 35.5 P+R+A,49.0,2.04,1.92,Sportsbet,-5.8,Pass,Sportsbet 1.92,prop,PRA,,Joel Embiid,PRA,Under,35.5
+228,Total,Wizards @ Magic,11:40,Wizards @ Magic Under 224.5,49.0,2.04,1.91,Betr,-6.4,Pass,Betr 1.91 · Sportsbet 1.90 · PointsBet 1.90 · TAB 1.90,game,Total,Under 224.5,,,,
+229,Threes,Bulls @ 76ers,11:40,Matas Buzelis under 1.5 threes,48.9,2.04,1.96,Sportsbet,-4.2,Pass,Sportsbet 1.96,prop,Threes,,Matas Buzelis,Threes,Under,1.5
+230,Total,Hawks @ Pacers,11:40,Hawks @ Pacers Over 231.5,48.9,2.04,1.86,Sportsbet,-9.1,Pass,"Sportsbet 1.86 (other lines: 232.5 Betr, 232.5 PointsBet, 232.5 TAB)",game,Total,Over 231.5,,,,
+231,P+R+A,Pistons @ Hornets,11:40,Cade Cunningham under 37.5 P+R+A,48.8,2.05,1.96,Sportsbet,-4.3,Pass,Sportsbet 1.96,prop,PRA,,Cade Cunningham,PRA,Under,37.5
+232,P+R+A,Thunder @ Cavaliers,11:10,James Harden over 30.5 P+R+A,48.8,2.05,1.96,Sportsbet,-4.3,Pass,Sportsbet 1.96,prop,PRA,,James Harden,PRA,Over,30.5
+233,Line,Wizards @ Magic,11:40,Orlando Magic -2.5,48.8,2.05,1.92,Sportsbet,-6.3,Pass,Sportsbet 1.92 · PointsBet 1.90 · Betr 1.87,game,Spread,Orlando Magic -2.5,,,,
+234,Total,Blazers @ Nuggets,13:10,Blazers @ Nuggets Under 230.5,48.8,2.05,1.90,PointsBet,-7.3,Pass,"PointsBet 1.90 (other lines: 229.5 Betr, 229.5 Sportsbet, 229.5 TAB)",game,Total,Under 230.5,,,,
+235,Rebounds,Thunder @ Cavaliers,11:10,Bennett Stirtz under 1.5 rebounds,48.7,2.05,1.96,Sportsbet,-4.6,Pass,Sportsbet 1.96,prop,Rebounds,,Bennett Stirtz,Rebounds,Under,1.5
+236,Total,Thunder @ Cavaliers,11:10,Thunder @ Cavaliers Over 228.5,48.7,2.05,1.95,TAB,-5.1,Pass,TAB 1.95 · Sportsbet 1.90 · PointsBet 1.90 · Betr 1.88,game,Total,Over 228.5,,,,
+237,Total,Nets @ Knicks,11:40,Nets @ Knicks Under 221.5,48.7,2.05,1.90,Sportsbet,-7.4,Pass,Sportsbet 1.90 · PointsBet 1.90 · TAB 1.90 · Betr 1.88,game,Total,Under 221.5,,,,
+238,Points,Bulls @ 76ers,11:40,Josh Giddey under 11.5 points,48.6,2.06,1.96,Sportsbet,-4.7,Pass,Sportsbet 1.96,prop,Points,,Josh Giddey,Points,Under,11.5
+239,P+R+A,Thunder @ Cavaliers,11:10,Isaiah Hartenstein under 23.5 P+R+A,48.6,2.06,1.96,Sportsbet,-4.8,Pass,Sportsbet 1.96,prop,PRA,,Isaiah Hartenstein,PRA,Under,23.5
+240,Points,Thunder @ Cavaliers,11:10,Bennett Stirtz under 7.5 points,48.6,2.06,1.96,Sportsbet,-4.8,Pass,Sportsbet 1.96,prop,Points,,Bennett Stirtz,Points,Under,7.5
+241,Line,Jazz @ Spurs,12:40,Utah Jazz +16.5,48.6,2.06,1.88,Betr,-8.6,Pass,Betr 1.88 · PointsBet 1.87 · Sportsbet 1.86,game,Spread,Utah Jazz +16.5,,,,
+242,Points,Thunder @ Cavaliers,11:10,Shai Gilgeous-Alexander over 29.5 points,48.5,2.06,1.96,Sportsbet,-4.9,Pass,Sportsbet 1.96,prop,Points,,Shai Gilgeous-Alexander,Points,Over,29.5
+243,Total,Heat @ Lakers,14:10,Heat @ Lakers Over 237.5,48.4,2.07,1.90,PointsBet,-8.0,Pass,"PointsBet 1.90 (other lines: 238.5 Betr, 238.5 Sportsbet, 238.5 TAB)",game,Total,Over 237.5,,,,
+244,Points,Thunder @ Cavaliers,11:10,Evan Mobley over 16.5 points,48.3,2.07,2.0,Sportsbet,-3.3,Pass,Sportsbet 2.00,prop,Points,,Evan Mobley,Points,Over,16.5
+245,Points,Bulls @ 76ers,11:40,LeBron James over 18.5 points,48.3,2.07,1.96,Sportsbet,-5.3,Pass,Sportsbet 1.96,prop,Points,,LeBron James,Points,Over,18.5
+246,Rebounds,Pistons @ Hornets,11:40,Grayson Allen under 2.5 rebounds,48.3,2.07,1.96,Sportsbet,-5.4,Pass,Sportsbet 1.96,prop,Rebounds,,Grayson Allen,Rebounds,Under,2.5
+247,Line,Celtics @ Rockets,12:40,Boston Celtics +5.5,48.3,2.07,1.90,Sportsbet,-8.3,Pass,Sportsbet 1.90 · Betr 1.84 · PointsBet 1.83,game,Spread,Boston Celtics +5.5,,,,
+248,Points,Thunder @ Cavaliers,11:10,Ajay Mitchell under 17.5 points,48.2,2.07,2.02,Sportsbet,-2.6,Pass,Sportsbet 2.02,prop,Points,,Ajay Mitchell,Points,Under,17.5
+249,Points,Pistons @ Hornets,11:40,Cade Cunningham under 22.5 points,48.2,2.07,1.96,Sportsbet,-5.6,Pass,Sportsbet 1.96,prop,Points,,Cade Cunningham,Points,Under,22.5
+250,Total,Pelicans @ Grizzlies,12:10,Pelicans @ Grizzlies Over 234.5,48.2,2.07,1.90,Sportsbet,-8.4,Pass,"Sportsbet 1.90 · Betr 1.85 (other lines: 235.5 PointsBet, 235.5 TAB)",game,Total,Over 234.5,,,,
+251,Line,Heat @ Lakers,14:10,Miami Heat +2.5,48.2,2.07,1.90,Sportsbet,-8.5,Pass,Sportsbet 1.90 · PointsBet 1.87 · Betr 1.85,game,Spread,Miami Heat +2.5,,,,
+252,P+R+A,Pistons @ Hornets,11:40,Dennis Schröder under 19.5 P+R+A,48.1,2.08,1.96,Sportsbet,-5.6,Pass,Sportsbet 1.96,prop,PRA,,Dennis Schröder,PRA,Under,19.5
+253,Assists,Bulls @ 76ers,11:40,Caleb Wilson under 2.5 assists,48.1,2.08,1.96,Sportsbet,-5.7,Pass,Sportsbet 1.96,prop,Assists,,Caleb Wilson,Assists,Under,2.5
+254,Line,Nets @ Knicks,11:40,Brooklyn Nets +14.5,48.1,2.08,1.90,Sportsbet,-8.6,Pass,Sportsbet 1.90 · TAB 1.90 · Betr 1.88 (other lines: +13.5 PointsBet),game,Spread,Brooklyn Nets +14.5,,,,
+255,P+R+A,Thunder @ Cavaliers,11:10,Bennett Stirtz under 11.5 P+R+A,48.0,2.08,2.0,Sportsbet,-4.0,Pass,Sportsbet 2.00,prop,PRA,,Bennett Stirtz,PRA,Under,11.5
+256,Rebounds,Thunder @ Cavaliers,11:10,Peyton Watson over 4.5 rebounds,48.0,2.08,1.96,Sportsbet,-5.9,Pass,Sportsbet 1.96,prop,Rebounds,,Peyton Watson,Rebounds,Over,4.5
+257,Total,Suns @ Warriors,14:10,Suns @ Warriors Under 227.5,47.9,2.09,1.96,Sportsbet,-6.1,Pass,Sportsbet 1.96 · Betr 1.92 · TAB 1.90 (other lines: 228.5 PointsBet),game,Total,Under 227.5,,,,
+258,P+R+A,Pistons @ Hornets,11:40,Brandon Miller under 30.5 P+R+A,47.9,2.09,1.96,Sportsbet,-6.1,Pass,Sportsbet 1.96,prop,PRA,,Brandon Miller,PRA,Under,30.5
+259,Total,Bucks @ Timberwolves,12:10,Bucks @ Timberwolves Over 233.5,47.9,2.09,1.95,Sportsbet,-6.7,Pass,Sportsbet 1.95 · Betr 1.92 · PointsBet 1.90 · TAB 1.90,game,Total,Over 233.5,,,,
+260,Assists,Thunder @ Cavaliers,11:10,Jarrett Allen over 1.5 assists,47.7,2.1,2.02,Sportsbet,-3.7,Pass,Sportsbet 2.02,prop,Assists,,Jarrett Allen,Assists,Over,1.5
+261,Rebounds,Thunder @ Cavaliers,11:10,Evan Mobley over 8.5 rebounds,47.7,2.1,2.0,Sportsbet,-4.7,Pass,Sportsbet 2.00,prop,Rebounds,,Evan Mobley,Rebounds,Over,8.5
+262,Line,Hawks @ Pacers,11:40,Indiana Pacers +4.5,47.7,2.1,1.94,Betr,-7.5,Pass,Betr 1.94 · Sportsbet 1.92 · PointsBet 1.90,game,Spread,Indiana Pacers +4.5,,,,
+263,Line,Pelicans @ Grizzlies,12:10,New Orleans Pelicans +5.5,47.5,2.11,1.96,Sportsbet,-6.8,Pass,Sportsbet 1.96 · PointsBet 1.95 (other lines: +6.5 Betr),game,Spread,New Orleans Pelicans +5.5,,,,
+264,Total,Pistons @ Hornets,11:40,Pistons @ Hornets Under 211.5,47.3,2.11,1.87,Sportsbet,-11.5,Pass,"Sportsbet 1.87 (other lines: 210.5 Betr, 210.5 PointsBet, 210.5 TAB)",game,Total,Under 211.5,,,,
+265,Total,Kings @ Mavericks,12:10,Kings @ Mavericks Over 234.5,46.9,2.13,1.90,TAB,-10.8,Pass,TAB 1.90 · Betr 1.89 · Sportsbet 1.85 (other lines: 235.5 PointsBet),game,Total,Over 234.5,,,,
+266,Threes,Bulls @ 76ers,11:40,Jaylen Brown over 1.5 threes,46.8,2.14,2.02,Sportsbet,-5.5,Pass,Sportsbet 2.02,prop,Threes,,Jaylen Brown,Threes,Over,1.5
+267,Rebounds,Pistons @ Hornets,11:40,Moussa Diabaté under 9.5 rebounds,46.7,2.14,2.1,Sportsbet,-2.0,Pass,Sportsbet 2.10,prop,Rebounds,,Moussa Diabaté,Rebounds,Under,9.5
+268,Assists,Pistons @ Hornets,11:40,Cade Cunningham under 8.5 assists,46.6,2.15,2.08,Sportsbet,-3.2,Pass,Sportsbet 2.08,prop,Assists,,Cade Cunningham,Assists,Under,8.5
+269,Line,Bulls @ 76ers,11:40,Chicago Bulls +11.5,46.6,2.15,1.90,Sportsbet,-11.5,Pass,Sportsbet 1.90 · PointsBet 1.90 · TAB 1.90 · Betr 1.89,game,Spread,Chicago Bulls +11.5,,,,
+270,Line,Bucks @ Timberwolves,12:10,Milwaukee Bucks +10.5,46.3,2.16,1.95,Sportsbet,-9.7,Pass,Sportsbet 1.95 · PointsBet 1.90 · TAB 1.90 · Betr 1.89,game,Spread,Milwaukee Bucks +10.5,,,,
+271,Line,Kings @ Mavericks,12:10,Sacramento Kings +9.5,46.3,2.16,1.94,Betr,-10.2,Pass,Betr 1.94 · Sportsbet 1.92 · PointsBet 1.90,game,Spread,Sacramento Kings +9.5,,,,
+272,Assists,Bulls @ 76ers,11:40,Joel Embiid over 4.5 assists,46.1,2.17,2.05,Sportsbet,-5.4,Pass,Sportsbet 2.05,prop,Assists,,Joel Embiid,Assists,Over,4.5
+273,Assists,Thunder @ Cavaliers,11:10,Aday Mara over 1.5 assists,45.9,2.18,2.05,Sportsbet,-5.8,Pass,Sportsbet 2.05,prop,Assists,,Aday Mara,Assists,Over,1.5
+274,Line,Suns @ Warriors,14:10,Golden State Warriors -4.5,45.8,2.18,1.90,Sportsbet,-12.9,Pass,Sportsbet 1.90 · PointsBet 1.90 · TAB 1.90 · Betr 1.88,game,Spread,Golden State Warriors -4.5,,,,
+275,Line,Pistons @ Hornets,11:40,Charlotte Hornets +3.5,45.5,2.2,2.00,PointsBet,-9.0,Pass,PointsBet 2.00 · Sportsbet 1.90 · Betr 1.90 · TAB 1.90,game,Spread,Charlotte Hornets +3.5,,,,
+276,Rebounds,Bulls @ 76ers,11:40,Jalen Smith under 7.5 rebounds,45.4,2.2,2.1,Sportsbet,-4.7,Pass,Sportsbet 2.10,prop,Rebounds,,Jalen Smith,Rebounds,Under,7.5
+277,Rebounds,Thunder @ Cavaliers,11:10,Sam Merrill over 2.5 rebounds,45.4,2.2,2.08,Sportsbet,-5.5,Pass,Sportsbet 2.08,prop,Rebounds,,Sam Merrill,Rebounds,Over,2.5
+278,Threes,Bulls @ 76ers,11:40,Tyrese Maxey over 2.5 threes,45.4,2.2,2.08,Sportsbet,-5.5,Pass,Sportsbet 2.08,prop,Threes,,Tyrese Maxey,Threes,Over,2.5
+279,Moneyline,Wizards @ Magic,11:40,Washington Wizards ML,45.2,2.21,2.25,PointsBet,1.7,Pass,PointsBet 2.25 · Betr 2.20 · TAB 2.20 · Sportsbet 2.19,game,Moneyline,Washington Wizards ML,,,,
+280,Assists,Thunder @ Cavaliers,11:10,Ajay Mitchell under 3.5 assists,44.1,2.27,2.15,Sportsbet,-5.2,Pass,Sportsbet 2.15,prop,Assists,,Ajay Mitchell,Assists,Under,3.5
+281,Rebounds,Thunder @ Cavaliers,11:10,Jared McCain under 2.5 rebounds,43.8,2.28,2.15,Sportsbet,-5.9,Pass,Sportsbet 2.15,prop,Rebounds,,Jared McCain,Rebounds,Under,2.5
+282,Rebounds,Bulls @ 76ers,11:40,Matas Buzelis under 4.5 rebounds,43.7,2.29,2.15,Sportsbet,-6.0,Pass,Sportsbet 2.15,prop,Rebounds,,Matas Buzelis,Rebounds,Under,4.5
+283,Rebounds,Bulls @ 76ers,11:40,Tyrese Maxey under 3.5 rebounds,43.7,2.29,2.15,Sportsbet,-6.1,Pass,Sportsbet 2.15,prop,Rebounds,,Tyrese Maxey,Rebounds,Under,3.5
+284,Assists,Pistons @ Hornets,11:40,Dennis Schröder under 4.5 assists,43.4,2.3,2.15,Sportsbet,-6.6,Pass,Sportsbet 2.15,prop,Assists,,Dennis Schröder,Assists,Under,4.5
+285,Rebounds,Bulls @ 76ers,11:40,Josh Giddey under 5.5 rebounds,43.4,2.3,2.15,Sportsbet,-6.6,Pass,Sportsbet 2.15,prop,Rebounds,,Josh Giddey,Rebounds,Under,5.5
+286,Total,Celtics @ Rockets,12:40,Celtics @ Rockets Under 219.5,42.6,2.35,1.96,Sportsbet,-16.5,Pass,Sportsbet 1.96 · Betr 1.90 · PointsBet 1.90 · TAB 1.90,game,Total,Under 219.5,,,,
+287,Moneyline,Suns @ Warriors,14:10,Phoenix Suns ML,42.2,2.37,2.55,Sportsbet,7.7,Bet,Sportsbet 2.55 · Betr 2.55 · TAB 2.50 · PointsBet 2.45,game,Moneyline,Phoenix Suns ML,,,,
+288,Blocks,Thunder @ Cavaliers,11:10,Jarrett Allen over 1.5 blocks,42.2,2.37,2.2,Sportsbet,-7.2,Pass,Sportsbet 2.20,prop,Blocks,,Jarrett Allen,Blocks,Over,1.5
+289,Moneyline,Heat @ Lakers,14:10,Miami Heat ML,42.2,2.37,2.19,Sportsbet,-7.6,Pass,Sportsbet 2.19 · Betr 2.10 · PointsBet 2.10 · TAB 2.10,game,Moneyline,Miami Heat ML,,,,
+290,Threes,Thunder @ Cavaliers,11:10,Evan Mobley over 1.5 threes,41.8,2.39,2.4,Sportsbet,0.4,Pass,Sportsbet 2.40,prop,Threes,,Evan Mobley,Threes,Over,1.5
+291,Total,Bulls @ 76ers,11:40,Bulls @ 76ers Over 239.5,41.8,2.39,1.90,Sportsbet,-20.5,Pass,Sportsbet 1.90 · PointsBet 1.90 · TAB 1.90 · Betr 1.89,game,Total,Over 239.5,,,,
+292,Moneyline,Blazers @ Nuggets,13:10,Portland Trail Blazers ML,41.1,2.43,2.45,Betr,0.8,Pass,Betr 2.45 · TAB 2.45 · PointsBet 2.40 · Sportsbet 2.39,game,Moneyline,Portland Trail Blazers ML,,,,
+293,Alt threes,Pistons @ Hornets,11:40,Cade Cunningham 3+ threes,40.4,2.48,2.6,Sportsbet,5.0,Pass,Sportsbet 2.60,alt,Threes,,Cade Cunningham,Threes,Over,2.5
+294,Alt threes,Pistons @ Hornets,11:40,Duncan Robinson 4+ threes,39.4,2.54,2.4,Sportsbet,-5.4,Pass,Sportsbet 2.40,alt,Threes,,Duncan Robinson,Threes,Over,3.5
+295,Alt threes,Bulls @ 76ers,11:40,Caleb Wilson 3+ threes,39.2,2.55,2.55,Sportsbet,-0.0,Pass,Sportsbet 2.55,alt,Threes,,Caleb Wilson,Threes,Over,2.5
+296,Assists,Bulls @ 76ers,11:40,Matas Buzelis under 1.5 assists,39.0,2.56,2.4,Sportsbet,-6.3,Pass,Sportsbet 2.40,prop,Assists,,Matas Buzelis,Assists,Under,1.5
+297,Threes,Pistons @ Hornets,11:40,Daniss Jenkins over 1.5 threes,38.5,2.6,2.45,Sportsbet,-5.7,Pass,Sportsbet 2.45,prop,Threes,,Daniss Jenkins,Threes,Over,1.5
+298,Moneyline,Thunder @ Cavaliers,11:10,Oklahoma City Thunder ML,37.7,2.65,2.57,Sportsbet,-3.2,Pass,Sportsbet 2.57 · Betr 2.50 · PointsBet 2.45 · TAB 2.45,game,Moneyline,Oklahoma City Thunder ML,,,,
+299,Threes,Pistons @ Hornets,11:40,Grayson Allen over 2.5 threes,37.5,2.67,2.5,Sportsbet,-6.2,Pass,Sportsbet 2.50,prop,Threes,,Grayson Allen,Threes,Over,2.5
+300,Moneyline,Pistons @ Hornets,11:40,Charlotte Hornets ML,36.7,2.72,2.45,Betr,-10.1,Pass,Betr 2.45 · PointsBet 2.45 · Sportsbet 2.42 · TAB 2.40,game,Moneyline,Charlotte Hornets ML,,,,
+301,Moneyline,Hawks @ Pacers,11:40,Indiana Pacers ML,35.9,2.79,2.65,PointsBet,-4.9,Pass,PointsBet 2.65 · Betr 2.60 · TAB 2.60 · Sportsbet 2.55,game,Moneyline,Indiana Pacers ML,,,,
+302,Moneyline,Raptors @ Clippers,14:10,Los Angeles Clippers ML,35.0,2.86,2.60,Sportsbet,-9.1,Pass,Sportsbet 2.60 · Betr 2.60 · PointsBet 2.60 · TAB 2.60,game,Moneyline,Los Angeles Clippers ML,,,,
+303,Alt threes,Thunder @ Cavaliers,11:10,Shai Gilgeous-Alexander 3+ threes,34.4,2.91,3.05,Sportsbet,5.0,Pass,Sportsbet 3.05,alt,Threes,,Shai Gilgeous-Alexander,Threes,Over,2.5
+304,Moneyline,Celtics @ Rockets,12:40,Boston Celtics ML,33.7,2.97,2.67,Sportsbet,-10.1,Pass,Sportsbet 2.67 · Betr 2.65 · PointsBet 2.65 · TAB 2.65,game,Moneyline,Boston Celtics ML,,,,
+305,Alt threes,Pistons @ Hornets,11:40,Sion James 2+ threes,33.3,3.0,3.1,Sportsbet,3.1,Pass,Sportsbet 3.10,alt,Threes,,Sion James,Threes,Over,1.5
+306,Moneyline,Pelicans @ Grizzlies,12:10,New Orleans Pelicans ML,33.0,3.03,2.85,Betr,-6.0,Pass,Betr 2.85 · PointsBet 2.85 · Sportsbet 2.84 · TAB 2.70,game,Moneyline,New Orleans Pelicans ML,,,,
+307,Alt threes,Thunder @ Cavaliers,11:10,James Harden 4+ threes,30.4,3.29,3.3,Sportsbet,0.3,Pass,Sportsbet 3.30,alt,Threes,,James Harden,Threes,Over,3.5
+308,Alt threes,Bulls @ 76ers,11:40,VJ Edgecombe 3+ threes,29.8,3.36,3.5,Sportsbet,4.3,Pass,Sportsbet 3.50,alt,Threes,,VJ Edgecombe,Threes,Over,2.5
+309,Alt threes,Pistons @ Hornets,11:40,Brandon Miller 5+ threes,29.6,3.38,3.0,Sportsbet,-11.3,Pass,Sportsbet 3.00,alt,Threes,,Brandon Miller,Threes,Over,4.5
+310,Alt threes,Thunder @ Cavaliers,11:10,Jared McCain 4+ threes,28.4,3.52,3.15,Sportsbet,-10.5,Pass,Sportsbet 3.15,alt,Threes,,Jared McCain,Threes,Over,3.5
+311,Alt threes,Bulls @ 76ers,11:40,Matas Buzelis 3+ threes,28.1,3.56,3.4,Sportsbet,-4.6,Pass,Sportsbet 3.40,alt,Threes,,Matas Buzelis,Threes,Over,2.5
+312,Alt threes,Thunder @ Cavaliers,11:10,Donovan Mitchell 4+ threes,28.0,3.57,3.6,Sportsbet,0.9,Pass,Sportsbet 3.60,alt,Threes,,Donovan Mitchell,Threes,Over,3.5
+313,Alt threes,Bulls @ 76ers,11:40,Norman Powell 4+ threes,28.0,3.57,3.4,Sportsbet,-4.8,Pass,Sportsbet 3.40,alt,Threes,,Norman Powell,Threes,Over,3.5
+314,Alt threes,Bulls @ 76ers,11:40,Tyrese Maxey 4+ threes,26.9,3.72,3.75,Sportsbet,0.8,Pass,Sportsbet 3.75,alt,Threes,,Tyrese Maxey,Threes,Over,3.5
+315,Alt threes,Bulls @ 76ers,11:40,Jaylen Brown 3+ threes,24.4,4.1,4.2,Sportsbet,2.3,Pass,Sportsbet 4.20,alt,Threes,,Jaylen Brown,Threes,Over,2.5
+316,Alt threes,Pistons @ Hornets,11:40,Duncan Robinson 5+ threes,24.1,4.15,4.1,Sportsbet,-1.4,Pass,Sportsbet 4.10,alt,Threes,,Duncan Robinson,Threes,Over,4.5
+317,Alt threes,Bulls @ 76ers,11:40,Jalen Smith 3+ threes,24.0,4.17,3.8,Sportsbet,-8.8,Pass,Sportsbet 3.80,alt,Threes,,Jalen Smith,Threes,Over,2.5
+318,Alt threes,Thunder @ Cavaliers,11:10,Sam Merrill 4+ threes,22.9,4.37,3.9,Sportsbet,-10.6,Pass,Sportsbet 3.90,alt,Threes,,Sam Merrill,Threes,Over,3.5
+319,Alt threes,Pistons @ Hornets,11:40,Cade Cunningham 4+ threes,22.7,4.41,5.5,Sportsbet,24.8,Bet,Sportsbet 5.50,alt,Threes,,Cade Cunningham,Threes,Over,3.5
+320,Alt threes,Bulls @ 76ers,11:40,Caleb Wilson 4+ threes,21.8,4.59,5.0,Sportsbet,8.9,Bet,Sportsbet 5.00,alt,Threes,,Caleb Wilson,Threes,Over,3.5
+321,Moneyline,Kings @ Mavericks,12:10,Sacramento Kings ML,21.8,4.59,4.25,Sportsbet,-7.2,Pass,Sportsbet 4.25 · Betr 4.25 · PointsBet 4.10 · TAB 4.00,game,Moneyline,Sacramento Kings ML,,,,
+322,Alt threes,Pistons @ Hornets,11:40,Grayson Allen 4+ threes,20.5,4.88,4.75,Sportsbet,-2.8,Pass,Sportsbet 4.75,alt,Threes,,Grayson Allen,Threes,Over,3.5
+323,Alt threes,Pistons @ Hornets,11:40,Naz Reid 4+ threes,19.9,5.03,4.4,Sportsbet,-12.6,Pass,Sportsbet 4.40,alt,Threes,,Naz Reid,Threes,Over,3.5
+324,Moneyline,Bucks @ Timberwolves,12:10,Milwaukee Bucks ML,19.7,5.08,4.75,PointsBet,-6.6,Pass,PointsBet 4.75 · Sportsbet 4.70 · Betr 4.70 · TAB 4.50,game,Moneyline,Milwaukee Bucks ML,,,,
+325,Alt threes,Bulls @ 76ers,11:40,LeBron James 3+ threes,19.4,5.15,5.5,Sportsbet,6.8,Pass,Sportsbet 5.50,alt,Threes,,LeBron James,Threes,Over,2.5
+326,Alt threes,Thunder @ Cavaliers,11:10,Shai Gilgeous-Alexander 4+ threes,18.1,5.52,7.0,Sportsbet,27.0,Bet,Sportsbet 7.00,alt,Threes,,Shai Gilgeous-Alexander,Threes,Over,3.5
+327,Alt threes,Pistons @ Hornets,11:40,Daniss Jenkins 3+ threes,18.0,5.56,5.7,Sportsbet,2.8,Pass,Sportsbet 5.70,alt,Threes,,Daniss Jenkins,Threes,Over,2.5
+328,Moneyline,Bulls @ 76ers,11:40,Chicago Bulls ML,17.8,5.62,5.50,Betr,-2.0,Pass,Betr 5.50 · PointsBet 5.50 · Sportsbet 5.20 · TAB 5.00,game,Moneyline,Chicago Bulls ML,,,,
+329,Alt threes,Pistons @ Hornets,11:40,Brandon Miller 6+ threes,17.6,5.68,5.0,Sportsbet,-12.0,Pass,Sportsbet 5.00,alt,Threes,,Brandon Miller,Threes,Over,5.5
+330,Alt threes,Thunder @ Cavaliers,11:10,James Harden 5+ threes,17.0,5.88,6.5,Sportsbet,10.4,Bet,Sportsbet 6.50,alt,Threes,,James Harden,Threes,Over,4.5
+331,Alt threes,Thunder @ Cavaliers,11:10,Jared McCain 5+ threes,15.6,6.41,6.0,Sportsbet,-6.7,Pass,Sportsbet 6.00,alt,Threes,,Jared McCain,Threes,Over,4.5
+332,Alt threes,Thunder @ Cavaliers,11:10,Donovan Mitchell 5+ threes,15.3,6.54,7.25,Sportsbet,10.7,Bet,Sportsbet 7.25,alt,Threes,,Donovan Mitchell,Threes,Over,4.5
+333,Alt threes,Bulls @ 76ers,11:40,Norman Powell 5+ threes,15.2,6.58,6.25,Sportsbet,-4.7,Pass,Sportsbet 6.25,alt,Threes,,Norman Powell,Threes,Over,4.5
+334,Alt threes,Bulls @ 76ers,11:40,VJ Edgecombe 4+ threes,14.9,6.71,7.75,Sportsbet,15.2,Bet,Sportsbet 7.75,alt,Threes,,VJ Edgecombe,Threes,Over,3.5
+335,Alt threes,Bulls @ 76ers,11:40,Tyrese Maxey 5+ threes,14.5,6.9,8.0,Sportsbet,15.6,Bet,Sportsbet 8.00,alt,Threes,,Tyrese Maxey,Threes,Over,4.5
+336,Alt threes,Bulls @ 76ers,11:40,Josh Giddey 3+ threes,14.2,7.04,6.5,Sportsbet,-7.7,Pass,Sportsbet 6.50,alt,Threes,,Josh Giddey,Threes,Over,2.5
+337,Alt threes,Pistons @ Hornets,11:40,Dennis Schröder 3+ threes,14.1,7.09,6.75,Sportsbet,-4.6,Pass,Sportsbet 6.75,alt,Threes,,Dennis Schröder,Threes,Over,2.5
+338,Alt threes,Bulls @ 76ers,11:40,Matas Buzelis 4+ threes,13.7,7.3,7.75,Sportsbet,6.0,Pass,Sportsbet 7.75,alt,Threes,,Matas Buzelis,Threes,Over,3.5
+339,Alt threes,Pistons @ Hornets,11:40,Duncan Robinson 6+ threes,13.5,7.41,8.0,Sportsbet,8.4,Bet,Sportsbet 8.00,alt,Threes,,Duncan Robinson,Threes,Over,5.5
+340,Alt threes,Bulls @ 76ers,11:40,Joel Embiid 3+ threes,13.4,7.46,6.5,Sportsbet,-13.1,Pass,Sportsbet 6.50,alt,Threes,,Joel Embiid,Threes,Over,2.5
+341,Moneyline,Nets @ Knicks,11:40,Brooklyn Nets ML,13.3,7.52,7.50,Betr,-0.0,Pass,Betr 7.50 · Sportsbet 7.00 · PointsBet 7.00 · TAB 6.80,game,Moneyline,Brooklyn Nets ML,,,,
+342,Alt threes,Thunder @ Cavaliers,11:10,Sam Merrill 5+ threes,11.8,8.47,7.5,Sportsbet,-11.8,Pass,Sportsbet 7.50,alt,Threes,,Sam Merrill,Threes,Over,4.5
+343,Alt threes,Pistons @ Hornets,11:40,Cade Cunningham 5+ threes,11.6,8.62,12.5,Sportsbet,45.1,Pass,Sportsbet 12.50,alt,Threes,,Cade Cunningham,Threes,Over,4.5
+344,Alt threes,Bulls @ 76ers,11:40,Jaylen Brown 4+ threes,11.3,8.85,10.5,Sportsbet,18.6,Pass,Sportsbet 10.50,alt,Threes,,Jaylen Brown,Threes,Over,3.5
+345,Alt threes,Bulls @ 76ers,11:40,Jalen Smith 4+ threes,11.1,9.01,8.25,Sportsbet,-8.6,Pass,Sportsbet 8.25,alt,Threes,,Jalen Smith,Threes,Over,3.5
+346,Alt threes,Bulls @ 76ers,11:40,Caleb Wilson 5+ threes,11.0,9.09,11.0,Sportsbet,21.1,Pass,Sportsbet 11.00,alt,Threes,,Caleb Wilson,Threes,Over,4.5
+347,Moneyline,Jazz @ Spurs,12:40,Utah Jazz ML,10.6,9.43,8.75,Sportsbet,-7.6,Pass,Sportsbet 8.75 · Betr 8.50 · PointsBet 8.00 · TAB 8.00,game,Moneyline,Utah Jazz ML,,,,
+348,Alt threes,Pistons @ Hornets,11:40,Grayson Allen 5+ threes,10.2,9.8,10.0,Sportsbet,1.5,Pass,Sportsbet 10.00,alt,Threes,,Grayson Allen,Threes,Over,4.5
+349,Alt threes,Pistons @ Hornets,11:40,Brandon Miller 7+ threes,9.8,10.2,10.0,Sportsbet,-2.2,Pass,Sportsbet 10.00,alt,Threes,,Brandon Miller,Threes,Over,6.5
+350,Alt threes,Pistons @ Hornets,11:40,Naz Reid 5+ threes,9.8,10.2,9.5,Sportsbet,-7.1,Pass,Sportsbet 9.50,alt,Threes,,Naz Reid,Threes,Over,4.5
+351,Alt threes,Thunder @ Cavaliers,11:10,James Harden 6+ threes,8.8,11.36,13.0,Sportsbet,14.1,Pass,Sportsbet 13.00,alt,Threes,,James Harden,Threes,Over,5.5
+352,Alt threes,Thunder @ Cavaliers,11:10,Shai Gilgeous-Alexander 5+ threes,8.7,11.49,15.0,Sportsbet,30.7,Pass,Sportsbet 15.00,alt,Threes,,Shai Gilgeous-Alexander,Threes,Over,4.5
+353,Alt threes,Bulls @ 76ers,11:40,LeBron James 4+ threes,8.3,12.05,14.0,Sportsbet,16.8,Pass,Sportsbet 14.00,alt,Threes,,LeBron James,Threes,Over,3.5
+354,Alt threes,Thunder @ Cavaliers,11:10,Jared McCain 6+ threes,7.9,12.66,13.0,Sportsbet,2.3,Pass,Sportsbet 13.00,alt,Threes,,Jared McCain,Threes,Over,5.5
+355,Alt threes,Thunder @ Cavaliers,11:10,Donovan Mitchell 6+ threes,7.7,12.99,15.0,Sportsbet,15.4,Pass,Sportsbet 15.00,alt,Threes,,Donovan Mitchell,Threes,Over,5.5
+356,Alt threes,Bulls @ 76ers,11:40,Norman Powell 6+ threes,7.7,12.99,13.0,Sportsbet,-0.2,Pass,Sportsbet 13.00,alt,Threes,,Norman Powell,Threes,Over,5.5
+357,Alt threes,Pistons @ Hornets,11:40,Daniss Jenkins 4+ threes,7.6,13.16,14.0,Sportsbet,6.0,Pass,Sportsbet 14.00,alt,Threes,,Daniss Jenkins,Threes,Over,3.5
+358,Alt threes,Bulls @ 76ers,11:40,Tyrese Maxey 6+ threes,7.2,13.89,17.0,Sportsbet,22.2,Pass,Sportsbet 17.00,alt,Threes,,Tyrese Maxey,Threes,Over,5.5
+359,Alt threes,Pistons @ Hornets,11:40,Duncan Robinson 7+ threes,7.1,14.08,15.0,Sportsbet,7.0,Pass,Sportsbet 15.00,alt,Threes,,Duncan Robinson,Threes,Over,6.5
+360,Alt threes,Bulls @ 76ers,11:40,VJ Edgecombe 5+ threes,6.8,14.71,18.0,Sportsbet,21.9,Pass,Sportsbet 18.00,alt,Threes,,VJ Edgecombe,Threes,Over,4.5
+361,Alt threes,Bulls @ 76ers,11:40,Matas Buzelis 5+ threes,6.1,16.39,17.0,Sportsbet,3.7,Pass,Sportsbet 17.00,alt,Threes,,Matas Buzelis,Threes,Over,4.5
+362,Alt threes,Thunder @ Cavaliers,11:10,Sam Merrill 6+ threes,5.6,17.86,15.0,Sportsbet,-16.1,Pass,Sportsbet 15.00,alt,Threes,,Sam Merrill,Threes,Over,5.5
+363,Alt threes,Pistons @ Hornets,11:40,Cade Cunningham 6+ threes,5.5,18.18,26.0,Sportsbet,43.0,Pass,Sportsbet 26.00,alt,Threes,,Cade Cunningham,Threes,Over,5.5
+364,Alt threes,Pistons @ Hornets,11:40,Dennis Schröder 4+ threes,5.5,18.18,19.0,Sportsbet,4.8,Pass,Sportsbet 19.00,alt,Threes,,Dennis Schröder,Threes,Over,3.5
+365,Alt threes,Bulls @ 76ers,11:40,Josh Giddey 4+ threes,5.5,18.18,17.0,Sportsbet,-5.8,Pass,Sportsbet 17.00,alt,Threes,,Josh Giddey,Threes,Over,3.5
+366,Alt threes,Bulls @ 76ers,11:40,Caleb Wilson 6+ threes,5.2,19.23,23.0,Sportsbet,18.6,Pass,Sportsbet 23.00,alt,Threes,,Caleb Wilson,Threes,Over,5.5
+367,Alt threes,Pistons @ Hornets,11:40,Brandon Miller 8+ threes,5.1,19.61,20.0,Sportsbet,2.5,Pass,Sportsbet 20.00,alt,Threes,,Brandon Miller,Threes,Over,7.5
+368,Alt threes,Bulls @ 76ers,11:40,Joel Embiid 4+ threes,5.1,19.61,18.0,Sportsbet,-7.7,Pass,Sportsbet 18.00,alt,Threes,,Joel Embiid,Threes,Over,3.5
+369,Alt threes,Pistons @ Hornets,11:40,John Collins 4+ threes,5.0,20.0,19.0,Sportsbet,-4.1,Pass,Sportsbet 19.00,alt,Threes,,John Collins,Threes,Over,3.5
+370,Alt threes,Bulls @ 76ers,11:40,Jaylen Brown 5+ threes,4.8,20.83,26.0,Sportsbet,24.9,Pass,Sportsbet 26.00,alt,Threes,,Jaylen Brown,Threes,Over,4.5
+371,Alt threes,Pistons @ Hornets,11:40,Grayson Allen 6+ threes,4.7,21.28,21.0,Sportsbet,-1.8,Pass,Sportsbet 21.00,alt,Threes,,Grayson Allen,Threes,Over,5.5
+372,Alt threes,Bulls @ 76ers,11:40,Jalen Smith 5+ threes,4.7,21.28,19.0,Sportsbet,-10.9,Pass,Sportsbet 19.00,alt,Threes,,Jalen Smith,Threes,Over,4.5
+373,Alt threes,Pistons @ Hornets,11:40,Naz Reid 6+ threes,4.5,22.22,21.0,Sportsbet,-6.2,Pass,Sportsbet 21.00,alt,Threes,,Naz Reid,Threes,Over,5.5
+374,Alt threes,Thunder @ Cavaliers,11:10,James Harden 7+ threes,4.2,23.81,31.0,Sportsbet,31.6,Pass,Sportsbet 31.00,alt,Threes,,James Harden,Threes,Over,6.5
+375,Alt threes,Thunder @ Cavaliers,11:10,Jared McCain 7+ threes,3.7,27.03,26.0,Sportsbet,-3.0,Pass,Sportsbet 26.00,alt,Threes,,Jared McCain,Threes,Over,6.5
+376,Alt threes,Thunder @ Cavaliers,11:10,Donovan Mitchell 7+ threes,3.6,27.78,36.0,Sportsbet,30.8,Pass,Sportsbet 36.00,alt,Threes,,Donovan Mitchell,Threes,Over,6.5
+377,Alt threes,Bulls @ 76ers,11:40,Norman Powell 7+ threes,3.6,27.78,23.0,Sportsbet,-16.6,Pass,Sportsbet 23.00,alt,Threes,,Norman Powell,Threes,Over,6.5
+378,Alt threes,Pistons @ Hornets,11:40,Duncan Robinson 8+ threes,3.5,28.57,36.0,Sportsbet,27.5,Pass,Sportsbet 36.00,alt,Threes,,Duncan Robinson,Threes,Over,7.5
+379,Alt threes,Pistons @ Hornets,11:40,Brandon Miller 9+ threes,2.6,38.46,46.0,Sportsbet,17.4,Pass,Sportsbet 46.00,alt,Threes,,Brandon Miller,Threes,Over,8.5
+380,Alt threes,Thunder @ Cavaliers,11:10,Sam Merrill 7+ threes,2.5,40.0,36.0,Sportsbet,-10.1,Pass,Sportsbet 36.00,alt,Threes,,Sam Merrill,Threes,Over,6.5

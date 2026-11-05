@@ -187,6 +187,7 @@ window.dash = (() => {
   .cp-sport { display: inline-flex; gap: 2px; margin-left: 6px; vertical-align: 2px; background: rgba(255,255,255,.06); border-radius: 8px; padding: 2px; }
   .cp-sport button { font: inherit; font-size: 1.05rem; letter-spacing: .02em; color: #A6A6B2; background: none; border: 0; border-radius: 6px; padding: 2px 8px; min-height: 32px; cursor: pointer; }
   .cp-sport button[aria-pressed="true"] { color: #0B0B10; background: var(--cp-accent); }
+  .cp-sport button[data-sport="nba"][aria-pressed="true"] { background: #FF8A3D; }
   .cp-sport button:focus-visible { outline: 2px solid #5B8CFF; outline-offset: 2px; }
   .nf-app { display: flex; flex-direction: column; gap: 28px; }
   .nf-app[hidden], .nf-tabs[hidden], .cp-upd[hidden], .nf-panel[hidden] { display: none; }

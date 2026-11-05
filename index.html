@@ -7,7 +7,7 @@
 <meta name="theme-color" content="#07070A">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
-<link rel="apple-touch-icon" href="icons/apple-touch-icon.png?v=3">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png?v=4">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -25,7 +25,7 @@
     --cds-surface-popover: #0E0E13; --cds-border: #35353F; --cds-shadow-popover: 0 8px 24px rgba(0,0,0,.4); --cds-text-secondary: #A6A6B2;
     --cds-chart-grid: #22222A; --cds-chart-muted: #6E6E7A; --cds-chart-reference: #4A4A55;
     --color-fg: #F2F2F5; --color-fg-muted: #A6A6B2; --color-bg: #0B0B10; --color-panel: #141419; --color-border-line: #25252D;
-    --color-ok: #C6FF3D; --color-bad: #FF5C9E; --color-warn: #FFA8CB;
+    --color-ok: #5B8CFF; --color-bad: #FF5C9E; --color-warn: #FFA8CB;
     color-scheme: dark;
   }
   html, body { margin: 0; background: #050507; color: #F2F2F5; }
@@ -61,7 +61,7 @@ window.dash = (() => {
   return {
     data, calc: (id, o) => { calcs[id] = o; }, loader: () => {},
     onData: (fn) => { subs.push(fn); try { fn(); } catch (e) { console.error(e); } },
-    colors: ['#C6FF3D', '#FF3D8B', '#4FD1C5', '#F6C343', '#C792EA', '#FF6B9A', '#9AE66E', '#B0BEC5'],
+    colors: ['#5B8CFF', '#FF3D8B', '#4FD1C5', '#F6C343', '#C792EA', '#FF6B9A', '#9AE66E', '#B0BEC5'],
     setLink: (n) => { try { history.replaceState(null, '', '#' + n); } catch (e) {} },
     params: () => ({}), setParams: () => {}, resetParams: () => {}, refresh: load
   };
@@ -91,13 +91,13 @@ window.dash = (() => {
   .mb-table td.why { color: var(--color-fg-muted); min-width: 18rem; }
   .mb-table td.nw { white-space: nowrap; }
   #news[hidden] { display: none; }
-  .cp-daybar { margin: 0 28px; padding: 10px 14px; border-radius: 8px; background: rgba(198,255,61,.10); color: #F2F2F5; font-size: .95rem; }
+  .cp-daybar { margin: 0 28px; padding: 10px 14px; border-radius: 8px; background: rgba(91,140,255,.12); color: #F2F2F5; font-size: .95rem; }
   .cp-daybar[hidden] { display: none; }
   .cp-dsw { display: flex; gap: 2px; margin: 4px 28px 0; width: max-content; background: rgba(255,255,255,.06); border-radius: 8px; padding: 2px; }
   .cp-dsw[hidden] { display: none; }
   .cp-dsw button { font: inherit; font-size: .95rem; color: #A6A6B2; background: none; border: 0; border-radius: 6px; padding: 4px 12px; min-height: 36px; cursor: pointer; }
   .cp-dsw button[aria-pressed="true"] { color: #0B0B10; background: var(--cp-accent); }
-  .cp-dsw button:focus-visible { outline: 2px solid #C6FF3D; outline-offset: 2px; }
+  .cp-dsw button:focus-visible { outline: 2px solid #5B8CFF; outline-offset: 2px; }
   @media (max-width: 640px) { .cp-dsw { margin: 4px 14px 0; } }
   @media (max-width: 640px) { .cp-daybar { margin: 0 14px; } }
   .cp-news { display: flex; flex-direction: column; gap: 6px; }
@@ -161,12 +161,12 @@ window.dash = (() => {
 
   /* ===== A+B look: dark navy, orange accent, condensed caps headings; blue = value, orange = overpriced ===== */
   .mb { --color-fg: #F2F2F5; --color-fg-muted: #A6A6B2; --color-bg: #0B0B10; --color-panel: #141419; --color-border-line: #25252D;
-        --color-ok: #C6FF3D; --color-bad: #FF5C9E; --color-warn: #FFA8CB;
+        --color-ok: #5B8CFF; --color-bad: #FF5C9E; --color-warn: #FFA8CB;
         --cds-chart-grid: #22222A; --cds-chart-muted: #6E6E7A; --cds-chart-reference: #4A4A55;
-        --cp-accent: #C6FF3D; --cp-ink: #0B0B10; --cp-good-bg: #26330A; --cp-good-fg: #DDFF8A; --cp-bad-bg: #3A1226; --cp-bad-fg: #FFA8CB;
+        --cp-accent: #5B8CFF; --cp-ink: #0B0B10; --cp-good-bg: #16234A; --cp-good-fg: #CFDCFF; --cp-bad-bg: #3A1226; --cp-bad-fg: #FFA8CB;
         --cp-head: var(--font-anthropic-sans);
         background: #0B0B10; color: var(--color-fg); border-radius: 18px; padding: 0 0 32px 0; gap: 28px; max-width: 1240px; }
-  .mb a { color: #C6FF3D; }
+  .mb a { color: #5B8CFF; }
   .mb-sec, .cp-panel > * { padding-inline: 28px; }
   .mb-h2, .cp-h { font-family: var(--cp-head); font-weight: 800; font-stretch: condensed; text-transform: uppercase; letter-spacing: .02em; font-size: 1.6rem; margin: 0; line-height: 1.1; }
   .mb-card h3 { text-transform: uppercase; letter-spacing: .04em; font-size: .95rem; font-weight: 700; color: var(--color-fg-muted); }
@@ -187,7 +187,7 @@ window.dash = (() => {
   .cp-sport { display: inline-flex; gap: 2px; margin-left: 6px; vertical-align: 2px; background: rgba(255,255,255,.06); border-radius: 8px; padding: 2px; }
   .cp-sport button { font: inherit; font-size: 1.05rem; letter-spacing: .02em; color: #A6A6B2; background: none; border: 0; border-radius: 6px; padding: 2px 8px; min-height: 32px; cursor: pointer; }
   .cp-sport button[aria-pressed="true"] { color: #0B0B10; background: var(--cp-accent); }
-  .cp-sport button:focus-visible { outline: 2px solid #C6FF3D; outline-offset: 2px; }
+  .cp-sport button:focus-visible { outline: 2px solid #5B8CFF; outline-offset: 2px; }
   .cp-nfl { padding: 0 28px; display: flex; flex-direction: column; gap: 16px; }
   .cp-nfl[hidden], .cp-tabs[hidden], .cp-upd[hidden] { display: none; }
   .cp-nfl ul { margin: 0; padding-left: 20px; color: #D0D0D8; line-height: 1.6; }
@@ -196,7 +196,7 @@ window.dash = (() => {
   .cp-tab { font: inherit; font-weight: 600; font-size: .95rem; color: #A6A6B2; background: none; border: 0; padding: 12px 14px; min-height: 44px; cursor: pointer; }
   .cp-tab[hidden] { display: none; }
   .cp-tab[aria-selected="true"] { color: #FFFFFF; box-shadow: inset 0 -3px 0 var(--cp-accent); }
-  .cp-tab:focus-visible, .cp-btn:focus-visible, .cp-game:focus-visible, .cp-link:focus-visible { outline: 2px solid #C6FF3D; outline-offset: 2px; }
+  .cp-tab:focus-visible, .cp-btn:focus-visible, .cp-game:focus-visible, .cp-link:focus-visible { outline: 2px solid #5B8CFF; outline-offset: 2px; }
   .cp-upd { margin-left: auto; font-size: .85rem; color: #A6A6B2; }
   .cp-panel { display: flex; flex-direction: column; gap: 28px; }
   .cp-panel[hidden] { display: none; }
@@ -220,7 +220,7 @@ window.dash = (() => {
   .cp-row { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
   .cp-tag { font-weight: 600; font-size: .8rem; padding: 6px 10px; border-radius: 999px; background: var(--cp-good-bg); color: var(--cp-good-fg); white-space: nowrap; }
   .cp-tag.bad { background: var(--cp-bad-bg); color: var(--cp-bad-fg); }
-  .cp-btn.added { background: #26330A; color: #DDFF8A; }
+  .cp-btn.added { background: #16234A; color: #CFDCFF; }
   .cp-panel { padding-bottom: 72px; }
   .cp-bk { display: flex; flex-wrap: wrap; gap: 8px; padding: 2px 0 4px; }
   .cp-bk button { font: inherit; font-size: .9rem; font-weight: 600; white-space: nowrap; background: #141419; color: #D0D0D8; border: 1px solid #35353F; border-radius: 999px; padding: 0 14px; min-height: 40px; cursor: pointer; }
@@ -243,7 +243,7 @@ window.dash = (() => {
   .cp-bs-head h2 { margin: 0; font-family: var(--cp-head); font-weight: 800; font-stretch: condensed; text-transform: uppercase; font-size: 1.35rem; letter-spacing: .02em; }
   .cp-bs-n { display: inline-grid; place-items: center; min-width: 1.6rem; height: 1.6rem; padding: 0 6px; border-radius: 999px; background: var(--cp-accent); color: var(--cp-ink); font-weight: 800; font-size: .85rem; }
   .cp-x { font: inherit; font-size: 1.3rem; background: transparent; color: #D0D0D8; border: 1px solid #35353F; border-radius: 8px; min-width: 44px; min-height: 44px; cursor: pointer; }
-  .cp-bs-txt { margin-left: auto; font: inherit; font-size: .85rem; font-weight: 600; background: none; border: 0; color: #C6FF3D; min-height: 44px; padding: 0 8px; cursor: pointer; }
+  .cp-bs-txt { margin-left: auto; font: inherit; font-size: .85rem; font-weight: 600; background: none; border: 0; color: #5B8CFF; min-height: 44px; padding: 0 8px; cursor: pointer; }
   .cp-bs-tabs { display: grid; grid-template-columns: 1fr 1fr; background: #0E0E13; }
   .cp-bs-tabs button { font: inherit; font-weight: 700; font-size: .95rem; background: none; border: 0; color: #A6A6B2; min-height: 46px; cursor: pointer; box-shadow: inset 0 -2px 0 #22222A; }
   .cp-bs-tabs button[aria-selected="true"] { color: #FFFFFF; box-shadow: inset 0 -3px 0 var(--cp-accent); }
@@ -258,7 +258,7 @@ window.dash = (() => {
   .cp-bs-st { display: flex; align-items: center; gap: 10px; }
   .cp-bs-st label, .cp-bs-all label { display: flex; align-items: center; gap: 6px; background: #0E0E13; border: 1px solid #35353F; border-radius: 8px; padding: 0 10px; min-height: 42px; font-size: .8rem; color: #A6A6B2; }
   .cp-bs-st input, .cp-bs-all input { width: 4.5rem; font: inherit; font-weight: 700; font-size: 1rem; background: transparent; color: #F2F2F5; border: 0; outline: none; text-align: right; }
-  .cp-bs-st label:focus-within, .cp-bs-all label:focus-within { border-color: #C6FF3D; }
+  .cp-bs-st label:focus-within, .cp-bs-all label:focus-within { border-color: #5B8CFF; }
   .cp-bs-st .r { margin-left: auto; text-align: right; font-size: .78rem; color: #A6A6B2; }
   .cp-bs-st .r b { display: block; font-size: 1rem; color: #F2F2F5; font-variant-numeric: tabular-nums; }
   .cp-bs-price { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
@@ -316,7 +316,7 @@ window.dash = (() => {
   .cp-top { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 18px; margin: 0 28px; padding: 10px 14px; background: #0E0E13; border: 1px solid #22222A; border-radius: 12px; }
   .cp-sum { display: flex; flex-wrap: wrap; gap: 4px 18px; font-size: .9rem; color: #A6A6B2; }
   .cp-sum b { color: #F2F2F5; font-weight: 700; font-variant-numeric: tabular-nums; margin-left: 4px; }
-  .cp-sum b.neg { color: var(--cp-bad-fg); } .cp-sum b.posv { color: #C6FF3D; }
+  .cp-sum b.neg { color: var(--cp-bad-fg); } .cp-sum b.posv { color: #5B8CFF; }
   .cp-bksel { margin-left: auto; display: flex; align-items: center; gap: 8px; font-size: .85rem; color: #A6A6B2; }
   .cp-bksel select { font: inherit; font-size: .9rem; color: #F2F2F5; background: #141419; border: 1px solid #35353F; border-radius: 8px; min-height: 38px; padding: 0 8px; }
   .cp-top .cp-bk-note { flex-basis: 100%; }
@@ -328,7 +328,7 @@ window.dash = (() => {
   .cp-bet.is-lean { opacity: .7; }
   .cp-bet.open { border-color: #35353F; }
   .cp-bet-main { display: flex; align-items: center; gap: 10px; min-width: 0; font: inherit; color: inherit; text-align: left; background: none; border: 0; padding: 8px 0 8px 12px; cursor: pointer; min-height: 48px; }
-  .cp-bet-main:focus-visible { outline: 2px solid #C6FF3D; outline-offset: -2px; border-radius: 10px; }
+  .cp-bet-main:focus-visible { outline: 2px solid #5B8CFF; outline-offset: -2px; border-radius: 10px; }
   .cp-bet-l { flex: 1; min-width: 0; }
   .cp-bet-p { font-weight: 700; font-size: .98rem; line-height: 1.25; overflow-wrap: anywhere; }
   .cp-bet-s { font-size: .78rem; color: #A6A6B2; margin-top: 2px; }
@@ -351,7 +351,7 @@ window.dash = (() => {
   .cp-gli.has-bet { border-left: 3px solid var(--cp-accent); }
   .cp-gli.has-bet .b { color: var(--cp-bad-fg); font-weight: 600; }
   .cp-gli.started { opacity: .5; }
-  .cp-gli:focus-visible { outline: 2px solid #C6FF3D; outline-offset: 2px; }
+  .cp-gli:focus-visible { outline: 2px solid #5B8CFF; outline-offset: 2px; }
   @media (max-width: 640px) {
     .cp-top { margin: 0 14px; }
     .cp-bksel { margin-left: 0; width: 100%; } .cp-bksel select { flex: 1; }
@@ -362,7 +362,7 @@ window.dash = (() => {
   .cp-toast { position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%); background: var(--cp-accent); color: var(--cp-ink); font-weight: 700; padding: 10px 16px; border-radius: 10px; z-index: 5; }
   @media (max-width: 640px) { .mb-sec, .cp-panel > * { padding-inline: 14px; } .cp-multi { margin-inline: 14px; } .cp-bar { padding-inline: 14px; } .cp-upd { margin-left: 0; width: 100%; } .cp-nums { margin-left: 0; } .cp-pick { font-size: 1.3rem; } }
 
-  /* ===== neon court (5 Nov 2026): lime + pink on near-black, Unbounded headings ===== */
+  /* ===== neon court (5 Nov 2026, blue from 6 Nov): electric blue + pink on near-black, Unbounded headings ===== */
   .mb { --cp-head: 'Unbounded', var(--font-anthropic-sans); --cp-pink: #FF3D8B; }
   .mb-h2, .cp-h { font-size: 1.3rem; letter-spacing: 0; font-weight: 800; }
   .cp-brand { font-size: 1.15rem; letter-spacing: 0; text-transform: uppercase; display: flex; align-items: center; flex-wrap: wrap; gap: 0; }
@@ -378,7 +378,7 @@ window.dash = (() => {
 
 <div class="mb">
   <header class="cp-bar">
-    <div class="cp-brand" id="top"><svg width="28" height="28" viewBox="-110 -110 220 220" aria-hidden="true" style="vertical-align:-7px;margin-right:10px"><circle r="96" fill="none" stroke="#C6FF3D" stroke-width="12"/><g fill="none" stroke="#C6FF3D" stroke-width="7" stroke-linecap="round" opacity="0.55"><path d="M0 -96V96"/><path d="M-96 0H96"/><path d="M-68 -68Q-26 0 -68 68"/><path d="M68 -68Q26 0 68 68"/></g><polyline points="-120,60 -40,20 0,36 70,-50" fill="none" stroke="#FF3D8B" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/><polygon points="50,-74 98,-78 92,-30" fill="#FF3D8B"/></svg>Claudio<b>Punts</b><span class="cp-sport" role="group" aria-label="Sport"><button type="button" data-sport="nba" aria-pressed="true">NBA</button><button type="button" data-sport="nfl" aria-pressed="false">NFL</button></span></div>
+    <div class="cp-brand" id="top"><svg width="28" height="28" viewBox="-110 -110 220 220" aria-hidden="true" style="vertical-align:-7px;margin-right:10px"><circle r="96" fill="none" stroke="#5B8CFF" stroke-width="12"/><g fill="none" stroke="#5B8CFF" stroke-width="7" stroke-linecap="round" opacity="0.55"><path d="M0 -96V96"/><path d="M-96 0H96"/><path d="M-68 -68Q-26 0 -68 68"/><path d="M68 -68Q26 0 68 68"/></g><polyline points="-120,60 -40,20 0,36 70,-50" fill="none" stroke="#FF3D8B" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/><polygon points="50,-74 98,-78 92,-30" fill="#FF3D8B"/></svg>Claudio<b>Punts</b><span class="cp-sport" role="group" aria-label="Sport"><button type="button" data-sport="nba" aria-pressed="true">NBA</button><button type="button" data-sport="nfl" aria-pressed="false">NFL</button></span></div>
     <div class="cp-tabs" role="tablist" aria-label="Sections">
       <button type="button" class="cp-tab" role="tab" data-tab="today" aria-selected="true">Today</button>
       <button type="button" class="cp-tab" role="tab" data-tab="tomorrow" aria-selected="false" hidden>Tomorrow</button>
@@ -708,11 +708,11 @@ window.dash = (() => {
     <div class="mb-grid">
       <div class="mb-card"><h3>Home margin (points)</h3>
         <div class="mb-legend"><span style="--sw: var(--cds-chart-muted)">Sportsbet line</span><span id="lg-model">Model</span></div>
-        <p class="mb-note">Team in <b style="color: var(--cp-accent)">lime</b> = the handicap we'd take, with the line. Team in <b>white</b> = the side the model leans to (not a bet).</p>
+        <p class="mb-note">Team in <b style="color: var(--cp-accent)">blue</b> = the handicap we'd take, with the line. Team in <b>white</b> = the side the model leans to (not a bet).</p>
         <div class="mb-chart" id="chart-margin" data-source="games"></div></div>
       <div class="mb-card"><h3>Total points</h3>
         <div class="mb-legend"><span style="--sw: var(--cds-chart-muted)">Sportsbet line</span><span id="lg-model2">Model</span></div>
-        <p class="mb-note"><b style="color: var(--cp-accent)">O / U</b> in lime = a total we'd bet.</p>
+        <p class="mb-note"><b style="color: var(--cp-accent)">O / U</b> in blue = a total we'd bet.</p>
         <div class="mb-chart" id="chart-total" data-source="games"></div></div>
     </div>
   </section>
@@ -1355,7 +1355,7 @@ window.dash = (() => {
     } else {
       mm('#m80-odds', 'odds').textContent = Number(m.odds).toFixed(2);
       mm('#m80-prob', 'prob').textContent = m.prob + '%';
-      const ev = mm('#m80-ev', 'ev_pct'); ev.textContent = (Number(m.ev_pct) > 0 ? '+' : '') + m.ev_pct + '%'; ev.style.color = Number(m.ev_pct) > 0 ? '#C6FF3D' : '#FF8FBF';
+      const ev = mm('#m80-ev', 'ev_pct'); ev.textContent = (Number(m.ev_pct) > 0 ? '+' : '') + m.ev_pct + '%'; ev.style.color = Number(m.ev_pct) > 0 ? '#5B8CFF' : '#FF8FBF';
       $('#m80-sub').textContent = `Every leg 80%+ · one per game · all at ${m.book} · ${m.stake_pct}u`;
       $('#m80-copy').hidden = false;
       const mitem = { pick: m.pick, odds: Number(m.odds), book: m.book, game: m.game, prob: Number(m.prob), stake: Number(m.stake_pct) || 0, cat: '80% multi' };

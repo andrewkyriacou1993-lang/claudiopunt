@@ -3,7 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ClaudioPunt NBA</title>
+<title>ClaudioPunts · NBA</title>
+<meta name="theme-color" content="#0B0F14">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="ClaudioPunts">
 <meta name="description" content="Daily NBA betting board: model chances, best prices across Australian bookies, and a settled track record.">
 <style>
   :root {
@@ -356,7 +364,7 @@ window.dash = (() => {
 
 <div class="mb">
   <header class="cp-bar">
-    <div class="cp-brand" id="top">ClaudioPunt <span class="cp-sport" role="group" aria-label="Sport"><button type="button" data-sport="nba" aria-pressed="true">NBA</button><button type="button" data-sport="nfl" aria-pressed="false">NFL</button></span></div>
+    <div class="cp-brand" id="top"><img src="icons/logo.svg" alt="" width="26" height="26" style="vertical-align:-6px;margin-right:8px">ClaudioPunts <span class="cp-sport" role="group" aria-label="Sport"><button type="button" data-sport="nba" aria-pressed="true">NBA</button><button type="button" data-sport="nfl" aria-pressed="false">NFL</button></span></div>
     <div class="cp-tabs" role="tablist" aria-label="Sections">
       <button type="button" class="cp-tab" role="tab" data-tab="today" aria-selected="true">Today</button>
       <button type="button" class="cp-tab" role="tab" data-tab="tomorrow" aria-selected="false" hidden>Tomorrow</button>
@@ -1921,8 +1929,13 @@ window.dash = (() => {
 </script>
 </div>
 <footer class="site-foot">
+  <p class="cp-install"><b>Get the app:</b> on iPhone open this page in Safari, tap Share, then Add to Home Screen. On Android open it in Chrome, tap the menu, then Install app.</p>
   <p><b>Information only, not betting advice.</b> Chances come from a model blended with bookmaker prices; they can be wrong, and past results don't guarantee future ones. Only bet what you can afford to lose. Prices change: check the bookie before you bet.</p>
   <p><b>Gamble responsibly.</b> For free, confidential support call the National Gambling Helpline on 1800 858 858 or visit gamblinghelponline.org.au. 18+ only.</p>
 </footer>
+<script>
+if ('serviceWorker' in navigator) window.addEventListener('load', () => navigator.serviceWorker.register('sw.js').catch(() => {}));
+if (window.matchMedia('(display-mode: standalone)').matches || navigator.standalone) document.querySelectorAll('.cp-install').forEach(el => el.hidden = true);
+</script>
 </body>
 </html>

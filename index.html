@@ -374,6 +374,7 @@ window.dash = (() => {
   .cp-tab[aria-selected="true"] { color: var(--cp-accent); }
   .cp-tab, .cp-dsw button { text-transform: uppercase; letter-spacing: .04em; font-family: var(--cp-head); font-weight: 600; font-size: .8rem; }
   .cp-bs-bar { text-transform: none; }
+  .pill.best { color: var(--cp-accent); border-color: var(--cp-accent); font-weight: 700; } .pill.val { color: #FF3D8B; }
 </style>
 
 <div class="mb">
@@ -497,7 +498,7 @@ window.dash = (() => {
         <label for="h-best" class="mb-note">Picks</label><select id="h-best" class="mb-input"><option value="">Every bet</option><option value="1">Best bets only</option></select>
       </div>
       <div class="mb-scroll mb-tall"><table class="mb-table" id="hist-table" data-source="history" data-row-key="id">
-        <thead><tr><th data-field="posted">Posted (AEDT)</th><th data-field="category">Category</th><th data-field="pick">Bet</th><th data-field="game">Game</th>
+        <thead><tr><th data-field="posted">Posted (AEDT)</th><th data-field="category">Category</th><th data-field="best">Type</th><th data-field="pick">Bet</th><th data-field="game">Game</th>
           <th data-field="odds" class="num">Odds</th><th data-field="book">Bookie</th><th data-field="close_prob" class="num">Fair at close %</th><th data-field="clv_pct" class="num">CLV %</th><th data-field="stake_u" class="num">Stake (u)</th><th data-field="result">Result</th><th data-field="profit_u" class="num">Profit (u)</th><th data-field="running_u" class="num">Running total (u)</th></tr></thead>
         <tbody></tbody></table></div>
     </div>
@@ -1624,8 +1625,15 @@ window.dash = (() => {
     const rows = H.data.filter(h => (!sel.value || h.date === sel.value) && (!res || (res === 'pending' ? h.result === 'pending' : settledRes.has(h.result)))
       && (!hb || (h.book || 'Sportsbet') === hb) && (!$('#h-best').value || h.best === $('#h-best').value))
       .slice().reverse();
+    // bet type: the day's best bet in its category, a value (3.00+) pick, or how else it got on the card
+    const betType = (td, v, r) => {
+      const s = document.createElement('span');
+      const t = v === '1' ? ['Best bet', 'best'] : v === 'value' ? ['Value', 'val'] : /multi/i.test(r.category) ? ['Multi', 'pass']
+        : r.trigger === 'news' ? ['Lineup news', 'pass'] : r.bet_type === 'price' ? ['Price edge', 'pass'] : r.bet_type === 'track' ? ['Tracked', 'pass'] : ['Card', 'pass'];
+      s.className = 'pill ' + t[1]; s.textContent = t[0]; td.appendChild(s); td.style.whiteSpace = 'nowrap';
+    };
     fillTable($('#hist-table tbody'), rows, [
-      { f: 'posted', cls: 'pos' }, { f: 'category' }, { f: 'pick' }, { f: 'game', cls: 'pos' }, { f: 'odds', cls: 'num' }, { f: 'book' }, { f: 'close_prob', cls: 'num' }, { f: 'clv_pct', cls: 'num', render: signedCell }, { f: 'stake_u', cls: 'num' },
+      { f: 'posted', cls: 'pos' }, { f: 'category' }, { f: 'best', render: betType }, { f: 'pick' }, { f: 'game', cls: 'pos' }, { f: 'odds', cls: 'num' }, { f: 'book' }, { f: 'close_prob', cls: 'num' }, { f: 'clv_pct', cls: 'num', render: signedCell }, { f: 'stake_u', cls: 'num' },
       { f: 'result', render: pill({ win: 'win', loss: 'loss', push: 'push', void: 'void', pending: 'pending' }) },
       { f: 'profit_u', cls: 'num', render: signedCell }, { f: 'running_u', cls: 'num', render: signedCell }
     ], 'id');

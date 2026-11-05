@@ -708,9 +708,11 @@ window.dash = (() => {
     <div class="mb-grid">
       <div class="mb-card"><h3>Home margin (points)</h3>
         <div class="mb-legend"><span style="--sw: var(--cds-chart-muted)">Sportsbet line</span><span id="lg-model">Model</span></div>
+        <p class="mb-note">Team in <b style="color: var(--cp-accent)">lime</b> = the handicap we'd take, with the line. Team in <b>white</b> = the side the model leans to (not a bet).</p>
         <div class="mb-chart" id="chart-margin" data-source="games"></div></div>
       <div class="mb-card"><h3>Total points</h3>
         <div class="mb-legend"><span style="--sw: var(--cds-chart-muted)">Sportsbet line</span><span id="lg-model2">Model</span></div>
+        <p class="mb-note"><b style="color: var(--cp-accent)">O / U</b> in lime = a total we'd bet.</p>
         <div class="mb-chart" id="chart-total" data-source="games"></div></div>
     </div>
   </section>
@@ -854,15 +856,17 @@ window.dash = (() => {
   const statusCell = (td, v) => { if (v === 'Available') { td.textContent = v; td.className += ' pos'; } else statusPill(td, v); };
   const signed = (td, v) => { const n = Number(v); td.textContent = v; td.classList.add(n >= 3 ? 'good' : n <= -3 ? 'bad' : 'pos'); };
 
-  function dumbbell(box, rows, lineKey, modelKey, fmt) {
+  function dumbbell(box, rows, lineKey, modelKey, fmt, lab) {
     box.innerHTML = '';
     const W = box.clientWidth || 360, rowH = 30, m = { t: 8, r: 16, b: 28, l: 10 };
     const svg = d3.select(box).append('svg').attr('width', '100%');
     const labels = rows.map(r => r.game);
-    // measure the widest game label
+    const LB = lab || (r => [{ t: r.game }]);
+    // measure the widest label (game + any pick tag); shrink the font rather than clip it on narrow screens
     const probe = svg.append('text').attr('font-size', 12);
-    let lw = 0; labels.forEach(t => { probe.text(t); lw = Math.max(lw, probe.node().getComputedTextLength()); }); probe.remove();
-    m.l = Math.min(lw + 12, W * 0.45);
+    let lw = 0; rows.forEach(r => { probe.text(LB(r).map(p => p.t).join('')); lw = Math.max(lw, probe.node().getComputedTextLength()); }); probe.remove();
+    const cap = W * 0.5; m.l = Math.min(lw + 12, cap);
+    const fs = Math.max(9, Math.min(12, 12 * (cap - 12) / (lw || 1)));
     const H = m.t + m.b + rows.length * rowH;
     svg.attr('viewBox', `0 0 ${W} ${H}`).attr('height', H);
     const vals = rows.flatMap(r => [Number(r[lineKey]), Number(r[modelKey])]);
@@ -875,7 +879,8 @@ window.dash = (() => {
     const ax = svg.append('g').attr('transform', `translate(0,${H - m.b})`).call(d3.axisBottom(x).ticks(Math.max(2, Math.floor((W - m.l) / 70))).tickSize(0).tickPadding(8));
     ax.attr('font-size', null).attr('font-family', null); ax.select('.domain').remove(); ax.selectAll('text').attr('fill', 'var(--color-fg-muted)').style('font-size', '12px');
     svg.append('g').selectAll('text').data(rows).join('text').attr('x', m.l - 10).attr('y', r => y(r.game) + y.bandwidth() / 2).attr('dy', '0.35em')
-      .attr('text-anchor', 'end').attr('fill', r => r.game === chosen ? 'var(--color-fg)' : 'var(--color-fg-muted)').style('font-size', '12px').style('font-weight', r => r.game === chosen ? 600 : 400).text(r => r.game);
+      .attr('text-anchor', 'end').style('fill', r => r.game === chosen ? 'var(--color-fg)' : 'var(--color-fg-muted)').style('font-size', fs + 'px').style('font-weight', r => r.game === chosen ? 600 : 400)
+      .each(function (r) { const t = d3.select(this); LB(r).forEach(p => { const s = t.append('tspan').text(p.t); if (p.fill) s.style('fill', p.fill); if (p.bold) s.style('font-weight', 700); }); });
     const g = svg.append('g').selectAll('g').data(rows).join('g');
     g.append('line').attr('x1', r => x(Number(r[lineKey]))).attr('x2', r => x(Number(r[modelKey]))).attr('y1', r => y(r.game) + y.bandwidth() / 2).attr('y2', r => y(r.game) + y.bandwidth() / 2)
       .attr('stroke', 'var(--cds-chart-muted)').attr('stroke-width', 2).attr('stroke-linecap', 'round');
@@ -918,8 +923,28 @@ window.dash = (() => {
     if (G.status === 'ok') {
       if (!chosen) chosen = G.data[0].game;
       try {
-        dumbbell(cm, G.data, 'line_home_margin', 'model_home_margin', v => { const n = Number(v); return (n > 0 ? 'home by ' : n < 0 ? 'away by ' : 'level ') + Math.abs(n); });
-        dumbbell(ct, G.data, 'line_total', 'model_total', v => String(v));
+        // which side of each handicap / total the model takes (Bet = lime with the number; otherwise the model's lean in white)
+        const SP = {}, TP = {};
+        if (B.status === 'ok') atBook(B.data, $('#b-book').value, 'model_prob').forEach(r => {
+          const box = r.market === 'Spread' ? SP : r.market === 'Total' ? TP : null;
+          if (box && (!box[r.game] || (r.verdict === 'Bet' && box[r.game].verdict !== 'Bet'))) box[r.game] = r;
+        });
+        const LIME = 'var(--cp-accent)', WHITE = 'var(--color-fg)';
+        const marginLab = (r) => {
+          const [aw, hm] = r.game.split(' @ '), p = SP[r.game];
+          let side = Number(r.model_home_margin) > Number(r.line_home_margin) ? 'home' : 'away', num = '';
+          if (p) { if (p.bet.includes(hm)) side = 'home'; else if (p.bet.includes(aw)) side = 'away'; const m = p.bet.match(/([+-]\d+(?:\.\d+)?)\s*$/); num = m ? m[1].replace('-', '\u2212') : ''; }
+          const bet = !!(p && p.verdict === 'Bet'), hl = bet ? LIME : WHITE;
+          return [{ t: aw, fill: side === 'away' ? hl : null, bold: side === 'away' }, { t: ' @ ' }, { t: hm, fill: side === 'home' ? hl : null, bold: side === 'home' }]
+            .concat(bet && num ? [{ t: ' ' + num, fill: LIME, bold: true }] : []);
+        };
+        const totalLab = (r) => {
+          const p = TP[r.game];
+          if (!p || p.verdict !== 'Bet') return [{ t: r.game }];
+          return [{ t: r.game }, { t: ` ${/^Over/i.test(p.bet) ? 'O' : 'U'} ${(p.bet.match(/[\d.]+\s*$/) || [''])[0].trim()}`, fill: LIME, bold: true }];
+        };
+        dumbbell(cm, G.data, 'line_home_margin', 'model_home_margin', v => { const n = Number(v); return (n > 0 ? 'home by ' : n < 0 ? 'away by ' : 'level ') + Math.abs(n); }, marginLab);
+        dumbbell(ct, G.data, 'line_total', 'model_total', v => String(v), totalLab);
       } catch (e) { console.error(e); }
       const tabs = $('#game-tabs'); tabs.innerHTML = '';
       G.data.forEach(r => {

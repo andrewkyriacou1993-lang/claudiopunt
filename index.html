@@ -473,17 +473,6 @@ window.dash = (() => {
         <div class="mb-tile"><span class="mb-tile-l">Average CLV</span><span class="mb-tile-v" data-source="track_best" data-field="clv">—</span></div>
       </div>
     </div>
-    <div class="mb-card" aria-labelledby="valrec-h"><h3 id="valrec-h">Value bets only (recorded from 28 Oct)</h3>
-      <p class="mb-note">The longer-odds picks from the Value bets section. Expect a low strike rate; judge them on profit and closing-line value over months.</p>
-      <div class="mb-tiles">
-        <div class="mb-tile"><span class="mb-tile-l">Value picks</span><span class="mb-tile-v" data-source="track_value" data-field="picks">—</span></div>
-        <div class="mb-tile"><span class="mb-tile-l">Settled</span><span class="mb-tile-v" data-source="track_value" data-field="settled">—</span></div>
-        <div class="mb-tile"><span class="mb-tile-l">Won–lost</span><span class="mb-tile-v" data-source="track_value" data-field="record">—</span></div>
-        <div class="mb-tile"><span class="mb-tile-l">Profit</span><span class="mb-tile-v" data-source="track_value" data-field="pl">—</span></div>
-        <div class="mb-tile"><span class="mb-tile-l">Return on stakes</span><span class="mb-tile-v" data-source="track_value" data-field="roi">—</span></div>
-        <div class="mb-tile"><span class="mb-tile-l">Average CLV</span><span class="mb-tile-v" data-source="track_value" data-field="clv">—</span></div>
-      </div>
-    </div>
     <div class="mb-grid">
       <div class="mb-card"><h3>Running total, bet by bet (units)</h3>
         <p class="mb-note" id="track-empty" hidden>The line starts once the first bets are settled, after today's games finish.</p>
@@ -505,7 +494,7 @@ window.dash = (() => {
         <label for="h-res" class="mb-note">Show</label>
         <select id="h-res" class="mb-input"><option value="">All</option><option value="pending">Waiting</option><option value="settled">Settled</option></select>
         <label for="h-book" class="mb-note">Bookie</label><select id="h-book" class="mb-input book-filter"><option value="">All bookies</option></select>
-        <label for="h-best" class="mb-note">Picks</label><select id="h-best" class="mb-input"><option value="">Every bet</option><option value="1">Best bets only</option><option value="value">Value bets only</option></select>
+        <label for="h-best" class="mb-note">Picks</label><select id="h-best" class="mb-input"><option value="">Every bet</option><option value="1">Best bets only</option></select>
       </div>
       <div class="mb-scroll mb-tall"><table class="mb-table" id="hist-table" data-source="history" data-row-key="id">
         <thead><tr><th data-field="posted">Posted (AEDT)</th><th data-field="category">Category</th><th data-field="pick">Bet</th><th data-field="game">Game</th>

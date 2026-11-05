@@ -25,7 +25,7 @@
     --cds-surface-popover: #0E0E13; --cds-border: #35353F; --cds-shadow-popover: 0 8px 24px rgba(0,0,0,.4); --cds-text-secondary: #A6A6B2;
     --cds-chart-grid: #22222A; --cds-chart-muted: #6E6E7A; --cds-chart-reference: #4A4A55;
     --color-fg: #F2F2F5; --color-fg-muted: #A6A6B2; --color-bg: #0B0B10; --color-panel: #141419; --color-border-line: #25252D;
-    --color-ok: #5B8CFF; --color-bad: #FF5C9E; --color-warn: #FFA8CB;
+    --color-ok: #5B8CFF; --color-bad: #FF9A57; --color-warn: #FFC79E;
     color-scheme: dark;
   }
   html, body { margin: 0; background: #050507; color: #F2F2F5; }
@@ -61,7 +61,7 @@ window.dash = (() => {
   return {
     data, calc: (id, o) => { calcs[id] = o; }, loader: () => {},
     onData: (fn) => { subs.push(fn); try { fn(); } catch (e) { console.error(e); } },
-    colors: ['#5B8CFF', '#FF3D8B', '#4FD1C5', '#F6C343', '#C792EA', '#FF6B9A', '#9AE66E', '#B0BEC5'],
+    colors: ['#5B8CFF', '#FF8A3D', '#4FD1C5', '#F6C343', '#C792EA', '#FF6B9A', '#9AE66E', '#B0BEC5'],
     setLink: (n) => { try { history.replaceState(null, '', '#' + n); } catch (e) {} },
     params: () => ({}), setParams: () => {}, resetParams: () => {}, refresh: load
   };
@@ -103,8 +103,8 @@ window.dash = (() => {
   .cp-news { display: flex; flex-direction: column; gap: 6px; }
   .cp-news-i { display: grid; grid-template-columns: 3.4rem 1fr; gap: 10px; padding: 8px 12px; border-radius: 8px; background: rgba(255,255,255,.04); font-size: .92rem; }
   .cp-news-i time { color: var(--color-fg-muted); font-variant-numeric: tabular-nums; }
-  .cp-news-i .imp { color: #FF3D8B; margin-top: 2px; }
-  .cp-news-i.bad b { color: #FF3D8B; }
+  .cp-news-i .imp { color: #FF8A3D; margin-top: 2px; }
+  .cp-news-i.bad b { color: #FF8A3D; }
   .mb-table tr.pass td { color: var(--color-fg-muted); }
   .mb-table .side { border-left: 1px solid var(--color-border-line); }
   .pill { display: inline-block; padding: 0 var(--cds-pad-sm); border-radius: 999px; border: 1px solid currentColor; font-size: var(--cds-font-size-caption); white-space: nowrap; }
@@ -161,9 +161,9 @@ window.dash = (() => {
 
   /* ===== A+B look: dark navy, orange accent, condensed caps headings; blue = value, orange = overpriced ===== */
   .mb { --color-fg: #F2F2F5; --color-fg-muted: #A6A6B2; --color-bg: #0B0B10; --color-panel: #141419; --color-border-line: #25252D;
-        --color-ok: #5B8CFF; --color-bad: #FF5C9E; --color-warn: #FFA8CB;
+        --color-ok: #5B8CFF; --color-bad: #FF9A57; --color-warn: #FFC79E;
         --cds-chart-grid: #22222A; --cds-chart-muted: #6E6E7A; --cds-chart-reference: #4A4A55;
-        --cp-accent: #5B8CFF; --cp-ink: #0B0B10; --cp-good-bg: #16234A; --cp-good-fg: #CFDCFF; --cp-bad-bg: #3A1226; --cp-bad-fg: #FFA8CB;
+        --cp-accent: #5B8CFF; --cp-ink: #0B0B10; --cp-good-bg: #16234A; --cp-good-fg: #CFDCFF; --cp-bad-bg: #3A2512; --cp-bad-fg: #FFC79E;
         --cp-head: var(--font-anthropic-sans);
         background: #0B0B10; color: var(--color-fg); border-radius: 18px; padding: 0 0 32px 0; gap: 28px; max-width: 1240px; }
   .mb a { color: #5B8CFF; }
@@ -267,7 +267,7 @@ window.dash = (() => {
   .cp-bs-price input { width: 5.2rem; font-weight: 700; }
   .cp-bs-price .cp-bs-txt { margin-left: 0; min-height: 38px; }
   .cp-bs-all { display: flex; align-items: center; gap: 10px; font-size: .85rem; color: #D0D0D8; }
-  .cp-bs-warn { font-size: .82rem; color: #FFA8CB; background: #3A1226; border-radius: 10px; padding: 8px 12px; }
+  .cp-bs-warn { font-size: .82rem; color: #FFC79E; background: #3A2512; border-radius: 10px; padding: 8px 12px; }
   .cp-bs-mult { display: flex; align-items: baseline; gap: 8px; font-size: .85rem; color: #A6A6B2; }
   .cp-bs-mult b { margin-left: auto; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 1.4rem; color: #FFFFFF; }
   .cp-bs-foot { border-top: 1px solid #22222A; background: #0E0E13; padding: 10px 16px 14px; display: grid; grid-template-columns: 1fr auto; gap: 4px 12px; }
@@ -332,7 +332,7 @@ window.dash = (() => {
   .cp-bet-l { flex: 1; min-width: 0; }
   .cp-bet-p { font-weight: 700; font-size: .98rem; line-height: 1.25; overflow-wrap: anywhere; }
   .cp-bet-s { font-size: .78rem; color: #A6A6B2; margin-top: 2px; }
-  .cp-chip { display: inline-block; font-size: .7rem; font-weight: 700; padding: 1px 7px; border-radius: 999px; background: #2A1020; color: #FF8FBF; vertical-align: 1px; }
+  .cp-chip { display: inline-block; font-size: .7rem; font-weight: 700; padding: 1px 7px; border-radius: 999px; background: #2A2215; color: #FFB37F; vertical-align: 1px; }
   .cp-chip.dim { background: #22222A; color: #A6A6B2; }
   .cp-bet-o { text-align: right; line-height: 1.1; }
   .cp-bet-o b { display: block; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 1.15rem; color: #FFFFFF; }
@@ -362,8 +362,8 @@ window.dash = (() => {
   .cp-toast { position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%); background: var(--cp-accent); color: var(--cp-ink); font-weight: 700; padding: 10px 16px; border-radius: 10px; z-index: 5; }
   @media (max-width: 640px) { .mb-sec, .cp-panel > * { padding-inline: 14px; } .cp-multi { margin-inline: 14px; } .cp-bar { padding-inline: 14px; } .cp-upd { margin-left: 0; width: 100%; } .cp-nums { margin-left: 0; } .cp-pick { font-size: 1.3rem; } }
 
-  /* ===== neon court (5 Nov 2026, blue from 6 Nov): electric blue + pink on near-black, Unbounded headings ===== */
-  .mb { --cp-head: 'Unbounded', var(--font-anthropic-sans); --cp-pink: #FF3D8B; }
+  /* ===== neon court (5 Nov 2026, blue from 6 Nov): electric blue + orange on near-black, Unbounded headings ===== */
+  .mb { --cp-head: 'Unbounded', var(--font-anthropic-sans); --cp-pink: #FF8A3D; }
   .mb-h2, .cp-h { font-size: 1.3rem; letter-spacing: 0; font-weight: 800; }
   .cp-brand { font-size: 1.15rem; letter-spacing: 0; text-transform: uppercase; display: flex; align-items: center; flex-wrap: wrap; gap: 0; }
   .cp-brand b { color: var(--cp-accent); font-weight: inherit; }
@@ -374,12 +374,12 @@ window.dash = (() => {
   .cp-tab[aria-selected="true"] { color: var(--cp-accent); }
   .cp-tab, .cp-dsw button { text-transform: uppercase; letter-spacing: .04em; font-family: var(--cp-head); font-weight: 600; font-size: .8rem; }
   .cp-bs-bar { text-transform: none; }
-  .pill.best { color: var(--cp-accent); border-color: var(--cp-accent); font-weight: 700; } .pill.val { color: #FF3D8B; }
+  .pill.best { color: var(--cp-accent); border-color: var(--cp-accent); font-weight: 700; } .pill.val { color: #FF8A3D; }
 </style>
 
 <div class="mb">
   <header class="cp-bar">
-    <div class="cp-brand" id="top"><svg width="28" height="28" viewBox="-110 -110 220 220" aria-hidden="true" style="vertical-align:-7px;margin-right:10px"><circle r="96" fill="none" stroke="#5B8CFF" stroke-width="12"/><g fill="none" stroke="#5B8CFF" stroke-width="7" stroke-linecap="round" opacity="0.55"><path d="M0 -96V96"/><path d="M-96 0H96"/><path d="M-68 -68Q-26 0 -68 68"/><path d="M68 -68Q26 0 68 68"/></g><polyline points="-120,60 -40,20 0,36 70,-50" fill="none" stroke="#FF3D8B" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/><polygon points="50,-74 98,-78 92,-30" fill="#FF3D8B"/></svg>Claudio<b>Punts</b><span class="cp-sport" role="group" aria-label="Sport"><button type="button" data-sport="nba" aria-pressed="true">NBA</button><button type="button" data-sport="nfl" aria-pressed="false">NFL</button></span></div>
+    <div class="cp-brand" id="top"><svg width="28" height="28" viewBox="-110 -110 220 220" aria-hidden="true" style="vertical-align:-7px;margin-right:10px"><circle r="96" fill="none" stroke="#5B8CFF" stroke-width="12"/><g fill="none" stroke="#5B8CFF" stroke-width="7" stroke-linecap="round" opacity="0.55"><path d="M0 -96V96"/><path d="M-96 0H96"/><path d="M-68 -68Q-26 0 -68 68"/><path d="M68 -68Q26 0 68 68"/></g><polyline points="-120,60 -40,20 0,36 70,-50" fill="none" stroke="#FF8A3D" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/><polygon points="50,-74 98,-78 92,-30" fill="#FF8A3D"/></svg>Claudio<b>Punts</b><span class="cp-sport" role="group" aria-label="Sport"><button type="button" data-sport="nba" aria-pressed="true">NBA</button><button type="button" data-sport="nfl" aria-pressed="false">NFL</button></span></div>
     <div class="cp-tabs" role="tablist" aria-label="Sections">
       <button type="button" class="cp-tab" role="tab" data-tab="today" aria-selected="true">Today</button>
       <button type="button" class="cp-tab" role="tab" data-tab="tomorrow" aria-selected="false" hidden>Tomorrow</button>
@@ -1345,7 +1345,7 @@ window.dash = (() => {
     } else {
       mm('#m80-odds', 'odds').textContent = Number(m.odds).toFixed(2);
       mm('#m80-prob', 'prob').textContent = m.prob + '%';
-      const ev = mm('#m80-ev', 'ev_pct'); ev.textContent = (Number(m.ev_pct) > 0 ? '+' : '') + m.ev_pct + '%'; ev.style.color = Number(m.ev_pct) > 0 ? '#5B8CFF' : '#FF8FBF';
+      const ev = mm('#m80-ev', 'ev_pct'); ev.textContent = (Number(m.ev_pct) > 0 ? '+' : '') + m.ev_pct + '%'; ev.style.color = Number(m.ev_pct) > 0 ? '#5B8CFF' : '#FFB37F';
       $('#m80-sub').textContent = `Every leg 80%+ · one per game · all at ${m.book} · ${m.stake_pct}u`;
       $('#m80-copy').hidden = false;
       const mitem = { pick: m.pick, odds: Number(m.odds), book: m.book, game: m.game, prob: Number(m.prob), stake: Number(m.stake_pct) || 0, cat: '80% multi' };

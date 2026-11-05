@@ -1,5 +1,5 @@
 /* ClaudioPunts app: network first, so the board is always the latest when online; the last copy opens offline. */
-const CACHE = 'claudiopunts-v2';
+const CACHE = 'claudiopunts-v3';
 const SHELL = ['./', './index.html', './manifest.webmanifest', './icons/icon-192.png', './icons/apple-touch-icon.png'];
 self.addEventListener('install', e => { e.waitUntil(caches.open(CACHE).then(c => c.addAll(SHELL)).then(() => self.skipWaiting())); });
 self.addEventListener('activate', e => {

@@ -911,7 +911,7 @@ window.dash = (() => {
     // charts + tabs
     const cm = $('#chart-margin'), ct = $('#chart-total');
     if (G.status === 'ok') {
-      if (!chosen) chosen = G.data[0].game;
+      if (!chosen || !G.data.some(r => r.game === chosen)) chosen = G.data[0].game;   // a game from another day's board
       try {
         // which side of each handicap / total the model takes (Bet = lime with the number; otherwise the model's lean in white)
         const SP = {}, TP = {};
@@ -1406,6 +1406,8 @@ window.dash = (() => {
     const tm = document.querySelector('.cp-tab[data-tab="tomorrow"]');
     if (tm) tm.hidden = !hasTomorrow();
     if (sel.tab === 'today' && DAY === 'cur' && swapped()) DAY = 'next';          // midnight passed while the page was open
+    // Explore / Games opened before the data loaded (or midnight passed): today's board is stale and tomorrow's is for today
+    if ((sel.tab === 'explore' || sel.tab === 'games') && DAY === 'cur' && VIEWDAY !== 'next' && swapped()) DAY = 'next';
     if (sel.tab === 'tomorrow' && !hasTomorrow()) { DAY = swapped() ? 'next' : 'cur'; if (tm) tm.setAttribute('aria-selected', 'false'); const td = document.querySelector('.cp-tab[data-tab="today"]'); if (td) td.setAttribute('aria-selected', 'true'); }
     const bar = $('#day-bar'), M = dash.data('meta'), lab = M.status === 'ok' && M.data[0] ? M.data[0].date_label : '';
     const dsw = (sel.tab === 'explore' || sel.tab === 'games') && hasTomorrow();

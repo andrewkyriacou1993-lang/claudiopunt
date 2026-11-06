@@ -1,1087 +1,132 @@
 rid,category,game,tip,pick,prob,fair_odds,odds,book,ev_pct,verdict,all_odds,src,market,bet,player,stat,side,line
-1,Total,Heat @ Warriors,14:10,Heat @ Warriors Under 272.5,98.5,1.02,1.01,Sportsbet,-0.5,Pass,Sportsbet 1.01,game,Total,Under 272.5,,,,
-2,Total,Heat @ Warriors,14:10,Heat @ Warriors Under 271.5,98.2,1.02,1.01,Sportsbet,-0.8,Pass,Sportsbet 1.01,game,Total,Under 271.5,,,,
-3,Total,Heat @ Warriors,14:10,Heat @ Warriors Under 270.5,98.0,1.02,1.01,Sportsbet,-1.0,Pass,Sportsbet 1.01,game,Total,Under 270.5,,,,
-4,Total,Magic @ Suns,13:10,Magic @ Suns Under 260.5,97.9,1.02,1.01,Sportsbet,-1.1,Pass,Sportsbet 1.01,game,Total,Under 260.5,,,,
-5,Total,Heat @ Warriors,14:10,Heat @ Warriors Under 269.5,97.7,1.02,1.02,Sportsbet,-0.4,Pass,Sportsbet 1.02,game,Total,Under 269.5,,,,
-6,Alt threes,Heat @ Warriors,14:10,Stephen Curry 1+ threes,97.7,1.02,1.01,Sportsbet,-1.3,Pass,Sportsbet 1.01,alt,Threes,,Stephen Curry,Threes,Over,0.5
-7,Total,Magic @ Suns,13:10,Magic @ Suns Under 259.5,97.6,1.02,1.01,Sportsbet,-1.4,Pass,Sportsbet 1.01,game,Total,Under 259.5,,,,
-8,Total,Heat @ Warriors,14:10,Heat @ Warriors Under 268.5,97.4,1.03,1.02,Sportsbet,-0.7,Pass,Sportsbet 1.02,game,Total,Under 268.5,,,,
-9,Total,Magic @ Suns,13:10,Magic @ Suns Under 258.5,97.3,1.03,1.01,Sportsbet,-1.8,Pass,Sportsbet 1.01,game,Total,Under 258.5,,,,
-10,Total,Heat @ Warriors,14:10,Heat @ Warriors Under 267.5,97.0,1.03,1.02,Sportsbet,-1.0,Pass,Sportsbet 1.02,game,Total,Under 267.5,,,,
-11,Total,Magic @ Suns,13:10,Magic @ Suns Over 190.5,97.0,1.03,1.01,Sportsbet,-2.0,Pass,Sportsbet 1.01,game,Total,Over 190.5,,,,
-12,Total,Magic @ Suns,13:10,Magic @ Suns Under 257.5,96.9,1.03,1.02,Sportsbet,-1.2,Pass,Sportsbet 1.02,game,Total,Under 257.5,,,,
-13,Total,Heat @ Warriors,14:10,Heat @ Warriors Under 266.5,96.6,1.04,1.02,Sportsbet,-1.5,Pass,Sportsbet 1.02,game,Total,Under 266.5,,,,
-14,Total,Magic @ Suns,13:10,Magic @ Suns Over 191.5,96.6,1.04,1.01,Sportsbet,-2.5,Pass,Sportsbet 1.01,game,Total,Over 191.5,,,,
-15,Total,Magic @ Suns,13:10,Magic @ Suns Under 256.5,96.5,1.04,1.02,Sportsbet,-1.6,Pass,Sportsbet 1.02,game,Total,Under 256.5,,,,
-16,Total,Heat @ Warriors,14:10,Heat @ Warriors Over 201.5,96.4,1.04,1.01,Sportsbet,-2.6,Pass,Sportsbet 1.01,game,Total,Over 201.5,,,,
-17,Total,Heat @ Warriors,14:10,Heat @ Warriors Under 265.5,96.2,1.04,1.03,Sportsbet,-0.9,Pass,Sportsbet 1.03,game,Total,Under 265.5,,,,
-18,Total,Magic @ Suns,13:10,Magic @ Suns Over 192.5,96.1,1.04,1.02,Sportsbet,-1.9,Pass,Sportsbet 1.02,game,Total,Over 192.5,,,,
-19,Line,Heat @ Warriors,14:10,Miami Heat +31.5,96.1,1.04,1.02,Sportsbet,-2.0,Pass,Sportsbet 1.02,game,Spread,Miami Heat +31.5,,,,
-20,Total,Magic @ Suns,13:10,Magic @ Suns Under 255.5,96.0,1.04,1.02,Sportsbet,-2.1,Pass,Sportsbet 1.02,game,Total,Under 255.5,,,,
-21,Total,Heat @ Warriors,14:10,Heat @ Warriors Over 202.5,96.0,1.04,1.01,Sportsbet,-3.1,Pass,Sportsbet 1.01,game,Total,Over 202.5,,,,
-22,Total,Heat @ Warriors,14:10,Heat @ Warriors Under 264.5,95.7,1.04,1.03,Sportsbet,-1.4,Pass,Sportsbet 1.03,game,Total,Under 264.5,,,,
-23,Line,Heat @ Warriors,14:10,Golden State Warriors +16.5,95.7,1.04,1.02,Sportsbet,-2.4,Pass,Sportsbet 1.02,game,Spread,Golden State Warriors +16.5,,,,
-24,Total,Magic @ Suns,13:10,Magic @ Suns Over 193.5,95.6,1.05,1.02,Sportsbet,-2.4,Pass,Sportsbet 1.02,game,Total,Over 193.5,,,,
-25,Total,Heat @ Warriors,14:10,Heat @ Warriors Over 203.5,95.5,1.05,1.02,Sportsbet,-2.6,Pass,Sportsbet 1.02,game,Total,Over 203.5,,,,
-26,Total,Magic @ Suns,13:10,Magic @ Suns Under 254.5,95.5,1.05,1.02,Sportsbet,-2.6,Pass,Sportsbet 1.02,game,Total,Under 254.5,,,,
-27,Line,Heat @ Warriors,14:10,Miami Heat +30.5,95.4,1.05,1.02,Sportsbet,-2.6,Pass,Sportsbet 1.02,game,Spread,Miami Heat +30.5,,,,
-28,Line,Magic @ Suns,13:10,Orlando Magic +23.5,95.3,1.05,1.02,Sportsbet,-2.8,Pass,Sportsbet 1.02,game,Spread,Orlando Magic +23.5,,,,
-29,Total,Heat @ Warriors,14:10,Heat @ Warriors Under 263.5,95.1,1.05,1.04,Sportsbet,-1.0,Pass,Sportsbet 1.04,game,Total,Under 263.5,,,,
-30,Line,Magic @ Suns,13:10,Phoenix Suns +22.5,95.1,1.05,1.02,Sportsbet,-3.0,Pass,Sportsbet 1.02,game,Spread,Phoenix Suns +22.5,,,,
-31,Total,Magic @ Suns,13:10,Magic @ Suns Over 194.5,95.1,1.05,1.02,Sportsbet,-3.0,Pass,Sportsbet 1.02,game,Total,Over 194.5,,,,
-32,Line,Heat @ Warriors,14:10,Golden State Warriors +15.5,95.0,1.05,1.02,Sportsbet,-3.1,Pass,Sportsbet 1.02,game,Spread,Golden State Warriors +15.5,,,,
-33,Total,Magic @ Suns,13:10,Magic @ Suns Under 253.5,95.0,1.05,1.02,Sportsbet,-3.1,Pass,Sportsbet 1.02,game,Total,Under 253.5,,,,
-34,Total,Heat @ Warriors,14:10,Heat @ Warriors Over 204.5,94.9,1.05,1.02,Sportsbet,-3.2,Pass,Sportsbet 1.02,game,Total,Over 204.5,,,,
-35,Line,Heat @ Warriors,14:10,Miami Heat +29.5,94.7,1.06,1.03,Sportsbet,-2.5,Pass,Sportsbet 1.03,game,Spread,Miami Heat +29.5,,,,
-36,Total,Heat @ Warriors,14:10,Heat @ Warriors Under 262.5,94.6,1.06,1.04,Sportsbet,-1.7,Pass,Sportsbet 1.04,game,Total,Under 262.5,,,,
-37,Line,Magic @ Suns,13:10,Orlando Magic +22.5,94.6,1.06,1.02,Sportsbet,-3.5,Pass,Sportsbet 1.02,game,Spread,Orlando Magic +22.5,,,,
-38,Total,Magic @ Suns,13:10,Magic @ Suns Over 195.5,94.5,1.06,1.02,Sportsbet,-3.6,Pass,Sportsbet 1.02,game,Total,Over 195.5,,,,
-39,Total,Magic @ Suns,13:10,Magic @ Suns Under 252.5,94.4,1.06,1.03,Sportsbet,-2.8,Pass,Sportsbet 1.03,game,Total,Under 252.5,,,,
-40,Total,Heat @ Warriors,14:10,Heat @ Warriors Over 205.5,94.3,1.06,1.02,Sportsbet,-3.8,Pass,Sportsbet 1.02,game,Total,Over 205.5,,,,
-41,Line,Magic @ Suns,13:10,Phoenix Suns +21.5,94.3,1.06,1.02,Sportsbet,-3.8,Pass,Sportsbet 1.02,game,Spread,Phoenix Suns +21.5,,,,
-42,Alt threes,Magic @ Suns,13:10,Desmond Bane 1+ threes,94.3,1.06,1.02,Sportsbet,-3.9,Pass,Sportsbet 1.02,alt,Threes,,Desmond Bane,Threes,Over,0.5
-43,Line,Heat @ Warriors,14:10,Golden State Warriors +14.5,94.2,1.06,1.03,Sportsbet,-3.0,Pass,Sportsbet 1.03,game,Spread,Golden State Warriors +14.5,,,,
-44,Total,Heat @ Warriors,14:10,Heat @ Warriors Under 261.5,93.9,1.06,1.05,Sportsbet,-1.4,Pass,Sportsbet 1.05,game,Total,Under 261.5,,,,
-45,Line,Heat @ Warriors,14:10,Miami Heat +28.5,93.9,1.06,1.04,Sportsbet,-2.4,Pass,Sportsbet 1.04,game,Spread,Miami Heat +28.5,,,,
-46,Total,Magic @ Suns,13:10,Magic @ Suns Over 196.5,93.9,1.06,1.03,Sportsbet,-3.3,Pass,Sportsbet 1.03,game,Total,Over 196.5,,,,
-47,Line,Magic @ Suns,13:10,Orlando Magic +21.5,93.7,1.07,1.03,Sportsbet,-3.5,Pass,Sportsbet 1.03,game,Spread,Orlando Magic +21.5,,,,
-48,Total,Magic @ Suns,13:10,Magic @ Suns Under 251.5,93.7,1.07,1.03,Sportsbet,-3.5,Pass,Sportsbet 1.03,game,Total,Under 251.5,,,,
-49,Total,Heat @ Warriors,14:10,Heat @ Warriors Over 206.5,93.6,1.07,1.02,Sportsbet,-4.5,Pass,Sportsbet 1.02,game,Total,Over 206.5,,,,
-50,Line,Magic @ Suns,13:10,Phoenix Suns +20.5,93.4,1.07,1.02,Sportsbet,-4.7,Pass,Sportsbet 1.02,game,Spread,Phoenix Suns +20.5,,,,
-51,Line,Heat @ Warriors,14:10,Golden State Warriors +13.5,93.3,1.07,1.03,Sportsbet,-3.9,Pass,Sportsbet 1.03,game,Spread,Golden State Warriors +13.5,,,,
-52,Total,Heat @ Warriors,14:10,Heat @ Warriors Under 260.5,93.2,1.07,1.06,Sportsbet,-1.2,Pass,Sportsbet 1.06,game,Total,Under 260.5,,,,
-53,Total,Magic @ Suns,13:10,Magic @ Suns Over 197.5,93.2,1.07,1.04,Sportsbet,-3.1,Pass,Sportsbet 1.04,game,Total,Over 197.5,,,,
-54,Total,Magic @ Suns,13:10,Magic @ Suns Under 250.5,93.0,1.08,1.04,Sportsbet,-3.3,Pass,Sportsbet 1.04,game,Total,Under 250.5,,,,
-55,Line,Heat @ Warriors,14:10,Miami Heat +27.5,92.9,1.08,1.04,Sportsbet,-3.4,Pass,Sportsbet 1.04,game,Spread,Miami Heat +27.5,,,,
-56,Total,Heat @ Warriors,14:10,Heat @ Warriors Over 207.5,92.9,1.08,1.02,Sportsbet,-5.2,Pass,Sportsbet 1.02,game,Total,Over 207.5,,,,
-57,Line,Magic @ Suns,13:10,Orlando Magic +20.5,92.7,1.08,1.04,Sportsbet,-3.5,Pass,Sportsbet 1.04,game,Spread,Orlando Magic +20.5,,,,
-58,Alt points,Magic @ Suns,13:10,Dillon Brooks 7+ points,92.6,1.08,1.03,PointsBet,-4.6,Pass,PointsBet 1.03,alt,Points,,Dillon Brooks,Points,Over,6.5
-59,Total,Heat @ Warriors,14:10,Heat @ Warriors Under 259.5,92.4,1.08,1.07,Sportsbet,-1.1,Pass,Sportsbet 1.07,game,Total,Under 259.5,,,,
-60,Total,Magic @ Suns,13:10,Magic @ Suns Over 198.5,92.4,1.08,1.04,Sportsbet,-3.9,Pass,Sportsbet 1.04,game,Total,Over 198.5,,,,
-61,Line,Magic @ Suns,13:10,Phoenix Suns +19.5,92.4,1.08,1.03,Sportsbet,-4.8,Pass,Sportsbet 1.03,game,Spread,Phoenix Suns +19.5,,,,
-62,Line,Heat @ Warriors,14:10,Golden State Warriors +12.5,92.3,1.08,1.04,Sportsbet,-4.0,Pass,Sportsbet 1.04,game,Spread,Golden State Warriors +12.5,,,,
-63,Total,Magic @ Suns,13:10,Magic @ Suns Under 249.5,92.2,1.08,1.04,Sportsbet,-4.1,Pass,Sportsbet 1.04,game,Total,Under 249.5,,,,
-64,Total,Heat @ Warriors,14:10,Heat @ Warriors Over 208.5,92.1,1.09,1.03,Sportsbet,-5.1,Pass,Sportsbet 1.03,game,Total,Over 208.5,,,,
-65,Line,Heat @ Warriors,14:10,Miami Heat +26.5,91.9,1.09,1.05,Sportsbet,-3.5,Pass,Sportsbet 1.05,game,Spread,Miami Heat +26.5,,,,
-66,Line,Magic @ Suns,13:10,Orlando Magic +19.5,91.7,1.09,1.05,Sportsbet,-3.7,Pass,Sportsbet 1.05,game,Spread,Orlando Magic +19.5,,,,
-67,Total,Heat @ Warriors,14:10,Heat @ Warriors Under 258.5,91.6,1.09,1.08,Sportsbet,-1.1,Pass,Sportsbet 1.08,game,Total,Under 258.5,,,,
-68,Total,Magic @ Suns,13:10,Magic @ Suns Over 199.5,91.6,1.09,1.05,Sportsbet,-3.9,Pass,Sportsbet 1.05,game,Total,Over 199.5,,,,
-69,Alt points,Magic @ Suns,13:10,Tristan Da Silva 5+ points,91.4,1.09,1.05,PointsBet,-4.0,Pass,PointsBet 1.05,alt,Points,,Tristan Da Silva,Points,Over,4.5
-70,Total,Magic @ Suns,13:10,Magic @ Suns Under 248.5,91.3,1.1,1.05,Sportsbet,-4.1,Pass,Sportsbet 1.05,game,Total,Under 248.5,,,,
-71,Total,Heat @ Warriors,14:10,Heat @ Warriors Over 209.5,91.3,1.1,1.04,Sportsbet,-5.1,Pass,Sportsbet 1.04,game,Total,Over 209.5,,,,
-72,Line,Magic @ Suns,13:10,Phoenix Suns +18.5,91.3,1.1,1.04,Sportsbet,-5.1,Pass,Sportsbet 1.04,game,Spread,Phoenix Suns +18.5,,,,
-73,Line,Heat @ Warriors,14:10,Golden State Warriors +11.5,91.2,1.1,1.05,Sportsbet,-4.3,Pass,Sportsbet 1.05,game,Spread,Golden State Warriors +11.5,,,,
-74,Alt rebounds,Heat @ Warriors,14:10,Bam Adebayo 6+ rebounds,91.0,1.1,1.05,PointsBet,-4.4,Pass,PointsBet 1.05,alt,Rebounds,,Bam Adebayo,Rebounds,Over,5.5
-75,Alt points,Magic @ Suns,13:10,Wendell Carter Jr. 5+ points,90.9,1.1,1.05,PointsBet,-4.6,Pass,PointsBet 1.05,alt,Points,,Wendell Carter Jr.,Points,Over,4.5
-76,Total,Heat @ Warriors,14:10,Heat @ Warriors Under 257.5,90.7,1.1,1.09,Sportsbet,-1.1,Pass,Sportsbet 1.09,game,Total,Under 257.5,,,,
-77,Total,Magic @ Suns,13:10,Magic @ Suns Over 200.5,90.7,1.1,1.07,Sportsbet,-3.0,Pass,Sportsbet 1.07,game,Total,Over 200.5,,,,
-78,Line,Heat @ Warriors,14:10,Miami Heat +25.5,90.7,1.1,1.06,Sportsbet,-3.9,Pass,Sportsbet 1.06,game,Spread,Miami Heat +25.5,,,,
-79,Alt rebounds,Magic @ Suns,13:10,Tristan Da Silva 2+ rebounds,90.6,1.1,1.06,PointsBet,-4.0,Pass,PointsBet 1.06,alt,Rebounds,,Tristan Da Silva,Rebounds,Over,1.5
-80,Alt threes,Magic @ Suns,13:10,Tristan Da Silva 1+ threes,90.6,1.1,1.06,PointsBet,-4.0,Pass,PointsBet 1.06 · Sportsbet 1.05,alt,Threes,,Tristan Da Silva,Threes,Over,0.5
-81,Line,Magic @ Suns,13:10,Orlando Magic +18.5,90.5,1.1,1.06,Sportsbet,-4.1,Pass,Sportsbet 1.06,game,Spread,Orlando Magic +18.5,,,,
-82,Total,Magic @ Suns,13:10,Magic @ Suns Under 247.5,90.4,1.11,1.07,Sportsbet,-3.3,Pass,Sportsbet 1.07,game,Total,Under 247.5,,,,
-83,Alt rebounds,Magic @ Suns,13:10,Anthony Black 2+ rebounds,90.4,1.11,1.06,PointsBet,-4.2,Pass,PointsBet 1.06,alt,Rebounds,,Anthony Black,Rebounds,Over,1.5
-84,Alt points,Magic @ Suns,13:10,Desmond Bane 10+ points,90.4,1.11,1.04,PointsBet,-6.0,Pass,PointsBet 1.04,alt,Points,,Desmond Bane,Points,Over,9.5
-85,Alt assists,Heat @ Warriors,14:10,Brandin Podziemski 2+ assists,90.3,1.11,1.07,PointsBet,-3.4,Pass,PointsBet 1.07,alt,Assists,,Brandin Podziemski,Assists,Over,1.5
-86,Alt threes,Heat @ Warriors,14:10,Stephen Curry 2+ threes,90.3,1.11,1.06,PointsBet,-4.2,Pass,PointsBet 1.06 · Sportsbet 1.05,alt,Threes,,Stephen Curry,Threes,Over,1.5
-87,Total,Heat @ Warriors,14:10,Heat @ Warriors Over 210.5,90.3,1.11,1.05,Sportsbet,-5.1,Pass,Sportsbet 1.05,game,Total,Over 210.5,,,,
-88,Alt rebounds,Heat @ Warriors,14:10,Yaxel Lendeborg 4+ rebounds,90.2,1.11,1.07,PointsBet,-3.5,Pass,PointsBet 1.07,alt,Rebounds,,Yaxel Lendeborg,Rebounds,Over,3.5
-89,Alt rebounds,Magic @ Suns,13:10,Desmond Bane 2+ rebounds,90.1,1.11,1.07,PointsBet,-3.6,Pass,PointsBet 1.07,alt,Rebounds,,Desmond Bane,Rebounds,Over,1.5
-90,Line,Magic @ Suns,13:10,Phoenix Suns +17.5,90.1,1.11,1.05,Sportsbet,-5.4,Pass,Sportsbet 1.05,game,Spread,Phoenix Suns +17.5,,,,
-91,Alt points,Magic @ Suns,13:10,Miles Bridges 8+ points,90.1,1.11,1.04,PointsBet,-6.3,Pass,PointsBet 1.04,alt,Points,,Miles Bridges,Points,Over,7.5
-92,Alt points,Magic @ Suns,13:10,Anthony Black 7+ points,90.1,1.11,1.03,PointsBet,-7.2,Pass,PointsBet 1.03,alt,Points,,Anthony Black,Points,Over,6.5
-93,Alt points,Magic @ Suns,13:10,Dillon Brooks 8+ points,90.0,1.11,1.06,PointsBet,-4.6,Pass,PointsBet 1.06,alt,Points,,Dillon Brooks,Points,Over,7.5
-94,Line,Heat @ Warriors,14:10,Golden State Warriors +10.5,89.9,1.11,1.06,Sportsbet,-4.7,Pass,Sportsbet 1.06,game,Spread,Golden State Warriors +10.5,,,,
-95,Total,Heat @ Warriors,14:10,Heat @ Warriors Under 256.5,89.8,1.11,1.11,Sportsbet,-0.4,Pass,Sportsbet 1.11,game,Total,Under 256.5,,,,
-96,Total,Magic @ Suns,13:10,Magic @ Suns Over 201.5,89.7,1.11,1.08,Sportsbet,-3.1,Pass,Sportsbet 1.08,game,Total,Over 201.5,,,,
-97,Alt rebounds,Magic @ Suns,13:10,Dillon Brooks 2+ rebounds,89.6,1.12,1.08,PointsBet,-3.2,Pass,PointsBet 1.08,alt,Rebounds,,Dillon Brooks,Rebounds,Over,1.5
-98,Alt points,Heat @ Warriors,14:10,Yaxel Lendeborg 10+ points,89.6,1.12,1.04,PointsBet,-6.8,Pass,PointsBet 1.04,alt,Points,,Yaxel Lendeborg,Points,Over,9.5
-99,Alt points,Magic @ Suns,13:10,Jalen Green 8+ points,89.5,1.12,1.04,PointsBet,-7.0,Pass,PointsBet 1.04,alt,Points,,Jalen Green,Points,Over,7.5
-100,Total,Magic @ Suns,13:10,Magic @ Suns Under 246.5,89.4,1.12,1.08,Sportsbet,-3.4,Pass,Sportsbet 1.08,game,Total,Under 246.5,,,,
-101,Line,Heat @ Warriors,14:10,Miami Heat +24.5,89.4,1.12,1.07,Sportsbet,-4.3,Pass,Sportsbet 1.07,game,Spread,Miami Heat +24.5,,,,
-102,Total,Heat @ Warriors,14:10,Heat @ Warriors Over 211.5,89.4,1.12,1.06,Sportsbet,-5.3,Pass,Sportsbet 1.06,game,Total,Over 211.5,,,,
-103,Line,Magic @ Suns,13:10,Orlando Magic +17.5,89.2,1.12,1.06,Sportsbet,-5.5,Pass,Sportsbet 1.06,game,Spread,Orlando Magic +17.5,,,,
-104,Alt points,Heat @ Warriors,14:10,Brandin Podziemski 8+ points,89.0,1.12,1.05,PointsBet,-6.5,Pass,PointsBet 1.05,alt,Points,,Brandin Podziemski,Points,Over,7.5
-105,Alt rebounds,Magic @ Suns,13:10,Devin Booker 2+ rebounds,88.8,1.13,1.06,PointsBet,-5.9,Pass,PointsBet 1.06,alt,Rebounds,,Devin Booker,Rebounds,Over,1.5
-106,Total,Heat @ Warriors,14:10,Heat @ Warriors Under 255.5,88.7,1.13,1.13,Sportsbet,0.3,Pass,Sportsbet 1.13,game,Total,Under 255.5,,,,
-107,Total,Magic @ Suns,13:10,Magic @ Suns Over 202.5,88.7,1.13,1.09,Sportsbet,-3.4,Pass,Sportsbet 1.09,game,Total,Over 202.5,,,,
-108,Line,Magic @ Suns,13:10,Phoenix Suns +16.5,88.7,1.13,1.06,Sportsbet,-6.0,Pass,Sportsbet 1.06,game,Spread,Phoenix Suns +16.5,,,,
-109,Line,Heat @ Warriors,14:10,Golden State Warriors +9.5,88.6,1.13,1.08,Sportsbet,-4.4,Pass,Sportsbet 1.08,game,Spread,Golden State Warriors +9.5,,,,
-110,Alt assists,Magic @ Suns,13:10,Anthony Black 2+ assists,88.6,1.13,1.05,PointsBet,-6.9,Pass,PointsBet 1.05,alt,Assists,,Anthony Black,Assists,Over,1.5
-111,Total,Magic @ Suns,13:10,Magic @ Suns Under 245.5,88.4,1.13,1.09,Sportsbet,-3.7,Pass,Sportsbet 1.09,game,Total,Under 245.5,,,,
-112,Total,Heat @ Warriors,14:10,Heat @ Warriors Over 212.5,88.3,1.13,1.07,Sportsbet,-5.5,Pass,Sportsbet 1.07,game,Total,Over 212.5,,,,
-113,Alt points,Magic @ Suns,13:10,Desmond Bane 11+ points,88.1,1.14,1.06,PointsBet,-6.6,Pass,PointsBet 1.06,alt,Points,,Desmond Bane,Points,Over,10.5
-114,Line,Heat @ Warriors,14:10,Miami Heat +23.5,88.0,1.14,1.10,Sportsbet,-3.2,Pass,Sportsbet 1.10,game,Spread,Miami Heat +23.5,,,,
-115,Alt points,Heat @ Warriors,14:10,De'Anthony Melton 5+ points,87.8,1.14,1.13,PointsBet,-0.8,Pass,PointsBet 1.13,alt,Points,,De'Anthony Melton,Points,Over,4.5
-116,Alt rebounds,Heat @ Warriors,14:10,Giannis Antetokounmpo 8+ rebounds,87.7,1.14,1.09,PointsBet,-4.4,Pass,PointsBet 1.09,alt,Rebounds,,Giannis Antetokounmpo,Rebounds,Over,7.5
-117,Line,Magic @ Suns,13:10,Orlando Magic +16.5,87.7,1.14,1.08,Sportsbet,-5.2,Pass,Sportsbet 1.08,game,Spread,Orlando Magic +16.5,,,,
-118,Total,Heat @ Warriors,14:10,Heat @ Warriors Under 254.5,87.6,1.14,1.14,Sportsbet,-0.1,Pass,Sportsbet 1.14,game,Total,Under 254.5,,,,
-119,Alt points,Magic @ Suns,13:10,Tristan Da Silva 6+ points,87.6,1.14,1.09,PointsBet,-4.6,Pass,PointsBet 1.09,alt,Points,,Tristan Da Silva,Points,Over,5.5
-120,Total,Magic @ Suns,13:10,Magic @ Suns Over 203.5,87.5,1.14,1.10,Sportsbet,-3.7,Pass,Sportsbet 1.10,game,Total,Over 203.5,,,,
-121,Alt points,Magic @ Suns,13:10,Franz Wagner 13+ points,87.4,1.14,1.04,PointsBet,-9.2,Pass,PointsBet 1.04,alt,Points,,Franz Wagner,Points,Over,12.5
-122,Total,Magic @ Suns,13:10,Magic @ Suns Under 244.5,87.2,1.15,1.10,Sportsbet,-4.0,Pass,Sportsbet 1.10,game,Total,Under 244.5,,,,
-123,Alt assists,Heat @ Warriors,14:10,Bam Adebayo 2+ assists,87.2,1.15,1.08,PointsBet,-5.8,Pass,PointsBet 1.08,alt,Assists,,Bam Adebayo,Assists,Over,1.5
-124,Total,Heat @ Warriors,14:10,Heat @ Warriors Over 213.5,87.2,1.15,1.08,Sportsbet,-5.9,Pass,Sportsbet 1.08,game,Total,Over 213.5,,,,
-125,Line,Magic @ Suns,13:10,Phoenix Suns +15.5,87.2,1.15,1.07,Sportsbet,-6.6,Pass,Sportsbet 1.07,game,Spread,Phoenix Suns +15.5,,,,
-126,Alt points,Magic @ Suns,13:10,Miles Bridges 9+ points,87.2,1.15,1.07,PointsBet,-6.7,Pass,PointsBet 1.07,alt,Points,,Miles Bridges,Points,Over,8.5
-127,Line,Heat @ Warriors,14:10,Golden State Warriors +8.5,87.1,1.15,1.10,Sportsbet,-4.2,Pass,Sportsbet 1.10,game,Spread,Golden State Warriors +8.5,,,,
-128,Alt points,Magic @ Suns,13:10,Dillon Brooks 9+ points,87.1,1.15,1.09,PointsBet,-5.1,Pass,PointsBet 1.09,alt,Points,,Dillon Brooks,Points,Over,8.5
-129,Alt points,Heat @ Warriors,14:10,Yaxel Lendeborg 11+ points,87.1,1.15,1.06,PointsBet,-7.7,Pass,PointsBet 1.06,alt,Points,,Yaxel Lendeborg,Points,Over,10.5
-130,Alt assists,Magic @ Suns,13:10,Franz Wagner 4+ assists,87.0,1.15,1.07,PointsBet,-6.9,Pass,PointsBet 1.07,alt,Assists,,Franz Wagner,Assists,Over,3.5
-131,Alt points,Heat @ Warriors,14:10,Stephen Curry 16+ points,86.9,1.15,1.05,PointsBet,-8.8,Pass,PointsBet 1.05,alt,Points,,Stephen Curry,Points,Over,15.5
-132,Alt rebounds,Magic @ Suns,13:10,Miles Bridges 4+ rebounds,86.8,1.15,1.09,PointsBet,-5.4,Pass,PointsBet 1.09,alt,Rebounds,,Miles Bridges,Rebounds,Over,3.5
-133,Alt points,Magic @ Suns,13:10,Wendell Carter Jr. 6+ points,86.8,1.15,1.08,PointsBet,-6.3,Pass,PointsBet 1.08,alt,Points,,Wendell Carter Jr.,Points,Over,5.5
-134,Alt points,Magic @ Suns,13:10,Anthony Black 8+ points,86.8,1.15,1.07,PointsBet,-7.2,Pass,PointsBet 1.07,alt,Points,,Anthony Black,Points,Over,7.5
-135,Alt assists,Heat @ Warriors,14:10,Yaxel Lendeborg 2+ assists,86.6,1.15,1.08,PointsBet,-6.4,Pass,PointsBet 1.08,alt,Assists,,Yaxel Lendeborg,Assists,Over,1.5
-136,Line,Heat @ Warriors,14:10,Miami Heat +22.5,86.5,1.16,1.11,Sportsbet,-4.0,Pass,Sportsbet 1.11,game,Spread,Miami Heat +22.5,,,,
-137,Total,Heat @ Warriors,14:10,Heat @ Warriors Under 253.5,86.4,1.16,1.17,Sportsbet,1.1,Pass,Sportsbet 1.17,game,Total,Under 253.5,,,,
-138,Total,Magic @ Suns,13:10,Magic @ Suns Over 204.5,86.4,1.16,1.13,Sportsbet,-2.4,Pass,Sportsbet 1.13,game,Total,Over 204.5,,,,
-139,Alt points,Magic @ Suns,13:10,Jalen Green 9+ points,86.3,1.16,1.07,PointsBet,-7.6,Pass,PointsBet 1.07,alt,Points,,Jalen Green,Points,Over,8.5
-140,Alt points,Heat @ Warriors,14:10,Bam Adebayo 12+ points,86.3,1.16,1.04,PointsBet,-10.2,Pass,PointsBet 1.04,alt,Points,,Bam Adebayo,Points,Over,11.5
-141,Line,Magic @ Suns,13:10,Orlando Magic +15.5,86.2,1.16,1.11,Sportsbet,-4.3,Pass,Sportsbet 1.11,game,Spread,Orlando Magic +15.5,,,,
-142,Alt threes,Heat @ Warriors,14:10,Brandin Podziemski 1+ threes,86.2,1.16,1.09,PointsBet,-6.0,Pass,PointsBet 1.09 · Sportsbet 1.07,alt,Threes,,Brandin Podziemski,Threes,Over,0.5
-143,Alt points,Magic @ Suns,13:10,Devin Booker 15+ points,86.2,1.16,1.04,PointsBet,-10.4,Pass,PointsBet 1.04,alt,Points,,Devin Booker,Points,Over,14.5
-144,Alt P+R+A,Heat @ Warriors,14:10,De'Anthony Melton 10+ P+R+A,86.1,1.16,1.14,PointsBet,-1.8,Pass,PointsBet 1.14,alt,PRA,,De'Anthony Melton,PRA,Over,9.5
-145,Total,Magic @ Suns,13:10,Magic @ Suns Under 243.5,86.0,1.16,1.12,Sportsbet,-3.6,Pass,Sportsbet 1.12,game,Total,Under 243.5,,,,
-146,Total,Heat @ Warriors,14:10,Heat @ Warriors Over 214.5,86.0,1.16,1.09,Sportsbet,-6.3,Pass,Sportsbet 1.09,game,Total,Over 214.5,,,,
-147,Alt rebounds,Heat @ Warriors,14:10,Stephen Curry 2+ rebounds,85.9,1.16,1.09,PointsBet,-6.3,Pass,PointsBet 1.09,alt,Rebounds,,Stephen Curry,Rebounds,Over,1.5
-148,Alt points,Heat @ Warriors,14:10,Brandin Podziemski 9+ points,85.8,1.17,1.08,PointsBet,-7.3,Pass,PointsBet 1.08,alt,Points,,Brandin Podziemski,Points,Over,8.5
-149,Alt threes,Heat @ Warriors,14:10,Yaxel Lendeborg 1+ threes,85.6,1.17,1.11,Sportsbet,-5.0,Pass,Sportsbet 1.11 · PointsBet 1.11,alt,Threes,,Yaxel Lendeborg,Threes,Over,0.5
-150,Line,Magic @ Suns,13:10,Phoenix Suns +14.5,85.6,1.17,1.10,Sportsbet,-5.8,Pass,Sportsbet 1.10,game,Spread,Phoenix Suns +14.5,,,,
-151,Line,Heat @ Warriors,14:10,Golden State Warriors +7.5,85.5,1.17,1.13,Sportsbet,-3.4,Pass,Sportsbet 1.13,game,Spread,Golden State Warriors +7.5,,,,
-152,Alt points,Magic @ Suns,13:10,Desmond Bane 12+ points,85.5,1.17,1.08,PointsBet,-7.7,Pass,PointsBet 1.08,alt,Points,,Desmond Bane,Points,Over,11.5
-153,Alt rebounds,Magic @ Suns,13:10,Jalen Green 2+ rebounds,85.4,1.17,1.11,PointsBet,-5.2,Pass,PointsBet 1.11,alt,Rebounds,,Jalen Green,Rebounds,Over,1.5
-154,Alt points,Heat @ Warriors,14:10,Giannis Antetokounmpo 18+ points,85.4,1.17,1.04,PointsBet,-11.2,Pass,PointsBet 1.04,alt,Points,,Giannis Antetokounmpo,Points,Over,17.5
-155,Alt rebounds,Magic @ Suns,13:10,Wendell Carter Jr. 6+ rebounds,85.3,1.17,1.13,PointsBet,-3.6,Pass,PointsBet 1.13,alt,Rebounds,,Wendell Carter Jr.,Rebounds,Over,5.5
-156,Total,Heat @ Warriors,14:10,Heat @ Warriors Under 252.5,85.2,1.17,1.18,Sportsbet,0.5,Pass,Sportsbet 1.18,game,Total,Under 252.5,,,,
-157,Total,Magic @ Suns,13:10,Magic @ Suns Over 205.5,85.1,1.18,1.14,Sportsbet,-3.0,Pass,Sportsbet 1.14,game,Total,Over 205.5,,,,
-158,Alt points,Magic @ Suns,13:10,Franz Wagner 14+ points,85.0,1.18,1.07,PointsBet,-9.1,Pass,PointsBet 1.07,alt,Points,,Franz Wagner,Points,Over,13.5
-159,Alt threes,Magic @ Suns,13:10,Miles Bridges 1+ threes,84.9,1.18,1.11,PointsBet,-5.8,Pass,PointsBet 1.11 · Sportsbet 1.10,alt,Threes,,Miles Bridges,Threes,Over,0.5
-160,Alt points,Heat @ Warriors,14:10,Stephen Curry 17+ points,84.9,1.18,1.07,PointsBet,-9.1,Pass,PointsBet 1.07,alt,Points,,Stephen Curry,Points,Over,16.5
-161,Total,Magic @ Suns,13:10,Magic @ Suns Under 242.5,84.8,1.18,1.14,Sportsbet,-3.4,Pass,Sportsbet 1.14,game,Total,Under 242.5,,,,
-162,Line,Heat @ Warriors,14:10,Miami Heat +21.5,84.8,1.18,1.13,Sportsbet,-4.2,Pass,Sportsbet 1.13,game,Spread,Miami Heat +21.5,,,,
-163,Total,Heat @ Warriors,14:10,Heat @ Warriors Over 215.5,84.7,1.18,1.11,Sportsbet,-6.0,Pass,Sportsbet 1.11,game,Total,Over 215.5,,,,
-164,Line,Magic @ Suns,13:10,Orlando Magic +14.5,84.5,1.18,1.13,Sportsbet,-4.5,Pass,Sportsbet 1.13,game,Spread,Orlando Magic +14.5,,,,
-165,Alt threes,Magic @ Suns,13:10,Dillon Brooks 1+ threes,84.4,1.18,1.13,PointsBet,-4.6,Pass,PointsBet 1.13 · Sportsbet 1.11,alt,Threes,,Dillon Brooks,Threes,Over,0.5
-166,Alt points,Heat @ Warriors,14:10,Yaxel Lendeborg 12+ points,84.3,1.19,1.08,PointsBet,-9.0,Pass,PointsBet 1.08,alt,Points,,Yaxel Lendeborg,Points,Over,11.5
-167,Alt rebounds,Heat @ Warriors,14:10,De'Anthony Melton 2+ rebounds,84.1,1.19,1.15,PointsBet,-3.3,Pass,PointsBet 1.15,alt,Rebounds,,De'Anthony Melton,Rebounds,Over,1.5
-168,Alt points,Magic @ Suns,13:10,Devin Booker 16+ points,84.0,1.19,1.06,PointsBet,-11.0,Pass,PointsBet 1.06,alt,Points,,Devin Booker,Points,Over,15.5
-169,Total,Heat @ Warriors,14:10,Heat @ Warriors Under 251.5,83.9,1.19,1.20,Sportsbet,0.6,Pass,Sportsbet 1.20,game,Total,Under 251.5,,,,
-170,Line,Magic @ Suns,13:10,Phoenix Suns +13.5,83.9,1.19,1.11,Sportsbet,-6.9,Pass,Sportsbet 1.11,game,Spread,Phoenix Suns +13.5,,,,
-171,Total,Magic @ Suns,13:10,Magic @ Suns Over 206.5,83.8,1.19,1.17,Sportsbet,-2.0,Pass,Sportsbet 1.17,game,Total,Over 206.5,,,,
-172,Alt points,Magic @ Suns,13:10,Miles Bridges 10+ points,83.8,1.19,1.11,PointsBet,-7.0,Pass,PointsBet 1.11,alt,Points,,Miles Bridges,Points,Over,9.5
-173,Line,Heat @ Warriors,14:10,Golden State Warriors +6.5,83.7,1.19,1.14,Sportsbet,-4.6,Pass,Sportsbet 1.14,game,Spread,Golden State Warriors +6.5,,,,
-174,Alt points,Magic @ Suns,13:10,Dillon Brooks 10+ points,83.7,1.19,1.13,PointsBet,-5.4,Pass,PointsBet 1.13,alt,Points,,Dillon Brooks,Points,Over,9.5
-175,Alt threes,Magic @ Suns,13:10,Jalen Green 1+ threes,83.7,1.19,1.11,Sportsbet,-7.1,Pass,Sportsbet 1.11 · PointsBet 1.11,alt,Threes,,Jalen Green,Threes,Over,0.5
-176,Alt points,Heat @ Warriors,14:10,Bam Adebayo 13+ points,83.5,1.2,1.06,PointsBet,-11.5,Pass,PointsBet 1.06,alt,Points,,Bam Adebayo,Points,Over,12.5
-177,Total,Magic @ Suns,13:10,Magic @ Suns Under 241.5,83.4,1.2,1.16,Sportsbet,-3.2,Pass,Sportsbet 1.16,game,Total,Under 241.5,,,,
-178,Alt rebounds,Magic @ Suns,13:10,Franz Wagner 4+ rebounds,83.4,1.2,1.14,PointsBet,-4.9,Pass,PointsBet 1.14,alt,Rebounds,,Franz Wagner,Rebounds,Over,3.5
-179,Alt points,Heat @ Warriors,14:10,Giannis Antetokounmpo 19+ points,83.4,1.2,1.06,PointsBet,-11.6,Pass,PointsBet 1.06,alt,Points,,Giannis Antetokounmpo,Points,Over,18.5
-180,Total,Heat @ Warriors,14:10,Heat @ Warriors Over 216.5,83.3,1.2,1.13,Sportsbet,-5.9,Pass,Sportsbet 1.13,game,Total,Over 216.5,,,,
-181,Line,Heat @ Warriors,14:10,Miami Heat +20.5,83.0,1.2,1.14,Sportsbet,-5.4,Pass,Sportsbet 1.14,game,Spread,Miami Heat +20.5,,,,
-182,Alt points,Magic @ Suns,13:10,Tristan Da Silva 7+ points,83.0,1.2,1.14,PointsBet,-5.4,Pass,PointsBet 1.14,alt,Points,,Tristan Da Silva,Points,Over,6.5
-183,Alt points,Magic @ Suns,13:10,Anthony Black 9+ points,82.9,1.21,1.1,PointsBet,-8.8,Pass,PointsBet 1.10,alt,Points,,Anthony Black,Points,Over,8.5
-184,Alt points,Magic @ Suns,13:10,Jalen Green 10+ points,82.8,1.21,1.1,PointsBet,-9.0,Pass,PointsBet 1.10,alt,Points,,Jalen Green,Points,Over,9.5
-185,Line,Magic @ Suns,13:10,Orlando Magic +13.5,82.7,1.21,1.14,Sportsbet,-5.8,Pass,Sportsbet 1.14 · PointsBet 1.13,game,Spread,Orlando Magic +13.5,,,,
-186,Alt P+R+A,Magic @ Suns,13:10,Desmond Bane 20+ P+R+A,82.7,1.21,1.13,PointsBet,-6.6,Pass,PointsBet 1.13,alt,PRA,,Desmond Bane,PRA,Over,19.5
-187,Alt points,Heat @ Warriors,14:10,Stephen Curry 18+ points,82.7,1.21,1.09,PointsBet,-9.8,Pass,PointsBet 1.09,alt,Points,,Stephen Curry,Points,Over,17.5
-188,Alt points,Heat @ Warriors,14:10,De'Anthony Melton 6+ points,82.6,1.21,1.19,PointsBet,-1.7,Pass,PointsBet 1.19,alt,Points,,De'Anthony Melton,Points,Over,5.5
-189,Total,Heat @ Warriors,14:10,Heat @ Warriors Under 250.5,82.5,1.21,1.24,PointsBet,2.2,Pass,PointsBet 1.24 · Sportsbet 1.23,game,Total,Under 250.5,,,,
-190,Alt points,Magic @ Suns,13:10,Desmond Bane 13+ points,82.5,1.21,1.11,PointsBet,-8.4,Pass,PointsBet 1.11,alt,Points,,Desmond Bane,Points,Over,12.5
-191,Total,Magic @ Suns,13:10,Magic @ Suns Over 207.5,82.4,1.21,1.19,PointsBet,-2.0,Pass,PointsBet 1.19 · Sportsbet 1.18,game,Total,Over 207.5,,,,
-192,Alt points,Magic @ Suns,13:10,Franz Wagner 15+ points,82.4,1.21,1.09,PointsBet,-10.2,Pass,PointsBet 1.09,alt,Points,,Franz Wagner,Points,Over,14.5
-193,Alt points,Magic @ Suns,13:10,Jase Richardson 5+ points,82.1,1.22,1.14,PointsBet,-6.4,Pass,PointsBet 1.14,alt,Points,,Jase Richardson,Points,Over,4.5
-194,Alt points,Heat @ Warriors,14:10,Brandin Podziemski 10+ points,82.1,1.22,1.11,PointsBet,-8.9,Pass,PointsBet 1.11,alt,Points,,Brandin Podziemski,Points,Over,9.5
-195,Total,Magic @ Suns,13:10,Magic @ Suns Under 240.5,82.0,1.22,1.18,Sportsbet,-3.3,Pass,Sportsbet 1.18,game,Total,Under 240.5,,,,
-196,Alt threes,Magic @ Suns,13:10,Anthony Black 1+ threes,82.0,1.22,1.15,Sportsbet,-5.7,Pass,Sportsbet 1.15 · PointsBet 1.15,alt,Threes,,Anthony Black,Threes,Over,0.5
-197,Alt points,Magic @ Suns,13:10,Wendell Carter Jr. 7+ points,82.0,1.22,1.14,PointsBet,-6.5,Pass,PointsBet 1.14,alt,Points,,Wendell Carter Jr.,Points,Over,6.5
-198,Line,Magic @ Suns,13:10,Phoenix Suns +12.5,82.0,1.22,1.13,Sportsbet,-7.3,Pass,Sportsbet 1.13,game,Spread,Phoenix Suns +12.5,,,,
-199,Total,Heat @ Warriors,14:10,Heat @ Warriors Over 217.5,81.9,1.22,1.15,Sportsbet,-5.8,Pass,Sportsbet 1.15,game,Total,Over 217.5,,,,
-200,Line,Heat @ Warriors,14:10,Golden State Warriors +5.5,81.8,1.22,1.17,Sportsbet,-4.2,Pass,Sportsbet 1.17,game,Spread,Golden State Warriors +5.5,,,,
-201,Alt rebounds,Heat @ Warriors,14:10,Georges Niang 2+ rebounds,81.8,1.22,1.16,PointsBet,-5.1,Pass,PointsBet 1.16,alt,Rebounds,,Georges Niang,Rebounds,Over,1.5
-202,Alt points,Magic @ Suns,13:10,Devin Booker 17+ points,81.5,1.23,1.08,PointsBet,-12.0,Pass,PointsBet 1.08,alt,Points,,Devin Booker,Points,Over,16.5
-203,Alt points,Heat @ Warriors,14:10,Giannis Antetokounmpo 20+ points,81.2,1.23,1.08,PointsBet,-12.3,Pass,PointsBet 1.08,alt,Points,,Giannis Antetokounmpo,Points,Over,19.5
-204,Line,Heat @ Warriors,14:10,Miami Heat +19.5,81.1,1.23,1.17,Sportsbet,-5.1,Pass,Sportsbet 1.17 · PointsBet 1.14,game,Spread,Miami Heat +19.5,,,,
-205,Alt points,Heat @ Warriors,14:10,Yaxel Lendeborg 13+ points,81.1,1.23,1.13,PointsBet,-8.3,Pass,PointsBet 1.13,alt,Points,,Yaxel Lendeborg,Points,Over,12.5
-206,Total,Heat @ Warriors,14:10,Heat @ Warriors Under 249.5,81.0,1.23,1.26,Sportsbet,2.0,Pass,Sportsbet 1.26 · PointsBet 1.25,game,Total,Under 249.5,,,,
-207,Total,Magic @ Suns,13:10,Magic @ Suns Over 208.5,80.9,1.24,1.22,Sportsbet,-1.3,Pass,Sportsbet 1.22 · PointsBet 1.21,game,Total,Over 208.5,,,,
-208,Line,Magic @ Suns,13:10,Orlando Magic +12.5,80.7,1.24,1.17,Sportsbet,-5.6,Pass,Sportsbet 1.17 · PointsBet 1.14,game,Spread,Orlando Magic +12.5,,,,
-209,Total,Magic @ Suns,13:10,Magic @ Suns Under 239.5,80.5,1.24,1.21,Sportsbet,-2.6,Pass,Sportsbet 1.21,game,Total,Under 239.5,,,,
-210,Alt assists,Heat @ Warriors,14:10,Giannis Antetokounmpo 4+ assists,80.5,1.24,1.11,PointsBet,-10.7,Pass,PointsBet 1.11,alt,Assists,,Giannis Antetokounmpo,Assists,Over,3.5
-211,Total,Heat @ Warriors,14:10,Heat @ Warriors Over 218.5,80.4,1.24,1.17,Sportsbet,-6.0,Pass,Sportsbet 1.17,game,Total,Over 218.5,,,,
-212,Alt points,Heat @ Warriors,14:10,Bam Adebayo 14+ points,80.4,1.24,1.08,PointsBet,-13.1,Pass,PointsBet 1.08,alt,Points,,Bam Adebayo,Points,Over,13.5
-213,Alt points,Heat @ Warriors,14:10,Stephen Curry 19+ points,80.3,1.25,1.13,PointsBet,-9.2,Pass,PointsBet 1.13,alt,Points,,Stephen Curry,Points,Over,18.5
-214,Alt threes,Magic @ Suns,13:10,Devin Booker 1+ threes,80.1,1.25,1.16,PointsBet,-7.1,Pass,PointsBet 1.16 · Sportsbet 1.14,alt,Threes,,Devin Booker,Threes,Over,0.5
-215,Alt points,Magic @ Suns,13:10,Miles Bridges 11+ points,80.0,1.25,1.16,PointsBet,-7.2,Pass,PointsBet 1.16,alt,Points,,Miles Bridges,Points,Over,10.5
-216,Alt threes,Magic @ Suns,13:10,Desmond Bane 2+ threes,80.0,1.25,1.15,PointsBet,-8.0,Pass,PointsBet 1.15 · Sportsbet 1.14,alt,Threes,,Desmond Bane,Threes,Over,1.5
-217,Line,Magic @ Suns,13:10,Phoenix Suns +11.5,80.0,1.25,1.14,Sportsbet,-8.8,Pass,Sportsbet 1.14,game,Spread,Phoenix Suns +11.5,,,,
-218,Line,Heat @ Warriors,14:10,Golden State Warriors +4.5,79.8,1.25,1.22,PointsBet,-2.6,Pass,PointsBet 1.22 · Sportsbet 1.17,game,Spread,Golden State Warriors +4.5,,,,
-219,Alt points,Magic @ Suns,13:10,Dillon Brooks 11+ points,79.8,1.25,1.18,PointsBet,-5.8,Pass,PointsBet 1.18,alt,Points,,Dillon Brooks,Points,Over,10.5
-220,Total,Heat @ Warriors,14:10,Heat @ Warriors Under 248.5,79.4,1.26,1.28,Sportsbet,1.7,Pass,Sportsbet 1.28 · PointsBet 1.27,game,Total,Under 248.5,,,,
-221,Alt points,Magic @ Suns,13:10,Franz Wagner 16+ points,79.4,1.26,1.11,PointsBet,-11.8,Pass,PointsBet 1.11,alt,Points,,Franz Wagner,Points,Over,15.5
-222,Total,Magic @ Suns,13:10,Magic @ Suns Over 209.5,79.3,1.26,1.24,Sportsbet,-1.7,Pass,Sportsbet 1.24 · PointsBet 1.24,game,Total,Over 209.5,,,,
-223,Alt points,Magic @ Suns,13:10,Desmond Bane 14+ points,79.2,1.26,1.16,PointsBet,-8.1,Pass,PointsBet 1.16,alt,Points,,Desmond Bane,Points,Over,13.5
-224,Alt assists,Magic @ Suns,13:10,Desmond Bane 2+ assists,79.2,1.26,1.14,PointsBet,-9.7,Pass,PointsBet 1.14,alt,Assists,,Desmond Bane,Assists,Over,1.5
-225,Line,Heat @ Warriors,14:10,Miami Heat +18.5,79.0,1.27,1.17,Sportsbet,-7.6,Pass,Sportsbet 1.17 · PointsBet 1.16,game,Spread,Miami Heat +18.5,,,,
-226,Total,Magic @ Suns,13:10,Magic @ Suns Under 238.5,78.9,1.27,1.24,Sportsbet,-2.2,Pass,Sportsbet 1.24,game,Total,Under 238.5,,,,
-227,Total,Heat @ Warriors,14:10,Heat @ Warriors Over 219.5,78.8,1.27,1.19,Sportsbet,-6.2,Pass,Sportsbet 1.19,game,Total,Over 219.5,,,,
-228,Alt assists,Magic @ Suns,13:10,Jalen Green 2+ assists,78.8,1.27,1.14,PointsBet,-10.1,Pass,PointsBet 1.14,alt,Assists,,Jalen Green,Assists,Over,1.5
-229,Alt points,Heat @ Warriors,14:10,Giannis Antetokounmpo 21+ points,78.8,1.27,1.11,PointsBet,-12.5,Pass,PointsBet 1.11,alt,Points,,Giannis Antetokounmpo,Points,Over,20.5
-230,Alt P+R+A,Magic @ Suns,13:10,Jase Richardson 10+ P+R+A,78.7,1.27,1.16,PointsBet,-8.7,Pass,PointsBet 1.16,alt,PRA,,Jase Richardson,PRA,Over,9.5
-231,Alt points,Magic @ Suns,13:10,Jalen Green 11+ points,78.7,1.27,1.15,PointsBet,-9.5,Pass,PointsBet 1.15,alt,Points,,Jalen Green,Points,Over,10.5
-232,Alt points,Magic @ Suns,13:10,Devin Booker 18+ points,78.7,1.27,1.11,PointsBet,-12.6,Pass,PointsBet 1.11,alt,Points,,Devin Booker,Points,Over,17.5
-233,Line,Magic @ Suns,13:10,Orlando Magic +11.5,78.6,1.27,1.20,Sportsbet,-5.6,Pass,Sportsbet 1.20 · PointsBet 1.17,game,Spread,Orlando Magic +11.5,,,,
-234,Alt P+R+A,Magic @ Suns,13:10,Miles Bridges 20+ P+R+A,78.5,1.27,1.18,PointsBet,-7.3,Pass,PointsBet 1.18,alt,PRA,,Miles Bridges,PRA,Over,19.5
-235,Alt points,Magic @ Suns,13:10,Anthony Black 10+ points,78.5,1.27,1.15,PointsBet,-9.7,Pass,PointsBet 1.15,alt,Points,,Anthony Black,Points,Over,9.5
-236,Line,Magic @ Suns,13:10,Phoenix Suns +10.5,77.9,1.28,1.18,PointsBet,-8.1,Pass,PointsBet 1.18 · Sportsbet 1.17,game,Spread,Phoenix Suns +10.5,,,,
-237,Alt points,Heat @ Warriors,14:10,Brandin Podziemski 11+ points,77.9,1.28,1.16,PointsBet,-9.6,Pass,PointsBet 1.16,alt,Points,,Brandin Podziemski,Points,Over,10.5
-238,Total,Heat @ Warriors,14:10,Heat @ Warriors Under 247.5,77.8,1.29,1.32,Sportsbet,2.7,Pass,Sportsbet 1.32 · PointsBet 1.29,game,Total,Under 247.5,,,,
-239,Total,Magic @ Suns,13:10,Magic @ Suns Over 210.5,77.7,1.29,1.26,Sportsbet,-2.1,Pass,Sportsbet 1.26 · PointsBet 1.25,game,Total,Over 210.5,,,,
-240,Line,Heat @ Warriors,14:10,Golden State Warriors +3.5,77.7,1.29,1.25,PointsBet,-2.9,Pass,PointsBet 1.25 · Sportsbet 1.22,game,Spread,Golden State Warriors +3.5,,,,
-241,Alt points,Magic @ Suns,13:10,Tristan Da Silva 8+ points,77.7,1.29,1.21,PointsBet,-6.0,Pass,PointsBet 1.21,alt,Points,,Tristan Da Silva,Points,Over,7.5
-242,Alt points,Heat @ Warriors,14:10,Stephen Curry 20+ points,77.7,1.29,1.16,PointsBet,-9.9,Pass,PointsBet 1.16,alt,Points,,Stephen Curry,Points,Over,19.5
-243,Alt points,Heat @ Warriors,14:10,Yaxel Lendeborg 14+ points,77.6,1.29,1.16,PointsBet,-10.0,Pass,PointsBet 1.16,alt,Points,,Yaxel Lendeborg,Points,Over,13.5
-244,Total,Magic @ Suns,13:10,Magic @ Suns Under 237.5,77.3,1.29,1.26,Sportsbet,-2.7,Pass,Sportsbet 1.26 · PointsBet 1.21,game,Total,Under 237.5,,,,
-245,Alt rebounds,Magic @ Suns,13:10,Khaman Maluach 4+ rebounds,77.3,1.29,1.25,PointsBet,-3.4,Pass,PointsBet 1.25,alt,Rebounds,,Khaman Maluach,Rebounds,Over,3.5
-246,Alt threes,Heat @ Warriors,14:10,De'Anthony Melton 1+ threes,77.3,1.29,1.21,Sportsbet,-6.5,Pass,Sportsbet 1.21,alt,Threes,,De'Anthony Melton,Threes,Over,0.5
-247,Alt threes,Heat @ Warriors,14:10,Stephen Curry 3+ threes,77.2,1.3,1.22,Sportsbet,-5.8,Pass,Sportsbet 1.22 · PointsBet 1.22,alt,Threes,,Stephen Curry,Threes,Over,2.5
-248,Alt assists,Magic @ Suns,13:10,Miles Bridges 2+ assists,77.2,1.3,1.22,PointsBet,-5.9,Pass,PointsBet 1.22,alt,Assists,,Miles Bridges,Assists,Over,1.5
-249,Total,Heat @ Warriors,14:10,Heat @ Warriors Over 220.5,77.1,1.3,1.23,Sportsbet,-5.1,Pass,Sportsbet 1.23 · PointsBet 1.21,game,Total,Over 220.5,,,,
-250,Alt P+R+A,Heat @ Warriors,14:10,Brandin Podziemski 20+ P+R+A,77.1,1.3,1.19,PointsBet,-8.2,Pass,PointsBet 1.19,alt,PRA,,Brandin Podziemski,PRA,Over,19.5
-251,Alt points,Heat @ Warriors,14:10,Bam Adebayo 15+ points,77.0,1.3,1.11,PointsBet,-14.6,Pass,PointsBet 1.11,alt,Points,,Bam Adebayo,Points,Over,14.5
-252,Line,Heat @ Warriors,14:10,Miami Heat +17.5,76.8,1.3,1.22,Sportsbet,-6.3,Pass,Sportsbet 1.22 · PointsBet 1.18,game,Spread,Miami Heat +17.5,,,,
-253,Alt points,Heat @ Warriors,14:10,De'Anthony Melton 7+ points,76.7,1.3,1.29,PointsBet,-1.1,Pass,PointsBet 1.29,alt,Points,,De'Anthony Melton,Points,Over,6.5
-254,Alt points,Magic @ Suns,13:10,Wendell Carter Jr. 8+ points,76.5,1.31,1.22,PointsBet,-6.7,Pass,PointsBet 1.22,alt,Points,,Wendell Carter Jr.,Points,Over,7.5
-255,Line,Magic @ Suns,13:10,Orlando Magic +10.5,76.4,1.31,1.22,Sportsbet,-6.8,Pass,Sportsbet 1.22 · PointsBet 1.20,game,Spread,Orlando Magic +10.5,,,,
-256,Alt points,Heat @ Warriors,14:10,Georges Niang 5+ points,76.2,1.31,1.29,PointsBet,-1.7,Pass,PointsBet 1.29,alt,Points,,Georges Niang,Points,Over,4.5
-257,Alt points,Magic @ Suns,13:10,Franz Wagner 17+ points,76.2,1.31,1.16,PointsBet,-11.6,Pass,PointsBet 1.16,alt,Points,,Franz Wagner,Points,Over,16.5
-258,Alt points,Heat @ Warriors,14:10,Giannis Antetokounmpo 22+ points,76.2,1.31,1.14,PointsBet,-13.1,Pass,PointsBet 1.14,alt,Points,,Giannis Antetokounmpo,Points,Over,21.5
-259,Total,Heat @ Warriors,14:10,Heat @ Warriors Under 246.5,76.1,1.31,1.34,Sportsbet,2.0,Pass,Sportsbet 1.34 · PointsBet 1.33,game,Total,Under 246.5,,,,
-260,Total,Magic @ Suns,13:10,Magic @ Suns Over 211.5,76.0,1.32,1.30,Sportsbet,-1.2,Pass,Sportsbet 1.30 · PointsBet 1.29,game,Total,Over 211.5,,,,
-261,Alt points,Magic @ Suns,13:10,Miles Bridges 12+ points,75.7,1.32,1.22,PointsBet,-7.6,Pass,PointsBet 1.22,alt,Points,,Miles Bridges,Points,Over,11.5
-262,Line,Magic @ Suns,13:10,Phoenix Suns +9.5,75.7,1.32,1.22,Sportsbet,-7.7,Pass,Sportsbet 1.22 · PointsBet 1.22,game,Spread,Phoenix Suns +9.5,,,,
-263,Alt points,Magic @ Suns,13:10,Devin Booker 19+ points,75.7,1.32,1.15,PointsBet,-13.0,Pass,PointsBet 1.15,alt,Points,,Devin Booker,Points,Over,18.5
-264,Alt points,Magic @ Suns,13:10,Desmond Bane 15+ points,75.6,1.32,1.22,PointsBet,-7.8,Pass,PointsBet 1.22,alt,Points,,Desmond Bane,Points,Over,14.5
-265,Total,Magic @ Suns,13:10,Magic @ Suns Under 236.5,75.5,1.32,1.28,Sportsbet,-3.3,Pass,Sportsbet 1.28 · PointsBet 1.24,game,Total,Under 236.5,,,,
-266,Alt points,Magic @ Suns,13:10,Dillon Brooks 12+ points,75.5,1.32,1.25,PointsBet,-5.6,Pass,PointsBet 1.25,alt,Points,,Dillon Brooks,Points,Over,11.5
-267,Line,Heat @ Warriors,14:10,Golden State Warriors +2.5,75.4,1.33,1.29,PointsBet,-2.7,Pass,PointsBet 1.29 · Sportsbet 1.25,game,Spread,Golden State Warriors +2.5,,,,
-268,Total,Heat @ Warriors,14:10,Heat @ Warriors Over 221.5,75.4,1.33,1.26,Sportsbet,-5.0,Pass,Sportsbet 1.26 · PointsBet 1.24,game,Total,Over 221.5,,,,
-269,Alt rebounds,Heat @ Warriors,14:10,Bam Adebayo 8+ rebounds,75.4,1.33,1.21,PointsBet,-8.7,Pass,PointsBet 1.21,alt,Rebounds,,Bam Adebayo,Rebounds,Over,7.5
-270,Alt points,Magic @ Suns,13:10,Jase Richardson 6+ points,75.2,1.33,1.24,PointsBet,-6.8,Pass,PointsBet 1.24,alt,Points,,Jase Richardson,Points,Over,5.5
-271,Alt P+R+A,Heat @ Warriors,14:10,Yaxel Lendeborg 25+ P+R+A,75.1,1.33,1.21,PointsBet,-9.1,Pass,PointsBet 1.21,alt,PRA,,Yaxel Lendeborg,PRA,Over,24.5
-272,Alt points,Heat @ Warriors,14:10,Stephen Curry 21+ points,74.7,1.34,1.22,PointsBet,-8.8,Pass,PointsBet 1.22,alt,Points,,Stephen Curry,Points,Over,20.5
-273,Line,Heat @ Warriors,14:10,Miami Heat +16.5,74.5,1.34,1.25,Sportsbet,-6.9,Pass,Sportsbet 1.25 · PointsBet 1.22,game,Spread,Miami Heat +16.5,,,,
-274,Total,Heat @ Warriors,14:10,Heat @ Warriors Under 245.5,74.3,1.35,1.38,Sportsbet,2.6,Pass,Sportsbet 1.38 · PointsBet 1.36,game,Total,Under 245.5,,,,
-275,Total,Magic @ Suns,13:10,Magic @ Suns Over 212.5,74.2,1.35,1.34,Sportsbet,-0.6,Pass,Sportsbet 1.34 · PointsBet 1.31,game,Total,Over 212.5,,,,
-276,Alt points,Magic @ Suns,13:10,Jalen Green 12+ points,74.2,1.35,1.22,PointsBet,-9.4,Pass,PointsBet 1.22,alt,Points,,Jalen Green,Points,Over,11.5
-277,Alt threes,Magic @ Suns,13:10,Franz Wagner 1+ threes,74.2,1.35,1.22,PointsBet,-9.4,Pass,PointsBet 1.22 · Sportsbet 1.21,alt,Threes,,Franz Wagner,Threes,Over,0.5
-278,Line,Magic @ Suns,13:10,Orlando Magic +9.5,74.1,1.35,1.30,Sportsbet,-3.7,Pass,Sportsbet 1.30 · PointsBet 1.25,game,Spread,Orlando Magic +9.5,,,,
-279,Alt P+R+A,Heat @ Warriors,14:10,Giannis Antetokounmpo 40+ P+R+A,74.1,1.35,1.22,PointsBet,-9.6,Pass,PointsBet 1.22,alt,PRA,,Giannis Antetokounmpo,PRA,Over,39.5
-280,Alt P+R+A,Heat @ Warriors,14:10,Stephen Curry 30+ P+R+A,73.9,1.35,1.29,PointsBet,-4.7,Pass,PointsBet 1.29,alt,PRA,,Stephen Curry,PRA,Over,29.5
-281,Alt P+R+A,Magic @ Suns,13:10,Franz Wagner 30+ P+R+A,73.9,1.35,1.22,PointsBet,-9.8,Pass,PointsBet 1.22,alt,PRA,,Franz Wagner,PRA,Over,29.5
-282,Total,Magic @ Suns,13:10,Magic @ Suns Under 235.5,73.7,1.36,1.32,Sportsbet,-2.7,Pass,Sportsbet 1.32 · PointsBet 1.25,game,Total,Under 235.5,,,,
-283,Alt points,Magic @ Suns,13:10,Anthony Black 11+ points,73.7,1.36,1.24,PointsBet,-8.6,Pass,PointsBet 1.24,alt,Points,,Anthony Black,Points,Over,10.5
-284,Alt points,Heat @ Warriors,14:10,Yaxel Lendeborg 15+ points,73.7,1.36,1.22,PointsBet,-10.1,Pass,PointsBet 1.22,alt,Points,,Yaxel Lendeborg,Points,Over,14.5
-285,Total,Heat @ Warriors,14:10,Heat @ Warriors Over 222.5,73.6,1.36,1.28,Sportsbet,-5.8,Pass,Sportsbet 1.28 · PointsBet 1.25,game,Total,Over 222.5,,,,
-286,Line,Magic @ Suns,13:10,Phoenix Suns +8.5,73.3,1.36,1.27,PointsBet,-6.9,Pass,PointsBet 1.27 · Sportsbet 1.25,game,Spread,Phoenix Suns +8.5,,,,
-287,Alt points,Heat @ Warriors,14:10,Brandin Podziemski 12+ points,73.3,1.36,1.24,PointsBet,-9.1,Pass,PointsBet 1.24,alt,Points,,Brandin Podziemski,Points,Over,11.5
-288,Alt points,Heat @ Warriors,14:10,Giannis Antetokounmpo 23+ points,73.3,1.36,1.19,PointsBet,-12.8,Pass,PointsBet 1.19,alt,Points,,Giannis Antetokounmpo,Points,Over,22.5
-289,Alt points,Heat @ Warriors,14:10,Bam Adebayo 16+ points,73.2,1.37,1.16,PointsBet,-15.1,Pass,PointsBet 1.16,alt,Points,,Bam Adebayo,Points,Over,15.5
-290,Line,Heat @ Warriors,14:10,Golden State Warriors +1.5,73.0,1.37,1.31,PointsBet,-4.3,Pass,PointsBet 1.31 · Sportsbet 1.30,game,Spread,Golden State Warriors +1.5,,,,
-291,Alt rebounds,Heat @ Warriors,14:10,Brandin Podziemski 4+ rebounds,73.0,1.37,1.25,PointsBet,-8.7,Pass,PointsBet 1.25,alt,Rebounds,,Brandin Podziemski,Rebounds,Over,3.5
-292,Alt points,Magic @ Suns,13:10,Franz Wagner 18+ points,72.6,1.38,1.22,PointsBet,-11.4,Pass,PointsBet 1.22,alt,Points,,Franz Wagner,Points,Over,17.5
-293,Total,Heat @ Warriors,14:10,Heat @ Warriors Under 244.5,72.5,1.38,1.41,Sportsbet,2.2,Pass,Sportsbet 1.41 · PointsBet 1.40,game,Total,Under 244.5,,,,
-294,Total,Magic @ Suns,13:10,Magic @ Suns Over 213.5,72.4,1.38,1.36,Sportsbet,-1.6,Pass,Sportsbet 1.36 · PointsBet 1.33,game,Total,Over 213.5,,,,
-295,Alt points,Magic @ Suns,13:10,Devin Booker 20+ points,72.3,1.38,1.21,PointsBet,-12.5,Pass,PointsBet 1.21,alt,Points,,Devin Booker,Points,Over,19.5
-296,Line,Heat @ Warriors,14:10,Miami Heat +15.5,72.1,1.39,1.30,Sportsbet,-6.3,Pass,Sportsbet 1.30 · PointsBet 1.25,game,Spread,Miami Heat +15.5,,,,
-297,Alt assists,Heat @ Warriors,14:10,Stephen Curry 4+ assists,72.1,1.39,1.29,PointsBet,-7.0,Pass,PointsBet 1.29,alt,Assists,,Stephen Curry,Assists,Over,3.5
-298,Total,Magic @ Suns,13:10,Magic @ Suns Under 234.5,71.9,1.39,1.36,Sportsbet,-2.2,Pass,Sportsbet 1.36 · PointsBet 1.29,game,Total,Under 234.5,,,,
-299,Alt rebounds,Heat @ Warriors,14:10,Giannis Antetokounmpo 10+ rebounds,71.9,1.39,1.29,PointsBet,-7.2,Pass,PointsBet 1.29,alt,Rebounds,,Giannis Antetokounmpo,Rebounds,Over,9.5
-300,Alt rebounds,Heat @ Warriors,14:10,Draymond Green 4+ rebounds,71.9,1.39,1.29,PointsBet,-7.3,Pass,PointsBet 1.29,alt,Rebounds,,Draymond Green,Rebounds,Over,3.5
-301,Total,Heat @ Warriors,14:10,Heat @ Warriors Over 223.5,71.8,1.39,1.32,Sportsbet,-5.3,Pass,Sportsbet 1.32 · PointsBet 1.29,game,Total,Over 223.5,,,,
-302,Alt points,Magic @ Suns,13:10,Tristan Da Silva 9+ points,71.8,1.39,1.31,PointsBet,-5.9,Pass,PointsBet 1.31,alt,Points,,Tristan Da Silva,Points,Over,8.5
-303,Alt P+R+A,Heat @ Warriors,14:10,Bam Adebayo 30+ P+R+A,71.7,1.39,1.21,PointsBet,-13.3,Pass,PointsBet 1.21,alt,PRA,,Bam Adebayo,PRA,Over,29.5
-304,Line,Magic @ Suns,13:10,Orlando Magic +8.5,71.6,1.4,1.31,Sportsbet,-6.2,Pass,Sportsbet 1.31 · PointsBet 1.29,game,Spread,Orlando Magic +8.5,,,,
-305,Alt points,Magic @ Suns,13:10,Desmond Bane 16+ points,71.6,1.4,1.29,PointsBet,-7.7,Pass,PointsBet 1.29,alt,Points,,Desmond Bane,Points,Over,15.5
-306,Alt points,Heat @ Warriors,14:10,Stephen Curry 22+ points,71.6,1.4,1.29,PointsBet,-7.7,Pass,PointsBet 1.29,alt,Points,,Stephen Curry,Points,Over,21.5
-307,Alt threes,Heat @ Warriors,14:10,Georges Niang 1+ threes,71.5,1.4,1.25,Sportsbet,-10.6,Pass,Sportsbet 1.25,alt,Threes,,Georges Niang,Threes,Over,0.5
-308,Alt threes,Magic @ Suns,13:10,Tristan Da Silva 2+ threes,71.3,1.4,1.33,Sportsbet,-5.2,Pass,Sportsbet 1.33 · PointsBet 1.33,alt,Threes,,Tristan Da Silva,Threes,Over,1.5
-309,Alt points,Magic @ Suns,13:10,Miles Bridges 13+ points,71.1,1.41,1.31,PointsBet,-6.9,Pass,PointsBet 1.31,alt,Points,,Miles Bridges,Points,Over,12.5
-310,Alt points,Magic @ Suns,13:10,Dillon Brooks 13+ points,70.8,1.41,1.33,PointsBet,-5.8,Pass,PointsBet 1.33,alt,Points,,Dillon Brooks,Points,Over,12.5
-311,Line,Magic @ Suns,13:10,Phoenix Suns +7.5,70.8,1.41,1.31,PointsBet,-7.3,Pass,PointsBet 1.31 · Sportsbet 1.30,game,Spread,Phoenix Suns +7.5,,,,
-312,Alt P+R+A,Magic @ Suns,13:10,Tristan Da Silva 15+ P+R+A,70.7,1.41,1.33,PointsBet,-6.0,Pass,PointsBet 1.33,alt,PRA,,Tristan Da Silva,PRA,Over,14.5
-313,Total,Heat @ Warriors,14:10,Heat @ Warriors Under 243.5,70.6,1.42,1.44,Sportsbet,1.7,Pass,Sportsbet 1.44 · PointsBet 1.44,game,Total,Under 243.5,,,,
-314,Alt threes,Heat @ Warriors,14:10,Bam Adebayo 1+ threes,70.6,1.42,1.27,PointsBet,-10.3,Pass,PointsBet 1.27 · Sportsbet 1.26,alt,Threes,,Bam Adebayo,Threes,Over,0.5
-315,Total,Magic @ Suns,13:10,Magic @ Suns Over 214.5,70.5,1.42,1.41,Sportsbet,-0.6,Pass,Sportsbet 1.41 · PointsBet 1.36,game,Total,Over 214.5,,,,
-316,Moneyline,Heat @ Warriors,14:10,Golden State Warriors ML,70.5,1.42,1.36,PointsBet,-4.1,Pass,PointsBet 1.36 · Betr 1.35 · TAB 1.35 · Sportsbet 1.34,game,Moneyline,Golden State Warriors ML,,,,
-317,Alt points,Magic @ Suns,13:10,Wendell Carter Jr. 9+ points,70.4,1.42,1.33,PointsBet,-6.3,Pass,PointsBet 1.33,alt,Points,,Wendell Carter Jr.,Points,Over,8.5
-318,Alt points,Heat @ Warriors,14:10,Giannis Antetokounmpo 24+ points,70.2,1.42,1.25,PointsBet,-12.3,Pass,PointsBet 1.25,alt,Points,,Giannis Antetokounmpo,Points,Over,23.5
-319,Alt points,Heat @ Warriors,14:10,De'Anthony Melton 8+ points,70.0,1.43,1.4,PointsBet,-1.9,Pass,PointsBet 1.40,alt,Points,,De'Anthony Melton,Points,Over,7.5
-320,Total,Magic @ Suns,13:10,Magic @ Suns Under 233.5,70.0,1.43,1.38,Sportsbet,-3.4,Pass,Sportsbet 1.38 · PointsBet 1.31,game,Total,Under 233.5,,,,
-321,Total,Heat @ Warriors,14:10,Heat @ Warriors Over 224.5,69.8,1.43,1.36,Sportsbet,-5.0,Pass,Sportsbet 1.36 · PointsBet 1.31,game,Total,Over 224.5,,,,
-322,Line,Heat @ Warriors,14:10,Miami Heat +14.5,69.5,1.44,1.33,Sportsbet,-7.5,Pass,Sportsbet 1.33 · PointsBet 1.29,game,Spread,Miami Heat +14.5,,,,
-323,Alt rebounds,Heat @ Warriors,14:10,Yaxel Lendeborg 6+ rebounds,69.4,1.44,1.33,PointsBet,-7.7,Pass,PointsBet 1.33,alt,Rebounds,,Yaxel Lendeborg,Rebounds,Over,5.5
-324,Alt points,Heat @ Warriors,14:10,Yaxel Lendeborg 16+ points,69.4,1.44,1.29,PointsBet,-10.5,Pass,PointsBet 1.29,alt,Points,,Yaxel Lendeborg,Points,Over,15.5
-325,Alt points,Magic @ Suns,13:10,Jalen Green 13+ points,69.3,1.44,1.31,PointsBet,-9.2,Pass,PointsBet 1.31,alt,Points,,Jalen Green,Points,Over,12.5
-326,Line,Magic @ Suns,13:10,Orlando Magic +7.5,69.1,1.45,1.37,Sportsbet,-5.4,Pass,Sportsbet 1.37 · PointsBet 1.36,game,Spread,Orlando Magic +7.5,,,,
-327,Alt points,Heat @ Warriors,14:10,Bam Adebayo 17+ points,69.1,1.45,1.22,PointsBet,-15.7,Pass,PointsBet 1.22,alt,Points,,Bam Adebayo,Points,Over,16.5
-328,Alt P+R+A,Magic @ Suns,13:10,Anthony Black 20+ P+R+A,68.8,1.45,1.31,PointsBet,-9.9,Pass,PointsBet 1.31,alt,PRA,,Anthony Black,PRA,Over,19.5
-329,Alt points,Magic @ Suns,13:10,Franz Wagner 19+ points,68.8,1.45,1.29,PointsBet,-11.2,Pass,PointsBet 1.29,alt,Points,,Franz Wagner,Points,Over,18.5
-330,Alt points,Magic @ Suns,13:10,Devin Booker 21+ points,68.8,1.45,1.27,PointsBet,-12.7,Pass,PointsBet 1.27,alt,Points,,Devin Booker,Points,Over,20.5
-331,Total,Heat @ Warriors,14:10,Heat @ Warriors Under 242.5,68.7,1.46,1.50,Sportsbet,3.0,Pass,Sportsbet 1.50 · PointsBet 1.48,game,Total,Under 242.5,,,,
-332,Alt assists,Magic @ Suns,13:10,Jase Richardson 2+ assists,68.6,1.46,1.31,PointsBet,-10.1,Pass,PointsBet 1.31,alt,Assists,,Jase Richardson,Assists,Over,1.5
-333,Total,Magic @ Suns,13:10,Magic @ Suns Over 215.5,68.5,1.46,1.44,Sportsbet,-1.3,Pass,Sportsbet 1.44 · PointsBet 1.42,game,Total,Over 215.5,,,,
-334,Alt points,Magic @ Suns,13:10,Anthony Black 12+ points,68.4,1.46,1.33,PointsBet,-9.0,Pass,PointsBet 1.33,alt,Points,,Anthony Black,Points,Over,11.5
-335,Alt points,Heat @ Warriors,14:10,Brandin Podziemski 13+ points,68.3,1.46,1.31,PointsBet,-10.6,Pass,PointsBet 1.31,alt,Points,,Brandin Podziemski,Points,Over,12.5
-336,Line,Magic @ Suns,13:10,Phoenix Suns +6.5,68.2,1.47,1.40,PointsBet,-4.5,Pass,PointsBet 1.40 · Sportsbet 1.36,game,Spread,Phoenix Suns +6.5,,,,
-337,Alt points,Heat @ Warriors,14:10,Stephen Curry 23+ points,68.1,1.47,1.36,PointsBet,-7.4,Pass,PointsBet 1.36,alt,Points,,Stephen Curry,Points,Over,22.5
-338,Total,Magic @ Suns,13:10,Magic @ Suns Under 232.5,68.0,1.47,1.42,Sportsbet,-3.4,Pass,Sportsbet 1.42 · PointsBet 1.33,game,Total,Under 232.5,,,,
-339,Alt points,Heat @ Warriors,14:10,Georges Niang 6+ points,67.9,1.47,1.44,PointsBet,-2.2,Pass,PointsBet 1.44,alt,Points,,Georges Niang,Points,Over,5.5
-340,Total,Heat @ Warriors,14:10,Heat @ Warriors Over 225.5,67.9,1.47,1.38,Sportsbet,-6.4,Pass,Sportsbet 1.38 · PointsBet 1.33,game,Total,Over 225.5,,,,
-341,Alt assists,Magic @ Suns,13:10,Dillon Brooks 2+ assists,67.9,1.47,1.36,PointsBet,-7.7,Pass,PointsBet 1.36,alt,Assists,,Dillon Brooks,Assists,Over,1.5
-342,Line,Heat @ Warriors,14:10,Golden State Warriors -1.5,67.8,1.47,1.40,PointsBet,-5.0,Pass,PointsBet 1.40 · Sportsbet 1.37,game,Spread,Golden State Warriors -1.5,,,,
-343,Steals,Heat @ Warriors,14:10,Stephen Curry under 1.5 steals,67.8,1.47,1.4,Sportsbet,-5.1,Pass,Sportsbet 1.40,prop,Steals,,Stephen Curry,Steals,Under,1.5
-344,Alt points,Magic @ Suns,13:10,Jase Richardson 7+ points,67.6,1.48,1.36,PointsBet,-8.1,Pass,PointsBet 1.36,alt,Points,,Jase Richardson,Points,Over,6.5
-345,Threes,Heat @ Warriors,14:10,Will Richard under 1.5 threes,67.5,1.48,1.45,Sportsbet,-2.2,Pass,Sportsbet 1.45 · PointsBet 1.42,prop,Threes,,Will Richard,Threes,Under,1.5
-346,Alt P+R+A,Magic @ Suns,13:10,Dillon Brooks 20+ P+R+A,67.5,1.48,1.4,PointsBet,-5.5,Pass,PointsBet 1.40,alt,PRA,,Dillon Brooks,PRA,Over,19.5
-347,Alt points,Magic @ Suns,13:10,Desmond Bane 17+ points,67.3,1.49,1.36,PointsBet,-8.5,Pass,PointsBet 1.36,alt,Points,,Desmond Bane,Points,Over,16.5
-348,Alt points,Heat @ Warriors,14:10,Will Richard 5+ points,67.1,1.49,1.36,PointsBet,-8.7,Pass,PointsBet 1.36,alt,Points,,Will Richard,Points,Over,4.5
-349,Alt threes,Magic @ Suns,13:10,Jase Richardson 1+ threes,67.0,1.49,1.44,Sportsbet,-3.5,Pass,Sportsbet 1.44,alt,Threes,,Jase Richardson,Threes,Over,0.5
-350,Alt threes,Magic @ Suns,13:10,Jamal Cain 1+ threes,66.9,1.49,1.48,Sportsbet,-1.0,Pass,Sportsbet 1.48,alt,Threes,,Jamal Cain,Threes,Over,0.5
-351,Line,Heat @ Warriors,14:10,Miami Heat +13.5,66.9,1.49,1.38,Sportsbet,-7.7,Pass,Sportsbet 1.38 · PointsBet 1.33,game,Spread,Miami Heat +13.5,,,,
-352,Alt assists,Magic @ Suns,13:10,Devin Booker 4+ assists,66.9,1.49,1.33,PointsBet,-11.0,Pass,PointsBet 1.33,alt,Assists,,Devin Booker,Assists,Over,3.5
-353,Alt points,Heat @ Warriors,14:10,Giannis Antetokounmpo 25+ points,66.8,1.5,1.31,PointsBet,-12.5,Pass,PointsBet 1.31,alt,Points,,Giannis Antetokounmpo,Points,Over,24.5
-354,Alt P+R+A,Magic @ Suns,13:10,Devin Booker 30+ P+R+A,66.8,1.5,1.29,PointsBet,-13.8,Pass,PointsBet 1.29,alt,PRA,,Devin Booker,PRA,Over,29.5
-355,Alt P+R+A,Magic @ Suns,13:10,Jalen Green 20+ P+R+A,66.7,1.5,1.36,PointsBet,-9.2,Pass,PointsBet 1.36,alt,PRA,,Jalen Green,PRA,Over,19.5
-356,Total,Heat @ Warriors,14:10,Heat @ Warriors Under 241.5,66.6,1.5,1.53,Sportsbet,2.0,Pass,Sportsbet 1.53 · PointsBet 1.53,game,Total,Under 241.5,,,,
-357,Total,Magic @ Suns,13:10,Magic @ Suns Over 216.5,66.5,1.5,1.50,Sportsbet,-0.3,Pass,Sportsbet 1.50 · PointsBet 1.48,game,Total,Over 216.5,,,,
-358,Line,Magic @ Suns,13:10,Orlando Magic +6.5,66.4,1.51,1.45,Sportsbet,-3.7,Pass,Sportsbet 1.45 · PointsBet 1.42,game,Spread,Orlando Magic +6.5,,,,
-359,Alt assists,Magic @ Suns,13:10,Franz Wagner 6+ assists,66.4,1.51,1.36,PointsBet,-9.7,Pass,PointsBet 1.36,alt,Assists,,Franz Wagner,Assists,Over,5.5
-360,Alt steals,Heat @ Warriors,14:10,Stephen Curry 1+ steals,66.3,1.51,1.35,Sportsbet,-10.5,Pass,Sportsbet 1.35,alt,Steals,,Stephen Curry,Steals,Over,0.5
-361,Total,Magic @ Suns,13:10,Magic @ Suns Under 231.5,66.0,1.52,1.47,Sportsbet,-3.0,Pass,Sportsbet 1.47 · PointsBet 1.36,game,Total,Under 231.5,,,,
-362,Alt points,Magic @ Suns,13:10,Jamal Cain 5+ points,66.0,1.52,1.42,PointsBet,-6.2,Pass,PointsBet 1.42,alt,Points,,Jamal Cain,Points,Over,4.5
-363,Alt points,Magic @ Suns,13:10,Miles Bridges 14+ points,66.0,1.52,1.4,PointsBet,-7.5,Pass,PointsBet 1.40,alt,Points,,Miles Bridges,Points,Over,13.5
-364,Alt assists,Heat @ Warriors,14:10,De'Anthony Melton 2+ assists,65.9,1.52,1.44,PointsBet,-5.1,Pass,PointsBet 1.44,alt,Assists,,De'Anthony Melton,Assists,Over,1.5
-365,Alt points,Magic @ Suns,13:10,Dillon Brooks 14+ points,65.8,1.52,1.44,PointsBet,-5.2,Pass,PointsBet 1.44,alt,Points,,Dillon Brooks,Points,Over,13.5
-366,Total,Heat @ Warriors,14:10,Heat @ Warriors Over 226.5,65.8,1.52,1.43,Sportsbet,-5.9,Pass,Sportsbet 1.43 · PointsBet 1.36,game,Total,Over 226.5,,,,
-367,Alt points,Magic @ Suns,13:10,Tristan Da Silva 10+ points,65.6,1.52,1.42,PointsBet,-6.9,Pass,PointsBet 1.42,alt,Points,,Tristan Da Silva,Points,Over,9.5
-368,Line,Magic @ Suns,13:10,Phoenix Suns +5.5,65.5,1.53,1.44,PointsBet,-5.7,Pass,PointsBet 1.44 · Sportsbet 1.41,game,Spread,Phoenix Suns +5.5,,,,
-369,Line,Heat @ Warriors,14:10,Golden State Warriors -2.5,65.1,1.54,1.43,Sportsbet,-7.0,Pass,Sportsbet 1.43 · PointsBet 1.42,game,Spread,Golden State Warriors -2.5,,,,
-370,Alt rebounds,Magic @ Suns,13:10,Wendell Carter Jr. 8+ rebounds,65.0,1.54,1.44,PointsBet,-6.4,Pass,PointsBet 1.44,alt,Rebounds,,Wendell Carter Jr.,Rebounds,Over,7.5
-371,Alt points,Magic @ Suns,13:10,Devin Booker 22+ points,64.9,1.54,1.36,PointsBet,-11.7,Pass,PointsBet 1.36,alt,Points,,Devin Booker,Points,Over,21.5
-372,Alt points,Heat @ Warriors,14:10,Yaxel Lendeborg 17+ points,64.9,1.54,1.36,PointsBet,-11.7,Pass,PointsBet 1.36,alt,Points,,Yaxel Lendeborg,Points,Over,16.5
-373,Alt points,Magic @ Suns,13:10,Franz Wagner 20+ points,64.7,1.55,1.36,PointsBet,-12.0,Pass,PointsBet 1.36,alt,Points,,Franz Wagner,Points,Over,19.5
-374,Alt threes,Heat @ Warriors,14:10,Will Richard 1+ threes,64.7,1.55,1.36,PointsBet,-12.0,Pass,PointsBet 1.36 · Sportsbet 1.33,alt,Threes,,Will Richard,Threes,Over,0.5
-375,Alt points,Heat @ Warriors,14:10,Bam Adebayo 18+ points,64.7,1.55,1.29,PointsBet,-16.5,Pass,PointsBet 1.29,alt,Points,,Bam Adebayo,Points,Over,17.5
-376,Total,Heat @ Warriors,14:10,Heat @ Warriors Under 240.5,64.6,1.55,1.59,PointsBet,2.7,Pass,PointsBet 1.59 · Sportsbet 1.57,game,Total,Under 240.5,,,,
-377,Steals,Heat @ Warriors,14:10,Brandin Podziemski over 0.5 steals,64.5,1.55,1.5,Sportsbet,-3.2,Pass,Sportsbet 1.50,prop,Steals,,Brandin Podziemski,Steals,Over,0.5
-378,Alt points,Heat @ Warriors,14:10,Stephen Curry 24+ points,64.5,1.55,1.48,PointsBet,-4.6,Pass,PointsBet 1.48,alt,Points,,Stephen Curry,Points,Over,23.5
-379,Total,Magic @ Suns,13:10,Magic @ Suns Over 217.5,64.4,1.55,1.54,Sportsbet,-0.8,Pass,Sportsbet 1.54 · PointsBet 1.53,game,Total,Over 217.5,,,,
-380,Line,Heat @ Warriors,14:10,Miami Heat +12.5,64.2,1.56,1.43,Sportsbet,-8.2,Pass,Sportsbet 1.43 · PointsBet 1.36,game,Spread,Miami Heat +12.5,,,,
-381,Alt points,Magic @ Suns,13:10,Jalen Green 14+ points,64.1,1.56,1.42,PointsBet,-8.9,Pass,PointsBet 1.42,alt,Points,,Jalen Green,Points,Over,13.5
-382,Alt points,Magic @ Suns,13:10,Wendell Carter Jr. 10+ points,64.0,1.56,1.44,PointsBet,-7.9,Pass,PointsBet 1.44,alt,Points,,Wendell Carter Jr.,Points,Over,9.5
-383,Total,Magic @ Suns,13:10,Magic @ Suns Under 230.5,63.9,1.56,1.51,Sportsbet,-3.5,Pass,Sportsbet 1.51 · PointsBet 1.42,game,Total,Under 230.5,,,,
-384,Total,Heat @ Warriors,14:10,Heat @ Warriors Over 227.5,63.8,1.57,1.49,Sportsbet,-5.0,Pass,Sportsbet 1.49 · PointsBet 1.40,game,Total,Over 227.5,,,,
-385,Alt P+R+A,Magic @ Suns,13:10,Desmond Bane 25+ P+R+A,63.7,1.57,1.44,PointsBet,-8.3,Pass,PointsBet 1.44,alt,PRA,,Desmond Bane,PRA,Over,24.5
-386,Line,Magic @ Suns,13:10,Orlando Magic +5.5,63.6,1.57,1.50,Sportsbet,-4.5,Pass,Sportsbet 1.50 · PointsBet 1.50,game,Spread,Orlando Magic +5.5,,,,
-387,Alt points,Heat @ Warriors,14:10,Giannis Antetokounmpo 26+ points,63.2,1.58,1.4,PointsBet,-11.5,Pass,PointsBet 1.40,alt,Points,,Giannis Antetokounmpo,Points,Over,25.5
-388,Alt points,Heat @ Warriors,14:10,De'Anthony Melton 9+ points,63.0,1.59,1.56,PointsBet,-1.7,Pass,PointsBet 1.56,alt,Points,,De'Anthony Melton,Points,Over,8.5
-389,Alt points,Heat @ Warriors,14:10,Brandin Podziemski 14+ points,63.0,1.59,1.42,PointsBet,-10.6,Pass,PointsBet 1.42,alt,Points,,Brandin Podziemski,Points,Over,13.5
-390,Alt points,Magic @ Suns,13:10,Anthony Black 13+ points,62.9,1.59,1.44,PointsBet,-9.5,Pass,PointsBet 1.44,alt,Points,,Anthony Black,Points,Over,12.5
-391,Alt points,Magic @ Suns,13:10,Desmond Bane 18+ points,62.8,1.59,1.48,PointsBet,-7.1,Pass,PointsBet 1.48,alt,Points,,Desmond Bane,Points,Over,17.5
-392,Line,Magic @ Suns,13:10,Phoenix Suns +4.5,62.7,1.59,1.56,PointsBet,-2.2,Pass,PointsBet 1.56 · Sportsbet 1.47,game,Spread,Phoenix Suns +4.5,,,,
-393,Alt rebounds,Magic @ Suns,13:10,Miles Bridges 6+ rebounds,62.7,1.59,1.44,PointsBet,-9.7,Pass,PointsBet 1.44,alt,Rebounds,,Miles Bridges,Rebounds,Over,5.5
-394,Total,Heat @ Warriors,14:10,Heat @ Warriors Under 239.5,62.5,1.6,1.65,PointsBet,3.1,Pass,PointsBet 1.65 · Sportsbet 1.61,game,Total,Under 239.5,,,,
-395,Alt threes,Heat @ Warriors,14:10,Brandin Podziemski 2+ threes,62.4,1.6,1.43,Sportsbet,-10.7,Pass,Sportsbet 1.43 · PointsBet 1.40,alt,Threes,,Brandin Podziemski,Threes,Over,1.5
-396,Total,Magic @ Suns,13:10,Magic @ Suns Over 218.5,62.3,1.61,1.59,PointsBet,-0.9,Pass,PointsBet 1.59 · Sportsbet 1.58,game,Total,Over 218.5,,,,
-397,Assists,Heat @ Warriors,14:10,Brandin Podziemski over 3.5 assists,62.2,1.61,1.59,PointsBet,-1.1,Pass,PointsBet 1.59 · Sportsbet 1.58 · Betr 1.56,prop,Assists,,Brandin Podziemski,Assists,Over,3.5
-398,Line,Heat @ Warriors,14:10,Golden State Warriors -3.5,62.2,1.61,1.50,PointsBet,-6.7,Pass,PointsBet 1.50 · Sportsbet 1.48,game,Spread,Golden State Warriors -3.5,,,,
-399,Total,Magic @ Suns,13:10,Magic @ Suns Under 229.5,61.8,1.62,1.55,Sportsbet,-4.2,Pass,Sportsbet 1.55 · PointsBet 1.44,game,Total,Under 229.5,,,,
-400,Total,Heat @ Warriors,14:10,Heat @ Warriors Over 228.5,61.6,1.62,1.51,Sportsbet,-6.9,Pass,Sportsbet 1.51 · PointsBet 1.44,game,Total,Over 228.5,,,,
-401,Line,Heat @ Warriors,14:10,Miami Heat +11.5,61.4,1.63,1.49,Sportsbet,-8.6,Pass,Sportsbet 1.49 · PointsBet 1.42,game,Spread,Miami Heat +11.5,,,,
-402,Threes,Heat @ Warriors,14:10,Yaxel Lendeborg over 1.5 threes,61.2,1.63,1.6,Sportsbet,-2.1,Pass,Sportsbet 1.60 · PointsBet 1.57,prop,Threes,,Yaxel Lendeborg,Threes,Over,1.5
-403,Threes,Heat @ Warriors,14:10,Brandin Podziemski under 2.5 threes,61.1,1.64,1.59,PointsBet,-2.9,Pass,PointsBet 1.59 · Sportsbet 1.52,prop,Threes,,Brandin Podziemski,Threes,Under,2.5
-404,Threes,Heat @ Warriors,14:10,Bam Adebayo under 1.5 threes,60.9,1.64,1.63,PointsBet,-0.8,Pass,PointsBet 1.63 · Sportsbet 1.60,prop,Threes,,Bam Adebayo,Threes,Under,1.5
-405,Alt points,Magic @ Suns,13:10,Devin Booker 23+ points,60.9,1.64,1.44,PointsBet,-12.3,Pass,PointsBet 1.44,alt,Points,,Devin Booker,Points,Over,22.5
-406,Line,Magic @ Suns,13:10,Orlando Magic +4.5,60.8,1.64,1.59,PointsBet,-3.3,Pass,PointsBet 1.59 · Sportsbet 1.58,game,Spread,Orlando Magic +4.5,,,,
-407,Alt points,Magic @ Suns,13:10,Miles Bridges 15+ points,60.8,1.64,1.53,PointsBet,-7.0,Pass,PointsBet 1.53,alt,Points,,Miles Bridges,Points,Over,14.5
-408,Threes,Heat @ Warriors,14:10,Stephen Curry over 3.5 threes,60.7,1.65,1.6,Sportsbet,-3.0,Pass,Sportsbet 1.60 · PointsBet 1.59,prop,Threes,,Stephen Curry,Threes,Over,3.5
-409,Alt points,Heat @ Warriors,14:10,Stephen Curry 25+ points,60.6,1.65,1.59,PointsBet,-3.6,Pass,PointsBet 1.59,alt,Points,,Stephen Curry,Points,Over,24.5
-410,Alt rebounds,Magic @ Suns,13:10,Tristan Da Silva 4+ rebounds,60.6,1.65,1.56,PointsBet,-5.4,Pass,PointsBet 1.56,alt,Rebounds,,Tristan Da Silva,Rebounds,Over,3.5
-411,Alt points,Magic @ Suns,13:10,Dillon Brooks 15+ points,60.5,1.65,1.56,PointsBet,-5.6,Pass,PointsBet 1.56,alt,Points,,Dillon Brooks,Points,Over,14.5
-412,Alt threes,Magic @ Suns,13:10,Desmond Bane 3+ threes,60.5,1.65,1.51,Sportsbet,-8.7,Pass,Sportsbet 1.51 · PointsBet 1.50,alt,Threes,,Desmond Bane,Threes,Over,2.5
-413,Total,Heat @ Warriors,14:10,Heat @ Warriors Under 238.5,60.4,1.66,1.69,PointsBet,2.0,Pass,PointsBet 1.69 · Sportsbet 1.68,game,Total,Under 238.5,,,,
-414,Alt points,Magic @ Suns,13:10,Franz Wagner 21+ points,60.4,1.66,1.5,PointsBet,-9.3,Pass,PointsBet 1.50,alt,Points,,Franz Wagner,Points,Over,20.5
-415,Assists,Magic @ Suns,13:10,Desmond Bane under 3.5 assists,60.3,1.66,1.69,PointsBet,1.9,Pass,PointsBet 1.69 · Sportsbet 1.68 · Betr 1.65,prop,Assists,,Desmond Bane,Assists,Under,3.5
-416,Total,Magic @ Suns,13:10,Magic @ Suns Over 219.5,60.2,1.66,1.65,PointsBet,-0.7,Pass,PointsBet 1.65 · Sportsbet 1.63,game,Total,Over 219.5,,,,
-417,Alt rebounds,Magic @ Suns,13:10,Anthony Black 4+ rebounds,60.2,1.66,1.53,PointsBet,-7.9,Pass,PointsBet 1.53,alt,Rebounds,,Anthony Black,Rebounds,Over,3.5
-418,Alt points,Heat @ Warriors,14:10,Yaxel Lendeborg 18+ points,60.2,1.66,1.5,PointsBet,-9.8,Pass,PointsBet 1.50,alt,Points,,Yaxel Lendeborg,Points,Over,17.5
-419,Alt P+R+A,Heat @ Warriors,14:10,De'Anthony Melton 15+ P+R+A,60.1,1.66,1.67,PointsBet,0.4,Pass,PointsBet 1.67,alt,PRA,,De'Anthony Melton,PRA,Over,14.5
-420,Alt points,Heat @ Warriors,14:10,Bam Adebayo 19+ points,60.1,1.66,1.4,PointsBet,-15.8,Pass,PointsBet 1.40,alt,Points,,Bam Adebayo,Points,Over,18.5
-421,Line,Magic @ Suns,13:10,Phoenix Suns +3.5,59.9,1.67,1.63,PointsBet,-2.4,Pass,PointsBet 1.63 · Sportsbet 1.56,game,Spread,Phoenix Suns +3.5,,,,
-422,Threes,Magic @ Suns,13:10,Miles Bridges over 1.5 threes,59.9,1.67,1.58,Sportsbet,-5.3,Pass,Sportsbet 1.58 · PointsBet 1.57,prop,Threes,,Miles Bridges,Threes,Over,1.5
-423,Threes,Heat @ Warriors,14:10,Georges Niang under 1.5 threes,59.8,1.67,1.64,Sportsbet,-1.9,Pass,Sportsbet 1.64,prop,Threes,,Georges Niang,Threes,Under,1.5
-424,Assists,Heat @ Warriors,14:10,Giannis Antetokounmpo under 6.5 assists,59.7,1.68,1.69,PointsBet,0.9,Pass,PointsBet 1.69 · Sportsbet 1.60,prop,Assists,,Giannis Antetokounmpo,Assists,Under,6.5
-425,Alt threes,Magic @ Suns,13:10,Wendell Carter Jr. 1+ threes,59.7,1.68,1.62,Sportsbet,-3.2,Pass,Sportsbet 1.62,alt,Threes,,Wendell Carter Jr.,Threes,Over,0.5
-426,Total,Magic @ Suns,13:10,Magic @ Suns Under 228.5,59.7,1.68,1.60,Sportsbet,-4.6,Pass,Sportsbet 1.60 · PointsBet 1.50,game,Total,Under 228.5,,,,
-427,Rebounds,Magic @ Suns,13:10,Devin Booker under 4.5 rebounds,59.6,1.68,1.63,PointsBet,-2.9,Pass,PointsBet 1.63,prop,Rebounds,,Devin Booker,Rebounds,Under,4.5
-428,Alt points,Magic @ Suns,13:10,Jase Richardson 8+ points,59.6,1.68,1.53,PointsBet,-8.7,Pass,PointsBet 1.53,alt,Points,,Jase Richardson,Points,Over,7.5
-429,Total,Heat @ Warriors,14:10,Heat @ Warriors Over 229.5,59.5,1.68,1.56,Sportsbet,-7.2,Pass,Sportsbet 1.56 · PointsBet 1.50,game,Total,Over 229.5,,,,
-430,Alt rebounds,Magic @ Suns,13:10,Desmond Bane 4+ rebounds,59.5,1.68,1.56,PointsBet,-7.2,Pass,PointsBet 1.56,alt,Rebounds,,Desmond Bane,Rebounds,Over,3.5
-431,Alt points,Heat @ Warriors,14:10,Giannis Antetokounmpo 27+ points,59.5,1.68,1.5,PointsBet,-10.8,Pass,PointsBet 1.50,alt,Points,,Giannis Antetokounmpo,Points,Over,26.5
-432,Alt points,Heat @ Warriors,14:10,Georges Niang 7+ points,59.3,1.69,1.69,PointsBet,0.1,Pass,PointsBet 1.69,alt,Points,,Georges Niang,Points,Over,6.5
-433,Line,Heat @ Warriors,14:10,Golden State Warriors -4.5,59.3,1.69,1.57,Sportsbet,-6.9,Pass,Sportsbet 1.57 · PointsBet 1.57,game,Spread,Golden State Warriors -4.5,,,,
-434,Threes,Magic @ Suns,13:10,Dillon Brooks over 1.5 threes,59.2,1.69,1.67,PointsBet,-1.2,Pass,PointsBet 1.67 · Sportsbet 1.64,prop,Threes,,Dillon Brooks,Threes,Over,1.5
-435,Assists,Magic @ Suns,13:10,Anthony Black under 4.5 assists,59.1,1.69,1.71,PointsBet,1.1,Pass,PointsBet 1.71 · Betr 1.61,prop,Assists,,Anthony Black,Assists,Under,4.5
-436,Alt points,Magic @ Suns,13:10,Tristan Da Silva 11+ points,59.0,1.69,1.63,PointsBet,-3.8,Pass,PointsBet 1.63,alt,Points,,Tristan Da Silva,Points,Over,10.5
-437,Threes,Magic @ Suns,13:10,Desmond Bane under 3.5 threes,58.9,1.7,1.63,PointsBet,-4.0,Pass,PointsBet 1.63 · Sportsbet 1.58,prop,Threes,,Desmond Bane,Threes,Under,3.5
-438,Rebounds,Magic @ Suns,13:10,Dillon Brooks under 4.5 rebounds,58.7,1.7,1.69,PointsBet,-0.8,Pass,PointsBet 1.69 · Betr 1.61 · Sportsbet 1.60,prop,Rebounds,,Dillon Brooks,Rebounds,Under,4.5
-439,Assists,Magic @ Suns,13:10,Jalen Green under 3.5 assists,58.7,1.7,1.67,PointsBet,-2.0,Pass,PointsBet 1.67,prop,Assists,,Jalen Green,Assists,Under,3.5
-440,Alt points,Magic @ Suns,13:10,Jalen Green 15+ points,58.7,1.7,1.56,PointsBet,-8.4,Pass,PointsBet 1.56,alt,Points,,Jalen Green,Points,Over,14.5
-441,Line,Heat @ Warriors,14:10,Miami Heat +10.5,58.5,1.71,1.58,Sportsbet,-7.6,Pass,Sportsbet 1.58 · PointsBet 1.50,game,Spread,Miami Heat +10.5,,,,
-442,Alt points,Heat @ Warriors,14:10,Draymond Green 5+ points,58.5,1.71,1.56,PointsBet,-8.7,Pass,PointsBet 1.56,alt,Points,,Draymond Green,Points,Over,4.5
-443,Alt rebounds,Magic @ Suns,13:10,Dillon Brooks 4+ rebounds,58.4,1.71,1.56,PointsBet,-8.9,Pass,PointsBet 1.56,alt,Rebounds,,Dillon Brooks,Rebounds,Over,3.5
-444,Alt P+R+A,Heat @ Warriors,14:10,Giannis Antetokounmpo 45+ P+R+A,58.4,1.71,1.56,PointsBet,-9.0,Pass,PointsBet 1.56,alt,PRA,,Giannis Antetokounmpo,PRA,Over,44.5
-445,Total,Heat @ Warriors,14:10,Heat @ Warriors Under 237.5,58.2,1.72,1.74,PointsBet,1.2,Pass,PointsBet 1.74 · Sportsbet 1.73,game,Total,Under 237.5,,,,
-446,Total,Magic @ Suns,13:10,Magic @ Suns Over 220.5,58.0,1.72,1.71,PointsBet,-0.8,Pass,PointsBet 1.71 · Sportsbet 1.68,game,Total,Over 220.5,,,,
-447,Alt points,Magic @ Suns,13:10,Desmond Bane 19+ points,58.0,1.72,1.63,PointsBet,-5.4,Pass,PointsBet 1.63,alt,Points,,Desmond Bane,Points,Over,18.5
-448,Alt assists,Magic @ Suns,13:10,Anthony Black 4+ assists,58.0,1.72,1.5,PointsBet,-13.1,Pass,PointsBet 1.50,alt,Assists,,Anthony Black,Assists,Over,3.5
-449,Line,Magic @ Suns,13:10,Orlando Magic +3.5,57.9,1.73,1.69,Sportsbet,-2.1,Pass,Sportsbet 1.69 · PointsBet 1.67,game,Spread,Orlando Magic +3.5,,,,
-450,Rebounds,Heat @ Warriors,14:10,Brandin Podziemski under 5.5 rebounds,57.8,1.73,1.69,PointsBet,-2.3,Pass,PointsBet 1.69 · Betr 1.61 · Sportsbet 1.58,prop,Rebounds,,Brandin Podziemski,Rebounds,Under,5.5
-451,Rebounds,Magic @ Suns,13:10,Desmond Bane under 4.5 rebounds,57.6,1.74,1.67,PointsBet,-3.7,Pass,PointsBet 1.67 · Betr 1.65 · Sportsbet 1.64,prop,Rebounds,,Desmond Bane,Rebounds,Under,4.5
-452,Total,Magic @ Suns,13:10,Magic @ Suns Under 227.5,57.5,1.74,1.65,Sportsbet,-5.2,Pass,Sportsbet 1.65 · PointsBet 1.56,game,Total,Under 227.5,,,,
-453,Alt points,Heat @ Warriors,14:10,Brandin Podziemski 15+ points,57.5,1.74,1.56,PointsBet,-10.4,Pass,PointsBet 1.56,alt,Points,,Brandin Podziemski,Points,Over,14.5
-454,Alt points,Heat @ Warriors,14:10,Will Richard 6+ points,57.4,1.74,1.63,PointsBet,-6.4,Pass,PointsBet 1.63,alt,Points,,Will Richard,Points,Over,5.5
-455,Alt points,Magic @ Suns,13:10,Wendell Carter Jr. 11+ points,57.3,1.75,1.63,PointsBet,-6.6,Pass,PointsBet 1.63,alt,Points,,Wendell Carter Jr.,Points,Over,10.5
-456,Total,Heat @ Warriors,14:10,Heat @ Warriors Over 230.5,57.3,1.75,1.60,Sportsbet,-8.3,Pass,Sportsbet 1.60 · PointsBet 1.56,game,Total,Over 230.5,,,,
-457,Alt P+R+A,Magic @ Suns,13:10,Miles Bridges 25+ P+R+A,57.2,1.75,1.65,PointsBet,-5.6,Pass,PointsBet 1.65,alt,PRA,,Miles Bridges,PRA,Over,24.5
-458,Rebounds,Heat @ Warriors,14:10,Bam Adebayo under 10.5 rebounds,57.1,1.75,1.77,PointsBet,1.0,Pass,PointsBet 1.77 · Sportsbet 1.68,prop,Rebounds,,Bam Adebayo,Rebounds,Under,10.5
-459,Assists,Heat @ Warriors,14:10,Stephen Curry over 4.5 assists,57.1,1.75,1.71,PointsBet,-2.4,Pass,PointsBet 1.71 · Sportsbet 1.68 · Betr 1.61,prop,Assists,,Stephen Curry,Assists,Over,4.5
-460,Alt points,Magic @ Suns,13:10,Anthony Black 14+ points,57.1,1.75,1.59,PointsBet,-9.2,Pass,PointsBet 1.59,alt,Points,,Anthony Black,Points,Over,13.5
-461,Line,Magic @ Suns,13:10,Phoenix Suns +2.5,56.9,1.76,1.71,PointsBet,-2.6,Pass,PointsBet 1.71 · Sportsbet 1.61,game,Spread,Phoenix Suns +2.5,,,,
-462,Rebounds,Magic @ Suns,13:10,Anthony Black under 4.5 rebounds,56.9,1.76,1.67,Betr,-5.0,Pass,Betr 1.67 · PointsBet 1.67 · Sportsbet 1.64,prop,Rebounds,,Anthony Black,Rebounds,Under,4.5
-463,Rebounds,Heat @ Warriors,14:10,Yaxel Lendeborg under 7.5 rebounds,56.8,1.76,1.77,Betr,0.6,Pass,Betr 1.77 · Sportsbet 1.74 · PointsBet 1.74,prop,Rebounds,,Yaxel Lendeborg,Rebounds,Under,7.5
-464,Rebounds,Magic @ Suns,13:10,Franz Wagner over 5.5 rebounds,56.8,1.76,1.69,PointsBet,-3.9,Pass,PointsBet 1.69 · Sportsbet 1.68 · Betr 1.61,prop,Rebounds,,Franz Wagner,Rebounds,Over,5.5
-465,Alt points,Magic @ Suns,13:10,Khaman Maluach 5+ points,56.8,1.76,1.69,PointsBet,-4.0,Pass,PointsBet 1.69,alt,Points,,Khaman Maluach,Points,Over,4.5
-466,Alt points,Magic @ Suns,13:10,Devin Booker 24+ points,56.7,1.76,1.59,PointsBet,-9.8,Pass,PointsBet 1.59,alt,Points,,Devin Booker,Points,Over,23.5
-467,Alt points,Heat @ Warriors,14:10,Stephen Curry 26+ points,56.6,1.77,1.71,PointsBet,-3.1,Pass,PointsBet 1.71,alt,Points,,Stephen Curry,Points,Over,25.5
-468,Rebounds,Heat @ Warriors,14:10,Georges Niang under 3.5 rebounds,56.5,1.77,1.72,Sportsbet,-2.8,Pass,Sportsbet 1.72 · PointsBet 1.69,prop,Rebounds,,Georges Niang,Rebounds,Under,3.5
-469,Assists,Magic @ Suns,13:10,Miles Bridges over 2.5 assists,56.5,1.77,1.69,PointsBet,-4.5,Pass,PointsBet 1.69 · Sportsbet 1.68,prop,Assists,,Miles Bridges,Assists,Over,2.5
-470,Rebounds,Magic @ Suns,13:10,Tristan Da Silva under 4.5 rebounds,56.4,1.77,1.72,Sportsbet,-3.0,Pass,Sportsbet 1.72 · PointsBet 1.67,prop,Rebounds,,Tristan Da Silva,Rebounds,Under,4.5
-471,Line,Heat @ Warriors,14:10,Golden State Warriors -5.5,56.4,1.77,1.69,PointsBet,-4.8,Pass,PointsBet 1.69 · Sportsbet 1.65,game,Spread,Golden State Warriors -5.5,,,,
-472,Threes,Magic @ Suns,13:10,Franz Wagner under 1.5 threes,56.3,1.78,1.74,PointsBet,-2.0,Pass,PointsBet 1.74 · Sportsbet 1.68,prop,Threes,,Franz Wagner,Threes,Under,1.5
-473,Alt points,Magic @ Suns,13:10,Jamal Cain 6+ points,56.2,1.78,1.65,PointsBet,-7.3,Pass,PointsBet 1.65,alt,Points,,Jamal Cain,Points,Over,5.5
-474,Total,Heat @ Warriors,14:10,Heat @ Warriors Under 236.5,56.0,1.79,1.80,PointsBet,0.8,Pass,PointsBet 1.80 · Sportsbet 1.79,game,Total,Under 236.5,,,,
-475,Alt points,Magic @ Suns,13:10,Franz Wagner 22+ points,56.0,1.79,1.63,PointsBet,-8.7,Pass,PointsBet 1.63,alt,Points,,Franz Wagner,Points,Over,21.5
-476,Total,Magic @ Suns,13:10,Magic @ Suns Over 221.5,55.8,1.79,1.77,PointsBet,-1.2,Pass,PointsBet 1.77 · Sportsbet 1.76,game,Total,Over 221.5,,,,
-477,Alt points,Heat @ Warriors,14:10,De'Anthony Melton 10+ points,55.8,1.79,1.74,PointsBet,-2.8,Pass,PointsBet 1.74,alt,Points,,De'Anthony Melton,Points,Over,9.5
-478,Assists,Magic @ Suns,13:10,Tristan Da Silva over 1.5 assists,55.8,1.79,1.74,Sportsbet,-2.9,Pass,Sportsbet 1.74 · PointsBet 1.74,prop,Assists,,Tristan Da Silva,Assists,Over,1.5
-479,Line,Heat @ Warriors,14:10,Miami Heat +9.5,55.6,1.8,1.68,Sportsbet,-6.7,Pass,Sportsbet 1.68 · PointsBet 1.59,game,Spread,Miami Heat +9.5,,,,
-480,Alt points,Heat @ Warriors,14:10,Giannis Antetokounmpo 28+ points,55.6,1.8,1.63,PointsBet,-9.3,Pass,PointsBet 1.63,alt,Points,,Giannis Antetokounmpo,Points,Over,27.5
-481,Assists,Magic @ Suns,13:10,Dillon Brooks under 2.5 assists,55.5,1.8,1.71,PointsBet,-5.0,Pass,PointsBet 1.71 · Sportsbet 1.68,prop,Assists,,Dillon Brooks,Assists,Under,2.5
-482,Alt P+R+A,Heat @ Warriors,14:10,Stephen Curry 35+ P+R+A,55.4,1.81,1.77,PointsBet,-2.0,Pass,PointsBet 1.77,alt,PRA,,Stephen Curry,PRA,Over,34.5
-483,Alt points,Magic @ Suns,13:10,Miles Bridges 16+ points,55.4,1.81,1.69,PointsBet,-6.4,Pass,PointsBet 1.69,alt,Points,,Miles Bridges,Points,Over,15.5
-484,Alt P+R+A,Magic @ Suns,13:10,Franz Wagner 35+ P+R+A,55.4,1.81,1.67,PointsBet,-7.4,Pass,PointsBet 1.67,alt,PRA,,Franz Wagner,PRA,Over,34.5
-485,Alt points,Heat @ Warriors,14:10,Bam Adebayo 20+ points,55.4,1.81,1.5,PointsBet,-16.9,Pass,PointsBet 1.50,alt,Points,,Bam Adebayo,Points,Over,19.5
-486,Total,Magic @ Suns,13:10,Magic @ Suns Under 226.5,55.3,1.81,1.71,Sportsbet,-5.5,Pass,Sportsbet 1.71 · PointsBet 1.63,game,Total,Under 226.5,,,,
-487,Alt points,Heat @ Warriors,14:10,Yaxel Lendeborg 19+ points,55.3,1.81,1.65,PointsBet,-8.8,Pass,PointsBet 1.65,alt,Points,,Yaxel Lendeborg,Points,Over,18.5
-488,Alt P+R+A,Heat @ Warriors,14:10,Brandin Podziemski 25+ P+R+A,55.2,1.81,1.67,PointsBet,-7.9,Pass,PointsBet 1.67,alt,PRA,,Brandin Podziemski,PRA,Over,24.5
-489,Alt points,Magic @ Suns,13:10,Dillon Brooks 16+ points,55.1,1.81,1.71,PointsBet,-5.8,Pass,PointsBet 1.71,alt,Points,,Dillon Brooks,Points,Over,15.5
-490,Total,Heat @ Warriors,14:10,Heat @ Warriors Over 231.5,55.1,1.81,1.65,Sportsbet,-9.1,Pass,Sportsbet 1.65 · PointsBet 1.59,game,Total,Over 231.5,,,,
-491,Threes,Magic @ Suns,13:10,Anthony Black over 1.5 threes,55.0,1.82,1.77,PointsBet,-2.6,Pass,PointsBet 1.77 · Sportsbet 1.76,prop,Threes,,Anthony Black,Threes,Over,1.5
-492,Line,Magic @ Suns,13:10,Orlando Magic +2.5,55.0,1.82,1.75,Sportsbet,-3.8,Pass,Sportsbet 1.75 · PointsBet 1.74,game,Spread,Orlando Magic +2.5,,,,
-493,Alt P+R+A,Heat @ Warriors,14:10,Yaxel Lendeborg 30+ P+R+A,55.0,1.82,1.65,PointsBet,-9.2,Pass,PointsBet 1.65,alt,PRA,,Yaxel Lendeborg,PRA,Over,29.5
-494,Assists,Magic @ Suns,13:10,Jase Richardson under 2.5 assists,54.7,1.83,1.8,Sportsbet,-1.6,Pass,Sportsbet 1.80 · PointsBet 1.77,prop,Assists,,Jase Richardson,Assists,Under,2.5
-495,Points,Heat @ Warriors,14:10,De'Anthony Melton over 9.5 points,54.7,1.83,1.77,PointsBet,-3.1,Pass,PointsBet 1.77,prop,Points,,De'Anthony Melton,Points,Over,9.5
-496,Points,Heat @ Warriors,14:10,Bam Adebayo under 21.5 points,54.2,1.85,1.92,Sportsbet,4.0,Pass,Sportsbet 1.92 · Betr 1.91 · PointsBet 1.90,prop,Points,,Bam Adebayo,Points,Under,21.5
-497,Alt assists,Heat @ Warriors,14:10,Giannis Antetokounmpo 6+ assists,54.2,1.85,1.59,PointsBet,-13.8,Pass,PointsBet 1.59,alt,Assists,,Giannis Antetokounmpo,Assists,Over,5.5
-498,Line,Magic @ Suns,13:10,Phoenix Suns +1.5,54.0,1.85,1.80,PointsBet,-2.8,Pass,PointsBet 1.80 · Sportsbet 1.72,game,Spread,Phoenix Suns +1.5,,,,
-499,Alt rebounds,Heat @ Warriors,14:10,Bam Adebayo 10+ rebounds,53.9,1.86,1.65,PointsBet,-11.1,Pass,PointsBet 1.65,alt,Rebounds,,Bam Adebayo,Rebounds,Over,9.5
-500,Total,Heat @ Warriors,14:10,Heat @ Warriors Under 235.5,53.8,1.86,1.90,PointsBet,2.2,Pass,PointsBet 1.90 · Betr 1.89 · Sportsbet 1.86 (other lines: 234.5 TAB),game,Total,Under 235.5,,,,
-501,Total,Magic @ Suns,13:10,Magic @ Suns Over 222.5,53.6,1.87,1.90,PointsBet,1.9,Pass,"PointsBet 1.90 (other lines: 223.5 Betr, 223.5 Sportsbet, 223.5 TAB)",game,Total,Over 222.5,,,,
-502,Points,Magic @ Suns,13:10,Khaman Maluach under 5.5 points,53.6,1.87,1.8,Sportsbet,-3.5,Pass,Sportsbet 1.80 · PointsBet 1.74,prop,Points,,Khaman Maluach,Points,Under,5.5
-503,P+R+A,Magic @ Suns,13:10,Jalen Green under 23.5 P+R+A,53.6,1.87,1.77,PointsBet,-5.1,Pass,PointsBet 1.77,prop,PRA,,Jalen Green,PRA,Under,23.5
-504,P+R+A,Heat @ Warriors,14:10,Yaxel Lendeborg under 31.5 P+R+A,53.5,1.87,1.83,PointsBet,-2.0,Pass,PointsBet 1.83 · Sportsbet 1.80,prop,PRA,,Yaxel Lendeborg,PRA,Under,31.5
-505,Assists,Magic @ Suns,13:10,Franz Wagner over 6.5 assists,53.5,1.87,1.8,Sportsbet,-3.6,Pass,Sportsbet 1.80 · Betr 1.80 · PointsBet 1.74,prop,Assists,,Franz Wagner,Assists,Over,6.5
-506,Line,Heat @ Warriors,14:10,Golden State Warriors -6.5,53.4,1.87,1.80,PointsBet,-3.9,Pass,PointsBet 1.80 · Sportsbet 1.72,game,Spread,Golden State Warriors -6.5,,,,
-507,Rebounds,Magic @ Suns,13:10,Wendell Carter Jr. over 8.5 rebounds,53.2,1.88,1.8,Sportsbet,-4.3,Pass,Sportsbet 1.80 · Betr 1.77 · PointsBet 1.77,prop,Rebounds,,Wendell Carter Jr.,Rebounds,Over,8.5
-508,Alt points,Magic @ Suns,13:10,Desmond Bane 20+ points,53.2,1.88,1.77,PointsBet,-5.8,Pass,PointsBet 1.77,alt,Points,,Desmond Bane,Points,Over,19.5
-509,Alt points,Magic @ Suns,13:10,Jalen Green 16+ points,53.2,1.88,1.74,PointsBet,-7.4,Pass,PointsBet 1.74,alt,Points,,Jalen Green,Points,Over,15.5
-510,Total,Magic @ Suns,13:10,Magic @ Suns Under 225.5,53.1,1.88,1.77,Sportsbet,-6.1,Pass,Sportsbet 1.77 · PointsBet 1.69,game,Total,Under 225.5,,,,
-511,P+R+A,Heat @ Warriors,14:10,Bam Adebayo under 35.5 P+R+A,52.9,1.89,1.96,Sportsbet,3.6,Pass,Sportsbet 1.96,prop,PRA,,Bam Adebayo,PRA,Under,35.5
-512,Total,Heat @ Warriors,14:10,Heat @ Warriors Over 232.5,52.9,1.89,1.71,Sportsbet,-9.5,Pass,Sportsbet 1.71 · PointsBet 1.65,game,Total,Over 232.5,,,,
-513,P+R+A,Magic @ Suns,13:10,Dillon Brooks over 22.5 P+R+A,52.8,1.89,1.8,Sportsbet,-5.0,Pass,Sportsbet 1.80,prop,PRA,,Dillon Brooks,PRA,Over,22.5
-514,Points,Heat @ Warriors,14:10,Stephen Curry over 26.5 points,52.6,1.9,1.87,PointsBet,-1.7,Pass,PointsBet 1.87 · Sportsbet 1.80,prop,Points,,Stephen Curry,Points,Over,26.5
-515,Line,Heat @ Warriors,14:10,Miami Heat +8.5,52.6,1.9,1.75,Sportsbet,-8.0,Pass,Sportsbet 1.75 · PointsBet 1.69,game,Spread,Miami Heat +8.5,,,,
-516,P+R+A,Magic @ Suns,13:10,Franz Wagner under 36.5 P+R+A,52.5,1.9,1.83,PointsBet,-4.0,Pass,PointsBet 1.83 · Sportsbet 1.80,prop,PRA,,Franz Wagner,PRA,Under,36.5
-517,P+R+A,Magic @ Suns,13:10,Jase Richardson under 14.5 P+R+A,52.5,1.9,1.8,Sportsbet,-5.5,Pass,Sportsbet 1.80 · PointsBet 1.80,prop,PRA,,Jase Richardson,PRA,Under,14.5
-518,P+R+A,Magic @ Suns,13:10,Miles Bridges over 25.5 P+R+A,52.5,1.9,1.8,Sportsbet,-5.5,Pass,Sportsbet 1.80,prop,PRA,,Miles Bridges,PRA,Over,25.5
-519,Alt points,Magic @ Suns,13:10,Devin Booker 25+ points,52.5,1.9,1.71,PointsBet,-10.3,Pass,PointsBet 1.71,alt,Points,,Devin Booker,Points,Over,24.5
-520,Alt P+R+A,Heat @ Warriors,14:10,Bam Adebayo 35+ P+R+A,52.5,1.9,1.59,PointsBet,-16.5,Pass,PointsBet 1.59,alt,PRA,,Bam Adebayo,PRA,Over,34.5
-521,Points,Magic @ Suns,13:10,Jalen Green under 16.5 points,52.3,1.91,1.87,Betr,-2.2,Pass,Betr 1.87 · Sportsbet 1.80 · PointsBet 1.80,prop,Points,,Jalen Green,Points,Under,16.5
-522,Rebounds,Magic @ Suns,13:10,Khaman Maluach under 5.5 rebounds,52.3,1.91,1.87,PointsBet,-2.2,Pass,PointsBet 1.87 · Betr 1.83 · Sportsbet 1.76,prop,Rebounds,,Khaman Maluach,Rebounds,Under,5.5
-523,Points,Heat @ Warriors,14:10,Giannis Antetokounmpo under 29.5 points,52.3,1.91,1.85,Sportsbet,-3.3,Pass,Sportsbet 1.85 · Betr 1.83,prop,Points,,Giannis Antetokounmpo,Points,Under,29.5
-524,Line,Magic @ Suns,13:10,Orlando Magic +1.5,52.0,1.92,1.90,Sportsbet,-1.2,Pass,Sportsbet 1.90 · TAB 1.90 · Betr 1.88 · PointsBet 1.87,game,Spread,Orlando Magic +1.5,,,,
-525,P+R+A,Heat @ Warriors,14:10,Giannis Antetokounmpo under 47.5 P+R+A,52.0,1.92,1.89,Sportsbet,-1.8,Pass,Sportsbet 1.89 · PointsBet 1.83,prop,PRA,,Giannis Antetokounmpo,PRA,Under,47.5
-526,Points,Heat @ Warriors,14:10,Will Richard under 6.5 points,52.0,1.92,1.83,PointsBet,-4.8,Pass,PointsBet 1.83 · Sportsbet 1.80,prop,Points,,Will Richard,Points,Under,6.5
-527,Points,Heat @ Warriors,14:10,Brandin Podziemski over 15.5 points,51.9,1.93,1.87,Betr,-3.0,Pass,Betr 1.87 · Sportsbet 1.80,prop,Points,,Brandin Podziemski,Points,Over,15.5
-528,Points,Heat @ Warriors,14:10,Draymond Green under 5.5 points,51.8,1.93,1.88,Sportsbet,-2.6,Pass,Sportsbet 1.88 · PointsBet 1.87,prop,Points,,Draymond Green,Points,Under,5.5
-529,Points,Magic @ Suns,13:10,Devin Booker under 25.5 points,51.8,1.93,1.83,Betr,-5.2,Pass,Betr 1.83 · PointsBet 1.83,prop,Points,,Devin Booker,Points,Under,25.5
-530,Points,Magic @ Suns,13:10,Jase Richardson over 8.5 points,51.7,1.93,1.87,Betr,-3.3,Pass,Betr 1.87 · Sportsbet 1.80 · PointsBet 1.80,prop,Points,,Jase Richardson,Points,Over,8.5
-531,Alt points,Heat @ Warriors,14:10,Giannis Antetokounmpo 29+ points,51.7,1.93,1.77,PointsBet,-8.5,Pass,PointsBet 1.77,alt,Points,,Giannis Antetokounmpo,Points,Over,28.5
-532,Total,Heat @ Warriors,14:10,Heat @ Warriors Under 234.5,51.6,1.94,1.96,Sportsbet,1.1,Pass,Sportsbet 1.96 · PointsBet 1.90,game,Total,Under 234.5,,,,
-533,Points,Magic @ Suns,13:10,Desmond Bane under 20.5 points,51.6,1.94,1.87,Betr,-3.4,Pass,Betr 1.87 · Sportsbet 1.80,prop,Points,,Desmond Bane,Points,Under,20.5
-534,Total,Magic @ Suns,13:10,Magic @ Suns Over 223.5,51.4,1.95,1.91,Sportsbet,-1.8,Pass,Sportsbet 1.91 · PointsBet 1.87,game,Total,Over 223.5,,,,
-535,P+R+A,Heat @ Warriors,14:10,Stephen Curry over 35.5 P+R+A,51.4,1.95,1.9,PointsBet,-2.3,Pass,PointsBet 1.90 · Sportsbet 1.80,prop,PRA,,Stephen Curry,PRA,Over,35.5
-536,Points,Magic @ Suns,13:10,Anthony Black over 14.5 points,51.3,1.95,1.87,Betr,-4.1,Pass,Betr 1.87 · Sportsbet 1.86 · PointsBet 1.80,prop,Points,,Anthony Black,Points,Over,14.5
-537,Moneyline,Magic @ Suns,13:10,Phoenix Suns ML,51.0,1.96,1.90,PointsBet,-3.1,Pass,PointsBet 1.90 · Sportsbet 1.89 · Betr 1.87 · TAB 1.85,game,Moneyline,Phoenix Suns ML,,,,
-538,P+R+A,Magic @ Suns,13:10,Devin Booker under 34.5 P+R+A,50.9,1.96,1.87,PointsBet,-4.7,Pass,PointsBet 1.87,prop,PRA,,Devin Booker,PRA,Under,34.5
-539,Total,Magic @ Suns,13:10,Magic @ Suns Under 224.5,50.8,1.97,1.83,Sportsbet,-7.0,Pass,Sportsbet 1.83 · PointsBet 1.74,game,Total,Under 224.5,,,,
-540,Points,Heat @ Warriors,14:10,Georges Niang over 7.5 points,50.7,1.97,1.92,Sportsbet,-2.7,Pass,Sportsbet 1.92 · PointsBet 1.87,prop,Points,,Georges Niang,Points,Over,7.5
-541,Rebounds,Heat @ Warriors,14:10,Stephen Curry over 3.5 rebounds,50.7,1.97,1.89,Sportsbet,-4.3,Pass,Sportsbet 1.89 · Betr 1.83 · PointsBet 1.83,prop,Rebounds,,Stephen Curry,Rebounds,Over,3.5
-542,Total,Heat @ Warriors,14:10,Heat @ Warriors Over 233.5,50.7,1.97,1.78,Sportsbet,-9.8,Pass,Sportsbet 1.78 · PointsBet 1.74,game,Total,Over 233.5,,,,
-543,Points,Magic @ Suns,13:10,Wendell Carter Jr. over 11.5 points,50.6,1.98,1.91,Betr,-3.4,Pass,Betr 1.91 · Sportsbet 1.87 · PointsBet 1.87,prop,Points,,Wendell Carter Jr.,Points,Over,11.5
-544,Alt points,Heat @ Warriors,14:10,Bam Adebayo 21+ points,50.6,1.98,1.65,PointsBet,-16.5,Pass,PointsBet 1.65,alt,Points,,Bam Adebayo,Points,Over,20.5
-545,Line,Heat @ Warriors,14:10,Golden State Warriors -7.5,50.4,1.98,2.00,PointsBet,0.8,Pass,PointsBet 2.00 · Betr 1.93 · Sportsbet 1.90,game,Spread,Golden State Warriors -7.5,,,,
-546,P+R+A,Heat @ Warriors,14:10,Brandin Podziemski over 25.5 P+R+A,50.4,1.98,1.91,Sportsbet,-3.7,Pass,Sportsbet 1.91 · PointsBet 1.83,prop,PRA,,Brandin Podziemski,PRA,Over,25.5
-547,Points,Magic @ Suns,13:10,Miles Bridges over 16.5 points,49.9,2.0,1.96,Sportsbet,-2.2,Pass,Sportsbet 1.96 · PointsBet 1.90 · Betr 1.83,prop,Points,,Miles Bridges,Points,Over,16.5
-548,P+R+A,Magic @ Suns,13:10,Desmond Bane under 27.5 P+R+A,49.9,2.0,1.93,Sportsbet,-3.8,Pass,Sportsbet 1.93 · PointsBet 1.87,prop,PRA,,Desmond Bane,PRA,Under,27.5
-549,Rebounds,Magic @ Suns,13:10,Jase Richardson under 2.5 rebounds,49.9,2.0,1.9,PointsBet,-5.3,Pass,PointsBet 1.90 · Sportsbet 1.89,prop,Rebounds,,Jase Richardson,Rebounds,Under,2.5
-550,Points,Heat @ Warriors,14:10,Yaxel Lendeborg under 19.5 points,49.7,2.01,1.93,Sportsbet,-4.2,Pass,Sportsbet 1.93 · PointsBet 1.90,prop,Points,,Yaxel Lendeborg,Points,Under,19.5
-551,Points,Magic @ Suns,13:10,Dillon Brooks over 16.5 points,49.6,2.02,1.96,Sportsbet,-2.7,Pass,Sportsbet 1.96 · PointsBet 1.90 · Betr 1.87,prop,Points,,Dillon Brooks,Points,Over,16.5
-552,Rebounds,Magic @ Suns,13:10,Jalen Green over 3.5 rebounds,49.6,2.02,1.92,Sportsbet,-4.7,Pass,Sportsbet 1.92 · Betr 1.91 · PointsBet 1.90,prop,Rebounds,,Jalen Green,Rebounds,Over,3.5
-553,Line,Heat @ Warriors,14:10,Miami Heat +7.5,49.6,2.02,1.90,Sportsbet,-5.7,Pass,Sportsbet 1.90 · Betr 1.84 · PointsBet 1.83,game,Spread,Miami Heat +7.5,,,,
-554,Total,Heat @ Warriors,14:10,Heat @ Warriors Under 233.5,49.3,2.03,2.04,Sportsbet,0.6,Pass,Sportsbet 2.04 · PointsBet 1.95,game,Total,Under 233.5,,,,
-555,P+R+A,Magic @ Suns,13:10,Anthony Black over 23.5 P+R+A,49.3,2.03,1.96,Sportsbet,-3.3,Pass,Sportsbet 1.96 · PointsBet 1.87,prop,PRA,,Anthony Black,PRA,Over,23.5
-556,Total,Magic @ Suns,13:10,Magic @ Suns Over 224.5,49.2,2.03,1.98,Sportsbet,-2.6,Pass,Sportsbet 1.98 · PointsBet 1.95,game,Total,Over 224.5,,,,
-557,Assists,Magic @ Suns,13:10,Devin Booker under 4.5 assists,49.2,2.03,1.95,PointsBet,-4.1,Pass,PointsBet 1.95 · Betr 1.91 · Sportsbet 1.89,prop,Assists,,Devin Booker,Assists,Under,4.5
-558,Moneyline,Magic @ Suns,13:10,Orlando Magic ML,49.0,2.04,2.00,TAB,-2.0,Pass,TAB 2.00 · Betr 1.97 · Sportsbet 1.95 · PointsBet 1.90,game,Moneyline,Orlando Magic ML,,,,
-559,Threes,Magic @ Suns,13:10,Tristan Da Silva over 2.5 threes,48.9,2.04,2.0,PointsBet,-2.1,Pass,PointsBet 2.00 · Sportsbet 1.96,prop,Threes,,Tristan Da Silva,Threes,Over,2.5
-560,Rebounds,Magic @ Suns,13:10,Miles Bridges over 6.5 rebounds,48.9,2.04,2.0,Sportsbet,-2.3,Pass,Sportsbet 2.00 · Betr 1.87 · PointsBet 1.83,prop,Rebounds,,Miles Bridges,Rebounds,Over,6.5
-561,Total,Magic @ Suns,13:10,Magic @ Suns Under 223.5,48.6,2.06,1.90,Sportsbet,-7.7,Pass,Sportsbet 1.90 · TAB 1.90 · Betr 1.87 (other lines: 222.5 PointsBet),game,Total,Under 223.5,,,,
-562,Points,Magic @ Suns,13:10,Franz Wagner under 22.5 points,48.5,2.06,1.96,Sportsbet,-4.9,Pass,Sportsbet 1.96 · PointsBet 1.95,prop,Points,,Franz Wagner,Points,Under,22.5
-563,P+R+A,Magic @ Suns,13:10,Tristan Da Silva over 18.5 P+R+A,48.4,2.07,2.0,PointsBet,-3.2,Pass,PointsBet 2.00 · Sportsbet 1.93,prop,PRA,,Tristan Da Silva,PRA,Over,18.5
-564,Total,Heat @ Warriors,14:10,Heat @ Warriors Over 234.5,48.4,2.07,1.90,TAB,-8.0,Pass,"TAB 1.90 (other lines: 235.5 Betr, 235.5 PointsBet, 235.5 Sportsbet)",game,Total,Over 234.5,,,,
-565,P+R+A,Magic @ Suns,13:10,Wendell Carter Jr. over 22.5 P+R+A,48.3,2.07,1.96,Sportsbet,-5.3,Pass,Sportsbet 1.96,prop,PRA,,Wendell Carter Jr.,PRA,Over,22.5
-566,Alt points,Heat @ Warriors,14:10,Stephen Curry 28+ points,48.2,2.07,2.1,PointsBet,1.1,Pass,PointsBet 2.10,alt,Points,,Stephen Curry,Points,Over,27.5
-567,P+R+A,Heat @ Warriors,14:10,De'Anthony Melton over 16.5 P+R+A,48.1,2.08,2.05,PointsBet,-1.5,Pass,PointsBet 2.05 · Sportsbet 1.93,prop,PRA,,De'Anthony Melton,PRA,Over,16.5
-568,Rebounds,Heat @ Warriors,14:10,Giannis Antetokounmpo under 11.5 rebounds,48.1,2.08,2.0,Sportsbet,-3.7,Pass,Sportsbet 2.00 · Betr 2.00 · PointsBet 1.95,prop,Rebounds,,Giannis Antetokounmpo,Rebounds,Under,11.5
-569,Threes,Magic @ Suns,13:10,Devin Booker under 1.5 threes,48.0,2.08,1.96,Sportsbet,-5.9,Pass,Sportsbet 1.96 · PointsBet 1.95,prop,Threes,,Devin Booker,Threes,Under,1.5
-570,Line,Magic @ Suns,13:10,Phoenix Suns -1.5,48.0,2.08,1.95,PointsBet,-6.4,Pass,PointsBet 1.95 · Sportsbet 1.90 · TAB 1.90 · Betr 1.89,game,Spread,Phoenix Suns -1.5,,,,
-571,Threes,Heat @ Warriors,14:10,De'Anthony Melton over 1.5 threes,47.8,2.09,2.05,Sportsbet,-2.0,Pass,Sportsbet 2.05,prop,Threes,,De'Anthony Melton,Threes,Over,1.5
-572,Line,Heat @ Warriors,14:10,Golden State Warriors -8.5,47.4,2.11,2.15,PointsBet,1.9,Pass,PointsBet 2.15 · Sportsbet 1.99,game,Spread,Golden State Warriors -8.5,,,,
-573,Rebounds,Heat @ Warriors,14:10,De'Anthony Melton over 3.5 rebounds,47.2,2.12,2.05,PointsBet,-3.2,Pass,PointsBet 2.05 · Sportsbet 2.00 · Betr 1.95,prop,Rebounds,,De'Anthony Melton,Rebounds,Over,3.5
-574,Total,Heat @ Warriors,14:10,Heat @ Warriors Under 232.5,47.1,2.12,2.15,PointsBet,1.3,Pass,PointsBet 2.15 · Sportsbet 2.14,game,Total,Under 232.5,,,,
-575,Total,Magic @ Suns,13:10,Magic @ Suns Over 225.5,46.9,2.13,2.06,Sportsbet,-3.3,Pass,Sportsbet 2.06 · PointsBet 2.05,game,Total,Over 225.5,,,,
-576,Points,Magic @ Suns,13:10,Jamal Cain over 6.5 points,46.7,2.14,2.08,Sportsbet,-2.8,Pass,Sportsbet 2.08 · PointsBet 2.00,prop,Points,,Jamal Cain,Points,Over,6.5
-577,Assists,Heat @ Warriors,14:10,Yaxel Lendeborg under 3.5 assists,46.6,2.15,2.05,Sportsbet,-4.4,Pass,Sportsbet 2.05 · Betr 2.05 · PointsBet 2.00,prop,Assists,,Yaxel Lendeborg,Assists,Under,3.5
-578,Line,Heat @ Warriors,14:10,Miami Heat +6.5,46.6,2.15,2.04,Sportsbet,-4.9,Pass,Sportsbet 2.04 · PointsBet 1.95,game,Spread,Miami Heat +6.5,,,,
-579,Alt points,Magic @ Suns,13:10,Franz Wagner 24+ points,46.6,2.15,1.95,PointsBet,-9.1,Pass,PointsBet 1.95,alt,Points,,Franz Wagner,Points,Over,23.5
-580,Total,Magic @ Suns,13:10,Magic @ Suns Under 222.5,46.4,2.16,1.98,Sportsbet,-8.2,Pass,Sportsbet 1.98,game,Total,Under 222.5,,,,
-581,Alt P+R+A,Magic @ Suns,13:10,Devin Booker 35+ P+R+A,46.4,2.16,1.83,PointsBet,-15.1,Pass,PointsBet 1.83,alt,PRA,,Devin Booker,PRA,Over,34.5
-582,Total,Heat @ Warriors,14:10,Heat @ Warriors Over 235.5,46.2,2.16,1.93,Sportsbet,-10.8,Pass,Sportsbet 1.93,game,Total,Over 235.5,,,,
-583,Points,Magic @ Suns,13:10,Tristan Da Silva over 12.5 points,46.1,2.17,2.08,Sportsbet,-4.1,Pass,Sportsbet 2.08,prop,Points,,Tristan Da Silva,Points,Over,12.5
-584,Line,Magic @ Suns,13:10,Orlando Magic -1.5,46.0,2.17,2.04,Sportsbet,-6.1,Pass,Sportsbet 2.04 · PointsBet 1.95,game,Spread,Orlando Magic -1.5,,,,
-585,Alt points,Heat @ Warriors,14:10,Brandin Podziemski 17+ points,46.0,2.17,1.9,PointsBet,-12.6,Pass,PointsBet 1.90,alt,Points,,Brandin Podziemski,Points,Over,16.5
-586,Alt points,Magic @ Suns,13:10,Tristan Da Silva 13+ points,45.5,2.2,2.05,PointsBet,-6.7,Pass,PointsBet 2.05,alt,Points,,Tristan Da Silva,Points,Over,12.5
-587,Assists,Heat @ Warriors,14:10,Bam Adebayo under 3.5 assists,45.4,2.2,2.15,Sportsbet,-2.5,Pass,Sportsbet 2.15 · PointsBet 2.15 · Betr 2.10,prop,Assists,,Bam Adebayo,Assists,Under,3.5
-588,Rebounds,Heat @ Warriors,14:10,Will Richard under 2.5 rebounds,45.3,2.21,2.15,Betr,-2.6,Pass,Betr 2.15 · Sportsbet 2.10 · PointsBet 2.10,prop,Rebounds,,Will Richard,Rebounds,Under,2.5
-589,Alt points,Magic @ Suns,13:10,Anthony Black 16+ points,45.1,2.22,2.0,PointsBet,-9.8,Pass,PointsBet 2.00,alt,Points,,Anthony Black,Points,Over,15.5
-590,Line,Magic @ Suns,13:10,Phoenix Suns -2.5,45.0,2.22,2.05,PointsBet,-7.7,Pass,PointsBet 2.05 · Sportsbet 2.00,game,Spread,Phoenix Suns -2.5,,,,
-591,Alt points,Heat @ Warriors,14:10,Yaxel Lendeborg 21+ points,45.0,2.22,2.0,PointsBet,-9.9,Pass,PointsBet 2.00,alt,Points,,Yaxel Lendeborg,Points,Over,20.5
-592,Total,Heat @ Warriors,14:10,Heat @ Warriors Under 231.5,44.9,2.23,2.25,PointsBet,1.0,Pass,PointsBet 2.25 · Sportsbet 2.24,game,Total,Under 231.5,,,,
-593,Total,Magic @ Suns,13:10,Magic @ Suns Over 226.5,44.7,2.24,2.20,PointsBet,-1.6,Pass,PointsBet 2.20 · Sportsbet 2.14,game,Total,Over 226.5,,,,
-594,Line,Heat @ Warriors,14:10,Golden State Warriors -9.5,44.4,2.25,2.30,PointsBet,2.2,Pass,PointsBet 2.30 · Sportsbet 2.10,game,Spread,Golden State Warriors -9.5,,,,
-595,Total,Magic @ Suns,13:10,Magic @ Suns Under 221.5,44.2,2.26,2.08,Sportsbet,-8.1,Pass,Sportsbet 2.08 · PointsBet 1.90,game,Total,Under 221.5,,,,
-596,Alt points,Magic @ Suns,13:10,Miles Bridges 18+ points,44.1,2.27,2.15,PointsBet,-5.2,Pass,PointsBet 2.15,alt,Points,,Miles Bridges,Points,Over,17.5
-597,Alt P+R+A,Magic @ Suns,13:10,Anthony Black 25+ P+R+A,44.1,2.27,2.05,PointsBet,-9.6,Pass,PointsBet 2.05,alt,PRA,,Anthony Black,PRA,Over,24.5
-598,Total,Heat @ Warriors,14:10,Heat @ Warriors Over 236.5,44.0,2.27,2.02,Sportsbet,-11.1,Pass,Sportsbet 2.02 · PointsBet 1.87,game,Total,Over 236.5,,,,
-599,Alt threes,Heat @ Warriors,14:10,Stephen Curry 5+ threes,43.9,2.28,2.35,Sportsbet,3.1,Pass,Sportsbet 2.35 · PointsBet 2.30,alt,Threes,,Stephen Curry,Threes,Over,4.5
-600,Alt points,Heat @ Warriors,14:10,Stephen Curry 29+ points,43.9,2.28,2.3,PointsBet,1.0,Pass,PointsBet 2.30,alt,Points,,Stephen Curry,Points,Over,28.5
-601,Rebounds,Heat @ Warriors,14:10,Draymond Green under 4.5 rebounds,43.9,2.28,2.2,PointsBet,-3.5,Pass,PointsBet 2.20 · Sportsbet 2.10 · Betr 2.10,prop,Rebounds,,Draymond Green,Rebounds,Under,4.5
-602,Alt points,Magic @ Suns,13:10,Dillon Brooks 18+ points,43.8,2.28,2.2,PointsBet,-3.6,Pass,PointsBet 2.20,alt,Points,,Dillon Brooks,Points,Over,17.5
-603,Alt points,Magic @ Suns,13:10,Wendell Carter Jr. 13+ points,43.6,2.29,2.2,PointsBet,-4.0,Pass,PointsBet 2.20,alt,Points,,Wendell Carter Jr.,Points,Over,12.5
-604,Line,Heat @ Warriors,14:10,Miami Heat +5.5,43.6,2.29,2.15,Sportsbet,-6.2,Pass,Sportsbet 2.15 · PointsBet 2.15,game,Spread,Miami Heat +5.5,,,,
-605,Alt points,Magic @ Suns,13:10,Jase Richardson 10+ points,43.6,2.29,2.05,PointsBet,-10.5,Pass,PointsBet 2.05,alt,Points,,Jase Richardson,Points,Over,9.5
-606,Alt points,Magic @ Suns,13:10,Devin Booker 27+ points,43.5,2.3,2.15,PointsBet,-6.5,Pass,PointsBet 2.15,alt,Points,,Devin Booker,Points,Over,26.5
-607,Alt points,Heat @ Warriors,14:10,Giannis Antetokounmpo 31+ points,43.3,2.31,2.2,PointsBet,-4.8,Pass,PointsBet 2.20,alt,Points,,Giannis Antetokounmpo,Points,Over,30.5
-608,Line,Magic @ Suns,13:10,Orlando Magic -2.5,43.1,2.32,2.21,Sportsbet,-4.8,Pass,Sportsbet 2.21 · PointsBet 2.10,game,Spread,Orlando Magic -2.5,,,,
-609,Alt points,Magic @ Suns,13:10,Desmond Bane 22+ points,43.1,2.32,2.2,PointsBet,-5.2,Pass,PointsBet 2.20,alt,Points,,Desmond Bane,Points,Over,21.5
-610,Total,Heat @ Warriors,14:10,Heat @ Warriors Under 230.5,42.7,2.34,2.34,Sportsbet,-0.1,Pass,Sportsbet 2.34 · PointsBet 2.30,game,Total,Under 230.5,,,,
-611,Alt P+R+A,Magic @ Suns,13:10,Tristan Da Silva 20+ P+R+A,42.6,2.35,2.25,PointsBet,-4.2,Pass,PointsBet 2.25,alt,PRA,,Tristan Da Silva,PRA,Over,19.5
-612,Alt P+R+A,Magic @ Suns,13:10,Dillon Brooks 25+ P+R+A,42.6,2.35,2.15,PointsBet,-8.4,Pass,PointsBet 2.15,alt,PRA,,Dillon Brooks,PRA,Over,24.5
-613,Total,Magic @ Suns,13:10,Magic @ Suns Over 227.5,42.5,2.35,2.30,PointsBet,-2.2,Pass,PointsBet 2.30 · Sportsbet 2.24,game,Total,Over 227.5,,,,
-614,Threes,Magic @ Suns,13:10,Jalen Green under 1.5 threes,42.2,2.37,2.3,PointsBet,-3.0,Pass,PointsBet 2.30 · Sportsbet 2.15,prop,Threes,,Jalen Green,Threes,Under,1.5
-615,Assists,Heat @ Warriors,14:10,De'Anthony Melton over 2.5 assists,42.1,2.38,2.35,PointsBet,-1.0,Pass,PointsBet 2.35 · Sportsbet 2.15,prop,Assists,,De'Anthony Melton,Assists,Over,2.5
-616,Line,Magic @ Suns,13:10,Phoenix Suns -3.5,42.1,2.38,2.20,PointsBet,-7.4,Pass,PointsBet 2.20 · Sportsbet 2.09,game,Spread,Phoenix Suns -3.5,,,,
-617,Alt points,Heat @ Warriors,14:10,Georges Niang 9+ points,42.0,2.38,2.3,PointsBet,-3.3,Pass,PointsBet 2.30,alt,Points,,Georges Niang,Points,Over,8.5
-618,Alt points,Magic @ Suns,13:10,Franz Wagner 25+ points,42.0,2.38,2.2,PointsBet,-7.5,Pass,PointsBet 2.20,alt,Points,,Franz Wagner,Points,Over,24.5
-619,Total,Magic @ Suns,13:10,Magic @ Suns Under 220.5,42.0,2.38,2.18,Sportsbet,-8.5,Pass,Sportsbet 2.18 · PointsBet 2.00,game,Total,Under 220.5,,,,
-620,Alt assists,Heat @ Warriors,14:10,Stephen Curry 6+ assists,41.8,2.39,2.35,PointsBet,-1.9,Pass,PointsBet 2.35,alt,Assists,,Stephen Curry,Assists,Over,5.5
-621,Alt points,Magic @ Suns,13:10,Jalen Green 18+ points,41.8,2.39,2.2,PointsBet,-8.0,Pass,PointsBet 2.20,alt,Points,,Jalen Green,Points,Over,17.5
-622,Total,Heat @ Warriors,14:10,Heat @ Warriors Over 237.5,41.8,2.39,2.10,Sportsbet,-12.2,Pass,Sportsbet 2.10 · PointsBet 1.95,game,Total,Over 237.5,,,,
-623,Alt P+R+A,Magic @ Suns,13:10,Jalen Green 25+ P+R+A,41.7,2.4,2.2,PointsBet,-8.2,Pass,PointsBet 2.20,alt,PRA,,Jalen Green,PRA,Over,24.5
-624,Line,Heat @ Warriors,14:10,Golden State Warriors -10.5,41.5,2.41,2.50,PointsBet,3.8,Pass,PointsBet 2.50 · Sportsbet 2.29,game,Spread,Golden State Warriors -10.5,,,,
-625,Alt points,Heat @ Warriors,14:10,De'Anthony Melton 12+ points,41.4,2.42,2.3,PointsBet,-4.9,Pass,PointsBet 2.30,alt,Points,,De'Anthony Melton,Points,Over,11.5
-626,Alt rebounds,Magic @ Suns,13:10,Wendell Carter Jr. 10+ rebounds,41.1,2.43,2.15,PointsBet,-11.7,Pass,PointsBet 2.15,alt,Rebounds,,Wendell Carter Jr.,Rebounds,Over,9.5
-627,Alt P+R+A,Magic @ Suns,13:10,Desmond Bane 30+ P+R+A,40.9,2.44,2.2,PointsBet,-10.0,Pass,PointsBet 2.20,alt,PRA,,Desmond Bane,PRA,Over,29.5
-628,Alt P+R+A,Heat @ Warriors,14:10,Giannis Antetokounmpo 50+ P+R+A,40.9,2.44,2.2,PointsBet,-10.1,Pass,PointsBet 2.20,alt,PRA,,Giannis Antetokounmpo,PRA,Over,49.5
-629,Line,Heat @ Warriors,14:10,Miami Heat +4.5,40.7,2.46,2.35,PointsBet,-4.4,Pass,PointsBet 2.35 · Sportsbet 2.30,game,Spread,Miami Heat +4.5,,,,
-630,Alt assists,Magic @ Suns,13:10,Franz Wagner 8+ assists,40.6,2.46,2.25,PointsBet,-8.7,Pass,PointsBet 2.25,alt,Assists,,Franz Wagner,Assists,Over,7.5
-631,Alt points,Heat @ Warriors,14:10,Bam Adebayo 23+ points,40.6,2.46,1.95,PointsBet,-20.8,Pass,PointsBet 1.95,alt,Points,,Bam Adebayo,Points,Over,22.5
-632,Total,Heat @ Warriors,14:10,Heat @ Warriors Under 229.5,40.5,2.47,2.44,Sportsbet,-1.2,Pass,Sportsbet 2.44 · PointsBet 2.40,game,Total,Under 229.5,,,,
-633,Alt points,Heat @ Warriors,14:10,Brandin Podziemski 18+ points,40.4,2.48,2.2,PointsBet,-11.0,Pass,PointsBet 2.20,alt,Points,,Brandin Podziemski,Points,Over,17.5
-634,Total,Magic @ Suns,13:10,Magic @ Suns Over 228.5,40.3,2.48,2.40,PointsBet,-3.2,Pass,PointsBet 2.40 · Sportsbet 2.34,game,Total,Over 228.5,,,,
-635,Alt rebounds,Heat @ Warriors,14:10,Draymond Green 6+ rebounds,40.2,2.49,2.25,PointsBet,-9.6,Pass,PointsBet 2.25,alt,Rebounds,,Draymond Green,Rebounds,Over,5.5
-636,Line,Magic @ Suns,13:10,Orlando Magic -3.5,40.1,2.49,2.33,Sportsbet,-6.5,Pass,Sportsbet 2.33 · PointsBet 2.25,game,Spread,Orlando Magic -3.5,,,,
-637,Alt points,Heat @ Warriors,14:10,Yaxel Lendeborg 22+ points,40.1,2.49,2.25,PointsBet,-9.8,Pass,PointsBet 2.25,alt,Points,,Yaxel Lendeborg,Points,Over,21.5
-638,Alt points,Heat @ Warriors,14:10,Stephen Curry 30+ points,39.8,2.51,2.55,PointsBet,1.4,Pass,PointsBet 2.55,alt,Points,,Stephen Curry,Points,Over,29.5
-639,Total,Magic @ Suns,13:10,Magic @ Suns Under 219.5,39.8,2.51,2.28,Sportsbet,-9.3,Pass,Sportsbet 2.28 · PointsBet 2.15,game,Total,Under 219.5,,,,
-640,Total,Heat @ Warriors,14:10,Heat @ Warriors Over 238.5,39.6,2.53,2.20,Sportsbet,-12.8,Pass,Sportsbet 2.20 · PointsBet 2.05,game,Total,Over 238.5,,,,
-641,Alt points,Magic @ Suns,13:10,Anthony Black 17+ points,39.4,2.54,2.35,PointsBet,-7.4,Pass,PointsBet 2.35,alt,Points,,Anthony Black,Points,Over,16.5
-642,Alt points,Heat @ Warriors,14:10,Giannis Antetokounmpo 32+ points,39.3,2.54,2.4,PointsBet,-5.7,Pass,PointsBet 2.40,alt,Points,,Giannis Antetokounmpo,Points,Over,31.5
-643,Alt points,Magic @ Suns,13:10,Devin Booker 28+ points,39.2,2.55,2.35,PointsBet,-8.0,Pass,PointsBet 2.35,alt,Points,,Devin Booker,Points,Over,27.5
-644,Line,Magic @ Suns,13:10,Phoenix Suns -4.5,39.2,2.55,2.30,PointsBet,-9.9,Pass,PointsBet 2.30 · Sportsbet 2.27,game,Spread,Phoenix Suns -4.5,,,,
-645,Alt points,Magic @ Suns,13:10,Tristan Da Silva 14+ points,39.1,2.56,2.35,PointsBet,-8.1,Pass,PointsBet 2.35,alt,Points,,Tristan Da Silva,Points,Over,13.5
-646,Alt assists,Magic @ Suns,13:10,Jalen Green 4+ assists,38.9,2.57,2.15,PointsBet,-16.3,Pass,PointsBet 2.15,alt,Assists,,Jalen Green,Assists,Over,3.5
-647,Alt points,Magic @ Suns,13:10,Miles Bridges 19+ points,38.7,2.58,2.5,PointsBet,-3.1,Pass,PointsBet 2.50,alt,Points,,Miles Bridges,Points,Over,18.5
-648,Alt points,Heat @ Warriors,14:10,Will Richard 8+ points,38.7,2.58,2.3,PointsBet,-11.0,Pass,PointsBet 2.30,alt,Points,,Will Richard,Points,Over,7.5
-649,Line,Heat @ Warriors,14:10,Golden State Warriors -11.5,38.6,2.59,2.75,PointsBet,6.3,Value,PointsBet 2.75 · Sportsbet 2.49,game,Spread,Golden State Warriors -11.5,,,,
-650,Alt points,Magic @ Suns,13:10,Dillon Brooks 19+ points,38.5,2.6,2.4,PointsBet,-7.7,Pass,PointsBet 2.40,alt,Points,,Dillon Brooks,Points,Over,18.5
-651,Total,Heat @ Warriors,14:10,Heat @ Warriors Under 228.5,38.4,2.6,2.56,Sportsbet,-1.8,Pass,Sportsbet 2.56 · PointsBet 2.55,game,Total,Under 228.5,,,,
-652,Alt points,Magic @ Suns,13:10,Desmond Bane 23+ points,38.3,2.61,2.5,PointsBet,-4.3,Pass,PointsBet 2.50,alt,Points,,Desmond Bane,Points,Over,22.5
-653,Total,Magic @ Suns,13:10,Magic @ Suns Over 229.5,38.2,2.62,2.55,PointsBet,-2.6,Pass,PointsBet 2.55 · Sportsbet 2.46,game,Total,Over 229.5,,,,
-654,Alt points,Heat @ Warriors,14:10,Draymond Green 7+ points,38.1,2.62,2.3,PointsBet,-12.4,Pass,PointsBet 2.30,alt,Points,,Draymond Green,Points,Over,6.5
-655,Line,Heat @ Warriors,14:10,Miami Heat +3.5,37.8,2.65,2.52,Sportsbet,-4.8,Pass,Sportsbet 2.52 · PointsBet 2.50,game,Spread,Miami Heat +3.5,,,,
-656,Alt threes,Heat @ Warriors,14:10,Yaxel Lendeborg 3+ threes,37.7,2.65,2.95,Sportsbet,11.1,Pass,Sportsbet 2.95 · PointsBet 2.60,alt,Threes,,Yaxel Lendeborg,Threes,Over,2.5
-657,Total,Magic @ Suns,13:10,Magic @ Suns Under 218.5,37.7,2.65,2.38,Sportsbet,-10.4,Pass,Sportsbet 2.38 · PointsBet 2.25,game,Total,Under 218.5,,,,
-658,Alt points,Magic @ Suns,13:10,Franz Wagner 26+ points,37.6,2.66,2.4,PointsBet,-9.9,Pass,PointsBet 2.40,alt,Points,,Franz Wagner,Points,Over,25.5
-659,Total,Heat @ Warriors,14:10,Heat @ Warriors Over 239.5,37.5,2.67,2.32,Sportsbet,-13.0,Pass,Sportsbet 2.32 · PointsBet 2.15,game,Total,Over 239.5,,,,
-660,Alt points,Magic @ Suns,13:10,Jamal Cain 8+ points,37.4,2.67,2.35,PointsBet,-12.1,Pass,PointsBet 2.35,alt,Points,,Jamal Cain,Points,Over,7.5
-661,Line,Magic @ Suns,13:10,Orlando Magic -4.5,37.3,2.68,2.56,Sportsbet,-4.5,Pass,Sportsbet 2.56 · PointsBet 2.40,game,Spread,Orlando Magic -4.5,,,,
-662,Alt points,Magic @ Suns,13:10,Wendell Carter Jr. 14+ points,37.2,2.69,2.55,PointsBet,-5.0,Pass,PointsBet 2.55,alt,Points,,Wendell Carter Jr.,Points,Over,13.5
-663,Alt points,Magic @ Suns,13:10,Jalen Green 19+ points,36.5,2.74,2.55,PointsBet,-6.9,Pass,PointsBet 2.55,alt,Points,,Jalen Green,Points,Over,18.5
-664,Alt assists,Magic @ Suns,13:10,Miles Bridges 4+ assists,36.4,2.75,2.55,PointsBet,-7.3,Pass,PointsBet 2.55,alt,Assists,,Miles Bridges,Assists,Over,3.5
-665,Line,Magic @ Suns,13:10,Phoenix Suns -5.5,36.4,2.75,2.50,PointsBet,-9.1,Pass,PointsBet 2.50 · Sportsbet 2.46,game,Spread,Phoenix Suns -5.5,,,,
-666,Alt threes,Magic @ Suns,13:10,Miles Bridges 3+ threes,36.3,2.75,2.8,Sportsbet,1.8,Pass,Sportsbet 2.80 · PointsBet 2.60,alt,Threes,,Miles Bridges,Threes,Over,2.5
-667,Alt points,Magic @ Suns,13:10,Khaman Maluach 7+ points,36.3,2.75,2.55,PointsBet,-7.4,Pass,PointsBet 2.55,alt,Points,,Khaman Maluach,Points,Over,6.5
-668,Alt points,Magic @ Suns,13:10,Jase Richardson 11+ points,36.3,2.75,2.4,PointsBet,-12.8,Pass,PointsBet 2.40,alt,Points,,Jase Richardson,Points,Over,10.5
-669,Total,Heat @ Warriors,14:10,Heat @ Warriors Under 227.5,36.2,2.76,2.70,PointsBet,-2.1,Pass,PointsBet 2.70 · Sportsbet 2.62,game,Total,Under 227.5,,,,
-670,Total,Magic @ Suns,13:10,Magic @ Suns Over 230.5,36.1,2.77,2.60,PointsBet,-6.2,Pass,PointsBet 2.60 · Sportsbet 2.56,game,Total,Over 230.5,,,,
-671,Alt points,Heat @ Warriors,14:10,Bam Adebayo 24+ points,36.0,2.78,2.25,PointsBet,-19.1,Pass,PointsBet 2.25,alt,Points,,Bam Adebayo,Points,Over,23.5
-672,Line,Heat @ Warriors,14:10,Golden State Warriors -12.5,35.8,2.79,3.00,PointsBet,7.5,Value,PointsBet 3.00 · Sportsbet 2.70,game,Spread,Golden State Warriors -12.5,,,,
-673,Alt P+R+A,Magic @ Suns,13:10,Franz Wagner 40+ P+R+A,35.8,2.79,2.5,PointsBet,-10.5,Pass,PointsBet 2.50,alt,PRA,,Franz Wagner,PRA,Over,39.5
-674,Alt points,Heat @ Warriors,14:10,Stephen Curry 31+ points,35.7,2.8,2.85,PointsBet,1.9,Pass,PointsBet 2.85,alt,Points,,Stephen Curry,Points,Over,30.5
-675,Alt P+R+A,Heat @ Warriors,14:10,Stephen Curry 40+ P+R+A,35.7,2.8,2.85,PointsBet,1.8,Pass,PointsBet 2.85,alt,PRA,,Stephen Curry,PRA,Over,39.5
-676,Alt threes,Magic @ Suns,13:10,Dillon Brooks 3+ threes,35.6,2.81,2.9,Sportsbet,3.2,Pass,Sportsbet 2.90 · PointsBet 2.70,alt,Threes,,Dillon Brooks,Threes,Over,2.5
-677,Total,Magic @ Suns,13:10,Magic @ Suns Under 217.5,35.6,2.81,2.48,Sportsbet,-11.8,Pass,Sportsbet 2.48 · PointsBet 2.35,game,Total,Under 217.5,,,,
-678,Alt points,Heat @ Warriors,14:10,Giannis Antetokounmpo 33+ points,35.4,2.82,2.7,PointsBet,-4.4,Pass,PointsBet 2.70,alt,Points,,Giannis Antetokounmpo,Points,Over,32.5
-679,Total,Heat @ Warriors,14:10,Heat @ Warriors Over 240.5,35.4,2.82,2.42,Sportsbet,-14.3,Pass,Sportsbet 2.42 · PointsBet 2.25,game,Total,Over 240.5,,,,
-680,Alt points,Heat @ Warriors,14:10,Yaxel Lendeborg 23+ points,35.3,2.83,2.5,PointsBet,-11.6,Pass,PointsBet 2.50,alt,Points,,Yaxel Lendeborg,Points,Over,22.5
-681,Alt rebounds,Magic @ Suns,13:10,Miles Bridges 8+ rebounds,35.3,2.83,2.4,PointsBet,-15.3,Pass,PointsBet 2.40,alt,Rebounds,,Miles Bridges,Rebounds,Over,7.5
-682,Alt assists,Magic @ Suns,13:10,Devin Booker 6+ assists,35.2,2.84,2.55,PointsBet,-10.1,Pass,PointsBet 2.55,alt,Assists,,Devin Booker,Assists,Over,5.5
-683,Alt points,Heat @ Warriors,14:10,Brandin Podziemski 19+ points,35.2,2.84,2.55,PointsBet,-10.4,Pass,PointsBet 2.55,alt,Points,,Brandin Podziemski,Points,Over,18.5
-684,Alt points,Magic @ Suns,13:10,Devin Booker 29+ points,35.0,2.86,2.7,PointsBet,-5.5,Pass,PointsBet 2.70,alt,Points,,Devin Booker,Points,Over,28.5
-685,Line,Heat @ Warriors,14:10,Miami Heat +2.5,34.9,2.87,2.75,PointsBet,-3.9,Pass,PointsBet 2.75 · Sportsbet 2.68,game,Spread,Miami Heat +2.5,,,,
-686,Alt points,Heat @ Warriors,14:10,De'Anthony Melton 13+ points,34.8,2.87,2.6,PointsBet,-9.5,Pass,PointsBet 2.60,alt,Points,,De'Anthony Melton,Points,Over,12.5
-687,Line,Magic @ Suns,13:10,Orlando Magic -5.5,34.5,2.9,2.76,Sportsbet,-4.7,Pass,Sportsbet 2.76 · PointsBet 2.65,game,Spread,Orlando Magic -5.5,,,,
-688,Alt points,Heat @ Warriors,14:10,Georges Niang 10+ points,34.4,2.91,2.7,PointsBet,-7.2,Pass,PointsBet 2.70,alt,Points,,Georges Niang,Points,Over,9.5
-689,Alt threes,Magic @ Suns,13:10,Jalen Green 3+ threes,34.3,2.92,2.85,Sportsbet,-2.4,Pass,Sportsbet 2.85 · PointsBet 2.70,alt,Threes,,Jalen Green,Threes,Over,2.5
-690,Alt P+R+A,Magic @ Suns,13:10,Miles Bridges 30+ P+R+A,34.3,2.92,2.7,PointsBet,-7.5,Pass,PointsBet 2.70,alt,PRA,,Miles Bridges,PRA,Over,29.5
-691,Total,Heat @ Warriors,14:10,Heat @ Warriors Under 226.5,34.2,2.92,2.85,PointsBet,-2.6,Pass,PointsBet 2.85 · Sportsbet 2.78,game,Total,Under 226.5,,,,
-692,Total,Magic @ Suns,13:10,Magic @ Suns Over 231.5,34.0,2.94,2.75,PointsBet,-6.4,Pass,PointsBet 2.75 · Sportsbet 2.68,game,Total,Over 231.5,,,,
-693,Alt points,Magic @ Suns,13:10,Anthony Black 18+ points,34.0,2.94,2.7,PointsBet,-8.2,Pass,PointsBet 2.70,alt,Points,,Anthony Black,Points,Over,17.5
-694,Alt P+R+A,Heat @ Warriors,14:10,Yaxel Lendeborg 35+ P+R+A,34.0,2.94,2.55,PointsBet,-13.4,Pass,PointsBet 2.55,alt,PRA,,Yaxel Lendeborg,PRA,Over,34.5
-695,Alt points,Magic @ Suns,13:10,Miles Bridges 20+ points,33.7,2.97,2.85,PointsBet,-4.0,Pass,PointsBet 2.85,alt,Points,,Miles Bridges,Points,Over,19.5
-696,Alt points,Magic @ Suns,13:10,Desmond Bane 24+ points,33.7,2.97,2.75,PointsBet,-7.3,Pass,PointsBet 2.75,alt,Points,,Desmond Bane,Points,Over,23.5
-697,Line,Magic @ Suns,13:10,Phoenix Suns -6.5,33.6,2.98,2.75,PointsBet,-7.6,Pass,PointsBet 2.75 · Sportsbet 2.62,game,Spread,Phoenix Suns -6.5,,,,
-698,Total,Magic @ Suns,13:10,Magic @ Suns Under 216.5,33.5,2.99,2.58,Sportsbet,-13.6,Pass,Sportsbet 2.58 · PointsBet 2.50,game,Total,Under 216.5,,,,
-699,Alt points,Magic @ Suns,13:10,Dillon Brooks 20+ points,33.4,2.99,2.7,PointsBet,-9.8,Pass,PointsBet 2.70,alt,Points,,Dillon Brooks,Points,Over,19.5
-700,Total,Heat @ Warriors,14:10,Heat @ Warriors Over 241.5,33.4,2.99,2.50,Sportsbet,-16.6,Pass,Sportsbet 2.50 · PointsBet 2.35,game,Total,Over 241.5,,,,
-701,Alt points,Magic @ Suns,13:10,Franz Wagner 27+ points,33.3,3.0,2.7,PointsBet,-10.1,Pass,PointsBet 2.70,alt,Points,,Franz Wagner,Points,Over,26.5
-702,Line,Heat @ Warriors,14:10,Golden State Warriors -13.5,33.1,3.02,3.20,PointsBet,5.9,Value,PointsBet 3.20 · Sportsbet 2.91,game,Spread,Golden State Warriors -13.5,,,,
-703,Alt points,Magic @ Suns,13:10,Tristan Da Silva 15+ points,33.1,3.02,2.7,PointsBet,-10.5,Pass,PointsBet 2.70,alt,Points,,Tristan Da Silva,Points,Over,14.5
-704,Alt P+R+A,Heat @ Warriors,14:10,Bam Adebayo 40+ P+R+A,33.0,3.03,2.5,PointsBet,-17.5,Pass,PointsBet 2.50,alt,PRA,,Bam Adebayo,PRA,Over,39.5
-705,Alt P+R+A,Heat @ Warriors,14:10,Brandin Podziemski 30+ P+R+A,32.3,3.1,2.85,PointsBet,-7.9,Pass,PointsBet 2.85,alt,PRA,,Brandin Podziemski,PRA,Over,29.5
-706,Line,Heat @ Warriors,14:10,Miami Heat +1.5,32.2,3.11,2.94,Sportsbet,-5.5,Pass,Sportsbet 2.94 · PointsBet 2.90,game,Spread,Miami Heat +1.5,,,,
-707,Total,Heat @ Warriors,14:10,Heat @ Warriors Under 225.5,32.1,3.12,3.00,PointsBet,-3.6,Pass,PointsBet 3.00 · Sportsbet 2.96,game,Total,Under 225.5,,,,
-708,Alt rebounds,Heat @ Warriors,14:10,Bam Adebayo 12+ rebounds,32.1,3.12,2.5,PointsBet,-19.6,Pass,PointsBet 2.50,alt,Rebounds,,Bam Adebayo,Rebounds,Over,11.5
-709,Total,Magic @ Suns,13:10,Magic @ Suns Over 232.5,32.0,3.12,2.90,PointsBet,-7.2,Pass,PointsBet 2.90 · Sportsbet 2.82,game,Total,Over 232.5,,,,
-710,Alt points,Heat @ Warriors,14:10,Stephen Curry 32+ points,31.9,3.13,3.3,PointsBet,5.2,Pass,PointsBet 3.30,alt,Points,,Stephen Curry,Points,Over,31.5
-711,Alt rebounds,Heat @ Warriors,14:10,Giannis Antetokounmpo 14+ rebounds,31.9,3.13,2.75,PointsBet,-12.2,Pass,PointsBet 2.75,alt,Rebounds,,Giannis Antetokounmpo,Rebounds,Over,13.5
-712,Line,Magic @ Suns,13:10,Orlando Magic -6.5,31.8,3.14,2.99,Sportsbet,-4.9,Pass,Sportsbet 2.99 · PointsBet 2.90,game,Spread,Orlando Magic -6.5,,,,
-713,Alt points,Heat @ Warriors,14:10,Giannis Antetokounmpo 34+ points,31.7,3.15,3.0,PointsBet,-4.9,Pass,PointsBet 3.00,alt,Points,,Giannis Antetokounmpo,Points,Over,33.5
-714,Alt threes,Magic @ Suns,13:10,Anthony Black 3+ threes,31.6,3.16,3.4,Sportsbet,7.3,Pass,Sportsbet 3.40 · PointsBet 3.10,alt,Threes,,Anthony Black,Threes,Over,2.5
-715,Alt points,Heat @ Warriors,14:10,Bam Adebayo 25+ points,31.6,3.16,2.5,PointsBet,-21.0,Pass,PointsBet 2.50,alt,Points,,Bam Adebayo,Points,Over,24.5
-716,Alt points,Magic @ Suns,13:10,Jalen Green 20+ points,31.5,3.17,2.9,PointsBet,-8.6,Pass,PointsBet 2.90,alt,Points,,Jalen Green,Points,Over,19.5
-717,Total,Magic @ Suns,13:10,Magic @ Suns Under 215.5,31.5,3.17,2.74,Sportsbet,-13.7,Pass,Sportsbet 2.74 · PointsBet 2.60,game,Total,Under 215.5,,,,
-718,Alt points,Magic @ Suns,13:10,Wendell Carter Jr. 15+ points,31.4,3.18,3.0,PointsBet,-5.9,Pass,PointsBet 3.00,alt,Points,,Wendell Carter Jr.,Points,Over,14.5
-719,Alt P+R+A,Heat @ Warriors,14:10,De'Anthony Melton 20+ P+R+A,31.3,3.19,2.9,PointsBet,-9.2,Pass,PointsBet 2.90,alt,PRA,,De'Anthony Melton,PRA,Over,19.5
-720,Total,Heat @ Warriors,14:10,Heat @ Warriors Over 242.5,31.3,3.19,2.60,Sportsbet,-18.5,Pass,Sportsbet 2.60 · PointsBet 2.50,game,Total,Over 242.5,,,,
-721,Alt points,Magic @ Suns,13:10,Devin Booker 30+ points,31.0,3.23,3.0,PointsBet,-6.9,Pass,PointsBet 3.00,alt,Points,,Devin Booker,Points,Over,29.5
-722,Line,Magic @ Suns,13:10,Phoenix Suns -7.5,30.9,3.24,3.10,PointsBet,-4.1,Pass,PointsBet 3.10 · Sportsbet 2.92,game,Spread,Phoenix Suns -7.5,,,,
-723,Alt points,Heat @ Warriors,14:10,Yaxel Lendeborg 24+ points,30.9,3.24,2.75,PointsBet,-15.1,Pass,PointsBet 2.75,alt,Points,,Yaxel Lendeborg,Points,Over,23.5
-724,Alt points,Heat @ Warriors,14:10,Will Richard 9+ points,30.8,3.25,2.75,PointsBet,-15.4,Pass,PointsBet 2.75,alt,Points,,Will Richard,Points,Over,8.5
-725,Line,Heat @ Warriors,14:10,Golden State Warriors -14.5,30.5,3.28,3.50,PointsBet,6.6,Value,PointsBet 3.50 · Sportsbet 3.14,game,Spread,Golden State Warriors -14.5,,,,
-726,Alt steals,Heat @ Warriors,14:10,Brandin Podziemski 2+ steals,30.4,3.29,3.5,Sportsbet,6.4,Pass,Sportsbet 3.50,alt,Steals,,Brandin Podziemski,Steals,Over,1.5
-727,Total,Heat @ Warriors,14:10,Heat @ Warriors Under 224.5,30.2,3.31,3.10,Sportsbet,-6.5,Pass,Sportsbet 3.10 · PointsBet 3.10,game,Total,Under 224.5,,,,
-728,Alt points,Heat @ Warriors,14:10,Brandin Podziemski 20+ points,30.2,3.31,2.85,PointsBet,-13.8,Pass,PointsBet 2.85,alt,Points,,Brandin Podziemski,Points,Over,19.5
-729,Alt assists,Heat @ Warriors,14:10,Brandin Podziemski 6+ assists,30.0,3.33,3.6,PointsBet,8.0,Pass,PointsBet 3.60,alt,Assists,,Brandin Podziemski,Assists,Over,5.5
-730,Alt threes,Magic @ Suns,13:10,Tristan Da Silva 4+ threes,30.0,3.33,3.4,PointsBet,1.9,Pass,PointsBet 3.40 · Sportsbet 3.30,alt,Threes,,Tristan Da Silva,Threes,Over,3.5
-731,Total,Magic @ Suns,13:10,Magic @ Suns Over 233.5,30.0,3.33,3.10,PointsBet,-6.9,Pass,PointsBet 3.10 · Sportsbet 3.00,game,Total,Over 233.5,,,,
-732,Alt points,Magic @ Suns,13:10,Jase Richardson 12+ points,29.7,3.37,2.9,PointsBet,-13.8,Pass,PointsBet 2.90,alt,Points,,Jase Richardson,Points,Over,11.5
-733,Alt points,Heat @ Warriors,14:10,Draymond Green 8+ points,29.7,3.37,2.75,PointsBet,-18.4,Pass,PointsBet 2.75,alt,Points,,Draymond Green,Points,Over,7.5
-734,Alt rebounds,Magic @ Suns,13:10,Franz Wagner 8+ rebounds,29.6,3.38,3.0,PointsBet,-11.3,Pass,PointsBet 3.00,alt,Rebounds,,Franz Wagner,Rebounds,Over,7.5
-735,Alt points,Magic @ Suns,13:10,Jamal Cain 9+ points,29.6,3.38,2.9,PointsBet,-14.2,Pass,PointsBet 2.90,alt,Points,,Jamal Cain,Points,Over,8.5
-736,Moneyline,Heat @ Warriors,14:10,Miami Heat ML,29.5,3.39,3.37,Sportsbet,-0.7,Pass,Sportsbet 3.37 · Betr 3.30 · PointsBet 3.30 · TAB 3.30,game,Moneyline,Miami Heat ML,,,,
-737,Total,Magic @ Suns,13:10,Magic @ Suns Under 214.5,29.5,3.39,2.86,Sportsbet,-15.5,Pass,Sportsbet 2.86 · PointsBet 2.75,game,Total,Under 214.5,,,,
-738,Alt threes,Heat @ Warriors,14:10,Stephen Curry 6+ threes,29.4,3.4,3.75,Sportsbet,10.3,Pass,Sportsbet 3.75 · PointsBet 3.70,alt,Threes,,Stephen Curry,Threes,Over,5.5
-739,Alt points,Magic @ Suns,13:10,Desmond Bane 25+ points,29.4,3.4,3.25,PointsBet,-4.4,Pass,PointsBet 3.25,alt,Points,,Desmond Bane,Points,Over,24.5
-740,Total,Heat @ Warriors,14:10,Heat @ Warriors Over 243.5,29.4,3.4,2.74,Sportsbet,-19.5,Pass,Sportsbet 2.74 · PointsBet 2.55,game,Total,Over 243.5,,,,
-741,Alt points,Magic @ Suns,13:10,Franz Wagner 28+ points,29.3,3.41,3.1,PointsBet,-9.3,Pass,PointsBet 3.10,alt,Points,,Franz Wagner,Points,Over,27.5
-742,Line,Magic @ Suns,13:10,Orlando Magic -7.5,29.2,3.42,3.32,Sportsbet,-3.0,Pass,Sportsbet 3.32 · PointsBet 3.30,game,Spread,Orlando Magic -7.5,,,,
-743,Alt points,Magic @ Suns,13:10,Miles Bridges 21+ points,29.0,3.45,3.3,PointsBet,-4.4,Pass,PointsBet 3.30,alt,Points,,Miles Bridges,Points,Over,20.5
-744,Alt points,Magic @ Suns,13:10,Anthony Black 19+ points,29.0,3.45,3.25,PointsBet,-5.7,Pass,PointsBet 3.25,alt,Points,,Anthony Black,Points,Over,18.5
-745,Alt threes,Magic @ Suns,13:10,Devin Booker 3+ threes,28.8,3.47,3.45,Sportsbet,-0.5,Pass,Sportsbet 3.45 · PointsBet 3.30,alt,Threes,,Devin Booker,Threes,Over,2.5
-746,Alt points,Heat @ Warriors,14:10,De'Anthony Melton 14+ points,28.8,3.47,3.1,PointsBet,-10.6,Pass,PointsBet 3.10,alt,Points,,De'Anthony Melton,Points,Over,13.5
-747,Alt points,Magic @ Suns,13:10,Dillon Brooks 21+ points,28.7,3.48,3.25,PointsBet,-6.7,Pass,PointsBet 3.25,alt,Points,,Dillon Brooks,Points,Over,20.5
-748,Line,Magic @ Suns,13:10,Phoenix Suns -8.5,28.4,3.52,3.40,PointsBet,-3.5,Pass,PointsBet 3.40 · Sportsbet 3.22,game,Spread,Phoenix Suns -8.5,,,,
-749,Alt points,Heat @ Warriors,14:10,Stephen Curry 33+ points,28.3,3.53,3.7,PointsBet,4.5,Pass,PointsBet 3.70,alt,Points,,Stephen Curry,Points,Over,32.5
-750,Alt points,Heat @ Warriors,14:10,Giannis Antetokounmpo 35+ points,28.2,3.55,3.4,PointsBet,-4.2,Pass,PointsBet 3.40,alt,Points,,Giannis Antetokounmpo,Points,Over,34.5
-751,Total,Heat @ Warriors,14:10,Heat @ Warriors Under 223.5,28.2,3.55,3.30,Sportsbet,-6.8,Pass,Sportsbet 3.30 · PointsBet 3.30,game,Total,Under 223.5,,,,
-752,Alt rebounds,Magic @ Suns,13:10,Tristan Da Silva 6+ rebounds,28.2,3.55,3.25,PointsBet,-8.4,Pass,PointsBet 3.25,alt,Rebounds,,Tristan Da Silva,Rebounds,Over,5.5
-753,Alt threes,Magic @ Suns,13:10,Jamal Cain 2+ threes,28.2,3.55,3.15,Sportsbet,-11.1,Pass,Sportsbet 3.15,alt,Threes,,Jamal Cain,Threes,Over,1.5
-754,Total,Magic @ Suns,13:10,Magic @ Suns Over 234.5,28.1,3.56,3.30,PointsBet,-7.2,Pass,PointsBet 3.30 · Sportsbet 3.10,game,Total,Over 234.5,,,,
-755,Alt points,Magic @ Suns,13:10,Khaman Maluach 8+ points,28.1,3.56,3.25,PointsBet,-8.8,Pass,PointsBet 3.25,alt,Points,,Khaman Maluach,Points,Over,7.5
-756,Line,Heat @ Warriors,14:10,Golden State Warriors -15.5,27.9,3.58,3.80,PointsBet,6.1,Value,PointsBet 3.80 · Sportsbet 3.32,game,Spread,Golden State Warriors -15.5,,,,
-757,Alt P+R+A,Magic @ Suns,13:10,Devin Booker 40+ P+R+A,27.8,3.6,3.3,PointsBet,-8.4,Pass,PointsBet 3.30,alt,PRA,,Devin Booker,PRA,Over,39.5
-758,Alt rebounds,Magic @ Suns,13:10,Anthony Black 6+ rebounds,27.8,3.6,3.25,PointsBet,-9.8,Pass,PointsBet 3.25,alt,Rebounds,,Anthony Black,Rebounds,Over,5.5
-759,Alt points,Magic @ Suns,13:10,Tristan Da Silva 16+ points,27.7,3.61,3.25,PointsBet,-9.9,Pass,PointsBet 3.25,alt,Points,,Tristan Da Silva,Points,Over,15.5
-760,Alt points,Heat @ Warriors,14:10,Georges Niang 11+ points,27.6,3.62,3.3,PointsBet,-8.8,Pass,PointsBet 3.30,alt,Points,,Georges Niang,Points,Over,10.5
-761,Total,Magic @ Suns,13:10,Magic @ Suns Under 213.5,27.6,3.62,3.05,Sportsbet,-15.7,Pass,Sportsbet 3.05 · PointsBet 2.90,game,Total,Under 213.5,,,,
-762,Alt threes,Magic @ Suns,13:10,Jase Richardson 2+ threes,27.5,3.64,3.05,Sportsbet,-16.2,Pass,Sportsbet 3.05,alt,Threes,,Jase Richardson,Threes,Over,1.5
-763,Total,Heat @ Warriors,14:10,Heat @ Warriors Over 244.5,27.5,3.64,2.86,Sportsbet,-21.3,Pass,Sportsbet 2.86 · PointsBet 2.70,game,Total,Over 244.5,,,,
-764,Alt assists,Heat @ Warriors,14:10,Giannis Antetokounmpo 8+ assists,27.5,3.64,2.85,PointsBet,-21.6,Pass,PointsBet 2.85,alt,Assists,,Giannis Antetokounmpo,Assists,Over,7.5
-765,Alt points,Heat @ Warriors,14:10,Bam Adebayo 26+ points,27.5,3.64,2.85,PointsBet,-21.7,Pass,PointsBet 2.85,alt,Points,,Bam Adebayo,Points,Over,25.5
-766,Alt points,Magic @ Suns,13:10,Devin Booker 31+ points,27.3,3.66,3.6,PointsBet,-1.6,Pass,PointsBet 3.60,alt,Points,,Devin Booker,Points,Over,30.5
-767,Alt rebounds,Magic @ Suns,13:10,Desmond Bane 6+ rebounds,27.1,3.69,3.1,PointsBet,-16.0,Pass,PointsBet 3.10,alt,Rebounds,,Desmond Bane,Rebounds,Over,5.5
-768,Line,Heat @ Warriors,14:10,Miami Heat -1.5,27.0,3.7,3.32,Sportsbet,-10.5,Pass,Sportsbet 3.32 · PointsBet 3.30,game,Spread,Miami Heat -1.5,,,,
-769,Alt points,Magic @ Suns,13:10,Jalen Green 21+ points,26.9,3.72,3.4,PointsBet,-8.4,Pass,PointsBet 3.40,alt,Points,,Jalen Green,Points,Over,20.5
-770,Line,Magic @ Suns,13:10,Orlando Magic -8.5,26.7,3.75,3.70,Sportsbet,-1.1,Pass,Sportsbet 3.70 · PointsBet 3.60,game,Spread,Orlando Magic -8.5,,,,
-771,Alt points,Heat @ Warriors,14:10,Yaxel Lendeborg 25+ points,26.7,3.75,3.3,PointsBet,-11.8,Pass,PointsBet 3.30,alt,Points,,Yaxel Lendeborg,Points,Over,24.5
-772,Total,Heat @ Warriors,14:10,Heat @ Warriors Under 222.5,26.4,3.79,3.60,PointsBet,-5.0,Pass,PointsBet 3.60 · Sportsbet 3.55,game,Total,Under 222.5,,,,
-773,Total,Magic @ Suns,13:10,Magic @ Suns Over 235.5,26.3,3.8,3.60,PointsBet,-5.5,Pass,PointsBet 3.60 · Sportsbet 3.30,game,Total,Over 235.5,,,,
-774,Alt rebounds,Magic @ Suns,13:10,Dillon Brooks 6+ rebounds,26.2,3.82,3.0,PointsBet,-21.5,Pass,PointsBet 3.00,alt,Rebounds,,Dillon Brooks,Rebounds,Over,5.5
-775,Alt points,Magic @ Suns,13:10,Wendell Carter Jr. 16+ points,26.1,3.83,3.7,PointsBet,-3.5,Pass,PointsBet 3.70,alt,Points,,Wendell Carter Jr.,Points,Over,15.5
-776,Line,Magic @ Suns,13:10,Phoenix Suns -9.5,25.9,3.86,3.80,PointsBet,-1.5,Pass,PointsBet 3.80 · Sportsbet 3.40,game,Spread,Phoenix Suns -9.5,,,,
-777,Total,Magic @ Suns,13:10,Magic @ Suns Under 212.5,25.8,3.88,3.20,Sportsbet,-17.4,Pass,Sportsbet 3.20 · PointsBet 3.10,game,Total,Under 212.5,,,,
-778,Alt assists,Magic @ Suns,13:10,Anthony Black 6+ assists,25.8,3.88,3.1,PointsBet,-20.1,Pass,PointsBet 3.10,alt,Assists,,Anthony Black,Assists,Over,5.5
-779,Alt P+R+A,Heat @ Warriors,14:10,Giannis Antetokounmpo 55+ P+R+A,25.7,3.89,3.6,PointsBet,-7.4,Pass,PointsBet 3.60,alt,PRA,,Giannis Antetokounmpo,PRA,Over,54.5
-780,Alt points,Heat @ Warriors,14:10,Brandin Podziemski 21+ points,25.7,3.89,3.4,PointsBet,-12.5,Pass,PointsBet 3.40,alt,Points,,Brandin Podziemski,Points,Over,20.5
-781,Total,Heat @ Warriors,14:10,Heat @ Warriors Over 245.5,25.7,3.89,3.00,Sportsbet,-23.0,Pass,Sportsbet 3.00 · PointsBet 2.85,game,Total,Over 245.5,,,,
-782,Alt assists,Magic @ Suns,13:10,Jase Richardson 4+ assists,25.6,3.91,3.3,PointsBet,-15.6,Pass,PointsBet 3.30,alt,Assists,,Jase Richardson,Assists,Over,3.5
-783,Line,Heat @ Warriors,14:10,Golden State Warriors -16.5,25.5,3.92,4.10,PointsBet,4.5,Pass,PointsBet 4.10 · Sportsbet 3.70,game,Spread,Golden State Warriors -16.5,,,,
-784,Alt threes,Magic @ Suns,13:10,Desmond Bane 5+ threes,25.5,3.92,4.0,Sportsbet,1.8,Pass,Sportsbet 4.00 · PointsBet 3.60,alt,Threes,,Desmond Bane,Threes,Over,4.5
-785,Alt points,Magic @ Suns,13:10,Franz Wagner 29+ points,25.5,3.92,3.6,PointsBet,-8.2,Pass,PointsBet 3.60,alt,Points,,Franz Wagner,Points,Over,28.5
-786,Alt points,Magic @ Suns,13:10,Desmond Bane 26+ points,25.4,3.94,3.7,PointsBet,-5.9,Pass,PointsBet 3.70,alt,Points,,Desmond Bane,Points,Over,25.5
-787,Alt threes,Heat @ Warriors,14:10,De'Anthony Melton 3+ threes,25.2,3.97,4.3,Sportsbet,8.5,Bet,Sportsbet 4.30,alt,Threes,,De'Anthony Melton,Threes,Over,2.5
-788,Alt points,Heat @ Warriors,14:10,Stephen Curry 34+ points,24.9,4.02,4.2,PointsBet,4.4,Pass,PointsBet 4.20,alt,Points,,Stephen Curry,Points,Over,33.5
-789,Alt points,Heat @ Warriors,14:10,Giannis Antetokounmpo 36+ points,24.9,4.02,4.0,PointsBet,-0.5,Pass,PointsBet 4.00,alt,Points,,Giannis Antetokounmpo,Points,Over,35.5
-790,Alt assists,Magic @ Suns,13:10,Dillon Brooks 4+ assists,24.8,4.03,3.6,PointsBet,-10.7,Pass,PointsBet 3.60,alt,Assists,,Dillon Brooks,Assists,Over,3.5
-791,Alt points,Magic @ Suns,13:10,Miles Bridges 22+ points,24.7,4.05,4.0,PointsBet,-1.4,Pass,PointsBet 4.00,alt,Points,,Miles Bridges,Points,Over,21.5
-792,Total,Heat @ Warriors,14:10,Heat @ Warriors Under 221.5,24.6,4.07,3.80,Sportsbet,-6.5,Pass,Sportsbet 3.80 · PointsBet 3.70,game,Total,Under 221.5,,,,
-793,Line,Heat @ Warriors,14:10,Miami Heat -2.5,24.6,4.07,3.70,Sportsbet,-9.1,Pass,Sportsbet 3.70 · PointsBet 3.50,game,Spread,Miami Heat -2.5,,,,
-794,Alt points,Magic @ Suns,13:10,Anthony Black 20+ points,24.5,4.08,3.9,PointsBet,-4.5,Pass,PointsBet 3.90,alt,Points,,Anthony Black,Points,Over,19.5
-795,Total,Magic @ Suns,13:10,Magic @ Suns Over 236.5,24.5,4.08,3.70,PointsBet,-9.5,Pass,PointsBet 3.70 · Sportsbet 3.55,game,Total,Over 236.5,,,,
-796,Alt rebounds,Magic @ Suns,13:10,Devin Booker 6+ rebounds,24.5,4.08,3.4,PointsBet,-16.6,Pass,PointsBet 3.40,alt,Rebounds,,Devin Booker,Rebounds,Over,5.5
-797,Alt points,Magic @ Suns,13:10,Dillon Brooks 22+ points,24.4,4.1,3.6,PointsBet,-12.1,Pass,PointsBet 3.60,alt,Points,,Dillon Brooks,Points,Over,21.5
-798,Line,Magic @ Suns,13:10,Orlando Magic -9.5,24.3,4.12,4.10,PointsBet,-0.2,Pass,PointsBet 4.10 · Sportsbet 4.00,game,Spread,Orlando Magic -9.5,,,,
-799,Alt points,Magic @ Suns,13:10,Jase Richardson 13+ points,24.0,4.17,3.6,PointsBet,-13.7,Pass,PointsBet 3.60,alt,Points,,Jase Richardson,Points,Over,12.5
-800,Total,Magic @ Suns,13:10,Magic @ Suns Under 211.5,24.0,4.17,3.40,Sportsbet,-18.3,Pass,Sportsbet 3.40 · PointsBet 3.30,game,Total,Under 211.5,,,,
-801,Alt points,Heat @ Warriors,14:10,Will Richard 10+ points,24.0,4.17,3.4,PointsBet,-18.3,Pass,PointsBet 3.40,alt,Points,,Will Richard,Points,Over,9.5
-802,Alt points,Magic @ Suns,13:10,Devin Booker 32+ points,23.9,4.18,4.0,PointsBet,-4.5,Pass,PointsBet 4.00,alt,Points,,Devin Booker,Points,Over,31.5
-803,Total,Heat @ Warriors,14:10,Heat @ Warriors Over 246.5,23.9,4.18,3.15,Sportsbet,-24.7,Pass,Sportsbet 3.15 · PointsBet 3.00,game,Total,Over 246.5,,,,
-804,Alt points,Heat @ Warriors,14:10,Bam Adebayo 27+ points,23.7,4.22,3.3,PointsBet,-21.8,Pass,PointsBet 3.30,alt,Points,,Bam Adebayo,Points,Over,26.5
-805,Line,Magic @ Suns,13:10,Phoenix Suns -10.5,23.6,4.24,4.30,PointsBet,1.4,Pass,PointsBet 4.30 · Sportsbet 3.96,game,Spread,Phoenix Suns -10.5,,,,
-806,Alt points,Heat @ Warriors,14:10,De'Anthony Melton 15+ points,23.6,4.24,3.6,PointsBet,-15.1,Pass,PointsBet 3.60,alt,Points,,De'Anthony Melton,Points,Over,14.5
-807,Line,Heat @ Warriors,14:10,Golden State Warriors -17.5,23.2,4.31,4.50,PointsBet,4.3,Pass,PointsBet 4.50 · Sportsbet 4.00,game,Spread,Golden State Warriors -17.5,,,,
-808,Alt P+R+A,Magic @ Suns,13:10,Anthony Black 30+ P+R+A,23.1,4.33,4.2,PointsBet,-2.8,Pass,PointsBet 4.20,alt,PRA,,Anthony Black,PRA,Over,29.5
-809,Alt points,Magic @ Suns,13:10,Jamal Cain 10+ points,23.0,4.35,3.7,PointsBet,-15.0,Pass,PointsBet 3.70,alt,Points,,Jamal Cain,Points,Over,9.5
-810,Total,Heat @ Warriors,14:10,Heat @ Warriors Under 220.5,22.9,4.37,4.10,Sportsbet,-6.2,Pass,Sportsbet 4.10 · PointsBet 4.00,game,Total,Under 220.5,,,,
-811,Alt points,Heat @ Warriors,14:10,Yaxel Lendeborg 26+ points,22.9,4.37,3.9,PointsBet,-10.5,Pass,PointsBet 3.90,alt,Points,,Yaxel Lendeborg,Points,Over,25.5
-812,Alt points,Magic @ Suns,13:10,Tristan Da Silva 17+ points,22.9,4.37,3.9,PointsBet,-10.7,Pass,PointsBet 3.90,alt,Points,,Tristan Da Silva,Points,Over,16.5
-813,Alt assists,Heat @ Warriors,14:10,De'Anthony Melton 4+ assists,22.8,4.39,4.0,PointsBet,-8.8,Pass,PointsBet 4.00,alt,Assists,,De'Anthony Melton,Assists,Over,3.5
-814,Alt points,Magic @ Suns,13:10,Jalen Green 22+ points,22.8,4.39,4.0,PointsBet,-8.9,Pass,PointsBet 4.00,alt,Points,,Jalen Green,Points,Over,21.5
-815,Alt assists,Heat @ Warriors,14:10,Bam Adebayo 6+ assists,22.8,4.39,3.7,PointsBet,-15.6,Pass,PointsBet 3.70,alt,Assists,,Bam Adebayo,Assists,Over,5.5
-816,Total,Magic @ Suns,13:10,Magic @ Suns Over 237.5,22.7,4.41,4.00,PointsBet,-9.0,Pass,PointsBet 4.00 · Sportsbet 3.75,game,Total,Over 237.5,,,,
-817,Alt points,Heat @ Warriors,14:10,Draymond Green 9+ points,22.7,4.41,3.6,PointsBet,-18.4,Pass,PointsBet 3.60,alt,Points,,Draymond Green,Points,Over,8.5
-818,Line,Heat @ Warriors,14:10,Miami Heat -3.5,22.3,4.48,4.00,Sportsbet,-10.8,Pass,Sportsbet 4.00 · PointsBet 3.80,game,Spread,Miami Heat -3.5,,,,
-819,Total,Magic @ Suns,13:10,Magic @ Suns Under 210.5,22.3,4.48,3.70,Sportsbet,-17.4,Pass,Sportsbet 3.70 · PointsBet 3.60,game,Total,Under 210.5,,,,
-820,Total,Heat @ Warriors,14:10,Heat @ Warriors Over 247.5,22.2,4.5,3.30,Sportsbet,-26.7,Pass,Sportsbet 3.30 · PointsBet 3.25,game,Total,Over 247.5,,,,
-821,Line,Magic @ Suns,13:10,Orlando Magic -10.5,22.1,4.52,4.60,Sportsbet,1.6,Pass,Sportsbet 4.60 · PointsBet 4.50,game,Spread,Orlando Magic -10.5,,,,
-822,Alt points,Magic @ Suns,13:10,Franz Wagner 30+ points,22.1,4.52,4.2,PointsBet,-7.3,Pass,PointsBet 4.20,alt,Points,,Franz Wagner,Points,Over,29.5
-823,Alt P+R+A,Magic @ Suns,13:10,Desmond Bane 35+ P+R+A,22.1,4.52,4.0,PointsBet,-11.6,Pass,PointsBet 4.00,alt,PRA,,Desmond Bane,PRA,Over,34.5
-824,Alt P+R+A,Magic @ Suns,13:10,Dillon Brooks 30+ P+R+A,22.0,4.55,3.7,PointsBet,-18.7,Pass,PointsBet 3.70,alt,PRA,,Dillon Brooks,PRA,Over,29.5
-825,Alt threes,Magic @ Suns,13:10,Franz Wagner 3+ threes,21.9,4.57,4.5,Sportsbet,-1.6,Pass,Sportsbet 4.50 · PointsBet 4.20,alt,Threes,,Franz Wagner,Threes,Over,2.5
-826,Alt points,Heat @ Warriors,14:10,Giannis Antetokounmpo 37+ points,21.8,4.59,4.5,PointsBet,-1.8,Pass,PointsBet 4.50,alt,Points,,Giannis Antetokounmpo,Points,Over,36.5
-827,Alt points,Magic @ Suns,13:10,Desmond Bane 27+ points,21.8,4.59,4.4,PointsBet,-4.0,Pass,PointsBet 4.40,alt,Points,,Desmond Bane,Points,Over,26.5
-828,Alt points,Heat @ Warriors,14:10,Georges Niang 12+ points,21.8,4.59,4.0,PointsBet,-12.6,Pass,PointsBet 4.00,alt,Points,,Georges Niang,Points,Over,11.5
-829,Alt rebounds,Magic @ Suns,13:10,Khaman Maluach 8+ rebounds,21.8,4.59,3.25,PointsBet,-29.1,Pass,PointsBet 3.25,alt,Rebounds,,Khaman Maluach,Rebounds,Over,7.5
-830,Alt points,Heat @ Warriors,14:10,Stephen Curry 35+ points,21.7,4.61,4.75,PointsBet,3.2,Pass,PointsBet 4.75,alt,Points,,Stephen Curry,Points,Over,34.5
-831,Alt assists,Heat @ Warriors,14:10,Yaxel Lendeborg 6+ assists,21.7,4.61,4.0,PointsBet,-13.1,Pass,PointsBet 4.00,alt,Assists,,Yaxel Lendeborg,Assists,Over,5.5
-832,Alt points,Heat @ Warriors,14:10,Brandin Podziemski 22+ points,21.7,4.61,3.9,PointsBet,-15.4,Pass,PointsBet 3.90,alt,Points,,Brandin Podziemski,Points,Over,21.5
-833,Alt threes,Heat @ Warriors,14:10,Brandin Podziemski 4+ threes,21.6,4.63,4.7,Sportsbet,1.3,Pass,Sportsbet 4.70 · PointsBet 4.00,alt,Threes,,Brandin Podziemski,Threes,Over,3.5
-834,Alt rebounds,Magic @ Suns,13:10,Wendell Carter Jr. 12+ rebounds,21.6,4.63,3.9,PointsBet,-15.6,Pass,PointsBet 3.90,alt,Rebounds,,Wendell Carter Jr.,Rebounds,Over,11.5
-835,Line,Magic @ Suns,13:10,Phoenix Suns -11.5,21.4,4.67,4.75,PointsBet,1.5,Pass,PointsBet 4.75 · Sportsbet 4.25,game,Spread,Phoenix Suns -11.5,,,,
-836,Alt points,Magic @ Suns,13:10,Wendell Carter Jr. 17+ points,21.4,4.67,4.5,PointsBet,-3.6,Pass,PointsBet 4.50,alt,Points,,Wendell Carter Jr.,Points,Over,16.5
-837,Alt P+R+A,Magic @ Suns,13:10,Jalen Green 30+ P+R+A,21.3,4.69,4.4,PointsBet,-6.2,Pass,PointsBet 4.40,alt,PRA,,Jalen Green,PRA,Over,29.5
-838,Alt points,Magic @ Suns,13:10,Khaman Maluach 9+ points,21.3,4.69,4.2,PointsBet,-10.7,Pass,PointsBet 4.20,alt,Points,,Khaman Maluach,Points,Over,8.5
-839,Total,Heat @ Warriors,14:10,Heat @ Warriors Under 219.5,21.2,4.72,4.50,Sportsbet,-4.5,Pass,Sportsbet 4.50,game,Total,Under 219.5,,,,
-840,Alt threes,Magic @ Suns,13:10,Wendell Carter Jr. 2+ threes,21.1,4.74,4.0,Sportsbet,-15.6,Pass,Sportsbet 4.00,alt,Threes,,Wendell Carter Jr.,Threes,Over,1.5
-841,Total,Magic @ Suns,13:10,Magic @ Suns Over 238.5,21.1,4.74,3.90,Sportsbet,-17.7,Pass,Sportsbet 3.90,game,Total,Over 238.5,,,,
-842,Line,Heat @ Warriors,14:10,Golden State Warriors -18.5,21.0,4.76,5.00,PointsBet,4.9,Pass,PointsBet 5.00 · Sportsbet 4.50,game,Spread,Golden State Warriors -18.5,,,,
-843,Alt rebounds,Heat @ Warriors,14:10,Yaxel Lendeborg 10+ rebounds,21.0,4.76,3.7,PointsBet,-22.4,Pass,PointsBet 3.70,alt,Rebounds,,Yaxel Lendeborg,Rebounds,Over,9.5
-844,Alt P+R+A,Magic @ Suns,13:10,Jase Richardson 20+ P+R+A,20.8,4.81,4.5,PointsBet,-6.3,Pass,PointsBet 4.50,alt,PRA,,Jase Richardson,PRA,Over,19.5
-845,Alt points,Magic @ Suns,13:10,Miles Bridges 23+ points,20.8,4.81,4.5,PointsBet,-6.4,Pass,PointsBet 4.50,alt,Points,,Miles Bridges,Points,Over,22.5
-846,Alt points,Magic @ Suns,13:10,Devin Booker 33+ points,20.7,4.83,4.5,PointsBet,-6.8,Pass,PointsBet 4.50,alt,Points,,Devin Booker,Points,Over,32.5
-847,Total,Magic @ Suns,13:10,Magic @ Suns Under 209.5,20.7,4.83,3.90,Sportsbet,-19.3,Pass,Sportsbet 3.90 · PointsBet 3.70,game,Total,Under 209.5,,,,
-848,Alt threes,Heat @ Warriors,14:10,Yaxel Lendeborg 4+ threes,20.6,4.85,6.25,Sportsbet,28.6,Bet,Sportsbet 6.25 · PointsBet 5.25,alt,Threes,,Yaxel Lendeborg,Threes,Over,3.5
-849,Alt points,Magic @ Suns,13:10,Dillon Brooks 23+ points,20.6,4.85,4.2,PointsBet,-13.6,Pass,PointsBet 4.20,alt,Points,,Dillon Brooks,Points,Over,22.5
-850,Total,Heat @ Warriors,14:10,Heat @ Warriors Over 248.5,20.6,4.85,3.60,Sportsbet,-25.9,Pass,Sportsbet 3.60 · PointsBet 3.40,game,Total,Over 248.5,,,,
-851,Alt points,Magic @ Suns,13:10,Anthony Black 21+ points,20.4,4.9,4.75,PointsBet,-2.9,Pass,PointsBet 4.75,alt,Points,,Anthony Black,Points,Over,20.5
-852,Alt points,Heat @ Warriors,14:10,Bam Adebayo 28+ points,20.3,4.93,3.7,PointsBet,-24.9,Pass,PointsBet 3.70,alt,Points,,Bam Adebayo,Points,Over,27.5
-853,Line,Heat @ Warriors,14:10,Miami Heat -4.5,20.2,4.95,4.60,Sportsbet,-7.2,Pass,Sportsbet 4.60 · PointsBet 4.10,game,Spread,Miami Heat -4.5,,,,
-854,Alt P+R+A,Magic @ Suns,13:10,Franz Wagner 45+ P+R+A,20.2,4.95,4.4,PointsBet,-11.2,Pass,PointsBet 4.40,alt,PRA,,Franz Wagner,PRA,Over,44.5
-855,Alt P+R+A,Heat @ Warriors,14:10,Stephen Curry 45+ P+R+A,20.1,4.98,5.25,PointsBet,5.7,Pass,PointsBet 5.25,alt,PRA,,Stephen Curry,PRA,Over,44.5
-856,Alt P+R+A,Magic @ Suns,13:10,Tristan Da Silva 25+ P+R+A,20.1,4.98,4.75,PointsBet,-4.5,Pass,PointsBet 4.75,alt,PRA,,Tristan Da Silva,PRA,Over,24.5
-857,Line,Magic @ Suns,13:10,Orlando Magic -11.5,20.0,5.0,5.20,Sportsbet,3.8,Pass,Sportsbet 5.20,game,Spread,Orlando Magic -11.5,,,,
-858,Alt rebounds,Heat @ Warriors,14:10,Stephen Curry 6+ rebounds,19.9,5.03,4.5,PointsBet,-10.5,Pass,PointsBet 4.50,alt,Rebounds,,Stephen Curry,Rebounds,Over,5.5
-859,Alt threes,Magic @ Suns,13:10,Miles Bridges 4+ threes,19.6,5.1,5.75,Sportsbet,12.5,Bet,Sportsbet 5.75 · PointsBet 5.00,alt,Threes,,Miles Bridges,Threes,Over,3.5
-860,Total,Heat @ Warriors,14:10,Heat @ Warriors Under 218.5,19.6,5.1,4.80,Sportsbet,-5.8,Pass,Sportsbet 4.80,game,Total,Under 218.5,,,,
-861,Alt points,Heat @ Warriors,14:10,Yaxel Lendeborg 27+ points,19.5,5.13,4.4,PointsBet,-14.1,Pass,PointsBet 4.40,alt,Points,,Yaxel Lendeborg,Points,Over,26.5
-862,Total,Magic @ Suns,13:10,Magic @ Suns Over 239.5,19.5,5.13,4.30,Sportsbet,-16.1,Pass,Sportsbet 4.30,game,Total,Over 239.5,,,,
-863,Line,Magic @ Suns,13:10,Phoenix Suns -12.5,19.3,5.18,5.25,PointsBet,1.2,Pass,PointsBet 5.25 · Sportsbet 4.65,game,Spread,Phoenix Suns -12.5,,,,
-864,Alt threes,Heat @ Warriors,14:10,Georges Niang 3+ threes,19.3,5.18,4.6,Sportsbet,-11.4,Pass,Sportsbet 4.60,alt,Threes,,Georges Niang,Threes,Over,2.5
-865,Alt rebounds,Magic @ Suns,13:10,Jalen Green 6+ rebounds,19.1,5.24,5.0,PointsBet,-4.3,Pass,PointsBet 5.00,alt,Rebounds,,Jalen Green,Rebounds,Over,5.5
-866,Alt points,Magic @ Suns,13:10,Jalen Green 23+ points,19.1,5.24,4.75,PointsBet,-9.3,Pass,PointsBet 4.75,alt,Points,,Jalen Green,Points,Over,22.5
-867,Alt points,Magic @ Suns,13:10,Jase Richardson 14+ points,19.1,5.24,4.5,PointsBet,-14.2,Pass,PointsBet 4.50,alt,Points,,Jase Richardson,Points,Over,13.5
-868,Alt assists,Magic @ Suns,13:10,Franz Wagner 10+ assists,19.1,5.24,4.4,PointsBet,-15.9,Pass,PointsBet 4.40,alt,Assists,,Franz Wagner,Assists,Over,9.5
-869,Total,Magic @ Suns,13:10,Magic @ Suns Under 208.5,19.1,5.24,4.20,Sportsbet,-19.6,Pass,Sportsbet 4.20 · PointsBet 4.00,game,Total,Under 208.5,,,,
-870,Alt threes,Magic @ Suns,13:10,Dillon Brooks 4+ threes,19.0,5.26,6.0,Sportsbet,14.0,Bet,Sportsbet 6.00 · PointsBet 5.00,alt,Threes,,Dillon Brooks,Threes,Over,3.5
-871,Alt points,Heat @ Warriors,14:10,Giannis Antetokounmpo 38+ points,19.0,5.26,5.0,PointsBet,-4.9,Pass,PointsBet 5.00,alt,Points,,Giannis Antetokounmpo,Points,Over,37.5
-872,Alt points,Heat @ Warriors,14:10,De'Anthony Melton 16+ points,19.0,5.26,4.4,PointsBet,-16.2,Pass,PointsBet 4.40,alt,Points,,De'Anthony Melton,Points,Over,15.5
-873,Total,Heat @ Warriors,14:10,Heat @ Warriors Over 249.5,19.0,5.26,3.80,Sportsbet,-27.7,Pass,Sportsbet 3.80 · PointsBet 3.60,game,Total,Over 249.5,,,,
-874,Line,Heat @ Warriors,14:10,Golden State Warriors -19.5,18.9,5.29,5.25,PointsBet,-0.6,Pass,PointsBet 5.25 · Sportsbet 4.65,game,Spread,Golden State Warriors -19.5,,,,
-875,Alt points,Magic @ Suns,13:10,Franz Wagner 31+ points,18.9,5.29,4.75,PointsBet,-10.0,Pass,PointsBet 4.75,alt,Points,,Franz Wagner,Points,Over,30.5
-876,Alt points,Heat @ Warriors,14:10,Stephen Curry 36+ points,18.8,5.32,5.75,PointsBet,8.4,Pass,PointsBet 5.75,alt,Points,,Stephen Curry,Points,Over,35.5
-877,Alt points,Magic @ Suns,13:10,Tristan Da Silva 18+ points,18.7,5.35,4.5,PointsBet,-15.8,Pass,PointsBet 4.50,alt,Points,,Tristan Da Silva,Points,Over,17.5
-878,Alt points,Magic @ Suns,13:10,Desmond Bane 28+ points,18.6,5.38,5.0,PointsBet,-7.2,Pass,PointsBet 5.00,alt,Points,,Desmond Bane,Points,Over,27.5
-879,Alt threes,Heat @ Warriors,14:10,Bam Adebayo 3+ threes,18.5,5.41,4.9,Sportsbet,-9.4,Pass,Sportsbet 4.90 · PointsBet 4.50,alt,Threes,,Bam Adebayo,Threes,Over,2.5
-880,Alt threes,Heat @ Warriors,14:10,Stephen Curry 7+ threes,18.4,5.43,6.5,Sportsbet,19.9,Bet,Sportsbet 6.50 · PointsBet 6.00,alt,Threes,,Stephen Curry,Threes,Over,6.5
-881,Alt points,Heat @ Warriors,14:10,Will Richard 11+ points,18.4,5.43,4.4,PointsBet,-18.8,Pass,PointsBet 4.40,alt,Points,,Will Richard,Points,Over,10.5
-882,Line,Heat @ Warriors,14:10,Miami Heat -5.5,18.2,5.49,4.65,Sportsbet,-15.5,Pass,Sportsbet 4.65,game,Spread,Miami Heat -5.5,,,,
-883,Total,Heat @ Warriors,14:10,Heat @ Warriors Under 217.5,18.1,5.52,5.30,Sportsbet,-3.9,Pass,Sportsbet 5.30,game,Total,Under 217.5,,,,
-884,Alt P+R+A,Heat @ Warriors,14:10,Bam Adebayo 45+ P+R+A,18.1,5.52,4.5,PointsBet,-18.5,Pass,PointsBet 4.50,alt,PRA,,Bam Adebayo,PRA,Over,44.5
-885,Alt points,Heat @ Warriors,14:10,Brandin Podziemski 23+ points,18.1,5.52,4.4,PointsBet,-20.4,Pass,PointsBet 4.40,alt,Points,,Brandin Podziemski,Points,Over,22.5
-886,Alt threes,Magic @ Suns,13:10,Jalen Green 4+ threes,18.0,5.56,6.0,Sportsbet,8.1,Bet,Sportsbet 6.00 · PointsBet 5.25,alt,Threes,,Jalen Green,Threes,Over,3.5
-887,Line,Magic @ Suns,13:10,Orlando Magic -12.5,18.0,5.56,5.40,Sportsbet,-3.0,Pass,Sportsbet 5.40,game,Spread,Orlando Magic -12.5,,,,
-888,Alt P+R+A,Heat @ Warriors,14:10,Yaxel Lendeborg 40+ P+R+A,18.0,5.56,4.75,PointsBet,-14.5,Pass,PointsBet 4.75,alt,PRA,,Yaxel Lendeborg,PRA,Over,39.5
-889,Total,Magic @ Suns,13:10,Magic @ Suns Over 240.5,18.0,5.56,4.70,Sportsbet,-15.3,Pass,Sportsbet 4.70,game,Total,Over 240.5,,,,
-890,Alt points,Magic @ Suns,13:10,Devin Booker 34+ points,17.8,5.62,5.75,PointsBet,2.6,Pass,PointsBet 5.75,alt,Points,,Devin Booker,Points,Over,33.5
-891,Alt rebounds,Heat @ Warriors,14:10,Brandin Podziemski 8+ rebounds,17.8,5.62,4.5,PointsBet,-20.0,Pass,PointsBet 4.50,alt,Rebounds,,Brandin Podziemski,Rebounds,Over,7.5
-892,Total,Magic @ Suns,13:10,Magic @ Suns Under 207.5,17.6,5.68,4.70,Sportsbet,-17.1,Pass,Sportsbet 4.70 · PointsBet 4.20,game,Total,Under 207.5,,,,
-893,Alt points,Magic @ Suns,13:10,Jamal Cain 11+ points,17.6,5.68,4.5,PointsBet,-21.0,Pass,PointsBet 4.50,alt,Points,,Jamal Cain,Points,Over,10.5
-894,Total,Heat @ Warriors,14:10,Heat @ Warriors Over 250.5,17.5,5.71,4.00,Sportsbet,-29.8,Pass,Sportsbet 4.00 · PointsBet 3.70,game,Total,Over 250.5,,,,
-895,Alt points,Magic @ Suns,13:10,Wendell Carter Jr. 18+ points,17.4,5.75,5.75,PointsBet,-0.0,Pass,PointsBet 5.75,alt,Points,,Wendell Carter Jr.,Points,Over,17.5
-896,Alt points,Magic @ Suns,13:10,Miles Bridges 24+ points,17.4,5.75,5.75,PointsBet,-0.1,Pass,PointsBet 5.75,alt,Points,,Miles Bridges,Points,Over,23.5
-897,Alt rebounds,Heat @ Warriors,14:10,De'Anthony Melton 6+ rebounds,17.4,5.75,4.75,PointsBet,-17.2,Pass,PointsBet 4.75,alt,Rebounds,,De'Anthony Melton,Rebounds,Over,5.5
-898,Line,Magic @ Suns,13:10,Phoenix Suns -13.5,17.3,5.78,5.75,PointsBet,-0.4,Pass,PointsBet 5.75 · Sportsbet 5.20,game,Spread,Phoenix Suns -13.5,,,,
-899,Alt assists,Heat @ Warriors,14:10,Stephen Curry 8+ assists,17.3,5.78,5.75,PointsBet,-0.4,Pass,PointsBet 5.75,alt,Assists,,Stephen Curry,Assists,Over,7.5
-900,Alt points,Magic @ Suns,13:10,Dillon Brooks 24+ points,17.2,5.81,4.75,PointsBet,-18.4,Pass,PointsBet 4.75,alt,Points,,Dillon Brooks,Points,Over,23.5
-901,Alt rebounds,Heat @ Warriors,14:10,Giannis Antetokounmpo 16+ rebounds,17.2,5.81,4.75,PointsBet,-18.4,Pass,PointsBet 4.75,alt,Rebounds,,Giannis Antetokounmpo,Rebounds,Over,15.5
-902,Alt points,Heat @ Warriors,14:10,Bam Adebayo 29+ points,17.2,5.81,4.4,PointsBet,-24.2,Pass,PointsBet 4.40,alt,Points,,Bam Adebayo,Points,Over,28.5
-903,Line,Heat @ Warriors,14:10,Golden State Warriors -20.5,17.0,5.88,5.20,Sportsbet,-11.6,Pass,Sportsbet 5.20,game,Spread,Golden State Warriors -20.5,,,,
-904,Alt points,Heat @ Warriors,14:10,Georges Niang 13+ points,17.0,5.88,5.0,PointsBet,-14.9,Pass,PointsBet 5.00,alt,Points,,Georges Niang,Points,Over,12.5
-905,Alt points,Heat @ Warriors,14:10,Draymond Green 10+ points,17.0,5.88,4.5,PointsBet,-23.4,Pass,PointsBet 4.50,alt,Points,,Draymond Green,Points,Over,9.5
-906,Alt points,Magic @ Suns,13:10,Anthony Black 22+ points,16.9,5.92,5.75,PointsBet,-2.8,Pass,PointsBet 5.75,alt,Points,,Anthony Black,Points,Over,21.5
-907,Alt rebounds,Heat @ Warriors,14:10,Draymond Green 8+ rebounds,16.8,5.95,5.0,PointsBet,-16.1,Pass,PointsBet 5.00,alt,Rebounds,,Draymond Green,Rebounds,Over,7.5
-908,Alt threes,Magic @ Suns,13:10,Tristan Da Silva 5+ threes,16.7,5.99,6.5,PointsBet,8.3,Bet,PointsBet 6.50 · Sportsbet 6.00,alt,Threes,,Tristan Da Silva,Threes,Over,4.5
-909,Total,Heat @ Warriors,14:10,Heat @ Warriors Under 216.5,16.7,5.99,5.60,Sportsbet,-6.5,Pass,Sportsbet 5.60,game,Total,Under 216.5,,,,
-910,Total,Magic @ Suns,13:10,Magic @ Suns Over 241.5,16.6,6.02,5.00,Sportsbet,-17.1,Pass,Sportsbet 5.00,game,Total,Over 241.5,,,,
-911,Alt points,Heat @ Warriors,14:10,Giannis Antetokounmpo 39+ points,16.5,6.06,5.75,PointsBet,-5.3,Pass,PointsBet 5.75,alt,Points,,Giannis Antetokounmpo,Points,Over,38.5
-912,Alt points,Heat @ Warriors,14:10,Yaxel Lendeborg 28+ points,16.5,6.06,5.25,PointsBet,-13.5,Pass,PointsBet 5.25,alt,Points,,Yaxel Lendeborg,Points,Over,27.5
-913,Alt rebounds,Heat @ Warriors,14:10,Bam Adebayo 14+ rebounds,16.4,6.1,4.5,PointsBet,-26.1,Pass,PointsBet 4.50,alt,Rebounds,,Bam Adebayo,Rebounds,Over,13.5
-914,Line,Heat @ Warriors,14:10,Miami Heat -6.5,16.3,6.13,5.20,Sportsbet,-15.3,Pass,Sportsbet 5.20,game,Spread,Miami Heat -6.5,,,,
-915,Alt points,Heat @ Warriors,14:10,Stephen Curry 37+ points,16.2,6.17,6.5,PointsBet,5.6,Pass,PointsBet 6.50,alt,Points,,Stephen Curry,Points,Over,36.5
-916,Total,Magic @ Suns,13:10,Magic @ Suns Under 206.5,16.2,6.17,4.90,Sportsbet,-20.4,Pass,Sportsbet 4.90,game,Total,Under 206.5,,,,
-917,Alt threes,Magic @ Suns,13:10,Anthony Black 4+ threes,16.1,6.21,7.75,Sportsbet,24.7,Bet,Sportsbet 7.75 · PointsBet 6.50,alt,Threes,,Anthony Black,Threes,Over,3.5
-918,Line,Magic @ Suns,13:10,Orlando Magic -13.5,16.1,6.21,6.00,Sportsbet,-3.4,Pass,Sportsbet 6.00,game,Spread,Orlando Magic -13.5,,,,
-919,Alt points,Magic @ Suns,13:10,Franz Wagner 32+ points,16.1,6.21,5.25,PointsBet,-15.2,Pass,PointsBet 5.25,alt,Points,,Franz Wagner,Points,Over,31.5
-920,Total,Heat @ Warriors,14:10,Heat @ Warriors Over 251.5,16.1,6.21,4.40,Sportsbet,-29.0,Pass,Sportsbet 4.40,game,Total,Over 251.5,,,,
-921,Alt points,Magic @ Suns,13:10,Khaman Maluach 10+ points,15.9,6.29,5.25,PointsBet,-16.7,Pass,PointsBet 5.25,alt,Points,,Khaman Maluach,Points,Over,9.5
-922,Alt points,Magic @ Suns,13:10,Jalen Green 24+ points,15.8,6.33,5.75,PointsBet,-8.9,Pass,PointsBet 5.75,alt,Points,,Jalen Green,Points,Over,23.5
-923,Alt rebounds,Magic @ Suns,13:10,Miles Bridges 10+ rebounds,15.8,6.33,4.75,PointsBet,-24.9,Pass,PointsBet 4.75,alt,Rebounds,,Miles Bridges,Rebounds,Over,9.5
-924,Alt points,Magic @ Suns,13:10,Desmond Bane 29+ points,15.7,6.37,6.0,PointsBet,-6.0,Pass,PointsBet 6.00,alt,Points,,Desmond Bane,Points,Over,28.5
-925,Line,Magic @ Suns,13:10,Phoenix Suns -14.5,15.5,6.45,5.40,Sportsbet,-16.3,Pass,Sportsbet 5.40,game,Spread,Phoenix Suns -14.5,,,,
-926,Alt points,Magic @ Suns,13:10,Devin Booker 35+ points,15.3,6.54,6.5,PointsBet,-0.8,Pass,PointsBet 6.50,alt,Points,,Devin Booker,Points,Over,34.5
-927,Total,Magic @ Suns,13:10,Magic @ Suns Over 242.5,15.2,6.58,5.50,Sportsbet,-16.2,Pass,Sportsbet 5.50,game,Total,Over 242.5,,,,
-928,Line,Heat @ Warriors,14:10,Golden State Warriors -21.5,15.2,6.58,5.40,Sportsbet,-17.9,Pass,Sportsbet 5.40,game,Spread,Golden State Warriors -21.5,,,,
-929,Alt points,Heat @ Warriors,14:10,De'Anthony Melton 17+ points,15.2,6.58,5.0,PointsBet,-24.0,Pass,PointsBet 5.00,alt,Points,,De'Anthony Melton,Points,Over,16.5
-930,Alt points,Magic @ Suns,13:10,Tristan Da Silva 19+ points,15.1,6.62,5.75,PointsBet,-13.2,Pass,PointsBet 5.75,alt,Points,,Tristan Da Silva,Points,Over,18.5
-931,Alt rebounds,Heat @ Warriors,14:10,Georges Niang 6+ rebounds,15.0,6.67,5.75,PointsBet,-13.7,Pass,PointsBet 5.75,alt,Rebounds,,Georges Niang,Rebounds,Over,5.5
-932,Alt points,Magic @ Suns,13:10,Jase Richardson 15+ points,15.0,6.67,5.75,PointsBet,-14.0,Pass,PointsBet 5.75,alt,Points,,Jase Richardson,Points,Over,14.5
-933,Alt points,Heat @ Warriors,14:10,Brandin Podziemski 24+ points,15.0,6.67,5.25,PointsBet,-21.4,Pass,PointsBet 5.25,alt,Points,,Brandin Podziemski,Points,Over,23.5
-934,Total,Magic @ Suns,13:10,Magic @ Suns Under 205.5,14.9,6.71,5.40,Sportsbet,-19.5,Pass,Sportsbet 5.40,game,Total,Under 205.5,,,,
-935,Total,Heat @ Warriors,14:10,Heat @ Warriors Over 252.5,14.8,6.76,4.70,Sportsbet,-30.4,Pass,Sportsbet 4.70,game,Total,Over 252.5,,,,
-936,Alt threes,Magic @ Suns,13:10,Desmond Bane 6+ threes,14.6,6.85,7.0,Sportsbet,1.9,Pass,Sportsbet 7.00 · PointsBet 6.50,alt,Threes,,Desmond Bane,Threes,Over,5.5
-937,Line,Heat @ Warriors,14:10,Miami Heat -7.5,14.5,6.9,5.50,Sportsbet,-20.1,Pass,Sportsbet 5.50,game,Spread,Miami Heat -7.5,,,,
-938,Alt points,Heat @ Warriors,14:10,Bam Adebayo 30+ points,14.5,6.9,5.25,PointsBet,-23.9,Pass,PointsBet 5.25,alt,Points,,Bam Adebayo,Points,Over,29.5
-939,Alt points,Magic @ Suns,13:10,Miles Bridges 25+ points,14.4,6.94,6.5,PointsBet,-6.5,Pass,PointsBet 6.50,alt,Points,,Miles Bridges,Points,Over,24.5
-940,Line,Magic @ Suns,13:10,Orlando Magic -14.5,14.4,6.94,6.00,Sportsbet,-13.9,Pass,Sportsbet 6.00,game,Spread,Orlando Magic -14.5,,,,
-941,Alt threes,Magic @ Suns,13:10,Devin Booker 4+ threes,14.2,7.04,7.5,Sportsbet,6.5,Pass,Sportsbet 7.50 · PointsBet 6.50,alt,Threes,,Devin Booker,Threes,Over,3.5
-942,Alt points,Heat @ Warriors,14:10,Giannis Antetokounmpo 40+ points,14.2,7.04,7.0,PointsBet,-0.8,Pass,PointsBet 7.00,alt,Points,,Giannis Antetokounmpo,Points,Over,39.5
-943,Alt points,Magic @ Suns,13:10,Dillon Brooks 25+ points,14.2,7.04,5.75,PointsBet,-18.3,Pass,PointsBet 5.75,alt,Points,,Dillon Brooks,Points,Over,24.5
-944,Alt points,Magic @ Suns,13:10,Wendell Carter Jr. 19+ points,14.0,7.14,7.0,PointsBet,-2.3,Pass,PointsBet 7.00,alt,Points,,Wendell Carter Jr.,Points,Over,18.5
-945,Alt threes,Heat @ Warriors,14:10,Will Richard 3+ threes,14.0,7.14,6.25,Sportsbet,-12.4,Pass,Sportsbet 6.25 · PointsBet 6.00,alt,Threes,,Will Richard,Threes,Over,2.5
-946,Alt points,Heat @ Warriors,14:10,Will Richard 12+ points,14.0,7.14,5.25,PointsBet,-26.7,Pass,PointsBet 5.25,alt,Points,,Will Richard,Points,Over,11.5
-947,Alt points,Heat @ Warriors,14:10,Stephen Curry 38+ points,13.9,7.19,8.0,PointsBet,11.4,Bet,PointsBet 8.00,alt,Points,,Stephen Curry,Points,Over,37.5
-948,Alt points,Magic @ Suns,13:10,Anthony Black 23+ points,13.8,7.25,7.0,PointsBet,-3.1,Pass,PointsBet 7.00,alt,Points,,Anthony Black,Points,Over,22.5
-949,Line,Magic @ Suns,13:10,Phoenix Suns -15.5,13.8,7.25,6.00,Sportsbet,-17.1,Pass,Sportsbet 6.00,game,Spread,Phoenix Suns -15.5,,,,
-950,Alt points,Heat @ Warriors,14:10,Yaxel Lendeborg 29+ points,13.8,7.25,6.0,PointsBet,-17.2,Pass,PointsBet 6.00,alt,Points,,Yaxel Lendeborg,Points,Over,28.5
-951,Alt points,Magic @ Suns,13:10,Franz Wagner 33+ points,13.7,7.3,6.5,PointsBet,-11.2,Pass,PointsBet 6.50,alt,Points,,Franz Wagner,Points,Over,32.5
-952,Total,Magic @ Suns,13:10,Magic @ Suns Under 204.5,13.6,7.35,5.80,Sportsbet,-20.9,Pass,Sportsbet 5.80,game,Total,Under 204.5,,,,
-953,Total,Heat @ Warriors,14:10,Heat @ Warriors Over 253.5,13.6,7.35,4.90,Sportsbet,-33.6,Pass,Sportsbet 4.90,game,Total,Over 253.5,,,,
-954,Line,Heat @ Warriors,14:10,Golden State Warriors -22.5,13.5,7.41,6.00,Sportsbet,-18.8,Pass,Sportsbet 6.00,game,Spread,Golden State Warriors -22.5,,,,
-955,Alt points,Magic @ Suns,13:10,Jamal Cain 12+ points,13.2,7.58,5.75,PointsBet,-23.9,Pass,PointsBet 5.75,alt,Points,,Jamal Cain,Points,Over,11.5
-956,Alt points,Magic @ Suns,13:10,Desmond Bane 30+ points,13.1,7.63,7.5,PointsBet,-1.7,Pass,PointsBet 7.50,alt,Points,,Desmond Bane,Points,Over,29.5
-957,Alt assists,Magic @ Suns,13:10,Devin Booker 8+ assists,13.1,7.63,6.5,PointsBet,-15.0,Pass,PointsBet 6.50,alt,Assists,,Devin Booker,Assists,Over,7.5
-958,Alt points,Heat @ Warriors,14:10,Georges Niang 14+ points,13.1,7.63,6.0,PointsBet,-21.4,Pass,PointsBet 6.00,alt,Points,,Georges Niang,Points,Over,13.5
-959,Alt points,Magic @ Suns,13:10,Devin Booker 36+ points,13.0,7.69,8.0,PointsBet,3.8,Pass,PointsBet 8.00,alt,Points,,Devin Booker,Points,Over,35.5
-960,Alt points,Magic @ Suns,13:10,Jalen Green 25+ points,13.0,7.69,6.5,PointsBet,-15.3,Pass,PointsBet 6.50,alt,Points,,Jalen Green,Points,Over,24.5
-961,Line,Heat @ Warriors,14:10,Miami Heat -8.5,12.9,7.75,6.00,Sportsbet,-22.5,Pass,Sportsbet 6.00,game,Spread,Miami Heat -8.5,,,,
-962,Line,Magic @ Suns,13:10,Orlando Magic -15.5,12.8,7.81,7.00,Sportsbet,-10.7,Pass,Sportsbet 7.00,game,Spread,Orlando Magic -15.5,,,,
-963,Alt steals,Heat @ Warriors,14:10,Stephen Curry 3+ steals,12.7,7.87,7.0,Sportsbet,-11.3,Pass,Sportsbet 7.00,alt,Steals,,Stephen Curry,Steals,Over,2.5
-964,Alt points,Heat @ Warriors,14:10,Draymond Green 11+ points,12.6,7.94,5.75,PointsBet,-27.5,Pass,PointsBet 5.75,alt,Points,,Draymond Green,Points,Over,10.5
-965,Total,Heat @ Warriors,14:10,Heat @ Warriors Over 254.5,12.4,8.06,5.30,Sportsbet,-34.4,Pass,Sportsbet 5.30,game,Total,Over 254.5,,,,
-966,Alt points,Heat @ Warriors,14:10,Brandin Podziemski 25+ points,12.3,8.13,6.5,PointsBet,-20.3,Pass,PointsBet 6.50,alt,Points,,Brandin Podziemski,Points,Over,24.5
-967,Line,Magic @ Suns,13:10,Phoenix Suns -16.5,12.3,8.13,6.50,Sportsbet,-20.4,Pass,Sportsbet 6.50,game,Spread,Phoenix Suns -16.5,,,,
-968,Alt rebounds,Magic @ Suns,13:10,Franz Wagner 10+ rebounds,12.2,8.2,6.5,PointsBet,-20.4,Pass,PointsBet 6.50,alt,Rebounds,,Franz Wagner,Rebounds,Over,9.5
-969,Alt points,Heat @ Warriors,14:10,Giannis Antetokounmpo 41+ points,12.1,8.26,8.5,PointsBet,3.1,Pass,PointsBet 8.50,alt,Points,,Giannis Antetokounmpo,Points,Over,40.5
-970,Alt points,Magic @ Suns,13:10,Tristan Da Silva 20+ points,12.1,8.26,6.5,PointsBet,-21.5,Pass,PointsBet 6.50,alt,Points,,Tristan Da Silva,Points,Over,19.5
-971,Alt points,Heat @ Warriors,14:10,Bam Adebayo 31+ points,12.1,8.26,6.0,PointsBet,-27.3,Pass,PointsBet 6.00,alt,Points,,Bam Adebayo,Points,Over,30.5
-972,Alt assists,Magic @ Suns,13:10,Desmond Bane 6+ assists,12.1,8.26,5.75,PointsBet,-30.2,Pass,PointsBet 5.75,alt,Assists,,Desmond Bane,Assists,Over,5.5
-973,Line,Heat @ Warriors,14:10,Golden State Warriors -23.5,12.0,8.33,6.00,Sportsbet,-28.0,Pass,Sportsbet 6.00,game,Spread,Golden State Warriors -23.5,,,,
-974,Alt points,Heat @ Warriors,14:10,De'Anthony Melton 18+ points,12.0,8.33,6.0,PointsBet,-28.0,Pass,PointsBet 6.00,alt,Points,,De'Anthony Melton,Points,Over,17.5
-975,Alt points,Heat @ Warriors,14:10,Stephen Curry 39+ points,11.9,8.4,9.5,PointsBet,12.6,Pass,PointsBet 9.50,alt,Points,,Stephen Curry,Points,Over,38.5
-976,Alt threes,Heat @ Warriors,14:10,De'Anthony Melton 4+ threes,11.8,8.47,10.5,Sportsbet,24.4,Pass,Sportsbet 10.50,alt,Threes,,De'Anthony Melton,Threes,Over,3.5
-977,Alt points,Magic @ Suns,13:10,Miles Bridges 26+ points,11.8,8.47,8.0,PointsBet,-5.6,Pass,PointsBet 8.00,alt,Points,,Miles Bridges,Points,Over,25.5
-978,Alt assists,Magic @ Suns,13:10,Jalen Green 6+ assists,11.8,8.47,6.0,PointsBet,-29.1,Pass,PointsBet 6.00,alt,Assists,,Jalen Green,Assists,Over,5.5
-979,Alt points,Magic @ Suns,13:10,Khaman Maluach 11+ points,11.7,8.55,7.5,PointsBet,-12.6,Pass,PointsBet 7.50,alt,Points,,Khaman Maluach,Points,Over,10.5
-980,Alt points,Magic @ Suns,13:10,Dillon Brooks 26+ points,11.7,8.55,6.5,PointsBet,-24.2,Pass,PointsBet 6.50,alt,Points,,Dillon Brooks,Points,Over,25.5
-981,Alt points,Magic @ Suns,13:10,Jase Richardson 16+ points,11.6,8.62,7.0,PointsBet,-18.8,Pass,PointsBet 7.00,alt,Points,,Jase Richardson,Points,Over,15.5
-982,Alt points,Magic @ Suns,13:10,Franz Wagner 34+ points,11.5,8.7,8.0,PointsBet,-8.2,Pass,PointsBet 8.00,alt,Points,,Franz Wagner,Points,Over,33.5
-983,Alt points,Heat @ Warriors,14:10,Yaxel Lendeborg 30+ points,11.5,8.7,7.5,PointsBet,-14.1,Pass,PointsBet 7.50,alt,Points,,Yaxel Lendeborg,Points,Over,29.5
-984,Line,Heat @ Warriors,14:10,Miami Heat -9.5,11.4,8.77,6.50,Sportsbet,-25.7,Pass,Sportsbet 6.50,game,Spread,Miami Heat -9.5,,,,
-985,Line,Magic @ Suns,13:10,Orlando Magic -16.5,11.3,8.85,8.00,Sportsbet,-9.7,Pass,Sportsbet 8.00,game,Spread,Orlando Magic -16.5,,,,
-986,Total,Heat @ Warriors,14:10,Heat @ Warriors Over 255.5,11.3,8.85,5.60,Sportsbet,-36.9,Pass,Sportsbet 5.60,game,Total,Over 255.5,,,,
-987,Alt points,Magic @ Suns,13:10,Anthony Black 24+ points,11.2,8.93,9.0,PointsBet,1.2,Pass,PointsBet 9.00,alt,Points,,Anthony Black,Points,Over,23.5
-988,Alt points,Magic @ Suns,13:10,Wendell Carter Jr. 20+ points,11.1,9.01,9.0,PointsBet,-0.1,Pass,PointsBet 9.00,alt,Points,,Wendell Carter Jr.,Points,Over,19.5
-989,Alt points,Magic @ Suns,13:10,Devin Booker 37+ points,11.0,9.09,10.0,PointsBet,9.6,Pass,PointsBet 10.00,alt,Points,,Devin Booker,Points,Over,36.5
-990,Alt threes,Heat @ Warriors,14:10,Stephen Curry 8+ threes,10.9,9.17,13.0,Sportsbet,41.4,Pass,Sportsbet 13.00 · PointsBet 11.00,alt,Threes,,Stephen Curry,Threes,Over,7.5
-991,Alt threes,Heat @ Warriors,14:10,Brandin Podziemski 5+ threes,10.9,9.17,10.0,Sportsbet,8.7,Pass,Sportsbet 10.00 · PointsBet 8.50,alt,Threes,,Brandin Podziemski,Threes,Over,4.5
-992,Alt points,Magic @ Suns,13:10,Desmond Bane 31+ points,10.9,9.17,9.0,PointsBet,-1.9,Pass,PointsBet 9.00,alt,Points,,Desmond Bane,Points,Over,30.5
-993,Line,Magic @ Suns,13:10,Phoenix Suns -17.5,10.8,9.26,7.50,Sportsbet,-18.8,Pass,Sportsbet 7.50,game,Spread,Phoenix Suns -17.5,,,,
-994,Alt points,Magic @ Suns,13:10,Jalen Green 26+ points,10.6,9.43,8.5,PointsBet,-9.6,Pass,PointsBet 8.50,alt,Points,,Jalen Green,Points,Over,25.5
-995,Line,Heat @ Warriors,14:10,Golden State Warriors -24.5,10.6,9.43,7.00,Sportsbet,-25.9,Pass,Sportsbet 7.00,game,Spread,Golden State Warriors -24.5,,,,
-996,Alt assists,Heat @ Warriors,14:10,Giannis Antetokounmpo 10+ assists,10.5,9.52,6.5,PointsBet,-31.4,Pass,PointsBet 6.50,alt,Assists,,Giannis Antetokounmpo,Assists,Over,9.5
-997,Alt assists,Magic @ Suns,13:10,Miles Bridges 6+ assists,10.4,9.62,9.0,PointsBet,-6.0,Pass,PointsBet 9.00,alt,Assists,,Miles Bridges,Assists,Over,5.5
-998,Alt points,Heat @ Warriors,14:10,Will Richard 13+ points,10.4,9.62,6.5,PointsBet,-32.2,Pass,PointsBet 6.50,alt,Points,,Will Richard,Points,Over,12.5
-999,Alt points,Heat @ Warriors,14:10,Giannis Antetokounmpo 42+ points,10.3,9.71,10.0,PointsBet,3.2,Pass,PointsBet 10.00,alt,Points,,Giannis Antetokounmpo,Points,Over,41.5
-1000,Alt threes,Heat @ Warriors,14:10,Yaxel Lendeborg 5+ threes,10.2,9.8,14.0,Sportsbet,43.2,Pass,Sportsbet 14.00 · PointsBet 11.00,alt,Threes,,Yaxel Lendeborg,Threes,Over,4.5
-1001,Alt assists,Heat @ Warriors,14:10,Brandin Podziemski 8+ assists,10.1,9.9,10.5,PointsBet,5.9,Pass,PointsBet 10.50,alt,Assists,,Brandin Podziemski,Assists,Over,7.5
-1002,Alt points,Heat @ Warriors,14:10,Bam Adebayo 32+ points,10.1,9.9,8.0,PointsBet,-19.5,Pass,PointsBet 8.00,alt,Points,,Bam Adebayo,Points,Over,31.5
-1003,Line,Heat @ Warriors,14:10,Miami Heat -10.5,10.1,9.9,7.75,Sportsbet,-21.9,Pass,Sportsbet 7.75,game,Spread,Miami Heat -10.5,,,,
-1004,Alt points,Heat @ Warriors,14:10,Stephen Curry 40+ points,10.0,10.0,10.5,PointsBet,5.3,Pass,PointsBet 10.50,alt,Points,,Stephen Curry,Points,Over,39.5
-1005,Alt points,Heat @ Warriors,14:10,Brandin Podziemski 26+ points,10.0,10.0,8.0,PointsBet,-20.2,Pass,PointsBet 8.00,alt,Points,,Brandin Podziemski,Points,Over,25.5
-1006,Alt points,Heat @ Warriors,14:10,Georges Niang 15+ points,10.0,10.0,8.0,PointsBet,-20.4,Pass,PointsBet 8.00,alt,Points,,Georges Niang,Points,Over,14.5
-1007,Line,Magic @ Suns,13:10,Orlando Magic -17.5,9.9,10.1,8.50,Sportsbet,-15.6,Pass,Sportsbet 8.50,game,Spread,Orlando Magic -17.5,,,,
-1008,Alt threes,Magic @ Suns,13:10,Franz Wagner 4+ threes,9.8,10.2,10.5,Sportsbet,2.7,Pass,Sportsbet 10.50 · PointsBet 9.50,alt,Threes,,Franz Wagner,Threes,Over,3.5
-1009,Alt points,Magic @ Suns,13:10,Jamal Cain 13+ points,9.8,10.2,7.5,PointsBet,-26.2,Pass,PointsBet 7.50,alt,Points,,Jamal Cain,Points,Over,12.5
-1010,Alt rebounds,Magic @ Suns,13:10,Tristan Da Silva 8+ rebounds,9.7,10.31,9.5,PointsBet,-7.5,Pass,PointsBet 9.50,alt,Rebounds,,Tristan Da Silva,Rebounds,Over,7.5
-1011,Alt rebounds,Magic @ Suns,13:10,Wendell Carter Jr. 14+ rebounds,9.7,10.31,8.0,PointsBet,-22.7,Pass,PointsBet 8.00,alt,Rebounds,,Wendell Carter Jr.,Rebounds,Over,13.5
-1012,Alt threes,Magic @ Suns,13:10,Miles Bridges 5+ threes,9.6,10.42,13.0,Sportsbet,24.7,Pass,Sportsbet 13.00 · PointsBet 10.50,alt,Threes,,Miles Bridges,Threes,Over,4.5
-1013,Alt points,Magic @ Suns,13:10,Miles Bridges 27+ points,9.6,10.42,10.0,PointsBet,-3.9,Pass,PointsBet 10.00,alt,Points,,Miles Bridges,Points,Over,26.5
-1014,Alt points,Magic @ Suns,13:10,Franz Wagner 35+ points,9.6,10.42,9.5,PointsBet,-9.0,Pass,PointsBet 9.50,alt,Points,,Franz Wagner,Points,Over,34.5
-1015,Alt points,Magic @ Suns,13:10,Tristan Da Silva 21+ points,9.6,10.42,8.5,PointsBet,-18.8,Pass,PointsBet 8.50,alt,Points,,Tristan Da Silva,Points,Over,20.5
-1016,Alt points,Heat @ Warriors,14:10,Yaxel Lendeborg 31+ points,9.5,10.53,9.5,PointsBet,-10.2,Pass,PointsBet 9.50,alt,Points,,Yaxel Lendeborg,Points,Over,30.5
-1017,Alt rebounds,Magic @ Suns,13:10,Anthony Black 8+ rebounds,9.5,10.53,9.0,PointsBet,-14.3,Pass,PointsBet 9.00,alt,Rebounds,,Anthony Black,Rebounds,Over,7.5
-1018,Alt points,Magic @ Suns,13:10,Dillon Brooks 27+ points,9.5,10.53,8.5,PointsBet,-19.4,Pass,PointsBet 8.50,alt,Points,,Dillon Brooks,Points,Over,26.5
-1019,Line,Magic @ Suns,13:10,Phoenix Suns -18.5,9.5,10.53,8.00,Sportsbet,-23.9,Pass,Sportsbet 8.00,game,Spread,Phoenix Suns -18.5,,,,
-1020,Alt points,Heat @ Warriors,14:10,De'Anthony Melton 19+ points,9.4,10.64,7.5,PointsBet,-29.7,Pass,PointsBet 7.50,alt,Points,,De'Anthony Melton,Points,Over,18.5
-1021,Line,Heat @ Warriors,14:10,Golden State Warriors -25.5,9.3,10.75,7.75,Sportsbet,-27.9,Pass,Sportsbet 7.75,game,Spread,Golden State Warriors -25.5,,,,
-1022,Alt threes,Magic @ Suns,13:10,Dillon Brooks 5+ threes,9.2,10.87,14.0,Sportsbet,29.3,Pass,Sportsbet 14.00 · PointsBet 10.50,alt,Threes,,Dillon Brooks,Threes,Over,4.5
-1023,Alt points,Magic @ Suns,13:10,Devin Booker 38+ points,9.2,10.87,11.0,PointsBet,1.1,Pass,PointsBet 11.00,alt,Points,,Devin Booker,Points,Over,37.5
-1024,Alt rebounds,Magic @ Suns,13:10,Desmond Bane 8+ rebounds,9.2,10.87,9.0,PointsBet,-17.4,Pass,PointsBet 9.00,alt,Rebounds,,Desmond Bane,Rebounds,Over,7.5
-1025,Alt points,Heat @ Warriors,14:10,Draymond Green 12+ points,9.2,10.87,7.5,PointsBet,-31.0,Pass,PointsBet 7.50,alt,Points,,Draymond Green,Points,Over,11.5
-1026,Alt points,Magic @ Suns,13:10,Anthony Black 25+ points,9.0,11.11,11.0,PointsBet,-0.5,Pass,PointsBet 11.00,alt,Points,,Anthony Black,Points,Over,24.5
-1027,Alt points,Magic @ Suns,13:10,Desmond Bane 32+ points,9.0,11.11,10.5,PointsBet,-5.6,Pass,PointsBet 10.50,alt,Points,,Desmond Bane,Points,Over,31.5
-1028,Alt points,Magic @ Suns,13:10,Jase Richardson 17+ points,8.9,11.24,9.5,PointsBet,-15.4,Pass,PointsBet 9.50,alt,Points,,Jase Richardson,Points,Over,16.5
-1029,Line,Heat @ Warriors,14:10,Miami Heat -11.5,8.8,11.36,8.50,Sportsbet,-24.9,Pass,Sportsbet 8.50,game,Spread,Miami Heat -11.5,,,,
-1030,Alt points,Magic @ Suns,13:10,Wendell Carter Jr. 21+ points,8.7,11.49,12.0,PointsBet,4.8,Pass,PointsBet 12.00,alt,Points,,Wendell Carter Jr.,Points,Over,20.5
-1031,Alt points,Heat @ Warriors,14:10,Giannis Antetokounmpo 43+ points,8.7,11.49,12.0,PointsBet,4.8,Pass,PointsBet 12.00,alt,Points,,Giannis Antetokounmpo,Points,Over,42.5
-1032,Line,Magic @ Suns,13:10,Orlando Magic -18.5,8.7,11.49,9.50,Sportsbet,-17.3,Pass,Sportsbet 9.50,game,Spread,Orlando Magic -18.5,,,,
-1033,Alt rebounds,Magic @ Suns,13:10,Dillon Brooks 8+ rebounds,8.7,11.49,7.5,PointsBet,-34.7,Pass,PointsBet 7.50,alt,Rebounds,,Dillon Brooks,Rebounds,Over,7.5
-1034,Alt threes,Magic @ Suns,13:10,Jalen Green 5+ threes,8.6,11.63,14.0,Sportsbet,20.9,Pass,Sportsbet 14.00 · PointsBet 11.00,alt,Threes,,Jalen Green,Threes,Over,4.5
-1035,Alt threes,Magic @ Suns,13:10,Tristan Da Silva 6+ threes,8.6,11.63,12.0,Sportsbet,2.9,Pass,Sportsbet 12.00,alt,Threes,,Tristan Da Silva,Threes,Over,5.5
-1036,Alt points,Magic @ Suns,13:10,Jalen Green 27+ points,8.6,11.63,10.0,PointsBet,-14.0,Pass,PointsBet 10.00,alt,Points,,Jalen Green,Points,Over,26.5
-1037,Alt points,Magic @ Suns,13:10,Khaman Maluach 12+ points,8.5,11.76,10.0,PointsBet,-15.5,Pass,PointsBet 10.00,alt,Points,,Khaman Maluach,Points,Over,11.5
-1038,Alt rebounds,Heat @ Warriors,14:10,Yaxel Lendeborg 12+ rebounds,8.5,11.76,9.0,PointsBet,-23.5,Pass,PointsBet 9.00,alt,Rebounds,,Yaxel Lendeborg,Rebounds,Over,11.5
-1039,Alt threes,Heat @ Warriors,14:10,Georges Niang 4+ threes,8.3,12.05,11.0,Sportsbet,-9.1,Pass,Sportsbet 11.00,alt,Threes,,Georges Niang,Threes,Over,3.5
-1040,Alt points,Heat @ Warriors,14:10,Bam Adebayo 33+ points,8.3,12.05,9.5,PointsBet,-21.2,Pass,PointsBet 9.50,alt,Points,,Bam Adebayo,Points,Over,32.5
-1041,Line,Magic @ Suns,13:10,Phoenix Suns -19.5,8.3,12.05,8.50,Sportsbet,-29.2,Pass,Sportsbet 8.50,game,Spread,Phoenix Suns -19.5,,,,
-1042,Line,Heat @ Warriors,14:10,Golden State Warriors -26.5,8.1,12.35,8.50,Sportsbet,-30.8,Pass,Sportsbet 8.50,game,Spread,Golden State Warriors -26.5,,,,
-1043,Alt points,Heat @ Warriors,14:10,Brandin Podziemski 27+ points,8.0,12.5,10.0,PointsBet,-19.6,Pass,PointsBet 10.00,alt,Points,,Brandin Podziemski,Points,Over,26.5
-1044,Alt assists,Magic @ Suns,13:10,Anthony Black 8+ assists,8.0,12.5,9.5,PointsBet,-24.4,Pass,PointsBet 9.50,alt,Assists,,Anthony Black,Assists,Over,7.5
-1045,Alt rebounds,Magic @ Suns,13:10,Khaman Maluach 10+ rebounds,8.0,12.5,6.0,PointsBet,-52.2,Pass,PointsBet 6.00,alt,Rebounds,,Khaman Maluach,Rebounds,Over,9.5
-1046,Alt points,Magic @ Suns,13:10,Franz Wagner 36+ points,7.9,12.66,11.0,PointsBet,-12.6,Pass,PointsBet 11.00,alt,Points,,Franz Wagner,Points,Over,35.5
-1047,Alt rebounds,Magic @ Suns,13:10,Devin Booker 8+ rebounds,7.9,12.66,10.0,PointsBet,-20.9,Pass,PointsBet 10.00,alt,Rebounds,,Devin Booker,Rebounds,Over,7.5
-1048,Alt threes,Magic @ Suns,13:10,Desmond Bane 7+ threes,7.8,12.82,14.0,Sportsbet,8.8,Pass,Sportsbet 14.00,alt,Threes,,Desmond Bane,Threes,Over,6.5
-1049,Alt threes,Heat @ Warriors,14:10,Bam Adebayo 4+ threes,7.8,12.82,13.0,Sportsbet,1.7,Pass,Sportsbet 13.00 · PointsBet 11.00,alt,Threes,,Bam Adebayo,Threes,Over,3.5
-1050,Alt points,Magic @ Suns,13:10,Miles Bridges 28+ points,7.8,12.82,12.0,PointsBet,-6.8,Pass,PointsBet 12.00,alt,Points,,Miles Bridges,Points,Over,27.5
-1051,Alt points,Heat @ Warriors,14:10,Yaxel Lendeborg 32+ points,7.7,12.99,10.5,PointsBet,-18.7,Pass,PointsBet 10.50,alt,Points,,Yaxel Lendeborg,Points,Over,31.5
-1052,Alt points,Magic @ Suns,13:10,Dillon Brooks 28+ points,7.7,12.99,10.0,PointsBet,-23.5,Pass,PointsBet 10.00,alt,Points,,Dillon Brooks,Points,Over,27.5
-1053,Line,Heat @ Warriors,14:10,Miami Heat -12.5,7.7,12.99,9.50,Sportsbet,-26.7,Pass,Sportsbet 9.50,game,Spread,Miami Heat -12.5,,,,
-1054,Alt points,Heat @ Warriors,14:10,Will Richard 14+ points,7.7,12.99,9.0,PointsBet,-30.7,Pass,PointsBet 9.00,alt,Points,,Will Richard,Points,Over,13.5
-1055,Alt threes,Magic @ Suns,13:10,Anthony Black 5+ threes,7.5,13.33,17.0,Sportsbet,27.2,Pass,Sportsbet 17.00,alt,Threes,,Anthony Black,Threes,Over,4.5
-1056,Alt points,Magic @ Suns,13:10,Tristan Da Silva 22+ points,7.5,13.33,10.5,PointsBet,-21.3,Pass,PointsBet 10.50,alt,Points,,Tristan Da Silva,Points,Over,21.5
-1057,Alt points,Heat @ Warriors,14:10,Georges Niang 16+ points,7.5,13.33,10.0,PointsBet,-25.2,Pass,PointsBet 10.00,alt,Points,,Georges Niang,Points,Over,15.5
-1058,Line,Magic @ Suns,13:10,Phoenix Suns -20.5,7.3,13.7,9.50,Sportsbet,-31.0,Pass,Sportsbet 9.50,game,Spread,Phoenix Suns -20.5,,,,
-1059,Alt rebounds,Heat @ Warriors,14:10,Bam Adebayo 16+ rebounds,7.2,13.89,10.0,PointsBet,-27.6,Pass,PointsBet 10.00,alt,Rebounds,,Bam Adebayo,Rebounds,Over,15.5
-1060,Alt points,Magic @ Suns,13:10,Jamal Cain 14+ points,7.2,13.89,10.0,PointsBet,-27.7,Pass,PointsBet 10.00,alt,Points,,Jamal Cain,Points,Over,13.5
-1061,Alt points,Heat @ Warriors,14:10,De'Anthony Melton 20+ points,7.2,13.89,9.5,PointsBet,-31.2,Pass,PointsBet 9.50,alt,Points,,De'Anthony Melton,Points,Over,19.5
-1062,Alt assists,Magic @ Suns,13:10,Franz Wagner 12+ assists,7.1,14.08,10.0,PointsBet,-29.0,Pass,PointsBet 10.00,alt,Assists,,Franz Wagner,Assists,Over,11.5
-1063,Line,Heat @ Warriors,14:10,Golden State Warriors -27.5,7.1,14.08,9.50,Sportsbet,-32.6,Pass,Sportsbet 9.50,game,Spread,Golden State Warriors -27.5,,,,
-1064,Alt points,Magic @ Suns,13:10,Jalen Green 28+ points,6.9,14.49,12.0,PointsBet,-17.1,Pass,PointsBet 12.00,alt,Points,,Jalen Green,Points,Over,27.5
-1065,Alt points,Magic @ Suns,13:10,Jase Richardson 18+ points,6.8,14.71,12.0,PointsBet,-18.9,Pass,PointsBet 12.00,alt,Points,,Jase Richardson,Points,Over,17.5
-1066,Alt points,Heat @ Warriors,14:10,Bam Adebayo 34+ points,6.8,14.71,11.0,PointsBet,-25.3,Pass,PointsBet 11.00,alt,Points,,Bam Adebayo,Points,Over,33.5
-1067,Alt assists,Heat @ Warriors,14:10,Bam Adebayo 8+ assists,6.6,15.15,11.0,PointsBet,-27.7,Pass,PointsBet 11.00,alt,Assists,,Bam Adebayo,Assists,Over,7.5
-1068,Alt points,Heat @ Warriors,14:10,Draymond Green 13+ points,6.6,15.15,10.0,PointsBet,-33.6,Pass,PointsBet 10.00,alt,Points,,Draymond Green,Points,Over,12.5
-1069,Alt threes,Magic @ Suns,13:10,Devin Booker 5+ threes,6.4,15.62,17.0,Sportsbet,8.7,Pass,Sportsbet 17.00,alt,Threes,,Devin Booker,Threes,Over,4.5
-1070,Alt points,Heat @ Warriors,14:10,Brandin Podziemski 28+ points,6.4,15.62,12.0,PointsBet,-22.8,Pass,PointsBet 12.00,alt,Points,,Brandin Podziemski,Points,Over,27.5
-1071,Alt threes,Heat @ Warriors,14:10,Stephen Curry 9+ threes,6.1,16.39,23.0,Sportsbet,39.9,Pass,Sportsbet 23.00,alt,Threes,,Stephen Curry,Threes,Over,8.5
-1072,Alt points,Magic @ Suns,13:10,Dillon Brooks 29+ points,6.1,16.39,12.0,PointsBet,-26.4,Pass,PointsBet 12.00,alt,Points,,Dillon Brooks,Points,Over,28.5
-1073,Line,Heat @ Warriors,14:10,Golden State Warriors -28.5,6.1,16.39,9.50,Sportsbet,-41.6,Pass,Sportsbet 9.50,game,Spread,Golden State Warriors -28.5,,,,
-1074,Alt rebounds,Magic @ Suns,13:10,Miles Bridges 12+ rebounds,5.8,17.24,11.0,PointsBet,-35.8,Pass,PointsBet 11.00,alt,Rebounds,,Miles Bridges,Rebounds,Over,11.5
-1075,Alt points,Heat @ Warriors,14:10,Will Richard 15+ points,5.6,17.86,11.0,PointsBet,-38.1,Pass,PointsBet 11.00,alt,Points,,Will Richard,Points,Over,14.5
-1076,Alt points,Heat @ Warriors,14:10,De'Anthony Melton 21+ points,5.6,17.86,11.0,PointsBet,-38.9,Pass,PointsBet 11.00,alt,Points,,De'Anthony Melton,Points,Over,20.5
-1077,Alt threes,Heat @ Warriors,14:10,Will Richard 4+ threes,5.5,18.18,15.0,Sportsbet,-18.2,Pass,Sportsbet 15.00,alt,Threes,,Will Richard,Threes,Over,3.5
-1078,Alt threes,Heat @ Warriors,14:10,De'Anthony Melton 5+ threes,5.1,19.61,26.0,Sportsbet,32.5,Pass,Sportsbet 26.00,alt,Threes,,De'Anthony Melton,Threes,Over,4.5
-1079,Alt threes,Heat @ Warriors,14:10,Brandin Podziemski 6+ threes,5.1,19.61,23.0,Sportsbet,16.8,Pass,Sportsbet 23.00,alt,Threes,,Brandin Podziemski,Threes,Over,5.5
-1080,Alt threes,Magic @ Suns,13:10,Miles Bridges 6+ threes,4.4,22.73,31.0,Sportsbet,35.3,Pass,Sportsbet 31.00,alt,Threes,,Miles Bridges,Threes,Over,5.5
-1081,Alt threes,Magic @ Suns,13:10,Tristan Da Silva 7+ threes,4.1,24.39,23.0,Sportsbet,-5.0,Pass,Sportsbet 23.00,alt,Threes,,Tristan Da Silva,Threes,Over,6.5
-1082,Alt threes,Magic @ Suns,13:10,Desmond Bane 8+ threes,3.9,25.64,26.0,Sportsbet,1.8,Pass,Sportsbet 26.00,alt,Threes,,Desmond Bane,Threes,Over,7.5
-1083,Alt threes,Magic @ Suns,13:10,Jamal Cain 4+ threes,3.7,27.03,19.0,Sportsbet,-30.3,Pass,Sportsbet 19.00,alt,Threes,,Jamal Cain,Threes,Over,3.5
-1084,Alt threes,Heat @ Warriors,14:10,Georges Niang 5+ threes,3.3,30.3,26.0,Sportsbet,-15.0,Pass,Sportsbet 26.00,alt,Threes,,Georges Niang,Threes,Over,4.5
-1085,Alt threes,Heat @ Warriors,14:10,Stephen Curry 10+ threes,3.2,31.25,56.0,Sportsbet,81.7,Pass,Sportsbet 56.00,alt,Threes,,Stephen Curry,Threes,Over,9.5
-1086,Alt rebounds,Magic @ Suns,13:10,Khaman Maluach 12+ rebounds,2.4,41.67,12.0,PointsBet,-71.2,Pass,PointsBet 12.00,alt,Rebounds,,Khaman Maluach,Rebounds,Over,11.5
+1,Alt threes,Raptors @ Bucks,12:10,Immanuel Quickley 1+ threes,98.1,1.02,1.02,Sportsbet,0.1,Pass,Sportsbet 1.02,alt,Threes,,Immanuel Quickley,Threes,Over,0.5
+2,Alt threes,Blazers @ Lakers,14:10,Damian Lillard 1+ threes,98.1,1.02,1.02,Sportsbet,0.1,Pass,Sportsbet 1.02,alt,Threes,,Damian Lillard,Threes,Over,0.5
+3,Alt threes,Blazers @ Lakers,14:10,Luka Dončić 2+ threes,97.4,1.03,1.03,Sportsbet,0.3,Pass,Sportsbet 1.03,alt,Threes,,Luka Dončić,Threes,Over,1.5
+4,Alt threes,Jazz @ Mavericks,12:10,Kyrie Irving 1+ threes,97.3,1.03,1.03,Sportsbet,0.3,Pass,Sportsbet 1.03,alt,Threes,,Kyrie Irving,Threes,Over,0.5
+5,Alt threes,Raptors @ Bucks,12:10,Tyler Herro 1+ threes,97.3,1.03,1.03,Sportsbet,0.2,Pass,Sportsbet 1.03,alt,Threes,,Tyler Herro,Threes,Over,0.5
+6,Alt threes,Jazz @ Mavericks,12:10,Lauri Markkanen 1+ threes,96.4,1.04,1.04,Sportsbet,0.2,Pass,Sportsbet 1.04,alt,Threes,,Lauri Markkanen,Threes,Over,0.5
+7,Alt threes,Thunder @ Grizzlies,12:10,Ty Jerome 1+ threes,96.3,1.04,1.04,Sportsbet,0.2,Pass,Sportsbet 1.04,alt,Threes,,Ty Jerome,Threes,Over,0.5
+8,Alt threes,Raptors @ Bucks,12:10,Ja'Kobe Walter 1+ threes,96.2,1.04,1.04,Sportsbet,0.1,Pass,Sportsbet 1.04,alt,Threes,,Ja'Kobe Walter,Threes,Over,0.5
+9,Alt threes,76ers @ Cavaliers,11:40,Donovan Mitchell 1+ threes,95.8,1.04,1.05,Sportsbet,0.6,Pass,Sportsbet 1.05,alt,Threes,,Donovan Mitchell,Threes,Over,0.5
+10,Alt threes,Thunder @ Grizzlies,12:10,Shai Gilgeous-Alexander 1+ threes,95.7,1.04,1.05,Sportsbet,0.5,Pass,Sportsbet 1.05,alt,Threes,,Shai Gilgeous-Alexander,Threes,Over,0.5
+11,Alt threes,Blazers @ Lakers,14:10,Toumani Camara 1+ threes,95.7,1.04,1.05,Sportsbet,0.5,Pass,Sportsbet 1.05,alt,Threes,,Toumani Camara,Threes,Over,0.5
+12,Alt threes,Jazz @ Mavericks,12:10,Keyonte George 1+ threes,94.5,1.06,1.06,Sportsbet,0.1,Pass,Sportsbet 1.06,alt,Threes,,Keyonte George,Threes,Over,0.5
+13,Alt threes,76ers @ Cavaliers,11:40,James Harden 1+ threes,94.1,1.06,1.07,Sportsbet,0.7,Pass,Sportsbet 1.07,alt,Threes,,James Harden,Threes,Over,0.5
+14,Alt threes,Blazers @ Lakers,14:10,Austin Reaves 1+ threes,93.7,1.07,1.07,Sportsbet,0.3,Pass,Sportsbet 1.07,alt,Threes,,Austin Reaves,Threes,Over,0.5
+15,Alt threes,Thunder @ Grizzlies,12:10,Cameron Boozer 1+ threes,92.2,1.08,1.09,Sportsbet,0.4,Pass,Sportsbet 1.09,alt,Threes,,Cameron Boozer,Threes,Over,0.5
+16,Alt threes,Thunder @ Grizzlies,12:10,Jared McCain 1+ threes,92.2,1.08,1.08,Sportsbet,-0.4,Pass,Sportsbet 1.08,alt,Threes,,Jared McCain,Threes,Over,0.5
+17,Alt threes,Blazers @ Lakers,14:10,Jrue Holiday 1+ threes,92.1,1.09,1.09,Sportsbet,0.4,Pass,Sportsbet 1.09,alt,Threes,,Jrue Holiday,Threes,Over,0.5
+18,Alt threes,Raptors @ Bucks,12:10,RJ Barrett 1+ threes,91.8,1.09,1.09,Sportsbet,0.1,Pass,Sportsbet 1.09,alt,Threes,,RJ Barrett,Threes,Over,0.5
+19,Alt threes,Thunder @ Grizzlies,12:10,Cedric Coward 1+ threes,88.9,1.12,1.14,Sportsbet,1.4,Pass,Sportsbet 1.14,alt,Threes,,Cedric Coward,Threes,Over,0.5
+20,Moneyline,Spurs @ Kings,14:10,San Antonio Spurs ML,88.5,1.13,1.10,PointsBet,-2.7,Pass,PointsBet 1.10 · TAB 1.10 · Betr 1.09 · Sportsbet 1.07,game,Moneyline,San Antonio Spurs ML,,,,
+21,Alt threes,Thunder @ Grizzlies,12:10,Jaylen Wells 1+ threes,88.0,1.14,1.14,Sportsbet,0.3,Pass,Sportsbet 1.14,alt,Threes,,Jaylen Wells,Threes,Over,0.5
+22,Alt threes,Jazz @ Mavericks,12:10,Ace Bailey 1+ threes,88.0,1.14,1.13,Sportsbet,-0.6,Pass,Sportsbet 1.13,alt,Threes,,Ace Bailey,Threes,Over,0.5
+23,Alt threes,Jazz @ Mavericks,12:10,P.J. Washington 1+ threes,87.8,1.14,1.14,Sportsbet,0.1,Pass,Sportsbet 1.14,alt,Threes,,P.J. Washington,Threes,Over,0.5
+24,Alt threes,Blazers @ Lakers,14:10,Deni Avdija 1+ threes,87.0,1.15,1.15,Sportsbet,0.1,Pass,Sportsbet 1.15,alt,Threes,,Deni Avdija,Threes,Over,0.5
+25,Alt threes,Jazz @ Mavericks,12:10,Max Christie 1+ threes,85.6,1.17,1.16,Sportsbet,-0.7,Pass,Sportsbet 1.16,alt,Threes,,Max Christie,Threes,Over,0.5
+26,Alt threes,Raptors @ Bucks,12:10,Immanuel Quickley 2+ threes,84.8,1.18,1.17,Sportsbet,-0.8,Pass,Sportsbet 1.17,alt,Threes,,Immanuel Quickley,Threes,Over,1.5
+27,Alt threes,Thunder @ Grizzlies,12:10,Alex Caruso 1+ threes,84.5,1.18,1.18,Sportsbet,-0.3,Pass,Sportsbet 1.18,alt,Threes,,Alex Caruso,Threes,Over,0.5
+28,Alt threes,Blazers @ Lakers,14:10,Damian Lillard 2+ threes,84.5,1.18,1.17,Sportsbet,-1.1,Pass,Sportsbet 1.17,alt,Threes,,Damian Lillard,Threes,Over,1.5
+29,Alt threes,Jazz @ Mavericks,12:10,Kyrie Irving 2+ threes,83.6,1.2,1.19,Sportsbet,-0.5,Pass,Sportsbet 1.19,alt,Threes,,Kyrie Irving,Threes,Over,1.5
+30,Alt threes,Blazers @ Lakers,14:10,Scoot Henderson 1+ threes,83.5,1.2,1.18,Sportsbet,-1.4,Pass,Sportsbet 1.18,alt,Threes,,Scoot Henderson,Threes,Over,0.5
+31,Alt threes,Raptors @ Bucks,12:10,Myles Turner 1+ threes,83.5,1.2,1.17,Sportsbet,-2.3,Pass,Sportsbet 1.17,alt,Threes,,Myles Turner,Threes,Over,0.5
+32,Alt threes,Thunder @ Grizzlies,12:10,Kenrich Williams 1+ threes,83.0,1.2,1.19,Sportsbet,-1.2,Pass,Sportsbet 1.19,alt,Threes,,Kenrich Williams,Threes,Over,0.5
+33,Alt threes,Jazz @ Mavericks,12:10,Darryn Peterson 1+ threes,82.7,1.21,1.21,Sportsbet,0.1,Pass,Sportsbet 1.21,alt,Threes,,Darryn Peterson,Threes,Over,0.5
+34,Alt threes,Raptors @ Bucks,12:10,Tyler Herro 2+ threes,81.4,1.23,1.22,Sportsbet,-0.7,Pass,Sportsbet 1.22,alt,Threes,,Tyler Herro,Threes,Over,1.5
+35,Alt threes,Blazers @ Lakers,14:10,Matisse Thybulle 1+ threes,81.1,1.23,1.23,Sportsbet,-0.2,Pass,Sportsbet 1.23,alt,Threes,,Matisse Thybulle,Threes,Over,0.5
+36,Alt threes,Jazz @ Mavericks,12:10,Cooper Flagg 1+ threes,79.6,1.26,1.24,Sportsbet,-1.3,Pass,Sportsbet 1.24,alt,Threes,,Cooper Flagg,Threes,Over,0.5
+37,Alt threes,Jazz @ Mavericks,12:10,Lauri Markkanen 2+ threes,79.0,1.27,1.25,Sportsbet,-1.3,Pass,Sportsbet 1.25,alt,Threes,,Lauri Markkanen,Threes,Over,1.5
+38,Alt threes,Raptors @ Bucks,12:10,Brayden Burries 1+ threes,78.9,1.27,1.23,Sportsbet,-3.0,Pass,Sportsbet 1.23,alt,Threes,,Brayden Burries,Threes,Over,0.5
+39,Alt threes,76ers @ Cavaliers,11:40,Evan Mobley 1+ threes,77.0,1.3,1.33,Sportsbet,2.5,Pass,Sportsbet 1.33,alt,Threes,,Evan Mobley,Threes,Over,0.5
+40,Alt threes,Thunder @ Grizzlies,12:10,Ty Jerome 2+ threes,76.4,1.31,1.29,Sportsbet,-1.5,Pass,Sportsbet 1.29,alt,Threes,,Ty Jerome,Threes,Over,1.5
+41,Alt threes,Raptors @ Bucks,12:10,Kyle Kuzma 1+ threes,76.2,1.31,1.29,Sportsbet,-1.7,Pass,Sportsbet 1.29,alt,Threes,,Kyle Kuzma,Threes,Over,0.5
+42,Alt threes,Raptors @ Bucks,12:10,Jaime Jaquez Jr. 1+ threes,75.9,1.32,1.32,Sportsbet,0.2,Pass,Sportsbet 1.32,alt,Threes,,Jaime Jaquez Jr.,Threes,Over,0.5
+43,Alt threes,Raptors @ Bucks,12:10,Ja'Kobe Walter 2+ threes,75.9,1.32,1.29,Sportsbet,-2.1,Pass,Sportsbet 1.29,alt,Threes,,Ja'Kobe Walter,Threes,Over,1.5
+44,Alt threes,Raptors @ Bucks,12:10,Ryan Rollins 1+ threes,75.5,1.32,1.32,Sportsbet,-0.3,Pass,Sportsbet 1.32,alt,Threes,,Ryan Rollins,Threes,Over,0.5
+45,Alt threes,76ers @ Cavaliers,11:40,Donovan Mitchell 2+ threes,75.3,1.33,1.33,Sportsbet,0.2,Pass,Sportsbet 1.33,alt,Threes,,Donovan Mitchell,Threes,Over,1.5
+46,Alt threes,Blazers @ Lakers,14:10,Toumani Camara 2+ threes,75.3,1.33,1.32,Sportsbet,-0.6,Pass,Sportsbet 1.32,alt,Threes,,Toumani Camara,Threes,Over,1.5
+47,Alt threes,Blazers @ Lakers,14:10,Ziaire Williams 1+ threes,75.1,1.33,1.33,Sportsbet,-0.2,Pass,Sportsbet 1.33,alt,Threes,,Ziaire Williams,Threes,Over,0.5
+48,Alt threes,Thunder @ Grizzlies,12:10,Ajay Mitchell 1+ threes,74.4,1.34,1.32,Sportsbet,-1.9,Pass,Sportsbet 1.32,alt,Threes,,Ajay Mitchell,Threes,Over,0.5
+49,Moneyline,Celtics @ Hornets,11:10,Boston Celtics ML,73.4,1.36,1.31,Sportsbet,-3.8,Pass,Sportsbet 1.31 · Betr 1.30 · TAB 1.30 · PointsBet 1.29,game,Moneyline,Boston Celtics ML,,,,
+50,Alt threes,Thunder @ Grizzlies,12:10,Shai Gilgeous-Alexander 2+ threes,73.1,1.37,1.36,Sportsbet,-0.5,Pass,Sportsbet 1.36,alt,Threes,,Shai Gilgeous-Alexander,Threes,Over,1.5
+51,Alt threes,Jazz @ Mavericks,12:10,Keyonte George 2+ threes,71.6,1.4,1.36,Sportsbet,-2.6,Pass,Sportsbet 1.36,alt,Threes,,Keyonte George,Threes,Over,1.5
+52,Alt threes,76ers @ Cavaliers,11:40,James Harden 2+ threes,70.2,1.42,1.42,Sportsbet,-0.3,Pass,Sportsbet 1.42,alt,Threes,,James Harden,Threes,Over,1.5
+53,Moneyline,Jazz @ Mavericks,12:10,Dallas Mavericks ML,70.1,1.43,1.39,Sportsbet,-2.6,Pass,Sportsbet 1.39 · TAB 1.39 · Betr 1.37 · PointsBet 1.36,game,Moneyline,Dallas Mavericks ML,,,,
+54,Moneyline,Raptors @ Bucks,12:10,Toronto Raptors ML,69.3,1.44,1.40,PointsBet,-3.0,Pass,PointsBet 1.40 · TAB 1.39 · Sportsbet 1.36 · Betr 1.35,game,Moneyline,Toronto Raptors ML,,,,
+55,Alt threes,Raptors @ Bucks,12:10,Scottie Barnes 1+ threes,68.5,1.46,1.42,Sportsbet,-2.8,Pass,Sportsbet 1.42,alt,Threes,,Scottie Barnes,Threes,Over,0.5
+56,Alt threes,Blazers @ Lakers,14:10,Austin Reaves 2+ threes,67.8,1.47,1.44,Sportsbet,-2.4,Pass,Sportsbet 1.44,alt,Threes,,Austin Reaves,Threes,Over,1.5
+57,Alt threes,Blazers @ Lakers,14:10,Sandro Mamukelashvili 1+ threes,66.6,1.5,1.42,Sportsbet,-5.5,Pass,Sportsbet 1.42,alt,Threes,,Sandro Mamukelashvili,Threes,Over,0.5
+58,Alt threes,Blazers @ Lakers,14:10,Quentin Grimes 1+ threes,66.2,1.51,1.47,Sportsbet,-2.7,Pass,Sportsbet 1.47,alt,Threes,,Quentin Grimes,Threes,Over,0.5
+59,Alt threes,Thunder @ Grizzlies,12:10,Jared McCain 2+ threes,65.1,1.54,1.45,Sportsbet,-5.5,Pass,Sportsbet 1.45,alt,Threes,,Jared McCain,Threes,Over,1.5
+60,Alt threes,Thunder @ Grizzlies,12:10,Cameron Boozer 2+ threes,64.2,1.56,1.52,Sportsbet,-2.4,Pass,Sportsbet 1.52,alt,Threes,,Cameron Boozer,Threes,Over,1.5
+61,Alt threes,Blazers @ Lakers,14:10,Donovan Clingan 1+ threes,63.9,1.56,1.48,Sportsbet,-5.4,Pass,Sportsbet 1.48,alt,Threes,,Donovan Clingan,Threes,Over,0.5
+62,Alt threes,Blazers @ Lakers,14:10,Jrue Holiday 2+ threes,63.6,1.57,1.53,Sportsbet,-2.6,Pass,Sportsbet 1.53,alt,Threes,,Jrue Holiday,Threes,Over,1.5
+63,Alt threes,Raptors @ Bucks,12:10,RJ Barrett 2+ threes,63.3,1.58,1.52,Sportsbet,-3.8,Pass,Sportsbet 1.52,alt,Threes,,RJ Barrett,Threes,Over,1.5
+64,Moneyline,Timberwolves @ Pelicans,12:10,Minnesota Timberwolves ML,61.1,1.64,1.59,Sportsbet,-2.8,Pass,Sportsbet 1.59 · PointsBet 1.59 · TAB 1.58 · Betr 1.56,game,Moneyline,Minnesota Timberwolves ML,,,,
+65,Alt threes,Thunder @ Grizzlies,12:10,Cedric Coward 2+ threes,58.0,1.72,1.71,Sportsbet,-0.8,Pass,Sportsbet 1.71,alt,Threes,,Cedric Coward,Threes,Over,1.5
+66,Moneyline,Blazers @ Lakers,14:10,Los Angeles Lakers ML,57.5,1.74,1.70,TAB,-2.2,Pass,TAB 1.70 · Sportsbet 1.69 · PointsBet 1.69 · Betr 1.67,game,Moneyline,Los Angeles Lakers ML,,,,
+67,Total,Celtics @ Hornets,11:10,Celtics @ Hornets Over 210.5,56.6,1.77,1.90,Sportsbet,7.5,Check news,Sportsbet 1.90 · Betr 1.90 · PointsBet 1.90 · TAB 1.90,game,Total,Over 210.5,,,,
+68,Moneyline,76ers @ Cavaliers,11:40,Philadelphia 76ers ML,55.7,1.8,1.74,PointsBet,-3.1,Pass,PointsBet 1.74 · Betr 1.73 · Sportsbet 1.71 · TAB 1.67,game,Moneyline,Philadelphia 76ers ML,,,,
+69,Alt threes,Thunder @ Grizzlies,12:10,Jaylen Wells 2+ threes,55.6,1.8,1.72,Sportsbet,-4.4,Pass,Sportsbet 1.72,alt,Threes,,Jaylen Wells,Threes,Over,1.5
+70,Moneyline,Thunder @ Grizzlies,12:10,Oklahoma City Thunder ML,55.5,1.8,1.63,PointsBet,-9.6,Pass,PointsBet 1.63 · TAB 1.62 · Betr 1.60 · Sportsbet 1.57,game,Moneyline,Oklahoma City Thunder ML,,,,
+71,Line,Spurs @ Kings,14:10,San Antonio Spurs -14.5,55.3,1.81,1.87,PointsBet,3.4,Bet,"PointsBet 1.87 (other lines: -15.5 Betr, -15.5 Sportsbet)",game,Spread,San Antonio Spurs -14.5,,,,
+72,Alt threes,Jazz @ Mavericks,12:10,Ace Bailey 2+ threes,54.5,1.83,1.7,Sportsbet,-7.3,Pass,Sportsbet 1.70,alt,Threes,,Ace Bailey,Threes,Over,1.5
+73,Total,76ers @ Cavaliers,11:40,76ers @ Cavaliers Under 229.5,53.9,1.86,1.86,Betr,0.2,Pass,"Betr 1.86 · TAB 1.85 (other lines: 228.5 PointsBet, 228.5 Sportsbet)",game,Total,Under 229.5,,,,
+74,Line,Thunder @ Grizzlies,12:10,Memphis Grizzlies +3.5,53.5,1.87,1.96,Sportsbet,4.9,Bet,Sportsbet 1.96 · Betr 1.92 · PointsBet 1.90 · TAB 1.90,game,Spread,Memphis Grizzlies +3.5,,,,
+75,Alt threes,Jazz @ Mavericks,12:10,P.J. Washington 2+ threes,53.3,1.88,1.78,Sportsbet,-5.1,Pass,Sportsbet 1.78,alt,Threes,,P.J. Washington,Threes,Over,1.5
+76,Line,Jazz @ Mavericks,12:10,Dallas Mavericks -6.5,52.8,1.89,1.85,Sportsbet,-2.3,Pass,Sportsbet 1.85 · PointsBet 1.83 (other lines: -7.5 Betr),game,Spread,Dallas Mavericks -6.5,,,,
+77,Total,Timberwolves @ Pelicans,12:10,Timberwolves @ Pelicans Under 229.5,52.2,1.92,1.89,Betr,-1.3,Pass,Betr 1.89 · Sportsbet 1.87 · TAB 1.85 (other lines: 228.5 PointsBet),game,Total,Under 229.5,,,,
+78,Alt threes,Blazers @ Lakers,14:10,Deni Avdija 2+ threes,52.0,1.92,1.82,Sportsbet,-5.4,Pass,Sportsbet 1.82,alt,Threes,,Deni Avdija,Threes,Over,1.5
+79,Total,Spurs @ Kings,14:10,Spurs @ Kings Under 229.5,51.9,1.93,1.90,Sportsbet,-1.4,Pass,Sportsbet 1.90 · PointsBet 1.90 · TAB 1.90 · Betr 1.85,game,Total,Under 229.5,,,,
+80,Line,Raptors @ Bucks,12:10,Toronto Raptors -6.5,51.9,1.93,1.87,PointsBet,-2.9,Pass,"PointsBet 1.87 (other lines: -7.5 Betr, -7.5 Sportsbet)",game,Spread,Toronto Raptors -6.5,,,,
+81,Total,Thunder @ Grizzlies,12:10,Thunder @ Grizzlies Over 224.5,51.9,1.93,1.87,PointsBet,-3.0,Pass,"PointsBet 1.87 · Sportsbet 1.83 (other lines: 225.5 TAB, 226.5 Betr)",game,Total,Over 224.5,,,,
+82,Total,Raptors @ Bucks,12:10,Raptors @ Bucks Under 231.5,51.6,1.94,1.89,Sportsbet,-2.4,Pass,"Sportsbet 1.89 (other lines: 230.5 Betr, 230.5 PointsBet, 230.5 TAB)",game,Total,Under 231.5,,,,
+83,Line,Blazers @ Lakers,14:10,Los Angeles Lakers -2.5,51.5,1.94,1.90,TAB,-2.1,Pass,TAB 1.90 · Sportsbet 1.88 · Betr 1.88 · PointsBet 1.87,game,Spread,Los Angeles Lakers -2.5,,,,
+84,Total,Blazers @ Lakers,14:10,Blazers @ Lakers Over 232.5,51.5,1.94,1.90,PointsBet,-2.2,Pass,"PointsBet 1.90 · Betr 1.85 (other lines: 233.5 Sportsbet, 233.5 TAB)",game,Total,Over 232.5,,,,
+85,Line,Raptors @ Bucks,12:10,Milwaukee Bucks +7.5,51.1,1.96,1.85,Sportsbet,-5.5,Pass,Sportsbet 1.85 · Betr 1.84 (other lines: +6.5 PointsBet),game,Spread,Milwaukee Bucks +7.5,,,,
+86,Line,Celtics @ Hornets,11:10,Boston Celtics -8.5,50.8,1.97,1.95,Sportsbet,-1.0,Pass,Sportsbet 1.95 · PointsBet 1.95 · Betr 1.90 · TAB 1.90,game,Spread,Boston Celtics -8.5,,,,
+87,Line,Timberwolves @ Pelicans,12:10,New Orleans Pelicans +4.5,50.8,1.97,1.90,PointsBet,-3.6,Pass,PointsBet 1.90 · TAB 1.90 · Sportsbet 1.88 · Betr 1.88,game,Spread,New Orleans Pelicans +4.5,,,,
+88,Total,Blazers @ Lakers,14:10,Blazers @ Lakers Under 233.5,50.7,1.97,1.86,Sportsbet,-5.6,Pass,"Sportsbet 1.86 · TAB 1.85 (other lines: 232.5 Betr, 232.5 PointsBet)",game,Total,Under 233.5,,,,
+89,Total,Raptors @ Bucks,12:10,Raptors @ Bucks Over 230.5,50.6,1.98,1.90,PointsBet,-3.9,Pass,PointsBet 1.90 · TAB 1.90 · Betr 1.84 (other lines: 231.5 Sportsbet),game,Total,Over 230.5,,,,
+90,Total,Thunder @ Grizzlies,12:10,Thunder @ Grizzlies Under 225.5,50.4,1.98,1.95,TAB,-1.8,Pass,"TAB 1.95 (other lines: 224.5 PointsBet, 224.5 Sportsbet, 226.5 Betr)",game,Total,Under 225.5,,,,
+91,Line,76ers @ Cavaliers,11:40,Cleveland Cavaliers +2.5,50.3,1.99,1.90,Betr,-4.4,Pass,Betr 1.90 · PointsBet 1.90 · Sportsbet 1.85,game,Spread,Cleveland Cavaliers +2.5,,,,
+92,Total,Jazz @ Mavericks,12:10,Jazz @ Mavericks Under 226.5,50.2,1.99,1.95,PointsBet,-2.1,Pass,PointsBet 1.95 · TAB 1.95 · Sportsbet 1.93 (other lines: 227.5 Betr),game,Total,Under 226.5,,,,
+93,Total,Timberwolves @ Pelicans,12:10,Timberwolves @ Pelicans Over 228.5,50.0,2.0,1.87,PointsBet,-6.5,Pass,"PointsBet 1.87 (other lines: 229.5 Betr, 229.5 Sportsbet, 229.5 TAB)",game,Total,Over 228.5,,,,
+94,Total,Jazz @ Mavericks,12:10,Jazz @ Mavericks Over 226.5,49.8,2.01,1.87,Sportsbet,-6.9,Pass,Sportsbet 1.87 · PointsBet 1.87 · TAB 1.85 (other lines: 227.5 Betr),game,Total,Over 226.5,,,,
+95,Line,76ers @ Cavaliers,11:40,Philadelphia 76ers -2.5,49.7,2.01,1.95,Sportsbet,-3.1,Pass,Sportsbet 1.95 · PointsBet 1.90 · Betr 1.87,game,Spread,Philadelphia 76ers -2.5,,,,
+96,Line,Timberwolves @ Pelicans,12:10,Minnesota Timberwolves -4.5,49.2,2.03,1.92,Sportsbet,-5.5,Pass,Sportsbet 1.92 · PointsBet 1.90 · TAB 1.90 · Betr 1.89,game,Spread,Minnesota Timberwolves -4.5,,,,
+97,Line,Celtics @ Hornets,11:10,Charlotte Hornets +8.5,49.2,2.03,1.90,TAB,-6.5,Pass,TAB 1.90 · Betr 1.87 · PointsBet 1.87 · Sportsbet 1.85,game,Spread,Charlotte Hornets +8.5,,,,
+98,Alt threes,Thunder @ Grizzlies,12:10,Alex Caruso 2+ threes,48.9,2.04,1.9,Sportsbet,-7.1,Pass,Sportsbet 1.90,alt,Threes,,Alex Caruso,Threes,Over,1.5
+99,Alt threes,Jazz @ Mavericks,12:10,Max Christie 2+ threes,48.9,2.04,1.88,Sportsbet,-8.1,Pass,Sportsbet 1.88,alt,Threes,,Max Christie,Threes,Over,1.5
+100,Line,Blazers @ Lakers,14:10,Portland Trail Blazers +2.5,48.5,2.06,1.95,PointsBet,-5.5,Pass,PointsBet 1.95 · Sportsbet 1.92 · TAB 1.90 · Betr 1.89,game,Spread,Portland Trail Blazers +2.5,,,,
+101,Total,76ers @ Cavaliers,11:40,76ers @ Cavaliers Over 228.5,48.4,2.07,1.90,Sportsbet,-8.1,Pass,"Sportsbet 1.90 · PointsBet 1.90 (other lines: 229.5 Betr, 229.5 TAB)",game,Total,Over 228.5,,,,
+102,Total,Spurs @ Kings,14:10,Spurs @ Kings Over 229.5,48.1,2.08,1.92,Betr,-7.6,Pass,Betr 1.92 · Sportsbet 1.90 · PointsBet 1.90 · TAB 1.90,game,Total,Over 229.5,,,,
+103,Line,Spurs @ Kings,14:10,Sacramento Kings +15.5,47.7,2.1,1.88,Sportsbet,-10.4,Pass,Sportsbet 1.88 · Betr 1.85 (other lines: +14.5 PointsBet),game,Spread,Sacramento Kings +15.5,,,,
+104,Line,Jazz @ Mavericks,12:10,Utah Jazz +6.5,47.2,2.12,2.00,PointsBet,-5.7,Pass,PointsBet 2.00 · Sportsbet 1.95 (other lines: +7.5 Betr),game,Spread,Utah Jazz +6.5,,,,
+105,Line,Thunder @ Grizzlies,12:10,Oklahoma City Thunder -3.5,46.5,2.15,1.90,PointsBet,-11.7,Pass,PointsBet 1.90 · TAB 1.90 · Betr 1.85 · Sportsbet 1.84,game,Spread,Oklahoma City Thunder -3.5,,,,
+106,Alt threes,Raptors @ Bucks,12:10,Myles Turner 2+ threes,46.2,2.16,1.88,Sportsbet,-13.2,Pass,Sportsbet 1.88,alt,Threes,,Myles Turner,Threes,Over,1.5
+107,Alt threes,Thunder @ Grizzlies,12:10,Kenrich Williams 2+ threes,45.7,2.19,1.97,Sportsbet,-10.0,Pass,Sportsbet 1.97,alt,Threes,,Kenrich Williams,Threes,Over,1.5
+108,Alt threes,Blazers @ Lakers,14:10,Scoot Henderson 2+ threes,45.6,2.19,1.96,Sportsbet,-10.7,Pass,Sportsbet 1.96,alt,Threes,,Scoot Henderson,Threes,Over,1.5
+109,Alt threes,Jazz @ Mavericks,12:10,Darryn Peterson 2+ threes,45.0,2.22,2.08,Sportsbet,-6.4,Pass,Sportsbet 2.08,alt,Threes,,Darryn Peterson,Threes,Over,1.5
+110,Moneyline,Thunder @ Grizzlies,12:10,Memphis Grizzlies ML,44.5,2.25,2.47,Sportsbet,10.0,Bet,Sportsbet 2.47 · Betr 2.40 · PointsBet 2.35 · TAB 2.35,game,Moneyline,Memphis Grizzlies ML,,,,
+111,Moneyline,76ers @ Cavaliers,11:40,Cleveland Cavaliers ML,44.3,2.26,2.25,TAB,-0.2,Pass,TAB 2.25 · Sportsbet 2.19 · Betr 2.15 · PointsBet 2.15,game,Moneyline,Cleveland Cavaliers ML,,,,
+112,Alt threes,Blazers @ Lakers,14:10,Matisse Thybulle 2+ threes,43.7,2.29,2.12,Sportsbet,-7.4,Pass,Sportsbet 2.12,alt,Threes,,Matisse Thybulle,Threes,Over,1.5
+113,Total,Celtics @ Hornets,11:10,Celtics @ Hornets Under 210.5,43.4,2.3,1.90,Sportsbet,-17.5,Pass,Sportsbet 1.90 · PointsBet 1.90 · TAB 1.90 · Betr 1.87,game,Total,Under 210.5,,,,
+114,Moneyline,Blazers @ Lakers,14:10,Portland Trail Blazers ML,42.5,2.35,2.25,Betr,-4.4,Pass,Betr 2.25 · PointsBet 2.25 · Sportsbet 2.22 · TAB 2.20,game,Moneyline,Portland Trail Blazers ML,,,,
+115,Alt threes,Jazz @ Mavericks,12:10,Cooper Flagg 2+ threes,40.7,2.46,2.2,Sportsbet,-10.5,Pass,Sportsbet 2.20,alt,Threes,,Cooper Flagg,Threes,Over,1.5
+116,Moneyline,Timberwolves @ Pelicans,12:10,New Orleans Pelicans ML,38.9,2.57,2.50,Betr,-2.8,Pass,Betr 2.50 · TAB 2.45 · Sportsbet 2.44 · PointsBet 2.40,game,Moneyline,New Orleans Pelicans ML,,,,
+117,Alt threes,Raptors @ Bucks,12:10,Brayden Burries 2+ threes,38.8,2.58,2.18,Sportsbet,-15.4,Pass,Sportsbet 2.18,alt,Threes,,Brayden Burries,Threes,Over,1.5
+118,Alt threes,Blazers @ Lakers,14:10,Ziaire Williams 2+ threes,38.2,2.62,2.4,Sportsbet,-8.3,Pass,Sportsbet 2.40,alt,Threes,,Ziaire Williams,Threes,Over,1.5
+119,Alt threes,76ers @ Cavaliers,11:40,Evan Mobley 2+ threes,37.0,2.7,2.65,Sportsbet,-2.0,Pass,Sportsbet 2.65,alt,Threes,,Evan Mobley,Threes,Over,1.5
+120,Alt threes,Raptors @ Bucks,12:10,Jaime Jaquez Jr. 2+ threes,37.0,2.7,2.5,Sportsbet,-7.5,Pass,Sportsbet 2.50,alt,Threes,,Jaime Jaquez Jr.,Threes,Over,1.5
+121,Alt threes,Raptors @ Bucks,12:10,Kyle Kuzma 2+ threes,36.8,2.72,2.4,Sportsbet,-11.8,Pass,Sportsbet 2.40,alt,Threes,,Kyle Kuzma,Threes,Over,1.5
+122,Alt threes,Raptors @ Bucks,12:10,Ryan Rollins 2+ threes,36.5,2.74,2.5,Sportsbet,-8.7,Pass,Sportsbet 2.50,alt,Threes,,Ryan Rollins,Threes,Over,1.5
+123,Alt threes,Thunder @ Grizzlies,12:10,Ajay Mitchell 2+ threes,35.8,2.79,2.45,Sportsbet,-12.2,Pass,Sportsbet 2.45,alt,Threes,,Ajay Mitchell,Threes,Over,1.5
+124,Moneyline,Raptors @ Bucks,12:10,Milwaukee Bucks ML,30.7,3.26,3.30,Betr,1.5,Pass,Betr 3.30 · Sportsbet 3.28 · PointsBet 3.10 · TAB 3.10,game,Moneyline,Milwaukee Bucks ML,,,,
+125,Moneyline,Jazz @ Mavericks,12:10,Utah Jazz ML,29.9,3.34,3.30,PointsBet,-1.2,Pass,PointsBet 3.30 · Betr 3.20 · Sportsbet 3.13 · TAB 3.10,game,Moneyline,Utah Jazz ML,,,,
+126,Alt threes,Raptors @ Bucks,12:10,Scottie Barnes 2+ threes,28.0,3.57,3.05,Sportsbet,-14.7,Pass,Sportsbet 3.05,alt,Threes,,Scottie Barnes,Threes,Over,1.5
+127,Moneyline,Celtics @ Hornets,11:10,Charlotte Hornets ML,26.6,3.76,3.70,TAB,-1.7,Pass,TAB 3.70 · Betr 3.65 · Sportsbet 3.60 · PointsBet 3.60,game,Moneyline,Charlotte Hornets ML,,,,
+128,Alt threes,Blazers @ Lakers,14:10,Sandro Mamukelashvili 2+ threes,26.5,3.77,3.0,Sportsbet,-20.5,Pass,Sportsbet 3.00,alt,Threes,,Sandro Mamukelashvili,Threes,Over,1.5
+129,Alt threes,Blazers @ Lakers,14:10,Quentin Grimes 2+ threes,26.3,3.8,3.25,Sportsbet,-14.5,Pass,Sportsbet 3.25,alt,Threes,,Quentin Grimes,Threes,Over,1.5
+130,Alt threes,Blazers @ Lakers,14:10,Donovan Clingan 2+ threes,25.0,4.0,3.2,Sportsbet,-20.0,Pass,Sportsbet 3.20,alt,Threes,,Donovan Clingan,Threes,Over,1.5
+131,Moneyline,Spurs @ Kings,14:10,Sacramento Kings ML,11.5,8.7,9.30,Sportsbet,7.3,Pass,Sportsbet 9.30 · Betr 8.00 · PointsBet 7.50 · TAB 7.50,game,Moneyline,Sacramento Kings ML,,,,

@@ -39,7 +39,7 @@
 <script>
 /* Minimal stand-in for the Claude dashboard runtime: loads data/<name>.csv and runs the same page code. */
 window.dash = (() => {
-  const FILES = ['best', 'history', 'meta', 'bets', 'props', 'alts', 'chances', 'games', 'teams', 'injuries', 'matchups', 'usage', 'usage_fit', 'firstbasket', 'sgm', 'combos', 'stackers', 'lineup_news', 'best_next', 'meta_next', 'props_next', 'alts_next', 'chances_next', 'games_next', 'bets_next', 'teams_next', 'injuries_next', 'matchups_next', 'usage_next', 'usage_fit_next', 'firstbasket_next', 'sgm_next', 'combos_next', 'stackers_next', 'nfl_meta', 'nfl_games', 'nfl_props', 'nfl_best', 'nfl_injuries', 'nfl_history', 'nfl_firsttd'];
+  const FILES = ['best', 'history', 'tracking', 'meta', 'bets', 'props', 'alts', 'chances', 'games', 'teams', 'injuries', 'matchups', 'usage', 'usage_fit', 'firstbasket', 'sgm', 'combos', 'stackers', 'lineup_news', 'best_next', 'meta_next', 'props_next', 'alts_next', 'chances_next', 'games_next', 'bets_next', 'teams_next', 'injuries_next', 'matchups_next', 'usage_next', 'usage_fit_next', 'firstbasket_next', 'sgm_next', 'combos_next', 'stackers_next', 'nfl_meta', 'nfl_games', 'nfl_props', 'nfl_best', 'nfl_injuries', 'nfl_history', 'nfl_firsttd'];
   const D = {}, calcs = {}, subs = [];
   let queued = false;
   const fire = () => { if (queued) return; queued = true; requestAnimationFrame(() => { queued = false; subs.forEach(fn => { try { fn(); } catch (e) { console.error(e); } }); }); };
@@ -89,6 +89,7 @@ window.dash = (() => {
   .mb-table td { padding: var(--cds-pad-xs) var(--cds-pad-sm); border-bottom: 1px solid var(--color-border-line); vertical-align: top; }
   .mb-table td.num, .mb-table th.num { text-align: right; }
   .mb-table td.why { color: var(--color-fg-muted); min-width: 18rem; }
+  .mb-table .st-why { color: var(--color-fg-muted); font-size: .78em; white-space: nowrap; }
   .mb-table td.nw { white-space: nowrap; }
   #news[hidden] { display: none; }
   .cp-daybar { margin: 0 28px; padding: 10px 14px; border-radius: 8px; background: rgba(91,140,255,.12); color: #F2F2F5; font-size: .95rem; }
@@ -687,7 +688,7 @@ window.dash = (() => {
   <div class="cp-dsw" role="group" aria-label="Which day" hidden><button type="button" data-day="cur" aria-pressed="true">Today</button><button type="button" data-day="next" aria-pressed="false">Tomorrow</button></div>
   <section class="mb-sec" id="bets">
     <h2 class="mb-h2">Today's 20 best-priced bets</h2>
-    <p class="mb-note">Ranked by expected value. Every side is priced at Sportsbet, TAB, Ladbrokes, PointsBet and Betr, and the best one is shown with its bookie. <b>Bet</b> means EV ≥ 3% and either the model's win chance is ≥ 2 points above the fair price, or the bookie's price alone beats the bookie-consensus fair value by ≥ 3%. The fair price is the average of every bookie's price with its margin removed, moved to each bookie's line. TAB's whole-number lines can push, so they are not compared. Stakes are in units, 1u = 1% of bankroll (quarter-Kelly, capped at 2u).</p>
+    <p class="mb-note">Ranked by expected value. Every side is priced at Sportsbet, TAB, Ladbrokes, PointsBet and Betr, and the best one is shown with its bookie. <b>Bet</b> means EV ≥ 3% and either the model's win chance is ≥ 2 points above the fair price, or the bookie's price alone beats the bookie-consensus fair value by ≥ 3%. The fair price is the average of every bookie's price with its margin removed, moved to each bookie's line. TAB's whole-number lines can push, so they are not compared. Stake is the real stake: what was actually logged for this pick (units, 1u = 1% of bankroll), or 0 with the reason it isn't a bet - tracked only, not on the card (the card checks it against the bookies' price and takes one bet per category), another line on that player is the bet, or check the news first.</p>
     <div class="mb-card">
       <div class="mb-filters">
         <label for="b-book" class="mb-note">Bookie</label><select id="b-book" class="mb-input book-filter"><option value="">Best price anywhere</option></select>
@@ -1020,6 +1021,39 @@ window.dash = (() => {
     });
   }
   const pill = (map) => (td, v) => { const s = document.createElement('span'); s.className = 'pill ' + (map[v] || ''); s.textContent = v; td.appendChild(s); };
+  // Explore shows the REAL stake (7 Nov 2026, Andrew): what the ledger logged for this pick on the board's day, or 0 with
+  // the reason it isn't a bet. The model's raw quarter-Kelly size is no longer shown there.
+  let RS = { k: '' };
+  const rsKey = (pl, st, sd, ln) => [String(pl || '').toLowerCase(), st, String(sd || '').toLowerCase(), (+ln).toFixed(1)].join('|');
+  function realIdx() {
+    const d = myDate(), H = dash.data('history'), T = dash.data('tracking');
+    const rows = [].concat(H && H.status === 'ok' ? H.data : [], T && T.status === 'ok' ? T.data : []).filter(h => h.date === d);
+    const k = d + ':' + rows.length;
+    if (RS.k === k) return RS;
+    RS = { k, prop: {}, ps: {}, game: [] };
+    rows.forEach(h => {
+      const st = Number(h.stake_u) || 0;
+      if (h.kind === 'prop' || (h.player && h.stat && h.line !== '')) {
+        RS.prop[rsKey(h.player, h.stat, h.side, h.line)] = { st };
+        if (st > 0) RS.ps[String(h.player || '').toLowerCase() + '|' + h.stat] = 1;
+      } else if (['spread', 'total', 'ml'].includes(h.kind)) {
+        RS.game.push({ game: h.game, pick: String(h.pick || '').split(' [')[0].trim(), st });
+      }
+    });
+    return RS;
+  }
+  const stakeCell = kind => (td, v, r) => {
+    const I = realIdx(); let hit = null, why = '';
+    if (kind === 'game') hit = I.game.find(h => h.game === r.game && r.bet && h.pick.endsWith(r.bet));
+    else hit = I.prop[rsKey(r.player, r.stat, r.side, r.line)];
+    if (hit) { td.textContent = String(+hit.st.toFixed(2)); if (!(hit.st > 0)) why = 'tracked 0u'; }
+    else {
+      td.textContent = '0';
+      if (r.verdict === 'Bet') why = r.market === 'Moneyline' ? 'ML tracked only' : (kind !== 'game' && I.ps[String(r.player || '').toLowerCase() + '|' + r.stat]) ? 'other line bet' : 'not on card';
+      else if (/^Check/.test(r.verdict || '')) why = 'check news';
+    }
+    if (why) { const s = document.createElement('span'); s.className = 'st-why'; s.textContent = ' · ' + why; td.appendChild(s); }
+  };
   const statusPill = pill({ 'Day-To-Day': 'dtd', 'Out': 'out' });
   const statusCell = (td, v) => { if (v === 'Available') { td.textContent = v; td.className += ' pos'; } else statusPill(td, v); };
   const signed = (td, v) => { const n = Number(v); td.textContent = v; td.classList.add(n >= 3 ? 'good' : n <= -3 ? 'bad' : 'pos'); };
@@ -1082,7 +1116,7 @@ window.dash = (() => {
       fillTable(bt, brows, [
         { f: 'rank', cls: 'num' }, { f: 'verdict', render: pill({ 'Bet': 'bet', 'Check news': 'check', 'Pass': 'pass' }) },
         { f: 'game' }, { f: 'bet' }, { f: 'odds', cls: 'num' }, { f: 'book' }, { f: 'model_prob', cls: 'num' }, { f: 'market_prob', cls: 'num' },
-        { f: 'ev_pct', cls: 'num' }, { f: 'stake_pct', cls: 'num' }, { f: 'reason', cls: 'why' }, { f: 'all_odds', cls: 'why' }
+        { f: 'ev_pct', cls: 'num' }, { f: 'stake_pct', cls: 'num', render: stakeCell('game') }, { f: 'reason', cls: 'why' }, { f: 'all_odds', cls: 'why' }
       ], 'rank', r => r.verdict === 'Pass' ? 'pass' : '');
     } else if (B.status === 'error') { bt.innerHTML = '<tr><td colspan="12"><div class="mb-fail">Failed to load</div></td></tr>'; }
 
@@ -1839,7 +1873,7 @@ window.dash = (() => {
       { f: 'rank', cls: 'num' }, { f: 'verdict', render: pill({ 'Bet': 'bet', 'Check status': 'check', 'Check news': 'check', 'Pass': 'pass' }) },
       { f: 'player' }, { f: 'team' }, { f: 'opp', cls: 'pos' }, { f: 'stat' }, { f: 'side' }, { f: 'line', cls: 'num' }, { f: 'odds', cls: 'num' }, { f: 'book' },
       { f: 'proj', cls: 'num' }, { f: 'minutes', cls: 'num' }, { f: 'model_prob', cls: 'num' }, { f: 'market_prob', cls: 'num' },
-      { f: 'ev_pct', cls: 'num' }, { f: 'stake_pct', cls: 'num' }, { f: 'reason', cls: 'why' }, { f: 'history', cls: 'why' }, { f: 'all_odds', cls: 'why' }
+      { f: 'ev_pct', cls: 'num' }, { f: 'stake_pct', cls: 'num', render: stakeCell('prop') }, { f: 'reason', cls: 'why' }, { f: 'history', cls: 'why' }, { f: 'all_odds', cls: 'why' }
     ];
     // one table per prop type, each under its own heading
     const groups = $('#props-groups'), jump = $('#pp-jump'), tpl = $('#props-table');
@@ -1879,7 +1913,7 @@ window.dash = (() => {
     fillTable(tb, rows, [
       { f: 'verdict', render: pill({ 'Bet': 'bet', 'Check status': 'check', 'Check news': 'check', 'Pass': 'pass' }) },
       { f: 'player' }, { f: 'team' }, { f: 'opp', cls: 'pos' }, { f: 'stat' }, { f: 'target' }, { f: 'odds', cls: 'num' }, { f: 'book' },
-      { f: 'fair_odds', cls: 'num' }, { f: 'fair_prob', cls: 'num' }, { f: 'ev_pct', cls: 'num' }, { f: 'stake_pct', cls: 'num' },
+      { f: 'fair_odds', cls: 'num' }, { f: 'fair_prob', cls: 'num' }, { f: 'ev_pct', cls: 'num' }, { f: 'stake_pct', cls: 'num', render: stakeCell('prop') },
       { f: 'main_line', cls: 'num' }, { f: 'implied_mean', cls: 'num' }, { f: 'proj', cls: 'num' },
       { f: 'history', cls: 'why' }, { f: 'reason', cls: 'why' }, { f: 'all_odds', cls: 'why' }
     ], 'rid', r => r.verdict === 'Pass' ? 'pass' : '');

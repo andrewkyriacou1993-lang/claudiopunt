@@ -112,6 +112,7 @@ window.dash = (() => {
   .pill.bet { color: var(--color-ok); }
   .pill.check { color: var(--color-warn); }
   .pill.pass { color: var(--color-fg-muted); }
+  .pill.lean { color: var(--color-fg-muted); font-style: italic; }
   .pill.dtd { color: var(--color-warn); }
   .pill.out { color: var(--color-bad); }
   .pos { color: var(--color-fg-muted); }
@@ -1054,6 +1055,14 @@ window.dash = (() => {
     }
     if (why) { const s = document.createElement('span'); s.className = 'st-why'; s.textContent = ' · ' + why; td.appendChild(s); }
   };
+  // "Bet" only when there is a real stake (7 Nov 2026, Andrew); the model's own "Bet" that the card didn't stake shows as
+  // "Model likes" (or "Tracked" when it was logged at 0u)
+  const realOf = (kind, r) => { const I = realIdx(); const h = kind === 'game' ? I.game.find(x => x.game === r.game && r.bet && x.pick.endsWith(r.bet)) : I.prop[rsKey(r.player, r.stat, r.side, r.line)]; return h ? h.st : null; };
+  const verdictCell = (kind, map) => (td, v, r) => {
+    let lab = v;
+    if (v === 'Bet') { const st = realOf(kind, r); lab = st > 0 ? 'Bet' : st === 0 ? 'Tracked' : 'Model likes'; }
+    pill(Object.assign({ 'Model likes': 'lean', 'Tracked': 'lean' }, map))(td, lab);
+  };
   const statusPill = pill({ 'Day-To-Day': 'dtd', 'Out': 'out' });
   const statusCell = (td, v) => { if (v === 'Available') { td.textContent = v; td.className += ' pos'; } else statusPill(td, v); };
   const signed = (td, v) => { const n = Number(v); td.textContent = v; td.classList.add(n >= 3 ? 'good' : n <= -3 ? 'bad' : 'pos'); };
@@ -1114,7 +1123,7 @@ window.dash = (() => {
       const bb = $('#b-book').value, brows = atBook(B.data, bb, 'model_prob');
       $('#b-book-note').textContent = bb ? `${bb}'s own lines and prices; Bet / Pass judged at ${bb}'s odds.` : '';
       fillTable(bt, brows, [
-        { f: 'rank', cls: 'num' }, { f: 'verdict', render: pill({ 'Bet': 'bet', 'Check news': 'check', 'Pass': 'pass' }) },
+        { f: 'rank', cls: 'num' }, { f: 'verdict', render: verdictCell('game', { 'Bet': 'bet', 'Check news': 'check', 'Pass': 'pass' }) },
         { f: 'game' }, { f: 'bet' }, { f: 'odds', cls: 'num' }, { f: 'book' }, { f: 'model_prob', cls: 'num' }, { f: 'market_prob', cls: 'num' },
         { f: 'ev_pct', cls: 'num' }, { f: 'stake_pct', cls: 'num', render: stakeCell('game') }, { f: 'reason', cls: 'why' }, { f: 'all_odds', cls: 'why' }
       ], 'rank', r => r.verdict === 'Pass' ? 'pass' : '');
@@ -1136,7 +1145,7 @@ window.dash = (() => {
           const [aw, hm] = r.game.split(' @ '), p = SP[r.game];
           let side = Number(r.model_home_margin) > Number(r.line_home_margin) ? 'home' : 'away', num = '';
           if (p) { if (p.bet.includes(hm)) side = 'home'; else if (p.bet.includes(aw)) side = 'away'; const m = p.bet.match(/([+-]\d+(?:\.\d+)?)\s*$/); num = m ? m[1].replace('-', '\u2212') : ''; }
-          const bet = !!(p && p.verdict === 'Bet'), hl = bet ? LIME : WHITE;
+          const bet = !!(p && p.verdict === 'Bet' && realOf('game', p) > 0), hl = bet ? LIME : WHITE;   // blue only for a staked bet
           return [{ t: aw, fill: side === 'away' ? hl : null, bold: side === 'away' }, { t: ' @ ' }, { t: hm, fill: side === 'home' ? hl : null, bold: side === 'home' }]
             .concat(bet && num ? [{ t: ' ' + num, fill: LIME, bold: true }] : []);
         };
@@ -1870,7 +1879,7 @@ window.dash = (() => {
       .filter(r => (!stat || r.stat === stat) && (!q || (r.player + ' ' + r.team + ' ' + r.opp).toLowerCase().includes(q)));
     if (show === 'bets') rows = rows.filter(r => r.verdict === 'Bet' || r.verdict === 'Check status' || r.verdict === 'Check news');
     const cols = [
-      { f: 'rank', cls: 'num' }, { f: 'verdict', render: pill({ 'Bet': 'bet', 'Check status': 'check', 'Check news': 'check', 'Pass': 'pass' }) },
+      { f: 'rank', cls: 'num' }, { f: 'verdict', render: verdictCell('prop', { 'Bet': 'bet', 'Check status': 'check', 'Check news': 'check', 'Pass': 'pass' }) },
       { f: 'player' }, { f: 'team' }, { f: 'opp', cls: 'pos' }, { f: 'stat' }, { f: 'side' }, { f: 'line', cls: 'num' }, { f: 'odds', cls: 'num' }, { f: 'book' },
       { f: 'proj', cls: 'num' }, { f: 'minutes', cls: 'num' }, { f: 'model_prob', cls: 'num' }, { f: 'market_prob', cls: 'num' },
       { f: 'ev_pct', cls: 'num' }, { f: 'stake_pct', cls: 'num', render: stakeCell('prop') }, { f: 'reason', cls: 'why' }, { f: 'history', cls: 'why' }, { f: 'all_odds', cls: 'why' }
@@ -1886,7 +1895,7 @@ window.dash = (() => {
       shown += g.length;
       const id = 'props-' + st.toLowerCase();
       const h = document.createElement('h3'); h.className = 'pp-h'; h.id = id; h.textContent = title;
-      const n = document.createElement('span'); n.textContent = `${g.length} market${g.length === 1 ? '' : 's'} · ${g.filter(r => r.verdict === 'Bet').length} bet${g.filter(r => r.verdict === 'Bet').length === 1 ? '' : 's'}`; h.append(n);
+      const n = document.createElement('span'); n.textContent = `${g.length} market${g.length === 1 ? '' : 's'} · ${g.filter(r => r.verdict === 'Bet' && realOf('prop', r) > 0).length} bet${g.filter(r => r.verdict === 'Bet' && realOf('prop', r) > 0).length === 1 ? '' : 's'}`; h.append(n);
       const wrap = document.createElement('div'); wrap.className = 'mb-scroll mb-tall';
       const t = tpl.cloneNode(true); t.removeAttribute('id'); t.hidden = false; t.dataset.where = 'stat=' + st;
       fillTable(t.querySelector('tbody'), g, cols, 'rank', r => r.verdict === 'Pass' ? 'pass' : '');
@@ -1911,7 +1920,7 @@ window.dash = (() => {
     if (show === 'bets') rows = rows.filter(r => r.verdict === 'Bet' || r.verdict === 'Check status' || r.verdict === 'Check news');
     if (show === 'top') rows = rows.slice(0, 40);
     fillTable(tb, rows, [
-      { f: 'verdict', render: pill({ 'Bet': 'bet', 'Check status': 'check', 'Check news': 'check', 'Pass': 'pass' }) },
+      { f: 'verdict', render: verdictCell('prop', { 'Bet': 'bet', 'Check status': 'check', 'Check news': 'check', 'Pass': 'pass' }) },
       { f: 'player' }, { f: 'team' }, { f: 'opp', cls: 'pos' }, { f: 'stat' }, { f: 'target' }, { f: 'odds', cls: 'num' }, { f: 'book' },
       { f: 'fair_odds', cls: 'num' }, { f: 'fair_prob', cls: 'num' }, { f: 'ev_pct', cls: 'num' }, { f: 'stake_pct', cls: 'num', render: stakeCell('prop') },
       { f: 'main_line', cls: 'num' }, { f: 'implied_mean', cls: 'num' }, { f: 'proj', cls: 'num' },

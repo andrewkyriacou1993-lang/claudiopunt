@@ -567,6 +567,9 @@ window.dash = (() => {
         <p><b>Projection.</b> Each player's average for the stat from his games with his <i>current</i> team only (recent games count more: half-life 5 games; this season counts fully, last season 35%), nudged by how much his team is expected to score this week versus its average. The nudge was tuned on five seasons of prop lines built from prior games and turned out small (zero for most stats).</p>
         <p><b>Chance of clearing the line.</b> The projection is compared with how far real outcomes have landed from projections of that size, by stat and band, to get the model's chance of the over. The model's average is then centred on the bookies' average for that stat (the model runs low on volume stats), so a pick needs a player whose gap differs from his stat's typical gap.</p>
         <p><b>Blend.</b> The bookies' no-vig chance (average across Sportsbet and PointsBet at the same line) is blended with the model in log-odds: 0.954 market + 0.343 model. Those weights were fitted on NBA props and are <b>untested on the NFL</b>. A pick's value is the blended chance times the best price on that side, minus 1; 5% or more is a candidate.</p>
+        <p><b>Opponent defence.</b> Pass attempts, completions, carries and passing / rushing yards are scaled by how much volume the opposing defence allows (opponent-adjusted, last 12 games). Yards per attempt allowed was tested and adds nothing.</p>
+        <p><b>Weather.</b> Outdoor games with rain, snow or a sustained 15+ mph wind forecast get lower passing and receiving projections (2016-25: receiving yards ran about 15% under projections in rain and snow even after the bookies’ total). Rushing is left alone, a little up in snow.</p>
+        <p><b>Game-day check.</b> Picks are logged at the early odds when the week is built (Thursday/Friday). About 90 minutes before each kick-off window the weather, injury report and bookie markets are checked again: a pick is pulled (shown as void, no stake) if the player is out or inactive, or if the news makes it a losing bet at the odds we logged.</p>
         <p><b>Flags.</b> Each candidate is checked against the injury report (Out, Doubtful, Questionable, limited or no practice), snap counts (a share that moved 20+ points in the last two games), teammates at the same position who are out, history with the current team (under 3 games), and a model/market gap of 25+ points. Any flag turns <i>Tracked</i> into <i>Check news</i>, which is never a pick. Most big model-versus-market gaps turn out to be role information the bookie has and the model doesn't.</p>
         <p><b>Bookmakers.</b> Sportsbet and PointsBet, read from their public pages without logging in. Prop lines can differ by a half step between them; each is priced on its own line. Ladbrokes and Betr are not yet included. Props appear a few days before kick-off, so the board fills in over the week; Sportsbet had props for 5 of 14 games on Friday, PointsBet for all 14.</p>
         <p><b>First touchdown scorer.</b> Priced from the bookie's own markets, not a trained model: the first-scorer price (margin removed) averaged with each player's share of the game's scoring implied by his anytime-TD price. The margin on this market is large, so bets are rare, and they are not graded yet.</p>
@@ -2151,7 +2154,7 @@ window.dash = (() => {
   const DAYS = ['Fri', 'Sat', 'Sun', 'Mon', 'Tue', 'Wed', 'Thu'];
   const DAYNAME = { Fri: 'Friday', Sat: 'Saturday', Sun: 'Sunday', Mon: 'Monday', Tue: 'Tuesday', Wed: 'Wednesday', Thu: 'Thursday' };
   const STATS = ['Passing yds', 'Passing TDs', 'Completions', 'Pass attempts', 'Rushing yds', 'Rush attempts', 'Receptions', 'Receiving yds'];
-  const SETTLED = new Set(['win', 'loss', 'push']);
+  const SETTLED = new Set(['win', 'loss', 'push', 'void']);
   let tab = 'today', chosen = '', showMore = false;
   try { const h = location.hash.slice(1); if (/^nfl-/.test(h) && ['today', 'explore', 'games', 'ledger', 'method'].includes(h.slice(4))) tab = h.slice(4); } catch (e) {}
 
@@ -2382,7 +2385,7 @@ window.dash = (() => {
   function summarise(H) {
     const st = H.filter((h) => SETTLED.has(h.result)), w = st.filter((h) => h.result === 'win').length, l = st.filter((h) => h.result === 'loss').length;
     const pl = st.reduce((t, h) => t + N(h.profit_u || 0), 0), stake = st.reduce((t, h) => t + N(h.stake_u || 0), 0);
-    const dec = st.filter((h) => h.result !== 'push');
+    const dec = st.filter((h) => h.result !== 'push' && h.result !== 'void');
     return { n: H.length, settled: st.length, w, l, pl, stake, roi: stake ? (pl / stake) * 100 : null, model: dec.length ? dec.reduce((t, h) => t + N(h.prob), 0) / dec.length : null, act: dec.length ? (w / dec.length) * 100 : null };
   }
   function chart(box, H) {
@@ -2425,7 +2428,7 @@ window.dash = (() => {
     const res = Q('#nh-res').value, bk = Q('#nh-book').value, stat = Q('#nh-stat').value;
     const R = H.filter((h) => (!wk.value || h.week === wk.value) && (!bk || h.book === bk) && (!stat || h.stat === stat) && (!res || (res === 'pending' ? h.result === 'pending' : SETTLED.has(h.result)))).slice().reverse();
     fill(Q('#nh-table tbody'), R, [{ f: 'posted', cls: 'pos' }, { f: 'stat' }, { f: 'pick' }, { f: 'game', cls: 'pos' }, { f: 'odds', cls: 'num' }, { f: 'book' }, { f: 'prob', cls: 'num' }, { f: 'stake_u', cls: 'num' },
-      { f: 'actual', cls: 'num' }, { f: 'result', render: pill({ win: 'win', loss: 'loss', push: 'push', pending: 'pending' }) }, { f: 'profit_u', cls: 'num', render: signed }, { f: 'running_u', cls: 'num', render: signed }]);
+      { f: 'actual', cls: 'num' }, { f: 'result', render: pill({ win: 'win', loss: 'loss', push: 'push', void: 'void', pending: 'pending' }) }, { f: 'profit_u', cls: 'num', render: signed }, { f: 'running_u', cls: 'num', render: signed }]);
   }
   ['#nh-week', '#nh-res', '#nh-book', '#nh-stat'].forEach((s) => Q(s).addEventListener('change', drawLedger));
 

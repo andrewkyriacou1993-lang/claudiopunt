@@ -39,7 +39,7 @@
 <script>
 /* Minimal stand-in for the Claude dashboard runtime: loads data/<name>.csv and runs the same page code. */
 window.dash = (() => {
-  const FILES = ['best', 'history', 'tracking', 'meta', 'bets', 'props', 'alts', 'chances', 'games', 'teams', 'injuries', 'matchups', 'usage', 'usage_fit', 'firstbasket', 'sgm', 'combos', 'stackers', 'lineup_news', 'best_next', 'meta_next', 'props_next', 'alts_next', 'chances_next', 'games_next', 'bets_next', 'teams_next', 'injuries_next', 'matchups_next', 'usage_next', 'usage_fit_next', 'firstbasket_next', 'sgm_next', 'combos_next', 'stackers_next', 'nfl_meta', 'nfl_games', 'nfl_props', 'nfl_best', 'nfl_injuries', 'nfl_history', 'nfl_firsttd'];
+  const FILES = ['best', 'history', 'tracking', 'meta', 'bets', 'props', 'alts', 'chances', 'games', 'teams', 'injuries', 'matchups', 'usage', 'usage_fit', 'firstbasket', 'sgm', 'combos', 'stackers', 'lineup_news', 'dvp', 'best_next', 'meta_next', 'props_next', 'alts_next', 'chances_next', 'games_next', 'bets_next', 'teams_next', 'injuries_next', 'matchups_next', 'usage_next', 'usage_fit_next', 'firstbasket_next', 'sgm_next', 'combos_next', 'stackers_next', 'nfl_meta', 'nfl_games', 'nfl_props', 'nfl_best', 'nfl_injuries', 'nfl_history', 'nfl_firsttd'];
   const D = {}, calcs = {}, subs = [];
   let queued = false;
   const fire = () => { if (queued) return; queued = true; requestAnimationFrame(() => { queued = false; subs.forEach(fn => { try { fn(); } catch (e) { console.error(e); } }); }); };
@@ -367,6 +367,11 @@ window.dash = (() => {
   .cp-bksel select { font: inherit; font-size: .9rem; color: #F2F2F5; background: #141419; border: 1px solid #35353F; border-radius: 8px; min-height: 38px; padding: 0 8px; }
   .cp-top .cp-bk-note { flex-basis: 100%; }
   .cp-groups { display: flex; flex-direction: column; gap: 18px; }
+  .dvp-sub { margin: 12px 0 6px; font-size: .92rem; font-weight: 700; color: #F2F2F5; }
+  .dvp-table td b { font-weight: 700; } .dvp-rk { font-size: .75rem; color: #A6A6B2; }
+  .dvp-soft { color: #8FB4FF; } td.dvp-soft { background: rgba(91,140,255,.12); } td.dvp-soft .dvp-rk { color: #8FB4FF; }
+  .dvp-tough { color: #FFB37F; } td.dvp-tough { background: rgba(255,138,61,.10); } td.dvp-tough .dvp-rk { color: #FFB37F; }
+  .dvp-team td { font-weight: 600; border-bottom: 1px solid #35353F; }
   .cp-cf { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 4px; }
   .cp-cf-b { font: inherit; font-size: .85rem; font-weight: 600; color: #D0D0D8; background: #141419; border: 1px solid #35353F; border-radius: 999px; min-height: 36px; padding: 0 14px; cursor: pointer; }
   .cp-cf-b[aria-pressed="true"] { background: #5B8CFF; border-color: #5B8CFF; color: #0B0B10; }
@@ -959,6 +964,10 @@ window.dash = (() => {
         <thead><tr><th>Verdict</th><th>Stack</th><th class="num">Stacked price</th><th class="num">Top rung alone</th><th class="num">Pays more</th><th class="num">Our chance %</th><th class="num">Value %</th><th>Slip</th></tr></thead>
         <tbody></tbody></table></div>
       <p class="mb-note" id="stk-none" hidden>No stackers priced for this game yet.</p></div>
+    <div class="mb-card" id="dvp-card"><h3 id="dvp-h">Defence vs position</h3>
+      <p class="mb-note">What each defence allows a game to each position (RotoWire, this season), ranked 1&ndash;30: 1 = allows the most. <span class="dvp-soft">Blue</span> = soft matchup (top 5), <span class="dvp-tough">orange</span> = tough (bottom 5). The model applies it to points, rebounds, P+R+A and threes.</p>
+      <div id="dvp-body"></div>
+      <p class="mb-note" id="dvp-none" hidden>No defence-vs-position data yet (it comes with the RotoWire step of each run).</p></div>
     <div class="mb-card"><h3>Starting five, position by position</h3>
       <p class="mb-note">Off/Def are each player's points produced / allowed per 100 possessions (this season blended with last). Edge (next to each team) = how that player should go attacking the opposing starter at his position: his offence above league average plus his opponent's defence above average. Positive (blue) favours him, negative (orange) favours the defender. Efficient low-usage bigs score high on Off, so read big-man edges with care.</p>
       <div class="mb-scroll"><table class="mb-table" id="mu-table" data-source="matchups" data-row-key="key">
@@ -1233,8 +1242,55 @@ window.dash = (() => {
         { f: 'home_player', cls: 'side' }, { f: 'home_pos', cls: 'pos' }, { f: 'home_status', render: statusCell }, { f: 'home_off', cls: 'num' }, { f: 'home_def', cls: 'num' }, { f: 'home_bpm', cls: 'num' }, { f: 'home_edge', cls: 'num', render: signed }
       ], 'key');
     }
-    drawStackers(); drawNews();
+    drawStackers(); drawNews(); drawDvp();
     const cmBox = $('#chart-margin'); if (G.status === 'ok') { /* highlight handled in dumbbell */ }
+  }
+
+  // ---------- defence vs position (game section, 8 Nov 2026) ----------
+  function drawDvp() {
+    const D = dash.data('dvp'), M = dash.data('matchups'), body = $('#dvp-body');
+    if (!body) return;
+    body.innerHTML = '';
+    $('#dvp-h').textContent = chosen ? `Defence vs position · ${chosen}` : 'Defence vs position';
+    const ok = D.status === 'ok' && D.data.length && chosen;
+    $('#dvp-none').hidden = !!ok;
+    if (!ok) return;
+    const [aw, hm] = chosen.split(' @ ');
+    const byTeam = {}; D.data.forEach(r => { (byTeam[r.team_name] = byTeam[r.team_name] || {})[r.pos] = r; });
+    const P5 = { G: 'SG', F: 'SF', 'G-F': 'SF', 'F-G': 'SG', 'F-C': 'PF', 'C-F': 'C' };
+    const pos5 = (p) => { p = String(p || '').toUpperCase(); return ['PG', 'SG', 'SF', 'PF', 'C'].includes(p) ? p : (P5[p] || ''); };
+    const ord = (i) => { i = Number(i); const t = i % 100; return i + (t > 10 && t < 14 ? 'th' : ({ 1: 'st', 2: 'nd', 3: 'rd' })[i % 10] || 'th'); };
+    const cell = (td, r, c) => {
+      if (!r || r[c] === '' || r[c] == null) { td.textContent = '—'; return; }
+      const rk = Number(r[c + '_rk']);
+      td.innerHTML = `<b>${r[c]}</b> <span class="dvp-rk">${ord(rk)}</span>`;
+      if (rk <= 5) td.classList.add('dvp-soft'); else if (rk >= 26) td.classList.add('dvp-tough');
+    };
+    const mu = M.status === 'ok' ? M.data.filter(r => r.game === chosen) : [];
+    [[aw, hm, 'away'], [hm, aw, 'home']].forEach(([att, def, side]) => {
+      const T = byTeam[def]; if (!T) return;
+      const h = document.createElement('h4'); h.className = 'dvp-sub'; h.textContent = `${att} attacking · what ${def} allow`;
+      const tbl = document.createElement('table'); tbl.className = 'mb-table dvp-table';
+      tbl.innerHTML = '<thead><tr><th>Player</th><th>Pos</th><th class="num">Pts</th><th class="num">Reb</th><th class="num">Ast</th><th class="num">3PM</th></tr></thead><tbody></tbody>';
+      const tb = tbl.querySelector('tbody');
+      const add = (name, pos, r, cls) => {
+        const tr = document.createElement('tr'); if (cls) tr.className = cls;
+        const a = document.createElement('td'); a.textContent = name; const b = document.createElement('td'); b.className = 'pos'; b.textContent = pos;
+        tr.append(a, b);
+        ['pts', 'reb', 'ast', 'tpm'].forEach(c => { const td = document.createElement('td'); td.className = 'num'; cell(td, r, c); tr.append(td); });
+        tb.append(tr);
+      };
+      add("All positions", "Team", T.TEAM, "dvp-team");
+      const seen = new Set();
+      mu.forEach(m => {
+        const nm = m[side + '_player'], ps = pos5(m[side + '_pos']);
+        if (!nm || seen.has(nm)) return; seen.add(nm);
+        add(nm + (m[side + '_status'] && m[side + '_status'] !== 'Available' ? ` (${m[side + '_status']})` : ''), ps || m[side + '_pos'], T[ps]);
+      });
+      if (!mu.length) ['PG', 'SG', 'SF', 'PF', 'C'].forEach(ps => add(ps, ps, T[ps]));
+      const wrap = document.createElement('div'); wrap.className = 'mb-scroll'; wrap.append(tbl);
+      body.append(h, wrap);
+    });
   }
 
   // ---------- stackers (game section) ----------

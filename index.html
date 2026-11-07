@@ -47,13 +47,47 @@ window.dash = (() => {
     .then(r => r.ok ? r.text() : Promise.reject(r.status))
     .then(t => { const rows = d3.csvParse(t.replace(/\r/g, '')); D[f] = { status: 'ok', data: rows, columns: rows.columns, meta: [] }; fire(); })
     .catch(() => { D[f] = { status: 'missing', data: [], columns: [], meta: [] }; fire(); }));
+  /* Stale-row guard: a board can only show games on its own slate (games.csv + meta.csv teams, or the _next pair).
+     Rows for any other game (e.g. yesterday's, left behind when a publish missed a file) are dropped, so old data
+     never shows even if a file wasn't refreshed. Ledger files (history, tracking) and NFL files are not filtered. */
+  const NOFILTER = new Set(['history', 'tracking', 'games', 'meta', 'games_next', 'meta_next', 'usage', 'usage_fit', 'usage_next', 'usage_fit_next']);
+  const slate = (sfx) => {
+    const g = D['games' + sfx], m = D['meta' + sfx];
+    if (!g || g.status !== 'ok' || !g.data.length || !m || m.status !== 'ok' || !m.data.length) return null;
+    const names = new Set(g.data.map(r => r.game));
+    const codes = new Set(String(m.data[0].teams_today || '').split(/\s+/).filter(Boolean));
+    return { names, codes };
+  };
+  const onSlate = (game, s) => {
+    if (!game || game.indexOf('@') < 0) return true;           // multis, '4 games', blank: not tied to one game
+    if (s.names.has(game)) return true;
+    const mm = /^([A-Z]{2,4})@([A-Z]{2,4})$/.exec(game.replace(/\s+/g, ''));
+    return !!(mm && s.codes.size && s.codes.has(mm[1]) && s.codes.has(mm[2]));
+  };
+  const filtered = {};
+  function guard(id) {
+    const d = D[id];
+    if (!d || d.status !== 'ok' || id.startsWith('nfl_') || NOFILTER.has(id) || !d.columns.includes('game')) return d;
+    const sfx = id.endsWith('_next') ? '_next' : '';
+    if (!D['games' + sfx] || !D['meta' + sfx]) return { status: 'loading', data: [], columns: [], meta: [] };   // wait for the slate, no flash of old rows
+    const s = slate(sfx);
+    if (!s) return d;
+    const key = id, sig = [...s.names].join('|') + '#' + [...s.codes].join(' ');
+    if (filtered[key] && filtered[key].src === d && filtered[key].s === sig) return filtered[key].out;
+    const rows = d.data.filter(r => onSlate(r.game, s));
+    rows.columns = d.columns;
+    const out = rows.length === d.data.length ? d : Object.assign({}, d, { data: rows, dropped: d.data.length - rows.length });
+    if (out.dropped) console.warn(`[stale guard] ${id}: hid ${out.dropped} rows from games not on this slate`);
+    filtered[key] = { src: d, s: sig, out };
+    return out;
+  }
   function data(id) {
     if (calcs[id]) {
       const c = calcs[id], ins = c.inputs.map(data);
       if (ins.some(x => x.status === 'loading')) return { status: 'loading', data: [] };
       try { return { status: 'ok', data: c.fn(...ins.map(x => x.data)) }; } catch (e) { console.error(e); return { status: 'error', data: [], message: String(e) }; }
     }
-    return D[id] || { status: 'loading', data: [] };
+    return guard(id) || { status: 'loading', data: [] };
   }
   window.addEventListener('resize', fire);
   setInterval(load, 15 * 60 * 1000);           // pick up the 8:16 / 10:16 updates without a reload

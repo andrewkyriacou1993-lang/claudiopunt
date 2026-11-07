@@ -1613,7 +1613,7 @@ window.dash = (() => {
     const H0 = dash.data('history'), M0 = dash.data('meta');
     const bday = M0.status === 'ok' && M0.data[0] ? M0.data[0].date : '';
     const havePick = new Set(ALL.map(r => r.pick));
-    const extra = (H0.status === 'ok' && bday ? H0.data : []).filter(h => h.date === bday && ['Sharp', 'RotoWire'].includes(h.category)
+    const extra = (H0.status === 'ok' && bday ? H0.data : []).filter(h => h.date === bday && ['Sharp', 'RotoWire', 'Team total'].includes(h.category)
       && Number(h.stake_u) > 0 && !havePick.has(h.pick) && (V === 'best' || h.book === V)).map(h => ({
         view: V, category: h.category, section: 'best', pick: h.pick, game: h.game, odds: h.odds, book: h.book, prob: h.prob,
         ev_pct: h.ev_pct, stake_pct: h.stake_u, verdict: 'Bet', reason: h.ctx || '', all_odds: '', _ledger: true }));

@@ -1,13 +1,24 @@
 player,team,game,pos,status,mpg,bpm
-Chris Cenac Jr.,Celtics,Celtics @ Hornets,PF,Out,3.3,-2.5
-Dennis Schröder,Hornets,Celtics @ Hornets,PG,Out,29.9,-3.4
-Moussa Diabaté,Hornets,Celtics @ Hornets,C,Out,28.8,0.8
-PJ Hall,Hornets,Celtics @ Hornets,C,Out,5.5,-1.3
 Jaren Jackson Jr.,Jazz,Jazz @ Mavericks,C,Out,26.0,-1.0
+Max Christie,Mavericks,Jazz @ Mavericks,SG,Questionable,23.7,-2.2
 Sergio de Larrea,Mavericks,Jazz @ Mavericks,PG,Out,11.5,-2.6
-Scottie Barnes,Raptors,Raptors @ Bucks,PF,Out,33.2,2.2
+De'Andre Hunter,Kings,Spurs @ Kings,SF,Questionable,31.1,-3.1
+Keegan Murray,Kings,Spurs @ Kings,PF,Out,27.0,-2.4
+Adem Bona,76ers,76ers @ Cavaliers,C,Out,14.2,-2.7
+Jarrett Allen,Cavaliers,76ers @ Cavaliers,C,Questionable,25.2,1.3
+Peyton Watson,Cavaliers,76ers @ Cavaliers,SF,Questionable,28.5,-1.6
+Jaylon Tyson,Cavaliers,76ers @ Cavaliers,SF,Out,20.8,-0.7
+Jalen Williams,Thunder,Thunder @ Grizzlies,SF,Out,31.7,0.3
+Chet Holmgren,Thunder,Thunder @ Grizzlies,PF,Out,30.0,2.5
+Cason Wallace,Thunder,Thunder @ Grizzlies,SG,Out,16.3,0.6
+Jaylin Williams,Thunder,Thunder @ Grizzlies,C,Out,18.4,0.2
+Isaiah Stewart,Grizzlies,Thunder @ Grizzlies,C,Out,18.3,0.0
+Scotty Pippen Jr.,Grizzlies,Thunder @ Grizzlies,PG,Out,16.0,0.4
+Scottie Barnes,Raptors,Raptors @ Bucks,PF,Questionable,33.2,2.2
 Kawhi Leonard,Raptors,Raptors @ Bucks,SF,Out,26.0,4.8
-Immanuel Quickley,Raptors,Raptors @ Bucks,PG,Out,31.8,1.4
+Immanuel Quickley,Raptors,Raptors @ Bucks,PG,Questionable,31.8,1.4
+Jakob Poeltl,Raptors,Raptors @ Bucks,C,Probable,20.0,-0.3
+Kyle Anderson,Raptors,Raptors @ Bucks,SF,Questionable,6.0,-0.3
 Anthony Edwards,Timberwolves,Timberwolves @ Pelicans,SG,Out,33.8,3.4
 Terrence Shannon Jr.,Timberwolves,Timberwolves @ Pelicans,SG,Out,22.0,-1.4
 Yves Missi,Pelicans,Timberwolves @ Pelicans,C,Out,19.5,-0.8
@@ -17,14 +28,4 @@ Justin Champagnie,Wizards,Wizards @ Hawks,SF,Out,18.2,-0.3
 Jalen Johnson,Hawks,Wizards @ Hawks,PF,Out,32.6,2.7
 Jock Landale,Hawks,Wizards @ Hawks,C,Out,15.3,-0.9
 Asa Newell,Hawks,Wizards @ Hawks,PF,Out,11.0,-1.3
-Adem Bona,76ers,76ers @ Cavaliers,C,Out,14.2,-2.7
-Jarrett Allen,Cavaliers,76ers @ Cavaliers,C,Out,25.2,1.3
-Jaylon Tyson,Cavaliers,76ers @ Cavaliers,SF,Out,20.8,-0.7
-Jalen Williams,Thunder,Thunder @ Grizzlies,SF,Out,31.7,0.3
-Chet Holmgren,Thunder,Thunder @ Grizzlies,PF,Out,30.0,2.5
-Cason Wallace,Thunder,Thunder @ Grizzlies,SG,Out,16.3,0.6
-Jaylin Williams,Thunder,Thunder @ Grizzlies,C,Out,18.4,0.2
-Isaiah Stewart,Grizzlies,Thunder @ Grizzlies,C,Out,18.3,0.0
-Scotty Pippen Jr.,Grizzlies,Thunder @ Grizzlies,PG,Out,16.0,0.4
-De'Andre Hunter,Kings,Spurs @ Kings,SF,Out,31.1,-3.1
-Keegan Murray,Kings,Spurs @ Kings,PF,Out,27.0,-2.4
+De'Andre Hunter,Kings,Spurs @ Kings,SF,Out,30.1,0.0

@@ -1887,7 +1887,7 @@ window.dash = (() => {
     const betType = (td, v, r) => {
       const s = document.createElement('span');
       const t = v === '1' ? ['Best bet', 'best'] : v === 'value' ? ['Value', 'val'] : /multi/i.test(r.category) ? ['Multi', 'pass']
-        : r.trigger === 'news' ? ['Lineup news', 'pass'] : r.bet_type === 'price' ? ['Price edge', 'pass'] : r.bet_type === 'track' ? ['Tracked', 'pass'] : ['Card', 'pass'];
+        : r.bet_type === 'sharp' ? ['Sharp money', 'val'] : r.trigger === 'news' ? ['Lineup news', 'pass'] : r.bet_type === 'price' ? ['Price edge', 'pass'] : r.bet_type === 'track' ? ['Tracked', 'pass'] : ['Card', 'pass'];
       s.className = 'pill ' + t[1]; s.textContent = t[0]; td.appendChild(s); td.style.whiteSpace = 'nowrap';
     };
     fillTable($('#hist-table tbody'), rows, [

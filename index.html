@@ -367,6 +367,16 @@ window.dash = (() => {
   .cp-bksel select { font: inherit; font-size: .9rem; color: #F2F2F5; background: #141419; border: 1px solid #35353F; border-radius: 8px; min-height: 38px; padding: 0 8px; }
   .cp-top .cp-bk-note { flex-basis: 100%; }
   .cp-groups { display: flex; flex-direction: column; gap: 18px; }
+  .cp-cf { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 4px; }
+  .cp-cf-b { font: inherit; font-size: .85rem; font-weight: 600; color: #D0D0D8; background: #141419; border: 1px solid #35353F; border-radius: 999px; min-height: 36px; padding: 0 14px; cursor: pointer; }
+  .cp-cf-b[aria-pressed="true"] { background: #5B8CFF; border-color: #5B8CFF; color: #0B0B10; }
+  .cp-type-blurb { margin: -4px 0 8px; font-size: .8rem; }
+  .cp-stack-sum { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 8px; }
+  .cp-stack-tg { min-height: 38px; margin-bottom: 8px; }
+  .cp-stack-gh { margin: 10px 0 6px; font-size: .9rem; font-weight: 700; color: #F2F2F5; }
+  .cp-stack-gh span { font-weight: 500; color: #A6A6B2; }
+  .cp-type-sharp .cp-group-h::before, .cp-type-rotowire .cp-group-h::before { content: ''; width: 4px; height: 1em; border-radius: 2px; background: #3DDC97; align-self: center; }
+  .cp-type-rotowire .cp-group-h::before { background: #5B8CFF; }
   .cp-group-h { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; margin: 0 0 8px; font-size: 1rem; font-weight: 700; color: #F2F2F5; }
   .cp-group-h span { font-size: .85rem; font-weight: 500; color: #A6A6B2; }
   .cp-bets { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 28rem), 1fr)); gap: 8px; }
@@ -642,7 +652,7 @@ window.dash = (() => {
     <p class="cp-bk-note" id="bk-note" hidden></p>
   </div>
   <section class="mb-sec" id="best" aria-labelledby="card-h">
-    <div class="cp-sub"><h2 class="cp-h" id="card-h">Today's card</h2><p>At <span id="bk-where">the best price across the bookies</span>, grouped by tip time. Tap a bet for why. Check team news before tip-off.</p></div>
+    <div class="cp-sub"><h2 class="cp-h" id="card-h">Today's card</h2><p>At <span id="bk-where">the best price across the bookies</span>, grouped by bet type. Tap a bet for why. Check team news before tip-off.</p></div>
     <div class="cp-groups" id="best-cards" data-source="best"></div>
     <button type="button" class="cp-btn ghost cp-more" id="best-more" hidden>Show more</button>
   </section>
@@ -1499,6 +1509,19 @@ window.dash = (() => {
       return Object.assign({}, r, { odds: o.toFixed(2), book: V, ev_pct: ev, verdict: bet ? 'Bet' : (ev > 0 ? 'Lean' : 'No value'), stake_pct: bet ? r.stake_pct : 0, _repriced: true });
     }).filter(Boolean).concat(multis);
   }
+  // one short title per bet; the details move to a chip and the tap-to-open reason (8 Nov 2026)
+  function shortPick(r) {
+    const p = String(r.pick || '');
+    let m = /^(.*?) (\d+)\+ & (\d+)\+ ([a-z+ ]+?) \((top stack|stack);[^)]*?boost ([+−-]?\d+%)/i.exec(p);
+    if (m) return { title: `${m[1]} ${m[3]}+ ${m[4]}`, chip: `${m[5] === 'top stack' ? 'top stack' : 'stack'} ${m[2]}+ & ${m[3]}+ · boost ${m[6]}` };
+    m = /^(.*?) \(sharp money ([^,]+), edge ([^)]+)\)/.exec(p);
+    if (m) return { title: m[1], chip: `edge ${m[3]} · ${m[2]} sharp` };
+    m = /^(.*?) \(RotoWire ([\d.]+) vs bookies ([\d.]+)\)/.exec(p);
+    if (m) return { title: m[1], chip: `RotoWire ${m[2]} v bookies ${m[3]}` };
+    m = /^(.*?) \[(.*)\]$/.exec(p);
+    if (m) return { title: m[1], chip: '' };
+    return { title: p, chip: '' };
+  }
   let showLeans = false;
   $('#best-more').addEventListener('click', () => { showLeans = !showLeans; drawBest(); });
   function drawBest() {
@@ -1530,7 +1553,15 @@ window.dash = (() => {
     const ALL = viewRows(B.data, V2);
     TODAY_VIEW = ALL;
     if (V2 !== V) { drawBest(); return; }
-    const rows = ALL.filter(r => r.category !== '80% multi' && r.odds !== '');
+    // 8 Nov 2026: Sharp (ProBets) and RotoWire bets live only in the ledger: show today's staked ones on the card too
+    const H0 = dash.data('history'), M0 = dash.data('meta');
+    const bday = M0.status === 'ok' && M0.data[0] ? M0.data[0].date : '';
+    const havePick = new Set(ALL.map(r => r.pick));
+    const extra = (H0.status === 'ok' && bday ? H0.data : []).filter(h => h.date === bday && ['Sharp', 'RotoWire'].includes(h.category)
+      && Number(h.stake_u) > 0 && !havePick.has(h.pick) && (V === 'best' || h.book === V)).map(h => ({
+        view: V, category: h.category, section: 'best', pick: h.pick, game: h.game, odds: h.odds, book: h.book, prob: h.prob,
+        ev_pct: h.ev_pct, stake_pct: h.stake_u, verdict: 'Bet', reason: h.ctx || '', all_odds: '', _ledger: true }));
+    const rows = ALL.concat(extra).filter(r => r.category !== '80% multi' && r.odds !== '');
     const bets = rows.filter(r => r.verdict === 'Bet'), more = rows.filter(r => r.verdict !== 'Bet');
     $('#best-more').hidden = more.length === 0;
     $('#best-more').textContent = showLeans ? 'Hide tracked and leans' : `Show ${more.length} more (tracked at 0u, or below the value bar)`;
@@ -1538,19 +1569,40 @@ window.dash = (() => {
     const list = showLeans ? bets.concat(more) : bets;
     if (!list.length) { const d = document.createElement('div'); d.className = 'cp-meta'; d.textContent = V === 'best' ? 'No bet clears the value bar yet today.' : `No bet clears the value bar at ${V} yet today.`; box.appendChild(d); }
     const isMulti = r => /multi/i.test(r.category) || !tips[r.game];
-    const LATE = '12:00';
-    const groups = [['Morning games', r => !isMulti(r) && tips[r.game] < LATE], ['Late games', r => !isMulti(r) && tips[r.game] >= LATE], ['Multis', isMulti]];
+    // 8 Nov 2026 (Andrew: "the bets are too messy"): sections by bet type, stackers folded, one short line per bet
+    const typeOf = r => isMulti(r) ? 'multi' : r.category === 'Sharp' ? 'sharp' : r.category === 'RotoWire' ? 'rotowire'
+      : (/stack/i.test(r.category) || /\((top )?stack;/.test(r.pick)) ? 'stack' : 'model';
+    const TYPES = [['sharp', 'Sharp money', 'Big money from sharp bettors with 3%+ edge at an Australian bookie (RotoWire ProBets), checked against RotoWire\'s projection.'],
+      ['rotowire', 'RotoWire', 'RotoWire\'s projection (corrected for its usual gap) disagrees with the bookies by 10%+ value.'],
+      ['model', 'Model & combos', 'The model\'s own singles and same-player combos.'],
+      ['stack', 'Stacks', 'Top stacks and ladder stackers: long shots at small stakes.'],
+      ['multi', 'Multis', '']];
+    let cf = ''; try { cf = localStorage.getItem('cp-cardf') || ''; } catch (e) {}
+    if (cf && !TYPES.some(t => t[0] === cf)) cf = '';
+    const chipsBox = document.createElement('div'); chipsBox.className = 'cp-cf'; chipsBox.setAttribute('role', 'group'); chipsBox.setAttribute('aria-label', 'Show bet type');
+    const counts = {}; list.forEach(r => { const t = typeOf(r); counts[t] = (counts[t] || 0) + 1; });
+    [['', 'All', list.length]].concat(TYPES.filter(t => counts[t[0]]).map(t => [t[0], t[1], counts[t[0]]])).forEach(([k, nm, n]) => {
+      const b = document.createElement('button'); b.type = 'button'; b.className = 'cp-cf-b'; b.setAttribute('aria-pressed', String(cf === k));
+      b.textContent = `${nm} ${n}`;
+      b.addEventListener('click', () => { try { localStorage.setItem('cp-cardf', k); } catch (e) {} drawBest(); });
+      chipsBox.appendChild(b);
+    });
+    if (list.length) box.appendChild(chipsBox);
+    let stackOpen = false; try { stackOpen = localStorage.getItem('cp-stacks-open') === '1'; } catch (e) {}
+    const byTip = (a, b) => String(tips[a.game] || '').localeCompare(String(tips[b.game] || '')) || (a.verdict !== 'Bet') - (b.verdict !== 'Bet') || Number(b.ev_pct) - Number(a.ev_pct);
     const row = (r, host) => {
       const where = 'view=' + encodeURIComponent(r.view || 'best') + '&pick=' + encodeURIComponent(r.pick);
       const mark = (el, f, src) => { el.dataset.source = src || 'best'; el.dataset.where = where; el.dataset.field = f; return el; };
       const c = document.createElement('article'); c.className = 'cp-bet' + (r.verdict === 'Bet' ? '' : ' is-lean');
       const main = document.createElement('button'); main.type = 'button'; main.className = 'cp-bet-main'; main.setAttribute('aria-expanded', 'false');
       const l = document.createElement('div'); l.className = 'cp-bet-l';
-      const pick = mark(document.createElement('div'), 'pick'); pick.className = 'cp-bet-p'; pick.textContent = r.pick;
+      const sp = shortPick(r);
+      const pick = mark(document.createElement('div'), 'pick'); pick.className = 'cp-bet-p'; pick.textContent = sp.title;
       const sub = document.createElement('div'); sub.className = 'cp-bet-s';
       const cat = mark(document.createElement('span'), 'category'); cat.textContent = r.category.replace(/ · \d\d:\d\d$/, '').replace(/^Value · /, '');
       const gm = mark(document.createElement('span'), 'game'); gm.textContent = r.game + (tips[r.game] ? ' · ' + tips[r.game] : '');
       sub.append(cat, document.createTextNode(' · '), gm);
+      if (sp.chip) { const t = document.createElement('span'); t.className = 'cp-chip'; t.textContent = sp.chip; sub.append(' ', t); }
       if (r.section === 'value') { const t = document.createElement('span'); t.className = 'cp-chip'; t.textContent = 'Value'; sub.append(' ', t); }
       if (r.verdict !== 'Bet') { const t = mark(document.createElement('span'), 'verdict'); t.className = 'cp-chip dim'; t.textContent = r.verdict; sub.append(' ', t); }
       const added = /· (\d\d:\d\d)$/.exec(r.category); if (added) { const t = document.createElement('span'); t.className = 'cp-chip dim'; t.textContent = 'added ' + added[1]; sub.append(' ', t); }
@@ -1569,25 +1621,45 @@ window.dash = (() => {
       const facts = document.createElement('div'); facts.className = 'cp-row';
       if (r.prob) { const tag = document.createElement('span'); tag.className = 'cp-tag' + (Number(r.ev_pct) > 0 ? '' : ' bad'); tag.textContent = s0 ? s0.value : `${Number(r.ev_pct) > 0 ? 'Good value' : 'Overpriced'} · fair ${(100 / Number(r.prob)).toFixed(2)}`; facts.append(tag); }
       const pr = mark(document.createElement('span'), 'prob'); pr.className = 'cp-meta'; pr.textContent = r.prob ? `Our chance ${r.prob}%` : ''; facts.append(pr);
-      const rs = mark(document.createElement('div'), 'reason'); rs.textContent = r.reason;
+      const rs = mark(document.createElement('div'), 'reason'); rs.textContent = (sp.title !== r.pick ? r.pick + '. ' : '') + (r.reason || '');
       why.append(facts, rs);
       if (r.all_odds) { const ao = mark(document.createElement('div'), 'all_odds'); ao.textContent = 'Every price: ' + r.all_odds; why.append(ao); }
       main.addEventListener('click', () => { why.hidden = !why.hidden; main.setAttribute('aria-expanded', String(!why.hidden)); c.classList.toggle('open', !why.hidden); });
       c.append(main, right, why);
       host.appendChild(c);
     };
-    for (const [name, test] of groups) {
-      const g = list.filter(test); if (!g.length) continue;
-      g.sort((a, b) => String(tips[a.game] || '').localeCompare(String(tips[b.game] || '')) || (a.verdict !== 'Bet') - (b.verdict !== 'Bet') || Number(b.ev_pct) - Number(a.ev_pct));
-      const sec = document.createElement('div'); sec.className = 'cp-group';
+    for (const [key, name, blurb] of TYPES) {
+      if (cf && cf !== key) continue;
+      const g = list.filter(r => typeOf(r) === key); if (!g.length) continue;
+      const sec = document.createElement('div'); sec.className = 'cp-group cp-type-' + key;
       const h = document.createElement('h3'); h.className = 'cp-group-h';
-      const ts = [...new Set(g.map(r => tips[r.game]).filter(Boolean))].sort();
       const staked = g.filter(r => r.verdict === 'Bet'), units = staked.reduce((t, r) => t + (Number(r.stake_pct) || 0), 0);
       h.append(document.createTextNode(name));
-      const hs = document.createElement('span'); hs.textContent = [ts.length ? (ts.length > 1 ? `${ts[0]}–${ts[ts.length - 1]}` : ts[0]) : '', `${staked.length} bet${staked.length === 1 ? '' : 's'}`, `${units.toFixed(2)}u`].filter(Boolean).join(' · ');
-      h.append(hs); sec.append(h);
-      const lst = document.createElement('div'); lst.className = 'cp-bets'; sec.append(lst);
-      g.forEach(r => row(r, lst));
+      const hs = document.createElement('span'); hs.textContent = `${staked.length} bet${staked.length === 1 ? '' : 's'} · ${units.toFixed(2)}u`; h.append(hs);
+      sec.append(h);
+      if (blurb) { const bl = document.createElement('p'); bl.className = 'cp-meta cp-type-blurb'; bl.textContent = blurb; sec.append(bl); }
+      if (key === 'stack') {
+        // folded: one line of games with counts; open to see them by game (top stacks first in each game)
+        const open = stackOpen || cf === 'stack';
+        const games = [...new Set(g.map(r => r.game))].sort((a, b) => String(tips[a] || '').localeCompare(String(tips[b] || '')));
+        const tg = document.createElement('button'); tg.type = 'button'; tg.className = 'cp-btn ghost cp-stack-tg'; tg.setAttribute('aria-expanded', String(open));
+        tg.textContent = open ? 'Hide stacks' : `Show ${g.length} stacks`;
+        tg.addEventListener('click', () => { try { localStorage.setItem('cp-stacks-open', open ? '0' : '1'); } catch (e) {} drawBest(); });
+        const sumLine = document.createElement('div'); sumLine.className = 'cp-stack-sum';
+        games.forEach(gm => { const n = g.filter(r => r.game === gm).length; const c = document.createElement('span'); c.className = 'cp-chip dim'; c.textContent = `${tips[gm] ? tips[gm] + ' ' : ''}${gm} ${n}`; sumLine.append(c, ' '); });
+        sec.append(sumLine, tg);
+        if (open) games.forEach(gm => {
+          const gg = g.filter(r => r.game === gm).sort((a, b) => (/top stack/i.test(b.category) - /top stack/i.test(a.category)) || Number(b.ev_pct) - Number(a.ev_pct));
+          const sh = document.createElement('h4'); sh.className = 'cp-stack-gh';
+          const u = gg.filter(r => r.verdict === 'Bet').reduce((t, r) => t + (Number(r.stake_pct) || 0), 0);
+          sh.textContent = `${tips[gm] || ''} ${gm}`.trim(); const sp2 = document.createElement('span'); sp2.textContent = ` · ${gg.length} · ${u.toFixed(2)}u`; sh.append(sp2);
+          const lst = document.createElement('div'); lst.className = 'cp-bets'; sec.append(sh, lst);
+          gg.forEach(r => row(r, lst));
+        });
+      } else {
+        const lst = document.createElement('div'); lst.className = 'cp-bets'; sec.append(lst);
+        g.slice().sort(byTip).forEach(r => row(r, lst));
+      }
       box.appendChild(sec);
     }
     // 80% multi

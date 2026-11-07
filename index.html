@@ -1628,7 +1628,7 @@ window.dash = (() => {
     // 8 Nov 2026 (Andrew: "the bets are too messy"): sections by bet type, stackers folded, one short line per bet
     const typeOf = r => isMulti(r) ? 'multi' : r.category === 'Sharp' ? 'sharp' : r.category === 'RotoWire' ? 'rotowire'
       : (/stack/i.test(r.category) || /\((top )?stack;/.test(r.pick)) ? 'stack' : 'model';
-    const TYPES = [['sharp', 'Sharp money', 'Big money from sharp bettors with 3%+ edge at an Australian bookie (RotoWire ProBets), checked against RotoWire\'s projection.'],
+    const TYPES = [['sharp', 'Sharp money', 'Player props only: big money from sharp bettors with 3%+ edge at an Australian bookie (RotoWire ProBets), and RotoWire\'s projection agrees.'],
       ['rotowire', 'RotoWire', 'RotoWire\'s projection (corrected for its usual gap) disagrees with the bookies by 10%+ value.'],
       ['model', 'Model & combos', 'The model\'s own singles and same-player combos.'],
       ['stack', 'Stacks', 'Top stacks and ladder stackers: long shots at small stakes.'],

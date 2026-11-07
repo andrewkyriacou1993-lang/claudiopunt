@@ -7,7 +7,7 @@ rid,game,code,tip,player,team,stat,stack,top_rung,spec,lower_price,top_price,sta
 6,Jazz @ Mavericks,UTA@DAL,12:10,P.J. Washington,DAL,Rebounds,12+ & 14+ rebounds,14+ rebounds,R14,8.5,15.0,25.5,70.0,5.8,,5.8,46.8,46.8,Stack,0,best,
 7,Thunder @ Grizzlies,OKC@MEM,12:10,Jared McCain,OKC,Rebounds,6+ & 8+ rebounds,8+ rebounds,R8,6,14.0,23.5,67.9,6.2,,6.2,45.1,45.1,Stack,0,best,"Top stack: Jalen Williams (32 mpg), Chet Holmgren (30 mpg) out"
 8,Thunder @ Grizzlies,OKC@MEM,12:10,Jaylen Wells,MEM,Rebounds,6+ & 8+ rebounds,8+ rebounds,R8,6,14.0,23.5,67.9,6.2,,6.2,45.1,45.1,Stack,0,best,
-9,Spurs @ Kings,SAS@SAC,14:10,Darius Acuff Jr.,SAC,Assists,10+ & 12+ assists,12+ assists,A12,7.5,15.0,25.0,66.7,5.8,,5.8,44.0,44.0,Stack,0,best,
+9,Spurs @ Kings,SAS@SAC,14:10,Darius Acuff Jr.,SAC,Assists,10+ & 12+ assists,12+ assists,A12,7.5,15.0,25.0,66.7,5.8,,5.8,44.0,44.0,Stack,0,best,Top stack: Keegan Murray (27 mpg) out
 10,Spurs @ Kings,SAS@SAC,14:10,Devin Vassell,SAS,Points,20+ & 25+ points,25+ points,P25,7,15.0,25.0,66.7,5.8,,5.8,44.0,44.0,Stack,0,best,
 11,Timberwolves @ Pelicans,MIN@NOP,12:10,Trey Murphy III,NOP,Points,25+ & 30+ points,30+ points,P30,7.75,15.0,25.0,66.7,5.8,,5.8,44.0,44.0,Stack,0,best,
 12,Blazers @ Lakers,POR@LAL,14:10,Sandro Mamukelashvili,LAL,Points,15+ & 20+ points,20+ points,P20,6,14.0,23.25,66.1,6.2,,6.2,43.6,43.6,Stack,0,best,
@@ -15,7 +15,7 @@ rid,game,code,tip,player,team,stat,stack,top_rung,spec,lower_price,top_price,sta
 14,Spurs @ Kings,SAS@SAC,14:10,Stephon Castle,SAS,Rebounds,10+ & 12+ rebounds,12+ rebounds,R12,8.5,17.0,28.0,64.7,5.1,,5.1,42.1,42.1,Stack,0,best,
 15,Raptors @ Bucks,TOR@MIL,12:10,Myles Turner,MIL,Rebounds,10+ & 12+ rebounds,12+ rebounds,R12,8.5,17.0,28.0,64.7,5.1,,5.1,42.1,42.1,Stack,0,best,
 16,Jazz @ Mavericks,UTA@DAL,12:10,Ace Bailey,UTA,Rebounds,10+ & 12+ rebounds,12+ rebounds,R12,7.75,15.0,24.5,63.3,5.8,,5.8,41.1,41.1,Stack,0,best,Top stack: Jaren Jackson Jr. (26 mpg) out
-17,Raptors @ Bucks,TOR@MIL,12:10,Ja'Kobe Walter,TOR,Points,25+ & 30+ points,30+ points,P30,8.5,17.0,27.75,63.2,5.1,,5.1,40.8,40.8,Stack,0,best,
+17,Raptors @ Bucks,TOR@MIL,12:10,Ja'Kobe Walter,TOR,Points,25+ & 30+ points,30+ points,P30,8.5,17.0,27.75,63.2,5.1,,5.1,40.8,40.8,Stack,0,best,Top stack: Kawhi Leonard (26 mpg) out
 18,Jazz @ Mavericks,UTA@DAL,12:10,Cooper Flagg,DAL,Rebounds,12+ & 14+ rebounds,14+ rebounds,R14,9.5,17.0,27.75,63.2,5.1,,5.1,40.8,40.8,Stack,0,best,
 19,Timberwolves @ Pelicans,MIN@NOP,12:10,Dejounte Murray,NOP,Rebounds,10+ & 12+ rebounds,12+ rebounds,R12,7.5,14.0,22.75,62.5,6.2,,6.2,40.5,40.5,Stack,0,best,
 20,Raptors @ Bucks,TOR@MIL,12:10,Jakob Poeltl,TOR,Rebounds,12+ & 14+ rebounds,14+ rebounds,R14,8.5,14.0,22.75,62.5,6.2,,6.2,40.5,40.5,Stack,0,best,Top stack: Kawhi Leonard (26 mpg) out
@@ -36,20 +36,20 @@ rid,game,code,tip,player,team,stat,stack,top_rung,spec,lower_price,top_price,sta
 35,Jazz @ Mavericks,UTA@DAL,12:10,Cooper Flagg,DAL,Assists,10+ & 12+ assists,12+ assists,A12,6.5,14.0,22.0,57.1,6.2,,6.2,35.8,35.8,Stack,0,best,
 36,Spurs @ Kings,SAS@SAC,14:10,De'Aaron Fox,SAS,Points,25+ & 30+ points,30+ points,P30,7.75,17.0,26.75,57.4,5.1,,5.1,35.7,35.7,Stack,0,best,
 37,Blazers @ Lakers,POR@LAL,14:10,Walker Kessler,LAL,Points,20+ & 25+ points,25+ points,P25,7,17.0,26.75,57.4,5.1,,5.1,35.7,35.7,Stack,0,best,
-38,Thunder @ Grizzlies,OKC@MEM,12:10,Isaiah Hartenstein,OKC,Assists,6+ & 8+ assists,8+ assists,A8,5.7,13.0,20.25,55.8,6.7,,6.7,34.8,34.8,Stack,0,best,
-39,Thunder @ Grizzlies,OKC@MEM,12:10,Ajay Mitchell,OKC,Points,30+ & 35+ points,35+ points,P35,8.5,17.0,26.5,55.9,5.1,,5.1,34.5,34.5,Stack,0,best,
-40,Thunder @ Grizzlies,OKC@MEM,12:10,Jared McCain,OKC,Assists,4+ & 6+ assists,6+ assists,A6,4.8,14.0,21.75,55.4,6.2,,6.2,34.3,34.3,Stack,0,best,
+38,Thunder @ Grizzlies,OKC@MEM,12:10,Isaiah Hartenstein,OKC,Assists,6+ & 8+ assists,8+ assists,A8,5.7,13.0,20.25,55.8,6.7,,6.7,34.8,34.8,Stack,0,best,"Top stack: Jalen Williams (32 mpg), Chet Holmgren (30 mpg) out"
+39,Thunder @ Grizzlies,OKC@MEM,12:10,Ajay Mitchell,OKC,Points,30+ & 35+ points,35+ points,P35,8.5,17.0,26.5,55.9,5.1,,5.1,34.5,34.5,Stack,0,best,"Top stack: Jalen Williams (32 mpg), Chet Holmgren (30 mpg) out"
+40,Thunder @ Grizzlies,OKC@MEM,12:10,Jared McCain,OKC,Assists,4+ & 6+ assists,6+ assists,A6,4.8,14.0,21.75,55.4,6.2,,6.2,34.3,34.3,Stack,0,best,"Top stack: Jalen Williams (32 mpg), Chet Holmgren (30 mpg) out"
 41,Blazers @ Lakers,POR@LAL,14:10,Deni Avdija,POR,Assists,10+ & 12+ assists,12+ assists,A12,6,14.0,21.75,55.4,6.2,,6.2,34.3,34.3,Stack,0,best,
 42,Spurs @ Kings,SAS@SAC,14:10,De'Aaron Fox,SAS,Assists,10+ & 12+ assists,12+ assists,A12,7.5,17.0,26.25,54.4,5.1,,5.1,33.2,33.2,Stack,0,best,
 43,Spurs @ Kings,SAS@SAC,14:10,Stephon Castle,SAS,Points,25+ & 30+ points,30+ points,P30,6,13.0,20.0,53.8,6.7,,6.7,33.1,33.1,Stack,0,best,
-44,Raptors @ Bucks,TOR@MIL,12:10,Jakob Poeltl,TOR,Points,15+ & 20+ points,20+ points,P20,5.4,13.0,20.0,53.8,6.7,,6.7,33.1,33.1,Stack,0,best,
-45,Thunder @ Grizzlies,OKC@MEM,12:10,Shai Gilgeous-Alexander,OKC,Points,45+ & 50+ points,50+ points,P50,8.5,13.0,19.75,51.9,6.7,,6.7,31.4,31.4,Stack,0,best,
+44,Raptors @ Bucks,TOR@MIL,12:10,Jakob Poeltl,TOR,Points,15+ & 20+ points,20+ points,P20,5.4,13.0,20.0,53.8,6.7,,6.7,33.1,33.1,Stack,0,best,Top stack: Kawhi Leonard (26 mpg) out
+45,Thunder @ Grizzlies,OKC@MEM,12:10,Shai Gilgeous-Alexander,OKC,Points,45+ & 50+ points,50+ points,P50,8.5,13.0,19.75,51.9,6.7,,6.7,31.4,31.4,Stack,0,best,"Top stack: Jalen Williams (32 mpg), Chet Holmgren (30 mpg) out"
 46,Blazers @ Lakers,POR@LAL,14:10,Deni Avdija,POR,Points,35+ & 40+ points,40+ points,P40,7.5,13.0,19.75,51.9,6.7,,6.7,31.4,31.4,Stack,0,best,
-47,Timberwolves @ Pelicans,MIN@NOP,12:10,Terrence Shannon Jr.,MIN,Points,20+ & 25+ points,25+ points,P25,6,13.0,19.75,51.9,6.7,,6.7,31.4,31.4,Stack,0,best,
+47,Timberwolves @ Pelicans,MIN@NOP,12:10,Terrence Shannon Jr.,MIN,Points,20+ & 25+ points,25+ points,P25,6,13.0,19.75,51.9,6.7,,6.7,31.4,31.4,Stack,0,best,Top stack: Anthony Edwards (34 mpg) out
 48,Raptors @ Bucks,TOR@MIL,12:10,Kasparas Jakučionis,MIL,Points,10+ & 15+ points,15+ points,P15,5,13.0,19.75,51.9,6.7,,6.7,31.4,31.4,Stack,0,best,
 49,Blazers @ Lakers,POR@LAL,14:10,Jrue Holiday,POR,Assists,8+ & 10+ assists,10+ assists,A10,7.5,14.0,21.25,51.8,6.2,,6.2,31.2,31.2,Stack,0,best,
 50,Timberwolves @ Pelicans,MIN@NOP,12:10,Derik Queen,NOP,Rebounds,12+ & 14+ rebounds,14+ rebounds,R14,7.5,13.0,19.5,50.0,6.7,,6.7,29.8,29.8,Stack,0,best,
-51,Thunder @ Grizzlies,OKC@MEM,12:10,Aday Mara,OKC,Points,15+ & 20+ points,20+ points,P20,6,14.0,21.0,50.0,6.2,,6.2,29.7,29.7,Stack,0,best,
+51,Thunder @ Grizzlies,OKC@MEM,12:10,Aday Mara,OKC,Points,15+ & 20+ points,20+ points,P20,6,14.0,21.0,50.0,6.2,,6.2,29.7,29.7,Stack,0,best,"Top stack: Jalen Williams (32 mpg), Chet Holmgren (30 mpg) out"
 52,Blazers @ Lakers,POR@LAL,14:10,Donovan Clingan,POR,Points,20+ & 25+ points,25+ points,P25,6.5,14.0,21.0,50.0,6.2,,6.2,29.7,29.7,Stack,0,best,
 53,Jazz @ Mavericks,UTA@DAL,12:10,Kyrie Irving,DAL,Assists,8+ & 10+ assists,10+ assists,A10,7,14.0,21.0,50.0,6.2,,6.2,29.7,29.7,Stack,0,best,
 54,Thunder @ Grizzlies,OKC@MEM,12:10,Cameron Boozer,MEM,Rebounds,14+ & 16+ rebounds,16+ rebounds,R16,7.75,13.0,19.25,48.1,6.7,,6.7,28.1,28.1,Stack,0,best,
@@ -59,13 +59,13 @@ rid,game,code,tip,player,team,stat,stack,top_rung,spec,lower_price,top_price,sta
 58,Raptors @ Bucks,TOR@MIL,12:10,Ryan Rollins,MIL,Points,20+ & 25+ points,25+ points,P25,6,13.0,19.25,48.1,6.7,,6.7,28.1,28.1,Stack,0,best,
 59,Raptors @ Bucks,TOR@MIL,12:10,Ryan Rollins,MIL,Assists,8+ & 10+ assists,10+ assists,A10,7,13.0,19.25,48.1,6.7,,6.7,28.1,28.1,Stack,0,best,
 60,Jazz @ Mavericks,UTA@DAL,12:10,Naji Marshall,DAL,Assists,6+ & 8+ assists,8+ assists,A8,5.7,13.0,19.25,48.1,6.7,,6.7,28.1,28.1,Stack,0,best,
-61,Thunder @ Grizzlies,OKC@MEM,12:10,Shai Gilgeous-Alexander,OKC,Assists,10+ & 12+ assists,12+ assists,A12,6,13.0,19.0,46.2,6.7,,6.7,26.5,26.5,Stack,0,best,
-62,Spurs @ Kings,SAS@SAC,14:10,Darius Acuff Jr.,SAC,Points,35+ & 40+ points,40+ points,P40,7.5,13.0,19.0,46.2,6.7,,6.7,26.5,26.5,Stack,0,best,
-63,Spurs @ Kings,SAS@SAC,14:10,Domantas Sabonis,SAC,Assists,10+ & 12+ assists,12+ assists,A12,6,13.0,19.0,46.2,6.7,,6.7,26.5,26.5,Stack,0,best,
+61,Thunder @ Grizzlies,OKC@MEM,12:10,Shai Gilgeous-Alexander,OKC,Assists,10+ & 12+ assists,12+ assists,A12,6,13.0,19.0,46.2,6.7,,6.7,26.5,26.5,Stack,0,best,"Top stack: Jalen Williams (32 mpg), Chet Holmgren (30 mpg) out"
+62,Spurs @ Kings,SAS@SAC,14:10,Darius Acuff Jr.,SAC,Points,35+ & 40+ points,40+ points,P40,7.5,13.0,19.0,46.2,6.7,,6.7,26.5,26.5,Stack,0,best,Top stack: Keegan Murray (27 mpg) out
+63,Spurs @ Kings,SAS@SAC,14:10,Domantas Sabonis,SAC,Assists,10+ & 12+ assists,12+ assists,A12,6,13.0,19.0,46.2,6.7,,6.7,26.5,26.5,Stack,0,best,Top stack: Keegan Murray (27 mpg) out
 64,Timberwolves @ Pelicans,MIN@NOP,12:10,Trey Murphy III,NOP,Rebounds,8+ & 10+ rebounds,10+ rebounds,R10,6,13.0,19.0,46.2,6.7,,6.7,26.5,26.5,Stack,0,best,
 65,Timberwolves @ Pelicans,MIN@NOP,12:10,Jonathan Kuminga,MIN,Rebounds,10+ & 12+ rebounds,12+ rebounds,R12,6,12.0,17.5,45.8,7.2,,7.2,26.3,26.3,Stack,0,best,Top stack: Anthony Edwards (34 mpg) out
 66,Raptors @ Bucks,TOR@MIL,12:10,RJ Barrett,TOR,Rebounds,10+ & 12+ rebounds,12+ rebounds,R12,5.9,12.0,17.5,45.8,7.2,,7.2,26.3,26.3,Stack,0,best,Top stack: Kawhi Leonard (26 mpg) out
-67,Thunder @ Grizzlies,OKC@MEM,12:10,Isaiah Hartenstein,OKC,Points,15+ & 20+ points,20+ points,P20,5.4,13.0,18.75,44.2,6.7,,6.7,24.8,24.8,Stack,0,best,
+67,Thunder @ Grizzlies,OKC@MEM,12:10,Isaiah Hartenstein,OKC,Points,15+ & 20+ points,20+ points,P20,5.4,13.0,18.75,44.2,6.7,,6.7,24.8,24.8,Stack,0,best,"Top stack: Jalen Williams (32 mpg), Chet Holmgren (30 mpg) out"
 68,Blazers @ Lakers,POR@LAL,14:10,Toumani Camara,POR,Points,20+ & 25+ points,25+ points,P25,6,13.0,18.75,44.2,6.7,,6.7,24.8,24.8,Stack,0,best,
 69,Jazz @ Mavericks,UTA@DAL,12:10,Daniel Gafford,DAL,Points,15+ & 20+ points,20+ points,P20,5.4,13.0,18.75,44.2,6.7,,6.7,24.8,24.8,Stack,0,best,
 70,Jazz @ Mavericks,UTA@DAL,12:10,Daniel Gafford,DAL,Rebounds,12+ & 14+ rebounds,14+ rebounds,R14,7.5,13.0,18.75,44.2,6.7,,6.7,24.8,24.8,Stack,0,best,
@@ -74,23 +74,23 @@ rid,game,code,tip,player,team,stat,stack,top_rung,spec,lower_price,top_price,sta
 73,Thunder @ Grizzlies,OKC@MEM,12:10,Ty Jerome,MEM,Assists,10+ & 12+ assists,12+ assists,A12,9.5,21.0,30.25,44.0,4.1,,4.1,24.0,24.0,Stack,0,best,
 74,Blazers @ Lakers,POR@LAL,14:10,Deni Avdija,POR,Rebounds,12+ & 14+ rebounds,14+ rebounds,R14,9.5,21.0,30.25,44.0,4.1,,4.1,24.0,24.0,Stack,0,best,
 75,Raptors @ Bucks,TOR@MIL,12:10,Jaime Jaquez Jr.,MIL,Assists,6+ & 8+ assists,8+ assists,A8,6,21.0,30.25,44.0,4.1,,4.1,24.0,24.0,Stack,0,best,
-76,Timberwolves @ Pelicans,MIN@NOP,12:10,Jaden McDaniels,MIN,Points,25+ & 30+ points,30+ points,P30,6,13.0,18.5,42.3,6.7,,6.7,23.1,23.1,Stack,0,best,
+76,Timberwolves @ Pelicans,MIN@NOP,12:10,Jaden McDaniels,MIN,Points,25+ & 30+ points,30+ points,P30,6,13.0,18.5,42.3,6.7,,6.7,23.1,23.1,Stack,0,best,Top stack: Anthony Edwards (34 mpg) out
 77,Timberwolves @ Pelicans,MIN@NOP,12:10,Jeremiah Fears,NOP,Points,25+ & 30+ points,30+ points,P30,9.5,21.0,30.0,42.9,4.1,,4.1,23.0,23.0,Stack,0,best,
 78,Timberwolves @ Pelicans,MIN@NOP,12:10,LaMelo Ball,MIN,Rebounds,8+ & 10+ rebounds,10+ rebounds,R10,6.5,12.0,17.0,41.7,7.2,,7.2,22.7,22.7,Stack,0,best,Top stack: Anthony Edwards (34 mpg) out
 79,Timberwolves @ Pelicans,MIN@NOP,12:10,Dejounte Murray,NOP,Points,25+ & 30+ points,30+ points,P30,6,12.0,17.0,41.7,7.2,,7.2,22.7,22.7,Stack,0,best,
 80,Jazz @ Mavericks,UTA@DAL,12:10,Jaxson Hayes,UTA,Rebounds,10+ & 12+ rebounds,12+ rebounds,R12,6.5,12.0,17.0,41.7,7.2,,7.2,22.7,22.7,Stack,0,best,Top stack: Jaren Jackson Jr. (26 mpg) out
-81,Timberwolves @ Pelicans,MIN@NOP,12:10,Ayo Dosunmu,MIN,Assists,8+ & 10+ assists,10+ assists,A10,6.5,13.0,18.25,40.4,6.7,,6.7,21.5,21.5,Stack,0,best,
-82,Jazz @ Mavericks,UTA@DAL,12:10,Keyonte George,UTA,Assists,10+ & 12+ assists,12+ assists,A12,6,13.0,18.25,40.4,6.7,,6.7,21.5,21.5,Stack,0,best,
+81,Timberwolves @ Pelicans,MIN@NOP,12:10,Ayo Dosunmu,MIN,Assists,8+ & 10+ assists,10+ assists,A10,6.5,13.0,18.25,40.4,6.7,,6.7,21.5,21.5,Stack,0,best,Top stack: Anthony Edwards (34 mpg) out
+82,Jazz @ Mavericks,UTA@DAL,12:10,Keyonte George,UTA,Assists,10+ & 12+ assists,12+ assists,A12,6,13.0,18.25,40.4,6.7,,6.7,21.5,21.5,Stack,0,best,Top stack: Jaren Jackson Jr. (26 mpg) out
 83,Blazers @ Lakers,POR@LAL,14:10,Sandro Mamukelashvili,LAL,Rebounds,8+ & 10+ rebounds,10+ rebounds,R10,6.5,12.0,16.75,39.6,7.2,,7.2,20.9,20.9,Stack,0,best,
 84,Thunder @ Grizzlies,OKC@MEM,12:10,Jaylen Wells,MEM,Points,20+ & 25+ points,25+ points,P25,8.5,21.0,29.25,39.3,4.1,,4.1,19.9,19.9,Stack,0,best,
 85,Blazers @ Lakers,POR@LAL,14:10,Jrue Holiday,POR,Rebounds,8+ & 10+ rebounds,10+ rebounds,R10,9.5,21.0,29.25,39.3,4.1,,4.1,19.9,19.9,Stack,0,best,
 86,Thunder @ Grizzlies,OKC@MEM,12:10,Shai Gilgeous-Alexander,OKC,Rebounds,8+ & 10+ rebounds,10+ rebounds,R10,6.5,13.0,18.0,38.5,6.7,,6.7,19.8,19.8,Stack,0,best,"Top stack: Jalen Williams (32 mpg), Chet Holmgren (30 mpg) out"
 87,Spurs @ Kings,SAS@SAC,14:10,Keldon Johnson,SAS,Rebounds,8+ & 10+ rebounds,10+ rebounds,R10,6.5,13.0,18.0,38.5,6.7,,6.7,19.8,19.8,Stack,0,best,
-88,Spurs @ Kings,SAS@SAC,14:10,De'Andre Hunter,SAC,Points,20+ & 25+ points,25+ points,P25,6,13.0,18.0,38.5,6.7,,6.7,19.8,19.8,Stack,0,best,
+88,Spurs @ Kings,SAS@SAC,14:10,De'Andre Hunter,SAC,Points,20+ & 25+ points,25+ points,P25,6,13.0,18.0,38.5,6.7,,6.7,19.8,19.8,Stack,0,best,Top stack: Keegan Murray (27 mpg) out
 89,Thunder @ Grizzlies,OKC@MEM,12:10,Cedric Coward,MEM,Rebounds,12+ & 14+ rebounds,14+ rebounds,R14,6.5,12.0,16.5,37.5,7.2,,7.2,19.1,19.1,Stack,0,best,
-90,Spurs @ Kings,SAS@SAC,14:10,Precious Achiuwa,SAC,Points,15+ & 20+ points,20+ points,P20,5.2,13.0,17.75,36.5,6.7,,6.7,18.1,18.1,Stack,0,best,
+90,Spurs @ Kings,SAS@SAC,14:10,Precious Achiuwa,SAC,Points,15+ & 20+ points,20+ points,P20,5.2,13.0,17.75,36.5,6.7,,6.7,18.1,18.1,Stack,0,best,Top stack: Keegan Murray (27 mpg) out
 91,Spurs @ Kings,SAS@SAC,14:10,Precious Achiuwa,SAC,Rebounds,12+ & 14+ rebounds,14+ rebounds,R14,9.5,21.0,28.75,36.9,4.1,,4.1,17.9,17.9,Stack,0,best,Top stack: Keegan Murray (27 mpg) out
-92,Raptors @ Bucks,TOR@MIL,12:10,RJ Barrett,TOR,Points,40+ & 45+ points,45+ points,P45,9.5,21.0,28.75,36.9,4.1,,4.1,17.9,17.9,Stack,0,best,
+92,Raptors @ Bucks,TOR@MIL,12:10,RJ Barrett,TOR,Points,40+ & 45+ points,45+ points,P45,9.5,21.0,28.75,36.9,4.1,,4.1,17.9,17.9,Stack,0,best,Top stack: Kawhi Leonard (26 mpg) out
 93,Thunder @ Grizzlies,OKC@MEM,12:10,Zach Edey,MEM,Rebounds,14+ & 16+ rebounds,16+ rebounds,R16,7.75,12.0,16.25,35.4,7.2,,7.2,17.3,17.3,Stack,0,best,
 94,Spurs @ Kings,SAS@SAC,14:10,De'Andre Hunter,SAC,Rebounds,8+ & 10+ rebounds,10+ rebounds,R10,6,12.0,16.25,35.4,7.2,,7.2,17.3,17.3,Stack,0,best,Top stack: Keegan Murray (27 mpg) out
 95,Spurs @ Kings,SAS@SAC,14:10,Dylan Harper,SAS,Assists,8+ & 10+ assists,10+ assists,A10,5.7,12.0,16.25,35.4,7.2,,7.2,17.3,17.3,Stack,0,best,
@@ -101,8 +101,8 @@ rid,game,code,tip,player,team,stat,stack,top_rung,spec,lower_price,top_price,sta
 100,Spurs @ Kings,SAS@SAC,14:10,Devin Vassell,SAS,Rebounds,8+ & 10+ rebounds,10+ rebounds,R10,8.5,21.0,28.25,34.5,4.1,,4.1,15.8,15.8,Stack,0,best,
 101,Blazers @ Lakers,POR@LAL,14:10,Jake LaRavia,LAL,Points,10+ & 15+ points,15+ points,P15,5.2,21.0,28.25,34.5,4.1,,4.1,15.8,15.8,Stack,0,best,
 102,Raptors @ Bucks,TOR@MIL,12:10,Jamal Shead,TOR,Rebounds,6+ & 8+ rebounds,8+ rebounds,R8,7.5,21.0,28.25,34.5,4.1,,4.1,15.8,15.8,Stack,0,best,Top stack: Kawhi Leonard (26 mpg) out
-103,Jazz @ Mavericks,UTA@DAL,12:10,Jaxson Hayes,UTA,Points,15+ & 20+ points,20+ points,P20,6,21.0,28.25,34.5,4.1,,4.1,15.8,15.8,Stack,0,best,
-104,Spurs @ Kings,SAS@SAC,14:10,Zach LaVine,SAC,Points,30+ & 35+ points,35+ points,P35,6,12.0,15.75,31.2,7.2,,7.2,13.7,13.7,Stack,0,best,
+103,Jazz @ Mavericks,UTA@DAL,12:10,Jaxson Hayes,UTA,Points,15+ & 20+ points,20+ points,P20,6,21.0,28.25,34.5,4.1,,4.1,15.8,15.8,Stack,0,best,Top stack: Jaren Jackson Jr. (26 mpg) out
+104,Spurs @ Kings,SAS@SAC,14:10,Zach LaVine,SAC,Points,30+ & 35+ points,35+ points,P35,6,12.0,15.75,31.2,7.2,,7.2,13.7,13.7,Stack,0,best,Top stack: Keegan Murray (27 mpg) out
 105,Spurs @ Kings,SAS@SAC,14:10,Dylan Harper,SAS,Points,25+ & 30+ points,30+ points,P30,5.9,12.0,15.75,31.2,7.2,,7.2,13.7,13.7,Stack,0,best,
 106,Blazers @ Lakers,POR@LAL,14:10,Toumani Camara,POR,Threes,6+ & 7+ threes,7+ threes,T7,14,26.0,28.0,7.7,3.3,4.8,4.1,-7.4,13.5,Stack,0,best,
 107,Thunder @ Grizzlies,OKC@MEM,12:10,Cedric Coward,MEM,Points,20+ & 25+ points,25+ points,P25,5.4,12.0,15.5,29.2,7.2,,7.2,11.9,11.9,Stack,0,best,
@@ -111,7 +111,7 @@ rid,game,code,tip,player,team,stat,stack,top_rung,spec,lower_price,top_price,sta
 110,Raptors @ Bucks,TOR@MIL,12:10,Brayden Burries,MIL,Assists,4+ & 6+ assists,6+ assists,A6,4,12.0,15.25,27.1,7.2,,7.2,10.1,10.1,Stack,0,best,
 111,Timberwolves @ Pelicans,MIN@NOP,12:10,Saddiq Bey,NOP,Points,20+ & 25+ points,25+ points,P25,5.4,11.0,13.75,25.0,7.9,,7.9,8.4,8.4,Stack,0,best,
 112,Thunder @ Grizzlies,OKC@MEM,12:10,Ty Jerome,MEM,Rebounds,6+ & 8+ rebounds,8+ rebounds,R8,4.65,12.0,15.0,25.0,7.2,,7.2,8.3,8.3,Stack,0,best,
-113,Timberwolves @ Pelicans,MIN@NOP,12:10,Jonathan Kuminga,MIN,Assists,4+ & 6+ assists,6+ assists,A6,3.45,11.0,12.75,15.9,7.9,9.1,8.5,0.5,8.3,Stack,0,best,
+113,Timberwolves @ Pelicans,MIN@NOP,12:10,Jonathan Kuminga,MIN,Assists,4+ & 6+ assists,6+ assists,A6,3.45,11.0,12.75,15.9,7.9,9.1,8.5,0.5,8.3,Stack,0,best,Top stack: Anthony Edwards (34 mpg) out
 114,Jazz @ Mavericks,UTA@DAL,12:10,Max Christie,DAL,Points,15+ & 20+ points,20+ points,P20,6,12.0,15.0,25.0,7.2,,7.2,8.3,8.3,Stack,0,best,
 115,Thunder @ Grizzlies,OKC@MEM,12:10,Cedric Coward,MEM,Threes,4+ & 5+ threes,5+ threes,T5,7.25,17.0,15.75,-7.4,5.1,9.7,7.4,-20.1,16.3,No boost,0,best,
 116,Spurs @ Kings,SAS@SAC,14:10,Devin Vassell,SAS,Threes,4+ & 5+ threes,5+ threes,T5,7.5,19.0,18.75,-1.3,4.5,7.7,6.1,-15.0,14.7,No boost,0,best,

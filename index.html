@@ -482,6 +482,10 @@ window.dash = (() => {
       <div class="cp-sub"><h2 class="cp-h" id="nf-rw-h">RotoWire picks</h2><p>Props where RotoWire's projection (scaled to the bookies' usual level for that stat) disagrees with the bookies' number by enough for 10%+ value at the best price. Regular roles only, never against our own model pick on the same player, paper 0.5u each, locked at the first odds. Tap a pick for the numbers.</p></div>
       <div class="cp-bets" id="nf-rw"></div>
     </section>
+    <section class="mb-sec" aria-labelledby="nf-gb-h">
+      <div class="cp-sub"><h2 class="cp-h" id="nf-gb-h">Game bets</h2><p>Line, total and head-to-head prices at Sportsbet / PointsBet against a fair line built from the Australian books and 10 US books (incl. Circa) with their margins removed, using real NFL scoring (3s and 7s, pushes on whole lines). 2.5%+ value only, paper 1u.</p></div>
+      <div class="cp-bets" id="nf-gb"></div>
+    </section>
     <section class="mb-sec" aria-labelledby="nf-tg-h">
       <div class="cp-sub"><h2 class="cp-h" id="nf-tg-h">Games</h2><p>Tap a game for its lines, role and injury flags, and every prop priced.</p></div>
       <div class="cp-glist" id="nf-games-list"></div>
@@ -2494,6 +2498,32 @@ window.dash = (() => {
         c.append(main, right, why); rwb.appendChild(c);
       });
     }
+    // Game bets (this week's, from the ledger) + the closest call when there are none
+    const gbb = Q('#nf-gb');
+    if (gbb) {
+      gbb.innerHTML = '';
+      const GBL = (rows('history') || []).filter((h) => h.category === 'Game' && h.week === String(M0.week || '')).filter((h) => !book || h.book === book);
+      if (!GBL.length) {
+        const top = (G || []).filter((g) => g.best_game).sort((a, b) => N(b.best_game_ev) - N(a.best_game_ev))[0];
+        gbb.appendChild(el('div', 'cp-meta', 'No game price beats the Australian + US fair line by 2.5% this week.' + (top ? ` Closest: ${top.best_game} (${top.game}), ${N(top.best_game_ev) > 0 ? '+' : ''}${top.best_game_ev}%.` : '')));
+      }
+      GBL.forEach((h) => {
+        const c = el('article', 'cp-bet');
+        const main = el('button', 'cp-bet-main'); main.type = 'button'; main.setAttribute('aria-expanded', 'false');
+        const l = el('div', 'cp-bet-l'), sub = el('div', 'cp-bet-s');
+        const m = h.pick.match(/^(.*?) \((.*)\)$/);
+        sub.append(h.stat, ' · ', h.game);
+        if (h.result && h.result !== 'pending') { sub.append(' '); sub.appendChild(el('span', 'cp-chip' + (h.result === 'win' ? '' : ' dim'), h.result)); }
+        l.append(el('div', 'cp-bet-p', m ? m[1] : h.pick), sub);
+        const o = el('div', 'cp-bet-o'); o.append(el('b', '', N(h.odds).toFixed(2)), el('span', '', h.book));
+        main.append(l, o);
+        const right = el('div', 'cp-bet-r'); right.appendChild(el('span', 'cp-bet-st', 'paper ' + (h.stake_u || '1') + 'u'));
+        const why = el('div', 'cp-why'); why.hidden = true;
+        why.appendChild(el('div', '', `${m ? m[2] : ''}. Chance ${h.prob}% at ${N(h.odds).toFixed(2)} = +${h.ev_pct}% value.` + (h.actual ? ` Result: ${h.actual}.` : '')));
+        main.addEventListener('click', () => { why.hidden = !why.hidden; main.setAttribute('aria-expanded', String(!why.hidden)); c.classList.toggle('open', !why.hidden); });
+        c.append(main, right, why); gbb.appendChild(c);
+      });
+    }
     // games list
     const gl = Q('#nf-games-list'); gl.innerHTML = '';
     G.slice().sort((a, b) => tipKey(a.tip_aedt).localeCompare(tipKey(b.tip_aedt))).forEach((g) => {
@@ -2600,7 +2630,10 @@ window.dash = (() => {
     Q('#ng-h').textContent = `${g.game} · ${g.tip_aedt} AEDT`;
     const sp = N(g.spread_home), fav = sp <= 0 ? g.home : g.away;
     const tiles = Q('#ng-tiles'); tiles.innerHTML = '';
-    [['Spread', `${fav} −${Math.abs(sp)}`], ['Total', g.total], [`${g.home} ML`, g.ml_home], [`${g.away} ML`, g.ml_away], ['Props priced', g.props], ['Tracked', g.tracked], ['Check news', g.flagged]].forEach(([l, v]) => {
+    [['Spread', `${fav} −${Math.abs(sp)}`], ['Total', g.total], [`${g.home} ML`, g.ml_home], [`${g.away} ML`, g.ml_away], ['Props priced', g.props], ['Tracked', g.tracked], ['Check news', g.flagged]]
+      .concat(g.us_margin ? [['US market', `${N(g.us_margin) >= 0 ? g.home : g.away} by ${Math.abs(N(g.us_margin)).toFixed(1)} · total ${N(g.us_total).toFixed(1)}`],
+        ['Fair line', `${N(g.fair_margin) >= 0 ? g.home : g.away} by ${Math.abs(N(g.fair_margin)).toFixed(1)} · total ${N(g.fair_total).toFixed(1)}`],
+        ['Best game price', g.best_game ? `${g.best_game} (${N(g.best_game_ev) > 0 ? '+' : ''}${g.best_game_ev}%)` : '—']] : []).forEach(([l, v]) => {
       const t = el('div', 'mb-tile'); t.append(el('span', 'mb-tile-l', l), el('span', 'mb-tile-v', v)); tiles.appendChild(t);
     });
     const inj = (I || []).filter((r) => r.game === chosen);

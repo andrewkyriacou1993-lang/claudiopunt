@@ -1,0 +1,321 @@
+###GAMES
+date,tip,away,home,ml_away,ml_home,spread_home,spread_home_odds,spread_away_odds,total,over_odds,under_odds
+2026-11-09,12:10,Boston Celtics,Milwaukee Bucks,1.12,6.80,12.5,1.90,1.90,223.5,1.95,1.86
+2026-11-09,13:10,Miami Heat,Sacramento Kings,1.27,3.95,8.5,1.94,1.86,238.5,1.90,1.90
+2026-11-09,07:40,Philadelphia 76ers,Chicago Bulls,1.23,4.40,9.5,1.90,1.90,238.5,1.94,1.86
+2026-11-09,11:40,Brooklyn Nets,Dallas Mavericks,3.95,1.27,-9.5,1.92,1.88,218.5,1.85,1.96
+2026-11-09,10:10,Los Angeles Lakers,Detroit Pistons,2.63,1.51,-4.5,1.90,1.90,221.5,1.90,1.90
+2026-11-09,13:10,New Orleans Pelicans,Los Angeles Clippers,1.88,1.96,1.5,1.85,1.96,229.5,1.90,1.90
+2026-11-09,11:10,Utah Jazz,Minnesota Timberwolves,5.35,1.17,-11.5,1.94,1.86,223.5,1.85,1.96
+###PROPS
+game|player|stat|line|over|under
+BOS@MIL|Jayson Tatum|Threes|2.5|1.86|1.90
+BOS@MIL|Jayson Tatum|Points|26.5|1.84|1.92
+BOS@MIL|Jayson Tatum|PRA|40.5|1.80|1.96
+BOS@MIL|Jayson Tatum|Rebounds|6.5|1.64|2.15
+BOS@MIL|Jayson Tatum|Assists|6.5|1.84|1.92
+BOS@MIL|Paul George|Threes|2.5|1.80|1.96
+BOS@MIL|Paul George|Steals|1.5|1.80|1.96
+BOS@MIL|Paul George|Assists|3.5|1.78|2.00
+BOS@MIL|Paul George|Rebounds|4.5|1.68|2.10
+BOS@MIL|Paul George|PRA|26.5|1.80|1.96
+BOS@MIL|Paul George|Points|17.5|1.80|1.96
+BOS@MIL|Derrick White|PRA|21.5|1.84|1.92
+BOS@MIL|Derrick White|Steals|0.5|1.45|2.60
+BOS@MIL|Derrick White|Assists|4.5|1.92|1.84
+BOS@MIL|Derrick White|Rebounds|3.5|1.90|1.86
+BOS@MIL|Derrick White|Points|13.5|1.96|1.80
+BOS@MIL|Derrick White|Threes|1.5|1.56|2.30
+BOS@MIL|Neemias Queta|Rebounds|6.5|1.74|2.05
+BOS@MIL|Neemias Queta|Blocks|0.5|1.40|2.75
+BOS@MIL|Neemias Queta|Points|9.5|1.96|1.80
+BOS@MIL|Jordan Walsh|Rebounds|3.5|2.15|1.64
+BOS@MIL|Jordan Walsh|Points|4.5|1.92|1.84
+BOS@MIL|Payton Pritchard|Threes|2.5|2.25|1.58
+BOS@MIL|Payton Pritchard|PRA|19.5|1.80|1.96
+BOS@MIL|Payton Pritchard|Assists|3.5|1.89|1.87
+BOS@MIL|Payton Pritchard|Points|13.5|2.00|1.78
+BOS@MIL|Payton Pritchard|Rebounds|2.5|1.60|2.20
+BOS@MIL|Tyler Herro|Assists|4.5|2.25|1.58
+BOS@MIL|Tyler Herro|Steals|0.5|1.56|2.30
+BOS@MIL|Tyler Herro|Threes|2.5|1.78|2.00
+BOS@MIL|Tyler Herro|Points|20.5|2.00|1.78
+BOS@MIL|Tyler Herro|PRA|28.5|1.88|1.88
+BOS@MIL|Tyler Herro|Rebounds|4.5|2.10|1.68
+BOS@MIL|Myles Turner|Blocks|1.5|1.72|2.08
+BOS@MIL|Myles Turner|Threes|1.5|1.72|2.08
+BOS@MIL|Myles Turner|Rebounds|5.5|2.05|1.74
+BOS@MIL|Myles Turner|Points|9.5|1.86|1.90
+BOS@MIL|Myles Turner|PRA|17.5|1.96|1.80
+BOS@MIL|Myles Turner|Assists|1.5|1.68|2.10
+BOS@MIL|Kyle Kuzma|Assists|2.5|1.96|1.80
+BOS@MIL|Kyle Kuzma|Threes|1.5|2.60|1.44
+BOS@MIL|Kyle Kuzma|PRA|16.5|1.80|1.96
+BOS@MIL|Kyle Kuzma|Points|9.5|1.89|1.87
+BOS@MIL|Kyle Kuzma|Rebounds|4.5|1.96|1.80
+BOS@MIL|Brayden Burries|Rebounds|4.5|1.74|2.05
+BOS@MIL|Brayden Burries|Assists|2.5|1.88|1.88
+BOS@MIL|Brayden Burries|Points|10.5|1.80|1.96
+BOS@MIL|Brayden Burries|PRA|18.5|1.89|1.87
+BOS@MIL|Brayden Burries|Threes|1.5|2.40|1.52
+BOS@MIL|Jaime Jaquez Jr.|Threes|1.5|2.60|1.45
+BOS@MIL|Jaime Jaquez Jr.|Points|14.5|2.02|1.76
+BOS@MIL|Jaime Jaquez Jr.|PRA|21.5|1.80|1.96
+BOS@MIL|Jaime Jaquez Jr.|Rebounds|4.5|1.80|1.96
+BOS@MIL|Jaime Jaquez Jr.|Assists|3.5|2.40|1.52
+BOS@MIL|Ryan Rollins|Threes|1.5|2.50|1.48
+BOS@MIL|Ryan Rollins|Points|9.5|1.96|1.80
+BOS@MIL|Ryan Rollins|Assists|3.5|2.20|1.60
+BOS@MIL|Ryan Rollins|Rebounds|2.5|1.74|2.05
+BOS@MIL|Ryan Rollins|PRA|15.5|1.88|1.88
+PHI@CHI|Anfernee Simons|Points|9.5|1.85|1.90
+PHI@CHI|Joel Embiid|Assists|3.5|1.68|2.10
+PHI@CHI|Dean Wade|Points|4.5|1.96|1.80
+PHI@CHI|LeBron James|Rebounds|6.5|1.64|2.15
+PHI@CHI|Anfernee Simons|Assists|1.5|1.87|1.89
+PHI@CHI|Norman Powell|Rebounds|2.5|1.80|1.96
+PHI@CHI|Dean Wade|PRA|9.5|2.02|1.76
+PHI@CHI|Caleb Wilson|Rebounds|6.5|2.10|1.68
+PHI@CHI|Jalen Smith|Threes|1.5|1.93|1.83
+PHI@CHI|LeBron James|PRA|31.5|1.88|1.88
+PHI@CHI|Jalen Smith|Points|10.5|1.80|1.96
+PHI@CHI|Tyrese Maxey|Threes|2.5|1.96|1.80
+PHI@CHI|Caleb Wilson|Steals|1.5|2.60|1.44
+PHI@CHI|Tyrese Maxey|Points|25.5|1.96|1.80
+PHI@CHI|Josh Giddey|Points|11.5|1.90|1.86
+PHI@CHI|Tyrese Maxey|Assists|5.5|1.74|2.05
+PHI@CHI|Josh Giddey|Assists|8.5|2.05|1.74
+PHI@CHI|Tre Jones|Rebounds|2.5|1.96|1.80
+PHI@CHI|Joel Embiid|Threes|0.5|1.58|2.25
+PHI@CHI|Dean Wade|Threes|0.5|1.52|2.40
+PHI@CHI|VJ Edgecombe|Assists|3.5|2.15|1.64
+PHI@CHI|Norman Powell|PRA|23.5|1.80|1.96
+PHI@CHI|Jaylen Brown|Rebounds|6.5|1.76|2.02
+PHI@CHI|Dean Wade|Rebounds|3.5|1.89|1.87
+PHI@CHI|Jaylen Brown|Points|21.5|1.96|1.80
+PHI@CHI|LeBron James|Steals|0.5|1.40|2.75
+PHI@CHI|Caleb Wilson|Assists|2.5|1.93|1.83
+PHI@CHI|Caleb Wilson|Threes|2.5|2.45|1.50
+PHI@CHI|Anfernee Simons|PRA|13.5|1.85|1.91
+PHI@CHI|Matas Buzelis|Rebounds|4.5|1.78|2.00
+PHI@CHI|Josh Giddey|Rebounds|6.5|1.96|1.80
+PHI@CHI|Norman Powell|Assists|2.5|2.40|1.52
+PHI@CHI|Joel Embiid|Points|22.5|2.05|1.74
+PHI@CHI|Matas Buzelis|Points|12.5|1.96|1.80
+PHI@CHI|Tre Jones|Points|10.5|2.00|1.78
+PHI@CHI|Jaylen Brown|PRA|32.5|1.96|1.80
+PHI@CHI|Joel Embiid|Blocks|1.5|2.75|1.40
+PHI@CHI|Anfernee Simons|Threes|1.5|1.50|2.45
+PHI@CHI|Tre Jones|PRA|16.5|1.85|1.91
+PHI@CHI|Matas Buzelis|Assists|1.5|1.60|2.20
+PHI@CHI|Matas Buzelis|PRA|19.5|1.96|1.80
+PHI@CHI|Joel Embiid|PRA|34.5|1.88|1.88
+PHI@CHI|Jalen Smith|Rebounds|7.5|2.20|1.60
+PHI@CHI|Jaylen Brown|Threes|1.5|2.00|1.78
+PHI@CHI|Norman Powell|Threes|2.5|1.96|1.80
+PHI@CHI|Tyrese Maxey|Rebounds|3.5|1.64|2.15
+PHI@CHI|Tyrese Maxey|Steals|1.5|2.08|1.72
+PHI@CHI|VJ Edgecombe|PRA|22.5|1.91|1.85
+PHI@CHI|Norman Powell|Points|19.5|2.02|1.76
+PHI@CHI|LeBron James|Points|17.5|1.96|1.80
+PHI@CHI|LeBron James|Assists|6.5|1.72|2.08
+PHI@CHI|Anfernee Simons|Rebounds|2.5|2.45|1.50
+PHI@CHI|Matas Buzelis|Threes|1.5|1.86|1.90
+PHI@CHI|VJ Edgecombe|Points|12.5|1.80|1.96
+PHI@CHI|VJ Edgecombe|Steals|1.5|2.50|1.48
+PHI@CHI|VJ Edgecombe|Threes|1.5|1.85|1.91
+PHI@CHI|Joel Embiid|Rebounds|8.5|1.96|1.80
+PHI@CHI|Caleb Wilson|Blocks|1.5|2.90|1.36
+PHI@CHI|Tyrese Maxey|PRA|35.5|1.96|1.80
+PHI@CHI|Josh Giddey|PRA|26.5|1.88|1.88
+PHI@CHI|LeBron James|Threes|1.5|2.50|1.48
+PHI@CHI|Caleb Wilson|PRA|29.5|1.96|1.80
+PHI@CHI|Caleb Wilson|Points|20.5|1.96|1.80
+PHI@CHI|Tre Jones|Assists|3.5|1.83|1.93
+PHI@CHI|VJ Edgecombe|Rebounds|5.5|1.68|2.10
+PHI@CHI|Jalen Smith|PRA|19.5|1.88|1.88
+PHI@CHI|Josh Giddey|Threes|1.5|2.15|1.64
+PHI@CHI|Jaylen Brown|Assists|3.5|1.68|2.10
+LAL@DET|Luka Doncic|Rebounds|7.5|1.96|1.80
+LAL@DET|Luka Doncic|PRA|48.5|1.80|1.96
+LAL@DET|Luka Doncic|Points|33.5|1.80|1.96
+LAL@DET|Luka Doncic|Threes|4.5|2.00|1.78
+LAL@DET|Luka Doncic|Assists|6.5|1.72|2.08
+LAL@DET|Cade Cunningham|Points|25.5|2.00|1.78
+LAL@DET|Cade Cunningham|Assists|8.5|1.72|2.08
+LAL@DET|Cade Cunningham|Threes|2.5|2.15|1.64
+LAL@DET|Cade Cunningham|Rebounds|5.5|2.08|1.72
+LAL@DET|Cade Cunningham|PRA|39.5|1.87|1.89
+LAL@DET|Austin Reaves|Assists|5.5|1.80|1.96
+LAL@DET|Austin Reaves|Rebounds|3.5|1.64|2.15
+LAL@DET|Austin Reaves|Points|23.5|1.80|1.96
+LAL@DET|Austin Reaves|PRA|33.5|1.80|1.96
+LAL@DET|Austin Reaves|Threes|2.5|2.25|1.58
+LAL@DET|Duncan Robinson|Rebounds|2.5|2.02|1.76
+LAL@DET|Duncan Robinson|PRA|19.5|1.86|1.90
+LAL@DET|Duncan Robinson|Points|15.5|2.05|1.74
+LAL@DET|Duncan Robinson|Threes|3.5|2.10|1.68
+LAL@DET|Duncan Robinson|Assists|2.5|2.45|1.52
+LAL@DET|Walker Kessler|Points|12.5|1.78|2.00
+LAL@DET|Walker Kessler|Rebounds|10.5|1.85|1.91
+LAL@DET|Ausar Thompson|Points|10.5|1.83|1.93
+LAL@DET|Ausar Thompson|Assists|4.5|2.02|1.76
+LAL@DET|Ausar Thompson|PRA|22.5|1.90|1.86
+LAL@DET|Ausar Thompson|Rebounds|6.5|1.68|2.10
+LAL@DET|Walker Kessler|Blocks|1.5|1.58|2.25
+LAL@DET|Paul Reed|Rebounds|7.5|1.74|2.05
+LAL@DET|Paul Reed|PRA|23.5|1.84|1.92
+LAL@DET|Paul Reed|Assists|2.5|2.30|1.56
+LAL@DET|Paul Reed|Points|13.5|1.93|1.83
+LAL@DET|Jake Laravia|Rebounds|3.5|1.80|1.96
+LAL@DET|Jake Laravia|Points|6.5|1.93|1.83
+LAL@DET|John Collins|Rebounds|5.5|1.74|2.05
+LAL@DET|John Collins|Points|11.5|1.93|1.83
+LAL@DET|John Collins|Threes|0.5|1.50|2.45
+LAL@DET|Matisse Thybulle|Points|6.5|1.86|1.90
+LAL@DET|Matisse Thybulle|Threes|1.5|2.05|1.74
+LAL@DET|Matisse Thybulle|Rebounds|2.5|1.87|1.89
+LAL@DET|Daniss Jenkins|PRA|17.5|1.96|1.80
+LAL@DET|Daniss Jenkins|Points|9.5|1.80|1.96
+LAL@DET|Daniss Jenkins|Rebounds|2.5|1.68|2.10
+LAL@DET|Daniss Jenkins|Threes|1.5|2.50|1.48
+LAL@DET|Daniss Jenkins|Assists|3.5|1.58|2.25
+LAL@DET|Kevin Huerter|Points|7.5|1.88|1.88
+LAL@DET|Kevin Huerter|Threes|1.5|2.50|1.48
+LAL@DET|Ausar Thompson|Steals|1.5|1.80|1.96
+LAL@DET|Walker Kessler|PRA|24.5|1.80|1.96
+###ALT
+game|player|stat|rungs
+BOS@MIL|Derrick White|Threes|1.5=1.56 2.5=2.8 4.5=13 3.5=6 0.5=1.1
+BOS@MIL|Jayson Tatum|Threes|1.5=1.25 2.5=1.86 5.5=13 4.5=6 3.5=3.15 0.5=1.04 6.5=26
+BOS@MIL|Paul George|Threes|1.5=1.25 2.5=1.83 5.5=12 4.5=6 3.5=3.05 0.5=1.04 6.5=26
+BOS@MIL|Payton Pritchard|Threes|1.5=1.41 2.5=2.3 5.5=18 4.5=9 3.5=4.4 0.5=1.07
+BOS@MIL|Myles Turner|Threes|1.5=1.73 2.5=3.2 4.5=17 3.5=7 0.5=1.13
+BOS@MIL|Tyler Herro|Threes|1.5=1.24 2.5=1.77 5.5=10 4.5=5.4 3.5=2.9 0.5=1.04 6.5=21
+BOS@MIL|Brayden Burries|Threes|1.5=2.4 2.5=5.5 3.5=14 0.5=1.29
+BOS@MIL|Jaime Jaquez Jr.|Threes|1.5=2.6 2.5=6.5 3.5=17 0.5=1.32
+BOS@MIL|Kyle Kuzma|Threes|1.5=2.65 2.5=6.25 3.5=17 0.5=1.33
+BOS@MIL|Ryan Rollins|Threes|1.5=2.5 2.5=5.8 3.5=15 0.5=1.32
+BOS@MIL|Derrick White|Steals|0.5=1.46 1.5=3.35
+BOS@MIL|Paul George|Steals|0.5=1.14 3.5=8 2.5=3.45 1.5=1.79
+BOS@MIL|Tyler Herro|Steals|0.5=1.55 1.5=3.7
+BOS@MIL|Neemias Queta|Blocks|1.5=3 0.5=1.41 2.5=7.75
+BOS@MIL|Myles Turner|Blocks|1.5=1.7 0.5=1.13 3.5=6.25 2.5=3.15
+MIA@SAC|Andrew Wiggins|Threes|0.5=1.2 1.5=2
+MIA@SAC|Bam Adebayo|Threes|0.5=1.38 1.5=2.9
+MIA@SAC|Bobby Portis|Threes|0.5=1.33 1.5=2.55
+MIA@SAC|Davion Mitchell|Threes|0.5=1.14 1.5=1.71
+MIA@SAC|Klay Thompson|Threes|0.5=1.03 1.5=1.19
+MIA@SAC|Pelle Larsson|Threes|0.5=1.41 1.5=2.95
+MIA@SAC|Darius Acuff Jr.|Threes|0.5=1.03 1.5=1.2
+MIA@SAC|De'Andre Hunter|Threes|0.5=1.12 1.5=1.64
+MIA@SAC|Keegan Murray|Threes|0.5=1.23 1.5=2.2
+MIA@SAC|Malik Monk|Threes|0.5=1.19 1.5=1.98
+MIA@SAC|Zach LaVine|Threes|0.5=1.04 1.5=1.27
+PHI@CHI|Tyrese Maxey|Threes|6.5=34 3.5=3.4 0.5=1.04 4.5=6.5 1.5=1.28 5.5=14 2.5=1.93
+PHI@CHI|Norman Powell|Threes|6.5=26 3.5=3.35 0.5=1.05 4.5=6.25 1.5=1.3 5.5=12 2.5=1.93
+PHI@CHI|Joel Embiid|Blocks|1.5=2.7 0.5=1.36 2.5=6.75
+PHI@CHI|Caleb Wilson|Blocks|1.5=2.9 0.5=1.38 2.5=7.5
+PHI@CHI|Matas Buzelis|Blocks|1.5=3.8 0.5=1.59
+PHI@CHI|LeBron James|Steals|0.5=1.42 1.5=3.05 2.5=8
+PHI@CHI|Tyrese Maxey|Steals|0.5=1.2 1.5=2.05 2.5=4.4
+PHI@CHI|VJ Edgecombe|Steals|0.5=1.3 1.5=2.5 2.5=6
+PHI@CHI|Caleb Wilson|Steals|0.5=1.33 1.5=2.6 2.5=6.5
+PHI@CHI|Anfernee Simons|Threes|3.5=4.8 0.5=1.09 4.5=10 1.5=1.52 5.5=21 2.5=2.55
+PHI@CHI|VJ Edgecombe|Threes|3.5=8.75 0.5=1.16 4.5=21 1.5=1.85 2.5=3.6
+PHI@CHI|Jaylen Brown|Threes|3.5=10.5 0.5=1.2 4.5=26 1.5=2 2.5=4.2
+PHI@CHI|LeBron James|Threes|3.5=17 0.5=1.32 1.5=2.5 2.5=6
+PHI@CHI|Caleb Wilson|Threes|3.5=4.6 0.5=1.08 4.5=8.75 1.5=1.47 5.5=18 2.5=2.4
+PHI@CHI|Jalen Smith|Threes|3.5=8.75 0.5=1.18 4.5=19 1.5=1.92 2.5=3.9
+PHI@CHI|Matas Buzelis|Threes|3.5=8 0.5=1.17 4.5=18 1.5=1.86 2.5=3.6
+PHI@CHI|Josh Giddey|Threes|3.5=11 0.5=1.24 1.5=2.15 2.5=4.5
+PHI@CHI|Dean Wade|Threes|0.5=1.56 1.5=3.7
+PHI@CHI|Joel Embiid|Threes|0.5=1.58 1.5=3.9
+BRK@DAL|Julius Randle|Threes|0.5=1.23 1.5=2.18
+BRK@DAL|Michael Porter Jr.|Threes|0.5=1.03 1.5=1.17
+BRK@DAL|Cooper Flagg|Threes|0.5=1.2 1.5=2.08
+BRK@DAL|Kyrie Irving|Threes|0.5=1.04 1.5=1.22
+LAL@DET|Luka Doncic|Threes|7.5=8.5 3.5=1.44 2.5=1.17 9.5=26 6.5=5 5.5=3 4.5=2 8.5=15 1.5=1.04
+LAL@DET|Duncan Robinson|Threes|7.5=21 3.5=2.08 2.5=1.43 6.5=11 5.5=6 0.5=1.01 4.5=3.4 1.5=1.11
+LAL@DET|Austin Reaves|Threes|3.5=4.4 2.5=2.3 5.5=19 0.5=1.07 4.5=9 1.5=1.43
+LAL@DET|Matisse Thybulle|Threes|3.5=10 2.5=4.25 0.5=1.21 4.5=23 1.5=2.03
+LAL@DET|Cade Cunningham|Threes|3.5=4.1 2.5=2.18 5.5=19 0.5=1.06 4.5=8.5 1.5=1.37
+LAL@DET|Kevin Huerter|Threes|3.5=14 2.5=6 0.5=1.33 1.5=2.5
+LAL@DET|Daniss Jenkins|Threes|3.5=16 2.5=6 0.5=1.31 1.5=2.5
+LAL@DET|John Collins|Threes|0.5=1.51 1.5=3.5
+LAL@DET|Walker Kessler|Blocks|2.5=2.8 0.5=1.1 3.5=5.7 1.5=1.58
+LAL@DET|Ausar Thompson|Steals|3.5=7.25 1.5=1.77 2.5=3.4 0.5=1.14
+NOP@LAC|Saddiq Bey|Threes|1.5=1.76 0.5=1.14
+NOP@LAC|Trey Murphy III|Threes|1.5=1.34 0.5=1.06
+NOP@LAC|Dejounte Murray|Threes|1.5=2.18 0.5=1.23
+NOP@LAC|Jeremiah Fears|Threes|1.5=2.15 0.5=1.23
+NOP@LAC|Darius Garland|Threes|1.5=1.32 0.5=1.05
+NOP@LAC|Max Strus|Threes|1.5=1.29 0.5=1.05
+NOP@LAC|Rui Hachimura|Threes|1.5=1.46 0.5=1.08
+NOP@LAC|Brook Lopez|Threes|1.5=2.03 0.5=1.2
+NOP@LAC|Derrick Jones Jr.|Threes|1.5=2.12 0.5=1.22
+NOP@LAC|Keaton Wagler|Threes|1.5=2.05 0.5=1.22
+NOP@LAC|Kris Dunn|Threes|1.5=2.65 0.5=1.33
+UTA@MIN|Ace Bailey|Threes|1.5=1.64 0.5=1.12
+UTA@MIN|Darryn Peterson|Threes|1.5=1.85 0.5=1.16
+UTA@MIN|Keyonte George|Threes|1.5=1.48 0.5=1.08
+UTA@MIN|Lauri Markkanen|Threes|1.5=1.2 0.5=1.03
+UTA@MIN|Ayo Dosunmu|Threes|1.5=1.91 0.5=1.17
+UTA@MIN|Jonathan Kuminga|Threes|1.5=1.91 0.5=1.16
+UTA@MIN|LaMelo Ball|Threes|1.5=1.07 0.5=1.01
+UTA@MIN|Terrence Shannon Jr.|Threes|1.5=1.98 0.5=1.2
+UTA@MIN|Jaden McDaniels|Threes|1.5=2.1 0.5=1.21
+###GALT
+game|kind|side|rungs
+BOS@MIL|sp|away|+9.5=1.02 +8.5=1.03 +7.5=1.04 +6.5=1.05 +5.5=1.06 +4.5=1.07 +3.5=1.1 +2.5=1.11 +1.5=1.13 -1.5=1.16 -2.5=1.2 -3.5=1.22 -4.5=1.25 -5.5=1.3 -6.5=1.33 -7.5=1.41 -8.5=1.49 -9.5=1.56 -10.5=1.65 -11.5=1.75 -12.5=1.85 -13.5=1.97 -14.5=2.09 -15.5=2.23 -16.5=2.4 -17.5=2.58 -18.5=2.79 -19.5=3.02 -20.5=3.31 -21.5=3.45 -22.5=4 -23.5=4.25 -24.5=4.6 -25.5=4.8 -26.5=5.2 -27.5=5.9 -28.5=6 -29.5=6.5 -30.5=7.5 -31.5=8.5 -32.5=9.5 -33.5=9.5
+BOS@MIL|sp|home|-7.5=9.5 -6.5=8.5 -5.5=8 -4.5=7 -3.5=6 -2.5=6 -1.5=5.4 +1.5=4.8 +2.5=4.25 +3.5=4 +4.5=3.7 +5.5=3.32 +6.5=3.14 +7.5=2.77 +8.5=2.5 +9.5=2.34 +10.5=2.15 +11.5=1.99 +12.5=1.88 +13.5=1.77 +14.5=1.69 +15.5=1.61 +16.5=1.53 +17.5=1.46 +18.5=1.4 +19.5=1.35 +20.5=1.3 +21.5=1.28 +22.5=1.22 +23.5=1.2 +24.5=1.17 +25.5=1.16 +26.5=1.14 +27.5=1.11 +28.5=1.1 +29.5=1.08 +30.5=1.06 +31.5=1.05 +32.5=1.04 +33.5=1.04 +34.5=1.03 +35.5=1.02 +36.5=1.02 +37.5=1.02
+BOS@MIL|tot|Over|189.5=1.01 190.5=1.01 191.5=1.02 192.5=1.02 193.5=1.02 194.5=1.02 195.5=1.03 196.5=1.03 197.5=1.04 198.5=1.05 199.5=1.05 200.5=1.07 201.5=1.08 202.5=1.09 203.5=1.12 204.5=1.14 205.5=1.16 206.5=1.18 207.5=1.2 208.5=1.23 209.5=1.26 210.5=1.28 211.5=1.32 212.5=1.36 213.5=1.38 214.5=1.42 215.5=1.49 216.5=1.51 217.5=1.56 218.5=1.6 219.5=1.65 220.5=1.71 221.5=1.78 222.5=1.86 223.5=1.94 224.5=2.02 225.5=2.1 226.5=2.2 227.5=2.32 228.5=2.42 229.5=2.52 230.5=2.6 231.5=2.76 232.5=2.9 233.5=3.05 234.5=3.25 235.5=3.45 236.5=3.75 237.5=3.9 238.5=4.3 239.5=4.7 240.5=5 241.5=5.5 242.5=5.8
+BOS@MIL|tot|Under|204.5=5.5 205.5=5 206.5=4.7 207.5=4.4 208.5=4 209.5=3.8 210.5=3.55 211.5=3.3 212.5=3.1 213.5=3 214.5=2.82 215.5=2.64 216.5=2.56 217.5=2.44 218.5=2.34 219.5=2.24 220.5=2.14 221.5=2.04 222.5=1.94 223.5=1.86 224.5=1.79 225.5=1.73 226.5=1.68 227.5=1.61 228.5=1.57 229.5=1.53 230.5=1.5 231.5=1.43 232.5=1.4 233.5=1.36 234.5=1.33 235.5=1.29 236.5=1.26 237.5=1.24 238.5=1.21 239.5=1.18 240.5=1.16 241.5=1.14 242.5=1.13 243.5=1.1 244.5=1.09 245.5=1.08 246.5=1.07 247.5=1.05 248.5=1.04 249.5=1.04 250.5=1.03 251.5=1.03 252.5=1.02 253.5=1.02 254.5=1.02 255.5=1.02 256.5=1.01 257.5=1.01
+PHI@CHI|tot|Over|204.5=1.01 205.5=1.01 206.5=1.02 207.5=1.02 208.5=1.02 209.5=1.02 210.5=1.03 211.5=1.04 212.5=1.04 213.5=1.05 214.5=1.06 215.5=1.07 216.5=1.08 217.5=1.1 218.5=1.12 219.5=1.14 220.5=1.16 221.5=1.18 222.5=1.2 223.5=1.24 224.5=1.26 225.5=1.3 226.5=1.33 227.5=1.36 228.5=1.41 229.5=1.43 230.5=1.5 231.5=1.53 232.5=1.57 233.5=1.61 234.5=1.67 235.5=1.72 236.5=1.78 237.5=1.86 238.5=1.93 239.5=2 240.5=2.08 241.5=2.18 242.5=2.28 243.5=2.4 244.5=2.48 245.5=2.58 246.5=2.7 247.5=2.86 248.5=3 249.5=3.15 250.5=3.3 251.5=3.55 252.5=3.75 253.5=4 254.5=4.3 255.5=4.7 256.5=5 257.5=5.5
+PHI@CHI|tot|Under|219.5=5.5 220.5=5 221.5=4.7 222.5=4.4 223.5=3.9 224.5=3.7 225.5=3.4 226.5=3.25 227.5=3.05 228.5=2.86 229.5=2.76 230.5=2.6 231.5=2.52 232.5=2.42 233.5=2.32 234.5=2.22 235.5=2.12 236.5=2.04 237.5=1.94 238.5=1.88 239.5=1.82 240.5=1.76 241.5=1.68 242.5=1.63 243.5=1.57 244.5=1.54 245.5=1.5 246.5=1.45 247.5=1.41 248.5=1.38 249.5=1.34 250.5=1.32 251.5=1.28 252.5=1.26 253.5=1.23 254.5=1.21 255.5=1.18 256.5=1.16 257.5=1.14 258.5=1.12 259.5=1.1 260.5=1.09 261.5=1.08 262.5=1.07 263.5=1.05 264.5=1.05 265.5=1.04 266.5=1.04 267.5=1.03 268.5=1.02 269.5=1.02 270.5=1.02 271.5=1.02 272.5=1.02 273.5=1.01 274.5=1.01
+PHI@CHI|sp|away|+13.5=1.02 +12.5=1.02 +11.5=1.03 +10.5=1.04 +9.5=1.04 +8.5=1.05 +7.5=1.07 +6.5=1.1 +5.5=1.11 +4.5=1.13 +3.5=1.15 +2.5=1.17 +1.5=1.2 -1.5=1.28 -2.5=1.31 -3.5=1.35 -4.5=1.41 -5.5=1.48 -6.5=1.54 -7.5=1.65 -8.5=1.76 -9.5=1.86 -10.5=2 -11.5=2.18 -12.5=2.36 -13.5=2.54 -14.5=2.74 -15.5=2.98 -16.5=3.24 -17.5=3.45 -18.5=3.75 -19.5=4.05 -20.5=4.6 -21.5=4.8 -22.5=5.2 -23.5=5.7 -24.5=6 -25.5=6.5 -26.5=7.5 -27.5=8 -28.5=8.5 -29.5=9.5
+PHI@CHI|sp|home|-10.5=9.5 -9.5=9.5 -8.5=8.5 -7.5=7.5 -6.5=6 -5.5=6 -4.5=5.4 -3.5=4.8 -2.5=4.65 -1.5=4.2 +1.5=3.45 +2.5=3.25 +3.5=3.02 +4.5=2.75 +5.5=2.53 +6.5=2.37 +7.5=2.15 +8.5=1.98 +9.5=1.87 +10.5=1.74 +11.5=1.63 +12.5=1.54 +13.5=1.48 +14.5=1.42 +15.5=1.36 +16.5=1.31 +17.5=1.28 +18.5=1.25 +19.5=1.22 +20.5=1.17 +21.5=1.16 +22.5=1.14 +23.5=1.12 +24.5=1.1 +25.5=1.08 +26.5=1.07 +27.5=1.06 +28.5=1.05 +29.5=1.04 +30.5=1.03 +31.5=1.02 +32.5=1.02 +33.5=1.02
+LAL@DET|tot|Over|188.5=1.01 189.5=1.01 190.5=1.02 191.5=1.02 192.5=1.02 193.5=1.02 194.5=1.03 195.5=1.04 196.5=1.04 197.5=1.05 198.5=1.06 199.5=1.07 200.5=1.09 201.5=1.1 202.5=1.12 203.5=1.14 204.5=1.17 205.5=1.18 206.5=1.22 207.5=1.24 208.5=1.26 209.5=1.3 210.5=1.34 211.5=1.36 212.5=1.41 213.5=1.45 214.5=1.5 215.5=1.54 216.5=1.57 217.5=1.63 218.5=1.7 219.5=1.76 220.5=1.83 221.5=1.91 222.5=1.98 223.5=2.1 224.5=2.18 225.5=2.3 226.5=2.38 227.5=2.48 228.5=2.58 229.5=2.74 230.5=2.86 231.5=3 232.5=3.2 233.5=3.35 234.5=3.6 235.5=3.8 236.5=4.1 237.5=4.4 238.5=4.8 239.5=5.2 240.5=5.6
+LAL@DET|tot|Under|203.5=5.4 204.5=4.9 205.5=4.7 206.5=4.2 207.5=3.9 208.5=3.65 209.5=3.4 210.5=3.2 211.5=3.05 212.5=2.86 213.5=2.7 214.5=2.58 215.5=2.48 216.5=2.38 217.5=2.28 218.5=2.16 219.5=2.08 220.5=1.98 221.5=1.91 222.5=1.83 223.5=1.73 224.5=1.68 225.5=1.63 226.5=1.58 227.5=1.54 228.5=1.5 229.5=1.44 230.5=1.41 231.5=1.38 232.5=1.34 233.5=1.31 234.5=1.28 235.5=1.26 236.5=1.23 237.5=1.19 238.5=1.17 239.5=1.15 240.5=1.13 241.5=1.12 242.5=1.1 243.5=1.08 244.5=1.07 245.5=1.06 246.5=1.05 247.5=1.04 248.5=1.04 249.5=1.04 250.5=1.03 251.5=1.02 252.5=1.02 253.5=1.02 254.5=1.02 255.5=1.02 256.5=1.01 257.5=1.01
+LAL@DET|sp|away|+27.5=1.02 +26.5=1.02 +25.5=1.03 +24.5=1.03 +23.5=1.04 +22.5=1.05 +21.5=1.06 +20.5=1.07 +19.5=1.1 +18.5=1.11 +17.5=1.13 +16.5=1.14 +15.5=1.17 +14.5=1.2 +13.5=1.22 +12.5=1.25 +11.5=1.3 +10.5=1.35 +9.5=1.42 +8.5=1.49 +7.5=1.58 +6.5=1.7 +5.5=1.79 +4.5=1.89 +3.5=2.03 +2.5=2.13 +1.5=2.33 -1.5=2.66 -2.5=2.91 -3.5=3.11 -4.5=3.32 -5.5=3.7 -6.5=4 -7.5=4.6 -8.5=5.2 -9.5=5.4 -10.5=6 -11.5=6.5 -12.5=7.5 -13.5=8.5 -14.5=9.5 -15.5=9.5
+LAL@DET|sp|home|-23.5=9.5 -22.5=8.5 -21.5=7.75 -20.5=7 -19.5=6 -18.5=6 -17.5=5.4 -16.5=5.2 -15.5=4.65 -14.5=4.25 -13.5=4 -12.5=3.66 -11.5=3.32 -10.5=3.02 -9.5=2.72 -8.5=2.5 -7.5=2.29 -6.5=2.08 -5.5=1.95 -4.5=1.84 -3.5=1.73 -2.5=1.66 -1.5=1.56 +1.5=1.44 +2.5=1.38 +3.5=1.34 +4.5=1.3 +5.5=1.25 +6.5=1.22 +7.5=1.17 +8.5=1.14 +9.5=1.13 +10.5=1.11 +11.5=1.08 +12.5=1.06 +13.5=1.05 +14.5=1.04 +15.5=1.04 +16.5=1.03 +17.5=1.02 +18.5=1.02
+###FB
+game|player|odds
+BOS@MIL|Jayson Tatum|5.70
+BOS@MIL|Paul George|6.00
+BOS@MIL|Neemias Queta|7.75
+BOS@MIL|Derrick White|8.75
+BOS@MIL|Jordan Walsh|14.00
+BOS@MIL|Tyler Herro|8.00
+BOS@MIL|Myles Turner|9.75
+BOS@MIL|Jaime Jaquez Jr.|11.00
+BOS@MIL|Kyle Kuzma|11.50
+BOS@MIL|Brayden Burries|11.50
+PHI@CHI|Joel Embiid|5.80
+PHI@CHI|Jaylen Brown|5.80
+PHI@CHI|LeBron James|7.25
+PHI@CHI|Tyrese Maxey|7.75
+PHI@CHI|VJ Edgecombe|10.50
+PHI@CHI|Caleb Wilson|10.00
+PHI@CHI|Matas Buzelis|11.00
+PHI@CHI|Jalen Smith|11.50
+PHI@CHI|Norman Powell|11.00
+PHI@CHI|Josh Giddey|13.00
+LAL@DET|Luka Doncic|5.60
+LAL@DET|Austin Reaves|6.75
+LAL@DET|Walker Kessler|8.50
+LAL@DET|Jake Laravia|11.00
+LAL@DET|Matisse Thybulle|11.00
+LAL@DET|Paul Reed|7.75
+LAL@DET|Cade Cunningham|8.25
+LAL@DET|John Collins|9.00
+LAL@DET|Ausar Thompson|12.50
+LAL@DET|Duncan Robinson|12.50
+###TT
+book|game|team|line|over|under
+Sportsbet|BOS@MIL|BOS|118.5|1.92|1.88
+Sportsbet|BOS@MIL|MIL|104.5|1.84|1.96
+Sportsbet|PHI@CHI|PHI|124.5|1.96|1.84
+Sportsbet|PHI@CHI|CHI|114.5|1.92|1.88
+Sportsbet|LAL@DET|DET|112.5|1.84|1.96
+Sportsbet|LAL@DET|LAL|108.5|1.88|1.92

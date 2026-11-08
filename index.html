@@ -478,6 +478,10 @@ window.dash = (() => {
       <div class="cp-groups" id="nf-cards"></div>
       <button type="button" class="cp-btn ghost cp-more" id="nf-more" hidden>Show more</button>
     </section>
+    <section class="mb-sec" aria-labelledby="nf-rw-h">
+      <div class="cp-sub"><h2 class="cp-h" id="nf-rw-h">RotoWire picks</h2><p>Props where RotoWire's projection (scaled to the bookies' usual level for that stat) disagrees with the bookies' number by enough for 10%+ value at the best price. Regular roles only, never against our own model pick on the same player, paper 0.5u each, locked at the first odds. Tap a pick for the numbers.</p></div>
+      <div class="cp-bets" id="nf-rw"></div>
+    </section>
     <section class="mb-sec" aria-labelledby="nf-tg-h">
       <div class="cp-sub"><h2 class="cp-h" id="nf-tg-h">Games</h2><p>Tap a game for its lines, role and injury flags, and every prop priced.</p></div>
       <div class="cp-glist" id="nf-games-list"></div>
@@ -2466,6 +2470,30 @@ window.dash = (() => {
       });
       box.appendChild(sec);
     });
+    // RotoWire picks (this week's, from the ledger)
+    const rwb = Q('#nf-rw'), M0 = (rows('meta') || [])[0] || {};
+    if (rwb) {
+      rwb.innerHTML = '';
+      const RWL = (rows('history') || []).filter((h) => h.category === 'RotoWire' && h.week === String(M0.week || '')).filter((h) => !book || h.book === book)
+        .sort((a, b) => N(b.ev_pct) - N(a.ev_pct));
+      if (!RWL.length) rwb.appendChild(el('div', 'cp-meta', 'No RotoWire gap clears the bar this week.'));
+      RWL.forEach((h) => {
+        const c = el('article', 'cp-bet');
+        const main = el('button', 'cp-bet-main'); main.type = 'button'; main.setAttribute('aria-expanded', 'false');
+        const l = el('div', 'cp-bet-l'), sub = el('div', 'cp-bet-s');
+        const m = h.pick.match(/^(.*?) \((RotoWire .*)\)$/);
+        sub.append(h.stat, ' · ', h.game);
+        if (h.result && h.result !== 'pending') { sub.append(' '); sub.appendChild(el('span', 'cp-chip' + (h.result === 'win' ? '' : ' dim'), h.result)); }
+        l.append(el('div', 'cp-bet-p', m ? m[1] : h.pick), sub);
+        const o = el('div', 'cp-bet-o'); o.append(el('b', '', N(h.odds).toFixed(2)), el('span', '', h.book));
+        main.append(l, o);
+        const right = el('div', 'cp-bet-r'); right.appendChild(el('span', 'cp-bet-st', 'paper ' + (h.stake_u || '0.5') + 'u'));
+        const why = el('div', 'cp-why'); why.hidden = true;
+        why.appendChild(el('div', '', `${m ? m[2] : ''}. RotoWire's chance ${h.prob}% at ${N(h.odds).toFixed(2)} = ${N(h.ev_pct) > 0 ? '+' : ''}${h.ev_pct}% value.` + (h.actual ? ` Result: ${h.actual}.` : '')));
+        main.addEventListener('click', () => { why.hidden = !why.hidden; main.setAttribute('aria-expanded', String(!why.hidden)); c.classList.toggle('open', !why.hidden); });
+        c.append(main, right, why); rwb.appendChild(c);
+      });
+    }
     // games list
     const gl = Q('#nf-games-list'); gl.innerHTML = '';
     G.slice().sort((a, b) => tipKey(a.tip_aedt).localeCompare(tipKey(b.tip_aedt))).forEach((g) => {

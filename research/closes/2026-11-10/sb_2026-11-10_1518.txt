@@ -1,0 +1,34 @@
+###GAMES
+date,tip,away,home,ml_away,ml_home,spread_home,spread_home_odds,spread_away_odds,total,over_odds,under_odds
+2026-11-10,11:10,Washington Wizards,Detroit Pistons,4.55,1.22,-10.5,1.92,1.88,218.5,1.87,1.93
+2026-11-10,11:10,Los Angeles Lakers,Atlanta Hawks,1.68,2.24,2.5,1.90,1.90,235.5,1.90,1.90
+2026-11-10,11:10,Cleveland Cavaliers,Charlotte Hornets,1.30,3.70,9.5,1.85,1.96,215.5,1.95,1.86
+2026-11-10,13:10,San Antonio Spurs,Phoenix Suns,1.27,3.95,9.5,1.83,1.97,228.5,1.95,1.86
+2026-11-10,11:40,Memphis Grizzlies,Toronto Raptors,2.24,1.68,-3.5,1.92,1.88,230.5,1.90,1.90
+2026-11-10,12:10,Indiana Pacers,Dallas Mavericks,2.35,1.62,-3.5,1.90,1.90,221.5,1.90,1.90
+2026-11-10,14:10,New Orleans Pelicans,Golden State Warriors,4.15,1.25,-9.5,1.88,1.92,231.5,1.89,1.91
+2026-11-10,12:40,Denver Nuggets,Houston Rockets,3.70,1.30,-8.5,1.83,1.97,216.5,1.90,1.90
+###PROPS
+game|player|stat|line|over|under
+
+###ALT
+game|player|stat|rungs
+SAS@PHO|De'Aaron Fox|Threes|0.5=1.45 1.5=3.25
+SAS@PHO|Devin Vassell|Threes|0.5=1.14 1.5=1.78
+SAS@PHO|Dylan Harper|Threes|0.5=1.39 1.5=2.9
+SAS@PHO|Julian Champagnie|Threes|0.5=1.08 1.5=1.45
+SAS@PHO|Stephon Castle|Threes|0.5=1.16 1.5=1.89
+SAS@PHO|Victor Wembanyama|Threes|0.5=1.12 1.5=1.69
+SAS@PHO|Collin Gillespie|Threes|0.5=1.1 1.5=1.53
+SAS@PHO|Devin Booker|Threes|0.5=1.17 1.5=1.82
+SAS@PHO|Dillon Brooks|Threes|0.5=1.17 1.5=1.91
+SAS@PHO|Jalen Green|Threes|0.5=1.17 1.5=1.89
+SAS@PHO|Miles Bridges|Threes|0.5=1.13 1.5=1.74
+###GALT
+game|kind|side|rungs
+
+###FB
+game|player|odds
+
+###TT
+book|game|team|line|over|under

@@ -1,0 +1,101 @@
+###GAMES
+date,tip,away,home,ml_away,ml_home,spread_home,spread_home_odds,spread_away_odds,total,over_odds,under_odds
+2026-11-11,14:10,Orlando Magic,Sacramento Kings,1.44,2.88,6.5,1.85,1.95,221.5,1.85,1.96
+2026-11-11,11:40,Milwaukee Bucks,New York Knicks,9.30,1.07,-15.5,1.90,1.90,219.5,1.86,1.94
+2026-11-11,15:10,Oklahoma City Thunder,Portland Trail Blazers,1.84,2.01,1.5,1.90,1.90,225.5,1.84,1.97
+2026-11-11,13:10,Miami Heat,Utah Jazz,1.22,4.50,9.5,1.94,1.86,227.5,1.85,1.96
+2026-11-11,12:10,Boston Celtics,Philadelphia 76ers,1.84,2.01,1.5,1.90,1.90,217.5,1.95,1.86
+###PROPS
+game|player|stat|line|over|under
+BOS@PHI|Jaylen Brown|Assists|3.5|1.90|1.86
+BOS@PHI|Jaylen Brown|Points|21.5|1.80|1.96
+BOS@PHI|Jaylen Brown|Rebounds|6.5|1.90|1.86
+BOS@PHI|Jaylen Brown|PRA|32.5|1.92|1.84
+BOS@PHI|Jaylen Brown|Threes|1.5|1.74|2.05
+BOS@PHI|Jayson Tatum|Rebounds|7.5|2.10|1.68
+BOS@PHI|Jayson Tatum|Points|26.5|1.80|1.96
+BOS@PHI|Jayson Tatum|PRA|41.5|1.93|1.83
+BOS@PHI|Jayson Tatum|Assists|6.5|1.76|2.02
+BOS@PHI|Jayson Tatum|Threes|2.5|1.80|1.96
+BOS@PHI|Joel Embiid|Points|19.5|1.80|1.96
+BOS@PHI|Joel Embiid|Assists|3.5|1.96|1.80
+BOS@PHI|Joel Embiid|PRA|32.5|1.93|1.83
+BOS@PHI|Joel Embiid|Rebounds|8.5|1.96|1.80
+BOS@PHI|Tyrese Maxey|Threes|2.5|1.84|1.92
+BOS@PHI|Tyrese Maxey|PRA|33.5|1.85|1.91
+BOS@PHI|Tyrese Maxey|Points|23.5|1.85|1.91
+BOS@PHI|Tyrese Maxey|Rebounds|3.5|1.78|2.00
+BOS@PHI|Tyrese Maxey|Assists|5.5|1.72|2.08
+BOS@PHI|LeBron James|Rebounds|6.5|1.64|2.15
+BOS@PHI|LeBron James|PRA|29.5|1.86|1.90
+BOS@PHI|LeBron James|Threes|1.5|2.50|1.48
+BOS@PHI|LeBron James|Points|15.5|1.93|1.83
+BOS@PHI|LeBron James|Assists|6.5|1.80|1.96
+BOS@PHI|VJ Edgecombe|Points|12.5|1.92|1.84
+BOS@PHI|VJ Edgecombe|Rebounds|5.5|1.64|2.15
+BOS@PHI|VJ Edgecombe|Threes|1.5|1.74|2.05
+BOS@PHI|VJ Edgecombe|Assists|3.5|2.40|1.52
+BOS@PHI|VJ Edgecombe|PRA|21.5|1.80|1.96
+BOS@PHI|Paul George|Assists|3.5|1.80|1.96
+BOS@PHI|Paul George|Threes|2.5|1.76|2.02
+BOS@PHI|Paul George|Steals|1.5|1.89|1.87
+BOS@PHI|Paul George|Points|17.5|1.84|1.92
+BOS@PHI|Paul George|PRA|26.5|1.92|1.84
+BOS@PHI|Paul George|Rebounds|4.5|1.78|2.00
+BOS@PHI|Derrick White|Rebounds|3.5|2.08|1.72
+BOS@PHI|Derrick White|Threes|1.5|1.68|2.10
+BOS@PHI|Derrick White|Assists|4.5|1.92|1.84
+BOS@PHI|Derrick White|Points|12.5|1.78|2.00
+BOS@PHI|Derrick White|PRA|21.5|1.96|1.80
+BOS@PHI|Neemias Queta|Rebounds|7.5|2.15|1.64
+BOS@PHI|Neemias Queta|Points|9.5|1.96|1.80
+BOS@PHI|Neemias Queta|Blocks|1.5|2.90|1.36
+BOS@PHI|Tyrese Maxey|Steals|1.5|2.60|1.45
+BOS@PHI|VJ Edgecombe|Steals|1.5|2.40|1.52
+BOS@PHI|Derrick White|Steals|1.5|2.90|1.36
+BOS@PHI|Payton Pritchard|Threes|2.5|2.50|1.48
+BOS@PHI|Payton Pritchard|Points|12.5|1.90|1.86
+BOS@PHI|Payton Pritchard|PRA|19.5|1.90|1.86
+BOS@PHI|Payton Pritchard|Rebounds|2.5|1.60|2.20
+BOS@PHI|Payton Pritchard|Assists|3.5|1.86|1.90
+###ALT
+game|player|stat|rungs
+MIA@UTA|Davion Mitchell|Threes|1.5=1.61 0.5=1.1
+MIA@UTA|Klay Thompson|Threes|1.5=1.11 0.5=1.02
+MIA@UTA|Andrew Wiggins|Threes|1.5=2.35 0.5=1.29
+MIA@UTA|Bam Adebayo|Threes|1.5=2.75 0.5=1.36
+MIA@UTA|Bobby Portis|Threes|1.5=2.65 0.5=1.37
+MIA@UTA|Pelle Larsson|Threes|1.5=2.8 0.5=1.38
+MIA@UTA|Ace Bailey|Threes|1.5=1.61 0.5=1.11
+MIA@UTA|Darryn Peterson|Threes|1.5=1.52 0.5=1.09
+MIA@UTA|Lauri Markkanen|Threes|1.5=1.12 0.5=1.02
+BOS@PHI|Paul George|Threes|3.5=2.8 6.5=20 0.5=1.03 2.5=1.76 5.5=10 1.5=1.22 4.5=5.3
+BOS@PHI|Jayson Tatum|Threes|3.5=3.05 6.5=26 0.5=1.04 2.5=1.83 5.5=12 1.5=1.29 4.5=6
+BOS@PHI|Payton Pritchard|Threes|3.5=5 0.5=1.08 2.5=2.5 5.5=23 1.5=1.49 4.5=10.5
+BOS@PHI|Derrick White|Threes|3.5=6.5 0.5=1.12 2.5=3.05 1.5=1.68 4.5=15
+BOS@PHI|Tyrese Maxey|Threes|3.5=3.15 6.5=26 0.5=1.04 2.5=1.84 5.5=12 1.5=1.26 4.5=6
+BOS@PHI|Jaylen Brown|Threes|3.5=7.25 0.5=1.13 2.5=3.35 1.5=1.74 4.5=18
+BOS@PHI|VJ Edgecombe|Threes|3.5=7.25 0.5=1.13 2.5=3.35 1.5=1.76 4.5=18
+BOS@PHI|LeBron James|Threes|3.5=17 0.5=1.31 2.5=6.25 1.5=2.5
+BOS@PHI|Paul George|Steals|3.5=8.25 0.5=1.16 1.5=1.87 2.5=3.7
+BOS@PHI|Derrick White|Steals|0.5=1.38 1.5=2.85 2.5=7.25
+BOS@PHI|Tyrese Maxey|Steals|0.5=1.31 1.5=2.55 2.5=6.25
+BOS@PHI|VJ Edgecombe|Steals|0.5=1.27 1.5=2.35 2.5=5.4
+BOS@PHI|Neemias Queta|Blocks|2.5=7.25 0.5=1.4 1.5=2.9
+###GALT
+game|kind|side|rungs
+
+###FB
+game|player|odds
+BOS@PHI|Jayson Tatum|6.50
+BOS@PHI|Paul George|7.00
+BOS@PHI|Neemias Queta|11.00
+BOS@PHI|Derrick White|12.00
+BOS@PHI|Jordan Walsh|18.00
+BOS@PHI|Jaylen Brown|6.25
+BOS@PHI|Joel Embiid|6.50
+BOS@PHI|LeBron James|8.75
+BOS@PHI|Tyrese Maxey|8.75
+BOS@PHI|VJ Edgecombe|11.50
+###TT
+book|game|team|line|over|under

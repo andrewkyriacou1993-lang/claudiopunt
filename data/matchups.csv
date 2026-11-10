@@ -1,31 +1,41 @@
 key,game,slot,away_player,away_pos,away_off,away_def,away_bpm,away_status,home_player,home_pos,home_off,home_def,home_bpm,home_status,away_edge,home_edge
-Celtics @ Bucks #1,Celtics @ Bucks,1,Derrick White,PG,116.2,113.2,1.5,Available,Tyler Herro,SG,117.2,117.8,1.1,Available,0.7,-2.9
-Celtics @ Bucks #2,Celtics @ Bucks,2,Hugo González,SG,114.9,113.1,-1.6,Available,Brayden Burries,SG,114.1,118.9,-2.3,Available,0.4,-6.2
-Celtics @ Bucks #3,Celtics @ Bucks,3,Jayson Tatum,SF,117.8,112.1,2.2,Available,Jaime Jaquez Jr.,SF,115.5,118.1,-0.4,Available,2.4,-5.8
-Celtics @ Bucks #4,Celtics @ Bucks,4,Paul George,PF,113.9,112.1,1.1,Available,Kyle Kuzma,PF,111.5,118.8,-2.2,Available,-0.7,-9.8
-Celtics @ Bucks #5,Celtics @ Bucks,5,Neemias Queta,C,129.7,110.1,1.0,Available,Myles Turner,C,109.3,116.6,-1.5,Available,12.9,-14.0
-Heat @ Kings #1,Heat @ Kings,1,Davion Mitchell,PG,119.4,118.2,-0.9,Available,Darius Acuff Jr.,PG,109.8,120.4,-2.6,Available,6.3,-5.4
-Heat @ Kings #2,Heat @ Kings,2,Klay Thompson,SF,110.0,119.5,-1.4,Available,Zach LaVine,SG,115.1,121.9,-0.8,Available,-1.4,1.2
-Heat @ Kings #3,Heat @ Kings,3,Andrew Wiggins,SF,112.5,116.5,-0.8,Available,De'Andre Hunter,SF,110.3,119.1,-3.1,Available,-1.8,-6.6
-Heat @ Kings #4,Heat @ Kings,4,Giannis Antetokounmpo,PF,120.2,115.2,4.8,Available,Keegan Murray,PF,109.8,118.9,-2.4,Available,5.7,-8.4
-Heat @ Kings #5,Heat @ Kings,5,Bam Adebayo,C,117.0,113.0,1.3,Available,Domantas Sabonis,C,119.3,117.6,0.6,Questionable,1.2,-1.1
-Nets @ Mavericks #1,Nets @ Mavericks,1,Nolan Traoré,PG,106.7,117.1,-2.7,Available,Kyrie Irving,PG,118.0,116.4,2.3,Available,-10.2,1.8
-Nets @ Mavericks #2,Nets @ Mavericks,2,Michael Porter Jr.,SF,113.8,115.7,1.2,Available,Max Christie,SG,109.4,117.3,-2.3,Available,-2.3,-8.4
-Nets @ Mavericks #3,Nets @ Mavericks,3,Julius Randle,PF,114.8,114.8,0.2,Available,Cooper Flagg,SF,113.3,113.5,2.1,Available,-5.1,-5.3
-Nets @ Mavericks #4,Nets @ Mavericks,4,Danny Wolf,C,111.3,117.1,-1.7,Available,P.J. Washington,PF,110.4,114.8,-1.3,Available,-7.3,-5.9
-Nets @ Mavericks #5,Nets @ Mavericks,5,Day'Ron Sharpe,C,118.0,114.5,0.1,Available,Daniel Gafford,C,124.4,113.0,0.4,Available,-2.4,5.5
-Lakers @ Pistons #1,Lakers @ Pistons,1,Quentin Grimes,SG,115.5,117.6,-1.7,Available,Cade Cunningham,PG,116.0,109.5,4.3,Available,-8.4,0.2
-Lakers @ Pistons #2,Lakers @ Pistons,2,Austin Reaves,SG,120.3,117.9,0.9,Available,Duncan Robinson,SF,126.8,113.2,1.3,Available,0.1,11.3
-Lakers @ Pistons #3,Lakers @ Pistons,3,Matisse Thybulle,SF,116.0,113.3,1.0,Available,Ausar Thompson,SF,114.8,107.2,1.4,Available,-10.2,-5.4
-Lakers @ Pistons #4,Lakers @ Pistons,4,Jake LaRavia,PF,117.3,115.5,-0.6,Available,John Collins,PF,116.8,113.9,-1.6,Available,-2.2,-1.1
-Lakers @ Pistons #5,Lakers @ Pistons,5,Walker Kessler,C,127.7,113.5,1.3,Available,Paul Reed,C,121.9,108.7,1.7,Available,3.1,2.0
-Pelicans @ Clippers #1,Pelicans @ Clippers,1,Jeremiah Fears,PG,106.7,117.4,-2.5,Available,Darius Garland,PG,111.8,118.7,-1.6,Available,-8.1,-4.2
-Pelicans @ Clippers #2,Pelicans @ Clippers,2,Dejounte Murray,PG,113.3,115.2,-0.0,Available,Kris Dunn,SG,116.9,114.7,-0.0,Available,-5.3,-1.3
-Pelicans @ Clippers #3,Pelicans @ Clippers,3,Trey Murphy III,SF,120.4,117.7,0.8,Available,Derrick Jones Jr.,SF,120.3,116.4,-0.3,Available,3.4,4.6
-Pelicans @ Clippers #4,Pelicans @ Clippers,4,Zion Williamson,PF,124.2,116.6,2.2,Available,Rui Hachimura,PF,113.9,118.1,-2.5,Available,8.9,-2.9
-Pelicans @ Clippers #5,Pelicans @ Clippers,5,Karlo Matković,PF,125.4,115.7,0.5,Available,Brook Lopez,C,113.7,115.2,-0.7,Available,7.2,-4.1
-Jazz @ Timberwolves #1,Jazz @ Timberwolves,1,Keyonte George,PG,114.8,120.4,0.2,Available,LaMelo Ball,PG,115.0,112.8,2.7,Available,-5.8,2.0
-Jazz @ Timberwolves #2,Jazz @ Timberwolves,2,Darryn Peterson,SG,111.7,117.8,-1.9,Available,Ayo Dosunmu,SG,122.0,115.3,1.2,Available,-6.4,6.4
-Jazz @ Timberwolves #3,Jazz @ Timberwolves,3,Josh Green,SG,118.7,117.1,-1.2,Available,Jonathan Kuminga,SF,115.2,113.0,-0.3,Available,-1.7,-1.1
-Jazz @ Timberwolves #4,Jazz @ Timberwolves,4,Ace Bailey,SF,107.0,120.1,-3.0,Available,Jaden McDaniels,PF,117.9,112.7,0.1,Available,-13.7,4.6
-Jazz @ Timberwolves #5,Jazz @ Timberwolves,5,Jaxson Hayes,C,130.8,115.2,0.3,Available,Rudy Gobert,C,123.4,110.2,-0.2,Available,7.6,5.2
+Wizards @ Pistons #1,Wizards @ Pistons,1,Trae Young,PG,117.5,116.8,-0.7,Available,Daniss Jenkins,PG,116.0,113.4,-0.5,Available,-2.4,-0.4
+Wizards @ Pistons #2,Wizards @ Pistons,2,Kyshawn George,SG,111.3,118.3,-0.7,Available,Cade Cunningham,PG,115.8,109.6,3.9,Available,-12.3,0.9
+Wizards @ Pistons #3,Wizards @ Pistons,3,AJ Dybantsa,SF,112.0,116.9,-2.8,Available,Duncan Robinson,SF,126.3,113.6,1.0,Available,-7.6,9.9
+Wizards @ Pistons #4,Wizards @ Pistons,4,Anthony Davis,PF,113.8,112.6,0.5,Available,Ausar Thompson,SF,114.5,107.2,1.2,Available,-12.2,-6.2
+Wizards @ Pistons #5,Wizards @ Pistons,5,Alex Sarr,C,113.7,115.8,-0.1,Available,John Collins,PF,116.7,113.8,-1.7,Available,-5.7,-0.7
+Lakers @ Hawks #1,Lakers @ Hawks,1,Luka Dončić,PG,122.1,113.8,8.0,Available,Kingston Flemings,PG,113.1,117.2,-2.6,Available,6.1,-6.4
+Lakers @ Hawks #2,Lakers @ Hawks,2,Matisse Thybulle,SF,116.1,112.6,1.0,Available,Nickeil Alexander-Walker,SG,116.5,115.6,0.5,Available,-1.5,-4.1
+Lakers @ Hawks #3,Lakers @ Hawks,3,Ziaire Williams,SF,120.3,116.7,-0.4,Available,Dyson Daniels,SF,118.7,111.2,1.1,Available,-1.7,2.2
+Lakers @ Hawks #4,Lakers @ Hawks,4,Jake LaRavia,PF,117.8,115.7,-0.6,Available,Jalen Johnson,PF,115.6,112.0,2.6,Available,-3.4,-2.0
+Lakers @ Hawks #5,Lakers @ Hawks,5,Walker Kessler,C,127.3,113.1,1.4,Available,Onyeka Okongwu,C,119.8,112.8,0.2,Available,6.8,-0.4
+Cavaliers @ Hornets #1,Cavaliers @ Hornets,1,James Harden,PG,116.0,116.1,1.2,Available,Coby White,PG,110.9,117.7,-3.4,Available,0.4,-6.2
+Cavaliers @ Hornets #2,Cavaliers @ Hornets,2,Donovan Mitchell,SG,118.8,115.0,3.3,Available,Grayson Allen,SG,118.9,115.9,0.9,Available,1.5,0.7
+Cavaliers @ Hornets #3,Cavaliers @ Hornets,3,Peyton Watson,SF,111.0,115.0,-1.5,Available,Sion James,SG,113.1,116.3,-2.7,Available,-5.8,-5.1
+Cavaliers @ Hornets #4,Cavaliers @ Hornets,4,Evan Mobley,PF,122.7,113.6,2.5,Available,Naz Reid,C,108.7,112.9,-0.6,Available,2.3,-11.0
+Cavaliers @ Hornets #5,Cavaliers @ Hornets,5,Jarrett Allen,C,127.7,112.5,1.4,Available,Ryan Kalkbrenner,C,132.3,113.7,0.4,Available,8.1,11.6
+Spurs @ Suns #1,Spurs @ Suns,1,De'Aaron Fox,PG,118.2,112.2,1.7,Available,Jalen Green,SG,106.9,117.0,-2.1,Available,2.0,-14.1
+Spurs @ Suns #2,Spurs @ Suns,2,Stephon Castle,SG,114.3,112.3,1.0,Available,Devin Booker,SG,118.4,118.5,0.7,Available,-0.5,-2.5
+Spurs @ Suns #3,Spurs @ Suns,3,Dylan Harper,SG,118.6,113.1,1.0,Available,Dillon Brooks,SF,112.4,117.5,-1.8,Available,2.9,-7.7
+Spurs @ Suns #4,Spurs @ Suns,4,Julian Champagnie,SF,124.7,112.1,1.3,Available,Miles Bridges,PF,120.9,115.9,1.3,Available,7.3,-0.2
+Spurs @ Suns #5,Spurs @ Suns,5,Victor Wembanyama,C,120.9,103.6,8.8,Available,Oso Ighodaro,C,119.3,114.6,-0.5,Available,2.3,-10.4
+Grizzlies @ Raptors #1,Grizzlies @ Raptors,1,Ty Jerome,PG,121.0,115.6,2.6,Available,Jamal Shead,PG,112.7,115.0,-2.0,Available,2.9,-5.0
+Grizzlies @ Raptors #2,Grizzlies @ Raptors,2,Cedric Coward,SG,115.6,114.6,0.2,Available,Ja'Kobe Walter,SG,120.4,114.2,-0.6,Available,-3.5,1.8
+Grizzlies @ Raptors #3,Grizzlies @ Raptors,3,Jaylen Wells,SG,116.8,117.9,-1.9,Available,RJ Barrett,SF,116.3,115.4,-0.3,Available,-1.0,0.9
+Grizzlies @ Raptors #4,Grizzlies @ Raptors,4,Cameron Boozer,PF,111.4,115.0,-1.9,Available,Jamison Battle,SF,119.6,116.2,-1.6,Available,-5.7,1.4
+Grizzlies @ Raptors #5,Grizzlies @ Raptors,5,Zach Edey,C,121.4,111.6,-0.5,Available,Jakob Poeltl,C,125.8,112.6,-0.1,Available,0.8,4.2
+Pacers @ Mavericks #1,Pacers @ Mavericks,1,Andrew Nembhard,SG,116.7,119.5,-0.8,Available,Kyrie Irving,PG,118.4,115.6,2.4,Available,-0.9,4.6
+Pacers @ Mavericks #2,Pacers @ Mavericks,2,Kelly Oubre Jr.,SF,113.5,116.2,-1.9,Available,Caleb Martin,SG,115.3,117.2,-2.5,Available,-2.5,-1.7
+Pacers @ Mavericks #3,Pacers @ Mavericks,3,Aaron Nesmith,SF,108.9,118.1,-3.0,Available,Cooper Flagg,SF,114.7,112.6,2.6,Available,-11.7,-0.4
+Pacers @ Mavericks #4,Pacers @ Mavericks,4,Pascal Siakam,PF,111.9,116.3,0.1,Available,P.J. Washington,PF,110.6,114.0,-1.2,Available,-7.4,-6.2
+Pacers @ Mavericks #5,Pacers @ Mavericks,5,Ivica Zubac,C,119.4,114.9,-0.8,Available,Daniel Gafford,C,125.8,112.2,0.7,Available,-1.7,7.5
+Pelicans @ Warriors #1,Pelicans @ Warriors,1,Jeremiah Fears,PG,107.8,117.6,-2.1,Available,Stephen Curry,PG,123.8,116.1,5.3,Available,-9.4,8.2
+Pelicans @ Warriors #2,Pelicans @ Warriors,2,Dejounte Murray,PG,113.6,115.5,-0.3,Available,Brandin Podziemski,SG,118.9,115.4,0.4,Available,-4.2,1.2
+Pelicans @ Warriors #3,Pelicans @ Warriors,3,Saddiq Bey,SF,122.3,119.0,0.4,Available,Yaxel Lendeborg,SF,114.9,116.5,-1.3,Available,5.6,0.7
+Pelicans @ Warriors #4,Pelicans @ Warriors,4,Herbert Jones,SF,103.9,117.7,-3.5,Available,Gui Santos,PF,116.3,115.2,-1.1,Probable,-14.1,0.8
+Pelicans @ Warriors #5,Pelicans @ Warriors,5,Karlo Matković,PF,125.7,115.7,0.4,Available,Draymond Green,PF,106.2,114.5,-1.0,Available,7.0,-11.3
+Nuggets @ Rockets #1,Nuggets @ Rockets,1,Jamal Murray,PG,124.1,117.8,3.2,Probable,Fred VanVleet,PG,118.8,113.1,0.6,Available,3.9,3.4
+Nuggets @ Rockets #2,Nuggets @ Rockets,2,Christian Braun,SG,121.5,117.6,-1.1,Probable,Amen Thompson,SF,122.5,113.7,1.4,Available,1.9,6.9
+Nuggets @ Rockets #3,Nuggets @ Rockets,3,Cameron Johnson,PF,121.5,118.1,-1.0,Probable,Kevin Durant,SF,121.7,113.9,3.0,Available,2.2,6.5
+Nuggets @ Rockets #4,Nuggets @ Rockets,4,Aaron Gordon,PF,120.2,116.4,-0.2,Probable,Jabari Smith Jr.,PF,124.4,113.4,0.8,Available,0.4,7.6
+Nuggets @ Rockets #5,Nuggets @ Rockets,5,Nikola Jokić,C,126.4,111.8,9.0,Probable,Alperen Şengün,C,119.2,111.5,3.9,Available,4.6,-2.3

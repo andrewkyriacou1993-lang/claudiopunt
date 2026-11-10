@@ -8,3 +8,6 @@ classifier). Copy each one over the bundle's file from an interactive chat, then
   this session has no snapshot inside its closing window (before: blanked, "a pre-tip morning price is not a close";
   on 9 Nov a watch session without the snapshots blanked 53 closes on the live ledger). A snapshot inside the window
   still overwrites it. Verified on the 10 Nov ledger: 379 closes before and after, 0 changed.
+
+APPLIED 10 Nov 2026 5:20pm AEDT (interactive chat): clv_2026-11-10.py is now clv.py in the Project's
+nba_model/pipeline_bundle.json. The copy here is kept for reference only; nothing is awaiting the bundle.

@@ -1,0 +1,1323 @@
+###GAMES
+date,tip,away,home,ml_away,ml_home,spread_home,spread_home_odds,spread_away_odds,total,over_odds,under_odds
+2026-11-12,12:10,Brooklyn Nets,New Orleans Pelicans,2.34,1.63,-3.5,1.92,1.88,228.5,1.95,1.86
+2026-11-12,11:10,Boston Celtics,Toronto Raptors,1.44,2.87,5.5,1.90,1.90,215.5,1.90,1.90
+2026-11-12,13:10,Orlando Magic,Utah Jazz,1.57,2.47,3.5,1.94,1.86,214.5,1.85,1.96
+2026-11-12,11:10,Washington Wizards,Indiana Pacers,2.28,1.66,-3.5,1.94,1.86,227.5,1.89,1.91
+2026-11-12,12:10,San Antonio Spurs,Chicago Bulls,1.08,8.75,15.5,1.85,1.95,238.5,1.95,1.86
+2026-11-12,12:10,Denver Nuggets,Memphis Grizzlies,1.59,2.42,3.5,1.94,1.86,230.5,1.95,1.86
+2026-11-12,11:10,Cleveland Cavaliers,New York Knicks,2.49,1.56,-3.5,1.85,1.95,221.5,1.87,1.93
+2026-11-12,12:10,Los Angeles Lakers,Milwaukee Bucks,1.11,7.00,14.5,1.88,1.92,229.5,1.93,1.87
+2026-11-12,13:40,Golden State Warriors,Houston Rockets,3.20,1.38,-6.5,1.90,1.90,220.5,1.95,1.86
+2026-11-12,14:10,Oklahoma City Thunder,Portland Trail Blazers,1.99,1.85,-1.5,1.90,1.90,224.5,1.90,1.90
+###PROPS
+game|player|stat|line|over|under
+BRK@NOP|Karlo Matkovic|Rebounds|4.5|1.85|1.91
+BRK@NOP|Karlo Matkovic|Points|7.5|1.96|1.80
+BRK@NOP|Jeremiah Fears|Points|16.5|1.86|1.90
+BRK@NOP|Dejounte Murray|PRA|26.5|1.90|1.86
+BRK@NOP|Jeremiah Fears|PRA|26.5|1.84|1.92
+BRK@NOP|Jeremiah Fears|Threes|1.5|2.05|1.74
+BRK@NOP|Herbert Jones|Threes|1.5|2.60|1.44
+BRK@NOP|Herbert Jones|Rebounds|3.5|2.30|1.56
+BRK@NOP|Saddiq Bey|Threes|1.5|1.60|2.20
+BRK@NOP|Dejounte Murray|Assists|5.5|2.20|1.60
+BRK@NOP|Dejounte Murray|Points|15.5|1.80|1.96
+BRK@NOP|Herbert Jones|Points|8.5|1.93|1.83
+BRK@NOP|Saddiq Bey|Rebounds|4.5|2.15|1.64
+BRK@NOP|Derik Queen|PRA|19.5|1.96|1.80
+BRK@NOP|Jeremiah Fears|Assists|5.5|2.25|1.58
+BRK@NOP|Zion Williamson|Rebounds|5.5|1.76|2.02
+BRK@NOP|Jeremiah Fears|Rebounds|4.5|1.80|1.96
+BRK@NOP|Herbert Jones|PRA|13.5|1.91|1.85
+BRK@NOP|Zion Williamson|PRA|30.5|1.84|1.92
+BRK@NOP|Derik Queen|Rebounds|5.5|1.74|2.05
+BRK@NOP|Saddiq Bey|PRA|21.5|1.90|1.86
+BRK@NOP|Zion Williamson|Assists|2.5|1.58|2.25
+BRK@NOP|Dejounte Murray|Threes|1.5|2.25|1.58
+BRK@NOP|Derik Queen|Assists|2.5|1.96|1.80
+BRK@NOP|Zion Williamson|Points|21.5|1.86|1.90
+BRK@NOP|Dejounte Murray|Rebounds|5.5|2.10|1.68
+BRK@NOP|Derik Queen|Points|10.5|1.93|1.83
+BRK@NOP|Saddiq Bey|Points|14.5|1.80|1.96
+BRK@NOP|Moritz Wagner|Points|8.5|1.80|1.96
+BRK@NOP|Egor Demin|PRA|15.5|1.89|1.86
+BRK@NOP|Michael Porter Jr.|Threes|3.5|2.15|1.64
+BRK@NOP|Julius Randle|Rebounds|6.5|1.96|1.80
+BRK@NOP|Moritz Wagner|Rebounds|3.5|2.08|1.72
+BRK@NOP|Michael Porter Jr.|Assists|2.5|2.50|1.48
+BRK@NOP|Day'Ron Sharpe|Assists|3.5|1.74|2.05
+BRK@NOP|Day'Ron Sharpe|PRA|21.5|1.80|1.96
+BRK@NOP|Julius Randle|Points|20.5|1.87|1.89
+BRK@NOP|Julius Randle|PRA|32.5|1.88|1.88
+BRK@NOP|Nolan Traore|Assists|3.5|1.72|2.08
+BRK@NOP|Michael Porter Jr.|Rebounds|7.5|2.08|1.72
+BRK@NOP|Nolan Traore|Rebounds|1.5|1.56|2.30
+BRK@NOP|Egor Demin|Points|9.5|1.92|1.84
+BRK@NOP|Egor Demin|Threes|1.5|1.68|2.10
+BRK@NOP|Day'Ron Sharpe|Rebounds|7.5|1.72|2.08
+BRK@NOP|Day'Ron Sharpe|Points|9.5|1.85|1.91
+BRK@NOP|Nolan Traore|Threes|1.5|2.15|1.64
+BRK@NOP|Nolan Traore|Points|11.5|1.87|1.88
+BRK@NOP|Nolan Traore|PRA|17.5|1.84|1.92
+BRK@NOP|Julius Randle|Assists|5.5|2.10|1.68
+BRK@NOP|Julius Randle|Threes|1.5|2.15|1.64
+BRK@NOP|Egor Demin|Rebounds|2.5|1.80|1.96
+BRK@NOP|Michael Porter Jr.|Points|23.5|1.91|1.85
+BRK@NOP|Michael Porter Jr.|PRA|33.5|1.96|1.80
+BRK@NOP|Egor Demin|Assists|2.5|1.64|2.15
+BRK@NOP|Dejounte Murray|Steals|1.5|1.78|2.00
+BRK@NOP|Michael Porter Jr.|Steals|0.5|1.45|2.60
+BOS@TOR|Ja'Kobe Walter|Threes|2.5|1.80|1.96
+BOS@TOR|Collin Murray-Boyles|Rebounds|5.5|1.68|2.10
+BOS@TOR|Immanuel Quickley|Assists|5.5|1.68|2.10
+BOS@TOR|RJ Barrett|PRA|31.5|1.87|1.89
+BOS@TOR|Ja'Kobe Walter|Points|12.5|1.80|1.96
+BOS@TOR|Jakob Poeltl|Points|11.5|1.96|1.80
+BOS@TOR|Ja'Kobe Walter|PRA|19.5|1.96|1.80
+BOS@TOR|Immanuel Quickley|Rebounds|3.5|1.90|1.86
+BOS@TOR|Collin Murray-Boyles|Points|12.5|1.96|1.80
+BOS@TOR|Immanuel Quickley|PRA|27.5|1.96|1.80
+BOS@TOR|Jakob Poeltl|Rebounds|7.5|1.76|2.02
+BOS@TOR|RJ Barrett|Rebounds|5.5|1.86|1.90
+BOS@TOR|RJ Barrett|Threes|2.5|2.45|1.50
+BOS@TOR|Ja'Kobe Walter|Rebounds|4.5|2.15|1.64
+BOS@TOR|Immanuel Quickley|Threes|2.5|1.76|2.02
+BOS@TOR|Collin Murray-Boyles|PRA|20.5|1.89|1.87
+BOS@TOR|RJ Barrett|Assists|3.5|1.88|1.88
+BOS@TOR|RJ Barrett|Points|21.5|1.88|1.88
+BOS@TOR|Immanuel Quickley|Points|17.5|1.91|1.85
+BOS@TOR|Jakob Poeltl|PRA|21.5|1.80|1.96
+BOS@TOR|Jayson Tatum|PRA|41.5|1.92|1.84
+BOS@TOR|Derrick White|Points|14.5|1.92|1.84
+BOS@TOR|Neemias Queta|PRA|18.5|1.96|1.80
+BOS@TOR|Jordan Walsh|Rebounds|3.5|2.08|1.72
+BOS@TOR|Jordan Walsh|PRA|9.5|2.02|1.76
+BOS@TOR|Jayson Tatum|Rebounds|7.5|1.96|1.80
+BOS@TOR|Derrick White|Threes|2.5|2.60|1.45
+BOS@TOR|Derrick White|Rebounds|3.5|1.85|1.91
+BOS@TOR|Jordan Walsh|Points|4.5|1.83|1.93
+BOS@TOR|Jayson Tatum|Assists|6.5|1.96|1.80
+BOS@TOR|Derrick White|Assists|4.5|1.74|2.05
+BOS@TOR|Derrick White|PRA|23.5|1.96|1.80
+BOS@TOR|Neemias Queta|Points|9.5|1.86|1.90
+BOS@TOR|Neemias Queta|Rebounds|6.5|1.80|1.96
+BOS@TOR|Jayson Tatum|Threes|2.5|1.90|1.86
+BOS@TOR|Jayson Tatum|Points|26.5|1.78|2.00
+BOS@TOR|Ja'Kobe Walter|Steals|1.5|2.25|1.58
+BOS@TOR|Immanuel Quickley|Steals|1.5|2.60|1.45
+BOS@TOR|Payton Pritchard|Threes|2.5|2.25|1.58
+BOS@TOR|Payton Pritchard|PRA|23.5|1.90|1.86
+BOS@TOR|Payton Pritchard|Assists|4.5|2.10|1.68
+BOS@TOR|Payton Pritchard|Rebounds|3.5|2.10|1.68
+BOS@TOR|Payton Pritchard|Points|15.5|1.92|1.84
+BOS@TOR|Baylor Scheierman|PRA|14.5|1.96|1.80
+BOS@TOR|Baylor Scheierman|Points|7.5|1.84|1.92
+BOS@TOR|Baylor Scheierman|Threes|1.5|1.96|1.80
+BOS@TOR|Baylor Scheierman|Rebounds|4.5|2.05|1.74
+WAS@IND|Trae Young|Rebounds|2.5|1.74|2.05
+WAS@IND|Trae Young|PRA|29.5|1.80|1.96
+WAS@IND|Trae Young|Assists|9.5|2.10|1.68
+WAS@IND|Trae Young|Threes|2.5|2.30|1.56
+WAS@IND|Trae Young|Points|17.5|1.83|1.93
+WAS@IND|Anthony Davis|Points|22.5|1.86|1.90
+WAS@IND|Anthony Davis|PRA|35.5|1.90|1.86
+WAS@IND|Anthony Davis|Assists|2.5|2.25|1.58
+WAS@IND|Anthony Davis|Rebounds|10.5|1.96|1.80
+WAS@IND|AJ Dybantsa|PRA|26.5|1.96|1.80
+WAS@IND|AJ Dybantsa|Points|17.5|1.80|1.96
+WAS@IND|AJ Dybantsa|Threes|1.5|2.50|1.48
+WAS@IND|AJ Dybantsa|Rebounds|5.5|1.72|2.08
+WAS@IND|AJ Dybantsa|Assists|2.5|2.15|1.64
+WAS@IND|Kyshawn George|Assists|4.5|1.90|1.86
+WAS@IND|Kyshawn George|PRA|24.5|1.96|1.80
+WAS@IND|Kyshawn George|Threes|2.5|2.60|1.45
+WAS@IND|Kyshawn George|Rebounds|4.5|1.89|1.87
+WAS@IND|Kyshawn George|Points|14.5|1.84|1.92
+WAS@IND|Alex Sarr|Rebounds|6.5|1.72|2.08
+WAS@IND|Alex Sarr|PRA|19.5|1.96|1.80
+WAS@IND|Alex Sarr|Points|10.5|2.00|1.78
+WAS@IND|Bilal Coulibaly|Rebounds|3.5|2.00|1.78
+WAS@IND|Bilal Coulibaly|Points|7.5|1.96|1.80
+WAS@IND|Tre Johnson|Points|7.5|1.96|1.80
+WAS@IND|Tre Johnson|Threes|1.5|2.10|1.68
+WAS@IND|Deandre Ayton|Rebounds|4.5|1.88|1.87
+WAS@IND|Andrew Nembhard|Points|16.5|2.02|1.76
+WAS@IND|Andrew Nembhard|Threes|1.5|1.60|2.20
+WAS@IND|Andrew Nembhard|Rebounds|2.5|1.96|1.80
+WAS@IND|Andrew Nembhard|Assists|7.5|2.05|1.74
+WAS@IND|Andrew Nembhard|PRA|26.5|1.96|1.80
+WAS@IND|Pascal Siakam|Assists|3.5|1.80|1.96
+WAS@IND|Pascal Siakam|Rebounds|6.5|1.88|1.88
+WAS@IND|Pascal Siakam|Points|21.5|1.86|1.90
+WAS@IND|Pascal Siakam|Threes|1.5|2.02|1.76
+WAS@IND|Pascal Siakam|PRA|32.5|1.92|1.84
+WAS@IND|Ivica Zubac|Rebounds|10.5|2.10|1.68
+WAS@IND|Ivica Zubac|PRA|25.5|1.90|1.86
+WAS@IND|Ivica Zubac|Points|13.5|2.00|1.78
+WAS@IND|Ivica Zubac|Assists|2.5|2.40|1.52
+WAS@IND|Aaron Nesmith|Threes|2.5|2.25|1.58
+WAS@IND|Aaron Nesmith|Points|13.5|1.88|1.88
+WAS@IND|Aaron Nesmith|PRA|19.5|2.00|1.78
+WAS@IND|Aaron Nesmith|Rebounds|3.5|1.92|1.84
+WAS@IND|Obi Toppin|Threes|1.5|1.96|1.80
+WAS@IND|Obi Toppin|PRA|18.5|1.96|1.80
+WAS@IND|Obi Toppin|Points|11.5|1.93|1.83
+WAS@IND|Obi Toppin|Rebounds|4.5|1.96|1.80
+WAS@IND|Kelly Oubre Jr.|Points|9.5|1.96|1.80
+WAS@IND|Kelly Oubre Jr.|Rebounds|2.5|1.68|2.10
+WAS@IND|T.J. McConnell|Points|6.5|1.90|1.86
+WAS@IND|T.J. McConnell|Assists|3.5|1.84|1.92
+WAS@IND|Anthony Davis|Steals|1.5|2.75|1.40
+SAS@CHI|Victor Wembanyama|Rebounds|11.5|1.96|1.80
+SAS@CHI|Victor Wembanyama|Assists|2.5|1.58|2.25
+SAS@CHI|Victor Wembanyama|Threes|1.5|1.64|2.15
+SAS@CHI|Victor Wembanyama|PRA|44.5|1.90|1.86
+SAS@CHI|Victor Wembanyama|Points|29.5|1.80|1.96
+SAS@CHI|Victor Wembanyama|Blocks|3.5|1.96|1.80
+SAS@CHI|Victor Wembanyama|Steals|1.5|2.90|1.36
+SAS@CHI|Dylan Harper|Rebounds|4.5|1.64|2.15
+SAS@CHI|Dylan Harper|Points|17.5|1.80|1.96
+SAS@CHI|Dylan Harper|Assists|4.5|1.93|1.83
+SAS@CHI|Dylan Harper|Threes|1.5|2.75|1.40
+SAS@CHI|Dylan Harper|PRA|27.5|1.86|1.90
+SAS@CHI|Caleb Wilson|Threes|2.5|2.45|1.50
+SAS@CHI|Caleb Wilson|PRA|26.5|1.92|1.84
+SAS@CHI|Caleb Wilson|Assists|2.5|2.45|1.50
+SAS@CHI|Caleb Wilson|Rebounds|5.5|1.90|1.86
+SAS@CHI|Caleb Wilson|Points|18.5|1.93|1.83
+SAS@CHI|Stephon Castle|Points|15.5|1.89|1.87
+SAS@CHI|Stephon Castle|Rebounds|4.5|1.68|2.10
+SAS@CHI|Stephon Castle|PRA|26.5|1.91|1.85
+SAS@CHI|Stephon Castle|Assists|5.5|1.80|1.96
+SAS@CHI|Stephon Castle|Threes|1.5|1.96|1.80
+SAS@CHI|De'Aaron Fox|Points|13.5|1.80|1.96
+SAS@CHI|De'Aaron Fox|Rebounds|3.5|1.74|2.05
+SAS@CHI|De'Aaron Fox|PRA|23.5|1.84|1.92
+SAS@CHI|De'Aaron Fox|Assists|5.5|1.80|1.96
+SAS@CHI|De'Aaron Fox|Threes|1.5|2.60|1.45
+SAS@CHI|Norman Powell|Points|19.5|2.02|1.76
+SAS@CHI|Norman Powell|Rebounds|2.5|1.86|1.90
+SAS@CHI|Norman Powell|Assists|1.5|1.60|2.20
+SAS@CHI|Norman Powell|Threes|2.5|2.10|1.68
+SAS@CHI|Norman Powell|PRA|23.5|1.88|1.88
+SAS@CHI|Josh Giddey|Assists|8.5|2.08|1.72
+SAS@CHI|Josh Giddey|Points|12.5|1.80|1.96
+SAS@CHI|Josh Giddey|Rebounds|6.5|2.05|1.74
+SAS@CHI|Josh Giddey|PRA|27.5|1.80|1.96
+SAS@CHI|Josh Giddey|Threes|1.5|2.15|1.64
+SAS@CHI|Matas Buzelis|Assists|2.5|2.40|1.52
+SAS@CHI|Matas Buzelis|Rebounds|5.5|2.05|1.74
+SAS@CHI|Matas Buzelis|PRA|22.5|1.88|1.88
+SAS@CHI|Matas Buzelis|Points|14.5|1.83|1.93
+SAS@CHI|Matas Buzelis|Threes|1.5|1.80|1.96
+SAS@CHI|Devin Vassell|Threes|1.5|1.80|1.96
+SAS@CHI|Devin Vassell|Assists|2.5|1.96|1.80
+SAS@CHI|Devin Vassell|Rebounds|3.5|1.80|1.96
+SAS@CHI|Devin Vassell|PRA|17.5|1.96|1.80
+SAS@CHI|Devin Vassell|Points|10.5|1.80|1.96
+SAS@CHI|Jalen Smith|Rebounds|7.5|1.96|1.80
+SAS@CHI|Jalen Smith|PRA|21.5|1.92|1.84
+SAS@CHI|Jalen Smith|Assists|1.5|1.96|1.80
+SAS@CHI|Jalen Smith|Threes|1.5|1.80|1.96
+SAS@CHI|Jalen Smith|Points|11.5|1.80|1.96
+SAS@CHI|Julian Champagnie|Rebounds|4.5|1.88|1.88
+SAS@CHI|Julian Champagnie|Threes|2.5|2.10|1.68
+SAS@CHI|Julian Champagnie|Points|10.5|1.96|1.80
+SAS@CHI|Nic Claxton|Rebounds|5.5|2.08|1.72
+SAS@CHI|Nic Claxton|Points|7.5|1.83|1.93
+SAS@CHI|Caleb Wilson|Steals|1.5|2.60|1.45
+SAS@CHI|Josh Giddey|Steals|0.5|1.52|2.40
+SAS@CHI|Devin Vassell|Steals|1.5|2.45|1.50
+DEN@MEM|Nikola Jokic|Threes|1.5|2.10|1.68
+DEN@MEM|Nikola Jokic|Assists|9.5|2.05|1.74
+DEN@MEM|Nikola Jokic|PRA|46.5|1.89|1.87
+DEN@MEM|Nikola Jokic|Points|25.5|1.89|1.87
+DEN@MEM|Nikola Jokic|Rebounds|11.5|1.80|1.96
+DEN@MEM|Jamal Murray|PRA|34.5|1.87|1.89
+DEN@MEM|Jamal Murray|Points|23.5|1.86|1.90
+DEN@MEM|Jamal Murray|Rebounds|4.5|2.00|1.78
+DEN@MEM|Jamal Murray|Threes|2.5|1.68|2.10
+DEN@MEM|Jamal Murray|Assists|6.5|2.15|1.64
+DEN@MEM|Christian Braun|Points|11.5|1.96|1.80
+DEN@MEM|Christian Braun|Threes|1.5|2.40|1.52
+DEN@MEM|Christian Braun|Rebounds|4.5|2.25|1.58
+DEN@MEM|Christian Braun|PRA|17.5|1.83|1.93
+DEN@MEM|Cam Johnson|Threes|1.5|1.56|2.30
+DEN@MEM|Cam Johnson|Points|11.5|1.80|1.96
+DEN@MEM|Cam Johnson|Rebounds|3.5|1.78|2.00
+DEN@MEM|Cam Johnson|PRA|17.5|1.86|1.90
+DEN@MEM|Aaron Gordon|Points|12.5|1.96|1.80
+DEN@MEM|Aaron Gordon|PRA|19.5|1.80|1.96
+DEN@MEM|Aaron Gordon|Rebounds|5.5|2.25|1.58
+DEN@MEM|Aaron Gordon|Assists|2.5|2.15|1.64
+DEN@MEM|Aaron Gordon|Threes|1.5|2.25|1.58
+DEN@MEM|DeMar DeRozan|Assists|2.5|2.05|1.74
+DEN@MEM|DeMar DeRozan|Points|10.5|1.84|1.92
+DEN@MEM|DeMar DeRozan|PRA|15.5|1.91|1.85
+DEN@MEM|Spencer Jones|Rebounds|2.5|1.83|1.93
+DEN@MEM|Cameron Boozer|Rebounds|9.5|2.10|1.68
+DEN@MEM|Cameron Boozer|Points|16.5|1.80|1.96
+DEN@MEM|Cameron Boozer|PRA|31.5|1.96|1.80
+DEN@MEM|Cameron Boozer|Assists|4.5|1.64|2.15
+DEN@MEM|Cameron Boozer|Threes|1.5|1.64|2.15
+DEN@MEM|Ty Jerome|Threes|2.5|1.89|1.87
+DEN@MEM|Ty Jerome|PRA|30.5|1.96|1.80
+DEN@MEM|Ty Jerome|Assists|5.5|2.05|1.74
+DEN@MEM|Ty Jerome|Points|21.5|1.92|1.84
+DEN@MEM|Ty Jerome|Rebounds|3.5|2.15|1.64
+DEN@MEM|Cedric Coward|Rebounds|6.5|1.80|1.96
+DEN@MEM|Cedric Coward|Points|13.5|2.00|1.78
+DEN@MEM|Cedric Coward|Threes|1.5|1.72|2.08
+DEN@MEM|Cedric Coward|PRA|22.5|1.80|1.96
+DEN@MEM|Cedric Coward|Assists|2.5|1.80|1.96
+DEN@MEM|Jaylen Wells|Points|10.5|1.96|1.80
+DEN@MEM|Jaylen Wells|Threes|1.5|1.72|2.08
+DEN@MEM|Jaylen Wells|Rebounds|2.5|1.64|2.15
+DEN@MEM|Zach Edey|Points|9.5|2.00|1.78
+DEN@MEM|Zach Edey|Rebounds|8.5|1.90|1.86
+DEN@MEM|Jerami Grant|Rebounds|2.5|2.05|1.74
+DEN@MEM|Jerami Grant|PRA|15.5|1.96|1.80
+DEN@MEM|Jerami Grant|Threes|1.5|1.90|1.86
+DEN@MEM|Jerami Grant|Points|10.5|1.80|1.96
+DEN@MEM|Cam Spencer|PRA|14.5|1.96|1.80
+DEN@MEM|Cam Spencer|Threes|1.5|2.50|1.48
+DEN@MEM|Cam Spencer|Rebounds|2.5|2.10|1.68
+DEN@MEM|Cam Spencer|Assists|4.5|1.96|1.80
+DEN@MEM|Cam Spencer|Points|7.5|2.08|1.72
+DEN@MEM|Nikola Jokic|Blocks|0.5|1.44|2.60
+DEN@MEM|Nikola Jokic|Steals|1.5|2.10|1.68
+DEN@MEM|Cedric Coward|Steals|1.5|2.90|1.36
+DEN@MEM|Ty Jerome|Steals|0.5|1.40|2.75
+DEN@MEM|Zach Edey|Blocks|1.5|2.60|1.45
+DEN@MEM|Christian Braun|Steals|1.5|2.50|1.48
+CLE@NYK|Donovan Mitchell|PRA|33.5|1.90|1.86
+CLE@NYK|Donovan Mitchell|Threes|2.5|1.90|1.86
+CLE@NYK|Donovan Mitchell|Rebounds|4.5|2.10|1.68
+CLE@NYK|Donovan Mitchell|Points|24.5|1.96|1.80
+CLE@NYK|Donovan Mitchell|Assists|4.5|1.78|2.00
+CLE@NYK|James Harden|Assists|6.5|2.20|1.60
+CLE@NYK|James Harden|Rebounds|4.5|2.10|1.68
+CLE@NYK|James Harden|Points|16.5|2.02|1.76
+CLE@NYK|James Harden|Threes|2.5|2.20|1.60
+CLE@NYK|James Harden|PRA|26.5|1.86|1.90
+CLE@NYK|Jalen Brunson|Points|27.5|1.96|1.80
+CLE@NYK|Jalen Brunson|Assists|6.5|1.84|1.92
+CLE@NYK|Evan Mobley|PRA|28.5|1.96|1.80
+CLE@NYK|Evan Mobley|Rebounds|8.5|2.08|1.72
+CLE@NYK|Evan Mobley|Threes|1.5|2.45|1.50
+CLE@NYK|Jalen Brunson|Threes|2.5|1.88|1.88
+CLE@NYK|Jalen Brunson|Rebounds|3.5|2.08|1.72
+CLE@NYK|Jalen Brunson|PRA|37.5|1.90|1.85
+CLE@NYK|Evan Mobley|Assists|3.5|1.96|1.80
+CLE@NYK|Evan Mobley|Points|16.5|2.00|1.78
+CLE@NYK|Karl-Anthony Towns|Assists|2.5|1.72|2.08
+CLE@NYK|Karl-Anthony Towns|Threes|1.5|2.10|1.72
+CLE@NYK|Karl-Anthony Towns|PRA|35.5|1.85|1.91
+CLE@NYK|Karl-Anthony Towns|Points|20.5|1.96|1.80
+CLE@NYK|Karl-Anthony Towns|Rebounds|12.5|1.92|1.84
+CLE@NYK|OG Anunoby|PRA|26.5|1.96|1.80
+CLE@NYK|OG Anunoby|Points|18.5|1.96|1.80
+CLE@NYK|OG Anunoby|Threes|2.5|2.10|1.68
+CLE@NYK|OG Anunoby|Rebounds|5.5|2.00|1.78
+CLE@NYK|OG Anunoby|Assists|2.5|2.25|1.58
+CLE@NYK|Jarrett Allen|Rebounds|7.5|2.08|1.72
+CLE@NYK|Peyton Watson|Rebounds|4.5|2.10|1.68
+CLE@NYK|Jarrett Allen|Points|11.5|1.92|1.84
+CLE@NYK|Peyton Watson|PRA|18.5|1.91|1.85
+CLE@NYK|Peyton Watson|Threes|1.5|2.10|1.68
+CLE@NYK|Peyton Watson|Points|11.5|1.80|1.96
+CLE@NYK|Jarrett Allen|PRA|20.5|1.87|1.89
+CLE@NYK|Josh Hart|Assists|3.5|1.64|2.15
+CLE@NYK|Josh Hart|Rebounds|7.5|1.83|1.93
+CLE@NYK|Josh Hart|PRA|22.5|1.96|1.80
+CLE@NYK|Josh Hart|Points|9.5|1.80|1.96
+CLE@NYK|Josh Hart|Threes|1.5|2.05|1.74
+CLE@NYK|Mikal Bridges|Points|9.5|1.83|1.93
+CLE@NYK|Mikal Bridges|Rebounds|3.5|2.40|1.52
+CLE@NYK|Mikal Bridges|Assists|2.5|1.87|1.89
+CLE@NYK|Mikal Bridges|PRA|15.5|1.84|1.92
+CLE@NYK|Mikal Bridges|Threes|1.5|2.40|1.52
+CLE@NYK|Meleek Thomas|Points|9.5|1.84|1.92
+CLE@NYK|Meleek Thomas|Threes|1.5|1.80|1.96
+CLE@NYK|Jaylon Tyson|Rebounds|3.5|1.86|1.90
+CLE@NYK|Jaylon Tyson|Points|8.5|2.05|1.74
+CLE@NYK|Jaylon Tyson|Threes|1.5|2.40|1.52
+CLE@NYK|Andre Drummond|Rebounds|8.5|1.96|1.80
+CLE@NYK|Andre Drummond|Points|6.5|1.88|1.88
+CLE@NYK|Landry Shamet|Threes|1.5|1.56|2.30
+CLE@NYK|Landry Shamet|Points|8.5|1.85|1.91
+CLE@NYK|Donovan Mitchell|Steals|1.5|2.75|1.40
+CLE@NYK|Evan Mobley|Blocks|1.5|2.25|1.58
+CLE@NYK|Peyton Watson|Blocks|1.5|2.60|1.45
+CLE@NYK|OG Anunoby|Steals|1.5|2.15|1.64
+LAL@MIL|Walker Kessler|Rebounds|11.5|2.02|1.76
+LAL@MIL|Luka Doncic|PRA|50.5|1.96|1.80
+LAL@MIL|Matisse Thybulle|Threes|1.5|2.10|1.68
+LAL@MIL|Walker Kessler|Blocks|1.5|1.50|2.45
+LAL@MIL|Ziaire Williams|Rebounds|2.5|1.72|2.08
+LAL@MIL|Luka Doncic|Steals|1.5|2.00|1.78
+LAL@MIL|Luka Doncic|Points|34.5|1.80|1.96
+LAL@MIL|Matisse Thybulle|Points|5.5|1.80|1.96
+LAL@MIL|Austin Reaves|Threes|2.5|2.30|1.56
+LAL@MIL|Jake Laravia|Points|6.5|2.02|1.76
+LAL@MIL|Walker Kessler|Steals|0.5|1.48|2.50
+LAL@MIL|Austin Reaves|Points|22.5|1.96|1.80
+LAL@MIL|Sandro Mamukelashvili|Threes|1.5|2.45|1.50
+LAL@MIL|Luka Doncic|Threes|4.5|1.96|1.80
+LAL@MIL|Sandro Mamukelashvili|Points|8.5|1.80|1.96
+LAL@MIL|Ziaire Williams|Threes|1.5|2.10|1.68
+LAL@MIL|Sandro Mamukelashvili|Rebounds|4.5|1.91|1.85
+LAL@MIL|Luka Doncic|Rebounds|7.5|2.02|1.76
+LAL@MIL|Jake Laravia|Rebounds|3.5|2.02|1.76
+LAL@MIL|Walker Kessler|Points|13.5|1.80|1.96
+LAL@MIL|Matisse Thybulle|Steals|1.5|1.76|2.02
+LAL@MIL|Austin Reaves|PRA|31.5|1.96|1.80
+LAL@MIL|Luka Doncic|Assists|7.5|1.87|1.89
+LAL@MIL|Austin Reaves|Assists|5.5|2.15|1.64
+LAL@MIL|Austin Reaves|Rebounds|3.5|1.80|1.96
+LAL@MIL|Ziaire Williams|Points|8.5|1.84|1.92
+LAL@MIL|Tyler Herro|Assists|4.5|2.20|1.60
+LAL@MIL|Tyler Herro|Rebounds|4.5|2.05|1.74
+LAL@MIL|Tyler Herro|Points|19.5|1.85|1.91
+LAL@MIL|Tyler Herro|PRA|28.5|1.87|1.88
+LAL@MIL|Tyler Herro|Threes|2.5|1.96|1.80
+LAL@MIL|Jaime Jaquez Jr.|Threes|1.5|2.20|1.60
+LAL@MIL|Jaime Jaquez Jr.|Points|15.5|1.96|1.80
+LAL@MIL|Jaime Jaquez Jr.|Rebounds|4.5|1.80|1.96
+LAL@MIL|Jaime Jaquez Jr.|PRA|23.5|1.96|1.80
+LAL@MIL|Jaime Jaquez Jr.|Assists|2.5|1.64|2.15
+LAL@MIL|Brayden Burries|Assists|3.5|2.15|1.64
+LAL@MIL|Brayden Burries|Points|12.5|1.76|2.02
+LAL@MIL|Brayden Burries|Threes|1.5|1.96|1.80
+LAL@MIL|Brayden Burries|Rebounds|5.5|2.08|1.72
+LAL@MIL|Brayden Burries|PRA|21.5|1.80|1.96
+LAL@MIL|Kyle Kuzma|Points|12.5|2.02|1.76
+LAL@MIL|Kyle Kuzma|Rebounds|4.5|1.96|1.80
+LAL@MIL|Kyle Kuzma|PRA|19.5|1.92|1.84
+LAL@MIL|Kyle Kuzma|Assists|2.5|1.96|1.80
+LAL@MIL|Kyle Kuzma|Threes|1.5|2.15|1.64
+LAL@MIL|Austin Reaves|Steals|0.5|1.52|2.40
+LAL@MIL|Kel'el Ware|Rebounds|7.5|1.80|1.96
+LAL@MIL|Kel'el Ware|Points|10.5|1.78|2.00
+GSW@HOU|Georges Niang|Threes|1.5|2.05|1.74
+GSW@HOU|Gui Santos|Points|7.5|1.96|1.80
+GSW@HOU|Draymond Green|PRA|16.5|1.87|1.89
+GSW@HOU|Stephen Curry|Assists|4.5|1.96|1.80
+GSW@HOU|Gui Santos|Rebounds|3.5|1.74|2.05
+GSW@HOU|De'Anthony Melton|PRA|14.5|1.96|1.80
+GSW@HOU|Stephen Curry|Threes|4.5|2.10|1.68
+GSW@HOU|Yaxel Lendeborg|Points|18.5|1.96|1.80
+GSW@HOU|Stephen Curry|Rebounds|3.5|1.68|2.10
+GSW@HOU|De'Anthony Melton|Points|8.5|1.80|1.93
+GSW@HOU|De'Anthony Melton|Threes|1.5|1.96|1.80
+GSW@HOU|Draymond Green|Rebounds|5.5|2.15|1.64
+GSW@HOU|Stephen Curry|PRA|34.5|1.85|1.91
+GSW@HOU|Stephen Curry|Points|25.5|1.80|1.96
+GSW@HOU|Yaxel Lendeborg|PRA|28.5|1.83|1.93
+GSW@HOU|Yaxel Lendeborg|Rebounds|6.5|1.88|1.88
+GSW@HOU|Gui Santos|PRA|13.5|1.96|1.80
+GSW@HOU|Georges Niang|Rebounds|2.5|1.88|1.88
+GSW@HOU|Brandin Podziemski|Rebounds|4.5|1.80|1.96
+GSW@HOU|Yaxel Lendeborg|Threes|1.5|1.68|2.10
+GSW@HOU|Georges Niang|Points|7.5|1.96|1.80
+GSW@HOU|Draymond Green|Assists|6.5|2.05|1.74
+GSW@HOU|De'Anthony Melton|Rebounds|3.5|2.15|1.64
+GSW@HOU|Brandin Podziemski|PRA|23.5|1.96|1.80
+GSW@HOU|Brandin Podziemski|Threes|2.5|2.30|1.56
+GSW@HOU|Brandin Podziemski|Points|15.5|1.96|1.80
+GSW@HOU|Brandin Podziemski|Assists|2.5|1.56|2.30
+GSW@HOU|Yaxel Lendeborg|Assists|3.5|1.80|1.96
+GSW@HOU|Al Horford|Rebounds|3.5|2.08|1.72
+GSW@HOU|Jabari Smith|Rebounds|6.5|1.90|1.86
+GSW@HOU|Fred VanVleet|Threes|2.5|1.96|1.80
+GSW@HOU|Jabari Smith|Points|14.5|1.89|1.87
+GSW@HOU|Kevin Durant|PRA|31.5|1.83|1.93
+GSW@HOU|Kevin Durant|Assists|3.5|1.87|1.89
+GSW@HOU|Alperen Sengun|Rebounds|9.5|2.05|1.74
+GSW@HOU|Alperen Sengun|Assists|6.5|1.80|1.96
+GSW@HOU|Alperen Sengun|Points|19.5|1.88|1.88
+GSW@HOU|Kevin Durant|Rebounds|5.5|1.74|2.05
+GSW@HOU|Tari Eason|Threes|1.5|2.60|1.44
+GSW@HOU|Jabari Smith|PRA|23.5|1.96|1.80
+GSW@HOU|Kevin Durant|Threes|1.5|1.68|2.10
+GSW@HOU|Alperen Sengun|PRA|35.5|1.85|1.91
+GSW@HOU|Amen Thompson|Points|15.5|1.90|1.86
+GSW@HOU|Amen Thompson|Assists|3.5|2.08|1.72
+GSW@HOU|Tari Eason|Rebounds|4.5|1.80|1.96
+GSW@HOU|Tari Eason|Points|8.5|2.00|1.78
+GSW@HOU|Fred VanVleet|PRA|19.5|1.80|1.96
+GSW@HOU|Amen Thompson|PRA|26.5|1.96|1.80
+GSW@HOU|Fred VanVleet|Rebounds|2.5|1.56|2.30
+GSW@HOU|Jabari Smith|Threes|2.5|2.30|1.56
+GSW@HOU|Tari Eason|PRA|14.5|1.89|1.87
+GSW@HOU|Marcus Smart|Threes|1.5|2.60|1.44
+GSW@HOU|Kevin Durant|Points|21.5|1.78|2.00
+GSW@HOU|Fred VanVleet|Assists|4.5|1.64|2.15
+GSW@HOU|Amen Thompson|Rebounds|6.5|1.64|2.15
+GSW@HOU|Fred VanVleet|Points|11.5|1.85|1.91
+GSW@HOU|De'Anthony Melton|Steals|1.5|2.50|1.48
+GSW@HOU|Stephen Curry|Steals|1.5|2.75|1.40
+GSW@HOU|Tari Eason|Steals|1.5|2.25|1.58
+GSW@HOU|Amen Thompson|Steals|1.5|2.75|1.40
+###ALT
+game|player|stat|rungs
+BRK@NOP|Day'Ron Sharpe|PRA|13.5=1.08 14.5=1.12 15.5=1.16 16.5=1.24 17.5=1.3 18.5=1.4 19.5=1.52 20.5=1.64 21.5=1.8 22.5=2 23.5=2.15 24.5=2.45 25.5=2.8 26.5=3.2 27.5=3.6 28.5=4.4 29.5=5.2 30.5=5.8
+BRK@NOP|Derik Queen|PRA|10.5=1.07 11.5=1.1 12.5=1.13 13.5=1.2 14.5=1.25 15.5=1.36 16.5=1.45 17.5=1.6 18.5=1.76 19.5=1.96 20.5=2.15 21.5=2.45 22.5=2.75 23.5=3.2 24.5=3.6 25.5=4.4 26.5=5.2 27.5=5.5
+BRK@NOP|Jeremiah Fears|Threes|0.5=1.2 1.5=2.05 2.5=4.4
+BRK@NOP|Jeremiah Fears|Rebounds|2.5=1.11 3.5=1.36 4.5=1.8 5.5=2.6 6.5=3.8 7.5=5.8
+BRK@NOP|Dejounte Murray|PRA|17.5=1.08 18.5=1.11 19.5=1.14 20.5=1.2 21.5=1.27 22.5=1.32 23.5=1.45 24.5=1.58 25.5=1.72 26.5=1.9 27.5=2.1 28.5=2.25 29.5=2.6 30.5=2.9 31.5=3.2 32.5=3.8 33.5=4.6 34.5=5.2 35.5=5.8
+BRK@NOP|Egor Demin|Threes|0.5=1.12 1.5=1.68 2.5=2.9 3.5=5.5
+BRK@NOP|Saddiq Bey|Threes|1.5=1.6 2.5=2.75 3.5=5.4
+BRK@NOP|Karlo Matkovic|Points|2.5=1.08 3.5=1.14 4.5=1.25 5.5=1.44 6.5=1.64 7.5=1.96 8.5=2.3 9.5=2.75 10.5=3.4 11.5=4.4 12.5=5.4 13.5=6.5
+BRK@NOP|Zion Williamson|Assists|1.5=1.16 2.5=1.58 3.5=2.5 4.5=4.6 5.5=7.5
+BRK@NOP|Herbert Jones|Rebounds|1.5=1.14 2.5=1.52 3.5=2.3 4.5=3.8 5.5=6.5
+BRK@NOP|Julius Randle|Points|12.5=1.08 13.5=1.12 14.5=1.16 15.5=1.22 16.5=1.3 17.5=1.4 18.5=1.52 19.5=1.68 20.5=1.87 21.5=2.1 22.5=2.4 23.5=2.6 24.5=3.1 25.5=3.6 26.5=4.1 27.5=5 28.5=5.5 29.5=6.5 30.5=7.5
+BRK@NOP|Michael Porter Jr.|Rebounds|4.5=1.12 5.5=1.27 6.5=1.58 7.5=2.08 8.5=2.9 9.5=3.6 10.5=5.4
+BRK@NOP|Saddiq Bey|PRA|12.5=1.07 13.5=1.1 14.5=1.13 15.5=1.2 16.5=1.25 17.5=1.32 18.5=1.44 19.5=1.56 20.5=1.72 21.5=1.9 22.5=2.1 23.5=2.3 24.5=2.6 25.5=3.1 26.5=3.4 27.5=3.8 28.5=4.6 29.5=5.2 30.5=5.8
+BRK@NOP|Zion Williamson|Rebounds|3.5=1.13 4.5=1.36 5.5=1.76 6.5=2.45 7.5=3.6 8.5=5.4 9.5=7
+BRK@NOP|Herbert Jones|Points|3.5=1.08 4.5=1.16 5.5=1.27 6.5=1.4 7.5=1.64 8.5=1.93 9.5=2.25 10.5=2.75 11.5=3.2 12.5=4.1 13.5=5.2 14.5=6.5
+BRK@NOP|Julius Randle|Assists|2.5=1.08 3.5=1.24 4.5=1.56 5.5=2.1 6.5=3.1 7.5=5 8.5=7.5
+BRK@NOP|Dejounte Murray|Points|8.5=1.07 9.5=1.11 10.5=1.16 11.5=1.25 12.5=1.32 13.5=1.45 14.5=1.64 15.5=1.8 16.5=2.05 17.5=2.3 18.5=2.6 19.5=3.1 20.5=3.6 21.5=4.4 22.5=5.2 23.5=5.8 24.5=7
+BRK@NOP|Day'Ron Sharpe|Rebounds|4.5=1.1 5.5=1.2 6.5=1.4 7.5=1.72 8.5=2.15 9.5=2.6 10.5=3.4 11.5=5 12.5=6.5
+BRK@NOP|Jeremiah Fears|Points|9.5=1.08 10.5=1.12 11.5=1.18 12.5=1.27 13.5=1.36 14.5=1.5 15.5=1.68 16.5=1.86 17.5=2.08 18.5=2.4 19.5=2.75 20.5=3.1 21.5=3.6 22.5=4.1 23.5=5.2 24.5=5.5 25.5=6.5 26.5=7.5
+BRK@NOP|Jeremiah Fears|PRA|17.5=1.07 18.5=1.1 19.5=1.13 20.5=1.18 21.5=1.25 22.5=1.32 23.5=1.44 24.5=1.52 25.5=1.68 26.5=1.84 27.5=2.05 28.5=2.2 29.5=2.5 30.5=2.75 31.5=3.1 32.5=3.6 33.5=4.1 34.5=4.6 35.5=5.2 36.5=5.8
+BRK@NOP|Julius Randle|Threes|0.5=1.22 1.5=2.15 2.5=4.6
+BRK@NOP|Karlo Matkovic|Threes|0.5=1.45 1.5=3.2
+BRK@NOP|Derik Queen|Assists|1.5=1.3 2.5=1.96 3.5=3.2 4.5=5.5
+BRK@NOP|Michael Porter Jr.|Points|14.5=1.08 15.5=1.12 16.5=1.16 17.5=1.22 18.5=1.3 19.5=1.36 20.5=1.45 21.5=1.58 22.5=1.74 23.5=1.91 24.5=2.1 25.5=2.3 26.5=2.6 27.5=2.9 28.5=3.4 29.5=3.8 30.5=4.6 31.5=5.2 32.5=5.8 33.5=6.5 34.5=7.5
+BRK@NOP|Nolan Traore|Threes|0.5=1.24 1.5=2.15 2.5=4.6
+BRK@NOP|Julius Randle|Rebounds|3.5=1.08 4.5=1.24 5.5=1.5 6.5=1.96 7.5=2.75 8.5=3.8 9.5=5.2 10.5=7.5
+BRK@NOP|Day'Ron Sharpe|Points|4.5=1.1 5.5=1.18 6.5=1.3 7.5=1.44 8.5=1.64 9.5=1.85 10.5=2.15 11.5=2.6 12.5=3.1 13.5=3.6 14.5=4.6 15.5=5.5 16.5=6.5
+BRK@NOP|Moritz Wagner|Points|3.5=1.08 4.5=1.16 5.5=1.25 6.5=1.4 7.5=1.58 8.5=1.8 9.5=2.1 10.5=2.5 11.5=3.1 12.5=3.6 13.5=4.6 14.5=5.5 15.5=6.5
+BRK@NOP|Derik Queen|Rebounds|3.5=1.16 4.5=1.36 5.5=1.74 6.5=2.25 7.5=3.1 8.5=4.6 9.5=5.5
+BRK@NOP|Egor Demin|Assists|1.5=1.18 2.5=1.64 3.5=2.45 4.5=4.1 5.5=6.5
+BRK@NOP|Day'Ron Sharpe|Assists|1.5=1.08 2.5=1.3 3.5=1.74 4.5=2.6 5.5=4.1 6.5=6.5
+BRK@NOP|Egor Demin|PRA|8.5=1.1 9.5=1.13 10.5=1.2 11.5=1.3 12.5=1.4 13.5=1.52 14.5=1.68 15.5=1.89 16.5=2.1 17.5=2.4 18.5=2.75 19.5=3.2 20.5=3.6 21.5=4.6 22.5=5.2 23.5=5.8
+BRK@NOP|Zion Williamson|Points|13.5=1.08 14.5=1.11 15.5=1.16 16.5=1.22 17.5=1.3 18.5=1.4 19.5=1.5 20.5=1.68 21.5=1.86 22.5=2.08 23.5=2.25 24.5=2.6 25.5=3.1 26.5=3.4 27.5=4.1 28.5=4.6 29.5=5.4 30.5=5.8 31.5=7.5
+BRK@NOP|Herbert Jones|Threes|0.5=1.32 1.5=2.6 2.5=5.8
+BRK@NOP|Derik Queen|Points|4.5=1.08 5.5=1.12 6.5=1.22 7.5=1.3 8.5=1.48 9.5=1.68 10.5=1.93 11.5=2.15 12.5=2.6 13.5=3.2 14.5=3.8 15.5=4.6 16.5=5.8 17.5=7
+BRK@NOP|Nolan Traore|Points|5.5=1.1 6.5=1.16 7.5=1.25 8.5=1.36 9.5=1.5 10.5=1.68 11.5=1.87 12.5=2.1 13.5=2.4 14.5=2.75 15.5=3.2 16.5=3.6 17.5=4.4 18.5=5.2 19.5=5.8 20.5=6.5 21.5=7.5
+BRK@NOP|Saddiq Bey|Rebounds|2.5=1.2 3.5=1.52 4.5=2.15 5.5=3.2 6.5=5.2
+BRK@NOP|Michael Porter Jr.|Threes|1.5=1.13 2.5=1.48 3.5=2.15 4.5=3.6
+BRK@NOP|Zion Williamson|PRA|21.5=1.08 22.5=1.12 23.5=1.16 24.5=1.22 25.5=1.27 26.5=1.36 27.5=1.45 28.5=1.56 29.5=1.68 30.5=1.84 31.5=2 32.5=2.15 33.5=2.45 34.5=2.75 35.5=3.1 36.5=3.6 37.5=3.8 38.5=4.6 39.5=5.2 40.5=5.8
+BRK@NOP|Egor Demin|Rebounds|1.5=1.25 2.5=1.8 3.5=2.9 4.5=5.2
+BRK@NOP|Herbert Jones|PRA|7.5=1.1 8.5=1.14 9.5=1.24 10.5=1.32 11.5=1.48 12.5=1.68 13.5=1.91 14.5=2.15 15.5=2.6 16.5=3.1 17.5=3.6 18.5=4.6 19.5=5.4
+BRK@NOP|Dejounte Murray|Threes|0.5=1.25 1.5=2.25 2.5=5.2
+BRK@NOP|Dejounte Murray|Rebounds|2.5=1.07 3.5=1.24 4.5=1.52 5.5=2.1 6.5=3.1 7.5=4.6 8.5=7.5
+BRK@NOP|Dejounte Murray|Assists|2.5=1.08 3.5=1.25 4.5=1.64 5.5=2.2 6.5=3.4 7.5=5.4
+BRK@NOP|Julius Randle|PRA|22.5=1.08 23.5=1.1 24.5=1.13 25.5=1.2 26.5=1.25 27.5=1.3 28.5=1.4 29.5=1.48 30.5=1.58 31.5=1.72 32.5=1.88 33.5=2.08 34.5=2.2 35.5=2.5 36.5=2.75 37.5=3.1 38.5=3.4 39.5=3.8 40.5=4.6 41.5=5.2 42.5=5.8
+BRK@NOP|Michael Porter Jr.|Assists|0.5=1.08 1.5=1.48 2.5=2.5 3.5=5
+BRK@NOP|Jeremiah Fears|Assists|2.5=1.08 3.5=1.25 4.5=1.64 5.5=2.25 6.5=3.2 7.5=5.2
+BRK@NOP|Egor Demin|Points|3.5=1.08 4.5=1.12 5.5=1.22 6.5=1.32 7.5=1.45 8.5=1.68 9.5=1.92 10.5=2.15 11.5=2.6 12.5=2.9 13.5=3.4 14.5=4.1 15.5=5.2 16.5=5.8 17.5=7
+BRK@NOP|Saddiq Bey|Points|7.5=1.07 8.5=1.11 9.5=1.16 10.5=1.24 11.5=1.32 12.5=1.45 13.5=1.6 14.5=1.8 15.5=2.05 16.5=2.25 17.5=2.6 18.5=3.1 19.5=3.6 20.5=4.1 21.5=5.2 22.5=5.8 23.5=6.5
+BRK@NOP|Karlo Matkovic|Rebounds|2.5=1.13 3.5=1.38 4.5=1.85 5.5=2.6 6.5=3.8 7.5=5.8
+BRK@NOP|Michael Porter Jr.|Threes|4.5=3.6 6.5=13 1.5=1.14 5.5=6.5 0.5=1.02 2.5=1.5 7.5=26 3.5=2.2
+BRK@NOP|Egor Demin|Threes|4.5=12 1.5=1.67 5.5=23 0.5=1.13 2.5=2.95 3.5=5.8
+BRK@NOP|Julius Randle|Threes|4.5=26 1.5=2.15 0.5=1.23 2.5=4.75 3.5=11.5
+BRK@NOP|Nolan Traore|Threes|4.5=26 1.5=2.18 0.5=1.24 2.5=4.5 3.5=11
+BRK@NOP|Saddiq Bey|Threes|4.5=13 1.5=1.61 5.5=26 0.5=1.11 2.5=2.75 3.5=5.6
+BRK@NOP|Jeremiah Fears|Threes|4.5=23 1.5=2.03 0.5=1.21 2.5=4.3 3.5=10.5
+BRK@NOP|Moritz Wagner|Threes|1.5=4.4 0.5=1.68
+BRK@NOP|Dejounte Murray|Threes|1.5=2.3 0.5=1.29 2.5=5.3 3.5=13
+BRK@NOP|Herbert Jones|Threes|1.5=2.65 0.5=1.34 2.5=6.5 3.5=17
+BRK@NOP|Karlo Matkovic|Threes|1.5=3.3 0.5=1.48
+BRK@NOP|Michael Porter Jr.|Steals|1.5=3.05 0.5=1.45 2.5=8.25
+BRK@NOP|Dejounte Murray|Steals|1.5=1.75 3.5=7.5 0.5=1.14 2.5=3.35
+BRK@NOP|Derik Queen|Blocks|0.5=1.49 2.5=8.5 1.5=3.3
+BOS@TOR|Payton Pritchard|Assists|2.5=1.2 3.5=1.5 4.5=2.1 5.5=3.1 6.5=5 7.5=7.5
+BOS@TOR|Jayson Tatum|Threes|1.5=1.25 2.5=1.9 3.5=3.2
+BOS@TOR|Payton Pritchard|Rebounds|1.5=1.13 2.5=1.45 3.5=2.1 4.5=3.4 5.5=5.8
+BOS@TOR|Payton Pritchard|Points|7.5=1.07 8.5=1.1 9.5=1.16 10.5=1.22 11.5=1.3 12.5=1.4 13.5=1.52 14.5=1.72 15.5=1.92 16.5=2.1 17.5=2.4 18.5=2.75 19.5=3.1 20.5=3.6 21.5=4.1 22.5=4.6 23.5=5.4 24.5=5.8 25.5=7
+BOS@TOR|I Quickley|PRA|17.5=1.08 18.5=1.1 19.5=1.13 20.5=1.18 21.5=1.25 22.5=1.3 23.5=1.4 24.5=1.5 25.5=1.64 26.5=1.78 27.5=1.96 28.5=2.1 29.5=2.3 30.5=2.6 31.5=2.9 32.5=3.2 33.5=3.6 34.5=4.4 35.5=5.2 36.5=5.5
+BOS@TOR|Ja'Kobe Walter|Threes|1.5=1.25 2.5=1.8 3.5=2.9 4.5=5.4
+BOS@TOR|Ja'Kobe Walter|Rebounds|2.5=1.2 3.5=1.52 4.5=2.15 5.5=3.4 6.5=5.5
+BOS@TOR|Jayson Tatum|PRA|30.5=1.08 31.5=1.11 32.5=1.13 33.5=1.18 34.5=1.22 35.5=1.3 36.5=1.36 37.5=1.44 38.5=1.52 39.5=1.64 40.5=1.78 41.5=1.92 42.5=2.1 43.5=2.25 44.5=2.45 45.5=2.75 46.5=3.1 47.5=3.4 48.5=3.6 49.5=4.4 50.5=5 51.5=5.4 52.5=5.8
+BOS@TOR|Derrick White|Threes|1.5=1.5 2.5=2.6 3.5=5.2
+BOS@TOR|Neemias Queta|PRA|10.5=1.08 11.5=1.12 12.5=1.16 13.5=1.25 14.5=1.32 15.5=1.45 16.5=1.58 17.5=1.78 18.5=1.96 19.5=2.15 20.5=2.5 21.5=2.9 22.5=3.4 23.5=3.8 24.5=4.6 25.5=5.4
+BOS@TOR|RJ Barrett|PRA|20.5=1.07 21.5=1.1 22.5=1.13 23.5=1.16 24.5=1.22 25.5=1.27 26.5=1.32 27.5=1.4 28.5=1.5 29.5=1.6 30.5=1.74 31.5=1.87 32.5=2.05 33.5=2.15 34.5=2.4 35.5=2.6 36.5=2.9 37.5=3.1 38.5=3.4 39.5=3.6 40.5=4.1 41.5=4.6 42.5=5.2 43.5=5.4 44.5=5.8
+BOS@TOR|Neemias Queta|Points|4.5=1.1 5.5=1.16 6.5=1.27 7.5=1.4 8.5=1.6 9.5=1.86 10.5=2.15 11.5=2.6 12.5=3.1 13.5=3.6 14.5=4.6 15.5=5.8 16.5=7
+BOS@TOR|Immanuel Quickley|Points|9.5=1.08 10.5=1.12 11.5=1.16 12.5=1.25 13.5=1.32 14.5=1.44 15.5=1.58 16.5=1.72 17.5=1.91 18.5=2.1 19.5=2.4 20.5=2.75 21.5=3.1 22.5=3.6 23.5=4.4 24.5=5.2 25.5=5.5 26.5=6.5 27.5=7.5
+BOS@TOR|Neemias Queta|Rebounds|3.5=1.08 4.5=1.2 5.5=1.4 6.5=1.8 7.5=2.4 8.5=3.2 9.5=4.4 10.5=5.8
+BOS@TOR|Immanuel Quickley|Rebounds|1.5=1.08 2.5=1.32 3.5=1.9 4.5=2.9 5.5=5.2
+BOS@TOR|Immanuel Quickley|Threes|1.5=1.22 2.5=1.76 3.5=2.9 4.5=5.2
+BOS@TOR|Immanuel Quickley|Assists|3.5=1.13 4.5=1.32 5.5=1.68 6.5=2.25 7.5=3.2 8.5=5.2 9.5=7
+BOS@TOR|Ja'Kobe Walter|PRA|11.5=1.08 12.5=1.12 13.5=1.16 14.5=1.24 15.5=1.32 16.5=1.44 17.5=1.58 18.5=1.74 19.5=1.96 20.5=2.15 21.5=2.45 22.5=2.75 23.5=3.2 24.5=3.6 25.5=4.6 26.5=5.2 27.5=5.8
+BOS@TOR|Derrick White|PRA|15.5=1.1 16.5=1.13 17.5=1.2 18.5=1.27 19.5=1.36 20.5=1.45 21.5=1.58 22.5=1.78 23.5=1.96 24.5=2.15 25.5=2.5 26.5=2.75 27.5=3.2 28.5=3.6 29.5=4.4 30.5=5.2 31.5=5.8
+BOS@TOR|Jayson Tatum|Points|17.5=1.07 18.5=1.1 19.5=1.13 20.5=1.16 21.5=1.24 22.5=1.3 23.5=1.38 24.5=1.48 25.5=1.64 26.5=1.78 27.5=1.96 28.5=2.15 29.5=2.45 30.5=2.75 31.5=3.1 32.5=3.4 33.5=3.8 34.5=4.6 35.5=5.2 36.5=5.8 37.5=6.5
+BOS@TOR|Jayson Tatum|Rebounds|4.5=1.1 5.5=1.25 6.5=1.52 7.5=1.96 8.5=2.6 9.5=3.2 10.5=5 11.5=7
+BOS@TOR|Jayson Tatum|Assists|3.5=1.08 4.5=1.22 5.5=1.5 6.5=1.96 7.5=2.75 8.5=4.1 9.5=5.8
+BOS@TOR|Collin Murray-Boyles|Points|6.5=1.1 7.5=1.16 8.5=1.25 9.5=1.36 10.5=1.52 11.5=1.72 12.5=1.96 13.5=2.2 14.5=2.6 15.5=3.1 16.5=3.6 17.5=4.6 18.5=5.4 19.5=6.5 20.5=7.5
+BOS@TOR|Payton Pritchard|Threes|1.5=1.4 2.5=2.25 3.5=4.4
+BOS@TOR|Jakob Poeltl|Rebounds|4.5=1.1 5.5=1.24 6.5=1.45 7.5=1.76 8.5=2.15 9.5=2.6 10.5=3.4 11.5=4.6 12.5=5.8
+BOS@TOR|RJ Barrett|Threes|1.5=1.48 2.5=2.45 3.5=4.6
+BOS@TOR|Ja'Kobe Walter|Points|6.5=1.1 7.5=1.13 8.5=1.24 9.5=1.32 10.5=1.45 11.5=1.64 12.5=1.8 13.5=2.08 14.5=2.3 15.5=2.75 16.5=3.2 17.5=3.8 18.5=4.6 19.5=5.4 20.5=6.5 21.5=7.5
+BOS@TOR|RJ Barrett|Rebounds|2.5=1.07 3.5=1.2 4.5=1.45 5.5=1.86 6.5=2.5 7.5=3.4 8.5=5 9.5=5.8
+BOS@TOR|C Murray-Boyles|PRA|12.5=1.08 13.5=1.11 14.5=1.16 15.5=1.24 16.5=1.32 17.5=1.44 18.5=1.56 19.5=1.72 20.5=1.89 21.5=2.1 22.5=2.3 23.5=2.6 24.5=3.1 25.5=3.6 26.5=4.1 27.5=4.6 28.5=5.4 29.5=5.8
+BOS@TOR|RJ Barrett|Assists|1.5=1.1 2.5=1.36 3.5=1.88 4.5=2.9 5.5=4.6 6.5=7
+BOS@TOR|Jakob Poeltl|PRA|13.5=1.08 14.5=1.12 15.5=1.16 16.5=1.25 17.5=1.32 18.5=1.4 19.5=1.52 20.5=1.68 21.5=1.8 22.5=1.96 23.5=2.15 24.5=2.4 25.5=2.6 26.5=2.9 27.5=3.2 28.5=3.6 29.5=4.1 30.5=4.6 31.5=5.2 32.5=5.8
+BOS@TOR|Derrick White|Points|7.5=1.07 8.5=1.11 9.5=1.16 10.5=1.25 11.5=1.36 12.5=1.5 13.5=1.68 14.5=1.92 15.5=2.15 16.5=2.5 17.5=2.9 18.5=3.4 19.5=4.1 20.5=5 21.5=5.8 22.5=6.5
+BOS@TOR|Jakob Poeltl|Points|5.5=1.07 6.5=1.13 7.5=1.22 8.5=1.36 9.5=1.5 10.5=1.72 11.5=1.96 12.5=2.15 13.5=2.5 14.5=2.9 15.5=3.2 16.5=3.6 17.5=4.1 18.5=4.6 19.5=5.4 20.5=5.8 21.5=6.5 22.5=7
+BOS@TOR|Derrick White|Rebounds|1.5=1.08 2.5=1.32 3.5=1.85 4.5=2.9 5.5=5.2
+BOS@TOR|Baylor Scheierman|Threes|0.5=1.16 1.5=1.96 2.5=3.8
+BOS@TOR|Derrick White|Assists|2.5=1.11 3.5=1.32 4.5=1.74 5.5=2.5 6.5=3.8 7.5=5.8
+BOS@TOR|Collin Murray-Boyles|Rebounds|3.5=1.13 4.5=1.32 5.5=1.68 6.5=2.25 7.5=3.2 8.5=5 9.5=5.8
+BOS@TOR|Baylor Scheierman|Rebounds|2.5=1.2 3.5=1.5 4.5=2.05 5.5=2.9 6.5=4.4 7.5=5.8
+BOS@TOR|Baylor Scheierman|Points|2.5=1.06 3.5=1.14 4.5=1.22 5.5=1.4 6.5=1.6 7.5=1.84 8.5=2.15 9.5=2.75 10.5=3.2 11.5=4.1 12.5=5.2 13.5=5.8 14.5=7.5
+BOS@TOR|RJ Barrett|Points|12.5=1.07 13.5=1.1 14.5=1.16 15.5=1.2 16.5=1.27 17.5=1.36 18.5=1.45 19.5=1.58 20.5=1.72 21.5=1.88 22.5=2.08 23.5=2.2 24.5=2.5 25.5=2.75 26.5=3.1 27.5=3.2 28.5=3.6 29.5=4.1 30.5=4.6 31.5=5.2 32.5=5.4
+BOS@TOR|Jayson Tatum|Threes|4.5=6.75 5.5=14 0.5=1.04 1.5=1.27 6.5=31 2.5=1.9 3.5=3.35
+BOS@TOR|Payton Pritchard|Threes|4.5=9.25 5.5=20 0.5=1.08 1.5=1.44 2.5=2.3 3.5=4.4
+BOS@TOR|Derrick White|Threes|4.5=11.5 5.5=31 0.5=1.08 1.5=1.51 2.5=2.55 3.5=5.1
+BOS@TOR|Baylor Scheierman|Threes|4.5=23 0.5=1.18 1.5=1.97 2.5=4 3.5=9.5
+BOS@TOR|Immanuel Quickley|Threes|4.5=5.4 5.5=10 0.5=1.04 1.5=1.23 6.5=21 2.5=1.76 3.5=2.9
+BOS@TOR|Ja'Kobe Walter|Threes|4.5=5.5 5.5=11 0.5=1.04 1.5=1.25 6.5=21 2.5=1.79 3.5=2.95
+BOS@TOR|RJ Barrett|Threes|4.5=9 5.5=17 0.5=1.08 1.5=1.49 6.5=36 2.5=2.45 3.5=4.5
+BOS@TOR|Jordan Walsh|Threes|0.5=1.84 1.5=5.4
+BOS@TOR|Jayson Tatum|Steals|1.5=2.95 0.5=1.4 2.5=7.75
+BOS@TOR|Derrick White|Steals|1.5=3 0.5=1.41 2.5=7.75
+BOS@TOR|Immanuel Quickley|Steals|1.5=2.55 0.5=1.31 2.5=6
+BOS@TOR|Ja'Kobe Walter|Steals|1.5=2.25 0.5=1.25 2.5=5
+BOS@TOR|Neemias Queta|Blocks|0.5=1.31 1.5=2.55 2.5=6
+ORL@UTA|Anthony Black|Threes|1.5=1.82 0.5=1.17
+ORL@UTA|Desmond Bane|Threes|1.5=1.19 0.5=1.03
+ORL@UTA|Franz Wagner|Threes|1.5=2.25 0.5=1.29
+ORL@UTA|Wendell Carter Jr.|Threes|1.5=3.8 0.5=1.56
+ORL@UTA|Ace Bailey|Threes|1.5=1.53 0.5=1.08
+ORL@UTA|Darryn Peterson|Threes|1.5=1.41 0.5=1.07
+ORL@UTA|Josh Green|Threes|1.5=2.5 0.5=1.28
+WAS@IND|Pascal Siakam|PRA|22.5=1.08 23.5=1.12 24.5=1.16 25.5=1.2 26.5=1.25 27.5=1.32 28.5=1.4 29.5=1.5 30.5=1.64 31.5=1.76 32.5=1.92 33.5=2.1 34.5=2.25 35.5=2.6 36.5=2.9 37.5=3.2 38.5=3.6 39.5=4.1 40.5=4.6 41.5=5.4 42.5=5.8
+WAS@IND|AJ Dybantsa|Assists|1.5=1.36 2.5=2.15 3.5=3.8 4.5=7.5
+WAS@IND|Kyshawn George|PRA|15.5=1.07 16.5=1.1 17.5=1.14 18.5=1.2 19.5=1.27 20.5=1.36 21.5=1.48 22.5=1.6 23.5=1.78 24.5=1.96 25.5=2.15 26.5=2.45 27.5=2.75 28.5=3.2 29.5=3.6 30.5=4.4 31.5=5.2 32.5=5.8
+WAS@IND|Anthony Davis|Points|13.5=1.06 14.5=1.1 15.5=1.13 16.5=1.18 17.5=1.25 18.5=1.32 19.5=1.4 20.5=1.52 21.5=1.68 22.5=1.86 23.5=2.08 24.5=2.25 25.5=2.6 26.5=2.9 27.5=3.2 28.5=3.8 29.5=4.6 30.5=5.2 31.5=5.8 32.5=6.5
+WAS@IND|Kyshawn George|Rebounds|2.5=1.13 3.5=1.36 4.5=1.89 5.5=2.75 6.5=4.4 7.5=7
+WAS@IND|Trae Young|PRA|20.5=1.08 21.5=1.11 22.5=1.14 23.5=1.2 24.5=1.25 25.5=1.32 26.5=1.4 27.5=1.52 28.5=1.64 29.5=1.8 30.5=2.05 31.5=2.2 32.5=2.45 33.5=2.75 34.5=3.1 35.5=3.6 36.5=4.1 37.5=5 38.5=5.4 39.5=5.8
+WAS@IND|Andrew Nembhard|Assists|4.5=1.1 5.5=1.25 6.5=1.52 7.5=2.05 8.5=2.75 9.5=3.6 10.5=5.4
+WAS@IND|Obi Toppin|Rebounds|2.5=1.16 3.5=1.45 4.5=1.96 5.5=2.75 6.5=4.4 7.5=6.5
+WAS@IND|Alex Sarr|Points|4.5=1.07 5.5=1.12 6.5=1.22 7.5=1.32 8.5=1.48 9.5=1.72 10.5=2 11.5=2.3 12.5=2.75 13.5=3.2 14.5=3.8 15.5=5.2 16.5=5.8 17.5=7
+WAS@IND|Trae Young|Rebounds|1.5=1.22 2.5=1.74 3.5=2.8 4.5=5.2
+WAS@IND|Aaron Nesmith|PRA|11.5=1.08 12.5=1.12 13.5=1.18 14.5=1.25 15.5=1.36 16.5=1.45 17.5=1.6 18.5=1.78 19.5=2 20.5=2.15 21.5=2.5 22.5=2.9 23.5=3.2 24.5=3.8 25.5=4.6 26.5=5.4
+WAS@IND|Andrew Nembhard|Rebounds|1.5=1.27 2.5=1.96 3.5=3.2 4.5=6.5
+WAS@IND|Alex Sarr|Rebounds|3.5=1.06 4.5=1.16 5.5=1.36 6.5=1.72 7.5=2.15 8.5=3.1 9.5=3.8 10.5=5.4
+WAS@IND|Andrew Nembhard|Points|8.5=1.06 9.5=1.1 10.5=1.14 11.5=1.22 12.5=1.3 13.5=1.44 14.5=1.58 15.5=1.8 16.5=2.02 17.5=2.25 18.5=2.6 19.5=3.1 20.5=3.6 21.5=4.4 22.5=5.2 23.5=5.8 24.5=7
+WAS@IND|Anthony Davis|Assists|0.5=1.07 1.5=1.4 2.5=2.25 3.5=4.4
+WAS@IND|Aaron Nesmith|Threes|1.5=1.4 2.5=2.25 3.5=4.1
+WAS@IND|AJ Dybantsa|Threes|0.5=1.3 1.5=2.5 2.5=5.8
+WAS@IND|Obi Toppin|Points|5.5=1.1 6.5=1.16 7.5=1.25 8.5=1.36 9.5=1.52 10.5=1.72 11.5=1.93 12.5=2.15 13.5=2.6 14.5=2.9 15.5=3.4 16.5=4.1 17.5=5.2 18.5=5.8 19.5=7
+WAS@IND|Anthony Davis|Rebounds|6.5=1.11 7.5=1.24 8.5=1.4 9.5=1.6 10.5=1.96 11.5=2.5 12.5=3.4 13.5=4.6 14.5=6.5
+WAS@IND|Tre Johnson|Threes|0.5=1.22 1.5=2.1 2.5=4.4
+WAS@IND|Bilal Coulibaly|Points|2.5=1.08 3.5=1.13 4.5=1.27 5.5=1.44 6.5=1.64 7.5=1.96 8.5=2.3 9.5=2.9 10.5=3.6 11.5=4.6 12.5=5.8 13.5=7
+WAS@IND|Trae Young|Points|9.5=1.06 10.5=1.1 11.5=1.13 12.5=1.2 13.5=1.27 14.5=1.36 15.5=1.5 16.5=1.64 17.5=1.83 18.5=2.08 19.5=2.3 20.5=2.6 21.5=3.1 22.5=3.6 23.5=4.1 24.5=5 25.5=5.5 26.5=6.5 27.5=7.5
+WAS@IND|Alex Sarr|PRA|11.5=1.08 12.5=1.12 13.5=1.18 14.5=1.25 15.5=1.32 16.5=1.45 17.5=1.58 18.5=1.76 19.5=1.96 20.5=2.2 21.5=2.5 22.5=2.9 23.5=3.2 24.5=3.8 25.5=4.6 26.5=5.2 27.5=5.8
+WAS@IND|Pascal Siakam|Assists|1.5=1.07 2.5=1.3 3.5=1.8 4.5=2.75 5.5=4.6 6.5=7.5
+WAS@IND|Pascal Siakam|Rebounds|3.5=1.07 4.5=1.2 5.5=1.44 6.5=1.88 7.5=2.6 8.5=3.6 9.5=4.6 10.5=6.5
+WAS@IND|Ivica Zubac|PRA|16.5=1.08 17.5=1.11 18.5=1.16 19.5=1.22 20.5=1.3 21.5=1.36 22.5=1.45 23.5=1.58 24.5=1.72 25.5=1.9 26.5=2.1 27.5=2.25 28.5=2.6 29.5=2.9 30.5=3.2 31.5=3.8 32.5=4.4 33.5=5.2 34.5=5.5
+WAS@IND|Aaron Nesmith|Points|6.5=1.06 7.5=1.1 8.5=1.16 9.5=1.25 10.5=1.36 11.5=1.48 12.5=1.64 13.5=1.88 14.5=2.1 15.5=2.45 16.5=2.9 17.5=3.4 18.5=4.1 19.5=5 20.5=5.8 21.5=6.5
+WAS@IND|Anthony Davis|PRA|24.5=1.08 25.5=1.11 26.5=1.14 27.5=1.18 28.5=1.24 29.5=1.3 30.5=1.36 31.5=1.44 32.5=1.52 33.5=1.64 34.5=1.76 35.5=1.9 36.5=2.08 37.5=2.25 38.5=2.5 39.5=2.75 40.5=3.1 41.5=3.4 42.5=3.8 43.5=4.4 44.5=5 45.5=5.4 46.5=5.8
+WAS@IND|AJ Dybantsa|Points|10.5=1.08 11.5=1.12 12.5=1.18 13.5=1.25 14.5=1.36 15.5=1.48 16.5=1.64 17.5=1.8 18.5=2.08 19.5=2.3 20.5=2.6 21.5=3.1 22.5=3.6 23.5=4.4 24.5=5.2 25.5=5.8 26.5=6.5
+WAS@IND|AJ Dybantsa|Rebounds|3.5=1.13 4.5=1.32 5.5=1.72 6.5=2.3 7.5=3.4 8.5=5.4 9.5=7
+WAS@IND|Kelly Oubre Jr.|Points|3.5=1.06 4.5=1.13 5.5=1.2 6.5=1.32 7.5=1.48 8.5=1.68 9.5=1.96 10.5=2.2 11.5=2.6 12.5=3.1 13.5=3.6 14.5=4.6 15.5=5.5 16.5=6.5
+WAS@IND|Kyshawn George|Threes|1.5=1.5 2.5=2.6 3.5=5.2
+WAS@IND|Ivica Zubac|Rebounds|5.5=1.07 6.5=1.14 7.5=1.3 8.5=1.5 9.5=1.68 10.5=2.1 11.5=2.75 12.5=3.6 13.5=5.2 14.5=6.5
+WAS@IND|Trae Young|Threes|1.5=1.44 2.5=2.3 3.5=4.6
+WAS@IND|Ivica Zubac|Points|6.5=1.07 7.5=1.12 8.5=1.18 9.5=1.3 10.5=1.4 11.5=1.58 12.5=1.76 13.5=2 14.5=2.25 15.5=2.6 16.5=3.1 17.5=3.6 18.5=4.6 19.5=5.4 20.5=6.5 21.5=7.5
+WAS@IND|Andrew Nembhard|Threes|1.5=1.6 2.5=2.9 3.5=5.8
+WAS@IND|Trae Young|Assists|5.5=1.08 6.5=1.2 7.5=1.4 8.5=1.74 9.5=2.1 10.5=2.8 11.5=4.1 12.5=5.8
+WAS@IND|Ivica Zubac|Assists|0.5=1.07 1.5=1.44 2.5=2.4 3.5=4.6
+WAS@IND|Tre Johnson|Points|2.5=1.1 3.5=1.22 4.5=1.3 5.5=1.48 6.5=1.74 7.5=1.96 8.5=2.4 9.5=2.9 10.5=3.4 11.5=4.4 12.5=5.2 13.5=5.8 14.5=7.5
+WAS@IND|AJ Dybantsa|PRA|17.5=1.08 18.5=1.11 19.5=1.16 20.5=1.22 21.5=1.3 22.5=1.36 23.5=1.48 24.5=1.6 25.5=1.76 26.5=1.96 27.5=2.1 28.5=2.4 29.5=2.75 30.5=3.1 31.5=3.4 32.5=4.1 33.5=4.6 34.5=5.4 35.5=5.8
+WAS@IND|Kyshawn George|Assists|2.5=1.13 3.5=1.4 4.5=1.9 5.5=2.9 6.5=4.6 7.5=7.5
+WAS@IND|Kyshawn George|Points|7.5=1.07 8.5=1.11 9.5=1.16 10.5=1.25 11.5=1.36 12.5=1.48 13.5=1.64 14.5=1.84 15.5=2.1 16.5=2.4 17.5=2.75 18.5=3.2 19.5=3.8 20.5=4.6 21.5=5.4 22.5=6.5 23.5=7.5
+WAS@IND|Andrew Nembhard|PRA|17.5=1.07 18.5=1.1 19.5=1.13 20.5=1.2 21.5=1.27 22.5=1.36 23.5=1.45 24.5=1.58 25.5=1.74 26.5=1.96 27.5=2.15 28.5=2.45 29.5=2.75 30.5=3.1 31.5=3.6 32.5=4.4 33.5=5.2 34.5=5.8
+WAS@IND|Aaron Nesmith|Rebounds|1.5=1.08 2.5=1.32 3.5=1.92 4.5=2.9 5.5=5.2
+WAS@IND|T.J. McConnell|Assists|1.5=1.12 2.5=1.36 3.5=1.84 4.5=2.6 5.5=4.1 6.5=6.5
+WAS@IND|Obi Toppin|PRA|9.5=1.07 10.5=1.1 11.5=1.14 12.5=1.2 13.5=1.27 14.5=1.36 15.5=1.48 16.5=1.64 17.5=1.8 18.5=1.96 19.5=2.15 20.5=2.45 21.5=2.8 22.5=3.2 23.5=3.6 24.5=4.4 25.5=5.2 26.5=5.8
+WAS@IND|T.J. McConnell|Points|2.5=1.16 3.5=1.25 4.5=1.4 5.5=1.64 6.5=1.9 7.5=2.25 8.5=2.75 9.5=3.2 10.5=4.1 11.5=5.2 12.5=6.5
+WAS@IND|Bilal Coulibaly|Rebounds|1.5=1.12 2.5=1.4 3.5=2 4.5=3.1 5.5=5.2
+WAS@IND|Pascal Siakam|Points|12.5=1.06 13.5=1.08 14.5=1.12 15.5=1.16 16.5=1.24 17.5=1.3 18.5=1.4 19.5=1.52 20.5=1.68 21.5=1.86 22.5=2.08 23.5=2.3 24.5=2.6 25.5=3.1 26.5=3.6 27.5=4.1 28.5=4.6 29.5=5.4 30.5=6.5 31.5=7.5
+WAS@IND|Pascal Siakam|Threes|0.5=1.2 1.5=2.02 2.5=4.1
+WAS@IND|Trae Young|Threes|3.5=4.6 0.5=1.07 4.5=10 5.5=21 1.5=1.44 2.5=2.3
+WAS@IND|Kyshawn George|Threes|3.5=5.1 0.5=1.09 4.5=11 5.5=26 1.5=1.51 2.5=2.55
+WAS@IND|Tre Johnson|Threes|3.5=9.75 0.5=1.24 4.5=23 1.5=2.12 2.5=4.3
+WAS@IND|AJ Dybantsa|Threes|3.5=17 0.5=1.32 1.5=2.5 2.5=6.25
+WAS@IND|Aaron Nesmith|Threes|3.5=4.25 0.5=1.07 4.5=9 5.5=20 1.5=1.41 2.5=2.3
+WAS@IND|Andrew Nembhard|Threes|3.5=6 0.5=1.11 4.5=14 5.5=31 1.5=1.62 2.5=2.85
+WAS@IND|Obi Toppin|Threes|3.5=8.5 0.5=1.19 4.5=19 1.5=1.95 2.5=3.8
+WAS@IND|Pascal Siakam|Threes|3.5=10 0.5=1.2 4.5=26 1.5=2 2.5=4.25
+WAS@IND|Alex Sarr|Threes|0.5=1.56 1.5=3.75
+WAS@IND|Anthony Davis|Threes|0.5=1.64 1.5=4.25
+WAS@IND|Bilal Coulibaly|Threes|0.5=1.72 1.5=4.5
+WAS@IND|Kelly Oubre Jr.|Threes|0.5=1.48 1.5=3.1
+WAS@IND|Anthony Davis|Steals|2.5=6.75 1.5=2.7 0.5=1.36
+WAS@IND|AJ Dybantsa|Steals|2.5=7 1.5=2.85 0.5=1.37
+WAS@IND|Trae Young|Steals|2.5=8.5 1.5=3.2 0.5=1.45
+WAS@IND|Pascal Siakam|Steals|1.5=3.35 0.5=1.49
+WAS@IND|Anthony Davis|Blocks|1.5=1.87 2.5=3.75 3.5=8.5 0.5=1.16
+SAS@CHI|Julian Champagnie|Threes|4.5=7.5 3.5=3.75 2.5=2.1 0.5=1.06 5.5=15 1.5=1.37
+SAS@CHI|Victor Wembanyama|Threes|4.5=15 3.5=6.5 2.5=3.15 0.5=1.11 1.5=1.65
+SAS@CHI|Devin Vassell|Threes|4.5=21 3.5=8.5 2.5=3.6 0.5=1.15 1.5=1.83
+SAS@CHI|Stephon Castle|Threes|4.5=23 3.5=9.5 2.5=4 0.5=1.19 1.5=1.98
+SAS@CHI|Norman Powell|Threes|4.5=7.5 3.5=3.8 2.5=2.12 0.5=1.07 6.5=36 5.5=15 1.5=1.38
+SAS@CHI|Caleb Wilson|Threes|4.5=9.5 3.5=4.6 2.5=2.45 0.5=1.08 5.5=18 1.5=1.49
+SAS@CHI|Matas Buzelis|Threes|4.5=17 3.5=7.75 2.5=3.4 0.5=1.15 1.5=1.8
+SAS@CHI|Jalen Smith|Threes|4.5=18 3.5=7.5 2.5=3.4 0.5=1.16 1.5=1.79
+SAS@CHI|Victor Wembanyama|Blocks|4.5=3.1 3.5=1.94 2.5=1.36 1.5=1.09
+SAS@CHI|De'Aaron Fox|Threes|3.5=18 2.5=6.25 0.5=1.32 1.5=2.55
+SAS@CHI|Dylan Harper|Threes|3.5=18 2.5=6.75 0.5=1.34 1.5=2.7
+SAS@CHI|Josh Giddey|Threes|3.5=11.5 2.5=4.8 0.5=1.25 1.5=2.2
+SAS@CHI|De'Aaron Fox|Steals|0.5=1.38 2.5=7.75 1.5=2.9
+SAS@CHI|Devin Vassell|Steals|0.5=1.3 2.5=5.7 1.5=2.4
+SAS@CHI|Victor Wembanyama|Steals|0.5=1.38 2.5=7.5 1.5=2.85
+SAS@CHI|Caleb Wilson|Steals|0.5=1.32 2.5=6 1.5=2.5
+SAS@CHI|Josh Giddey|Steals|0.5=1.52 1.5=3.6
+DEN@MEM|Jamal Murray|Threes|1.5=1.2 2.5=1.68 3.5=2.75 4.5=5.2
+DEN@MEM|Cedric Coward|Threes|0.5=1.13 1.5=1.72 2.5=3.2
+DEN@MEM|Cam Johnson|PRA|10.5=1.08 11.5=1.13 12.5=1.2 13.5=1.27 14.5=1.36 15.5=1.5 16.5=1.64 17.5=1.86 18.5=2.1 19.5=2.4 20.5=2.75 21.5=3.1 22.5=3.6 23.5=4.4 24.5=5.2 25.5=5.8
+DEN@MEM|Cedric Coward|Points|6.5=1.08 7.5=1.12 8.5=1.2 9.5=1.3 10.5=1.4 11.5=1.56 12.5=1.76 13.5=2 14.5=2.25 15.5=2.6 16.5=3.1 17.5=3.6 18.5=4.6 19.5=5.2 20.5=5.8 21.5=7
+DEN@MEM|DeMar DeRozan|Rebounds|0.5=1.1 1.5=1.58 2.5=2.75 3.5=5.2
+DEN@MEM|Nikola Jokic|Rebounds|7.5=1.1 8.5=1.18 9.5=1.25 10.5=1.48 11.5=1.8 12.5=2.25 13.5=3.1 14.5=4.1 15.5=5.8
+DEN@MEM|Jamal Murray|Rebounds|2.5=1.14 3.5=1.45 4.5=2 5.5=3.1 6.5=5.2
+DEN@MEM|Cedric Coward|Assists|1.5=1.25 2.5=1.8 3.5=2.9 4.5=5.2
+DEN@MEM|Cameron Boozer|PRA|20.5=1.07 21.5=1.1 22.5=1.13 23.5=1.16 24.5=1.22 25.5=1.27 26.5=1.32 27.5=1.4 28.5=1.5 29.5=1.64 30.5=1.8 31.5=1.96 32.5=2.1 33.5=2.25 34.5=2.6 35.5=2.9 36.5=3.2 37.5=3.6 38.5=4.1 39.5=5 40.5=5.4 41.5=5.8
+DEN@MEM|Christian Braun|Points|5.5=1.08 6.5=1.13 7.5=1.22 8.5=1.32 9.5=1.48 10.5=1.68 11.5=1.96 12.5=2.2 13.5=2.6 14.5=3.2 15.5=3.8 16.5=4.6 17.5=5.5 18.5=6.5
+DEN@MEM|Jamal Murray|Assists|3.5=1.1 4.5=1.27 5.5=1.6 6.5=2.15 7.5=3.1 8.5=4.6 9.5=6.5
+DEN@MEM|Aaron Gordon|Assists|1.5=1.36 2.5=2.15 3.5=4.1 4.5=7.5
+DEN@MEM|Jerami Grant|Points|4.5=1.08 5.5=1.13 6.5=1.2 7.5=1.3 8.5=1.4 9.5=1.58 10.5=1.8 11.5=2.08 12.5=2.4 13.5=2.8 14.5=3.2 15.5=3.8 16.5=5 17.5=5.8 18.5=6.5
+DEN@MEM|Ty Jerome|Rebounds|1.5=1.13 2.5=1.48 3.5=2.15 4.5=3.6 5.5=6.5
+DEN@MEM|Nikola Jokic|Threes|0.5=1.2 1.5=2.1 2.5=4.6
+DEN@MEM|Ty Jerome|Threes|1.5=1.27 2.5=1.89 3.5=3.2 4.5=5.8
+DEN@MEM|Nikola Jokic|Assists|5.5=1.08 6.5=1.18 7.5=1.38 8.5=1.68 9.5=2.05 10.5=2.75 11.5=3.8 12.5=5.8
+DEN@MEM|Ty Jerome|Assists|2.5=1.06 3.5=1.2 4.5=1.48 5.5=2.05 6.5=2.9 7.5=4.6 8.5=7
+DEN@MEM|Zach Edey|Rebounds|4.5=1.06 5.5=1.13 6.5=1.3 7.5=1.52 8.5=1.9 9.5=2.15 10.5=2.9 11.5=3.8 12.5=5.2 13.5=7
+DEN@MEM|Christian Braun|PRA|10.5=1.07 11.5=1.12 12.5=1.16 13.5=1.25 14.5=1.36 15.5=1.48 16.5=1.64 17.5=1.83 18.5=2.08 19.5=2.4 20.5=2.75 21.5=3.2 22.5=3.6 23.5=4.6 24.5=5.2 25.5=5.8
+DEN@MEM|Ty Jerome|Points|12.5=1.08 13.5=1.1 14.5=1.14 15.5=1.2 16.5=1.27 17.5=1.36 18.5=1.45 19.5=1.6 20.5=1.74 21.5=1.92 22.5=2.1 23.5=2.4 24.5=2.75 25.5=3.1 26.5=3.6 27.5=4.1 28.5=4.6 29.5=5.4 30.5=5.8 31.5=7
+DEN@MEM|Aaron Gordon|Rebounds|2.5=1.08 3.5=1.27 4.5=1.64 5.5=2.25 6.5=3.2 7.5=5.2 8.5=7.5
+DEN@MEM|Aaron Gordon|Threes|0.5=1.25 1.5=2.25 2.5=5.2
+DEN@MEM|Cam Johnson|Points|5.5=1.08 6.5=1.12 7.5=1.2 8.5=1.3 9.5=1.44 10.5=1.6 11.5=1.8 12.5=2.1 13.5=2.4 14.5=2.8 15.5=3.2 16.5=4.1 17.5=5 18.5=5.8 19.5=6.5
+DEN@MEM|Ty Jerome|PRA|19.5=1.07 20.5=1.1 21.5=1.13 22.5=1.16 23.5=1.22 24.5=1.27 25.5=1.36 26.5=1.44 27.5=1.52 28.5=1.64 29.5=1.78 30.5=1.96 31.5=2.1 32.5=2.25 33.5=2.6 34.5=2.9 35.5=3.2 36.5=3.6 37.5=4.1 38.5=4.6 39.5=5.4 40.5=5.8
+DEN@MEM|Jerami Grant|PRA|8.5=1.1 9.5=1.14 10.5=1.22 11.5=1.3 12.5=1.4 13.5=1.56 14.5=1.74 15.5=1.96 16.5=2.15 17.5=2.5 18.5=2.9 19.5=3.2 20.5=3.8 21.5=4.6 22.5=5.4
+DEN@MEM|DeMar DeRozan|Assists|0.5=1.06 1.5=1.32 2.5=2.05 3.5=3.4 4.5=5.8
+DEN@MEM|Cam Spencer|Assists|2.5=1.16 3.5=1.45 4.5=1.96 5.5=2.75 6.5=4.4 7.5=6.5
+DEN@MEM|Cedric Coward|Rebounds|3.5=1.08 4.5=1.2 5.5=1.4 6.5=1.8 7.5=2.45 8.5=3.2 9.5=4.4 10.5=6.5
+DEN@MEM|Cameron Boozer|Points|9.5=1.08 10.5=1.13 11.5=1.18 12.5=1.25 13.5=1.36 14.5=1.45 15.5=1.64 16.5=1.8 17.5=2.02 18.5=2.25 19.5=2.6 20.5=3.1 21.5=3.6 22.5=4.1 23.5=5 24.5=5.5 25.5=6.5 26.5=7.5
+DEN@MEM|Cameron Boozer|Assists|2.5=1.08 3.5=1.27 4.5=1.64 5.5=2.25 6.5=3.6 7.5=5.5
+DEN@MEM|DeMar DeRozan|PRA|8.5=1.1 9.5=1.14 10.5=1.22 11.5=1.3 12.5=1.4 13.5=1.52 14.5=1.68 15.5=1.91 16.5=2.15 17.5=2.45 18.5=2.75 19.5=3.2 20.5=3.8 21.5=4.6 22.5=5.4 23.5=5.8
+DEN@MEM|Cam Johnson|Rebounds|1.5=1.08 2.5=1.3 3.5=1.78 4.5=2.75 5.5=4.6 6.5=7.5
+DEN@MEM|Cam Spencer|Points|2.5=1.1 3.5=1.22 4.5=1.3 5.5=1.52 6.5=1.78 7.5=2.08 8.5=2.45 9.5=3.1 10.5=3.6 11.5=4.6 12.5=5.8 13.5=7
+DEN@MEM|Nikola Jokic|Points|16.5=1.08 17.5=1.1 18.5=1.14 19.5=1.2 20.5=1.27 21.5=1.32 22.5=1.44 23.5=1.56 24.5=1.72 25.5=1.89 26.5=2.1 27.5=2.3 28.5=2.6 29.5=3.1 30.5=3.4 31.5=3.8 32.5=4.6 33.5=5.4 34.5=5.8 35.5=7
+DEN@MEM|Jamal Murray|PRA|24.5=1.08 25.5=1.11 26.5=1.14 27.5=1.2 28.5=1.25 29.5=1.32 30.5=1.4 31.5=1.48 32.5=1.6 33.5=1.72 34.5=1.87 35.5=2.08 36.5=2.2 37.5=2.5 38.5=2.75 39.5=3.1 40.5=3.4 41.5=3.8 42.5=4.6 43.5=5.2 44.5=5.5 45.5=5.8
+DEN@MEM|Aaron Gordon|Points|5.5=1.06 6.5=1.1 7.5=1.16 8.5=1.25 9.5=1.36 10.5=1.5 11.5=1.72 12.5=1.96 13.5=2.2 14.5=2.6 15.5=3.1 16.5=3.6 17.5=4.6 18.5=5.2 19.5=6.5 20.5=7.5
+DEN@MEM|Cedric Coward|PRA|14.5=1.08 15.5=1.12 16.5=1.16 17.5=1.24 18.5=1.3 19.5=1.4 20.5=1.52 21.5=1.64 22.5=1.8 23.5=2 24.5=2.15 25.5=2.5 26.5=2.75 27.5=3.2 28.5=3.6 29.5=4.1 30.5=5 31.5=5.5
+DEN@MEM|Cameron Boozer|Threes|0.5=1.11 1.5=1.64 2.5=2.9 3.5=5.8
+DEN@MEM|Christian Braun|Assists|0.5=1.08 1.5=1.5 2.5=2.5 3.5=5.2
+DEN@MEM|Christian Braun|Threes|0.5=1.27 1.5=2.4 2.5=5.2
+DEN@MEM|Spencer Jones|Rebounds|1.5=1.27 2.5=1.83 3.5=2.9 4.5=5.2
+DEN@MEM|Jamal Murray|Points|14.5=1.06 15.5=1.1 16.5=1.13 17.5=1.2 18.5=1.25 19.5=1.32 20.5=1.44 21.5=1.56 22.5=1.68 23.5=1.86 24.5=2.05 25.5=2.25 26.5=2.6 27.5=2.9 28.5=3.2 29.5=3.8 30.5=4.4 31.5=5.2 32.5=5.5 33.5=6.5 34.5=7.5
+DEN@MEM|Aaron Gordon|PRA|12.5=1.1 13.5=1.13 14.5=1.2 15.5=1.27 16.5=1.36 17.5=1.48 18.5=1.64 19.5=1.8 20.5=2.02 21.5=2.25 22.5=2.6 23.5=2.9 24.5=3.2 25.5=3.8 26.5=4.6 27.5=5.2 28.5=5.8
+DEN@MEM|Jaylen Wells|Rebounds|1.5=1.2 2.5=1.64 3.5=2.6 4.5=4.6 5.5=7.5
+DEN@MEM|Zach Edey|Points|4.5=1.12 5.5=1.2 6.5=1.32 7.5=1.48 8.5=1.72 9.5=2 10.5=2.4 11.5=2.8 12.5=3.4 13.5=4.4 14.5=5.2 15.5=6.5
+DEN@MEM|Jaylen Wells|Points|4.5=1.08 5.5=1.13 6.5=1.24 7.5=1.36 8.5=1.5 9.5=1.68 10.5=1.96 11.5=2.25 12.5=2.6 13.5=3.2 14.5=3.8 15.5=4.6 16.5=5.5 17.5=6.5
+DEN@MEM|Nikola Jokic|PRA|34.5=1.08 35.5=1.1 36.5=1.13 37.5=1.16 38.5=1.22 39.5=1.25 40.5=1.3 41.5=1.36 42.5=1.45 43.5=1.52 44.5=1.64 45.5=1.74 46.5=1.89 47.5=2.05 48.5=2.15 49.5=2.4 50.5=2.6 51.5=2.9 52.5=3.2 53.5=3.6 54.5=4.1 55.5=4.6 56.5=5.2 57.5=5.5
+DEN@MEM|Jaylen Wells|Threes|0.5=1.13 1.5=1.72 2.5=3.2
+DEN@MEM|Christian Braun|Rebounds|2.5=1.22 3.5=1.58 4.5=2.25 5.5=3.6 6.5=5.8
+DEN@MEM|DeMar DeRozan|Points|4.5=1.08 5.5=1.13 6.5=1.2 7.5=1.3 8.5=1.44 9.5=1.64 10.5=1.84 11.5=2.1 12.5=2.45 13.5=2.9 14.5=3.4 15.5=4.1 16.5=5.2 17.5=5.8 18.5=7
+DEN@MEM|Cameron Boozer|Rebounds|5.5=1.11 6.5=1.25 7.5=1.45 8.5=1.8 9.5=2.1 10.5=2.75 11.5=3.8 12.5=5.4 13.5=7.5
+DEN@MEM|Spencer Jones|Points|0.5=1.11 1.5=1.13 2.5=1.32 3.5=1.64 4.5=1.91 5.5=2.45 6.5=3.1 7.5=4.1 8.5=5.4 9.5=6.5
+DEN@MEM|Spencer Jones|Threes|0.5=1.72 1.5=4.6
+DEN@MEM|Cam Johnson|Assists|0.5=1.11 1.5=1.64 2.5=2.9 3.5=5.8
+DEN@MEM|Cam Johnson|Threes|1.5=1.56 2.5=2.75 3.5=5.4
+DEN@MEM|Jerami Grant|Assists|0.5=1.13 1.5=1.76 2.5=3.2 3.5=6.5
+DEN@MEM|Jamal Murray|Threes|5.5=9.5 2.5=1.68 6.5=20 1.5=1.2 4.5=5 0.5=1.03 3.5=2.75
+DEN@MEM|Cam Johnson|Threes|5.5=26 2.5=2.75 1.5=1.57 4.5=12 0.5=1.1 3.5=5.5
+DEN@MEM|Ty Jerome|Threes|5.5=12 2.5=1.89 6.5=26 1.5=1.28 4.5=6 0.5=1.04 3.5=3.2
+DEN@MEM|Nikola Jokic|Threes|2.5=4.5 1.5=2.1 0.5=1.21 3.5=11.5
+DEN@MEM|Aaron Gordon|Threes|2.5=5.1 1.5=2.25 0.5=1.29 3.5=13
+DEN@MEM|Christian Braun|Threes|2.5=5.5 1.5=2.35 0.5=1.29 3.5=14
+DEN@MEM|Cameron Boozer|Threes|2.5=2.95 1.5=1.64 4.5=14 0.5=1.12 3.5=6.25
+DEN@MEM|Cedric Coward|Threes|2.5=3.2 1.5=1.73 4.5=15 0.5=1.13 3.5=7
+DEN@MEM|Jaylen Wells|Threes|2.5=3.2 1.5=1.73 4.5=15 0.5=1.13 3.5=6.75
+DEN@MEM|Jerami Grant|Threes|2.5=3.9 1.5=1.9 4.5=19 0.5=1.18 3.5=8.75
+DEN@MEM|Cam Spencer|Threes|2.5=5.9 1.5=2.5 0.5=1.33 3.5=14
+DEN@MEM|Spencer Jones|Threes|1.5=4.5 0.5=1.71
+DEN@MEM|Nikola Jokic|Blocks|1.5=3.15 2.5=8.5 0.5=1.44
+DEN@MEM|Zach Edey|Blocks|1.5=2.55 2.5=6 0.5=1.34
+DEN@MEM|Christian Braun|Steals|1.5=2.45 0.5=1.3 2.5=5.8
+DEN@MEM|Nikola Jokic|Steals|1.5=2.07 0.5=1.2 2.5=4.4
+DEN@MEM|Jamal Murray|Steals|1.5=3 0.5=1.41 2.5=7.75
+DEN@MEM|Cedric Coward|Steals|1.5=2.9 0.5=1.39 2.5=7.25
+DEN@MEM|Ty Jerome|Steals|1.5=2.95 0.5=1.42 2.5=7.75
+CLE@NYK|Jarrett Allen|Points|5.5=1.08 6.5=1.13 7.5=1.22 8.5=1.32 9.5=1.48 10.5=1.68 11.5=1.92 12.5=2.15 13.5=2.6 14.5=3.1 15.5=3.6 16.5=4.4 17.5=5.2 18.5=5.8 19.5=7.5
+CLE@NYK|Mikal Bridges|PRA|8.5=1.07 9.5=1.11 10.5=1.16 11.5=1.25 12.5=1.36 13.5=1.48 14.5=1.64 15.5=1.84 16.5=2.08 17.5=2.3 18.5=2.6 19.5=3.1 20.5=3.6 21.5=4.4 22.5=5.2 23.5=5.8
+CLE@NYK|Mikal Bridges|Rebounds|1.5=1.16 2.5=1.58 3.5=2.4 4.5=3.8 5.5=6.5
+CLE@NYK|Peyton Watson|Assists|0.5=1.08 1.5=1.52 2.5=2.6 3.5=5.2
+CLE@NYK|James Harden|Threes|1.5=1.38 2.5=2.2 3.5=4.1
+CLE@NYK|OG Anunoby|PRA|16.5=1.08 17.5=1.11 18.5=1.14 19.5=1.2 20.5=1.25 21.5=1.32 22.5=1.4 23.5=1.5 24.5=1.64 25.5=1.78 26.5=1.96 27.5=2.1 28.5=2.3 29.5=2.6 30.5=2.9 31.5=3.2 32.5=3.6 33.5=3.8 34.5=4.6 35.5=5.2 36.5=5.5
+CLE@NYK|James Harden|PRA|17.5=1.08 18.5=1.1 19.5=1.14 20.5=1.2 21.5=1.27 22.5=1.32 23.5=1.44 24.5=1.56 25.5=1.68 26.5=1.86 27.5=2.05 28.5=2.25 29.5=2.6 30.5=2.9 31.5=3.2 32.5=3.6 33.5=4.4 34.5=5.2 35.5=5.5
+CLE@NYK|Andre Drummond|Points|2.5=1.13 3.5=1.22 4.5=1.36 5.5=1.6 6.5=1.88 7.5=2.2 8.5=2.75 9.5=3.2
+CLE@NYK|OG Anunoby|Rebounds|2.5=1.08 3.5=1.22 4.5=1.5 5.5=2 6.5=2.75 7.5=4.1 8.5=5.8
+CLE@NYK|James Harden|Rebounds|2.5=1.16 3.5=1.5 4.5=2.1 5.5=3.2 6.5=5.2
+CLE@NYK|Evan Mobley|Assists|1.5=1.1 2.5=1.36 3.5=1.96 4.5=3.1 5.5=5.4
+CLE@NYK|K Towns|PRA|24.5=1.07 25.5=1.1 26.5=1.12 27.5=1.16 28.5=1.2 29.5=1.25 30.5=1.32 31.5=1.4 32.5=1.48 33.5=1.58 34.5=1.72 35.5=1.85 36.5=2.02 37.5=2.15 38.5=2.4 39.5=2.6 40.5=2.9 41.5=3.2 42.5=3.6 43.5=4.1 44.5=4.6 45.5=5.2 46.5=5.5
+CLE@NYK|Donovan Mitchell|Assists|2.5=1.1 3.5=1.32 4.5=1.78 5.5=2.6 6.5=3.8 7.5=6.5
+CLE@NYK|Jarrett Allen|Assists|0.5=1.18 1.5=2 2.5=4.1
+CLE@NYK|Jarrett Allen|Rebounds|4.5=1.13 5.5=1.3 6.5=1.6 7.5=2.08 8.5=2.75 9.5=3.4 10.5=5.2 11.5=7
+CLE@NYK|Mikal Bridges|Threes|0.5=1.3 1.5=2.4 2.5=5.4
+CLE@NYK|Jalen Brunson|Rebounds|1.5=1.12 2.5=1.44 3.5=2.08 4.5=3.2 5.5=5.4
+CLE@NYK|Jalen Brunson|PRA|25.5=1.07 26.5=1.08 27.5=1.11 28.5=1.14 29.5=1.18 30.5=1.25 31.5=1.3 32.5=1.36 33.5=1.44 34.5=1.52 35.5=1.64 36.5=1.76 37.5=1.9 38.5=2.05 39.5=2.15 40.5=2.4 41.5=2.6 42.5=2.9 43.5=3.2 44.5=3.6 45.5=3.8 46.5=4.4 47.5=5 48.5=5.4 49.5=5.8
+CLE@NYK|Josh Hart|Points|3.5=1.07 4.5=1.11 5.5=1.2 6.5=1.3 7.5=1.44 8.5=1.64 9.5=1.8 10.5=2.08 11.5=2.4 12.5=2.75 13.5=3.1 14.5=3.6 15.5=4.1 16.5=4.6 17.5=5.4 18.5=5.8
+CLE@NYK|Evan Mobley|Points|8.5=1.06 9.5=1.1 10.5=1.13 11.5=1.2 12.5=1.3 13.5=1.4 14.5=1.56 15.5=1.74 16.5=2 17.5=2.25 18.5=2.6 19.5=3.1 20.5=3.6 21.5=4.4 22.5=5.2 23.5=5.8 24.5=7
+CLE@NYK|Jalen Brunson|Threes|1.5=1.25 2.5=1.88 3.5=3.1 4.5=5.4
+CLE@NYK|Jalen Brunson|Points|16.5=1.07 17.5=1.1 18.5=1.13 19.5=1.16 20.5=1.22 21.5=1.3 22.5=1.36 23.5=1.45 24.5=1.56 25.5=1.68 26.5=1.8 27.5=1.96 28.5=2.15 29.5=2.3 30.5=2.6 31.5=2.9 32.5=3.1 33.5=3.6 34.5=3.8 35.5=4.6 36.5=5.2 37.5=5.4 38.5=5.8
+CLE@NYK|Josh Hart|PRA|13.5=1.08 14.5=1.12 15.5=1.16 16.5=1.22 17.5=1.3 18.5=1.4 19.5=1.5 20.5=1.64 21.5=1.78 22.5=1.96 23.5=2.1 24.5=2.25 25.5=2.6 26.5=2.9 27.5=3.2 28.5=3.6 29.5=4.1 30.5=4.6
+CLE@NYK|Karl-Anthony Towns|Assists|1.5=1.2 2.5=1.72 3.5=2.9 4.5=5.2
+CLE@NYK|Peyton Watson|Rebounds|2.5=1.16 3.5=1.48 4.5=2.1 5.5=3.1 6.5=5.2
+CLE@NYK|OG Anunoby|Threes|1.5=1.36 2.5=2.1 3.5=3.6
+CLE@NYK|Evan Mobley|PRA|18.5=1.07 19.5=1.1 20.5=1.13 21.5=1.16 22.5=1.22 23.5=1.3 24.5=1.36 25.5=1.48 26.5=1.6 27.5=1.76 28.5=1.96 29.5=2.15 30.5=2.4 31.5=2.6 32.5=3.1 33.5=3.4 34.5=3.8 35.5=4.6 36.5=5.2 37.5=5.8
+CLE@NYK|Josh Hart|Assists|1.5=1.06 2.5=1.22 3.5=1.64 4.5=2.3 5.5=3.6 6.5=5.8
+CLE@NYK|Mikal Bridges|Assists|1.5=1.27 2.5=1.87 3.5=3.1 4.5=5.5
+CLE@NYK|Meleek Thomas|Threes|0.5=1.16 1.5=1.8 2.5=3.4
+CLE@NYK|Jarrett Allen|PRA|12.5=1.08 13.5=1.12 14.5=1.16 15.5=1.25 16.5=1.32 17.5=1.4 18.5=1.56 19.5=1.68 20.5=1.87 21.5=2.1 22.5=2.3 23.5=2.6 24.5=2.9 25.5=3.4 26.5=4.1 27.5=4.6 28.5=5.4 29.5=5.8
+CLE@NYK|Karl-Anthony Towns|Points|11.5=1.06 12.5=1.08 13.5=1.13 14.5=1.18 15.5=1.25 16.5=1.32 17.5=1.45 18.5=1.58 19.5=1.76 20.5=1.96 21.5=2.15 22.5=2.45 23.5=2.75 24.5=3.1 25.5=3.6 26.5=4.1 27.5=5.2 28.5=5.5 29.5=6.5 30.5=7.5
+CLE@NYK|Landry Shamet|Points|3.5=1.12 4.5=1.16 5.5=1.27 6.5=1.45 7.5=1.58 8.5=1.85 9.5=2.15 10.5=2.45 11.5=2.9 12.5=3.6 13.5=4.1 14.5=5.2 15.5=5.8 16.5=7.5
+CLE@NYK|Meleek Thomas|Rebounds|0.5=1.06 1.5=1.36 2.5=2.08 3.5=3.4 4.5=5.8
+CLE@NYK|OG Anunoby|Points|9.5=1.06 10.5=1.1 11.5=1.13 12.5=1.2 13.5=1.27 14.5=1.36 15.5=1.48 16.5=1.6 17.5=1.76 18.5=1.96 19.5=2.15 20.5=2.4 21.5=2.75 22.5=2.9 23.5=3.4 24.5=3.8 25.5=4.4 26.5=5 27.5=5.5 28.5=6.5
+CLE@NYK|James Harden|Assists|3.5=1.12 4.5=1.3 5.5=1.64 6.5=2.2 7.5=3.2 8.5=5.2 9.5=6.5
+CLE@NYK|Evan Mobley|Rebounds|4.5=1.06 5.5=1.14 6.5=1.32 7.5=1.6 8.5=2.08 9.5=2.45 10.5=3.2 11.5=5 12.5=6.5
+CLE@NYK|James Harden|Points|8.5=1.08 9.5=1.11 10.5=1.16 11.5=1.25 12.5=1.32 13.5=1.45 14.5=1.6 15.5=1.78 16.5=2.02 17.5=2.25 18.5=2.6 19.5=3.1 20.5=3.6 21.5=4.1 22.5=5 23.5=5.5 24.5=6.5
+CLE@NYK|Mikal Bridges|Points|4.5=1.1 5.5=1.18 6.5=1.27 7.5=1.4 8.5=1.6 9.5=1.83 10.5=2.1 11.5=2.45 12.5=2.9 13.5=3.4 14.5=4.1 15.5=5.2 16.5=5.8 17.5=6.5
+CLE@NYK|Karl-Anthony Towns|Threes|0.5=1.2 1.5=2.1 2.5=4.6
+CLE@NYK|Donovan Mitchell|Threes|1.5=1.25 2.5=1.9 3.5=3.2 4.5=5.8
+CLE@NYK|Karl-Anthony Towns|Rebounds|7.5=1.06 8.5=1.13 9.5=1.2 10.5=1.36 11.5=1.58 12.5=1.92 13.5=2.3 14.5=2.9 15.5=3.8 16.5=5.2 17.5=6.5
+CLE@NYK|Jalen Brunson|Assists|3.5=1.06 4.5=1.18 5.5=1.4 6.5=1.84 7.5=2.6 8.5=3.6 9.5=5.2 10.5=7
+CLE@NYK|Josh Hart|Rebounds|4.5=1.12 5.5=1.25 6.5=1.48 7.5=1.83 8.5=2.3 9.5=2.75 10.5=3.6 11.5=5.2 12.5=6.5
+CLE@NYK|Peyton Watson|Threes|0.5=1.2 1.5=2.1 2.5=4.4
+CLE@NYK|Donovan Mitchell|PRA|22.5=1.07 23.5=1.1 24.5=1.13 25.5=1.16 26.5=1.22 27.5=1.27 28.5=1.32 29.5=1.4 30.5=1.5 31.5=1.64 32.5=1.76 33.5=1.9 34.5=2.08 35.5=2.25 36.5=2.45 37.5=2.75 38.5=3.1 39.5=3.4 40.5=3.8 41.5=4.6 42.5=5.2 43.5=5.5
+CLE@NYK|Peyton Watson|PRA|11.5=1.1 12.5=1.13 13.5=1.22 14.5=1.3 15.5=1.4 16.5=1.52 17.5=1.68 18.5=1.91 19.5=2.1 20.5=2.4 21.5=2.75 22.5=3.2 23.5=3.6 24.5=4.4 25.5=5.2 26.5=5.8
+CLE@NYK|OG Anunoby|Assists|0.5=1.07 1.5=1.4 2.5=2.25 3.5=4.6
+CLE@NYK|Peyton Watson|Points|5.5=1.07 6.5=1.12 7.5=1.18 8.5=1.3 9.5=1.4 10.5=1.58 11.5=1.8 12.5=2.05 13.5=2.4 14.5=2.75 15.5=3.2 16.5=3.8 17.5=5 18.5=5.8 19.5=6.5
+CLE@NYK|Josh Hart|Threes|0.5=1.2 1.5=2.05 2.5=4.1
+CLE@NYK|Jaylon Tyson|Points|2.5=1.06 3.5=1.11 4.5=1.18 5.5=1.32 6.5=1.48 7.5=1.72 8.5=2.05 9.5=2.3 10.5=2.75 11.5=3.4 12.5=4.1 13.5=5.2 14.5=6.5
+CLE@NYK|Meleek Thomas|Points|3.5=1.08 4.5=1.12 5.5=1.2 6.5=1.3 7.5=1.44 8.5=1.64 9.5=1.84 10.5=2.1 11.5=2.45 12.5=2.9 13.5=3.4 14.5=4.1 15.5=5.2 16.5=5.8 17.5=7
+CLE@NYK|Donovan Mitchell|Points|14.5=1.07 15.5=1.1 16.5=1.13 17.5=1.18 18.5=1.24 19.5=1.3 20.5=1.4 21.5=1.5 22.5=1.64 23.5=1.8 24.5=1.96 25.5=2.15 26.5=2.45 27.5=2.75 28.5=3.1 29.5=3.6 30.5=4.1 31.5=4.6 32.5=5.2 33.5=5.8 34.5=6.5
+CLE@NYK|Donovan Mitchell|Rebounds|2.5=1.16 3.5=1.48 4.5=2.1 5.5=3.2 6.5=5.4
+CLE@NYK|Evan Mobley|Threes|0.5=1.3 1.5=2.45 2.5=5.5
+CLE@NYK|Jaylon Tyson|Rebounds|1.5=1.1 2.5=1.32 3.5=1.86 4.5=2.75 5.5=4.6 6.5=7
+CLE@NYK|Donovan Mitchell|Threes|1.5=1.29 0.5=1.04 6.5=26 3.5=3.3 5.5=14 2.5=1.89 4.5=6.5
+CLE@NYK|James Harden|Threes|1.5=1.4 0.5=1.07 3.5=4.2 5.5=18 2.5=2.2 4.5=8.5
+CLE@NYK|Meleek Thomas|Threes|1.5=1.81 0.5=1.17 3.5=7.25 2.5=3.4 4.5=16
+CLE@NYK|Evan Mobley|Threes|1.5=2.45 0.5=1.32 3.5=15 2.5=5.8
+CLE@NYK|Jaylon Tyson|Threes|1.5=2.35 0.5=1.29 3.5=14 2.5=5.3
+CLE@NYK|Peyton Watson|Threes|1.5=2.08 0.5=1.21 3.5=10.5 2.5=4.4 4.5=26
+CLE@NYK|Jalen Brunson|Threes|1.5=1.27 0.5=1.04 6.5=23 3.5=3.1 5.5=11 2.5=1.88 4.5=5.6
+CLE@NYK|Landry Shamet|Threes|1.5=1.57 0.5=1.1 3.5=5.25 5.5=21 2.5=2.65 4.5=11
+CLE@NYK|OG Anunoby|Threes|1.5=1.36 0.5=1.06 6.5=31 3.5=3.75 5.5=14 2.5=2.12 4.5=7.25
+CLE@NYK|Josh Hart|Threes|1.5=2.05 0.5=1.21 3.5=8.5 2.5=4.1 4.5=17
+CLE@NYK|Karl-Anthony Towns|Threes|1.5=2.08 0.5=1.21 3.5=10.5 2.5=4.5 4.5=26
+CLE@NYK|Mikal Bridges|Threes|1.5=2.4 0.5=1.32 3.5=14 2.5=5.5
+CLE@NYK|Donovan Mitchell|Steals|2.5=6.75 1.5=2.65 0.5=1.32
+CLE@NYK|James Harden|Steals|2.5=7.5 1.5=2.9 0.5=1.38
+CLE@NYK|OG Anunoby|Steals|2.5=4.75 1.5=2.15 0.5=1.23
+CLE@NYK|Josh Hart|Steals|2.5=5.75 1.5=2.45 0.5=1.3
+CLE@NYK|Evan Mobley|Blocks|1.5=2.25 2.5=5.1 0.5=1.29
+CLE@NYK|Peyton Watson|Blocks|1.5=2.55 2.5=6 0.5=1.32
+LAL@MIL|Luka Doncic|Threes|8.5=17 3.5=1.42 4.5=1.97 2.5=1.14 5.5=3 6.5=5 1.5=1.03 9.5=36 7.5=9
+LAL@MIL|Matisse Thybulle|Steals|2.5=3.2 1.5=1.75 0.5=1.13 3.5=7
+LAL@MIL|Luka Doncic|Steals|2.5=4.2 1.5=1.98 0.5=1.19
+LAL@MIL|Walker Kessler|Blocks|2.5=2.55 3.5=5.1 0.5=1.09 1.5=1.52
+LAL@MIL|Austin Reaves|Threes|3.5=4.6 4.5=9.75 2.5=2.35 5.5=21 1.5=1.43 0.5=1.07
+LAL@MIL|Ziaire Williams|Threes|3.5=10.5 2.5=4.5 1.5=2.12 0.5=1.21
+LAL@MIL|Matisse Thybulle|Threes|3.5=11 2.5=4.6 1.5=2.12 0.5=1.23
+LAL@MIL|Sandro Mamukelashvili|Threes|3.5=14 2.5=5.9 1.5=2.4 0.5=1.32
+LAL@MIL|Tyler Herro|Threes|3.5=3.35 4.5=6 2.5=1.98 5.5=13 6.5=23 1.5=1.32 0.5=1.05
+LAL@MIL|Brayden Burries|Threes|3.5=8.5 4.5=19 2.5=3.8 1.5=1.94 0.5=1.19
+LAL@MIL|Jaime Jaquez Jr.|Threes|3.5=12 4.5=26 2.5=4.9 1.5=2.25 0.5=1.25
+LAL@MIL|Kyle Kuzma|Threes|3.5=12 2.5=4.7 1.5=2.15 0.5=1.24
+LAL@MIL|Austin Reaves|Steals|1.5=3.6 0.5=1.53
+LAL@MIL|Walker Kessler|Steals|1.5=3.25 0.5=1.47
+LAL@MIL|Kyle Kuzma|Steals|1.5=4.7 0.5=1.73
+LAL@MIL|Jake Laravia|Threes|1.5=3.8 0.5=1.62
+GSW@HOU|De'Anthony Melton|Assists|0.5=1.1 1.5=1.52 2.5=2.6 3.5=5.2
+GSW@HOU|De'Anthony Melton|Threes|0.5=1.2 1.5=1.96 2.5=3.8
+GSW@HOU|Jabari Smith|Points|7.5=1.06 8.5=1.1 9.5=1.16 10.5=1.25 11.5=1.36 12.5=1.5 13.5=1.68 14.5=1.89 15.5=2.15 16.5=2.45 17.5=2.9 18.5=3.2 19.5=3.8 20.5=4.6 21.5=5.5 22.5=6.5
+GSW@HOU|Georges Niang|Assists|0.5=1.3 1.5=2.3 2.5=5.2
+GSW@HOU|Yaxel Lendeborg|Threes|0.5=1.12 1.5=1.68 2.5=3.1 3.5=5.8
+GSW@HOU|Gui Santos|Points|2.5=1.07 3.5=1.11 4.5=1.25 5.5=1.36 6.5=1.68 7.5=1.96 8.5=2.45 9.5=2.9 10.5=3.8 11.5=5 12.5=5.8
+GSW@HOU|Draymond Green|Rebounds|2.5=1.1 3.5=1.25 4.5=1.6 5.5=2.15 6.5=3.2 7.5=5.2 8.5=7.5
+GSW@HOU|Alperen Sengun|PRA|25.5=1.07 26.5=1.1 27.5=1.13 28.5=1.16 29.5=1.22 30.5=1.3 31.5=1.36 32.5=1.45 33.5=1.56 34.5=1.68 35.5=1.85 36.5=2.05 37.5=2.2 38.5=2.45 39.5=2.75 40.5=3.1 41.5=3.4 42.5=3.8 43.5=4.6 44.5=5.2 45.5=5.8
+GSW@HOU|Alperen Sengun|Threes|0.5=1.88 1.5=5.4
+GSW@HOU|Gui Santos|Rebounds|1.5=1.08 2.5=1.3 3.5=1.74 4.5=2.6 5.5=4.1 6.5=6.5
+GSW@HOU|Yaxel Lendeborg|PRA|19.5=1.08 20.5=1.12 21.5=1.16 22.5=1.22 23.5=1.27 24.5=1.36 25.5=1.44 26.5=1.56 27.5=1.68 28.5=1.83 29.5=2.02 30.5=2.15 31.5=2.45 32.5=2.75 33.5=3.1 34.5=3.4 35.5=3.8 36.5=4.6 37.5=5.2 38.5=5.8
+GSW@HOU|Brandin Podziemski|Threes|1.5=1.4 2.5=2.3 3.5=4.4
+GSW@HOU|Yaxel Lendeborg|Rebounds|3.5=1.08 4.5=1.22 5.5=1.45 6.5=1.88 7.5=2.6 8.5=3.6 9.5=5.2 10.5=7
+GSW@HOU|Georges Niang|Points|2.5=1.08 3.5=1.2 4.5=1.27 5.5=1.45 6.5=1.72 7.5=1.96 8.5=2.4 9.5=2.8 10.5=3.4 11.5=4.6 12.5=5.4 13.5=6.5
+GSW@HOU|Amen Thompson|Assists|1.5=1.1 2.5=1.4 3.5=2.08 4.5=3.2 5.5=5.8
+GSW@HOU|Stephen Curry|Threes|2.5=1.16 3.5=1.5 4.5=2.1 5.5=3.2 6.5=5.2
+GSW@HOU|De'Anthony Melton|Points|3.5=1.1 4.5=1.16 5.5=1.27 6.5=1.4 7.5=1.58 8.5=1.8 9.5=2.1 10.5=2.5 11.5=2.9 12.5=3.6 13.5=4.6 14.5=5.5 15.5=6.5
+GSW@HOU|Fred VanVleet|Assists|2.5=1.1 3.5=1.27 4.5=1.64 5.5=2.25 6.5=3.4 7.5=5.4
+GSW@HOU|Tari Eason|Assists|0.5=1.22 1.5=2.08 2.5=4.1
+GSW@HOU|Stephen Curry|Points|15.5=1.06 16.5=1.08 17.5=1.11 18.5=1.16 19.5=1.2 20.5=1.25 21.5=1.32 22.5=1.44 23.5=1.52 24.5=1.64 25.5=1.8 26.5=1.96 27.5=2.1 28.5=2.4 29.5=2.6 30.5=2.9 31.5=3.2 32.5=3.6 33.5=4.1 34.5=4.6 35.5=5.2 36.5=5.8 37.5=6.5 38.5=7.5
+GSW@HOU|Kevin Durant|Threes|0.5=1.12 1.5=1.68 2.5=3.1
+GSW@HOU|Georges Niang|PRA|5.5=1.08 6.5=1.14 7.5=1.22 8.5=1.32 9.5=1.48 10.5=1.68 11.5=1.92 12.5=2.15 13.5=2.6 14.5=3.1 15.5=3.6 16.5=4.6 17.5=5.5
+GSW@HOU|Marcus Smart|Points|0.5=1.06 1.5=1.07 2.5=1.16 3.5=1.36 4.5=1.48 5.5=1.8 6.5=2.15 7.5=2.6 8.5=3.2 9.5=4.1 10.5=5.2
+GSW@HOU|Amen Thompson|PRA|18.5=1.08 19.5=1.13 20.5=1.18 21.5=1.25 22.5=1.32 23.5=1.45 24.5=1.58 25.5=1.76 26.5=1.96 27.5=2.15 28.5=2.45 29.5=2.75 30.5=3.2 31.5=3.6 32.5=4.4 33.5=5.2 34.5=5.8
+GSW@HOU|Amen Thompson|Points|8.5=1.06 9.5=1.1 10.5=1.16 11.5=1.24 12.5=1.32 13.5=1.48 14.5=1.68 15.5=1.9 16.5=2.15 17.5=2.5 18.5=2.9 19.5=3.4 20.5=4.1 21.5=5.2 22.5=5.8 23.5=7
+GSW@HOU|Yaxel Lendeborg|Assists|1.5=1.08 2.5=1.3 3.5=1.8 4.5=2.75 5.5=4.6
+GSW@HOU|Al Horford|Threes|0.5=1.44 1.5=2.9
+GSW@HOU|B Podziemski|PRA|14.5=1.08 15.5=1.11 16.5=1.16 17.5=1.22 18.5=1.3 19.5=1.36 20.5=1.48 21.5=1.64 22.5=1.8 23.5=1.96 24.5=2.15 25.5=2.45 26.5=2.75 27.5=3.1 28.5=3.6 29.5=4.1 30.5=4.6 31.5=5.5
+GSW@HOU|Georges Niang|Rebounds|1.5=1.27 2.5=1.88 3.5=3.1 4.5=5.8
+GSW@HOU|Stephen Curry|PRA|23.5=1.08 24.5=1.1 25.5=1.13 26.5=1.16 27.5=1.22 28.5=1.27 29.5=1.32 30.5=1.4 31.5=1.48 32.5=1.6 33.5=1.72 34.5=1.85 35.5=2 36.5=2.15 37.5=2.3 38.5=2.6 39.5=2.9 40.5=3.1 41.5=3.4 42.5=3.8 43.5=4.6 44.5=5.2 45.5=5.5 46.5=5.8
+GSW@HOU|Al Horford|Points|0.5=1.12 1.5=1.13 2.5=1.27 3.5=1.64 4.5=1.8 5.5=2.2 6.5=2.9 7.5=3.4 8.5=4.6 9.5=5.8
+GSW@HOU|Brandin Podziemski|Rebounds|2.5=1.12 3.5=1.32 4.5=1.8 5.5=2.6 6.5=4.1 7.5=6.5
+GSW@HOU|Gui Santos|PRA|7.5=1.08 8.5=1.14 9.5=1.24 10.5=1.36 11.5=1.5 12.5=1.68 13.5=1.96 14.5=2.25 15.5=2.75 16.5=3.2 17.5=3.8 18.5=4.6 19.5=5.8
+GSW@HOU|Jabari Smith|Assists|0.5=1.13 1.5=1.8 2.5=3.6 3.5=7.5
+GSW@HOU|Jabari Smith|Threes|1.5=1.4 2.5=2.3 3.5=4.6
+GSW@HOU|Amen Thompson|Rebounds|4.5=1.13 5.5=1.32 6.5=1.64 7.5=2.15 8.5=3.1 9.5=3.8 10.5=5.8
+GSW@HOU|Tari Eason|Points|2.5=1.06 3.5=1.11 4.5=1.2 5.5=1.32 6.5=1.5 7.5=1.72 8.5=2 9.5=2.4 10.5=2.9 11.5=3.6 12.5=4.4 13.5=5.2 14.5=6.5
+GSW@HOU|Draymond Green|Assists|3.5=1.1 4.5=1.25 5.5=1.52 6.5=2.05 7.5=2.8 8.5=4.1 9.5=5.5
+GSW@HOU|Fred VanVleet|PRA|12.5=1.08 13.5=1.12 14.5=1.16 15.5=1.25 16.5=1.32 17.5=1.44 18.5=1.6 19.5=1.8 20.5=2 21.5=2.2 22.5=2.6 23.5=2.9 24.5=3.2 25.5=3.8 26.5=4.6 27.5=5.4 28.5=5.8
+GSW@HOU|Fred VanVleet|Rebounds|1.5=1.16 2.5=1.56 3.5=2.4 4.5=4.1 5.5=6.5
+GSW@HOU|Marcus Smart|Assists|0.5=1.13 1.5=1.68 2.5=2.9 3.5=5.4
+GSW@HOU|Fred VanVleet|Points|5.5=1.08 6.5=1.13 7.5=1.2 8.5=1.3 9.5=1.44 10.5=1.6 11.5=1.85 12.5=2.1 13.5=2.45 14.5=2.9 15.5=3.4 16.5=4.1 17.5=5.2 18.5=5.8 19.5=6.5
+GSW@HOU|Al Horford|Rebounds|1.5=1.13 2.5=1.45 3.5=2.08 4.5=3.1 5.5=5.2
+GSW@HOU|Yaxel Lendeborg|Points|10.5=1.08 11.5=1.11 12.5=1.16 13.5=1.25 14.5=1.32 15.5=1.44 16.5=1.58 17.5=1.74 18.5=1.96 19.5=2.15 20.5=2.45 21.5=2.9 22.5=3.2 23.5=3.8 24.5=4.6 25.5=5.2 26.5=5.8 27.5=7
+GSW@HOU|Brandin Podziemski|Assists|1.5=1.16 2.5=1.56 3.5=2.45 4.5=4.1 5.5=7.5
+GSW@HOU|D Melton|PRA|7.5=1.08 8.5=1.13 9.5=1.2 10.5=1.3 11.5=1.4 12.5=1.52 13.5=1.72 14.5=1.96 15.5=2.2 16.5=2.6 17.5=3.1 18.5=3.6 19.5=4.1 20.5=5.2 21.5=5.8
+GSW@HOU|Kevin Durant|Points|13.5=1.06 14.5=1.1 15.5=1.13 16.5=1.2 17.5=1.27 18.5=1.36 19.5=1.45 20.5=1.6 21.5=1.78 22.5=1.96 23.5=2.15 24.5=2.5 25.5=2.9 26.5=3.2 27.5=3.8 28.5=4.6 29.5=5.2 30.5=5.8 31.5=7
+GSW@HOU|Alperen Sengun|Points|12.5=1.08 13.5=1.13 14.5=1.2 15.5=1.27 16.5=1.36 17.5=1.5 18.5=1.68 19.5=1.88 20.5=2.1 21.5=2.4 22.5=2.75 23.5=3.2 24.5=3.6 25.5=4.6 26.5=5.2 27.5=5.8 28.5=7.5
+GSW@HOU|Gui Santos|Assists|0.5=1.1 1.5=1.6 2.5=2.75 3.5=5.4
+GSW@HOU|Georges Niang|Threes|0.5=1.2 1.5=2.05 2.5=4.1
+GSW@HOU|Stephen Curry|Assists|2.5=1.13 3.5=1.4 4.5=1.96 5.5=2.9 6.5=5
+GSW@HOU|Fred VanVleet|Threes|1.5=1.3 2.5=1.96 3.5=3.4
+GSW@HOU|Alperen Sengun|Rebounds|5.5=1.1 6.5=1.22 7.5=1.44 8.5=1.74 9.5=2.05 10.5=2.75 11.5=3.8 12.5=5.5
+GSW@HOU|Jabari Smith|Rebounds|3.5=1.07 4.5=1.2 5.5=1.45 6.5=1.9 7.5=2.6 8.5=3.6 9.5=5.2 10.5=7.5
+GSW@HOU|Alperen Sengun|Assists|4.5=1.16 5.5=1.36 6.5=1.8 7.5=2.45 8.5=3.4 9.5=4.6 10.5=7
+GSW@HOU|Draymond Green|PRA|10.5=1.08 11.5=1.14 12.5=1.22 13.5=1.32 14.5=1.45 15.5=1.64 16.5=1.87 17.5=2.1 18.5=2.45 19.5=2.9 20.5=3.6 21.5=4.4 22.5=5.4
+GSW@HOU|Stephen Curry|Rebounds|1.5=1.06 2.5=1.25 3.5=1.68 4.5=2.5 5.5=4.1 6.5=6.5
+GSW@HOU|De'Anthony Melton|Rebounds|1.5=1.16 2.5=1.5 3.5=2.15 4.5=3.6 5.5=5.8
+GSW@HOU|Draymond Green|Points|1.5=1.06 2.5=1.27 3.5=1.38 4.5=1.8 5.5=2.15 6.5=2.9 7.5=3.8 8.5=5.2 9.5=7
+GSW@HOU|Brandin Podziemski|Points|7.5=1.06 8.5=1.1 9.5=1.14 10.5=1.22 11.5=1.32 12.5=1.44 13.5=1.58 14.5=1.78 15.5=1.96 16.5=2.2 17.5=2.6 18.5=2.9 19.5=3.4 20.5=4.1 21.5=4.6 22.5=5.5 23.5=6.5
+GSW@HOU|Stephen Curry|Threes|7.5=9 4.5=2.12 1.5=1.04 6.5=5 5.5=3.25 2.5=1.18 8.5=15 9.5=31 3.5=1.52
+GSW@HOU|Brandin Podziemski|Threes|4.5=9 1.5=1.43 5.5=18 0.5=1.07 2.5=2.3 3.5=4.4
+GSW@HOU|Yaxel Lendeborg|Threes|4.5=14 1.5=1.69 0.5=1.12 2.5=3.05 3.5=6.5
+GSW@HOU|De'Anthony Melton|Threes|4.5=21 1.5=1.97 0.5=1.2 2.5=4 3.5=9.25
+GSW@HOU|Georges Niang|Threes|4.5=21 1.5=2.03 0.5=1.2 2.5=4.1 3.5=9.75
+GSW@HOU|Fred VanVleet|Threes|4.5=7 1.5=1.32 6.5=34 5.5=14 0.5=1.05 2.5=1.96 3.5=3.5
+GSW@HOU|Jabari Smith|Threes|4.5=9.75 1.5=1.43 5.5=21 0.5=1.07 2.5=2.3 3.5=4.5
+GSW@HOU|Kevin Durant|Threes|4.5=15 1.5=1.71 0.5=1.13 2.5=3.15 3.5=6.75
+GSW@HOU|Al Horford|Threes|1.5=2.9 0.5=1.44 3.5=18
+GSW@HOU|Marcus Smart|Threes|1.5=2.65 0.5=1.36 2.5=6.25 3.5=15
+GSW@HOU|Tari Eason|Threes|1.5=2.65 0.5=1.35 2.5=6.25 3.5=15
+GSW@HOU|Alperen Sengun|Threes|1.5=5.6 0.5=1.89
+GSW@HOU|De'Anthony Melton|Steals|0.5=1.31 2.5=5.75 1.5=2.45
+GSW@HOU|Draymond Green|Steals|0.5=1.41 2.5=7.5 1.5=3
+GSW@HOU|Stephen Curry|Steals|0.5=1.35 2.5=7 1.5=2.7
+GSW@HOU|Amen Thompson|Steals|0.5=1.34 2.5=6.75 1.5=2.7
+GSW@HOU|Fred VanVleet|Steals|0.5=1.38 2.5=7.25 1.5=2.8
+GSW@HOU|Tari Eason|Steals|0.5=1.26 2.5=4.9 1.5=2.25
+OKC@POR|Damian Lillard|Threes|1.5=1.16 0.5=1.02
+OKC@POR|Deni Avdija|Threes|1.5=1.68 0.5=1.12
+OKC@POR|Jrue Holiday|Threes|1.5=1.37 0.5=1.06
+OKC@POR|Toumani Camara|Threes|1.5=1.2 0.5=1.03
+OKC@POR|Donovan Clingan|Threes|1.5=2.95 0.5=1.39
+###GALT
+game|kind|side|rungs
+BRK@NOP|tot|Over|195.5=1.01 196.5=1.01 197.5=1.02 198.5=1.02 199.5=1.02 200.5=1.03 201.5=1.04 202.5=1.04 203.5=1.05 204.5=1.06 205.5=1.07 206.5=1.08 207.5=1.09 208.5=1.11 209.5=1.13 210.5=1.15 211.5=1.18 212.5=1.2 213.5=1.23 214.5=1.26 215.5=1.28 216.5=1.32 217.5=1.36 218.5=1.38 219.5=1.42 220.5=1.48 221.5=1.51 222.5=1.57 223.5=1.61 224.5=1.68 225.5=1.72 226.5=1.78 227.5=1.85 228.5=1.93 229.5=2.02 230.5=2.12 231.5=2.2 232.5=2.32 233.5=2.42 234.5=2.52 235.5=2.6 236.5=2.76 237.5=2.9 238.5=3 239.5=3.2 240.5=3.35 241.5=3.6 242.5=3.8 243.5=4 244.5=4.4 245.5=4.7 246.5=5 247.5=5.5
+BRK@NOP|tot|Under|209.5=5.6 210.5=5.2 211.5=4.7 212.5=4.4 213.5=4 214.5=3.75 215.5=3.55 216.5=3.3 217.5=3.1 218.5=3 219.5=2.82 220.5=2.64 221.5=2.56 222.5=2.42 223.5=2.32 224.5=2.2 225.5=2.12 226.5=2.04 227.5=1.96 228.5=1.88 229.5=1.79 230.5=1.72 231.5=1.68 232.5=1.61 233.5=1.57 234.5=1.53 235.5=1.5 236.5=1.43 237.5=1.4 238.5=1.38 239.5=1.34 240.5=1.31 241.5=1.28 242.5=1.26 243.5=1.23 244.5=1.2 245.5=1.18 246.5=1.16 247.5=1.14 248.5=1.12 249.5=1.1 250.5=1.08 251.5=1.08 252.5=1.07 253.5=1.05 254.5=1.04 255.5=1.04 256.5=1.04 257.5=1.03 258.5=1.02 259.5=1.02 260.5=1.02 261.5=1.02 262.5=1.02 263.5=1.01 264.5=1.01
+BRK@NOP|sp|away|+26.5=1.02 +25.5=1.02 +24.5=1.02 +23.5=1.03 +22.5=1.04 +21.5=1.04 +20.5=1.05 +19.5=1.06 +18.5=1.08 +17.5=1.1 +16.5=1.11 +15.5=1.13 +14.5=1.15 +13.5=1.17 +12.5=1.2 +11.5=1.22 +10.5=1.28 +9.5=1.33 +8.5=1.39 +7.5=1.46 +6.5=1.56 +5.5=1.62 +4.5=1.7 +3.5=1.82 +2.5=1.9 +1.5=2.05 -1.5=2.3 -2.5=2.5 -3.5=2.66 -4.5=2.95 -5.5=3.18 -6.5=3.45 -7.5=4 -8.5=4.25 -9.5=4.65 -10.5=5.2 -11.5=5.7 -12.5=6 -13.5=7 -14.5=7.75 -15.5=8.5 -16.5=9.5
+BRK@NOP|sp|home|-22.5=9.5 -21.5=9.5 -20.5=8.5 -19.5=7.5 -18.5=6.5 -17.5=6 -16.5=5.9 -15.5=5.4 -14.5=5 -13.5=4.6 -12.5=4.25 -11.5=3.96 -10.5=3.45 -9.5=3.12 -8.5=2.86 -7.5=2.61 -6.5=2.34 -5.5=2.2 -4.5=2.07 -3.5=1.91 -2.5=1.83 -1.5=1.71 +1.5=1.57 +2.5=1.49 +3.5=1.44 +4.5=1.37 +5.5=1.33 +6.5=1.28 +7.5=1.22 +8.5=1.2 +9.5=1.17 +10.5=1.14 +11.5=1.12 +12.5=1.1 +13.5=1.08 +14.5=1.06 +15.5=1.05 +16.5=1.04 +17.5=1.03 +18.5=1.02 +19.5=1.02 +20.5=1.02
+BOS@TOR|tot|Over|183.5=1.01 184.5=1.01 185.5=1.02 186.5=1.02 187.5=1.02 188.5=1.02 189.5=1.03 190.5=1.04 191.5=1.04 192.5=1.06 193.5=1.07 194.5=1.08 195.5=1.1 196.5=1.12 197.5=1.14 198.5=1.17 199.5=1.19 200.5=1.23 201.5=1.26 202.5=1.27 203.5=1.31 204.5=1.34 205.5=1.36 206.5=1.41 207.5=1.44 208.5=1.5 209.5=1.54 210.5=1.58 211.5=1.63 212.5=1.7 213.5=1.77 214.5=1.83 215.5=1.91 216.5=1.98 217.5=2.08 218.5=2.18 219.5=2.3 220.5=2.38 221.5=2.46 222.5=2.58 223.5=2.7 224.5=2.86 225.5=3 226.5=3.2 227.5=3.35 228.5=3.6 229.5=3.85 230.5=4.2 231.5=4.5 232.5=4.9 233.5=5.3 234.5=5.8
+BOS@TOR|tot|Under|197.5=5.4 198.5=4.9 199.5=4.5 200.5=4.1 201.5=3.85 202.5=3.65 203.5=3.35 204.5=3.2 205.5=3.05 206.5=2.86 207.5=2.74 208.5=2.58 209.5=2.48 210.5=2.38 211.5=2.28 212.5=2.16 213.5=2.06 214.5=1.98 215.5=1.91 216.5=1.83 217.5=1.76 218.5=1.68 219.5=1.63 220.5=1.58 221.5=1.55 222.5=1.5 223.5=1.45 224.5=1.41 225.5=1.38 226.5=1.34 227.5=1.31 228.5=1.28 229.5=1.25 230.5=1.22 231.5=1.19 232.5=1.17 233.5=1.15 234.5=1.13 235.5=1.11 236.5=1.09 237.5=1.08 238.5=1.07 239.5=1.06 240.5=1.05 241.5=1.04 242.5=1.04 243.5=1.03 244.5=1.02 245.5=1.02 246.5=1.02 247.5=1.02 248.5=1.02 249.5=1.01 250.5=1.01
+BOS@TOR|sp|away|+17.5=1.02 +16.5=1.02 +15.5=1.03 +14.5=1.04 +13.5=1.04 +12.5=1.05 +11.5=1.06 +10.5=1.1 +9.5=1.11 +8.5=1.13 +7.5=1.16 +6.5=1.2 +5.5=1.22 +4.5=1.25 +3.5=1.3 +2.5=1.33 +1.5=1.39 -1.5=1.49 -2.5=1.58 -3.5=1.63 -4.5=1.73 -5.5=1.83 -6.5=1.93 -7.5=2.13 -8.5=2.31 -9.5=2.47 -10.5=2.74 -11.5=3.06 -12.5=3.32 -13.5=3.66 -14.5=4 -15.5=4.25 -16.5=4.65 -17.5=5.2 -18.5=5.4 -19.5=6 -20.5=6.5 -21.5=7.5 -22.5=8 -23.5=8.5 -24.5=9.5
+BOS@TOR|sp|home|-14.5=9.5 -13.5=9.5 -12.5=8.5 -11.5=7.5 -10.5=6 -9.5=5.9 -8.5=5.4 -7.5=4.8 -6.5=4.25 -5.5=4 -4.5=3.7 -3.5=3.32 -2.5=3.14 -1.5=2.85 +1.5=2.5 +2.5=2.3 +3.5=2.18 +4.5=2.03 +5.5=1.9 +6.5=1.8 +7.5=1.66 +8.5=1.57 +9.5=1.5 +10.5=1.42 +11.5=1.34 +12.5=1.3 +13.5=1.25 +14.5=1.22 +15.5=1.2 +16.5=1.17 +17.5=1.14 +18.5=1.13 +19.5=1.11 +20.5=1.08 +21.5=1.06 +22.5=1.06 +23.5=1.05 +24.5=1.04 +25.5=1.03 +26.5=1.02 +27.5=1.02
+WAS@IND|tot|Over|195.5=1.01 196.5=1.01 197.5=1.02 198.5=1.02 199.5=1.02 200.5=1.02 201.5=1.03 202.5=1.04 203.5=1.04 204.5=1.05 205.5=1.07 206.5=1.08 207.5=1.09 208.5=1.11 209.5=1.13 210.5=1.15 211.5=1.17 212.5=1.2 213.5=1.23 214.5=1.26 215.5=1.29 216.5=1.33 217.5=1.36 218.5=1.4 219.5=1.43 220.5=1.5 221.5=1.53 222.5=1.57 223.5=1.63 224.5=1.68 225.5=1.73 226.5=1.79 227.5=1.88 228.5=1.96 229.5=2.04 230.5=2.14 231.5=2.24 232.5=2.34 233.5=2.44 234.5=2.56 235.5=2.62 236.5=2.78 237.5=2.96 238.5=3.05 239.5=3.25 240.5=3.4 241.5=3.7 242.5=3.9 243.5=4.2 244.5=4.7 245.5=4.9 246.5=5.4 247.5=5.8
+WAS@IND|tot|Under|209.5=5.6 210.5=5.2 211.5=4.8 212.5=4.4 213.5=4 214.5=3.75 215.5=3.45 216.5=3.25 217.5=3.05 218.5=2.9 219.5=2.76 220.5=2.6 221.5=2.5 222.5=2.4 223.5=2.3 224.5=2.18 225.5=2.1 226.5=2.02 227.5=1.93 228.5=1.85 229.5=1.78 230.5=1.71 231.5=1.65 232.5=1.6 233.5=1.56 234.5=1.51 235.5=1.49 236.5=1.43 237.5=1.38 238.5=1.36 239.5=1.33 240.5=1.3 241.5=1.26 242.5=1.24 243.5=1.22 244.5=1.18 245.5=1.17 246.5=1.14 247.5=1.13 248.5=1.11 249.5=1.09 250.5=1.08 251.5=1.07 252.5=1.06 253.5=1.05 254.5=1.04 255.5=1.04 256.5=1.03 257.5=1.03 258.5=1.02 259.5=1.02 260.5=1.02 261.5=1.02 262.5=1.01 263.5=1.01
+WAS@IND|sp|away|+25.5=1.02 +24.5=1.02 +23.5=1.02 +22.5=1.03 +21.5=1.04 +20.5=1.05 +19.5=1.06 +18.5=1.08 +17.5=1.1 +16.5=1.11 +15.5=1.13 +14.5=1.14 +13.5=1.17 +12.5=1.2 +11.5=1.25 +10.5=1.28 +9.5=1.33 +8.5=1.38 +7.5=1.46 +6.5=1.56 +5.5=1.62 +4.5=1.72 +3.5=1.83 +2.5=1.92 +1.5=2.08 -1.5=2.33 -2.5=2.54 -3.5=2.68 -4.5=2.97 -5.5=3.25 -6.5=3.45 -7.5=4 -8.5=4.5 -9.5=4.65 -10.5=5.2 -11.5=5.7 -12.5=6 -13.5=6.5 -14.5=7.5 -15.5=8 -16.5=9.5 -17.5=9.5
+WAS@IND|sp|home|-21.5=9.5 -20.5=8.5 -19.5=8 -18.5=6.5 -17.5=6 -16.5=6 -15.5=5.4 -14.5=5.2 -13.5=4.65 -12.5=4.25 -11.5=3.8 -10.5=3.45 -9.5=3.12 -8.5=2.9 -7.5=2.6 -6.5=2.33 -5.5=2.2 -4.5=2.04 -3.5=1.89 -2.5=1.81 -1.5=1.7 +1.5=1.56 +2.5=1.48 +3.5=1.43 +4.5=1.36 +5.5=1.31 +6.5=1.28 +7.5=1.22 +8.5=1.17 +9.5=1.17 +10.5=1.14 +11.5=1.12 +12.5=1.1 +13.5=1.08 +14.5=1.06 +15.5=1.06 +16.5=1.04 +17.5=1.04 +18.5=1.03 +19.5=1.02 +20.5=1.02
+SAS@CHI|sp|away|+8.5=1.02 +7.5=1.02 +6.5=1.03 +5.5=1.04 +4.5=1.04 +3.5=1.05 +2.5=1.06 +1.5=1.06 -1.5=1.08 -2.5=1.13 -3.5=1.14 -4.5=1.17 -5.5=1.2 -6.5=1.25 -7.5=1.3 -8.5=1.34 -9.5=1.39 -10.5=1.47 -11.5=1.55 -12.5=1.63 -13.5=1.72 -14.5=1.81 -15.5=1.93 -16.5=2.05 -17.5=2.18 -18.5=2.32 -19.5=2.47 -20.5=2.67 -21.5=2.87 -22.5=3.1 -23.5=3.32 -24.5=3.45 -25.5=4 -26.5=4.25 -27.5=4.65 -28.5=5.2 -29.5=5.4 -30.5=5.9 -31.5=6 -32.5=6.5 -33.5=7.5 -34.5=8 -35.5=8.5 -36.5=9.5
+SAS@CHI|sp|home|-5.5=9.5 -4.5=9.5 -3.5=8.5 -2.5=7.75 -1.5=7.5 +1.5=6.5 +2.5=5.5 +3.5=5.2 +4.5=4.65 +5.5=4.25 +6.5=3.8 +7.5=3.32 +8.5=3.06 +9.5=2.84 +10.5=2.56 +11.5=2.35 +12.5=2.19 +13.5=2.04 +14.5=1.92 +15.5=1.8 +16.5=1.71 +17.5=1.63 +18.5=1.56 +19.5=1.5 +20.5=1.44 +21.5=1.38 +22.5=1.34 +23.5=1.3 +24.5=1.28 +25.5=1.22 +26.5=1.2 +27.5=1.17 +28.5=1.14 +29.5=1.13 +30.5=1.11 +31.5=1.1 +32.5=1.08 +33.5=1.06 +34.5=1.06 +35.5=1.05 +36.5=1.04 +37.5=1.03 +38.5=1.02 +39.5=1.02 +40.5=1.02
+SAS@CHI|tot|Over|204.5=1.01 205.5=1.01 206.5=1.02 207.5=1.02 208.5=1.02 209.5=1.02 210.5=1.03 211.5=1.04 212.5=1.04 213.5=1.05 214.5=1.06 215.5=1.08 216.5=1.09 217.5=1.1 218.5=1.13 219.5=1.14 220.5=1.17 221.5=1.18 222.5=1.23 223.5=1.25 224.5=1.27 225.5=1.3 226.5=1.34 227.5=1.36 228.5=1.4 229.5=1.43 230.5=1.5 231.5=1.53 232.5=1.57 233.5=1.61 234.5=1.68 235.5=1.72 236.5=1.79 237.5=1.86 238.5=1.94 239.5=2.02 240.5=2.1 241.5=2.2 242.5=2.32 243.5=2.42 244.5=2.5 245.5=2.6 246.5=2.74 247.5=2.86 248.5=3 249.5=3.15 250.5=3.3 251.5=3.55 252.5=3.8 253.5=4 254.5=4.4 255.5=4.7 256.5=5 257.5=5.5
+SAS@CHI|tot|Under|218.5=5.8 219.5=5.4 220.5=4.9 221.5=4.7 222.5=4.1 223.5=3.85 224.5=3.65 225.5=3.4 226.5=3.2 227.5=3.05 228.5=2.9 229.5=2.76 230.5=2.6 231.5=2.52 232.5=2.42 233.5=2.32 234.5=2.2 235.5=2.12 236.5=2.02 237.5=1.94 238.5=1.86 239.5=1.79 240.5=1.73 241.5=1.68 242.5=1.61 243.5=1.57 244.5=1.53 245.5=1.5 246.5=1.44 247.5=1.41 248.5=1.38 249.5=1.36 250.5=1.32 251.5=1.28 252.5=1.26 253.5=1.23 254.5=1.2 255.5=1.18 256.5=1.16 257.5=1.14 258.5=1.12 259.5=1.1 260.5=1.09 261.5=1.08 262.5=1.06 263.5=1.05 264.5=1.04 265.5=1.04 266.5=1.03 267.5=1.03 268.5=1.02 269.5=1.02 270.5=1.02 271.5=1.02 272.5=1.01 273.5=1.01
+DEN@MEM|tot|Over|196.5=1.01 197.5=1.01 198.5=1.02 199.5=1.02 200.5=1.02 201.5=1.02 202.5=1.02 203.5=1.03 204.5=1.04 205.5=1.04 206.5=1.05 207.5=1.07 208.5=1.08 209.5=1.09 210.5=1.11 211.5=1.13 212.5=1.15 213.5=1.18 214.5=1.2 215.5=1.23 216.5=1.26 217.5=1.28 218.5=1.32 219.5=1.36 220.5=1.38 221.5=1.42 222.5=1.49 223.5=1.52 224.5=1.56 225.5=1.61 226.5=1.65 227.5=1.71 228.5=1.78 229.5=1.85 230.5=1.93 231.5=2.04 232.5=2.12 233.5=2.2 234.5=2.32 235.5=2.42 236.5=2.52 237.5=2.6 238.5=2.74 239.5=2.86 240.5=3 241.5=3.2 242.5=3.35 243.5=3.6 244.5=3.8 245.5=4 246.5=4.4 247.5=4.7 248.5=5.2 249.5=5.5
+DEN@MEM|tot|Under|211.5=5.6 212.5=5.2 213.5=4.7 214.5=4.4 215.5=4 216.5=3.75 217.5=3.55 218.5=3.3 219.5=3.1 220.5=3 221.5=2.82 222.5=2.62 223.5=2.54 224.5=2.44 225.5=2.32 226.5=2.24 227.5=2.14 228.5=2.04 229.5=1.96 230.5=1.88 231.5=1.78 232.5=1.72 233.5=1.68 234.5=1.61 235.5=1.57 236.5=1.53 237.5=1.5 238.5=1.44 239.5=1.41 240.5=1.38 241.5=1.34 242.5=1.31 243.5=1.28 244.5=1.26 245.5=1.23 246.5=1.2 247.5=1.18 248.5=1.15 249.5=1.13 250.5=1.11 251.5=1.1 252.5=1.09 253.5=1.08 254.5=1.07 255.5=1.05 256.5=1.04 257.5=1.04 258.5=1.04 259.5=1.03 260.5=1.02 261.5=1.02 262.5=1.02 263.5=1.02 264.5=1.02 265.5=1.01 266.5=1.01 267.5=1.01
+DEN@MEM|sp|away|+19.5=1.02 +18.5=1.02 +17.5=1.03 +16.5=1.04 +15.5=1.05 +14.5=1.06 +13.5=1.07 +12.5=1.08 +11.5=1.11 +10.5=1.13 +9.5=1.14 +8.5=1.17 +7.5=1.22 +6.5=1.25 +5.5=1.3 +4.5=1.34 +3.5=1.4 +2.5=1.44 +1.5=1.51 -1.5=1.64 -2.5=1.74 -3.5=1.82 -4.5=1.95 -5.5=2.08 -6.5=2.2 -7.5=2.42 -8.5=2.67 -9.5=2.88 -10.5=3.14 -11.5=3.45 -12.5=3.75 -13.5=4 -14.5=4.6 -15.5=4.65 -16.5=5.2 -17.5=5.4 -18.5=6 -19.5=6.5 -20.5=7.5 -21.5=8 -22.5=8.5 -23.5=9.5
+DEN@MEM|sp|home|-16.5=9.5 -15.5=8.5 -14.5=8 -13.5=7.5 -12.5=6.5 -11.5=6 -10.5=5.4 -9.5=5.2 -8.5=4.6 -7.5=4.05 -6.5=3.7 -5.5=3.32 -4.5=3.09 -3.5=2.8 -2.5=2.66 -1.5=2.45 +1.5=2.16 +2.5=2 +3.5=1.91 +4.5=1.79 +5.5=1.7 +6.5=1.63 +7.5=1.52 +8.5=1.44 +9.5=1.38 +10.5=1.33 +11.5=1.28 +12.5=1.25 +13.5=1.22 +14.5=1.17 +15.5=1.17 +16.5=1.14 +17.5=1.13 +18.5=1.11 +19.5=1.08 +20.5=1.06 +21.5=1.06 +22.5=1.05 +23.5=1.04 +24.5=1.03 +25.5=1.02 +26.5=1.02 +27.5=1.02
+CLE@NYK|sp|away|+26.5=1.02 +25.5=1.02 +24.5=1.03 +23.5=1.04 +22.5=1.04 +21.5=1.05 +20.5=1.06 +19.5=1.08 +18.5=1.1 +17.5=1.11 +16.5=1.14 +15.5=1.15 +14.5=1.17 +13.5=1.22 +12.5=1.25 +11.5=1.3 +10.5=1.33 +9.5=1.39 +8.5=1.44 +7.5=1.52 +6.5=1.62 +5.5=1.68 +4.5=1.78 +3.5=1.91 +2.5=2.05 +1.5=2.25 -1.5=2.57 -2.5=2.72 -3.5=2.79 -4.5=3.11 -5.5=3.32 -6.5=3.45 -7.5=4 -8.5=4.6 -9.5=4.65 -10.5=5.2 -11.5=5.9 -12.5=6 -13.5=6.5 -14.5=7.75 -15.5=8.5 -16.5=9.5 -17.5=9.5
+CLE@NYK|sp|home|-23.5=9.5 -22.5=9.5 -21.5=8.5 -20.5=7.5 -19.5=6.5 -18.5=6 -17.5=5.7 -16.5=5.2 -15.5=5 -14.5=4.6 -13.5=4.05 -12.5=3.7 -11.5=3.35 -10.5=3.13 -9.5=2.84 -8.5=2.65 -7.5=2.42 -6.5=2.2 -5.5=2.1 -4.5=1.95 -3.5=1.82 -2.5=1.71 -1.5=1.59 +1.5=1.47 +2.5=1.42 +3.5=1.4 +4.5=1.34 +5.5=1.3 +6.5=1.28 +7.5=1.22 +8.5=1.17 +9.5=1.17 +10.5=1.14 +11.5=1.11 +12.5=1.1 +13.5=1.08 +14.5=1.06 +15.5=1.05 +16.5=1.04 +17.5=1.04 +18.5=1.03 +19.5=1.02 +20.5=1.02
+CLE@NYK|tot|Over|189.5=1.01 190.5=1.01 191.5=1.02 192.5=1.02 193.5=1.02 194.5=1.03 195.5=1.04 196.5=1.04 197.5=1.05 198.5=1.06 199.5=1.07 200.5=1.08 201.5=1.1 202.5=1.12 203.5=1.14 204.5=1.16 205.5=1.18 206.5=1.21 207.5=1.24 208.5=1.26 209.5=1.28 210.5=1.32 211.5=1.36 212.5=1.38 213.5=1.42 214.5=1.49 215.5=1.51 216.5=1.56 217.5=1.61 218.5=1.67 219.5=1.71 220.5=1.78 221.5=1.86 222.5=1.94 223.5=2.02 224.5=2.1 225.5=2.2 226.5=2.32 227.5=2.42 228.5=2.52 229.5=2.6 230.5=2.74 231.5=2.9 232.5=3.05 233.5=3.2 234.5=3.35 235.5=3.6 236.5=3.8 237.5=4 238.5=4.4 239.5=4.7 240.5=5 241.5=5.5
+CLE@NYK|tot|Under|203.5=5.5 204.5=5 205.5=4.7 206.5=4.3 207.5=3.9 208.5=3.75 209.5=3.55 210.5=3.3 211.5=3.1 212.5=3 213.5=2.82 214.5=2.64 215.5=2.56 216.5=2.44 217.5=2.32 218.5=2.22 219.5=2.14 220.5=2.04 221.5=1.94 222.5=1.86 223.5=1.79 224.5=1.73 225.5=1.68 226.5=1.61 227.5=1.57 228.5=1.53 229.5=1.5 230.5=1.44 231.5=1.4 232.5=1.36 233.5=1.34 234.5=1.31 235.5=1.28 236.5=1.26 237.5=1.23 238.5=1.2 239.5=1.18 240.5=1.16 241.5=1.14 242.5=1.12 243.5=1.1 244.5=1.09 245.5=1.08 246.5=1.07 247.5=1.05 248.5=1.05 249.5=1.04 250.5=1.04 251.5=1.03 252.5=1.02 253.5=1.02 254.5=1.02 255.5=1.02 256.5=1.02 257.5=1.01 258.5=1.01
+LAL@MIL|tot|Over|195.5=1.01 196.5=1.02 197.5=1.02 198.5=1.02 199.5=1.02 200.5=1.02 201.5=1.03 202.5=1.04 203.5=1.04 204.5=1.05 205.5=1.06 206.5=1.08 207.5=1.09 208.5=1.1 209.5=1.13 210.5=1.14 211.5=1.17 212.5=1.18 213.5=1.21 214.5=1.24 215.5=1.26 216.5=1.28 217.5=1.33 218.5=1.36 219.5=1.38 220.5=1.43 221.5=1.49 222.5=1.52 223.5=1.57 224.5=1.61 225.5=1.65 226.5=1.71 227.5=1.78 228.5=1.85 229.5=1.94 230.5=2.02 231.5=2.1 232.5=2.2 233.5=2.32 234.5=2.4 235.5=2.5 236.5=2.58 237.5=2.74 238.5=2.86 239.5=3 240.5=3.2 241.5=3.35 242.5=3.6 243.5=3.8 244.5=4.1 245.5=4.4 246.5=4.7 247.5=5.2 248.5=5.5
+LAL@MIL|tot|Under|209.5=5.8 210.5=5.4 211.5=4.9 212.5=4.7 213.5=4.3 214.5=3.9 215.5=3.75 216.5=3.55 217.5=3.25 218.5=3.1 219.5=3 220.5=2.78 221.5=2.62 222.5=2.54 223.5=2.42 224.5=2.32 225.5=2.24 226.5=2.14 227.5=2.04 228.5=1.96 229.5=1.88 230.5=1.79 231.5=1.73 232.5=1.68 233.5=1.61 234.5=1.57 235.5=1.53 236.5=1.5 237.5=1.44 238.5=1.41 239.5=1.38 240.5=1.34 241.5=1.31 242.5=1.28 243.5=1.26 244.5=1.23 245.5=1.2 246.5=1.18 247.5=1.15 248.5=1.14 249.5=1.12 250.5=1.1 251.5=1.08 252.5=1.07 253.5=1.06 254.5=1.05 255.5=1.04 256.5=1.04 257.5=1.03 258.5=1.03 259.5=1.02 260.5=1.02 261.5=1.02 262.5=1.02 263.5=1.01 264.5=1.01
+LAL@MIL|sp|away|+8.5=1.02 +7.5=1.02 +6.5=1.03 +5.5=1.04 +4.5=1.05 +3.5=1.06 +2.5=1.07 +1.5=1.1 -1.5=1.13 -2.5=1.14 -3.5=1.17 -4.5=1.2 -5.5=1.22 -6.5=1.25 -7.5=1.31 -8.5=1.38 -9.5=1.43 -10.5=1.51 -11.5=1.61 -12.5=1.7 -13.5=1.79 -14.5=1.89 -15.5=2 -16.5=2.12 -17.5=2.27 -18.5=2.44 -19.5=2.63 -20.5=2.85 -21.5=3.07 -22.5=3.32 -23.5=3.45 -24.5=4 -25.5=4.25 -26.5=4.65 -27.5=5.2 -28.5=5.4 -29.5=5.9 -30.5=6 -31.5=6.5 -32.5=7.5 -33.5=8.5 -34.5=9.5 -35.5=9.5
+LAL@MIL|sp|home|-5.5=9.5 -4.5=8.5 -3.5=7.75 -2.5=7 -1.5=6 +1.5=5.4 +2.5=5.2 +3.5=4.65 +4.5=4.25 +5.5=4 +6.5=3.69 +7.5=3.24 +8.5=2.91 +9.5=2.69 +10.5=2.44 +11.5=2.23 +12.5=2.07 +13.5=1.95 +14.5=1.84 +15.5=1.75 +16.5=1.67 +17.5=1.58 +18.5=1.51 +19.5=1.45 +20.5=1.39 +21.5=1.34 +22.5=1.3 +23.5=1.28 +24.5=1.22 +25.5=1.2 +26.5=1.17 +27.5=1.14 +28.5=1.13 +29.5=1.11 +30.5=1.1 +31.5=1.08 +32.5=1.06 +33.5=1.05 +34.5=1.04 +35.5=1.04 +36.5=1.03 +37.5=1.03 +38.5=1.02 +39.5=1.02
+GSW@HOU|tot|Over|187.5=1.01 188.5=1.01 189.5=1.02 190.5=1.02 191.5=1.02 192.5=1.02 193.5=1.03 194.5=1.04 195.5=1.04 196.5=1.06 197.5=1.07 198.5=1.08 199.5=1.09 200.5=1.11 201.5=1.14 202.5=1.15 203.5=1.18 204.5=1.21 205.5=1.24 206.5=1.26 207.5=1.3 208.5=1.33 209.5=1.36 210.5=1.4 211.5=1.43 212.5=1.49 213.5=1.52 214.5=1.56 215.5=1.6 216.5=1.65 217.5=1.71 218.5=1.77 219.5=1.85 220.5=1.93 221.5=2.02 222.5=2.12 223.5=2.2 224.5=2.32 225.5=2.42 226.5=2.56 227.5=2.64 228.5=2.82 229.5=2.96 230.5=3.1 231.5=3.25 232.5=3.45 233.5=3.7 234.5=3.9 235.5=4.2 236.5=4.7 237.5=4.9 238.5=5.4 239.5=5.8
+GSW@HOU|tot|Under|201.5=5.5 202.5=5.2 203.5=4.7 204.5=4.3 205.5=3.9 206.5=3.7 207.5=3.4 208.5=3.25 209.5=3.05 210.5=2.9 211.5=2.76 212.5=2.62 213.5=2.54 214.5=2.44 215.5=2.34 216.5=2.24 217.5=2.14 218.5=2.06 219.5=1.96 220.5=1.88 221.5=1.79 222.5=1.72 223.5=1.68 224.5=1.61 225.5=1.57 226.5=1.51 227.5=1.48 228.5=1.42 229.5=1.38 230.5=1.36 231.5=1.33 232.5=1.29 233.5=1.26 234.5=1.24 235.5=1.22 236.5=1.18 237.5=1.17 238.5=1.14 239.5=1.13 240.5=1.11 241.5=1.09 242.5=1.08 243.5=1.07 244.5=1.06 245.5=1.05 246.5=1.04 247.5=1.04 248.5=1.03 249.5=1.02 250.5=1.02 251.5=1.02 252.5=1.02 253.5=1.02 254.5=1.01 255.5=1.01 256.5=1.01
+GSW@HOU|sp|away|+29.5=1.02 +28.5=1.02 +27.5=1.03 +26.5=1.04 +25.5=1.04 +24.5=1.05 +23.5=1.06 +22.5=1.08 +21.5=1.1 +20.5=1.11 +19.5=1.13 +18.5=1.14 +17.5=1.17 +16.5=1.17 +15.5=1.22 +14.5=1.25 +13.5=1.3 +12.5=1.33 +11.5=1.39 +10.5=1.46 +9.5=1.54 +8.5=1.62 +7.5=1.72 +6.5=1.88 +5.5=1.99 +4.5=2.14 +3.5=2.34 +2.5=2.47 +1.5=2.72 -1.5=3.1 -2.5=3.32 -3.5=3.69 -4.5=4 -5.5=4.6 -6.5=4.65 -7.5=5.4 -8.5=6 -9.5=6 -10.5=7.5 -11.5=8.5 -12.5=9.5 -13.5=9.5
+GSW@HOU|sp|home|-26.5=9.5 -25.5=9.5 -24.5=8.5 -23.5=7.75 -22.5=6.5 -21.5=6 -20.5=6 -19.5=5.4 -18.5=5.2 -17.5=4.65 -16.5=4.6 -15.5=4 -14.5=3.7 -13.5=3.35 -12.5=3.14 -11.5=2.84 -10.5=2.58 -9.5=2.37 -8.5=2.21 -7.5=2.04 -6.5=1.85 -5.5=1.76 -4.5=1.65 -3.5=1.56 -2.5=1.5 -1.5=1.42 +1.5=1.34 +2.5=1.3 +3.5=1.25 +4.5=1.22 +5.5=1.17 +6.5=1.17 +7.5=1.13 +8.5=1.11 +9.5=1.1 +10.5=1.07 +11.5=1.05 +12.5=1.04 +13.5=1.04 +14.5=1.03 +15.5=1.02 +16.5=1.02
+###FB
+game|player|odds
+BRK@NOP|Michael Porter Jr.|6.25
+BRK@NOP|Julius Randle|7.50
+BRK@NOP|Day'Ron Sharpe|10.00
+BRK@NOP|Egor Demin|12.00
+BRK@NOP|Nolan Traore|12.00
+BRK@NOP|Zion Williamson|7.00
+BRK@NOP|Herbert Jones|8.75
+BRK@NOP|Dejounte Murray|7.75
+BRK@NOP|Jeremiah Fears|7.50
+BRK@NOP|Karlo Matkovic|14.00
+BOS@TOR|Jayson Tatum|6.25
+BOS@TOR|Baylor Scheierman|10.50
+BOS@TOR|Neemias Queta|9.00
+BOS@TOR|Derrick White|10.50
+BOS@TOR|Jordan Walsh|14.00
+BOS@TOR|RJ Barrett|5.80
+BOS@TOR|Immanuel Quickley|6.75
+BOS@TOR|Jakob Poeltl|9.50
+BOS@TOR|Ja'Kobe Walter|10.50
+BOS@TOR|Collin Murray-Boyles|10.00
+WAS@IND|Anthony Davis|6.00
+WAS@IND|Alex Sarr|8.00
+WAS@IND|Trae Young|7.75
+WAS@IND|AJ Dybantsa|9.25
+WAS@IND|Kyshawn George|10.50
+WAS@IND|Ivica Zubac|7.00
+WAS@IND|Pascal Siakam|7.50
+WAS@IND|Andrew Nembhard|8.75
+WAS@IND|Aaron Nesmith|12.00
+SAS@CHI|Victor Wembanyama|3.90
+SAS@CHI|De'Aaron Fox|7.50
+SAS@CHI|Devin Vassell|7.25
+SAS@CHI|Dylan Harper|8.50
+SAS@CHI|Stephon Castle|8.25
+SAS@CHI|Caleb Wilson|12.00
+SAS@CHI|Jalen Smith|12.50
+SAS@CHI|Norman Powell|13.00
+SAS@CHI|Matas Buzelis|14.00
+SAS@CHI|Josh Giddey|14.00
+DEN@MEM|Jamal Murray|6.00
+DEN@MEM|Nikola Jokic|7.25
+DEN@MEM|Aaron Gordon|12.50
+DEN@MEM|Cam Johnson|14.00
+DEN@MEM|Christian Braun|15.00
+DEN@MEM|Ty Jerome|6.25
+DEN@MEM|Zach Edey|7.75
+DEN@MEM|Cameron Boozer|8.00
+DEN@MEM|Cedric Coward|8.50
+DEN@MEM|Jaylen Wells|10.50
+CLE@NYK|Evan Mobley|7.00
+CLE@NYK|Donovan Mitchell|7.00
+CLE@NYK|Jarrett Allen|7.00
+CLE@NYK|James Harden|10.50
+CLE@NYK|Peyton Watson|10.50
+CLE@NYK|Jalen Brunson|6.75
+CLE@NYK|Karl-Anthony Towns|8.50
+CLE@NYK|OG Anunoby|10.50
+CLE@NYK|Mikal Bridges|11.00
+CLE@NYK|Josh Hart|14.00
+LAL@MIL|Luka Doncic|4.00
+LAL@MIL|Walker Kessler|6.25
+LAL@MIL|Austin Reaves|7.00
+LAL@MIL|Matisse Thybulle|10.50
+LAL@MIL|Ziaire Williams|10.50
+LAL@MIL|Tyler Herro|9.75
+LAL@MIL|Kel'el Ware|13.00
+LAL@MIL|Kyle Kuzma|13.00
+LAL@MIL|Jaime Jaquez Jr.|12.50
+LAL@MIL|Brayden Burries|13.00
+GSW@HOU|Stephen Curry|7.50
+GSW@HOU|Yaxel Lendeborg|9.00
+GSW@HOU|Brandin Podziemski|9.50
+GSW@HOU|Draymond Green|11.50
+GSW@HOU|Gui Santos|15.00
+GSW@HOU|Alperen Sengun|5.75
+GSW@HOU|Kevin Durant|7.25
+GSW@HOU|Amen Thompson|8.00
+GSW@HOU|Fred VanVleet|9.50
+GSW@HOU|Jabari Smith|9.75
+###TT
+book|game|team|line|over|under
+Sportsbet|BRK@NOP|NOP|115.5|1.92|1.88
+Sportsbet|BRK@NOP|BRK|113.5|1.95|1.85
+Sportsbet|BOS@TOR|BOS|110.5|1.90|1.90
+Sportsbet|BOS@TOR|TOR|105.5|1.90|1.90
+Sportsbet|WAS@IND|WAS|112.5|1.85|1.95
+Sportsbet|WAS@IND|IND|115.5|1.90|1.90
+Sportsbet|SAS@CHI|CHI|111.5|1.96|1.85
+Sportsbet|SAS@CHI|SAS|126.5|1.90|1.90
+Sportsbet|DEN@MEM|MEM|113.5|1.90|1.90
+Sportsbet|DEN@MEM|DEN|117.5|1.96|1.84
+Sportsbet|CLE@NYK|NYK|112.5|1.84|1.96
+Sportsbet|CLE@NYK|CLE|109.5|1.88|1.92
+Sportsbet|LAL@MIL|LAL|121.5|1.86|1.94
+Sportsbet|LAL@MIL|MIL|106.5|1.84|1.96
+Sportsbet|GSW@HOU|HOU|113.5|1.92|1.88
+Sportsbet|GSW@HOU|GSW|107.5|1.96|1.84
+###PAIRS
+game|player|stat|line|over|under
+BRK@NOP|Jeremiah Fears|R+A|9.5|1.78|2.00
+BRK@NOP|Herbert Jones|P+A|10.5|2.00|1.78
+BRK@NOP|Zion Williamson|P+R|27.5|1.86|1.90
+BRK@NOP|Derik Queen|P+R|16.5|1.89|1.87
+BRK@NOP|Dejounte Murray|R+A|10.5|1.96|1.80
+BRK@NOP|Dejounte Murray|P+A|21.5|1.96|1.80
+BRK@NOP|Karlo Matkovic|P+R|12.5|2.00|1.78
+BRK@NOP|Derik Queen|R+A|8.5|1.90|1.86
+BRK@NOP|Derik Queen|P+A|13.5|2.00|1.78
+BRK@NOP|Dejounte Murray|P+R|21.5|1.96|1.80
+BRK@NOP|Jeremiah Fears|P+R|21.5|1.88|1.88
+BRK@NOP|Saddiq Bey|P+A|16.5|1.78|2.00
+BRK@NOP|Saddiq Bey|P+R|19.5|1.96|1.80
+BRK@NOP|Zion Williamson|P+A|24.5|1.80|1.96
+BRK@NOP|Jeremiah Fears|P+A|21.5|1.80|1.96
+BRK@NOP|Herbert Jones|P+R|11.5|1.84|1.92
+BRK@NOP|Zion Williamson|R+A|8.5|1.76|2.02
+BRK@NOP|Michael Porter Jr.|P+A|25.5|1.88|1.88
+BRK@NOP|Julius Randle|R+A|11.5|1.80|1.96
+BRK@NOP|Julius Randle|P+R|27.5|1.96|1.80
+BRK@NOP|Nolan Traore|P+A|15.5|1.85|1.91
+BRK@NOP|Michael Porter Jr.|R+A|9.5|1.96|1.80
+BRK@NOP|Michael Porter Jr.|P+R|30.5|1.80|1.96
+BRK@NOP|Day'Ron Sharpe|R+A|11.5|1.76|2.02
+BRK@NOP|Day'Ron Sharpe|P+R|17.5|1.80|1.96
+BRK@NOP|Nolan Traore|P+R|13.5|1.86|1.90
+BRK@NOP|Nolan Traore|R+A|5.5|1.72|2.08
+BRK@NOP|Julius Randle|P+A|25.5|1.80|1.96
+BRK@NOP|Egor Demin|P+R|12.5|1.93|1.83
+BRK@NOP|Day'Ron Sharpe|P+A|13.5|1.87|1.89
+BRK@NOP|Egor Demin|R+A|5.5|1.80|1.96
+BRK@NOP|Moritz Wagner|P+R|12.5|1.96|1.80
+BRK@NOP|Egor Demin|P+A|12.5|1.89|1.87
+BOS@TOR|Immanuel Quickley|P+R|21.5|1.96|1.80
+BOS@TOR|Ja'Kobe Walter|P+A|14.5|1.80|1.96
+BOS@TOR|Ja'Kobe Walter|R+A|6.5|2.05|1.74
+BOS@TOR|Collin Murray-Boyles|R+A|7.5|1.68|2.10
+BOS@TOR|Immanuel Quickley|P+A|23.5|1.88|1.88
+BOS@TOR|Ja'Kobe Walter|P+R|17.5|1.96|1.80
+BOS@TOR|RJ Barrett|R+A|9.5|1.96|1.80
+BOS@TOR|RJ Barrett|P+A|25.5|1.88|1.88
+BOS@TOR|Collin Murray-Boyles|P+R|18.5|1.92|1.84
+BOS@TOR|Jakob Poeltl|P+R|19.5|1.80|1.96
+BOS@TOR|Collin Murray-Boyles|P+A|14.5|1.91|1.85
+BOS@TOR|Immanuel Quickley|R+A|9.5|1.87|1.88
+BOS@TOR|RJ Barrett|P+R|27.5|1.87|1.89
+BOS@TOR|Derrick White|R+A|8.5|1.92|1.84
+BOS@TOR|Derrick White|P+R|18.5|1.96|1.80
+BOS@TOR|Neemias Queta|R+A|8.5|2.05|1.74
+BOS@TOR|Jayson Tatum|P+R|34.5|1.86|1.90
+BOS@TOR|Neemias Queta|P+A|11.5|2.00|1.78
+BOS@TOR|Derrick White|P+A|19.5|1.92|1.84
+BOS@TOR|Jayson Tatum|R+A|13.5|1.74|2.05
+BOS@TOR|Jayson Tatum|P+A|33.5|1.87|1.89
+BOS@TOR|Neemias Queta|P+R|16.5|1.87|1.89
+BOS@TOR|Payton Pritchard|R+A|7.5|1.80|1.96
+BOS@TOR|Payton Pritchard|P+R|18.5|1.80|1.96
+BOS@TOR|Payton Pritchard|P+A|19.5|1.80|1.96
+BOS@TOR|Baylor Scheierman|P+R|12.5|2.00|1.78
+WAS@IND|Trae Young|P+A|26.5|1.80|1.96
+WAS@IND|Trae Young|R+A|11.5|1.78|2.00
+WAS@IND|Trae Young|P+R|20.5|1.85|1.91
+WAS@IND|Anthony Davis|P+A|24.5|1.80|1.96
+WAS@IND|Anthony Davis|R+A|12.5|1.87|1.89
+WAS@IND|Anthony Davis|P+R|32.5|1.80|1.96
+WAS@IND|AJ Dybantsa|P+R|23.5|1.80|1.96
+WAS@IND|AJ Dybantsa|R+A|8.5|2.05|1.74
+WAS@IND|AJ Dybantsa|P+A|20.5|1.96|1.80
+WAS@IND|Kyshawn George|P+R|19.5|1.90|1.86
+WAS@IND|Kyshawn George|P+A|19.5|1.92|1.84
+WAS@IND|Kyshawn George|R+A|9.5|2.05|1.74
+WAS@IND|Alex Sarr|P+A|11.5|1.80|1.96
+WAS@IND|Alex Sarr|R+A|8.5|1.86|1.90
+WAS@IND|Alex Sarr|P+R|17.5|1.90|1.86
+WAS@IND|Bilal Coulibaly|P+R|10.5|1.80|1.96
+WAS@IND|Deandre Ayton|P+R|9.5|1.96|1.80
+WAS@IND|Andrew Nembhard|P+A|23.5|1.88|1.88
+WAS@IND|Andrew Nembhard|P+R|18.5|1.87|1.89
+WAS@IND|Andrew Nembhard|R+A|9.5|1.72|2.08
+WAS@IND|Pascal Siakam|R+A|10.5|1.96|1.80
+WAS@IND|Pascal Siakam|P+R|28.5|1.91|1.85
+WAS@IND|Pascal Siakam|P+A|25.5|1.88|1.88
+WAS@IND|Ivica Zubac|R+A|12.5|2.02|1.76
+WAS@IND|Ivica Zubac|P+R|23.5|1.96|1.80
+WAS@IND|Ivica Zubac|P+A|15.5|1.96|1.80
+WAS@IND|Aaron Nesmith|P+R|17.5|1.96|1.80
+WAS@IND|Aaron Nesmith|P+A|15.5|1.93|1.83
+WAS@IND|Obi Toppin|P+R|15.5|1.80|1.96
+WAS@IND|Obi Toppin|P+A|13.5|1.92|1.84
+WAS@IND|Kelly Oubre Jr.|P+R|12.5|1.93|1.83
+WAS@IND|T.J. McConnell|P+A|10.5|1.96|1.80
+SAS@CHI|Victor Wembanyama|P+A|32.5|1.80|1.96
+SAS@CHI|Victor Wembanyama|P+R|41.5|1.92|1.83
+SAS@CHI|Victor Wembanyama|R+A|14.5|1.96|1.80
+SAS@CHI|Dylan Harper|P+R|22.5|1.80|1.96
+SAS@CHI|Dylan Harper|P+A|22.5|1.88|1.88
+SAS@CHI|Dylan Harper|R+A|9.5|1.88|1.88
+SAS@CHI|Caleb Wilson|P+A|20.5|1.86|1.90
+SAS@CHI|Caleb Wilson|P+R|23.5|1.80|1.96
+SAS@CHI|Caleb Wilson|R+A|7.5|1.80|1.96
+SAS@CHI|Stephon Castle|R+A|10.5|1.84|1.92
+SAS@CHI|Stephon Castle|P+A|21.5|1.91|1.85
+SAS@CHI|Stephon Castle|P+R|20.5|1.88|1.88
+SAS@CHI|De'Aaron Fox|P+A|19.5|1.80|1.96
+SAS@CHI|De'Aaron Fox|P+R|17.5|1.80|1.96
+SAS@CHI|De'Aaron Fox|R+A|9.5|1.87|1.89
+SAS@CHI|Norman Powell|P+R|21.5|1.88|1.88
+SAS@CHI|Norman Powell|P+A|20.5|1.80|1.96
+SAS@CHI|Norman Powell|R+A|4.5|1.90|1.86
+SAS@CHI|Josh Giddey|P+R|19.5|1.90|1.86
+SAS@CHI|Josh Giddey|R+A|14.5|1.84|1.92
+SAS@CHI|Josh Giddey|P+A|21.5|1.90|1.86
+SAS@CHI|Matas Buzelis|P+R|20.5|1.96|1.80
+SAS@CHI|Matas Buzelis|P+A|16.5|1.80|1.96
+SAS@CHI|Matas Buzelis|R+A|7.5|1.88|1.88
+SAS@CHI|Devin Vassell|P+A|13.5|1.90|1.86
+SAS@CHI|Devin Vassell|P+R|14.5|1.86|1.90
+SAS@CHI|Jalen Smith|R+A|9.5|2.08|1.72
+SAS@CHI|Jalen Smith|P+R|19.5|1.87|1.89
+SAS@CHI|Jalen Smith|P+A|13.5|1.86|1.90
+SAS@CHI|Julian Champagnie|P+R|14.5|1.80|1.96
+SAS@CHI|Nic Claxton|P+R|13.5|1.96|1.80
+DEN@MEM|Nikola Jokic|R+A|20.5|1.83|1.93
+DEN@MEM|Nikola Jokic|P+A|34.5|1.83|1.93
+DEN@MEM|Nikola Jokic|P+R|37.5|1.96|1.80
+DEN@MEM|Jamal Murray|P+A|29.5|1.80|1.96
+DEN@MEM|Jamal Murray|P+R|28.5|1.96|1.80
+DEN@MEM|Jamal Murray|R+A|10.5|1.85|1.91
+DEN@MEM|Christian Braun|P+A|13.5|1.90|1.86
+DEN@MEM|Christian Braun|P+R|15.5|1.88|1.88
+DEN@MEM|Christian Braun|R+A|6.5|2.10|1.68
+DEN@MEM|Cam Johnson|P+R|15.5|1.88|1.88
+DEN@MEM|Cam Johnson|P+A|13.5|1.80|1.96
+DEN@MEM|Aaron Gordon|R+A|7.5|1.96|1.80
+DEN@MEM|Aaron Gordon|P+A|14.5|1.84|1.92
+DEN@MEM|Aaron Gordon|P+R|17.5|1.90|1.86
+DEN@MEM|DeMar DeRozan|P+R|12.5|1.83|1.93
+DEN@MEM|DeMar DeRozan|P+A|13.5|1.93|1.83
+DEN@MEM|Cameron Boozer|P+A|22.5|1.96|1.80
+DEN@MEM|Cameron Boozer|P+R|25.5|1.80|1.96
+DEN@MEM|Cameron Boozer|R+A|13.5|1.74|2.05
+DEN@MEM|Ty Jerome|P+A|26.5|1.80|1.96
+DEN@MEM|Ty Jerome|R+A|8.5|1.86|1.90
+DEN@MEM|Ty Jerome|P+R|24.5|1.86|1.90
+DEN@MEM|Cedric Coward|P+A|15.5|1.80|1.96
+DEN@MEM|Cedric Coward|P+R|19.5|1.80|1.96
+DEN@MEM|Cedric Coward|R+A|9.5|1.89|1.86
+DEN@MEM|Jaylen Wells|P+R|13.5|1.96|1.80
+DEN@MEM|Zach Edey|P+R|18.5|1.96|1.80
+DEN@MEM|Jerami Grant|P+R|13.5|1.91|1.85
+DEN@MEM|Jerami Grant|R+A|4.5|2.10|1.68
+DEN@MEM|Jerami Grant|P+A|12.5|1.83|1.93
+DEN@MEM|Cam Spencer|P+A|11.5|1.85|1.91
+DEN@MEM|Cam Spencer|R+A|6.5|1.72|2.08
+DEN@MEM|Cam Spencer|P+R|9.5|1.92|1.84
+CLE@NYK|Donovan Mitchell|P+A|28.5|1.80|1.96
+CLE@NYK|Donovan Mitchell|R+A|9.5|2.10|1.68
+CLE@NYK|Donovan Mitchell|P+R|28.5|1.90|1.86
+CLE@NYK|James Harden|P+A|22.5|1.96|1.80
+CLE@NYK|James Harden|P+R|20.5|1.91|1.85
+CLE@NYK|James Harden|R+A|10.5|1.96|1.80
+CLE@NYK|Jalen Brunson|R+A|10.5|2.08|1.72
+CLE@NYK|Jalen Brunson|P+R|30.5|1.90|1.86
+CLE@NYK|Evan Mobley|P+A|19.5|1.84|1.92
+CLE@NYK|Evan Mobley|R+A|11.5|1.78|2.00
+CLE@NYK|Jalen Brunson|P+A|33.5|1.80|1.96
+CLE@NYK|Evan Mobley|P+R|24.5|1.86|1.90
+CLE@NYK|Karl-Anthony Towns|R+A|15.5|1.96|1.80
+CLE@NYK|Karl-Anthony Towns|P+R|32.5|1.83|1.93
+CLE@NYK|Karl-Anthony Towns|P+A|22.5|1.80|1.96
+CLE@NYK|OG Anunoby|R+A|7.5|1.80|1.96
+CLE@NYK|OG Anunoby|P+A|20.5|1.88|1.88
+CLE@NYK|OG Anunoby|P+R|23.5|1.80|1.96
+CLE@NYK|Peyton Watson|P+A|13.5|1.78|2.00
+CLE@NYK|Jarrett Allen|P+R|18.5|1.80|1.96
+CLE@NYK|Peyton Watson|P+R|16.5|1.93|1.83
+CLE@NYK|Jarrett Allen|R+A|8.5|1.80|1.96
+CLE@NYK|Jarrett Allen|P+A|13.5|1.96|1.80
+CLE@NYK|Josh Hart|P+A|14.5|1.96|1.80
+CLE@NYK|Josh Hart|P+R|17.5|1.80|1.96
+CLE@NYK|Josh Hart|R+A|11.5|1.80|1.96
+CLE@NYK|Mikal Bridges|P+A|12.5|1.89|1.87
+CLE@NYK|Mikal Bridges|P+R|12.5|1.80|1.96
+CLE@NYK|Meleek Thomas|P+R|12.5|1.96|1.80
+CLE@NYK|Jaylon Tyson|P+R|11.5|1.80|1.96
+CLE@NYK|Andre Drummond|P+R|15.5|1.92|1.84
+LAL@MIL|Austin Reaves|R+A|8.5|1.76|2.02
+LAL@MIL|Ziaire Williams|P+R|11.5|1.86|1.90
+LAL@MIL|Luka Doncic|P+R|42.5|1.87|1.89
+LAL@MIL|Sandro Mamukelashvili|P+R|13.5|1.90|1.86
+LAL@MIL|Austin Reaves|P+A|27.5|1.89|1.87
+LAL@MIL|Austin Reaves|P+R|25.5|1.80|1.96
+LAL@MIL|Luka Doncic|P+A|42.5|1.87|1.89
+LAL@MIL|Luka Doncic|R+A|14.5|1.72|2.08
+LAL@MIL|Walker Kessler|P+R|24.5|1.80|1.96
+LAL@MIL|Tyler Herro|P+R|24.5|1.92|1.84
+LAL@MIL|Tyler Herro|P+A|24.5|1.96|1.80
+LAL@MIL|Tyler Herro|R+A|8.5|1.89|1.87
+LAL@MIL|Jaime Jaquez Jr.|P+R|19.5|1.80|1.96
+LAL@MIL|Jaime Jaquez Jr.|P+A|18.5|1.96|1.80
+LAL@MIL|Jaime Jaquez Jr.|R+A|7.5|1.80|1.96
+LAL@MIL|Brayden Burries|P+R|18.5|1.88|1.88
+LAL@MIL|Brayden Burries|R+A|8.5|1.89|1.87
+LAL@MIL|Brayden Burries|P+A|16.5|1.87|1.89
+LAL@MIL|Kyle Kuzma|P+A|14.5|1.84|1.92
+LAL@MIL|Kyle Kuzma|R+A|6.5|1.68|2.10
+LAL@MIL|Kyle Kuzma|P+R|16.5|1.86|1.90
+LAL@MIL|Kel'el Ware|P+R|19.5|1.96|1.80
+GSW@HOU|Draymond Green|P+A|11.5|1.96|1.80
+GSW@HOU|De'Anthony Melton|P+R|12.5|2.00|1.78
+GSW@HOU|Stephen Curry|R+A|8.5|1.96|1.80
+GSW@HOU|Stephen Curry|P+R|30.5|1.96|1.80
+GSW@HOU|Gui Santos|P+R|11.5|1.96|1.80
+GSW@HOU|Draymond Green|P+R|10.5|2.05|1.74
+GSW@HOU|De'Anthony Melton|R+A|5.5|2.08|1.72
+GSW@HOU|Stephen Curry|P+A|30.5|1.86|1.90
+GSW@HOU|De'Anthony Melton|P+A|10.5|1.80|1.96
+GSW@HOU|Georges Niang|P+R|9.5|1.76|2.02
+GSW@HOU|Yaxel Lendeborg|P+A|22.5|1.96|1.80
+GSW@HOU|Yaxel Lendeborg|P+R|24.5|1.80|1.96
+GSW@HOU|Brandin Podziemski|R+A|7.5|1.80|1.96
+GSW@HOU|Yaxel Lendeborg|R+A|10.5|1.96|1.80
+GSW@HOU|Brandin Podziemski|P+A|18.5|1.96|1.80
+GSW@HOU|Al Horford|P+R|8.5|2.00|1.78
+GSW@HOU|Draymond Green|R+A|11.5|1.90|1.86
+GSW@HOU|Brandin Podziemski|P+R|19.5|1.80|1.96
+GSW@HOU|Amen Thompson|P+A|18.5|1.80|1.96
+GSW@HOU|Kevin Durant|P+R|28.5|1.96|1.80
+GSW@HOU|Tari Eason|P+R|12.5|1.80|1.96
+GSW@HOU|Alperen Sengun|P+A|26.5|1.85|1.91
+GSW@HOU|Amen Thompson|P+R|22.5|1.84|1.92
+GSW@HOU|Jabari Smith|R+A|8.5|2.05|1.74
+GSW@HOU|Fred VanVleet|P+R|14.5|1.80|1.96
+GSW@HOU|Amen Thompson|R+A|10.5|1.90|1.86
+GSW@HOU|Fred VanVleet|P+A|16.5|1.80|1.96
+GSW@HOU|Tari Eason|P+A|9.5|1.84|1.92
+GSW@HOU|Alperen Sengun|R+A|15.5|1.80|1.96
+GSW@HOU|Jabari Smith|P+A|16.5|1.96|1.80
+GSW@HOU|Kevin Durant|R+A|9.5|1.91|1.85
+GSW@HOU|Kevin Durant|P+A|25.5|1.80|1.96
+GSW@HOU|Alperen Sengun|P+R|28.5|1.84|1.92
+GSW@HOU|Jabari Smith|P+R|21.5|1.96|1.80
+###PAIRNAMES
+To Record 10+ Reb + Ast
+To Record 25+ Pts + Reb
+To Record 20+ Pts + Reb
+To Record 35+ Pts + Ast
+To Record 15+ Pts + Reb
+To Record 10+ Pts + Ast
+To Record 25+ Pts + Ast
+To Record 45+ Pts + Reb
+To Record 15+ Reb + Ast
+To Record 20+ Reb + Ast
+To Record 30+ Pts + Ast
+To Record 15+ Pts + Ast
+To Record 40+ Pts + Reb
+To Record 45+ Pts + Ast
+To Record 35+ Pts + Reb
+To Record 10+ Pts + Reb
+To Record 25+ Reb + Ast
+To Record 20+ Pts + Ast
+To Record 40+ Pts + Ast
+To Record 5+ Reb + Ast
+To Record 30+ Pts + Reb
+To Record 50+ Pts + Reb
+Alt Pts + Reb
+Alt Reb + Ast
+Alt Pts + Ast

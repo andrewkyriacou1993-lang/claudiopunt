@@ -1,0 +1,25 @@
+###GAMES
+date,tip,away,home,ml_away,ml_home,spread_home,spread_home_odds,spread_away_odds,total,over_odds,under_odds
+2026-11-13,13:10,Charlotte Hornets,Phoenix Suns,3.07,1.40,-6.5,1.88,1.92,213.5,1.95,1.86
+2026-11-13,12:10,Dallas Mavericks,Minnesota Timberwolves,2.78,1.47,-5.5,1.90,1.90,226.5,1.90,1.90
+2026-11-13,11:10,Toronto Raptors,Philadelphia 76ers,4.85,1.20,-10.5,1.90,1.90,220.5,1.85,1.96
+2026-11-13,11:10,Detroit Pistons,Washington Wizards,1.27,3.95,9.5,1.85,1.95,220.5,1.87,1.93
+###PROPS
+game|player|stat|line|over|under
+
+###ALT
+game|player|stat|rungs
+
+###GALT
+game|kind|side|rungs
+
+###FB
+game|player|odds
+
+###TT
+book|game|team|line|over|under
+
+###PAIRS
+game|player|stat|line|over|under
+
+###PAIRNAMES

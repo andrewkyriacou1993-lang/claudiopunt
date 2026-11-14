@@ -1,384 +1,336 @@
 rid,game,code,tip,player,team,opp,combo,spec,legs,chance,fair_odds,log_chance,hits10,lift,best_book,best_price,sb_price,pb_price,sb_product,pb_product,ev_sb,ev_pb,ev_pct,stake_pct,verdict,min10,games,opp_factor,view
-1,Bulls @ Timberwolves,CHI@MIN,12:10,Jonathan Kuminga,MIN,CHI,10+ pts & 4+ reb & 2+ ast,P10R4A2,3,54.9,1.82,36,4,1.2,Sportsbet,1.95,1.95,1.74,1.82,1.83,7.0,-4.5,7.0,0,Pass,30.4,120,1.08,best
-2,Nets @ Grizzlies,BRK@MEM,12:10,Michael Porter Jr.,BRK,MEM,15+ pts & 4+ reb & 2+ ast,P15R4A2,3,54.6,1.83,34,4,1.13,Sportsbet,1.95,1.95,,1.83,,6.5,,6.5,0,Pass,32.4,120,0.98,best
-3,Nets @ Grizzlies,BRK@MEM,12:10,Julius Randle,BRK,MEM,10+ pts & 4+ reb & 2+ ast,P10R4A2,3,84.3,1.19,70,9,1.11,Sportsbet,1.25,1.25,,1.19,,5.4,,5.4,0,Pass,32.5,120,0.98,best
-4,Mavericks @ Cavaliers,DAL@CLE,11:40,Cooper Flagg,DAL,CLE,15+ pts & 4+ reb & 6+ ast,P15R4A6,3,55.7,1.79,46,7,1.15,Sportsbet,1.88,1.88,1.74,1.75,1.8,4.8,-3.0,4.8,0,Pass,33.6,81,1.05,best
-5,Mavericks @ Cavaliers,DAL@CLE,11:40,Cooper Flagg,DAL,CLE,20+ pts & 4+ reb & 4+ ast,P20R4A4,3,64.7,1.55,43,6,1.13,Sportsbet,1.62,1.62,1.56,1.52,1.6,4.8,0.9,4.8,0,Pass,33.6,81,1.05,best
-6,Nuggets @ Pelicans,DEN@NOP,11:10,Jeremiah Fears,NOP,DEN,10+ pts & 4+ reb & 4+ ast,P10R4A4,3,58.2,1.72,41,7,1.22,Sportsbet,1.8,1.8,1.71,1.71,1.72,4.8,-0.5,4.8,0,Pass,31.2,95,0.97,best
-7,Nets @ Grizzlies,BRK@MEM,12:10,Julius Randle,BRK,MEM,15+ pts & 4+ reb & 4+ ast,P15R4A4,3,54.8,1.82,44,5,1.03,Sportsbet,1.91,1.91,1.74,1.84,1.8,4.7,-4.7,4.7,0,Pass,32.5,120,0.98,best
-8,Mavericks @ Cavaliers,DAL@CLE,11:40,Cooper Flagg,DAL,CLE,15+ pts & 4+ reb & 4+ ast,P15R4A4,3,80.4,1.24,55,8,1.16,Sportsbet,1.3,1.3,1.29,1.24,1.31,4.6,3.8,4.6,0,Pass,33.6,81,1.05,best
-9,Nets @ Grizzlies,BRK@MEM,12:10,Cameron Boozer,MEM,BRK,10+ pts & 4+ reb & 2+ ast,P10R4A2,3,92.6,1.08,66,9,1.12,Sportsbet,1.13,1.13,,1.09,,4.6,,4.6,0,Pass,30.9,12,0.95,best
-10,Nets @ Grizzlies,BRK@MEM,12:10,Cameron Boozer,MEM,BRK,15+ pts & 4+ reb & 4+ ast,P15R4A4,3,60.4,1.66,32,4,1.08,Sportsbet,1.73,1.73,,1.62,,4.5,,4.5,0,Pass,30.9,12,0.95,best
-11,Nuggets @ Pelicans,DEN@NOP,11:10,Zion Williamson,NOP,DEN,15+ pts & 4+ reb & 2+ ast,P15R4A2,3,62.4,1.6,62,8,1.09,Sportsbet,1.67,1.67,1.63,1.6,1.63,4.3,1.8,4.3,0,Pass,32.9,120,0.97,best
-12,Nets @ Grizzlies,BRK@MEM,12:10,Julius Randle,BRK,MEM,15+ pts & 4+ reb & 2+ ast,P15R4A2,3,74.4,1.34,55,7,1.08,Sportsbet,1.4,1.4,1.36,1.36,1.34,4.2,1.2,4.2,0,Pass,32.5,120,0.98,best
-13,Bulls @ Timberwolves,CHI@MIN,12:10,Ayo Dosunmu,MIN,CHI,10+ pts & 4+ reb & 2+ ast,P10R4A2,3,57.9,1.73,35,3,1.17,Sportsbet,1.8,1.8,1.71,1.7,1.74,4.2,-1.0,4.2,0,Pass,31.6,120,1.08,best
-14,Nets @ Grizzlies,BRK@MEM,12:10,Cedric Coward,MEM,BRK,10+ pts & 4+ reb & 2+ ast,P10R4A2,3,64.3,1.56,51,8,1.1,Sportsbet,1.62,1.62,1.59,1.52,1.62,4.1,2.2,4.1,0,Pass,28.5,73,0.95,best
-15,Nets @ Grizzlies,BRK@MEM,12:10,Cameron Boozer,MEM,BRK,10+ pts & 6+ reb & 4+ ast,P10R6A4,3,69.4,1.44,53,7,1.09,Sportsbet,1.5,1.5,1.44,1.45,1.46,4.0,-0.1,4.0,0,Pass,30.9,12,0.95,best
-16,Pistons @ Heat,DET@MIA,12:10,Davion Mitchell,MIA,DET,4+ ast & 1+ threes,A4T1,2,88.8,1.13,62,7,1.05,Sportsbet,1.17,1.17,,1.11,,3.8,,3.8,0,Pass,36.6,120,0.87,best
-17,Bulls @ Timberwolves,CHI@MIN,12:10,Ayo Dosunmu,MIN,CHI,15+ pts & 4+ reb & 2+ ast,P15R4A2,3,46.0,2.18,30,3,1.12,Sportsbet,2.25,2.25,2.05,2.15,2.19,3.4,-5.8,3.4,0,Pass,31.6,120,1.08,best
-18,Pistons @ Heat,DET@MIA,12:10,Bam Adebayo,MIA,DET,15+ pts & 6+ reb & 2+ ast,P15R6A2,3,57.4,1.74,54,7,1.08,Sportsbet,1.8,1.8,1.71,1.74,1.75,3.3,-1.9,3.3,0,Pass,34.9,120,0.87,best
-19,Pistons @ Heat,DET@MIA,12:10,Cade Cunningham,DET,MIA,15+ pts & 4+ reb & 6+ ast,P15R4A6,3,67.5,1.48,51,6,1.07,Sportsbet,1.53,1.53,1.44,1.49,1.49,3.3,-2.8,3.3,0,Pass,34.6,120,1.09,best
-20,Nets @ Grizzlies,BRK@MEM,12:10,Cameron Boozer,MEM,BRK,10+ pts & 4+ reb & 4+ ast,P10R4A4,3,75.9,1.32,53,7,1.09,Sportsbet,1.36,1.36,,1.31,,3.2,,3.2,0,Pass,30.9,12,0.95,best
-21,Mavericks @ Cavaliers,DAL@CLE,11:40,James Harden,CLE,DAL,10+ pts & 4+ reb & 4+ ast,P10R4A4,3,57.3,1.75,47,5,1.1,Sportsbet,1.8,1.8,1.71,1.74,1.74,3.1,-2.1,3.1,0,Pass,32.1,120,0.97,best
-22,Mavericks @ Cavaliers,DAL@CLE,11:40,Kyrie Irving,DAL,CLE,15+ pts & 4+ reb & 2+ ast,P15R4A2,3,49.1,2.04,36,4,1.17,Sportsbet,2.1,2.1,1.9,2.05,1.97,3.1,-6.7,3.1,0,Pass,30.2,118,1.05,best
-23,Nets @ Grizzlies,BRK@MEM,12:10,Michael Porter Jr.,BRK,MEM,20+ pts & 4+ reb & 2+ ast,P20R4A2,3,41.2,2.43,27,3,1.14,Sportsbet,2.5,2.5,,2.42,,3.1,,3.1,0,Pass,32.4,120,0.98,best
-24,Bulls @ Timberwolves,CHI@MIN,12:10,Jaden McDaniels,MIN,CHI,10+ pts & 4+ reb & 2+ ast,P10R4A2,3,71.6,1.4,62,9,1.14,PointsBet,1.44,1.4,1.44,1.36,1.47,0.3,3.1,3.1,0,Pass,33.9,120,1.08,best
-25,Pistons @ Heat,DET@MIA,12:10,Ausar Thompson,DET,MIA,4+ reb & 2+ ast,R4A2,2,88.0,1.14,78,9,1.07,Sportsbet,1.17,1.17,1.13,1.11,1.12,3.0,-0.6,3.0,0,Pass,28.7,120,1.09,best
-26,Bulls @ Timberwolves,CHI@MIN,12:10,Jaden McDaniels,MIN,CHI,15+ pts & 4+ reb & 2+ ast,P15R4A2,3,53.9,1.85,45,5,1.08,Sportsbet,1.91,1.91,1.83,1.78,1.94,3.0,-1.3,3.0,0,Pass,33.9,120,1.08,best
-27,Bulls @ Timberwolves,CHI@MIN,12:10,LaMelo Ball,MIN,CHI,4+ ast & 2+ threes,A4T2,2,84.4,1.18,74,7,1.06,PointsBet,1.22,1.2,1.22,1.12,1.2,1.3,3.0,3.0,0,Pass,27.9,120,1.08,best
-28,Mavericks @ Cavaliers,DAL@CLE,11:40,Kyrie Irving,DAL,CLE,2+ ast & 1+ threes,A2T1,2,93.6,1.07,77,9,1.08,Sportsbet,1.1,1.1,,1.06,,2.9,,2.9,0,Pass,30.2,118,1.05,best
-29,Mavericks @ Cavaliers,DAL@CLE,11:40,Kyrie Irving,DAL,CLE,20+ pts & 4+ reb & 2+ ast,P20R4A2,3,39.5,2.53,27,2,1.12,Sportsbet,2.6,2.6,2.3,2.57,2.44,2.7,-9.1,2.7,0,Pass,30.2,118,1.05,best
-30,Nets @ Grizzlies,BRK@MEM,12:10,Cameron Boozer,MEM,BRK,10+ pts & 8+ reb & 4+ ast,P10R8A4,3,53.6,1.86,37,4,0.99,Sportsbet,1.91,1.91,1.8,1.82,1.84,2.4,-3.5,2.4,0,Pass,30.9,12,0.95,best
-31,Nuggets @ Pelicans,DEN@NOP,11:10,Saddiq Bey,NOP,DEN,10+ pts & 4+ reb & 2+ ast,P10R4A2,3,52.4,1.91,35,4,1.07,Sportsbet,1.95,1.95,1.83,1.88,1.91,2.2,-4.1,2.2,0,Pass,28.6,120,0.97,best
-32,Bulls @ Timberwolves,CHI@MIN,12:10,LaMelo Ball,MIN,CHI,10+ pts & 4+ ast,P10A4,2,90.4,1.11,79,8,1.06,PointsBet,1.13,1.1,1.13,1.06,1.12,-0.5,2.2,2.2,0,Pass,27.9,120,1.08,best
-33,Mavericks @ Cavaliers,DAL@CLE,11:40,James Harden,CLE,DAL,15+ pts & 4+ reb & 4+ ast,P15R4A4,3,45.4,2.2,35,3,1.06,Sportsbet,2.25,2.25,2.1,2.24,2.17,2.1,-4.7,2.1,0,Pass,32.1,120,0.97,best
-34,Nets @ Grizzlies,BRK@MEM,12:10,Cedric Coward,MEM,BRK,10+ pts & 6+ reb & 2+ ast,P10R6A2,3,51.1,1.96,48,8,1.09,Sportsbet,2.0,2.0,1.9,1.92,2.0,2.1,-3.0,2.1,0,Pass,28.5,73,0.95,best
-35,Pistons @ Heat,DET@MIA,12:10,Bam Adebayo,MIA,DET,10+ pts & 6+ reb & 2+ ast,P10R6A2,3,75.1,1.33,63,8,1.09,Sportsbet,1.36,1.36,1.36,1.33,1.38,2.1,2.1,2.1,0,Pass,34.9,120,0.87,best
-36,Bulls @ Timberwolves,CHI@MIN,12:10,Josh Giddey,CHI,MIN,10+ pts & 4+ reb & 6+ ast,P10R4A6,3,66.7,1.5,36,4,1.12,Sportsbet,1.53,1.53,1.5,1.5,1.53,2.0,0.0,2.0,0,Pass,29.2,120,0.88,best
-37,Bulls @ Timberwolves,CHI@MIN,12:10,Ayo Dosunmu,MIN,CHI,2+ ast & 1+ threes,A2T1,2,79.1,1.26,60,6,1.03,Sportsbet,1.29,1.29,1.29,1.2,1.26,2.0,2.0,2.0,0,Pass,31.6,120,1.08,best
-38,Nets @ Grizzlies,BRK@MEM,12:10,Michael Porter Jr.,BRK,MEM,10+ pts & 4+ reb,P10R4,2,92.6,1.08,76,9,1.08,Sportsbet,1.1,1.1,,1.07,,1.9,,1.9,0,Pass,32.4,120,0.98,best
-39,Nets @ Grizzlies,BRK@MEM,12:10,Cameron Boozer,MEM,BRK,10+ pts & 4+ reb,P10R4,2,92.6,1.08,73,9,1.07,Sportsbet,1.1,1.1,,1.07,,1.9,,1.9,0,Pass,30.9,12,0.95,best
-40,Pistons @ Heat,DET@MIA,12:10,Cade Cunningham,DET,MIA,20+ pts & 4+ reb & 6+ ast,P20R4A6,3,56.6,1.77,41,5,1.13,Sportsbet,1.8,1.8,1.71,1.78,1.77,1.9,-3.2,1.9,0,Pass,34.6,120,1.09,best
-41,Bulls @ Timberwolves,CHI@MIN,12:10,LaMelo Ball,MIN,CHI,10+ pts & 4+ reb & 4+ ast,P10R4A4,3,61.0,1.64,36,2,0.97,Sportsbet,1.67,1.67,1.63,1.54,1.62,1.9,-0.6,1.9,0,Pass,27.9,120,1.08,best
-42,Nets @ Grizzlies,BRK@MEM,12:10,Michael Porter Jr.,BRK,MEM,4+ reb & 1+ threes,R4T1,2,92.6,1.08,74,9,1.1,Sportsbet,1.1,1.1,,1.07,,1.8,,1.8,0,Pass,32.4,120,0.98,best
-43,Nets @ Grizzlies,BRK@MEM,12:10,Cameron Boozer,MEM,BRK,10+ pts & 2+ ast,P10A2,2,92.6,1.08,73,9,1.07,Sportsbet,1.1,1.1,,1.07,,1.8,,1.8,0,Pass,30.9,12,0.95,best
-44,Pistons @ Heat,DET@MIA,12:10,Bam Adebayo,MIA,DET,10+ pts & 8+ reb & 2+ ast,P10R8A2,3,58.2,1.72,57,8,1.11,Sportsbet,1.75,1.75,1.74,1.69,1.74,1.8,1.2,1.8,0,Pass,34.9,120,0.87,best
-45,Bulls @ Timberwolves,CHI@MIN,12:10,Josh Giddey,CHI,MIN,4+ reb & 6+ ast,R4A6,2,78.9,1.27,56,6,1.08,Sportsbet,1.29,1.29,1.25,1.23,1.23,1.8,-1.3,1.8,0,Pass,29.2,120,0.88,best
-46,Mavericks @ Cavaliers,DAL@CLE,11:40,Kyrie Irving,DAL,CLE,2+ ast & 2+ threes,A2T2,2,78.8,1.27,71,8,1.07,Sportsbet,1.29,1.29,1.25,1.22,1.25,1.7,-1.5,1.7,0,Pass,30.2,118,1.05,best
-47,Nuggets @ Pelicans,DEN@NOP,11:10,Zion Williamson,NOP,DEN,10+ pts & 4+ reb & 2+ ast,P10R4A2,3,70.6,1.42,70,9,1.11,Sportsbet,1.44,1.44,,1.4,,1.7,,1.7,0,Pass,32.9,120,0.97,best
-48,Bulls @ Timberwolves,CHI@MIN,12:10,Ayo Dosunmu,MIN,CHI,10+ pts & 2+ ast,P10A2,2,86.2,1.16,61,6,1.06,PointsBet,1.18,1.17,1.18,1.1,1.18,0.9,1.7,1.7,0,Pass,31.6,120,1.08,best
-49,Mavericks @ Cavaliers,DAL@CLE,11:40,Kyrie Irving,DAL,CLE,10+ pts & 1+ threes,P10T1,2,96.8,1.03,78,9,1.08,Sportsbet,1.05,1.05,,1.03,,1.6,,1.6,0,Pass,30.2,118,1.05,best
-50,Mavericks @ Cavaliers,DAL@CLE,11:40,P.J. Washington,DAL,CLE,4+ reb & 1+ threes,R4T1,2,81.3,1.23,73,8,1.07,PointsBet,1.25,1.22,1.25,1.18,1.22,-0.8,1.6,1.6,0,Pass,32.4,120,1.05,best
-51,Mavericks @ Cavaliers,DAL@CLE,11:40,Cooper Flagg,DAL,CLE,15+ pts & 4+ reb,P15R4,2,86.8,1.15,71,8,1.06,Sportsbet,1.17,1.17,1.16,1.11,1.16,1.5,0.6,1.5,0,Pass,33.6,81,1.05,best
-52,Nuggets @ Pelicans,DEN@NOP,11:10,Aaron Gordon,DEN,NOP,10+ pts & 4+ reb & 2+ ast,P10R4A2,3,44.1,2.27,29,2,1.03,Sportsbet,2.3,2.3,2.15,2.26,2.26,1.5,-5.1,1.5,0,Pass,29.0,120,1.05,best
-53,Bulls @ Timberwolves,CHI@MIN,12:10,Norman Powell,CHI,MIN,10+ pts & 1+ threes,P10T1,2,89.8,1.11,73,9,1.08,Sportsbet,1.13,1.13,1.1,1.09,1.11,1.5,-1.2,1.5,0,Pass,28.5,120,0.88,best
-54,Nets @ Grizzlies,BRK@MEM,12:10,Julius Randle,BRK,MEM,10+ pts & 4+ reb & 4+ ast,P10R4A4,3,60.7,1.65,56,7,1.08,Sportsbet,1.67,1.67,,1.6,,1.4,,1.4,0,Pass,32.5,120,0.98,best
-55,Nets @ Grizzlies,BRK@MEM,12:10,Michael Porter Jr.,BRK,MEM,10+ pts & 4+ reb & 2+ ast,P10R4A2,3,58.5,1.71,36,4,1.08,Sportsbet,1.73,1.73,,1.64,,1.3,,1.3,0,Pass,32.4,120,0.98,best
-56,Nets @ Grizzlies,BRK@MEM,12:10,Michael Porter Jr.,BRK,MEM,15+ pts & 6+ reb & 2+ ast,P15R6A2,3,42.2,2.37,28,3,1.08,Sportsbet,2.4,2.4,,2.37,,1.3,,1.3,0,Pass,32.4,120,0.98,best
-57,Nuggets @ Pelicans,DEN@NOP,11:10,Jeremiah Fears,NOP,DEN,15+ pts & 4+ reb & 4+ ast,P15R4A4,3,46.0,2.17,29,5,1.33,Sportsbet,2.2,2.2,2.05,2.16,2.18,1.3,-5.6,1.3,0,Pass,31.2,95,0.97,best
-58,Nuggets @ Pelicans,DEN@NOP,11:10,Zion Williamson,NOP,DEN,10+ pts & 2+ ast,P10A2,2,84.4,1.18,85,10,1.07,Sportsbet,1.2,1.2,,1.16,,1.3,,1.3,0,Pass,32.9,120,0.97,best
-59,Bulls @ Timberwolves,CHI@MIN,12:10,Jaden McDaniels,MIN,CHI,10+ pts & 4+ reb,P10R4,2,78.5,1.27,72,9,1.08,PointsBet,1.29,1.22,1.29,1.2,1.29,-4.2,1.3,1.3,0,Pass,33.9,120,1.08,best
-60,Bulls @ Timberwolves,CHI@MIN,12:10,Josh Giddey,CHI,MIN,4+ reb & 4+ ast,R4A4,2,89.6,1.12,65,7,1.06,Sportsbet,1.13,1.13,,1.1,,1.3,,1.3,0,Pass,29.2,120,0.88,best
-61,Bulls @ Timberwolves,CHI@MIN,12:10,Jalen Smith,CHI,MIN,4+ reb & 1+ threes,R4T1,2,81.0,1.23,60,7,1.05,Sportsbet,1.25,1.25,1.25,1.19,1.22,1.3,1.3,1.3,0,Pass,25.2,120,0.88,best
-62,Mavericks @ Cavaliers,DAL@CLE,11:40,Peyton Watson,CLE,DAL,10+ pts & 4+ reb & 2+ ast,P10R4A2,3,37.5,2.67,31,3,1.1,Sportsbet,2.7,2.7,2.4,2.75,2.56,1.1,-10.1,1.1,0,Pass,27.8,120,0.97,best
-63,Mavericks @ Cavaliers,DAL@CLE,11:40,James Harden,CLE,DAL,4+ ast & 1+ threes,A4T1,2,84.8,1.18,82,9,1.07,PointsBet,1.19,1.17,1.19,1.13,1.18,-0.7,1.0,1.0,0,Pass,32.1,120,0.97,best
-64,Mavericks @ Cavaliers,DAL@CLE,11:40,Kyrie Irving,DAL,CLE,4+ ast & 1+ threes,A4T1,2,62.3,1.6,62,7,1.11,Sportsbet,1.62,1.62,,1.53,,1.0,,1.0,0,Pass,30.2,118,1.05,best
-65,Nets @ Grizzlies,BRK@MEM,12:10,Cameron Boozer,MEM,BRK,10+ pts & 6+ reb & 2+ ast,P10R6A2,3,82.8,1.21,66,9,1.12,Sportsbet,1.22,1.22,,1.21,,1.0,,1.0,0,Pass,30.9,12,0.95,best
-66,Nets @ Grizzlies,BRK@MEM,12:10,Michael Porter Jr.,BRK,MEM,15+ pts & 1+ threes,P15T1,2,86.3,1.16,71,8,1.1,Sportsbet,1.17,1.17,,1.14,,1.0,,1.0,0,Pass,32.4,120,0.98,best
-67,Pistons @ Heat,DET@MIA,12:10,Daniss Jenkins,DET,MIA,10+ pts & 2+ ast,P10A2,2,78.3,1.28,52,6,1.03,Sportsbet,1.29,1.29,,1.24,,1.0,,1.0,0,Pass,28.6,89,1.09,best
-68,Nuggets @ Pelicans,DEN@NOP,11:10,Jamal Murray,DEN,NOP,15+ pts & 1+ threes,P15T1,2,91.8,1.09,74,8,1.09,Sportsbet,1.1,1.1,,1.08,,1.0,,1.0,0,Pass,36.3,120,1.05,best
-69,Bulls @ Timberwolves,CHI@MIN,12:10,Josh Giddey,CHI,MIN,10+ pts & 4+ ast,P10A4,2,78.3,1.28,57,7,1.06,Sportsbet,1.29,1.29,,1.24,,1.0,,1.0,0,Pass,29.2,120,0.88,best
-70,Nets @ Grizzlies,BRK@MEM,12:10,Cameron Boozer,MEM,BRK,4+ reb & 4+ ast,R4A4,2,78.2,1.28,69,8,1.07,Sportsbet,1.29,1.29,,1.24,,0.9,,0.9,0,Pass,30.9,12,0.95,best
-71,Nets @ Grizzlies,BRK@MEM,12:10,Cameron Boozer,MEM,BRK,15+ pts & 6+ reb & 2+ ast,P15R6A2,3,65.9,1.52,38,5,1.07,Sportsbet,1.53,1.53,,1.5,,0.8,,0.8,0,Pass,30.9,12,0.95,best
-72,Nets @ Grizzlies,BRK@MEM,12:10,Michael Porter Jr.,BRK,MEM,10+ pts & 1+ threes,P10T1,2,97.8,1.02,80,9,1.08,Sportsbet,1.03,1.03,,1.02,,0.7,,0.7,0,Pass,32.4,120,0.98,best
-73,Nets @ Grizzlies,BRK@MEM,12:10,Michael Porter Jr.,BRK,MEM,4+ reb & 2+ threes,R4T2,2,80.5,1.24,70,9,1.11,PointsBet,1.25,1.22,1.25,1.18,1.24,-1.8,0.7,0.7,0,Pass,32.4,120,0.98,best
-74,Nets @ Grizzlies,BRK@MEM,12:10,Cedric Coward,MEM,BRK,4+ reb & 1+ threes,R4T1,2,80.5,1.24,66,9,1.06,PointsBet,1.25,1.22,1.25,1.2,1.22,-1.8,0.6,0.6,0,Pass,28.5,73,0.95,best
-75,Nets @ Grizzlies,BRK@MEM,12:10,Michael Porter Jr.,BRK,MEM,10+ pts & 6+ reb & 2+ ast,P10R6A2,3,44.6,2.24,30,3,1.02,Sportsbet,2.25,2.25,,2.12,,0.5,,0.5,0,Pass,32.4,120,0.98,best
-76,Nuggets @ Pelicans,DEN@NOP,11:10,Jamal Murray,DEN,NOP,15+ pts & 4+ reb & 4+ ast,P15R4A4,3,50.3,1.99,47,5,1.13,PointsBet,2.0,1.95,2.0,1.85,2.09,-2.0,0.5,0.5,0,Pass,36.3,120,1.05,best
-77,Bulls @ Timberwolves,CHI@MIN,12:10,Josh Giddey,CHI,MIN,10+ pts & 4+ reb & 4+ ast,P10R4A4,3,73.9,1.35,42,5,1.11,Sportsbet,1.36,1.36,,1.34,,0.5,,0.5,0,Pass,29.2,120,0.88,best
-78,Nets @ Grizzlies,BRK@MEM,12:10,Cameron Boozer,MEM,BRK,4+ reb & 2+ ast,R4A2,2,95.6,1.05,85,10,1.08,Sportsbet,1.05,1.05,,1.04,,0.4,,0.4,0,Pass,30.9,12,0.95,best
-79,Mavericks @ Cavaliers,DAL@CLE,11:40,Kyrie Irving,DAL,CLE,10+ pts & 2+ ast,P10A2,2,94.6,1.06,86,10,1.08,Sportsbet,1.06,1.06,,1.05,,0.3,,0.3,0,Pass,30.2,118,1.05,best
-80,Mavericks @ Cavaliers,DAL@CLE,11:40,James Harden,CLE,DAL,10+ pts & 4+ ast,P10A4,2,83.5,1.2,77,8,1.06,Sportsbet,1.2,1.2,1.18,1.17,1.18,0.3,-1.4,0.3,0,Pass,32.1,120,0.97,best
-81,Mavericks @ Cavaliers,DAL@CLE,11:40,P.J. Washington,DAL,CLE,6+ reb & 1+ threes,R6T1,2,60.1,1.66,52,6,1.07,Sportsbet,1.67,1.67,1.59,1.57,1.58,0.3,-4.5,0.3,0,Pass,32.4,120,1.05,best
-82,Nets @ Grizzlies,BRK@MEM,12:10,Julius Randle,BRK,MEM,15+ pts & 6+ reb & 2+ ast,P15R6A2,3,51.4,1.94,41,5,1.1,Sportsbet,1.95,1.95,1.83,1.93,1.88,0.3,-5.9,0.3,0,Pass,32.5,120,0.98,best
-83,Nets @ Grizzlies,BRK@MEM,12:10,Julius Randle,BRK,MEM,10+ pts & 2+ ast,P10A2,2,94.6,1.06,86,10,1.07,Sportsbet,1.06,1.06,,1.05,,0.3,,0.3,0,Pass,32.5,120,0.98,best
-84,Bulls @ Timberwolves,CHI@MIN,12:10,LaMelo Ball,MIN,CHI,4+ ast & 1+ threes,A4T1,2,94.6,1.06,78,8,1.06,Sportsbet,1.06,1.06,,1.05,,0.3,,0.3,0,Pass,27.9,120,1.08,best
-85,Mavericks @ Cavaliers,DAL@CLE,11:40,Kyrie Irving,DAL,CLE,15+ pts & 2+ ast,P15A2,2,84.9,1.18,70,8,1.07,PointsBet,1.18,1.17,1.18,1.14,1.17,-0.7,0.2,0.2,0,Pass,30.2,118,1.05,best
-86,Nuggets @ Pelicans,DEN@NOP,11:10,Jeremiah Fears,NOP,DEN,10+ pts & 4+ ast,P10A4,2,77.6,1.29,57,8,1.11,Sportsbet,1.29,1.29,1.27,1.24,1.26,0.1,-1.5,0.1,0,Pass,31.2,95,0.97,best
-87,Nets @ Grizzlies,BRK@MEM,12:10,Cameron Boozer,MEM,BRK,10+ pts & 6+ reb,P10R6,2,83.3,1.2,73,9,1.07,Sportsbet,1.2,1.2,1.19,1.19,1.17,-0.0,-0.8,-0.0,0,Pass,30.9,12,0.95,best
-88,Nets @ Grizzlies,BRK@MEM,12:10,Michael Porter Jr.,BRK,MEM,15+ pts & 4+ reb,P15R4,2,80.0,1.25,68,8,1.1,Sportsbet,1.25,1.25,1.25,1.2,1.24,0.0,0.0,0.0,0,Pass,32.4,120,0.98,best
-89,Mavericks @ Cavaliers,DAL@CLE,11:40,Cooper Flagg,DAL,CLE,4+ reb & 4+ ast,R4A4,2,81.8,1.22,69,9,1.07,PointsBet,1.22,1.2,1.22,1.17,1.22,-1.8,-0.2,-0.2,0,Pass,33.6,81,1.05,best
-90,Nets @ Grizzlies,BRK@MEM,12:10,Julius Randle,BRK,MEM,10+ pts & 4+ reb,P10R4,2,85.3,1.17,76,9,1.07,Sportsbet,1.17,1.17,,1.15,,-0.2,,-0.2,0,Pass,32.5,120,0.98,best
-91,Nuggets @ Pelicans,DEN@NOP,11:10,Cameron Johnson,DEN,NOP,2+ ast & 1+ threes,A2T1,2,57.0,1.75,57,6,1.04,Sportsbet,1.75,1.75,,1.67,,-0.2,,-0.2,0,Pass,30.5,120,1.05,best
-92,Bulls @ Timberwolves,CHI@MIN,12:10,Josh Giddey,CHI,MIN,10+ pts & 6+ reb & 4+ ast,P10R6A4,3,55.5,1.8,31,3,1.11,Sportsbet,1.8,1.8,,1.77,,-0.2,,-0.2,0,Pass,29.2,120,0.88,best
-93,Bulls @ Timberwolves,CHI@MIN,12:10,Jaden McDaniels,MIN,CHI,10+ pts & 2+ ast,P10A2,2,79.9,1.25,78,10,1.08,PointsBet,1.25,1.22,1.25,1.2,1.24,-2.6,-0.2,-0.2,0,Pass,33.9,120,1.08,best
-94,Mavericks @ Cavaliers,DAL@CLE,11:40,Cooper Flagg,DAL,CLE,4+ reb & 1+ threes,R4T1,2,75.0,1.33,63,7,1.06,PointsBet,1.33,1.3,1.33,1.27,1.31,-2.5,-0.3,-0.3,0,Pass,33.6,81,1.05,best
-95,Nets @ Grizzlies,BRK@MEM,12:10,Cameron Boozer,MEM,BRK,6+ reb & 2+ ast,R6A2,2,85.2,1.17,85,10,1.08,Sportsbet,1.17,1.17,,1.15,,-0.3,,-0.3,0,Pass,30.9,12,0.95,best
-96,Nets @ Grizzlies,BRK@MEM,12:10,Julius Randle,BRK,MEM,4+ reb & 2+ ast,R4A2,2,84.5,1.18,76,9,1.06,PointsBet,1.18,1.17,1.18,1.16,1.15,-1.2,-0.3,-0.3,0,Pass,32.5,120,0.98,best
-97,Pistons @ Heat,DET@MIA,12:10,Daniss Jenkins,DET,MIA,2+ ast & 1+ threes,A2T1,2,85.2,1.17,68,8,1.06,Sportsbet,1.17,1.17,,1.15,,-0.3,,-0.3,0,Pass,28.6,89,1.09,best
-98,Bulls @ Timberwolves,CHI@MIN,12:10,LaMelo Ball,MIN,CHI,10+ pts & 1+ threes,P10T1,2,96.8,1.03,81,8,1.07,Sportsbet,1.03,1.03,,1.03,,-0.3,,-0.3,0,Pass,27.9,120,1.08,best
-99,Bulls @ Timberwolves,CHI@MIN,12:10,LaMelo Ball,MIN,CHI,15+ pts & 1+ threes,P15T1,2,83.1,1.2,69,7,1.09,Sportsbet,1.2,1.2,,1.18,,-0.3,,-0.3,0,Pass,27.9,120,1.08,best
-100,Mavericks @ Cavaliers,DAL@CLE,11:40,Kyrie Irving,DAL,CLE,15+ pts & 1+ threes,P15T1,2,88.1,1.13,67,8,1.12,Sportsbet,1.13,1.13,,1.12,,-0.4,,-0.4,0,Pass,30.2,118,1.05,best
-101,Mavericks @ Cavaliers,DAL@CLE,11:40,Kyrie Irving,DAL,CLE,20+ pts & 2+ ast,P20A2,2,66.4,1.51,54,5,1.05,Sportsbet,1.5,1.5,1.44,1.44,1.44,-0.4,-4.4,-0.4,0,Pass,30.2,118,1.05,best
-102,Pistons @ Heat,DET@MIA,12:10,Bam Adebayo,MIA,DET,10+ pts & 6+ reb,P10R6,2,81.6,1.22,76,9,1.07,PointsBet,1.22,1.2,1.22,1.18,1.22,-2.0,-0.4,-0.4,0,Pass,34.9,120,0.87,best
-103,Bulls @ Timberwolves,CHI@MIN,12:10,Jonathan Kuminga,MIN,CHI,10+ pts & 6+ reb & 2+ ast,P10R6A2,3,35.6,2.81,31,4,1.29,Sportsbet,2.8,2.8,2.4,2.83,2.72,-0.4,-14.6,-0.4,0,Pass,30.4,120,1.08,best
-104,Nets @ Grizzlies,BRK@MEM,12:10,Julius Randle,BRK,MEM,20+ pts & 4+ reb & 2+ ast,P20R4A2,3,51.0,1.96,36,4,1.03,Sportsbet,1.95,1.95,1.83,1.92,1.9,-0.5,-6.6,-0.5,0,Pass,32.5,120,0.98,best
-105,Nets @ Grizzlies,BRK@MEM,12:10,Michael Porter Jr.,BRK,MEM,10+ pts & 2+ threes,P10T2,2,88.1,1.14,75,9,1.08,Sportsbet,1.13,1.13,,1.12,,-0.5,,-0.5,0,Pass,32.4,120,0.98,best
-106,Pistons @ Heat,DET@MIA,12:10,Davion Mitchell,MIA,DET,4+ ast & 2+ threes,A4T2,2,61.4,1.63,54,7,1.04,Sportsbet,1.62,1.62,,1.55,,-0.5,,-0.5,0,Pass,36.6,120,0.87,best
-107,Nuggets @ Pelicans,DEN@NOP,11:10,Saddiq Bey,NOP,DEN,10+ pts & 1+ threes,P10T1,2,85.1,1.18,76,8,1.07,Sportsbet,1.17,1.17,1.15,1.14,1.18,-0.5,-2.2,-0.5,0,Pass,28.6,120,0.97,best
-108,Mavericks @ Cavaliers,DAL@CLE,11:40,Donovan Mitchell,CLE,DAL,15+ pts & 1+ threes,P15T1,2,87.2,1.15,78,9,1.08,PointsBet,1.14,1.13,1.14,1.11,1.16,-1.5,-0.6,-0.6,0,Pass,31.9,120,0.97,best
-109,Nets @ Grizzlies,BRK@MEM,12:10,Julius Randle,BRK,MEM,10+ pts & 6+ reb & 2+ ast,P10R6A2,3,57.5,1.74,49,6,1.08,Sportsbet,1.73,1.73,,1.68,,-0.6,,-0.6,0,Pass,32.5,120,0.98,best
-110,Pistons @ Heat,DET@MIA,12:10,Bam Adebayo,MIA,DET,15+ pts & 8+ reb & 2+ ast,P15R8A2,3,45.2,2.21,50,7,1.09,Sportsbet,2.2,2.2,2.15,2.21,2.21,-0.6,-2.9,-0.6,0,Pass,34.9,120,0.87,best
-111,Pistons @ Heat,DET@MIA,12:10,Paul Reed,DET,MIA,10+ pts & 4+ reb & 2+ ast,P10R4A2,3,47.3,2.11,31,4,1.11,Sportsbet,2.1,2.1,,2.08,,-0.6,,-0.6,0,Pass,28.1,120,1.09,best
-112,Nuggets @ Pelicans,DEN@NOP,11:10,Jeremiah Fears,NOP,DEN,10+ pts & 1+ threes,P10T1,2,77.0,1.3,55,7,1.03,Sportsbet,1.29,1.29,1.27,1.25,1.29,-0.6,-2.1,-0.6,0,Pass,31.2,95,0.97,best
-113,Nuggets @ Pelicans,DEN@NOP,11:10,Aaron Gordon,DEN,NOP,2+ ast & 1+ threes,A2T1,2,55.2,1.81,52,5,1.07,Sportsbet,1.8,1.8,,1.72,,-0.6,,-0.6,0,Pass,29.0,120,1.05,best
-114,Nuggets @ Pelicans,DEN@NOP,11:10,Aaron Gordon,DEN,NOP,4+ reb & 1+ threes,R4T1,2,59.5,1.68,50,5,1.02,Sportsbet,1.67,1.67,,1.6,,-0.6,,-0.6,0,Pass,29.0,120,1.05,best
-115,Nuggets @ Pelicans,DEN@NOP,11:10,Jamal Murray,DEN,NOP,4+ ast & 1+ threes,A4T1,2,87.8,1.14,74,8,1.09,Sportsbet,1.13,1.13,,1.12,,-0.7,,-0.7,0,Pass,36.3,120,1.05,best
-116,Nets @ Grizzlies,BRK@MEM,12:10,Cameron Boozer,MEM,BRK,15+ pts & 4+ reb & 2+ ast,P15R4A2,3,72.9,1.37,38,5,1.07,Sportsbet,1.36,1.36,,1.35,,-0.8,,-0.8,0,Pass,30.9,12,0.95,best
-117,Nets @ Grizzlies,BRK@MEM,12:10,Cedric Coward,MEM,BRK,10+ pts & 4+ reb,P10R4,2,74.6,1.34,65,9,1.07,PointsBet,1.33,1.3,1.33,1.26,1.34,-3.0,-0.8,-0.8,0,Pass,28.5,73,0.95,best
-118,Bulls @ Timberwolves,CHI@MIN,12:10,Jaden McDaniels,MIN,CHI,4+ reb & 2+ ast,R4A2,2,72.9,1.37,69,9,1.08,PointsBet,1.36,1.33,1.36,1.3,1.35,-3.0,-0.8,-0.8,0,Pass,33.9,120,1.08,best
-119,Mavericks @ Cavaliers,DAL@CLE,11:40,Donovan Mitchell,CLE,DAL,20+ pts & 4+ reb & 4+ ast,P20R4A4,3,41.6,2.4,39,4,1.14,Sportsbet,2.38,2.38,2.2,2.35,2.44,-0.9,-8.4,-0.9,0,Pass,31.9,120,0.97,best
-120,Pistons @ Heat,DET@MIA,12:10,Bam Adebayo,MIA,DET,8+ reb & 2+ ast,R8A2,2,58.6,1.71,69,9,1.06,PointsBet,1.69,1.67,1.69,1.59,1.63,-2.1,-0.9,-0.9,0,Pass,34.9,120,0.87,best
-121,Nuggets @ Pelicans,DEN@NOP,11:10,Saddiq Bey,NOP,DEN,10+ pts & 4+ reb,P10R4,2,66.1,1.51,59,7,1.11,Sportsbet,1.5,1.5,1.44,1.47,1.44,-0.9,-4.9,-0.9,0,Pass,28.6,120,0.97,best
-122,Bulls @ Timberwolves,CHI@MIN,12:10,Jaden McDaniels,MIN,CHI,4+ reb & 1+ threes,R4T1,2,68.8,1.45,57,7,1.04,PointsBet,1.44,1.4,1.44,1.35,1.44,-3.6,-0.9,-0.9,0,Pass,33.9,120,1.08,best
-123,Mavericks @ Cavaliers,DAL@CLE,11:40,Kyrie Irving,DAL,CLE,15+ pts & 4+ ast,P15A4,2,57.2,1.75,56,6,1.08,Sportsbet,1.73,1.73,1.65,1.65,1.65,-1.0,-5.6,-1.0,0,Pass,30.2,118,1.05,best
-124,Pistons @ Heat,DET@MIA,12:10,Davion Mitchell,MIA,DET,10+ pts & 4+ ast,P10A4,2,76.2,1.31,69,9,1.07,Sportsbet,1.3,1.3,,1.27,,-1.0,,-1.0,0,Pass,36.6,120,0.87,best
-125,Bulls @ Timberwolves,CHI@MIN,12:10,Matas Buzelis,CHI,MIN,4+ reb & 1+ threes,R4T1,2,72.8,1.37,57,6,1.08,Sportsbet,1.36,1.36,1.33,1.32,1.33,-1.0,-3.2,-1.0,0,Pass,26.7,120,0.88,best
-126,Mavericks @ Cavaliers,DAL@CLE,11:40,Donovan Mitchell,CLE,DAL,15+ pts & 4+ reb & 4+ ast,P15R4A4,3,50.7,1.97,47,6,1.14,Sportsbet,1.95,1.95,1.9,1.91,2.0,-1.1,-3.6,-1.1,0,Pass,31.9,120,0.97,best
-127,Pistons @ Heat,DET@MIA,12:10,Bam Adebayo,MIA,DET,10+ pts & 2+ ast,P10A2,2,81.1,1.23,69,8,1.06,Sportsbet,1.22,1.22,1.22,1.2,1.21,-1.1,-1.1,-1.1,0,Pass,34.9,120,0.87,best
-128,Pistons @ Heat,DET@MIA,12:10,Paul Reed,DET,MIA,6+ reb & 2+ ast,R6A2,2,58.2,1.72,47,6,1.16,Sportsbet,1.7,1.7,,1.63,,-1.1,,-1.1,0,Pass,28.1,120,1.09,best
-129,Bulls @ Timberwolves,CHI@MIN,12:10,LaMelo Ball,MIN,CHI,10+ pts & 2+ threes,P10T2,2,87.6,1.14,76,7,1.06,Sportsbet,1.13,1.13,1.13,1.1,1.15,-1.1,-1.1,-1.1,0,Pass,27.9,120,1.08,best
-130,Bulls @ Timberwolves,CHI@MIN,12:10,Jaden McDaniels,MIN,CHI,15+ pts & 2+ ast,P15A2,2,59.2,1.69,59,6,1.05,Sportsbet,1.67,1.67,1.65,1.56,1.64,-1.1,-2.3,-1.1,0,Pass,33.9,120,1.08,best
-131,Pistons @ Heat,DET@MIA,12:10,Duncan Robinson,DET,MIA,10+ pts & 1+ threes,P10T1,2,82.4,1.21,83,10,1.08,Sportsbet,1.2,1.2,,1.19,,-1.2,,-1.2,0,Pass,32.2,120,1.09,best
-132,Bulls @ Timberwolves,CHI@MIN,12:10,Matas Buzelis,CHI,MIN,10+ pts & 4+ reb & 2+ ast,P10R4A2,3,48.2,2.07,42,5,1.07,Sportsbet,2.05,2.05,,2.08,,-1.2,,-1.2,0,Pass,26.7,120,0.88,best
-133,Nets @ Grizzlies,BRK@MEM,12:10,Cedric Coward,MEM,BRK,4+ reb & 2+ ast,R4A2,2,74.2,1.35,67,9,1.08,Sportsbet,1.33,1.33,1.31,1.3,1.31,-1.3,-2.8,-1.3,0,Pass,28.5,73,0.95,best
-134,Nuggets @ Pelicans,DEN@NOP,11:10,Jeremiah Fears,NOP,DEN,4+ reb & 1+ threes,R4T1,2,57.0,1.75,44,6,0.98,Sportsbet,1.73,1.73,1.69,1.63,1.65,-1.3,-3.6,-1.3,0,Pass,31.2,95,0.97,best
-135,Bulls @ Timberwolves,CHI@MIN,12:10,Josh Giddey,CHI,MIN,4+ ast & 1+ threes,A4T1,2,74.2,1.35,71,9,1.06,Sportsbet,1.33,1.33,,1.31,,-1.3,,-1.3,0,Pass,29.2,120,0.88,best
-136,Nets @ Grizzlies,BRK@MEM,12:10,Cameron Boozer,MEM,BRK,10+ pts & 8+ reb & 2+ ast,P10R8A2,3,64.5,1.55,48,6,1.07,Sportsbet,1.53,1.53,,1.52,,-1.4,,-1.4,0,Pass,30.9,12,0.95,best
-137,Nets @ Grizzlies,BRK@MEM,12:10,Julius Randle,BRK,MEM,15+ pts & 2+ ast,P15A2,2,80.8,1.24,70,8,1.07,Sportsbet,1.22,1.22,1.22,1.21,1.21,-1.4,-1.4,-1.4,0,Pass,32.5,120,0.98,best
-138,Mavericks @ Cavaliers,DAL@CLE,11:40,Peyton Watson,CLE,DAL,2+ ast & 1+ threes,A2T1,2,50.5,1.98,53,6,1.08,Sportsbet,1.95,1.95,1.83,1.86,1.86,-1.5,-7.6,-1.5,0,Pass,27.8,120,0.97,best
-139,Nuggets @ Pelicans,DEN@NOP,11:10,Jeremiah Fears,NOP,DEN,10+ pts & 4+ reb,P10R4,2,65.7,1.52,59,9,1.12,Sportsbet,1.5,1.5,1.48,1.46,1.46,-1.5,-2.8,-1.5,0,Pass,31.2,95,0.97,best
-140,Bulls @ Timberwolves,CHI@MIN,12:10,Jaden McDaniels,MIN,CHI,10+ pts & 6+ reb & 2+ ast,P10R6A2,3,46.9,2.13,60,9,1.14,Sportsbet,2.1,2.1,2.1,2.03,2.16,-1.5,-1.5,-1.5,0,Pass,33.9,120,1.08,best
-141,Bulls @ Timberwolves,CHI@MIN,12:10,Jaden McDaniels,MIN,CHI,10+ pts & 1+ threes,P10T1,2,76.4,1.31,66,8,1.07,PointsBet,1.29,1.22,1.29,1.24,1.33,-6.8,-1.5,-1.5,0,Pass,33.9,120,1.08,best
-142,Bulls @ Timberwolves,CHI@MIN,12:10,Jaden McDaniels,MIN,CHI,2+ ast & 1+ threes,A2T1,2,70.4,1.42,64,8,1.06,Sportsbet,1.4,1.4,1.4,1.35,1.39,-1.5,-1.5,-1.5,0,Pass,33.9,120,1.08,best
-143,Mavericks @ Cavaliers,DAL@CLE,11:40,James Harden,CLE,DAL,4+ ast & 2+ threes,A4T2,2,66.5,1.5,71,8,1.06,PointsBet,1.48,1.44,1.48,1.41,1.46,-4.3,-1.6,-1.6,0,Pass,32.1,120,0.97,best
-144,Nuggets @ Pelicans,DEN@NOP,11:10,Zion Williamson,NOP,DEN,15+ pts & 2+ ast,P15A2,2,72.4,1.38,76,9,1.06,Sportsbet,1.36,1.36,1.33,1.33,1.33,-1.6,-3.8,-1.6,0,Pass,32.9,120,0.97,best
-145,Nuggets @ Pelicans,DEN@NOP,11:10,Saddiq Bey,NOP,DEN,2+ ast & 1+ threes,A2T1,2,68.4,1.46,59,7,1.05,PointsBet,1.44,1.4,1.44,1.36,1.45,-4.3,-1.6,-1.6,0,Pass,28.6,120,0.97,best
-146,Bulls @ Timberwolves,CHI@MIN,12:10,Josh Giddey,CHI,MIN,10+ pts & 6+ reb & 6+ ast,P10R6A6,3,50.5,1.98,29,3,1.19,Sportsbet,1.95,1.95,1.9,1.97,1.99,-1.6,-4.1,-1.6,0,Pass,29.2,120,0.88,best
-147,Bulls @ Timberwolves,CHI@MIN,12:10,Josh Giddey,CHI,MIN,6+ ast & 1+ threes,A6T1,2,65.6,1.53,60,7,1.06,Sportsbet,1.5,1.5,1.48,1.46,1.46,-1.6,-3.0,-1.6,0,Pass,29.2,120,0.88,best
-148,Pistons @ Heat,DET@MIA,12:10,Bam Adebayo,MIA,DET,6+ reb & 2+ ast,R6A2,2,76.2,1.31,78,9,1.07,Sportsbet,1.29,1.29,1.29,1.25,1.29,-1.7,-1.7,-1.7,0,Pass,34.9,120,0.87,best
-149,Pistons @ Heat,DET@MIA,12:10,Davion Mitchell,MIA,DET,6+ ast & 1+ threes,A6T1,2,75.6,1.32,54,7,1.06,Sportsbet,1.3,1.3,1.29,1.25,1.31,-1.7,-2.5,-1.7,0,Pass,36.6,120,0.87,best
-150,Bulls @ Timberwolves,CHI@MIN,12:10,LaMelo Ball,MIN,CHI,15+ pts & 4+ reb & 4+ ast,P15R4A4,3,52.3,1.91,28,1,0.88,Sportsbet,1.88,1.88,1.8,1.76,1.85,-1.7,-5.9,-1.7,0,Pass,27.9,120,1.08,best
-151,Nets @ Grizzlies,BRK@MEM,12:10,Cameron Boozer,MEM,BRK,6+ reb & 1+ threes,R6T1,2,76.2,1.31,64,8,1.06,PointsBet,1.29,,1.29,,1.27,,-1.7,-1.7,0,Pass,30.9,12,0.95,best
-152,Mavericks @ Cavaliers,DAL@CLE,11:40,Kyrie Irving,DAL,CLE,10+ pts & 4+ reb & 2+ ast,P10R4A2,3,50.4,1.98,41,4,1.08,Sportsbet,1.95,1.95,,1.88,,-1.8,,-1.8,0,Pass,30.2,118,1.05,best
-153,Pistons @ Heat,DET@MIA,12:10,Bam Adebayo,MIA,DET,10+ pts & 8+ reb,P10R8,2,62.9,1.59,69,9,1.08,PointsBet,1.56,1.5,1.56,1.49,1.54,-5.7,-1.9,-1.9,0,Pass,34.9,120,0.87,best
-154,Mavericks @ Cavaliers,DAL@CLE,11:40,James Harden,CLE,DAL,10+ pts & 4+ reb & 6+ ast,P10R4A6,3,41.2,2.43,36,4,1.3,Sportsbet,2.38,2.38,2.2,2.38,2.38,-2.0,-9.4,-2.0,0,Pass,32.1,120,0.97,best
-155,Mavericks @ Cavaliers,DAL@CLE,11:40,Kyrie Irving,DAL,CLE,15+ pts & 4+ reb & 4+ ast,P15R4A4,3,34.0,2.94,29,3,1.16,Sportsbet,2.88,2.88,2.55,2.95,2.79,-2.0,-13.3,-2.0,0,Pass,30.2,118,1.05,best
-156,Mavericks @ Cavaliers,DAL@CLE,11:40,James Harden,CLE,DAL,10+ pts & 1+ threes,P10T1,2,86.7,1.15,83,9,1.07,Sportsbet,1.13,1.13,1.11,1.13,1.14,-2.0,-3.7,-2.0,0,Pass,32.1,120,0.97,best
-157,Mavericks @ Cavaliers,DAL@CLE,11:40,P.J. Washington,DAL,CLE,10+ pts & 6+ reb,P10R6,2,51.3,1.95,48,5,1.08,Sportsbet,1.91,1.91,1.8,1.87,1.83,-2.0,-7.6,-2.0,0,Pass,32.4,120,1.05,best
-158,Nuggets @ Pelicans,DEN@NOP,11:10,Jeremiah Fears,NOP,DEN,4+ reb & 4+ ast,R4A4,2,58.7,1.7,47,7,1.1,Sportsbet,1.67,1.67,1.65,1.61,1.6,-2.0,-3.2,-2.0,0,Pass,31.2,95,0.97,best
-159,Bulls @ Timberwolves,CHI@MIN,12:10,Ayo Dosunmu,MIN,CHI,10+ pts & 1+ threes,P10T1,2,80.3,1.25,71,7,1.06,PointsBet,1.22,1.2,1.22,1.2,1.25,-3.6,-2.0,-2.0,0,Pass,31.6,120,1.08,best
-160,Nuggets @ Pelicans,DEN@NOP,11:10,Saddiq Bey,NOP,DEN,10+ pts & 2+ ast,P10A2,2,68.0,1.47,51,5,1.01,PointsBet,1.44,1.4,1.44,1.38,1.44,-4.8,-2.1,-2.1,0,Pass,28.6,120,0.97,best
-161,Nuggets @ Pelicans,DEN@NOP,11:10,Christian Braun,DEN,NOP,2+ ast & 1+ threes,A2T1,2,57.6,1.74,49,5,1.09,Sportsbet,1.7,1.7,1.69,1.6,1.69,-2.1,-2.7,-2.1,0,Pass,34.3,120,1.05,best
-162,Nuggets @ Pelicans,DEN@NOP,11:10,Christian Braun,DEN,NOP,10+ pts & 2+ ast,P10A2,2,51.3,1.95,48,5,1.1,Sportsbet,1.91,1.91,1.83,1.8,1.86,-2.1,-6.2,-2.1,0,Pass,34.3,120,1.05,best
-163,Mavericks @ Cavaliers,DAL@CLE,11:40,Donovan Mitchell,CLE,DAL,4+ ast & 1+ threes,A4T1,2,75.2,1.33,70,8,1.06,Sportsbet,1.3,1.3,1.29,1.26,1.31,-2.2,-2.9,-2.2,0,Pass,31.9,120,0.97,best
-164,Nuggets @ Pelicans,DEN@NOP,11:10,Zion Williamson,NOP,DEN,4+ reb & 2+ ast,R4A2,2,68.9,1.45,75,9,1.07,PointsBet,1.42,1.4,1.42,1.37,1.42,-3.6,-2.2,-2.2,0,Pass,32.9,120,0.97,best
-165,Nuggets @ Pelicans,DEN@NOP,11:10,Jamal Murray,DEN,NOP,15+ pts & 2+ threes,P15T2,2,78.9,1.27,72,8,1.1,PointsBet,1.24,1.2,1.24,1.2,1.3,-5.4,-2.2,-2.2,0,Pass,36.3,120,1.05,best
-166,Bulls @ Timberwolves,CHI@MIN,12:10,Matas Buzelis,CHI,MIN,10+ pts & 1+ threes,P10T1,2,81.5,1.23,66,8,1.13,Sportsbet,1.2,1.2,1.19,1.21,1.21,-2.2,-3.1,-2.2,0,Pass,26.7,120,0.88,best
-167,Pistons @ Heat,DET@MIA,12:10,Davion Mitchell,MIA,DET,10+ pts & 6+ ast,P10A6,2,65.1,1.54,61,9,1.09,Sportsbet,1.5,1.5,1.44,1.44,1.5,-2.3,-6.2,-2.3,0,Pass,36.6,120,0.87,best
-168,Nets @ Grizzlies,BRK@MEM,12:10,Julius Randle,BRK,MEM,10+ pts & 4+ ast,P10A4,2,67.8,1.48,70,8,1.06,Sportsbet,1.44,1.44,,1.42,,-2.4,,-2.4,0,Pass,32.5,120,0.98,best
-169,Nuggets @ Pelicans,DEN@NOP,11:10,Saddiq Bey,NOP,DEN,4+ reb & 1+ threes,R4T1,2,65.9,1.52,63,7,1.05,PointsBet,1.48,1.44,1.48,1.44,1.45,-5.0,-2.4,-2.4,0,Pass,28.6,120,0.97,best
-170,Nuggets @ Pelicans,DEN@NOP,11:10,Jordan Poole,NOP,DEN,2+ ast & 1+ threes,A2T1,2,65.1,1.54,56,6,1.1,Sportsbet,1.5,1.5,1.5,1.44,1.5,-2.4,-2.4,-2.4,0,Pass,20.7,120,0.97,best
-171,Bulls @ Timberwolves,CHI@MIN,12:10,Josh Giddey,CHI,MIN,10+ pts & 4+ reb & 8+ ast,P10R4A8,3,50.0,2.0,31,4,1.27,Sportsbet,1.95,1.95,1.83,1.96,2.0,-2.4,-8.4,-2.4,0,Pass,29.2,120,0.88,best
-172,Nets @ Grizzlies,BRK@MEM,12:10,Day'Ron Sharpe,BRK,MEM,4+ reb & 2+ ast,R4A2,2,81.9,1.22,63,6,1.06,PointsBet,1.19,,1.19,,1.19,,-2.5,-2.5,0,Pass,22.6,120,0.98,best
-173,Nets @ Grizzlies,BRK@MEM,12:10,Michael Porter Jr.,BRK,MEM,10+ pts & 6+ reb,P10R6,2,69.6,1.44,67,8,1.07,Sportsbet,1.4,1.4,,1.38,,-2.6,,-2.6,0,Pass,32.4,120,0.98,best
-174,Nuggets @ Pelicans,DEN@NOP,11:10,Zion Williamson,NOP,DEN,10+ pts & 4+ reb,P10R4,2,79.8,1.25,78,9,1.07,Sportsbet,1.22,1.22,,1.22,,-2.6,,-2.6,0,Pass,32.9,120,0.97,best
-175,Nuggets @ Pelicans,DEN@NOP,11:10,Cameron Johnson,DEN,NOP,10+ pts & 2+ ast,P10A2,2,46.4,2.16,45,5,1.1,Sportsbet,2.1,2.1,,2.03,,-2.6,,-2.6,0,Pass,30.5,120,1.05,best
-176,Nets @ Grizzlies,BRK@MEM,12:10,Michael Porter Jr.,BRK,MEM,6+ reb & 1+ threes,R6T1,2,69.5,1.44,64,8,1.1,Sportsbet,1.4,1.4,,1.38,,-2.7,,-2.7,0,Pass,32.4,120,0.98,best
-177,Nuggets @ Pelicans,DEN@NOP,11:10,Zion Williamson,NOP,DEN,10+ pts & 6+ reb & 2+ ast,P10R6A2,3,43.2,2.31,33,4,1.07,Sportsbet,2.25,2.25,,2.2,,-2.7,,-2.7,0,Pass,32.9,120,0.97,best
-178,Bulls @ Timberwolves,CHI@MIN,12:10,Josh Giddey,CHI,MIN,4+ reb & 1+ threes,R4T1,2,67.6,1.48,55,6,1.03,PointsBet,1.44,,1.44,,1.41,,-2.7,-2.7,0,Pass,29.2,120,0.88,best
-179,Mavericks @ Cavaliers,DAL@CLE,11:40,Kyrie Irving,DAL,CLE,10+ pts & 2+ threes,P10T2,2,83.1,1.2,72,8,1.07,Sportsbet,1.17,1.17,,1.18,,-2.8,,-2.8,0,Pass,30.2,118,1.05,best
-180,Pistons @ Heat,DET@MIA,12:10,Ausar Thompson,DET,MIA,6+ reb & 2+ ast,R6A2,2,69.5,1.44,61,8,1.06,Sportsbet,1.4,1.4,1.36,1.38,1.38,-2.8,-5.5,-2.8,0,Pass,28.7,120,1.09,best
-181,Nets @ Grizzlies,BRK@MEM,12:10,Cameron Boozer,MEM,BRK,6+ reb & 4+ ast,R6A4,2,69.4,1.44,69,8,1.07,Sportsbet,1.4,1.4,1.4,1.38,1.39,-2.9,-2.9,-2.9,0,Pass,30.9,12,0.95,best
-182,Nets @ Grizzlies,BRK@MEM,12:10,Cam Spencer,MEM,BRK,4+ ast & 1+ threes,A4T1,2,83.7,1.19,57,7,1.04,PointsBet,1.16,,1.16,,1.17,,-2.9,-2.9,0,Pass,20.5,109,0.95,best
-183,Mavericks @ Cavaliers,DAL@CLE,11:40,P.J. Washington,DAL,CLE,10+ pts & 4+ reb,P10R4,2,68.2,1.47,65,7,1.05,PointsBet,1.42,1.4,1.42,1.4,1.42,-4.5,-3.1,-3.1,0,Pass,32.4,120,1.05,best
-184,Nuggets @ Pelicans,DEN@NOP,11:10,Zion Williamson,NOP,DEN,20+ pts & 4+ reb & 2+ ast,P20R4A2,3,44.0,2.27,51,7,1.11,Sportsbet,2.2,2.2,2.1,2.22,2.31,-3.1,-7.5,-3.1,0,Pass,32.9,120,0.97,best
-185,Bulls @ Timberwolves,CHI@MIN,12:10,Jaden McDaniels,MIN,CHI,10+ pts & 6+ reb,P10R6,2,51.0,1.96,69,9,1.09,PointsBet,1.9,1.8,1.9,1.78,1.9,-8.2,-3.1,-3.1,0,Pass,33.9,120,1.08,best
-186,Nets @ Grizzlies,BRK@MEM,12:10,Julius Randle,BRK,MEM,15+ pts & 4+ reb,P15R4,2,75.1,1.33,61,7,1.04,PointsBet,1.29,,1.29,,1.29,,-3.1,-3.1,0,Pass,32.5,120,0.98,best
-187,Pistons @ Heat,DET@MIA,12:10,Paul Reed,DET,MIA,4+ reb & 2+ ast,R4A2,2,69.1,1.45,56,7,1.08,Sportsbet,1.4,1.4,,1.39,,-3.3,,-3.3,0,Pass,28.1,120,1.09,best
-188,Bulls @ Timberwolves,CHI@MIN,12:10,Matas Buzelis,CHI,MIN,10+ pts & 4+ reb,P10R4,2,71.1,1.41,61,6,1.09,Sportsbet,1.36,1.36,1.36,1.37,1.35,-3.3,-3.3,-3.3,0,Pass,26.7,120,0.88,best
-189,Bulls @ Timberwolves,CHI@MIN,12:10,Nic Claxton,CHI,MIN,4+ reb & 2+ ast,R4A2,2,49.5,2.02,63,8,1.07,Sportsbet,1.95,1.95,,1.9,,-3.4,,-3.4,0,Pass,21.3,120,0.88,best
-190,Bulls @ Timberwolves,CHI@MIN,12:10,Matas Buzelis,CHI,MIN,10+ pts & 2+ ast,P10A2,2,55.8,1.79,58,7,1.04,Sportsbet,1.73,1.73,,1.7,,-3.4,,-3.4,0,Pass,26.7,120,0.88,best
-191,Pistons @ Heat,DET@MIA,12:10,Daniss Jenkins,DET,MIA,4+ ast & 1+ threes,A4T1,2,67.0,1.49,55,6,1.05,Sportsbet,1.44,1.44,1.44,1.41,1.45,-3.5,-3.5,-3.5,0,Pass,28.6,89,1.09,best
-192,Bulls @ Timberwolves,CHI@MIN,12:10,Jaden McDaniels,MIN,CHI,10+ pts & 4+ reb & 4+ ast,P10R4A4,3,38.6,2.59,30,5,1.15,Sportsbet,2.5,2.5,2.4,2.45,2.57,-3.5,-7.3,-3.5,0,Pass,33.9,120,1.08,best
-193,Mavericks @ Cavaliers,DAL@CLE,11:40,P.J. Washington,DAL,CLE,4+ reb & 2+ threes,R4T2,2,55.7,1.79,59,7,1.11,Sportsbet,1.73,1.73,1.69,1.68,1.68,-3.6,-5.8,-3.6,0,Pass,32.4,120,1.05,best
-194,Nets @ Grizzlies,BRK@MEM,12:10,Michael Porter Jr.,BRK,MEM,6+ reb & 2+ threes,R6T2,2,60.6,1.65,62,8,1.11,PointsBet,1.59,,1.59,,1.55,,-3.6,-3.6,0,Pass,32.4,120,0.98,best
-195,Mavericks @ Cavaliers,DAL@CLE,11:40,Kyrie Irving,DAL,CLE,10+ pts & 4+ ast,P10A4,2,62.9,1.59,66,7,1.07,Sportsbet,1.53,1.53,,1.52,,-3.7,,-3.7,0,Pass,30.2,118,1.05,best
-196,Nets @ Grizzlies,BRK@MEM,12:10,Michael Porter Jr.,BRK,MEM,15+ pts & 2+ threes,P15T2,2,77.1,1.3,67,8,1.1,Sportsbet,1.25,1.25,1.25,1.25,1.3,-3.7,-3.7,-3.7,0,Pass,32.4,120,0.98,best
-197,Pistons @ Heat,DET@MIA,12:10,Ausar Thompson,DET,MIA,10+ pts & 4+ reb & 2+ ast,P10R4A2,3,53.5,1.87,45,6,1.14,Sportsbet,1.8,1.8,1.8,1.8,1.88,-3.7,-3.7,-3.7,0,Pass,28.7,120,1.09,best
-198,Pistons @ Heat,DET@MIA,12:10,Ausar Thompson,DET,MIA,10+ pts & 4+ reb,P10R4,2,53.5,1.87,50,6,1.09,Sportsbet,1.8,1.8,1.77,1.73,1.79,-3.7,-5.3,-3.7,0,Pass,28.7,120,1.09,best
-199,Nuggets @ Pelicans,DEN@NOP,11:10,Zion Williamson,NOP,DEN,15+ pts & 4+ reb,P15R4,2,68.8,1.45,69,8,1.06,Sportsbet,1.4,1.4,1.4,1.4,1.4,-3.7,-3.7,-3.7,0,Pass,32.9,120,0.97,best
-200,Nuggets @ Pelicans,DEN@NOP,11:10,Aaron Gordon,DEN,NOP,10+ pts & 4+ reb,P10R4,2,56.3,1.78,45,4,1.08,PointsBet,1.71,1.67,1.71,1.64,1.75,-6.0,-3.7,-3.7,0,Pass,29.0,120,1.05,best
-201,Bulls @ Timberwolves,CHI@MIN,12:10,Norman Powell,CHI,MIN,15+ pts & 1+ threes,P15T1,2,74.7,1.34,68,9,1.12,Sportsbet,1.29,1.29,1.27,1.29,1.33,-3.7,-5.2,-3.7,0,Pass,28.5,120,0.88,best
-202,Mavericks @ Cavaliers,DAL@CLE,11:40,Kyrie Irving,DAL,CLE,20+ pts & 1+ threes,P20T1,2,68.7,1.46,52,5,1.1,Sportsbet,1.4,1.4,,1.41,,-3.8,,-3.8,0,Pass,30.2,118,1.05,best
-203,Pistons @ Heat,DET@MIA,12:10,Daniss Jenkins,DET,MIA,4+ reb & 1+ threes,R4T1,2,43.7,2.29,45,5,1.08,Sportsbet,2.2,2.2,2.05,2.12,2.09,-3.8,-10.3,-3.8,0,Pass,28.6,89,1.09,best
-204,Mavericks @ Cavaliers,DAL@CLE,11:40,Kyrie Irving,DAL,CLE,4+ ast & 2+ threes,A4T2,2,53.4,1.87,58,7,1.13,Sportsbet,1.8,1.8,1.74,1.75,1.77,-3.9,-7.1,-3.9,0,Pass,30.2,118,1.05,best
-205,Mavericks @ Cavaliers,DAL@CLE,11:40,Jarrett Allen,CLE,DAL,10+ pts & 6+ reb,P10R6,2,68.6,1.46,62,7,1.1,PointsBet,1.4,1.36,1.4,1.39,1.42,-6.7,-4.0,-4.0,0,Pass,25.6,120,0.97,best
-206,Nuggets @ Pelicans,DEN@NOP,11:10,Aaron Gordon,DEN,NOP,4+ reb & 2+ ast,R4A2,2,53.3,1.88,54,6,1.06,Sportsbet,1.8,1.8,1.8,1.77,1.75,-4.0,-4.0,-4.0,0,Pass,29.0,120,1.05,best
-207,Nets @ Grizzlies,BRK@MEM,12:10,Cedric Coward,MEM,BRK,6+ reb & 1+ threes,R6T1,2,62.7,1.59,62,9,1.06,PointsBet,1.53,,1.53,,1.5,,-4.0,-4.0,0,Pass,28.5,73,0.95,best
-208,Pistons @ Heat,DET@MIA,12:10,Ausar Thompson,DET,MIA,4+ reb & 4+ ast,R4A4,2,62.7,1.6,56,6,1.03,Sportsbet,1.53,1.53,1.53,1.49,1.54,-4.1,-4.1,-4.1,0,Pass,28.7,120,1.09,best
-209,Nets @ Grizzlies,BRK@MEM,12:10,Julius Randle,BRK,MEM,15+ pts & 6+ reb & 4+ ast,P15R6A4,3,38.3,2.61,31,3,0.99,Sportsbet,2.5,2.5,2.3,2.6,2.53,-4.3,-11.9,-4.3,0,Pass,32.5,120,0.98,best
-210,Nuggets @ Pelicans,DEN@NOP,11:10,Jeremiah Fears,NOP,DEN,4+ ast & 1+ threes,A4T1,2,68.4,1.46,44,5,1.0,Sportsbet,1.4,1.4,1.4,1.38,1.43,-4.3,-4.3,-4.3,0,Pass,31.2,95,0.97,best
-211,Pistons @ Heat,DET@MIA,12:10,Ausar Thompson,DET,MIA,10+ pts & 6+ reb & 2+ ast,P10R6A2,3,43.5,2.3,37,6,1.19,Sportsbet,2.2,2.2,2.15,2.24,2.3,-4.4,-6.6,-4.4,0,Pass,28.7,120,1.09,best
-212,Nuggets @ Pelicans,DEN@NOP,11:10,Jamal Murray,DEN,NOP,20+ pts & 4+ reb & 4+ ast,P20R4A4,3,41.6,2.41,36,3,1.05,Sportsbet,2.3,2.3,2.3,2.27,2.52,-4.4,-4.4,-4.4,0,Pass,36.3,120,1.05,best
-213,Nuggets @ Pelicans,DEN@NOP,11:10,Zion Williamson,NOP,DEN,20+ pts & 2+ ast,P20A2,2,50.1,2.0,61,7,1.05,Sportsbet,1.91,1.91,1.83,1.85,1.89,-4.4,-8.4,-4.4,0,Pass,32.9,120,0.97,best
-214,Nuggets @ Pelicans,DEN@NOP,11:10,Saddiq Bey,NOP,DEN,4+ reb & 2+ threes,R4T2,2,50.0,2.0,44,4,1.07,Sportsbet,1.91,1.91,1.83,1.86,1.86,-4.4,-8.5,-4.4,0,Pass,28.6,120,0.97,best
-215,Nets @ Grizzlies,BRK@MEM,12:10,Michael Porter Jr.,BRK,MEM,15+ pts & 6+ reb,P15R6,2,61.3,1.63,60,7,1.09,PointsBet,1.56,,1.56,,1.55,,-4.4,-4.4,0,Pass,32.4,120,0.98,best
-216,Nuggets @ Pelicans,DEN@NOP,11:10,Cameron Johnson,DEN,NOP,4+ reb & 1+ threes,R4T1,2,46.6,2.15,53,6,1.04,Sportsbet,2.05,2.05,1.95,2.01,1.96,-4.5,-9.1,-4.5,0,Pass,30.5,120,1.05,best
-217,Mavericks @ Cavaliers,DAL@CLE,11:40,James Harden,CLE,DAL,15+ pts & 4+ reb & 6+ ast,P15R4A6,3,33.1,3.02,26,2,1.2,Sportsbet,2.88,2.88,2.6,3.07,2.95,-4.7,-14.0,-4.7,0,Pass,32.1,120,0.97,best
-218,Nets @ Grizzlies,BRK@MEM,12:10,Egor Dëmin,BRK,MEM,2+ ast & 1+ threes,A2T1,2,68.1,1.47,51,6,1.02,PointsBet,1.4,,1.4,,1.4,,-4.7,-4.7,0,Pass,24.1,57,0.98,best
-219,Mavericks @ Cavaliers,DAL@CLE,11:40,Donovan Mitchell,CLE,DAL,15+ pts & 2+ threes,P15T2,2,71.6,1.4,63,7,1.11,PointsBet,1.33,1.3,1.33,1.33,1.41,-7.0,-4.8,-4.8,0,Pass,31.9,120,0.97,best
-220,Nets @ Grizzlies,BRK@MEM,12:10,Cameron Boozer,MEM,BRK,10+ pts & 10+ reb & 2+ ast,P10R10A2,3,45.3,2.21,38,4,1.03,Sportsbet,2.1,2.1,,2.11,,-4.8,,-4.8,0,Pass,30.9,12,0.95,best
-221,Pistons @ Heat,DET@MIA,12:10,Davion Mitchell,MIA,DET,6+ ast & 2+ threes,A6T2,2,52.9,1.89,48,7,1.05,Sportsbet,1.8,1.8,1.74,1.75,1.81,-4.8,-8.0,-4.8,0,Pass,36.6,120,0.87,best
-222,Bulls @ Timberwolves,CHI@MIN,12:10,Jaden McDaniels,MIN,CHI,15+ pts & 6+ reb & 2+ ast,P15R6A2,3,36.2,2.76,44,5,1.08,Sportsbet,2.63,2.63,2.6,2.66,2.86,-4.8,-5.9,-4.8,0,Pass,33.9,120,1.08,best
-223,Bulls @ Timberwolves,CHI@MIN,12:10,LaMelo Ball,MIN,CHI,10+ pts & 3+ threes,P10T3,2,70.0,1.43,68,7,1.09,PointsBet,1.36,1.3,1.36,1.35,1.41,-9.0,-4.8,-4.8,0,Pass,27.9,120,1.08,best
-224,Bulls @ Timberwolves,CHI@MIN,12:10,Jalen Smith,CHI,MIN,10+ pts & 4+ reb,P10R4,2,68.0,1.47,56,6,1.1,Sportsbet,1.4,1.4,1.4,1.38,1.44,-4.8,-4.8,-4.8,0,Pass,25.2,120,0.88,best
-225,Nets @ Grizzlies,BRK@MEM,12:10,Cedric Coward,MEM,BRK,2+ ast & 1+ threes,A2T1,2,70.0,1.43,62,8,1.05,PointsBet,1.36,,1.36,,1.37,,-4.8,-4.8,0,Pass,28.5,73,0.95,best
-226,Pistons @ Heat,DET@MIA,12:10,Daniss Jenkins,DET,MIA,10+ pts & 4+ reb & 2+ ast,P10R4A2,3,41.4,2.42,30,4,1.19,Sportsbet,2.3,2.3,,2.34,,-4.9,,-4.9,0,Pass,28.6,89,1.09,best
-227,Pistons @ Heat,DET@MIA,12:10,John Collins,DET,MIA,10+ pts & 4+ reb,P10R4,2,55.6,1.8,46,4,1.08,PointsBet,1.71,1.67,1.71,1.65,1.77,-7.1,-4.9,-4.9,0,Pass,26.4,120,1.09,best
-228,Pistons @ Heat,DET@MIA,12:10,Duncan Robinson,DET,MIA,2+ ast & 2+ threes,A2T2,2,57.7,1.73,74,9,1.06,PointsBet,1.65,,1.65,,1.63,,-4.9,-4.9,0,Pass,32.2,120,1.09,best
-229,Mavericks @ Cavaliers,DAL@CLE,11:40,Kyrie Irving,DAL,CLE,15+ pts & 2+ threes,P15T2,2,76.0,1.32,62,7,1.11,PointsBet,1.25,1.22,1.25,1.29,1.3,-7.2,-5.0,-5.0,0,Pass,30.2,118,1.05,best
-230,Nuggets @ Pelicans,DEN@NOP,11:10,Cameron Johnson,DEN,NOP,2+ ast & 2+ threes,A2T2,2,39.6,2.53,46,4,1.05,Sportsbet,2.4,2.4,,2.37,,-5.0,,-5.0,0,Pass,30.5,120,1.05,best
-231,Bulls @ Timberwolves,CHI@MIN,12:10,LaMelo Ball,MIN,CHI,15+ pts & 2+ threes,P15T2,2,76.0,1.32,67,7,1.12,PointsBet,1.25,1.22,1.25,1.26,1.32,-7.2,-5.0,-5.0,0,Pass,27.9,120,1.08,best
-232,Pistons @ Heat,DET@MIA,12:10,Ausar Thompson,DET,MIA,10+ pts & 2+ ast,P10A2,2,54.5,1.83,51,6,1.04,PointsBet,1.74,1.73,1.74,1.68,1.75,-5.6,-5.1,-5.1,0,Pass,28.7,120,1.09,best
-233,Nets @ Grizzlies,BRK@MEM,12:10,Julius Randle,BRK,MEM,6+ reb & 2+ ast,R6A2,2,57.5,1.74,54,6,1.05,PointsBet,1.65,,1.65,,1.62,,-5.1,-5.1,0,Pass,32.5,120,0.98,best
-234,Nets @ Grizzlies,BRK@MEM,12:10,Cedric Coward,MEM,BRK,15+ pts & 4+ reb & 2+ ast,P15R4A2,3,39.5,2.53,30,5,1.08,PointsBet,2.4,2.38,2.4,2.37,2.61,-6.0,-5.2,-5.2,0,Pass,28.5,73,0.95,best
-235,Pistons @ Heat,DET@MIA,12:10,Ausar Thompson,DET,MIA,10+ pts & 4+ reb & 4+ ast,P10R4A4,3,39.5,2.53,32,4,1.11,Sportsbet,2.4,2.4,2.35,2.41,2.57,-5.2,-7.2,-5.2,0,Pass,28.7,120,1.09,best
-236,Nets @ Grizzlies,BRK@MEM,12:10,Cedric Coward,MEM,BRK,10+ pts & 6+ reb,P10R6,2,57.4,1.74,61,9,1.06,PointsBet,1.65,,1.65,,1.65,,-5.2,-5.2,0,Pass,28.5,73,0.95,best
-237,Mavericks @ Cavaliers,DAL@CLE,11:40,P.J. Washington,DAL,CLE,10+ pts & 4+ reb & 2+ ast,P10R4A2,3,32.9,3.04,26,3,1.13,Sportsbet,2.88,2.88,,3.0,,-5.3,,-5.3,0,Pass,32.4,120,1.05,best
-238,Pistons @ Heat,DET@MIA,12:10,Bam Adebayo,MIA,DET,10+ pts & 6+ reb & 4+ ast,P10R6A4,3,39.5,2.53,37,5,1.12,Sportsbet,2.4,2.4,2.35,2.41,2.5,-5.3,-7.3,-5.3,0,Pass,34.9,120,0.87,best
-239,Nuggets @ Pelicans,DEN@NOP,11:10,Cameron Johnson,DEN,NOP,10+ pts & 4+ reb & 2+ ast,P10R4A2,3,27.1,3.7,26,3,1.12,Sportsbet,3.5,3.5,,3.74,,-5.3,,-5.3,0,Pass,30.5,120,1.05,best
-240,Nets @ Grizzlies,BRK@MEM,12:10,Cedric Coward,MEM,BRK,10+ pts & 2+ ast,P10A2,2,63.2,1.58,61,8,1.04,PointsBet,1.5,,1.5,,1.5,,-5.3,-5.3,0,Pass,28.5,73,0.95,best
-241,Pistons @ Heat,DET@MIA,12:10,Bam Adebayo,MIA,DET,15+ pts & 6+ reb,P15R6,2,61.9,1.62,66,8,1.06,Sportsbet,1.53,1.53,1.53,1.54,1.55,-5.4,-5.4,-5.4,0,Pass,34.9,120,0.87,best
-242,Bulls @ Timberwolves,CHI@MIN,12:10,Jaden McDaniels,MIN,CHI,6+ reb & 2+ ast,R6A2,2,47.3,2.11,66,9,1.08,Sportsbet,2.0,2.0,1.95,1.94,1.98,-5.4,-7.8,-5.4,0,Pass,33.9,120,1.08,best
-243,Mavericks @ Cavaliers,DAL@CLE,11:40,Donovan Mitchell,CLE,DAL,15+ pts & 4+ reb & 6+ ast,P15R4A6,3,29.5,3.38,33,5,1.15,Sportsbet,3.2,3.2,2.9,3.32,3.23,-5.5,-14.3,-5.5,0,Pass,31.9,120,0.97,best
-244,Nuggets @ Pelicans,DEN@NOP,11:10,Zion Williamson,NOP,DEN,15+ pts & 6+ reb & 2+ ast,P15R6A2,3,39.4,2.54,28,3,0.98,Sportsbet,2.4,2.4,2.35,2.52,2.44,-5.5,-7.4,-5.5,0,Pass,32.9,120,0.97,best
-245,Pistons @ Heat,DET@MIA,12:10,Klay Thompson,MIA,DET,10+ pts & 1+ threes,P10T1,2,71.0,1.41,62,7,1.06,Sportsbet,1.33,1.33,,1.37,,-5.6,,-5.6,0,Pass,25.6,120,0.87,best
-246,Pistons @ Heat,DET@MIA,12:10,Davion Mitchell,MIA,DET,15+ pts & 4+ ast,P15A4,2,42.9,2.33,49,7,1.06,Sportsbet,2.2,2.2,,2.16,,-5.6,,-5.6,0,Pass,36.6,120,0.87,best
-247,Nets @ Grizzlies,BRK@MEM,12:10,Nolan Traoré,BRK,MEM,2+ ast & 1+ threes,A2T1,2,65.6,1.53,61,7,1.11,PointsBet,1.44,,1.44,,1.45,,-5.6,-5.6,0,Pass,22.1,66,0.98,best
-248,Bulls @ Timberwolves,CHI@MIN,12:10,Jonathan Kuminga,MIN,CHI,10+ pts & 4+ reb,P10R4,2,66.5,1.5,51,6,1.1,PointsBet,1.42,,1.42,,1.44,,-5.6,-5.6,0,Pass,30.4,120,1.08,best
-249,Nets @ Grizzlies,BRK@MEM,12:10,Julius Randle,BRK,MEM,10+ pts & 6+ reb & 4+ ast,P10R6A4,3,41.9,2.38,38,4,1.0,Sportsbet,2.25,2.25,,2.27,,-5.7,,-5.7,0,Pass,32.5,120,0.98,best
-250,Nets @ Grizzlies,BRK@MEM,12:10,Julius Randle,BRK,MEM,4+ reb & 4+ ast,R4A4,2,60.5,1.65,62,7,1.04,PointsBet,1.56,,1.56,,1.55,,-5.7,-5.7,0,Pass,32.5,120,0.98,best
-251,Mavericks @ Cavaliers,DAL@CLE,11:40,James Harden,CLE,DAL,15+ pts & 1+ threes,P15T1,2,67.3,1.49,62,6,1.05,Sportsbet,1.4,1.4,1.36,1.46,1.42,-5.8,-8.4,-5.8,0,Pass,32.1,120,0.97,best
-252,Pistons @ Heat,DET@MIA,12:10,Duncan Robinson,DET,MIA,15+ pts & 1+ threes,P15T1,2,54.5,1.84,54,6,1.05,Sportsbet,1.73,1.73,,1.74,,-5.8,,-5.8,0,Pass,32.2,120,1.09,best
-253,Mavericks @ Cavaliers,DAL@CLE,11:40,Peyton Watson,CLE,DAL,4+ reb & 2+ ast,R4A2,2,44.8,2.23,54,6,1.09,Sportsbet,2.1,2.1,1.95,2.11,2.02,-5.9,-12.6,-5.9,0,Pass,27.8,120,0.97,best
-254,Nuggets @ Pelicans,DEN@NOP,11:10,Saddiq Bey,NOP,DEN,15+ pts & 1+ threes,P15T1,2,66.2,1.51,58,6,1.05,PointsBet,1.42,1.4,1.42,1.45,1.48,-7.3,-6.0,-6.0,0,Pass,28.6,120,0.97,best
-255,Nets @ Grizzlies,BRK@MEM,12:10,Michael Porter Jr.,BRK,MEM,10+ pts & 3+ threes,P10T3,2,67.1,1.49,66,8,1.07,Sportsbet,1.4,1.4,,1.43,,-6.1,,-6.1,0,Pass,32.4,120,0.98,best
-256,Mavericks @ Cavaliers,DAL@CLE,11:40,Jarrett Allen,CLE,DAL,10+ pts & 8+ reb,P10R8,2,54.2,1.84,47,5,1.06,Sportsbet,1.73,1.73,1.71,1.74,1.77,-6.2,-7.3,-6.2,0,Pass,25.6,120,0.97,best
-257,Mavericks @ Cavaliers,DAL@CLE,11:40,Peyton Watson,CLE,DAL,10+ pts & 4+ reb,P10R4,2,53.0,1.89,41,4,1.05,PointsBet,1.77,,1.77,,1.78,,-6.2,-6.2,0,Pass,27.8,120,0.97,best
-258,Bulls @ Timberwolves,CHI@MIN,12:10,Jaden McDaniels,MIN,CHI,15+ pts & 4+ reb,P15R4,2,55.5,1.8,54,5,1.04,PointsBet,1.69,,1.69,,1.7,,-6.2,-6.2,0,Pass,33.9,120,1.08,best
-259,Mavericks @ Cavaliers,DAL@CLE,11:40,Peyton Watson,CLE,DAL,4+ reb & 1+ threes,R4T1,2,51.2,1.95,46,4,1.04,PointsBet,1.83,,1.83,,1.81,,-6.3,-6.3,0,Pass,27.8,120,0.97,best
-260,Pistons @ Heat,DET@MIA,12:10,Daniss Jenkins,DET,MIA,10+ pts & 4+ reb & 4+ ast,P10R4A4,3,34.7,2.88,27,4,1.35,Sportsbet,2.7,2.7,2.6,2.87,2.84,-6.4,-9.9,-6.4,0,Pass,28.6,89,1.09,best
-261,Bulls @ Timberwolves,CHI@MIN,12:10,Jonathan Kuminga,MIN,CHI,4+ reb & 2+ ast,R4A2,2,62.4,1.6,50,5,1.11,PointsBet,1.5,,1.5,,1.51,,-6.4,-6.4,0,Pass,30.4,120,1.08,best
-262,Pistons @ Heat,DET@MIA,12:10,Duncan Robinson,DET,MIA,10+ pts & 2+ threes,P10T2,2,74.7,1.34,81,10,1.1,Sportsbet,1.25,1.25,1.22,1.3,1.33,-6.6,-8.9,-6.6,0,Pass,32.2,120,1.09,best
-263,Pistons @ Heat,DET@MIA,12:10,Ausar Thompson,DET,MIA,8+ reb & 2+ ast,R8A2,2,44.5,2.25,47,6,1.05,Sportsbet,2.1,2.1,2.05,2.09,2.05,-6.6,-8.8,-6.6,0,Pass,28.7,120,1.09,best
-264,Mavericks @ Cavaliers,DAL@CLE,11:40,P.J. Washington,DAL,CLE,10+ pts & 1+ threes,P10T1,2,68.6,1.46,66,7,1.07,Sportsbet,1.36,1.36,1.33,1.42,1.43,-6.7,-8.8,-6.7,0,Pass,32.4,120,1.05,best
-265,Mavericks @ Cavaliers,DAL@CLE,11:40,Naji Marshall,DAL,CLE,10+ pts & 2+ ast,P10A2,2,46.6,2.14,54,5,1.06,Sportsbet,2.0,2.0,1.9,2.0,2.0,-6.7,-11.4,-6.7,0,Pass,24.1,120,1.05,best
-266,Pistons @ Heat,DET@MIA,12:10,Davion Mitchell,MIA,DET,10+ pts & 8+ ast,P10A8,2,45.5,2.2,51,8,1.1,Sportsbet,2.05,2.05,1.9,2.03,2.07,-6.7,-13.6,-6.7,0,Pass,36.6,120,0.87,best
-267,Nuggets @ Pelicans,DEN@NOP,11:10,Saddiq Bey,NOP,DEN,15+ pts & 4+ reb,P15R4,2,51.8,1.93,45,5,1.06,Sportsbet,1.8,1.8,1.77,1.86,1.81,-6.8,-8.3,-6.8,0,Pass,28.6,120,0.97,best
-268,Nuggets @ Pelicans,DEN@NOP,11:10,Christian Braun,DEN,NOP,10+ pts & 4+ reb & 2+ ast,P10R4A2,3,35.4,2.82,29,2,1.07,Sportsbet,2.63,2.63,2.6,2.69,2.96,-6.9,-8.0,-6.9,0,Pass,34.3,120,1.05,best
-269,Nuggets @ Pelicans,DEN@NOP,11:10,Christian Braun,DEN,NOP,4+ reb & 2+ ast,R4A2,2,46.6,2.15,45,4,1.06,PointsBet,2.0,1.95,2.0,1.91,2.08,-9.2,-6.9,-6.9,0,Pass,34.3,120,1.05,best
-270,Pistons @ Heat,DET@MIA,12:10,Duncan Robinson,DET,MIA,10+ pts & 2+ ast,P10A2,2,55.0,1.82,73,9,1.06,PointsBet,1.69,,1.69,,1.7,,-7.0,-7.0,0,Pass,32.2,120,1.09,best
-271,Mavericks @ Cavaliers,DAL@CLE,11:40,Kyrie Irving,DAL,CLE,10+ pts & 4+ reb & 4+ ast,P10R4A4,3,34.4,2.91,32,3,1.07,Sportsbet,2.7,2.7,,2.71,,-7.1,,-7.1,0,Pass,30.2,118,1.05,best
-272,Pistons @ Heat,DET@MIA,12:10,Daniss Jenkins,DET,MIA,10+ pts & 1+ threes,P10T1,2,70.9,1.41,55,7,1.13,PointsBet,1.31,1.3,1.31,1.38,1.39,-7.8,-7.1,-7.1,0,Pass,28.6,89,1.09,best
-273,Pistons @ Heat,DET@MIA,12:10,Paul Reed,DET,MIA,10+ pts & 4+ reb,P10R4,2,60.5,1.65,48,6,1.04,Sportsbet,1.53,1.53,1.53,1.55,1.59,-7.4,-7.4,-7.4,0,Pass,28.1,120,1.09,best
-274,Pistons @ Heat,DET@MIA,12:10,Davion Mitchell,MIA,DET,10+ pts & 1+ threes,P10T1,2,70.6,1.42,63,8,1.08,PointsBet,1.31,1.3,1.31,1.36,1.41,-8.2,-7.5,-7.5,0,Pass,36.6,120,0.87,best
-275,Pistons @ Heat,DET@MIA,12:10,Bam Adebayo,MIA,DET,15+ pts & 8+ reb,P15R8,2,48.4,2.07,60,8,1.07,Sportsbet,1.91,1.91,1.9,1.96,1.96,-7.5,-8.0,-7.5,0,Pass,34.9,120,0.87,best
-276,Nets @ Grizzlies,BRK@MEM,12:10,Cedric Coward,MEM,BRK,6+ reb & 2+ ast,R6A2,2,58.2,1.72,63,9,1.07,PointsBet,1.59,,1.59,,1.61,,-7.5,-7.5,0,Pass,28.5,73,0.95,best
-277,Nets @ Grizzlies,BRK@MEM,12:10,Day'Ron Sharpe,BRK,MEM,10+ pts & 4+ reb & 2+ ast,P10R4A2,3,37.0,2.71,30,3,1.15,Sportsbet,2.5,2.5,2.4,2.59,2.67,-7.6,-11.3,-7.6,0,Pass,22.6,120,0.98,best
-278,Nuggets @ Pelicans,DEN@NOP,11:10,Aaron Gordon,DEN,NOP,15+ pts & 4+ reb & 2+ ast,P15R4A2,3,24.6,4.06,25,2,1.08,Sportsbet,3.75,3.75,3.4,4.06,4.04,-7.6,-16.2,-7.6,0,Pass,29.0,120,1.05,best
-279,Mavericks @ Cavaliers,DAL@CLE,11:40,Donovan Mitchell,CLE,DAL,20+ pts & 4+ reb & 6+ ast,P20R4A6,3,24.6,4.06,27,3,1.1,Sportsbet,3.75,3.75,3.3,4.09,3.94,-7.7,-18.8,-7.7,0,Pass,31.9,120,0.97,best
-280,Nuggets @ Pelicans,DEN@NOP,11:10,Jamal Murray,DEN,NOP,15+ pts & 4+ reb & 6+ ast,P15R4A6,3,36.2,2.77,38,4,1.09,PointsBet,2.55,2.5,2.55,2.53,2.88,-9.6,-7.8,-7.8,0,Pass,36.3,120,1.05,best
-281,Nuggets @ Pelicans,DEN@NOP,11:10,Cameron Johnson,DEN,NOP,10+ pts & 1+ threes,P10T1,2,65.9,1.52,61,7,1.07,PointsBet,1.4,1.36,1.4,1.45,1.51,-10.4,-7.8,-7.8,0,Pass,30.5,120,1.05,best
-282,Nuggets @ Pelicans,DEN@NOP,11:10,Saddiq Bey,NOP,DEN,10+ pts & 2+ threes,P10T2,2,64.9,1.54,55,5,1.12,PointsBet,1.42,1.36,1.42,1.48,1.51,-11.7,-7.8,-7.8,0,Pass,28.6,120,0.97,best
-283,Bulls @ Timberwolves,CHI@MIN,12:10,Jonathan Kuminga,MIN,CHI,10+ pts & 8+ reb & 2+ ast,P10R8A2,3,17.6,5.69,25,3,1.25,Sportsbet,5.25,5.25,4.0,6.22,4.99,-7.8,-29.8,-7.8,0,Pass,30.4,120,1.08,best
-284,Bulls @ Timberwolves,CHI@MIN,12:10,Norman Powell,CHI,MIN,10+ pts & 2+ threes,P10T2,2,71.5,1.4,55,7,1.07,PointsBet,1.29,,1.29,,1.35,,-7.8,-7.8,0,Pass,28.5,120,0.88,best
-285,Nuggets @ Pelicans,DEN@NOP,11:10,Jamal Murray,DEN,NOP,25+ pts & 4+ reb & 4+ ast,P25R4A4,3,28.3,3.53,31,3,1.11,Sportsbet,3.25,3.25,2.9,3.45,3.61,-7.9,-17.8,-7.9,0,Pass,36.3,120,1.05,best
-286,Nuggets @ Pelicans,DEN@NOP,11:10,Zion Williamson,NOP,DEN,10+ pts & 4+ reb & 4+ ast,P10R4A4,3,35.4,2.82,30,4,1.11,Sportsbet,2.6,2.6,,2.66,,-7.9,,-7.9,0,Pass,32.9,120,0.97,best
-287,Nets @ Grizzlies,BRK@MEM,12:10,Michael Porter Jr.,BRK,MEM,4+ reb & 3+ threes,R4T3,2,57.9,1.73,63,8,1.13,PointsBet,1.59,,1.59,,1.61,,-7.9,-7.9,0,Pass,32.4,120,0.98,best
-288,Nets @ Grizzlies,BRK@MEM,12:10,Cedric Coward,MEM,BRK,10+ pts & 8+ reb & 2+ ast,P10R8A2,3,31.9,3.13,29,5,1.12,Sportsbet,2.88,2.88,2.6,3.09,3.08,-8.0,-16.9,-8.0,0,Pass,28.5,73,0.95,best
-289,Nuggets @ Pelicans,DEN@NOP,11:10,Saddiq Bey,NOP,DEN,4+ reb & 2+ ast,R4A2,2,52.0,1.92,42,4,0.98,PointsBet,1.77,,1.77,,1.77,,-8.0,-8.0,0,Pass,28.6,120,0.97,best
-290,Bulls @ Timberwolves,CHI@MIN,12:10,Ayo Dosunmu,MIN,CHI,15+ pts & 2+ ast,P15A2,2,63.9,1.57,54,6,1.06,PointsBet,1.44,,1.44,,1.48,,-8.0,-8.0,0,Pass,31.6,120,1.08,best
-291,Bulls @ Timberwolves,CHI@MIN,12:10,LaMelo Ball,MIN,CHI,10+ pts & 4+ reb & 6+ ast,P10R4A6,3,44.8,2.23,26,1,0.88,Sportsbet,2.05,2.05,1.95,1.94,2.1,-8.1,-12.6,-8.1,0,Pass,27.9,120,1.08,best
-292,Nets @ Grizzlies,BRK@MEM,12:10,Julius Randle,BRK,MEM,15+ pts & 4+ ast,P15A4,2,57.8,1.73,56,6,1.04,PointsBet,1.59,,1.59,,1.62,,-8.1,-8.1,0,Pass,32.5,120,0.98,best
-293,Nuggets @ Pelicans,DEN@NOP,11:10,Zion Williamson,NOP,DEN,20+ pts & 4+ reb,P20R4,2,48.0,2.08,58,7,1.08,Sportsbet,1.91,1.91,1.83,1.94,1.99,-8.3,-12.1,-8.3,0,Pass,32.9,120,0.97,best
-294,Nuggets @ Pelicans,DEN@NOP,11:10,Aaron Gordon,DEN,NOP,10+ pts & 2+ ast,P10A2,2,54.3,1.84,38,2,0.92,PointsBet,1.69,,1.69,,1.66,,-8.3,-8.3,0,Pass,29.0,120,1.05,best
-295,Nuggets @ Pelicans,DEN@NOP,11:10,Jeremiah Fears,NOP,DEN,15+ pts & 4+ reb,P15R4,2,50.9,1.97,39,6,1.14,PointsBet,1.8,,1.8,,1.85,,-8.4,-8.4,0,Pass,31.2,95,0.97,best
-296,Mavericks @ Cavaliers,DAL@CLE,11:40,Peyton Watson,CLE,DAL,10+ pts & 2+ ast,P10A2,2,50.8,1.97,45,4,1.0,PointsBet,1.8,,1.8,,1.83,,-8.5,-8.5,0,Pass,27.8,120,0.97,best
-297,Nets @ Grizzlies,BRK@MEM,12:10,Cedric Coward,MEM,BRK,4+ reb & 2+ threes,R4T2,2,52.6,1.9,47,7,1.04,PointsBet,1.74,,1.74,,1.76,,-8.5,-8.5,0,Pass,28.5,73,0.95,best
-298,Pistons @ Heat,DET@MIA,12:10,Daniss Jenkins,DET,MIA,10+ pts & 4+ ast,P10A4,2,61.0,1.64,43,4,1.03,PointsBet,1.5,,1.5,,1.55,,-8.6,-8.6,0,Pass,28.6,89,1.09,best
-299,Mavericks @ Cavaliers,DAL@CLE,11:40,James Harden,CLE,DAL,10+ pts & 2+ threes,P10T2,2,68.6,1.46,75,9,1.1,Sportsbet,1.33,1.33,1.33,1.41,1.42,-8.7,-8.7,-8.7,0,Pass,32.1,120,0.97,best
-300,Mavericks @ Cavaliers,DAL@CLE,11:40,Kyrie Irving,DAL,CLE,20+ pts & 2+ threes,P20T2,2,60.8,1.64,50,5,1.14,Sportsbet,1.5,1.5,1.48,1.61,1.6,-8.7,-9.9,-8.7,0,Pass,30.2,118,1.05,best
-301,Nets @ Grizzlies,BRK@MEM,12:10,Cedric Coward,MEM,BRK,10+ pts & 1+ threes,P10T1,2,69.6,1.44,63,8,1.07,PointsBet,1.31,,1.31,,1.4,,-8.8,-8.8,0,Pass,28.5,73,0.95,best
-302,Bulls @ Timberwolves,CHI@MIN,12:10,Ayo Dosunmu,MIN,CHI,15+ pts & 1+ threes,P15T1,2,63.3,1.58,64,7,1.06,Sportsbet,1.44,1.44,1.44,1.52,1.58,-8.9,-8.9,-8.9,0,Pass,31.6,120,1.08,best
-303,Mavericks @ Cavaliers,DAL@CLE,11:40,James Harden,CLE,DAL,10+ pts & 6+ reb & 4+ ast,P10R6A4,3,26.0,3.84,29,3,1.02,Sportsbet,3.5,3.5,3.4,3.83,3.53,-9.0,-11.6,-9.0,0,Pass,32.1,120,0.97,best
-304,Pistons @ Heat,DET@MIA,12:10,Ausar Thompson,DET,MIA,10+ pts & 6+ reb & 4+ ast,P10R6A4,3,32.5,3.08,26,4,1.14,Sportsbet,2.8,2.8,2.6,2.99,3.15,-9.1,-15.6,-9.1,0,Pass,28.7,120,1.09,best
-305,Bulls @ Timberwolves,CHI@MIN,12:10,Josh Giddey,CHI,MIN,10+ pts & 6+ reb & 8+ ast,P10R6A8,3,38.2,2.62,25,3,1.36,Sportsbet,2.38,2.38,2.3,2.58,2.61,-9.1,-12.1,-9.1,0,Pass,29.2,120,0.88,best
-306,Pistons @ Heat,DET@MIA,12:10,Bam Adebayo,MIA,DET,20+ pts & 6+ reb & 2+ ast,P20R6A2,3,32.4,3.08,37,5,1.1,Sportsbet,2.8,2.8,2.75,3.0,3.03,-9.2,-10.8,-9.2,0,Pass,34.9,120,0.87,best
-307,Nets @ Grizzlies,BRK@MEM,12:10,Cedric Coward,MEM,BRK,10+ pts & 4+ reb & 4+ ast,P10R4A4,3,29.2,3.43,29,4,1.05,Sportsbet,3.1,3.1,2.9,3.26,3.35,-9.5,-15.4,-9.5,0,Pass,28.5,73,0.95,best
-308,Nets @ Grizzlies,BRK@MEM,12:10,Julius Randle,BRK,MEM,20+ pts & 6+ reb & 2+ ast,P20R6A2,3,36.1,2.77,28,3,1.1,Sportsbet,2.5,2.5,2.4,2.72,2.68,-9.7,-13.3,-9.7,0,Pass,32.5,120,0.98,best
-309,Nuggets @ Pelicans,DEN@NOP,11:10,Zion Williamson,NOP,DEN,15+ pts & 4+ reb & 4+ ast,P15R4A4,3,31.4,3.19,26,3,1.04,Sportsbet,2.88,2.88,2.75,3.05,3.16,-9.7,-13.8,-9.7,0,Pass,32.9,120,0.97,best
-310,Bulls @ Timberwolves,CHI@MIN,12:10,Josh Giddey,CHI,MIN,10+ pts & 1+ threes,P10T1,2,61.0,1.64,53,7,1.13,PointsBet,1.48,,1.48,,1.6,,-9.7,-9.7,0,Pass,29.2,120,0.88,best
-311,Nuggets @ Pelicans,DEN@NOP,11:10,Saddiq Bey,NOP,DEN,2+ ast & 2+ threes,A2T2,2,49.2,2.03,38,3,0.97,PointsBet,1.83,,1.83,,1.86,,-10.0,-10.0,0,Pass,28.6,120,0.97,best
-312,Bulls @ Timberwolves,CHI@MIN,12:10,Jaden McDaniels,MIN,CHI,6+ reb & 1+ threes,R6T1,2,42.9,2.33,55,7,1.04,PointsBet,2.1,,2.1,,2.12,,-10.0,-10.0,0,Pass,33.9,120,1.08,best
-313,Bulls @ Timberwolves,CHI@MIN,12:10,Matas Buzelis,CHI,MIN,10+ pts & 2+ threes,P10T2,2,59.9,1.67,56,7,1.12,Sportsbet,1.5,1.5,1.48,1.65,1.6,-10.1,-11.3,-10.1,0,Pass,26.7,120,0.88,best
-314,Pistons @ Heat,DET@MIA,12:10,Daniss Jenkins,DET,MIA,15+ pts & 1+ threes,P15T1,2,43.8,2.28,45,5,1.11,Sportsbet,2.05,2.05,1.9,2.23,2.17,-10.3,-16.8,-10.3,0,Pass,28.6,89,1.09,best
-315,Pistons @ Heat,DET@MIA,12:10,Duncan Robinson,DET,MIA,2+ ast & 3+ threes,A2T3,2,47.2,2.12,62,7,1.04,PointsBet,1.9,,1.9,,1.96,,-10.3,-10.3,0,Pass,32.2,120,1.09,best
-316,Nuggets @ Pelicans,DEN@NOP,11:10,Jeremiah Fears,NOP,DEN,15+ pts & 4+ ast,P15A4,2,58.6,1.71,38,5,1.12,PointsBet,1.53,,1.53,,1.6,,-10.3,-10.3,0,Pass,31.2,95,0.97,best
-317,Pistons @ Heat,DET@MIA,12:10,Davion Mitchell,MIA,DET,8+ ast & 1+ threes,A8T1,2,51.3,1.95,44,6,1.02,PointsBet,1.74,,1.74,,1.81,,-10.8,-10.8,0,Pass,36.6,120,0.87,best
-318,Pistons @ Heat,DET@MIA,12:10,Daniss Jenkins,DET,MIA,10+ pts & 4+ reb,P10R4,2,41.5,2.41,39,5,1.21,PointsBet,2.15,,2.15,,2.23,,-10.8,-10.8,0,Pass,28.6,89,1.09,best
-319,Mavericks @ Cavaliers,DAL@CLE,11:40,James Harden,CLE,DAL,15+ pts & 2+ threes,P15T2,2,54.9,1.82,58,6,1.12,Sportsbet,1.62,1.62,1.53,1.82,1.77,-11.0,-16.0,-11.0,0,Pass,32.1,120,0.97,best
-320,Nets @ Grizzlies,BRK@MEM,12:10,Nolan Traoré,BRK,MEM,10+ pts & 2+ ast,P10A2,2,50.3,1.99,58,7,1.11,PointsBet,1.77,,1.77,,1.84,,-11.0,-11.0,0,Pass,22.1,66,0.98,best
-321,Nets @ Grizzlies,BRK@MEM,12:10,Cam Spencer,MEM,BRK,10+ pts & 1+ threes,P10T1,2,61.7,1.62,49,5,1.06,PointsBet,1.44,,1.44,,1.56,,-11.1,-11.1,0,Pass,20.5,109,0.95,best
-322,Nets @ Grizzlies,BRK@MEM,12:10,Cedric Coward,MEM,BRK,2+ ast & 2+ threes,A2T2,2,46.8,2.14,44,6,1.01,PointsBet,1.9,,1.9,,1.97,,-11.1,-11.1,0,Pass,28.5,73,0.95,best
-323,Bulls @ Timberwolves,CHI@MIN,12:10,Jaden McDaniels,MIN,CHI,15+ pts & 6+ reb,P15R6,2,37.0,2.7,52,5,1.04,PointsBet,2.4,,2.4,,2.51,,-11.2,-11.2,0,Pass,33.9,120,1.08,best
-324,Nuggets @ Pelicans,DEN@NOP,11:10,Christian Braun,DEN,NOP,10+ pts & 1+ threes,P10T1,2,54.8,1.83,47,5,1.14,Sportsbet,1.62,1.62,1.59,1.76,1.83,-11.3,-12.9,-11.3,0,Pass,34.3,120,1.05,best
-325,Pistons @ Heat,DET@MIA,12:10,Ausar Thompson,DET,MIA,6+ reb & 4+ ast,R6A4,2,48.4,2.07,43,5,0.98,PointsBet,1.83,,1.83,,1.89,,-11.4,-11.4,0,Pass,28.7,120,1.09,best
-326,Mavericks @ Cavaliers,DAL@CLE,11:40,P.J. Washington,DAL,CLE,15+ pts & 4+ reb,P15R4,2,37.7,2.65,40,4,1.07,PointsBet,2.35,,2.35,,2.42,,-11.5,-11.5,0,Pass,32.4,120,1.05,best
-327,Nets @ Grizzlies,BRK@MEM,12:10,Cedric Coward,MEM,BRK,10+ pts & 6+ reb & 4+ ast,P10R6A4,3,23.6,4.24,28,4,1.07,Sportsbet,3.75,3.75,3.4,4.14,4.12,-11.6,-19.9,-11.6,0,Pass,28.5,73,0.95,best
-328,Pistons @ Heat,DET@MIA,12:10,Bobby Portis,MIA,DET,4+ reb & 1+ threes,R4T1,2,48.3,2.07,39,3,1.0,PointsBet,1.83,,1.83,,1.9,,-11.6,-11.6,0,Pass,19.3,120,0.87,best
-329,Nets @ Grizzlies,BRK@MEM,12:10,Cedric Coward,MEM,BRK,15+ pts & 6+ reb & 2+ ast,P15R6A2,3,32.1,3.12,29,5,1.11,Sportsbet,2.75,2.75,2.75,3.01,3.22,-11.8,-11.8,-11.8,0,Pass,28.5,73,0.95,best
-330,Bulls @ Timberwolves,CHI@MIN,12:10,Josh Giddey,CHI,MIN,10+ pts & 4+ reb & 10+ ast,P10R4A10,3,32.1,3.12,29,4,1.31,PointsBet,2.75,2.7,2.75,2.94,3.11,-13.4,-11.8,-11.8,0,Pass,29.2,120,0.88,best
-331,Bulls @ Timberwolves,CHI@MIN,12:10,Jalen Smith,CHI,MIN,10+ pts & 1+ threes,P10T1,2,62.1,1.61,55,7,1.09,PointsBet,1.42,,1.42,,1.56,,-11.8,-11.8,0,Pass,25.2,120,0.88,best
-332,Pistons @ Heat,DET@MIA,12:10,Klay Thompson,MIA,DET,10+ pts & 2+ threes,P10T2,2,64.8,1.54,57,7,1.11,Sportsbet,1.36,1.36,1.36,1.5,1.52,-11.9,-11.9,-11.9,0,Pass,25.6,120,0.87,best
-333,Mavericks @ Cavaliers,DAL@CLE,11:40,Peyton Watson,CLE,DAL,10+ pts & 1+ threes,P10T1,2,59.6,1.68,45,5,1.15,PointsBet,1.48,,1.48,,1.64,,-11.9,-11.9,0,Pass,27.8,120,0.97,best
-334,Nets @ Grizzlies,BRK@MEM,12:10,Cedric Coward,MEM,BRK,6+ reb & 2+ threes,R6T2,2,41.9,2.39,45,7,1.05,PointsBet,2.1,,2.1,,2.17,,-12.0,-12.0,0,Pass,28.5,73,0.95,best
-335,Bulls @ Timberwolves,CHI@MIN,12:10,Jaden McDaniels,MIN,CHI,15+ pts & 1+ threes,P15T1,2,55.4,1.81,52,5,1.08,PointsBet,1.59,,1.59,,1.76,,-12.0,-12.0,0,Pass,33.9,120,1.08,best
-336,Mavericks @ Cavaliers,DAL@CLE,11:40,Naji Marshall,DAL,CLE,10+ pts & 4+ reb & 2+ ast,P10R4A2,3,22.0,4.56,30,3,1.17,Sportsbet,4.0,4.0,3.3,4.9,4.29,-12.2,-27.6,-12.2,0,Pass,24.1,120,1.05,best
-337,Mavericks @ Cavaliers,DAL@CLE,11:40,P.J. Washington,DAL,CLE,6+ reb & 2+ threes,R6T2,2,41.8,2.39,43,5,1.12,PointsBet,2.1,,2.1,,2.17,,-12.2,-12.2,0,Pass,32.4,120,1.05,best
-338,Nets @ Grizzlies,BRK@MEM,12:10,Nolan Traoré,BRK,MEM,2+ ast & 2+ threes,A2T2,2,38.2,2.62,49,6,1.11,PointsBet,2.3,,2.3,,2.38,,-12.2,-12.2,0,Pass,22.1,66,0.98,best
-339,Nets @ Grizzlies,BRK@MEM,12:10,Day'Ron Sharpe,BRK,MEM,4+ reb & 4+ ast,R4A4,2,51.4,1.95,45,5,1.04,PointsBet,1.71,,1.71,,1.8,,-12.2,-12.2,0,Pass,22.6,120,0.98,best
-340,Nuggets @ Pelicans,DEN@NOP,11:10,Zion Williamson,NOP,DEN,25+ pts & 4+ reb & 2+ ast,P25R4A2,3,25.8,3.88,26,4,1.07,Sportsbet,3.4,3.4,3.4,3.72,3.89,-12.3,-12.3,-12.3,0,Pass,32.9,120,0.97,best
-341,Bulls @ Timberwolves,CHI@MIN,12:10,Jaden McDaniels,MIN,CHI,10+ pts & 6+ reb & 4+ ast,P10R6A4,3,25.8,3.88,29,5,1.16,Sportsbet,3.4,3.4,3.3,3.66,3.79,-12.3,-14.9,-12.3,0,Pass,33.9,120,1.08,best
-342,Nets @ Grizzlies,BRK@MEM,12:10,Jaylen Wells,MEM,BRK,10+ pts & 1+ threes,P10T1,2,60.7,1.65,58,7,1.14,PointsBet,1.44,,1.44,,1.6,,-12.6,-12.6,0,Pass,27.4,120,0.95,best
-343,Nuggets @ Pelicans,DEN@NOP,11:10,Saddiq Bey,NOP,DEN,15+ pts & 2+ threes,P15T2,2,52.2,1.92,45,5,1.18,Sportsbet,1.67,1.67,1.59,1.88,1.9,-12.8,-17.0,-12.8,0,Pass,28.6,120,0.97,best
-344,Pistons @ Heat,DET@MIA,12:10,Ausar Thompson,DET,MIA,10+ pts & 6+ reb,P10R6,2,42.5,2.35,41,6,1.12,PointsBet,2.05,,2.05,,2.19,,-12.8,-12.8,0,Pass,28.7,120,1.09,best
-345,Pistons @ Heat,DET@MIA,12:10,Duncan Robinson,DET,MIA,15+ pts & 2+ threes,P15T2,2,50.3,1.99,53,6,1.07,Sportsbet,1.73,1.73,1.71,1.9,1.93,-12.9,-13.9,-12.9,0,Pass,32.2,120,1.09,best
-346,Nets @ Grizzlies,BRK@MEM,12:10,Jerami Grant,MEM,BRK,10+ pts & 1+ threes,P10T1,2,52.0,1.92,69,8,1.1,Sportsbet,1.67,1.67,1.67,1.82,1.95,-13.2,-13.2,-13.2,0,Pass,23.4,120,0.95,best
-347,Bulls @ Timberwolves,CHI@MIN,12:10,LaMelo Ball,MIN,CHI,15+ pts & 3+ threes,P15T3,2,62.0,1.61,62,7,1.18,PointsBet,1.4,1.36,1.4,1.54,1.62,-15.7,-13.2,-13.2,0,Pass,27.9,120,1.08,best
-348,Nuggets @ Pelicans,DEN@NOP,11:10,Cameron Johnson,DEN,NOP,10+ pts & 4+ reb,P10R4,2,38.5,2.6,42,5,1.1,PointsBet,2.25,,2.25,,2.41,,-13.3,-13.3,0,Pass,30.5,120,1.05,best
-349,Pistons @ Heat,DET@MIA,12:10,Ausar Thompson,DET,MIA,10+ pts & 8+ reb & 2+ ast,P10R8A2,3,28.8,3.47,27,4,1.15,Sportsbet,3.0,3.0,2.9,3.39,3.42,-13.5,-16.4,-13.5,0,Pass,28.7,120,1.09,best
-350,Nuggets @ Pelicans,DEN@NOP,11:10,Jordan Poole,NOP,DEN,10+ pts & 2+ ast,P10A2,2,43.3,2.31,40,4,1.04,PointsBet,2.0,,2.0,,2.12,,-13.5,-13.5,0,Pass,20.7,120,0.97,best
-351,Bulls @ Timberwolves,CHI@MIN,12:10,Nic Claxton,CHI,MIN,10+ pts & 4+ reb & 2+ ast,P10R4A2,3,20.5,4.88,29,4,1.02,Sportsbet,4.2,4.2,,4.96,,-13.9,,-13.9,0,Pass,21.3,120,0.88,best
-352,Pistons @ Heat,DET@MIA,12:10,Davion Mitchell,MIA,DET,15+ pts & 1+ threes,P15T1,2,40.9,2.44,48,8,1.14,Sportsbet,2.1,2.1,2.1,2.31,2.33,-14.1,-14.1,-14.1,0,Pass,36.6,120,0.87,best
-353,Mavericks @ Cavaliers,DAL@CLE,11:40,Meleek Thomas,CLE,DAL,10+ pts & 1+ threes,P10T1,2,52.0,1.92,63,7,1.06,PointsBet,1.65,,1.65,,1.84,,-14.1,-14.1,0,Pass,22.4,10,0.97,best
-354,Bulls @ Timberwolves,CHI@MIN,12:10,Norman Powell,CHI,MIN,15+ pts & 2+ threes,P15T2,2,60.5,1.65,51,7,1.11,PointsBet,1.42,,1.42,,1.61,,-14.1,-14.1,0,Pass,28.5,120,0.88,best
-355,Nets @ Grizzlies,BRK@MEM,12:10,Michael Porter Jr.,BRK,MEM,15+ pts & 3+ threes,P15T3,2,57.2,1.75,62,8,1.14,PointsBet,1.5,,1.5,,1.69,,-14.2,-14.2,0,Pass,32.4,120,0.98,best
-356,Pistons @ Heat,DET@MIA,12:10,Davion Mitchell,MIA,DET,15+ pts & 6+ ast,P15A6,2,36.5,2.74,44,7,1.09,PointsBet,2.35,,2.35,,2.48,,-14.2,-14.2,0,Pass,36.6,120,0.87,best
-357,Pistons @ Heat,DET@MIA,12:10,Davion Mitchell,MIA,DET,10+ pts & 2+ threes,P10T2,2,51.2,1.95,56,8,1.1,Sportsbet,1.67,1.67,1.59,1.9,1.94,-14.6,-18.7,-14.6,0,Pass,36.6,120,0.87,best
-358,Nuggets @ Pelicans,DEN@NOP,11:10,Jordan Poole,NOP,DEN,10+ pts & 1+ threes,P10T1,2,46.7,2.14,44,5,1.14,PointsBet,1.83,,1.83,,2.07,,-14.6,-14.6,0,Pass,20.7,120,0.97,best
-359,Pistons @ Heat,DET@MIA,12:10,Daniss Jenkins,DET,MIA,15+ pts & 4+ reb & 2+ ast,P15R4A2,3,25.9,3.87,27,4,1.33,Sportsbet,3.3,3.3,,3.78,,-14.7,,-14.7,0,Pass,28.6,89,1.09,best
-360,Nuggets @ Pelicans,DEN@NOP,11:10,Christian Braun,DEN,NOP,4+ reb & 1+ threes,R4T1,2,43.7,2.29,40,3,0.96,PointsBet,1.95,,1.95,,2.05,,-14.8,-14.8,0,Pass,34.3,120,1.05,best
-361,Pistons @ Heat,DET@MIA,12:10,Duncan Robinson,DET,MIA,15+ pts & 2+ ast,P15A2,2,36.9,2.71,50,6,1.08,PointsBet,2.3,,2.3,,2.46,,-15.0,-15.0,0,Pass,32.2,120,1.09,best
-362,Mavericks @ Cavaliers,DAL@CLE,11:40,P.J. Washington,DAL,CLE,15+ pts & 1+ threes,P15T1,2,38.4,2.6,40,4,1.06,PointsBet,2.2,,2.2,,2.44,,-15.5,-15.5,0,Pass,32.4,120,1.05,best
-363,Pistons @ Heat,DET@MIA,12:10,Duncan Robinson,DET,MIA,10+ pts & 3+ threes,P10T3,2,60.2,1.66,68,8,1.1,Sportsbet,1.4,1.4,1.4,1.65,1.6,-15.7,-15.7,-15.7,0,Pass,32.2,120,1.09,best
-364,Pistons @ Heat,DET@MIA,12:10,Duncan Robinson,DET,MIA,2+ ast & 4+ threes,A2T4,2,33.0,3.03,44,5,1.09,PointsBet,2.55,,2.55,,2.74,,-15.8,-15.8,0,Pass,32.2,120,1.09,best
-365,Nuggets @ Pelicans,DEN@NOP,11:10,Cameron Johnson,DEN,NOP,15+ pts & 1+ threes,P15T1,2,35.8,2.79,42,5,1.04,PointsBet,2.35,,2.35,,2.61,,-15.8,-15.8,0,Pass,30.5,120,1.05,best
-366,Nuggets @ Pelicans,DEN@NOP,11:10,Saddiq Bey,NOP,DEN,10+ pts & 3+ threes,P10T3,2,38.2,2.62,38,3,1.09,PointsBet,2.2,,2.2,,2.43,,-15.9,-15.9,0,Pass,28.6,120,0.97,best
-367,Nuggets @ Pelicans,DEN@NOP,11:10,Cameron Johnson,DEN,NOP,4+ reb & 2+ threes,R4T2,2,33.0,3.03,42,4,1.02,PointsBet,2.55,,2.55,,2.71,,-16.0,-16.0,0,Pass,30.5,120,1.05,best
-368,Mavericks @ Cavaliers,DAL@CLE,11:40,P.J. Washington,DAL,CLE,10+ pts & 2+ threes,P10T2,2,49.3,2.03,53,6,1.09,Sportsbet,1.7,1.7,1.65,2.03,1.97,-16.3,-18.7,-16.3,0,Pass,32.4,120,1.05,best
-369,Nuggets @ Pelicans,DEN@NOP,11:10,DeMar DeRozan,DEN,NOP,10+ pts & 2+ ast,P10A2,2,38.5,2.6,43,3,1.05,PointsBet,2.15,,2.15,,2.37,,-17.2,-17.2,0,Pass,22.2,120,1.05,best
-370,Mavericks @ Cavaliers,DAL@CLE,11:40,Naji Marshall,DAL,CLE,4+ reb & 2+ ast,R4A2,2,34.4,2.9,47,4,1.05,PointsBet,2.4,,2.4,,2.6,,-17.3,-17.3,0,Pass,24.1,120,1.05,best
-371,Nets @ Grizzlies,BRK@MEM,12:10,Nolan Traoré,BRK,MEM,10+ pts & 1+ threes,P10T1,2,48.9,2.05,55,7,1.18,PointsBet,1.69,,1.69,,1.99,,-17.4,-17.4,0,Pass,22.1,66,0.98,best
-372,Mavericks @ Cavaliers,DAL@CLE,11:40,P.J. Washington,DAL,CLE,8+ reb & 1+ threes,R8T1,2,34.2,2.92,42,5,1.06,PointsBet,2.4,,2.4,,2.61,,-17.8,-17.8,0,Pass,32.4,120,1.05,best
-373,Pistons @ Heat,DET@MIA,12:10,Duncan Robinson,DET,MIA,10+ pts & 4+ threes,P10T4,2,42.7,2.34,45,5,1.07,PointsBet,1.9,,1.9,,2.24,,-18.8,-18.8,0,Pass,32.2,120,1.09,best
-374,Nets @ Grizzlies,BRK@MEM,12:10,Cedric Coward,MEM,BRK,10+ pts & 2+ threes,P10T2,2,48.0,2.08,48,7,1.14,PointsBet,1.69,,1.69,,2.02,,-18.9,-18.9,0,Pass,28.5,73,0.95,best
-375,Nuggets @ Pelicans,DEN@NOP,11:10,Cameron Johnson,DEN,NOP,10+ pts & 2+ threes,P10T2,2,47.7,2.1,52,6,1.15,Sportsbet,1.67,1.67,1.67,2.06,2.08,-20.3,-20.3,-20.3,0,Pass,30.5,120,1.05,best
-376,Pistons @ Heat,DET@MIA,12:10,Klay Thompson,MIA,DET,10+ pts & 3+ threes,P10T3,2,51.7,1.93,41,5,1.19,PointsBet,1.5,,1.5,,1.89,,-22.4,-22.4,0,Pass,25.6,120,0.87,best
-377,Nets @ Grizzlies,BRK@MEM,12:10,Nolan Traoré,BRK,MEM,15+ pts & 2+ ast,P15A2,2,23.4,4.27,44,6,1.11,PointsBet,3.3,,3.3,,3.77,,-22.8,-22.8,0,Pass,22.1,66,0.98,best
-378,Pistons @ Heat,DET@MIA,12:10,Duncan Robinson,DET,MIA,15+ pts & 3+ threes,P15T3,2,41.9,2.38,46,5,1.1,Sportsbet,1.8,1.8,1.77,2.41,2.33,-24.5,-25.8,-24.5,0,Pass,32.2,120,1.09,best
-379,Nets @ Grizzlies,BRK@MEM,12:10,Jaylen Wells,MEM,BRK,10+ pts & 2+ threes,P10T2,2,43.0,2.33,52,7,1.19,PointsBet,1.74,,1.74,,2.28,,-25.2,-25.2,0,Pass,27.4,120,0.95,best
-380,Pistons @ Heat,DET@MIA,12:10,Davion Mitchell,MIA,DET,15+ pts & 2+ threes,P15T2,2,31.4,3.19,45,8,1.22,Sportsbet,2.38,2.38,2.3,3.22,3.21,-25.3,-27.8,-25.3,0,Pass,36.6,120,0.87,best
-381,Nets @ Grizzlies,BRK@MEM,12:10,Jerami Grant,MEM,BRK,10+ pts & 2+ threes,P10T2,2,31.1,3.21,60,7,1.16,PointsBet,2.25,,2.25,,3.2,,-29.9,-29.9,0,Pass,23.4,120,0.95,best
-382,Mavericks @ Cavaliers,DAL@CLE,11:40,Meleek Thomas,CLE,DAL,10+ pts & 2+ threes,P10T2,2,38.2,2.62,63,7,1.06,PointsBet,1.83,,1.83,,2.59,,-30.2,-30.2,0,Pass,22.4,10,0.97,best
-383,Nets @ Grizzlies,BRK@MEM,12:10,Nolan Traoré,BRK,MEM,10+ pts & 2+ threes,P10T2,2,30.6,3.27,45,6,1.21,PointsBet,2.25,,2.25,,3.26,,-31.1,-31.1,0,Pass,22.1,66,0.98,best
+1,Bulls @ Timberwolves,CHI@MIN,12:10,Jonathan Kuminga,MIN,CHI,10+ pts & 4+ reb & 2+ ast,P10R4A2,3,54.7,1.83,36,4,1.2,Sportsbet,1.95,1.95,1.71,1.87,1.8,6.6,-6.5,6.6,0,Pass,30.4,120,1.08,best
+2,Nets @ Grizzlies,BRK@MEM,12:10,Michael Porter Jr.,BRK,MEM,15+ pts & 4+ reb & 2+ ast,P15R4A2,3,54.3,1.84,34,4,1.13,Sportsbet,1.95,1.95,,1.84,,5.9,,5.9,0,Pass,32.4,120,0.98,best
+3,Bulls @ Timberwolves,CHI@MIN,12:10,Ayo Dosunmu,MIN,CHI,10+ pts & 4+ reb & 2+ ast,P10R4A2,3,58.6,1.71,35,3,1.17,Sportsbet,1.8,1.8,1.69,1.69,1.71,5.4,-1.0,5.4,0,Pass,31.6,120,1.08,best
+4,Bulls @ Timberwolves,CHI@MIN,12:10,Josh Giddey,CHI,MIN,10+ pts & 4+ reb & 6+ ast,P10R4A6,3,64.9,1.54,36,4,1.12,Sportsbet,1.62,1.62,1.5,1.57,1.54,5.1,-2.7,5.1,0,Pass,29.2,120,0.88,best
+5,Bulls @ Timberwolves,CHI@MIN,12:10,Jaden McDaniels,MIN,CHI,10+ pts & 4+ reb & 2+ ast,P10R4A2,3,71.0,1.41,62,9,1.14,PointsBet,1.48,1.44,1.48,1.36,1.49,2.2,5.0,5.0,0,Pass,33.9,120,1.08,best
+6,Nets @ Grizzlies,BRK@MEM,12:10,Michael Porter Jr.,BRK,MEM,10+ pts & 4+ reb,P10R4,2,92.6,1.08,76,9,1.08,Sportsbet,1.13,1.13,,1.07,,4.7,,4.7,0,Pass,32.4,120,0.98,best
+7,Nets @ Grizzlies,BRK@MEM,12:10,Michael Porter Jr.,BRK,MEM,4+ reb & 1+ threes,R4T1,2,92.6,1.08,74,9,1.1,Sportsbet,1.13,1.13,,1.07,,4.6,,4.6,0,Pass,32.4,120,0.98,best
+8,Nets @ Grizzlies,BRK@MEM,12:10,Cameron Boozer,MEM,BRK,10+ pts & 6+ reb & 4+ ast,P10R6A4,3,69.7,1.44,53,7,1.09,Sportsbet,1.5,1.5,1.44,1.43,1.43,4.5,0.3,4.5,0,Pass,30.9,12,0.95,best
+9,Nets @ Grizzlies,BRK@MEM,12:10,Julius Randle,BRK,MEM,10+ pts & 4+ reb & 4+ ast,P10R4A4,3,64.5,1.55,56,7,1.08,Sportsbet,1.62,1.62,,1.52,,4.4,,4.4,0,Pass,32.5,120,0.98,best
+10,Nets @ Grizzlies,BRK@MEM,12:10,Julius Randle,BRK,MEM,15+ pts & 4+ reb & 4+ ast,P15R4A4,3,58.0,1.72,44,5,1.03,Sportsbet,1.8,1.8,1.71,1.74,1.71,4.4,-0.8,4.4,0,Pass,32.5,120,0.98,best
+11,Nets @ Grizzlies,BRK@MEM,12:10,Julius Randle,BRK,MEM,10+ pts & 4+ reb & 2+ ast,P10R4A2,3,87.0,1.15,70,9,1.11,Sportsbet,1.2,1.2,,1.15,,4.3,,4.3,0,Pass,32.5,120,0.98,best
+12,Bulls @ Timberwolves,CHI@MIN,12:10,Jaden McDaniels,MIN,CHI,15+ pts & 4+ reb & 2+ ast,P15R4A2,3,53.5,1.87,45,5,1.08,Sportsbet,1.95,1.95,1.83,1.81,1.94,4.3,-2.1,4.3,0,Pass,33.9,120,1.08,best
+13,Bulls @ Timberwolves,CHI@MIN,12:10,Ayo Dosunmu,MIN,CHI,15+ pts & 4+ reb & 2+ ast,P15R4A2,3,47.2,2.12,30,3,1.12,Sportsbet,2.2,2.2,2.0,2.11,2.13,3.8,-5.6,3.8,0,Pass,31.6,120,1.08,best
+14,Nets @ Grizzlies,BRK@MEM,12:10,Cedric Coward,MEM,BRK,4+ reb & 1+ threes,R4T1,2,80.1,1.25,66,9,1.06,Sportsbet,1.29,1.29,1.25,1.21,1.22,3.4,0.1,3.4,0,Pass,28.5,73,0.95,best
+15,Nets @ Grizzlies,BRK@MEM,12:10,Cedric Coward,MEM,BRK,10+ pts & 4+ reb & 2+ ast,P10R4A2,3,62.4,1.6,51,8,1.1,PointsBet,1.65,1.62,1.65,1.56,1.67,1.0,2.9,2.9,0,Pass,28.5,73,0.95,best
+16,Nets @ Grizzlies,BRK@MEM,12:10,Cameron Boozer,MEM,BRK,15+ pts & 4+ reb & 4+ ast,P15R4A4,3,61.4,1.63,32,4,1.08,Sportsbet,1.67,1.67,,1.59,,2.6,,2.6,0,Pass,30.9,12,0.95,best
+17,Bulls @ Timberwolves,CHI@MIN,12:10,LaMelo Ball,MIN,CHI,10+ pts & 4+ ast,P10A4,2,90.0,1.11,79,8,1.06,PointsBet,1.14,1.1,1.14,1.07,1.12,-1.0,2.6,2.6,0,Pass,27.9,120,1.08,best
+18,Bulls @ Timberwolves,CHI@MIN,12:10,LaMelo Ball,MIN,CHI,4+ ast & 2+ threes,A4T2,2,84.0,1.19,74,7,1.06,PointsBet,1.22,1.2,1.22,1.13,1.2,0.8,2.5,2.5,0,Pass,27.9,120,1.08,best
+19,Mavericks @ Cavaliers,DAL@CLE,11:40,Cooper Flagg,DAL,CLE,15+ pts & 4+ reb & 4+ ast,P15R4A4,3,79.3,1.26,55,8,1.16,PointsBet,1.29,,1.29,,1.28,,2.3,2.3,0,Pass,33.6,81,1.05,best
+20,Nets @ Grizzlies,BRK@MEM,12:10,Julius Randle,BRK,MEM,15+ pts & 4+ reb & 2+ ast,P15R4A2,3,75.2,1.33,55,7,1.08,Sportsbet,1.36,1.36,1.36,1.32,1.33,2.2,2.2,2.2,0,Pass,32.5,120,0.98,best
+21,Nets @ Grizzlies,BRK@MEM,12:10,Cameron Boozer,MEM,BRK,10+ pts & 4+ reb & 4+ ast,P10R4A4,3,76.7,1.3,53,7,1.09,Sportsbet,1.33,1.33,,1.29,,2.0,,2.0,0,Pass,30.9,12,0.95,best
+22,Nets @ Grizzlies,BRK@MEM,12:10,Cedric Coward,MEM,BRK,6+ reb & 1+ threes,R6T1,2,61.0,1.64,62,9,1.06,Sportsbet,1.67,1.67,1.53,1.57,1.54,1.9,-6.6,1.9,0,Pass,28.5,73,0.95,best
+23,Bulls @ Timberwolves,CHI@MIN,12:10,Ayo Dosunmu,MIN,CHI,10+ pts & 2+ ast,P10A2,2,87.1,1.15,61,6,1.06,Sportsbet,1.17,1.17,1.16,1.1,1.16,1.9,1.0,1.9,0,Pass,31.6,120,1.08,best
+24,Nets @ Grizzlies,BRK@MEM,12:10,Julius Randle,BRK,MEM,10+ pts & 6+ reb & 2+ ast,P10R6A2,3,61.0,1.64,49,6,1.08,Sportsbet,1.67,1.67,,1.59,,1.8,,1.8,0,Pass,32.5,120,0.98,best
+25,Nets @ Grizzlies,BRK@MEM,12:10,Julius Randle,BRK,MEM,10+ pts & 4+ reb,P10R4,2,87.0,1.15,76,9,1.07,Sportsbet,1.17,1.17,,1.13,,1.8,,1.8,0,Pass,32.5,120,0.98,best
+26,Bulls @ Timberwolves,CHI@MIN,12:10,Josh Giddey,CHI,MIN,4+ reb & 4+ ast,R4A4,2,87.0,1.15,65,7,1.06,Sportsbet,1.17,1.17,,1.13,,1.7,,1.7,0,Pass,29.2,120,0.88,best
+27,Pistons @ Heat,DET@MIA,12:10,Bam Adebayo,MIA,DET,10+ pts & 6+ reb & 2+ ast,P10R6A2,3,74.7,1.34,63,8,1.09,PointsBet,1.36,,1.36,,1.35,,1.6,1.6,0,Pass,34.9,120,0.87,best
+28,Bulls @ Timberwolves,CHI@MIN,12:10,Ayo Dosunmu,MIN,CHI,2+ ast & 1+ threes,A2T1,2,78.7,1.27,60,6,1.03,Sportsbet,1.29,1.29,1.27,1.22,1.25,1.5,-0.0,1.5,0,Pass,31.6,120,1.08,best
+29,Nets @ Grizzlies,BRK@MEM,12:10,Julius Randle,BRK,MEM,10+ pts & 2+ ast,P10A2,2,95.6,1.05,86,10,1.07,Sportsbet,1.06,1.06,,1.04,,1.4,,1.4,0,Pass,32.5,120,0.98,best
+30,Nets @ Grizzlies,BRK@MEM,12:10,Cameron Boozer,MEM,BRK,10+ pts & 8+ reb & 4+ ast,P10R8A4,3,53.9,1.86,37,4,0.99,Sportsbet,1.88,1.88,1.8,1.8,1.81,1.3,-3.0,1.3,0,Pass,30.9,12,0.95,best
+31,Nets @ Grizzlies,BRK@MEM,12:10,Michael Porter Jr.,BRK,MEM,4+ reb & 2+ threes,R4T2,2,81.0,1.24,70,9,1.11,PointsBet,1.25,1.22,1.25,1.18,1.23,-1.2,1.2,1.2,0,Pass,32.4,120,0.98,best
+32,Nets @ Grizzlies,BRK@MEM,12:10,Cameron Boozer,MEM,BRK,10+ pts & 4+ reb,P10R4,2,93.6,1.07,73,9,1.07,Sportsbet,1.08,1.08,,1.06,,1.1,,1.1,0,Pass,30.9,12,0.95,best
+33,Nets @ Grizzlies,BRK@MEM,12:10,Cameron Boozer,MEM,BRK,10+ pts & 6+ reb,P10R6,2,84.2,1.19,73,9,1.07,Sportsbet,1.2,1.2,1.18,1.18,1.15,1.1,-0.6,1.1,0,Pass,30.9,12,0.95,best
+34,Bulls @ Timberwolves,CHI@MIN,12:10,LaMelo Ball,MIN,CHI,4+ ast & 1+ threes,A4T1,2,93.6,1.07,78,8,1.06,Sportsbet,1.08,1.08,,1.06,,1.1,,1.1,0,Pass,27.9,120,1.08,best
+35,Nets @ Grizzlies,BRK@MEM,12:10,Michael Porter Jr.,BRK,MEM,15+ pts & 1+ threes,P15T1,2,86.4,1.16,71,8,1.1,Sportsbet,1.17,1.17,,1.14,,1.0,,1.0,0,Pass,32.4,120,0.98,best
+36,Bulls @ Timberwolves,CHI@MIN,12:10,Josh Giddey,CHI,MIN,10+ pts & 4+ ast,P10A4,2,78.3,1.28,57,7,1.06,Sportsbet,1.29,1.29,,1.24,,1.0,,1.0,0,Pass,29.2,120,0.88,best
+37,Nets @ Grizzlies,BRK@MEM,12:10,Julius Randle,BRK,MEM,4+ reb & 2+ ast,R4A2,2,86.3,1.16,76,9,1.06,Sportsbet,1.17,1.17,1.16,1.13,1.14,0.9,0.1,0.9,0,Pass,32.5,120,0.98,best
+38,Nets @ Grizzlies,BRK@MEM,12:10,Cameron Boozer,MEM,BRK,4+ reb & 4+ ast,R4A4,2,78.3,1.28,69,8,1.07,Sportsbet,1.29,1.29,,1.24,,0.9,,0.9,0,Pass,30.9,12,0.95,best
+39,Bulls @ Timberwolves,CHI@MIN,12:10,Jaden McDaniels,MIN,CHI,10+ pts & 2+ ast,P10A2,2,79.5,1.26,78,10,1.08,PointsBet,1.27,1.22,1.27,1.2,1.25,-3.0,0.9,0.9,0,Pass,33.9,120,1.08,best
+40,Bulls @ Timberwolves,CHI@MIN,12:10,Jaden McDaniels,MIN,CHI,10+ pts & 4+ reb,P10R4,2,78.2,1.28,72,9,1.08,PointsBet,1.29,1.22,1.29,1.2,1.3,-4.6,0.9,0.9,0,Pass,33.9,120,1.08,best
+41,Nets @ Grizzlies,BRK@MEM,12:10,Michael Porter Jr.,BRK,MEM,10+ pts & 4+ reb & 2+ ast,P10R4A2,3,58.2,1.72,36,4,1.08,Sportsbet,1.73,1.73,,1.65,,0.7,,0.7,0,Pass,32.4,120,0.98,best
+42,Nets @ Grizzlies,BRK@MEM,12:10,Michael Porter Jr.,BRK,MEM,10+ pts & 1+ threes,P10T1,2,97.8,1.02,80,9,1.08,Sportsbet,1.03,1.03,,1.02,,0.7,,0.7,0,Pass,32.4,120,0.98,best
+43,Nets @ Grizzlies,BRK@MEM,12:10,Cameron Boozer,MEM,BRK,4+ reb & 1+ threes,R4T1,2,86.1,1.16,64,8,1.06,Sportsbet,1.17,1.17,,1.14,,0.7,,0.7,0,Pass,30.9,12,0.95,best
+44,Nets @ Grizzlies,BRK@MEM,12:10,Michael Porter Jr.,BRK,MEM,15+ pts & 4+ reb,P15R4,2,80.4,1.24,68,8,1.1,PointsBet,1.25,1.22,1.25,1.2,1.23,-1.9,0.6,0.6,0,Pass,32.4,120,0.98,best
+45,Bulls @ Timberwolves,CHI@MIN,12:10,Jaden McDaniels,MIN,CHI,10+ pts & 6+ reb & 2+ ast,P10R6A2,3,45.7,2.19,60,9,1.14,Sportsbet,2.2,2.2,2.1,2.12,2.18,0.6,-4.0,0.6,0,Pass,33.9,120,1.08,best
+46,Bulls @ Timberwolves,CHI@MIN,12:10,Josh Giddey,CHI,MIN,10+ pts & 4+ reb & 4+ ast,P10R4A4,3,71.9,1.39,42,5,1.11,Sportsbet,1.4,1.4,,1.38,,0.6,,0.6,0,Pass,29.2,120,0.88,best
+47,Bulls @ Timberwolves,CHI@MIN,12:10,Matas Buzelis,CHI,MIN,10+ pts & 4+ reb & 2+ ast,P10R4A2,3,47.9,2.09,42,5,1.07,Sportsbet,2.1,2.1,,2.1,,0.5,,0.5,0,Pass,26.7,120,0.88,best
+48,Nets @ Grizzlies,BRK@MEM,12:10,Day'Ron Sharpe,BRK,MEM,4+ reb & 2+ ast,R4A2,2,84.4,1.19,63,6,1.06,PointsBet,1.19,1.17,1.19,1.13,1.19,-1.3,0.4,0.4,0,Pass,22.6,120,0.98,best
+49,Bulls @ Timberwolves,CHI@MIN,12:10,Jonathan Kuminga,MIN,CHI,10+ pts & 6+ reb & 2+ ast,P10R6A2,3,35.8,2.79,31,4,1.29,Sportsbet,2.8,2.8,2.4,2.9,2.63,0.3,-14.0,0.3,0,Pass,30.4,120,1.08,best
+50,Nets @ Grizzlies,BRK@MEM,12:10,Michael Porter Jr.,BRK,MEM,20+ pts & 4+ reb & 2+ ast,P20R4A2,3,41.6,2.41,27,3,1.14,Sportsbet,2.4,2.4,,2.4,,-0.2,,-0.2,0,Pass,32.4,120,0.98,best
+51,Nets @ Grizzlies,BRK@MEM,12:10,Julius Randle,BRK,MEM,15+ pts & 2+ ast,P15A2,2,81.7,1.22,70,8,1.07,Sportsbet,1.22,1.22,1.22,1.19,1.19,-0.3,-0.3,-0.3,0,Pass,32.5,120,0.98,best
+52,Bulls @ Timberwolves,CHI@MIN,12:10,LaMelo Ball,MIN,CHI,10+ pts & 1+ threes,P10T1,2,96.8,1.03,81,8,1.07,Sportsbet,1.03,1.03,,1.03,,-0.3,,-0.3,0,Pass,27.9,120,1.08,best
+53,Bulls @ Timberwolves,CHI@MIN,12:10,LaMelo Ball,MIN,CHI,15+ pts & 1+ threes,P15T1,2,83.1,1.2,69,7,1.09,Sportsbet,1.2,1.2,,1.18,,-0.3,,-0.3,0,Pass,27.9,120,1.08,best
+54,Bulls @ Timberwolves,CHI@MIN,12:10,Matas Buzelis,CHI,MIN,10+ pts & 2+ ast,P10A2,2,55.4,1.81,58,7,1.04,Sportsbet,1.8,1.8,,1.72,,-0.3,,-0.3,0,Pass,26.7,120,0.88,best
+55,Bulls @ Timberwolves,CHI@MIN,12:10,Josh Giddey,CHI,MIN,4+ reb & 6+ ast,R4A6,2,76.6,1.3,56,6,1.08,Sportsbet,1.3,1.3,1.25,1.29,1.24,-0.4,-4.2,-0.4,0,Pass,29.2,120,0.88,best
+56,Nets @ Grizzlies,BRK@MEM,12:10,Cedric Coward,MEM,BRK,10+ pts & 6+ reb & 2+ ast,P10R6A2,3,48.5,2.06,48,8,1.09,Sportsbet,2.05,2.05,1.95,2.02,2.11,-0.5,-5.4,-0.5,0,Pass,28.5,73,0.95,best
+57,Nets @ Grizzlies,BRK@MEM,12:10,Michael Porter Jr.,BRK,MEM,10+ pts & 2+ threes,P10T2,2,88.1,1.14,75,9,1.08,Sportsbet,1.13,1.13,,1.12,,-0.5,,-0.5,0,Pass,32.4,120,0.98,best
+58,Nets @ Grizzlies,BRK@MEM,12:10,Cameron Boozer,MEM,BRK,6+ reb & 1+ threes,R6T1,2,76.6,1.31,64,8,1.06,Sportsbet,1.3,1.3,1.29,1.27,1.27,-0.5,-1.2,-0.5,0,Pass,30.9,12,0.95,best
+59,Bulls @ Timberwolves,CHI@MIN,12:10,Josh Giddey,CHI,MIN,10+ pts & 6+ reb & 4+ ast,P10R6A4,3,52.1,1.92,31,3,1.11,Sportsbet,1.91,1.91,,1.88,,-0.6,,-0.6,0,Pass,29.2,120,0.88,best
+60,Nets @ Grizzlies,BRK@MEM,12:10,Cam Spencer,MEM,BRK,4+ ast & 1+ threes,A4T1,2,86.5,1.16,57,7,1.04,PointsBet,1.15,,1.15,,1.13,,-0.6,-0.6,0,Pass,20.5,109,0.95,best
+61,Nets @ Grizzlies,BRK@MEM,12:10,Michael Porter Jr.,BRK,MEM,15+ pts & 6+ reb & 2+ ast,P15R6A2,3,41.4,2.42,28,3,1.08,Sportsbet,2.4,2.4,,2.42,,-0.7,,-0.7,0,Pass,32.4,120,0.98,best
+62,Bulls @ Timberwolves,CHI@MIN,12:10,Jalen Smith,CHI,MIN,4+ reb & 1+ threes,R4T1,2,79.5,1.26,60,7,1.05,PointsBet,1.25,1.22,1.25,1.19,1.26,-3.1,-0.7,-0.7,0,Pass,25.2,120,0.88,best
+63,Nuggets @ Pelicans,DEN@NOP,11:10,Jamal Murray,DEN,NOP,4+ ast & 1+ threes,A4T1,2,85.6,1.17,74,8,1.09,PointsBet,1.16,,1.16,,1.14,,-0.7,-0.7,0,Pass,36.3,120,1.05,best
+64,Mavericks @ Cavaliers,DAL@CLE,11:40,P.J. Washington,DAL,CLE,4+ reb & 1+ threes,R4T1,2,79.4,1.26,73,8,1.07,PointsBet,1.25,,1.25,,1.22,,-0.8,-0.8,0,Pass,32.4,120,1.05,best
+65,Nets @ Grizzlies,BRK@MEM,12:10,Cedric Coward,MEM,BRK,2+ ast & 1+ threes,A2T1,2,70.8,1.41,62,8,1.05,PointsBet,1.4,1.36,1.4,1.34,1.38,-3.8,-0.9,-0.9,0,Pass,28.5,73,0.95,best
+66,Mavericks @ Cavaliers,DAL@CLE,11:40,Kyrie Irving,DAL,CLE,2+ ast & 1+ threes,A2T1,2,89.3,1.12,77,9,1.08,PointsBet,1.11,,1.11,,1.1,,-0.9,-0.9,0,Pass,30.2,118,1.05,best
+67,Nets @ Grizzlies,BRK@MEM,12:10,Julius Randle,BRK,MEM,20+ pts & 4+ reb & 2+ ast,P20R4A2,3,51.8,1.93,36,4,1.03,Sportsbet,1.91,1.91,1.83,1.87,1.86,-1.0,-5.1,-1.0,0,Pass,32.5,120,0.98,best
+68,Pistons @ Heat,DET@MIA,12:10,Daniss Jenkins,DET,MIA,2+ ast & 1+ threes,A2T1,2,83.9,1.19,68,8,1.06,PointsBet,1.18,,1.18,,1.16,,-1.0,-1.0,0,Pass,28.6,89,1.09,best
+69,Bulls @ Timberwolves,CHI@MIN,12:10,LaMelo Ball,MIN,CHI,10+ pts & 2+ threes,P10T2,2,87.6,1.14,76,7,1.06,Sportsbet,1.13,1.13,1.13,1.1,1.15,-1.1,-1.1,-1.1,0,Pass,27.9,120,1.08,best
+70,Pistons @ Heat,DET@MIA,12:10,Bam Adebayo,MIA,DET,10+ pts & 8+ reb & 2+ ast,P10R8A2,3,60.7,1.65,57,8,1.11,PointsBet,1.63,,1.63,,1.64,,-1.1,-1.1,0,Pass,34.9,120,0.87,best
+71,Mavericks @ Cavaliers,DAL@CLE,11:40,Cooper Flagg,DAL,CLE,4+ reb & 4+ ast,R4A4,2,81.1,1.23,69,9,1.07,PointsBet,1.22,,1.22,,1.2,,-1.1,-1.1,0,Pass,33.6,81,1.05,best
+72,Nets @ Grizzlies,BRK@MEM,12:10,Julius Randle,BRK,MEM,10+ pts & 4+ ast,P10A4,2,70.6,1.42,70,8,1.06,Sportsbet,1.4,1.4,,1.37,,-1.2,,-1.2,0,Pass,32.5,120,0.98,best
+73,Nets @ Grizzlies,BRK@MEM,12:10,Cedric Coward,MEM,BRK,10+ pts & 4+ reb,P10R4,2,72.6,1.38,65,9,1.07,PointsBet,1.36,1.3,1.36,1.3,1.37,-5.6,-1.2,-1.2,0,Pass,28.5,73,0.95,best
+74,Bulls @ Timberwolves,CHI@MIN,12:10,LaMelo Ball,MIN,CHI,10+ pts & 4+ reb & 4+ ast,P10R4A4,3,59.1,1.69,36,2,0.97,Sportsbet,1.67,1.67,1.67,1.56,1.68,-1.2,-1.2,-1.2,0,Pass,27.9,120,1.08,best
+75,Bulls @ Timberwolves,CHI@MIN,12:10,Jaden McDaniels,MIN,CHI,4+ reb & 1+ threes,R4T1,2,68.5,1.46,57,7,1.04,PointsBet,1.44,1.4,1.44,1.36,1.44,-4.0,-1.3,-1.3,0,Pass,33.9,120,1.08,best
+76,Mavericks @ Cavaliers,DAL@CLE,11:40,Cooper Flagg,DAL,CLE,20+ pts & 4+ reb & 4+ ast,P20R4A4,3,65.8,1.52,43,6,1.13,PointsBet,1.5,,1.5,,1.52,,-1.3,-1.3,0,Pass,33.6,81,1.05,best
+77,Mavericks @ Cavaliers,DAL@CLE,11:40,James Harden,CLE,DAL,4+ ast & 1+ threes,A4T1,2,82.9,1.21,82,9,1.07,PointsBet,1.19,,1.19,,1.18,,-1.4,-1.4,0,Pass,32.1,120,0.97,best
+78,Mavericks @ Cavaliers,DAL@CLE,11:40,James Harden,CLE,DAL,10+ pts & 4+ ast,P10A4,2,82.9,1.21,77,8,1.06,PointsBet,1.19,,1.19,,1.18,,-1.4,-1.4,0,Pass,32.1,120,0.97,best
+79,Nets @ Grizzlies,BRK@MEM,12:10,Julius Randle,BRK,MEM,15+ pts & 6+ reb & 4+ ast,P15R6A4,3,41.0,2.44,31,3,0.99,Sportsbet,2.4,2.4,2.25,2.4,2.41,-1.5,-7.7,-1.5,0,Pass,32.5,120,0.98,best
+80,Bulls @ Timberwolves,CHI@MIN,12:10,Jaden McDaniels,MIN,CHI,10+ pts & 1+ threes,P10T1,2,76.4,1.31,66,8,1.07,Sportsbet,1.29,1.29,1.27,1.25,1.32,-1.5,-3.0,-1.5,0,Pass,33.9,120,1.08,best
+81,Pistons @ Heat,DET@MIA,12:10,Ausar Thompson,DET,MIA,4+ reb & 2+ ast,R4A2,2,86.4,1.16,78,9,1.07,PointsBet,1.14,,1.14,,1.13,,-1.5,-1.5,0,Pass,28.7,120,1.09,best
+82,Bulls @ Timberwolves,CHI@MIN,12:10,Ayo Dosunmu,MIN,CHI,10+ pts & 1+ threes,P10T1,2,80.7,1.24,71,7,1.06,PointsBet,1.22,1.2,1.22,1.2,1.24,-3.2,-1.6,-1.6,0,Pass,31.6,120,1.08,best
+83,Bulls @ Timberwolves,CHI@MIN,12:10,Jaden McDaniels,MIN,CHI,15+ pts & 2+ ast,P15A2,2,58.9,1.7,59,6,1.05,Sportsbet,1.67,1.67,1.65,1.58,1.63,-1.6,-2.8,-1.6,0,Pass,33.9,120,1.08,best
+84,Pistons @ Heat,DET@MIA,12:10,Bam Adebayo,MIA,DET,10+ pts & 2+ ast,P10A2,2,78.7,1.27,69,8,1.06,PointsBet,1.25,,1.25,,1.23,,-1.6,-1.6,0,Pass,34.9,120,0.87,best
+85,Bulls @ Timberwolves,CHI@MIN,12:10,Norman Powell,CHI,MIN,10+ pts & 1+ threes,P10T1,2,89.4,1.12,73,9,1.08,Sportsbet,1.1,1.1,1.1,1.09,1.12,-1.7,-1.7,-1.7,0,Pass,28.5,120,0.88,best
+86,Mavericks @ Cavaliers,DAL@CLE,11:40,Cooper Flagg,DAL,CLE,15+ pts & 4+ reb,P15R4,2,84.8,1.18,71,8,1.06,PointsBet,1.16,,1.16,,1.16,,-1.7,-1.7,0,Pass,33.6,81,1.05,best
+87,Nuggets @ Pelicans,DEN@NOP,11:10,Zion Williamson,NOP,DEN,15+ pts & 4+ reb & 2+ ast,P15R4A2,3,60.3,1.66,62,8,1.09,PointsBet,1.63,,1.63,,1.65,,-1.7,-1.7,0,Pass,32.9,120,0.97,best
+88,Nets @ Grizzlies,BRK@MEM,12:10,Cedric Coward,MEM,BRK,4+ reb & 2+ ast,R4A2,2,73.9,1.35,67,9,1.08,PointsBet,1.33,1.3,1.33,1.3,1.32,-4.0,-1.8,-1.8,0,Pass,28.5,73,0.95,best
+89,Bulls @ Timberwolves,CHI@MIN,12:10,Josh Giddey,CHI,MIN,10+ pts & 6+ reb & 6+ ast,P10R6A6,3,47.9,2.09,29,3,1.19,Sportsbet,2.05,2.05,1.9,2.14,2.04,-1.8,-8.9,-1.8,0,Pass,29.2,120,0.88,best
+90,Bulls @ Timberwolves,CHI@MIN,12:10,Jaden McDaniels,MIN,CHI,4+ reb & 2+ ast,R4A2,2,72.2,1.38,69,9,1.08,PointsBet,1.36,1.33,1.36,1.3,1.37,-3.9,-1.8,-1.8,0,Pass,33.9,120,1.08,best
+91,Pistons @ Heat,DET@MIA,12:10,Cade Cunningham,DET,MIA,15+ pts & 4+ reb & 6+ ast,P15R4A6,3,68.2,1.47,51,6,1.07,PointsBet,1.44,,1.44,,1.47,,-1.8,-1.8,0,Pass,34.6,120,1.09,best
+92,Bulls @ Timberwolves,CHI@MIN,12:10,Jaden McDaniels,MIN,CHI,2+ ast & 1+ threes,A2T1,2,70.0,1.43,64,8,1.06,Sportsbet,1.4,1.4,1.4,1.36,1.39,-1.9,-1.9,-1.9,0,Pass,33.9,120,1.08,best
+93,Pistons @ Heat,DET@MIA,12:10,Davion Mitchell,MIA,DET,6+ ast & 1+ threes,A6T1,2,74.9,1.34,54,7,1.06,PointsBet,1.31,,1.31,,1.29,,-1.9,-1.9,0,Pass,36.6,120,0.87,best
+94,Mavericks @ Cavaliers,DAL@CLE,11:40,Donovan Mitchell,CLE,DAL,15+ pts & 1+ threes,P15T1,2,86.1,1.16,78,9,1.08,PointsBet,1.14,,1.14,,1.14,,-1.9,-1.9,0,Pass,31.9,120,0.97,best
+95,Bulls @ Timberwolves,CHI@MIN,12:10,Josh Giddey,CHI,MIN,4+ ast & 1+ threes,A4T1,2,73.6,1.36,71,9,1.06,Sportsbet,1.33,1.33,,1.32,,-2.1,,-2.1,0,Pass,29.2,120,0.88,best
+96,Bulls @ Timberwolves,CHI@MIN,12:10,Matas Buzelis,CHI,MIN,10+ pts & 4+ reb,P10R4,2,68.9,1.45,61,6,1.09,PointsBet,1.42,1.4,1.42,1.38,1.42,-3.6,-2.2,-2.2,0,Pass,26.7,120,0.88,best
+97,Pistons @ Heat,DET@MIA,12:10,Bam Adebayo,MIA,DET,6+ reb & 2+ ast,R6A2,2,77.0,1.3,78,9,1.07,PointsBet,1.27,,1.27,,1.25,,-2.2,-2.2,0,Pass,34.9,120,0.87,best
+98,Pistons @ Heat,DET@MIA,12:10,Bam Adebayo,MIA,DET,10+ pts & 6+ reb,P10R6,2,82.2,1.22,76,9,1.07,PointsBet,1.19,,1.19,,1.19,,-2.2,-2.2,0,Pass,34.9,120,0.87,best
+99,Nets @ Grizzlies,BRK@MEM,12:10,Cameron Boozer,MEM,BRK,6+ reb & 4+ ast,R6A4,2,69.7,1.44,69,8,1.07,Sportsbet,1.4,1.4,1.4,1.38,1.38,-2.4,-2.4,-2.4,0,Pass,30.9,12,0.95,best
+100,Nets @ Grizzlies,BRK@MEM,12:10,Cedric Coward,MEM,BRK,6+ reb & 2+ ast,R6A2,2,56.4,1.77,63,9,1.07,Sportsbet,1.73,1.73,1.67,1.68,1.66,-2.4,-5.8,-2.4,0,Pass,28.5,73,0.95,best
+101,Nuggets @ Pelicans,DEN@NOP,11:10,Jamal Murray,DEN,NOP,15+ pts & 1+ threes,P15T1,2,87.8,1.14,74,8,1.09,PointsBet,1.11,,1.11,,1.12,,-2.5,-2.5,0,Pass,36.3,120,1.05,best
+102,Bulls @ Timberwolves,CHI@MIN,12:10,Norman Powell,CHI,MIN,15+ pts & 1+ threes,P15T1,2,75.3,1.33,68,9,1.12,Sportsbet,1.29,1.29,1.27,1.28,1.31,-2.8,-4.3,-2.8,0,Pass,28.5,120,0.88,best
+103,Mavericks @ Cavaliers,DAL@CLE,11:40,Kyrie Irving,DAL,CLE,15+ pts & 2+ ast,P15A2,2,80.4,1.24,70,8,1.07,PointsBet,1.21,,1.21,,1.21,,-2.8,-2.8,0,Pass,30.2,118,1.05,best
+104,Nuggets @ Pelicans,DEN@NOP,11:10,Saddiq Bey,NOP,DEN,10+ pts & 1+ threes,P10T1,2,85.3,1.17,76,8,1.07,PointsBet,1.14,,1.14,,1.16,,-2.8,-2.8,0,Pass,28.6,120,0.97,best
+105,Mavericks @ Cavaliers,DAL@CLE,11:40,Kyrie Irving,DAL,CLE,15+ pts & 1+ threes,P15T1,2,84.3,1.19,67,8,1.12,PointsBet,1.15,,1.15,,1.16,,-3.0,-3.0,0,Pass,30.2,118,1.05,best
+106,Nuggets @ Pelicans,DEN@NOP,11:10,Jeremiah Fears,NOP,DEN,4+ ast & 1+ threes,A4T1,2,69.3,1.44,44,5,1.0,PointsBet,1.4,,1.4,,1.38,,-3.0,-3.0,0,Pass,31.2,95,0.97,best
+107,Bulls @ Timberwolves,CHI@MIN,12:10,Josh Giddey,CHI,MIN,6+ ast & 1+ threes,A6T1,2,63.3,1.58,60,7,1.06,Sportsbet,1.53,1.53,1.5,1.5,1.52,-3.1,-5.0,-3.1,0,Pass,29.2,120,0.88,best
+108,Nets @ Grizzlies,BRK@MEM,12:10,Julius Randle,BRK,MEM,15+ pts & 4+ reb,P15R4,2,75.1,1.33,61,7,1.04,PointsBet,1.29,,1.29,,1.29,,-3.1,-3.1,0,Pass,32.5,120,0.98,best
+109,Bulls @ Timberwolves,CHI@MIN,12:10,Josh Giddey,CHI,MIN,10+ pts & 4+ reb & 8+ ast,P10R4A8,3,47.2,2.12,31,4,1.27,Sportsbet,2.05,2.05,1.9,2.13,2.07,-3.2,-10.3,-3.2,0,Pass,29.2,120,0.88,best
+110,Bulls @ Timberwolves,CHI@MIN,12:10,Jaden McDaniels,MIN,CHI,10+ pts & 4+ reb & 4+ ast,P10R4A4,3,36.7,2.72,30,5,1.15,Sportsbet,2.63,2.63,2.4,2.55,2.72,-3.4,-11.8,-3.4,0,Pass,33.9,120,1.08,best
+111,Pistons @ Heat,DET@MIA,12:10,Bam Adebayo,MIA,DET,15+ pts & 6+ reb & 2+ ast,P15R6A2,3,56.5,1.77,54,7,1.08,PointsBet,1.71,,1.71,,1.76,,-3.4,-3.4,0,Pass,34.9,120,0.87,best
+112,Nuggets @ Pelicans,DEN@NOP,11:10,Saddiq Bey,NOP,DEN,2+ ast & 1+ threes,A2T1,2,68.0,1.47,59,7,1.05,PointsBet,1.42,,1.42,,1.4,,-3.5,-3.5,0,Pass,28.6,120,0.97,best
+113,Nuggets @ Pelicans,DEN@NOP,11:10,Jeremiah Fears,NOP,DEN,10+ pts & 4+ ast,P10A4,2,77.2,1.3,57,8,1.11,PointsBet,1.25,,1.25,,1.25,,-3.5,-3.5,0,Pass,31.2,95,0.97,best
+114,Nets @ Grizzlies,BRK@MEM,12:10,Julius Randle,BRK,MEM,15+ pts & 6+ reb & 2+ ast,P15R6A2,3,52.7,1.9,41,5,1.1,PointsBet,1.83,1.8,1.83,1.83,1.86,-5.2,-3.6,-3.6,0,Pass,32.5,120,0.98,best
+115,Nets @ Grizzlies,BRK@MEM,12:10,Michael Porter Jr.,BRK,MEM,15+ pts & 2+ threes,P15T2,2,77.1,1.3,67,8,1.1,Sportsbet,1.25,1.25,1.24,1.25,1.3,-3.6,-4.4,-3.6,0,Pass,32.4,120,0.98,best
+116,Pistons @ Heat,DET@MIA,12:10,Cade Cunningham,DET,MIA,20+ pts & 4+ reb & 6+ ast,P20R4A6,3,57.0,1.75,41,5,1.13,PointsBet,1.69,,1.69,,1.75,,-3.6,-3.6,0,Pass,34.6,120,1.09,best
+117,Bulls @ Timberwolves,CHI@MIN,12:10,Matas Buzelis,CHI,MIN,10+ pts & 1+ threes,P10T1,2,79.6,1.26,66,8,1.13,PointsBet,1.21,1.2,1.21,1.23,1.24,-4.5,-3.7,-3.7,0,Pass,26.7,120,0.88,best
+118,Nuggets @ Pelicans,DEN@NOP,11:10,Jeremiah Fears,NOP,DEN,10+ pts & 4+ reb & 4+ ast,P10R4A4,3,56.3,1.78,41,7,1.22,PointsBet,1.71,,1.71,,1.75,,-3.7,-3.7,0,Pass,31.2,95,0.97,best
+119,Nets @ Grizzlies,BRK@MEM,12:10,Michael Porter Jr.,BRK,MEM,10+ pts & 6+ reb & 2+ ast,P10R6A2,3,43.7,2.29,30,3,1.02,Sportsbet,2.2,2.2,,2.16,,-3.8,,-3.8,0,Pass,32.4,120,0.98,best
+120,Nets @ Grizzlies,BRK@MEM,12:10,Michael Porter Jr.,BRK,MEM,4+ reb & 3+ threes,R4T3,2,61.7,1.62,63,8,1.13,PointsBet,1.56,1.53,1.56,1.52,1.56,-5.6,-3.8,-3.8,0,Pass,32.4,120,0.98,best
+121,Mavericks @ Cavaliers,DAL@CLE,11:40,Cooper Flagg,DAL,CLE,4+ reb & 1+ threes,R4T1,2,73.4,1.36,63,7,1.06,PointsBet,1.31,,1.31,,1.31,,-3.8,-3.8,0,Pass,33.6,81,1.05,best
+122,Nuggets @ Pelicans,DEN@NOP,11:10,Jeremiah Fears,NOP,DEN,4+ reb & 4+ ast,R4A4,2,57.6,1.74,47,7,1.1,PointsBet,1.67,,1.67,,1.62,,-3.8,-3.8,0,Pass,31.2,95,0.97,best
+123,Nets @ Grizzlies,BRK@MEM,12:10,Julius Randle,BRK,MEM,10+ pts & 6+ reb & 4+ ast,P10R6A4,3,45.8,2.19,38,4,1.0,Sportsbet,2.1,2.1,,2.09,,-3.9,,-3.9,0,Pass,32.5,120,0.98,best
+124,Bulls @ Timberwolves,CHI@MIN,12:10,Jalen Smith,CHI,MIN,10+ pts & 4+ reb,P10R4,2,67.7,1.48,56,6,1.1,PointsBet,1.42,1.4,1.42,1.38,1.46,-5.3,-3.9,-3.9,0,Pass,25.2,120,0.88,best
+125,Nets @ Grizzlies,BRK@MEM,12:10,Julius Randle,BRK,MEM,4+ reb & 4+ ast,R4A4,2,64.0,1.56,62,7,1.04,PointsBet,1.5,,1.5,,1.48,,-3.9,-3.9,0,Pass,32.5,120,0.98,best
+126,Mavericks @ Cavaliers,DAL@CLE,11:40,Peyton Watson,CLE,DAL,2+ ast & 1+ threes,A2T1,2,52.5,1.9,53,6,1.08,PointsBet,1.83,,1.83,,1.77,,-3.9,-3.9,0,Pass,27.8,120,0.97,best
+127,Nuggets @ Pelicans,DEN@NOP,11:10,Saddiq Bey,NOP,DEN,4+ reb & 1+ threes,R4T1,2,66.7,1.5,63,7,1.05,PointsBet,1.44,,1.44,,1.42,,-4.0,-4.0,0,Pass,28.6,120,0.97,best
+128,Nets @ Grizzlies,BRK@MEM,12:10,Michael Porter Jr.,BRK,MEM,10+ pts & 6+ reb,P10R6,2,68.5,1.46,67,8,1.07,Sportsbet,1.4,1.4,,1.4,,-4.1,,-4.1,0,Pass,32.4,120,0.98,best
+129,Nets @ Grizzlies,BRK@MEM,12:10,Michael Porter Jr.,BRK,MEM,6+ reb & 1+ threes,R6T1,2,68.4,1.46,64,8,1.1,Sportsbet,1.4,1.4,,1.4,,-4.2,,-4.2,0,Pass,32.4,120,0.98,best
+130,Mavericks @ Cavaliers,DAL@CLE,11:40,Donovan Mitchell,CLE,DAL,4+ ast & 1+ threes,A4T1,2,73.2,1.37,70,8,1.06,PointsBet,1.31,,1.31,,1.31,,-4.2,-4.2,0,Pass,31.9,120,0.97,best
+131,Bulls @ Timberwolves,CHI@MIN,12:10,LaMelo Ball,MIN,CHI,15+ pts & 2+ threes,P15T2,2,75.4,1.33,67,7,1.12,PointsBet,1.27,1.22,1.27,1.26,1.34,-8.0,-4.3,-4.3,0,Pass,27.9,120,1.08,best
+132,Nuggets @ Pelicans,DEN@NOP,11:10,Zion Williamson,NOP,DEN,15+ pts & 2+ ast,P15A2,2,72.0,1.39,76,9,1.06,PointsBet,1.33,,1.33,,1.33,,-4.3,-4.3,0,Pass,32.9,120,0.97,best
+133,Nuggets @ Pelicans,DEN@NOP,11:10,Saddiq Bey,NOP,DEN,10+ pts & 4+ reb,P10R4,2,66.4,1.51,59,7,1.11,PointsBet,1.44,,1.44,,1.44,,-4.3,-4.3,0,Pass,28.6,120,0.97,best
+134,Mavericks @ Cavaliers,DAL@CLE,11:40,James Harden,CLE,DAL,10+ pts & 1+ threes,P10T1,2,86.1,1.16,83,9,1.07,PointsBet,1.11,,1.11,,1.14,,-4.4,-4.4,0,Pass,32.1,120,0.97,best
+135,Mavericks @ Cavaliers,DAL@CLE,11:40,Kyrie Irving,DAL,CLE,2+ ast & 2+ threes,A2T2,2,76.5,1.31,71,8,1.07,PointsBet,1.25,,1.25,,1.26,,-4.4,-4.4,0,Pass,30.2,118,1.05,best
+136,Nuggets @ Pelicans,DEN@NOP,11:10,Saddiq Bey,NOP,DEN,10+ pts & 4+ reb & 2+ ast,P10R4A2,3,52.2,1.91,35,4,1.07,PointsBet,1.83,,1.83,,1.88,,-4.4,-4.4,0,Pass,28.6,120,0.97,best
+137,Nuggets @ Pelicans,DEN@NOP,11:10,Saddiq Bey,NOP,DEN,10+ pts & 2+ ast,P10A2,2,67.3,1.49,51,5,1.01,PointsBet,1.42,,1.42,,1.41,,-4.4,-4.4,0,Pass,28.6,120,0.97,best
+138,Pistons @ Heat,DET@MIA,12:10,Ausar Thompson,DET,MIA,10+ pts & 4+ reb & 2+ ast,P10R4A2,3,53.1,1.88,45,6,1.14,PointsBet,1.8,,1.8,,1.85,,-4.5,-4.5,0,Pass,28.7,120,1.09,best
+139,Pistons @ Heat,DET@MIA,12:10,Daniss Jenkins,DET,MIA,4+ ast & 1+ threes,A4T1,2,66.3,1.51,55,6,1.05,PointsBet,1.44,,1.44,,1.44,,-4.5,-4.5,0,Pass,28.6,89,1.09,best
+140,Mavericks @ Cavaliers,DAL@CLE,11:40,P.J. Washington,DAL,CLE,10+ pts & 4+ reb,P10R4,2,66.3,1.51,65,7,1.05,PointsBet,1.44,,1.44,,1.44,,-4.5,-4.5,0,Pass,32.4,120,1.05,best
+141,Bulls @ Timberwolves,CHI@MIN,12:10,Jaden McDaniels,MIN,CHI,10+ pts & 6+ reb,P10R6,2,49.9,2.0,69,9,1.09,Sportsbet,1.91,1.91,1.83,1.86,1.9,-4.6,-8.6,-4.6,0,Pass,33.9,120,1.08,best
+142,Mavericks @ Cavaliers,DAL@CLE,11:40,James Harden,CLE,DAL,10+ pts & 4+ reb & 4+ ast,P10R4A4,3,55.8,1.79,47,5,1.1,PointsBet,1.71,,1.71,,1.77,,-4.6,-4.6,0,Pass,32.1,120,0.97,best
+143,Bulls @ Timberwolves,CHI@MIN,12:10,Jaden McDaniels,MIN,CHI,15+ pts & 6+ reb & 2+ ast,P15R6A2,3,35.3,2.83,44,5,1.08,Sportsbet,2.7,2.7,2.6,2.8,2.84,-4.7,-8.2,-4.7,0,Pass,33.9,120,1.08,best
+144,Bulls @ Timberwolves,CHI@MIN,12:10,LaMelo Ball,MIN,CHI,10+ pts & 3+ threes,P10T3,2,70.1,1.43,68,7,1.09,PointsBet,1.36,1.3,1.36,1.35,1.41,-8.9,-4.7,-4.7,0,Pass,27.9,120,1.08,best
+145,Bulls @ Timberwolves,CHI@MIN,12:10,Matas Buzelis,CHI,MIN,4+ reb & 1+ threes,R4T1,2,70.1,1.43,57,6,1.08,PointsBet,1.36,,1.36,,1.36,,-4.7,-4.7,0,Pass,26.7,120,0.88,best
+146,Bulls @ Timberwolves,CHI@MIN,12:10,Ayo Dosunmu,MIN,CHI,15+ pts & 2+ ast,P15A2,2,66.2,1.51,54,6,1.06,PointsBet,1.44,,1.44,,1.44,,-4.7,-4.7,0,Pass,31.6,120,1.08,best
+147,Pistons @ Heat,DET@MIA,12:10,Ausar Thompson,DET,MIA,6+ reb & 2+ ast,R6A2,2,68.1,1.47,61,8,1.06,PointsBet,1.4,,1.4,,1.4,,-4.7,-4.7,0,Pass,28.7,120,1.09,best
+148,Nuggets @ Pelicans,DEN@NOP,11:10,Jordan Poole,NOP,DEN,2+ ast & 1+ threes,A2T1,2,66.1,1.51,56,6,1.1,PointsBet,1.44,,1.44,,1.44,,-4.8,-4.8,0,Pass,20.7,120,0.97,best
+149,Pistons @ Heat,DET@MIA,12:10,Bam Adebayo,MIA,DET,8+ reb & 2+ ast,R8A2,2,62.2,1.61,69,9,1.06,PointsBet,1.53,,1.53,,1.52,,-4.9,-4.9,0,Pass,34.9,120,0.87,best
+150,Nuggets @ Pelicans,DEN@NOP,11:10,Jamal Murray,DEN,NOP,15+ pts & 2+ threes,P15T2,2,76.0,1.32,72,8,1.1,PointsBet,1.25,,1.25,,1.29,,-4.9,-4.9,0,Pass,36.3,120,1.05,best
+151,Nuggets @ Pelicans,DEN@NOP,11:10,Jeremiah Fears,NOP,DEN,10+ pts & 1+ threes,P10T1,2,76.0,1.32,55,7,1.03,PointsBet,1.25,,1.25,,1.29,,-5.0,-5.0,0,Pass,31.2,95,0.97,best
+152,Nuggets @ Pelicans,DEN@NOP,11:10,Aaron Gordon,DEN,NOP,10+ pts & 4+ reb & 2+ ast,P10R4A2,3,43.1,2.32,29,2,1.03,PointsBet,2.2,,2.2,,2.28,,-5.2,-5.2,0,Pass,29.0,120,1.05,best
+153,Nuggets @ Pelicans,DEN@NOP,11:10,Christian Braun,DEN,NOP,2+ ast & 1+ threes,A2T1,2,55.4,1.8,49,5,1.09,PointsBet,1.71,,1.71,,1.69,,-5.2,-5.2,0,Pass,34.3,120,1.05,best
+154,Nuggets @ Pelicans,DEN@NOP,11:10,Jeremiah Fears,NOP,DEN,4+ reb & 1+ threes,R4T1,2,55.4,1.8,44,6,0.98,PointsBet,1.71,,1.71,,1.67,,-5.2,-5.2,0,Pass,31.2,95,0.97,best
+155,Mavericks @ Cavaliers,DAL@CLE,11:40,Kyrie Irving,DAL,CLE,15+ pts & 4+ reb & 2+ ast,P15R4A2,3,47.3,2.11,36,4,1.17,PointsBet,2.0,,2.0,,2.07,,-5.4,-5.4,0,Pass,30.2,118,1.05,best
+156,Mavericks @ Cavaliers,DAL@CLE,11:40,P.J. Washington,DAL,CLE,6+ reb & 1+ threes,R6T1,2,59.5,1.68,52,6,1.07,PointsBet,1.59,,1.59,,1.58,,-5.4,-5.4,0,Pass,32.4,120,1.05,best
+157,Nuggets @ Pelicans,DEN@NOP,11:10,Zion Williamson,NOP,DEN,4+ reb & 2+ ast,R4A2,2,66.6,1.5,75,9,1.07,PointsBet,1.42,,1.42,,1.43,,-5.4,-5.4,0,Pass,32.9,120,0.97,best
+158,Bulls @ Timberwolves,CHI@MIN,12:10,Jaden McDaniels,MIN,CHI,6+ reb & 2+ ast,R6A2,2,46.1,2.17,66,9,1.08,Sportsbet,2.05,2.05,1.95,2.02,2.0,-5.5,-10.1,-5.5,0,Pass,33.9,120,1.08,best
+159,Nets @ Grizzlies,BRK@MEM,12:10,Nolan Traoré,BRK,MEM,2+ ast & 1+ threes,A2T1,2,65.6,1.53,61,7,1.11,PointsBet,1.44,,1.44,,1.45,,-5.6,-5.6,0,Pass,22.1,66,0.98,best
+160,Nets @ Grizzlies,BRK@MEM,12:10,Michael Porter Jr.,BRK,MEM,15+ pts & 6+ reb,P15R6,2,59.4,1.68,60,7,1.09,PointsBet,1.59,,1.59,,1.6,,-5.6,-5.6,0,Pass,32.4,120,0.98,best
+161,Bulls @ Timberwolves,CHI@MIN,12:10,Jonathan Kuminga,MIN,CHI,10+ pts & 4+ reb,P10R4,2,66.5,1.5,51,6,1.1,PointsBet,1.42,,1.42,,1.44,,-5.6,-5.6,0,Pass,30.4,120,1.08,best
+162,Pistons @ Heat,DET@MIA,12:10,Bam Adebayo,MIA,DET,10+ pts & 8+ reb,P10R8,2,66.4,1.51,69,9,1.08,PointsBet,1.42,,1.42,,1.44,,-5.6,-5.6,0,Pass,34.9,120,0.87,best
+163,Nuggets @ Pelicans,DEN@NOP,11:10,Aaron Gordon,DEN,NOP,4+ reb & 2+ ast,R4A2,2,52.4,1.91,54,6,1.06,PointsBet,1.8,,1.8,,1.77,,-5.6,-5.6,0,Pass,29.0,120,1.05,best
+164,Mavericks @ Cavaliers,DAL@CLE,11:40,James Harden,CLE,DAL,15+ pts & 4+ reb & 4+ ast,P15R4A4,3,44.9,2.23,35,3,1.06,PointsBet,2.1,,2.1,,2.19,,-5.7,-5.7,0,Pass,32.1,120,0.97,best
+165,Nuggets @ Pelicans,DEN@NOP,11:10,Aaron Gordon,DEN,NOP,10+ pts & 4+ reb,P10R4,2,55.1,1.82,45,4,1.08,PointsBet,1.71,,1.71,,1.72,,-5.8,-5.8,0,Pass,29.0,120,1.05,best
+166,Nuggets @ Pelicans,DEN@NOP,11:10,Jeremiah Fears,NOP,DEN,10+ pts & 4+ reb,P10R4,2,62.8,1.59,59,9,1.12,PointsBet,1.5,,1.5,,1.51,,-5.9,-5.9,0,Pass,31.2,95,0.97,best
+167,Nets @ Grizzlies,BRK@MEM,12:10,Cedric Coward,MEM,BRK,10+ pts & 1+ threes,P10T1,2,70.7,1.42,63,8,1.07,PointsBet,1.33,1.3,1.33,1.34,1.44,-8.1,-6.0,-6.0,0,Pass,28.5,73,0.95,best
+168,Bulls @ Timberwolves,CHI@MIN,12:10,Josh Giddey,CHI,MIN,4+ reb & 1+ threes,R4T1,2,65.3,1.53,55,6,1.03,PointsBet,1.44,,1.44,,1.45,,-6.0,-6.0,0,Pass,29.2,120,0.88,best
+169,Nets @ Grizzlies,BRK@MEM,12:10,Day'Ron Sharpe,BRK,MEM,10+ pts & 4+ reb & 2+ ast,P10R4A2,3,37.5,2.67,30,3,1.15,Sportsbet,2.5,2.5,2.4,2.57,2.61,-6.2,-10.0,-6.2,0,Pass,22.6,120,0.98,best
+170,Mavericks @ Cavaliers,DAL@CLE,11:40,Peyton Watson,CLE,DAL,4+ reb & 1+ threes,R4T1,2,53.0,1.89,46,4,1.04,PointsBet,1.77,,1.77,,1.75,,-6.2,-6.2,0,Pass,27.8,120,0.97,best
+171,Nuggets @ Pelicans,DEN@NOP,11:10,Jeremiah Fears,NOP,DEN,15+ pts & 4+ reb & 4+ ast,P15R4A4,3,45.7,2.19,29,5,1.33,PointsBet,2.05,,2.05,,2.16,,-6.3,-6.3,0,Pass,31.2,95,0.97,best
+172,Nuggets @ Pelicans,DEN@NOP,11:10,Saddiq Bey,NOP,DEN,15+ pts & 4+ reb,P15R4,2,52.1,1.92,45,5,1.06,PointsBet,1.8,,1.8,,1.81,,-6.3,-6.3,0,Pass,28.6,120,0.97,best
+173,Nets @ Grizzlies,BRK@MEM,12:10,Julius Randle,BRK,MEM,15+ pts & 4+ ast,P15A4,2,61.2,1.63,56,6,1.04,PointsBet,1.53,,1.53,,1.54,,-6.4,-6.4,0,Pass,32.5,120,0.98,best
+174,Nuggets @ Pelicans,DEN@NOP,11:10,Jeremiah Fears,NOP,DEN,15+ pts & 4+ ast,P15A4,2,61.2,1.63,38,5,1.12,PointsBet,1.53,,1.53,,1.54,,-6.4,-6.4,0,Pass,31.2,95,0.97,best
+175,Mavericks @ Cavaliers,DAL@CLE,11:40,Donovan Mitchell,CLE,DAL,15+ pts & 4+ reb & 4+ ast,P15R4A4,3,50.0,2.0,47,6,1.14,PointsBet,1.87,,1.87,,1.96,,-6.5,-6.5,0,Pass,31.9,120,0.97,best
+176,Nuggets @ Pelicans,DEN@NOP,11:10,Saddiq Bey,NOP,DEN,4+ reb & 2+ threes,R4T2,2,51.1,1.96,44,4,1.07,PointsBet,1.83,,1.83,,1.81,,-6.5,-6.5,0,Pass,28.6,120,0.97,best
+177,Nuggets @ Pelicans,DEN@NOP,11:10,Saddiq Bey,NOP,DEN,4+ reb & 2+ ast,R4A2,2,52.8,1.89,42,4,0.98,PointsBet,1.77,,1.77,,1.74,,-6.5,-6.5,0,Pass,28.6,120,0.97,best
+178,Mavericks @ Cavaliers,DAL@CLE,11:40,James Harden,CLE,DAL,4+ ast & 2+ threes,A4T2,2,64.8,1.54,71,8,1.06,PointsBet,1.44,,1.44,,1.46,,-6.6,-6.6,0,Pass,32.1,120,0.97,best
+179,Mavericks @ Cavaliers,DAL@CLE,11:40,P.J. Washington,DAL,CLE,4+ reb & 2+ threes,R4T2,2,55.3,1.81,59,7,1.11,PointsBet,1.69,,1.69,,1.68,,-6.6,-6.6,0,Pass,32.4,120,1.05,best
+180,Nets @ Grizzlies,BRK@MEM,12:10,Michael Porter Jr.,BRK,MEM,6+ reb & 2+ threes,R6T2,2,58.7,1.7,62,8,1.11,PointsBet,1.59,,1.59,,1.6,,-6.7,-6.7,0,Pass,32.4,120,0.98,best
+181,Nets @ Grizzlies,BRK@MEM,12:10,Cedric Coward,MEM,BRK,10+ pts & 2+ ast,P10A2,2,61.0,1.64,61,8,1.04,PointsBet,1.53,,1.53,,1.55,,-6.7,-6.7,0,Pass,28.5,73,0.95,best
+182,Bulls @ Timberwolves,CHI@MIN,12:10,Jaden McDaniels,MIN,CHI,15+ pts & 4+ reb,P15R4,2,55.9,1.79,54,5,1.04,PointsBet,1.67,,1.67,,1.69,,-6.7,-6.7,0,Pass,33.9,120,1.08,best
+183,Nets @ Grizzlies,BRK@MEM,12:10,Michael Porter Jr.,BRK,MEM,10+ pts & 3+ threes,P10T3,2,66.6,1.5,66,8,1.07,Sportsbet,1.4,1.4,,1.44,,-6.8,,-6.8,0,Pass,32.4,120,0.98,best
+184,Nuggets @ Pelicans,DEN@NOP,11:10,Zion Williamson,NOP,DEN,15+ pts & 4+ reb,P15R4,2,66.6,1.5,69,8,1.06,PointsBet,1.4,,1.4,,1.44,,-6.8,-6.8,0,Pass,32.9,120,0.97,best
+185,Pistons @ Heat,DET@MIA,12:10,Bam Adebayo,MIA,DET,15+ pts & 8+ reb & 2+ ast,P15R8A2,3,46.6,2.15,50,7,1.09,PointsBet,2.0,,2.0,,2.12,,-6.9,-6.9,0,Pass,34.9,120,0.87,best
+186,Mavericks @ Cavaliers,DAL@CLE,11:40,Jarrett Allen,CLE,DAL,10+ pts & 6+ reb,P10R6,2,68.5,1.46,62,7,1.1,PointsBet,1.36,,1.36,,1.4,,-6.9,-6.9,0,Pass,25.6,120,0.97,best
+187,Bulls @ Timberwolves,CHI@MIN,12:10,Ayo Dosunmu,MIN,CHI,15+ pts & 1+ threes,P15T1,2,64.5,1.55,64,7,1.06,PointsBet,1.44,1.4,1.44,1.49,1.54,-9.7,-7.1,-7.1,0,Pass,31.6,120,1.08,best
+188,Pistons @ Heat,DET@MIA,12:10,Ausar Thompson,DET,MIA,10+ pts & 2+ ast,P10A2,2,54.3,1.84,51,6,1.04,PointsBet,1.71,,1.71,,1.71,,-7.1,-7.1,0,Pass,28.7,120,1.09,best
+189,Mavericks @ Cavaliers,DAL@CLE,11:40,Cooper Flagg,DAL,CLE,15+ pts & 4+ reb & 6+ ast,P15R4A6,3,54.3,1.84,46,7,1.15,PointsBet,1.71,,1.71,,1.8,,-7.1,-7.1,0,Pass,33.6,81,1.05,best
+190,Bulls @ Timberwolves,CHI@MIN,12:10,Norman Powell,CHI,MIN,10+ pts & 2+ threes,P10T2,2,70.9,1.41,55,7,1.07,PointsBet,1.31,,1.31,,1.37,,-7.2,-7.2,0,Pass,28.5,120,0.88,best
+191,Pistons @ Heat,DET@MIA,12:10,Davion Mitchell,MIA,DET,10+ pts & 6+ ast,P10A6,2,64.4,1.55,61,9,1.09,PointsBet,1.44,,1.44,,1.47,,-7.2,-7.2,0,Pass,36.6,120,0.87,best
+192,Mavericks @ Cavaliers,DAL@CLE,11:40,Kyrie Irving,DAL,CLE,4+ ast & 1+ threes,A4T1,2,59.5,1.68,62,7,1.11,PointsBet,1.56,,1.56,,1.58,,-7.2,-7.2,0,Pass,30.2,118,1.05,best
+193,Nuggets @ Pelicans,DEN@NOP,11:10,Saddiq Bey,NOP,DEN,15+ pts & 1+ threes,P15T1,2,66.3,1.51,58,6,1.05,PointsBet,1.4,,1.4,,1.46,,-7.2,-7.2,0,Pass,28.6,120,0.97,best
+194,Nets @ Grizzlies,BRK@MEM,12:10,Egor Dëmin,BRK,MEM,2+ ast & 1+ threes,A2T1,2,68.1,1.47,51,6,1.02,PointsBet,1.36,,1.36,,1.4,,-7.4,-7.4,0,Pass,24.1,57,0.98,best
+195,Nets @ Grizzlies,BRK@MEM,12:10,Cedric Coward,MEM,BRK,15+ pts & 4+ reb & 2+ ast,P15R4A2,3,38.5,2.6,30,5,1.08,Sportsbet,2.4,2.4,2.4,2.41,2.7,-7.5,-7.5,-7.5,0,Pass,28.5,73,0.95,best
+196,Mavericks @ Cavaliers,DAL@CLE,11:40,P.J. Washington,DAL,CLE,10+ pts & 6+ reb,P10R6,2,50.5,1.98,48,5,1.08,PointsBet,1.83,,1.83,,1.86,,-7.5,-7.5,0,Pass,32.4,120,1.05,best
+197,Bulls @ Timberwolves,CHI@MIN,12:10,Nic Claxton,CHI,MIN,4+ reb & 2+ ast,R4A2,2,47.4,2.11,63,8,1.07,Sportsbet,1.95,1.95,,1.98,,-7.6,,-7.6,0,Pass,21.3,120,0.88,best
+198,Nets @ Grizzlies,BRK@MEM,12:10,Julius Randle,BRK,MEM,6+ reb & 2+ ast,R6A2,2,58.1,1.72,54,6,1.05,PointsBet,1.59,,1.59,,1.61,,-7.6,-7.6,0,Pass,32.5,120,0.98,best
+199,Pistons @ Heat,DET@MIA,12:10,Ausar Thompson,DET,MIA,10+ pts & 6+ reb & 2+ ast,P10R6A2,3,43.0,2.33,37,6,1.19,PointsBet,2.15,,2.15,,2.28,,-7.6,-7.6,0,Pass,28.7,120,1.09,best
+200,Pistons @ Heat,DET@MIA,12:10,Bam Adebayo,MIA,DET,15+ pts & 6+ reb,P15R6,2,61.6,1.62,66,8,1.06,PointsBet,1.5,,1.5,,1.54,,-7.6,-7.6,0,Pass,34.9,120,0.87,best
+201,Pistons @ Heat,DET@MIA,12:10,Ausar Thompson,DET,MIA,4+ reb & 4+ ast,R4A4,2,60.4,1.66,56,6,1.03,PointsBet,1.53,,1.53,,1.56,,-7.6,-7.6,0,Pass,28.7,120,1.09,best
+202,Mavericks @ Cavaliers,DAL@CLE,11:40,James Harden,CLE,DAL,15+ pts & 1+ threes,P15T1,2,67.9,1.47,62,6,1.05,PointsBet,1.36,,1.36,,1.42,,-7.6,-7.6,0,Pass,32.1,120,0.97,best
+203,Nuggets @ Pelicans,DEN@NOP,11:10,Jeremiah Fears,NOP,DEN,15+ pts & 4+ reb,P15R4,2,50.5,1.98,39,6,1.14,PointsBet,1.83,,1.83,,1.86,,-7.6,-7.6,0,Pass,31.2,95,0.97,best
+204,Pistons @ Heat,DET@MIA,12:10,Duncan Robinson,DET,MIA,2+ ast & 2+ threes,A2T2,2,55.9,1.79,74,9,1.06,PointsBet,1.65,,1.65,,1.67,,-7.7,-7.7,0,Pass,32.2,120,1.09,best
+205,Mavericks @ Cavaliers,DAL@CLE,11:40,Kyrie Irving,DAL,CLE,20+ pts & 1+ threes,P20T1,2,62.3,1.6,52,5,1.1,PointsBet,1.48,,1.48,,1.52,,-7.7,-7.7,0,Pass,30.2,118,1.05,best
+206,Bulls @ Timberwolves,CHI@MIN,12:10,LaMelo Ball,MIN,CHI,15+ pts & 4+ reb & 4+ ast,P15R4A4,3,50.3,1.99,28,1,0.88,PointsBet,1.83,1.8,1.83,1.79,1.96,-9.4,-7.9,-7.9,0,Pass,27.9,120,1.08,best
+207,Mavericks @ Cavaliers,DAL@CLE,11:40,Donovan Mitchell,CLE,DAL,15+ pts & 2+ threes,P15T2,2,70.2,1.42,63,7,1.11,PointsBet,1.31,,1.31,,1.38,,-8.0,-8.0,0,Pass,31.9,120,0.97,best
+208,Mavericks @ Cavaliers,DAL@CLE,11:40,Jarrett Allen,CLE,DAL,10+ pts & 8+ reb,P10R8,2,54.4,1.84,47,5,1.06,PointsBet,1.69,,1.69,,1.74,,-8.1,-8.1,0,Pass,25.6,120,0.97,best
+209,Pistons @ Heat,DET@MIA,12:10,Davion Mitchell,MIA,DET,10+ pts & 1+ threes,P10T1,2,69.0,1.45,63,8,1.08,PointsBet,1.33,,1.33,,1.41,,-8.2,-8.2,0,Pass,36.6,120,0.87,best
+210,Mavericks @ Cavaliers,DAL@CLE,11:40,Kyrie Irving,DAL,CLE,15+ pts & 2+ threes,P15T2,2,73.3,1.36,62,7,1.11,PointsBet,1.25,,1.25,,1.33,,-8.3,-8.3,0,Pass,30.2,118,1.05,best
+211,Bulls @ Timberwolves,CHI@MIN,12:10,Josh Giddey,CHI,MIN,10+ pts & 6+ reb & 8+ ast,P10R6A8,3,35.2,2.84,25,3,1.36,Sportsbet,2.6,2.6,2.4,2.89,2.73,-8.4,-15.5,-8.4,0,Pass,29.2,120,0.88,best
+212,Pistons @ Heat,DET@MIA,12:10,Paul Reed,DET,MIA,10+ pts & 4+ reb,P10R4,2,58.7,1.7,48,6,1.04,PointsBet,1.56,,1.56,,1.6,,-8.4,-8.4,0,Pass,28.1,120,1.09,best
+213,Nets @ Grizzlies,BRK@MEM,12:10,Cedric Coward,MEM,BRK,4+ reb & 2+ threes,R4T2,2,52.6,1.9,47,7,1.04,PointsBet,1.74,,1.74,,1.76,,-8.5,-8.5,0,Pass,28.5,73,0.95,best
+214,Mavericks @ Cavaliers,DAL@CLE,11:40,Peyton Watson,CLE,DAL,10+ pts & 2+ ast,P10A2,2,50.8,1.97,45,4,1.0,PointsBet,1.8,,1.8,,1.83,,-8.6,-8.6,0,Pass,27.8,120,0.97,best
+215,Nuggets @ Pelicans,DEN@NOP,11:10,Christian Braun,DEN,NOP,10+ pts & 2+ ast,P10A2,2,49.9,2.0,48,5,1.1,PointsBet,1.83,,1.83,,1.86,,-8.6,-8.6,0,Pass,34.3,120,1.05,best
+216,Bulls @ Timberwolves,CHI@MIN,12:10,Jonathan Kuminga,MIN,CHI,10+ pts & 8+ reb & 2+ ast,P10R8A2,3,17.4,5.75,25,3,1.25,Sportsbet,5.25,5.25,4.0,6.38,4.99,-8.7,-30.4,-8.7,0,Pass,30.4,120,1.08,best
+217,Nets @ Grizzlies,BRK@MEM,12:10,Cedric Coward,MEM,BRK,10+ pts & 6+ reb,P10R6,2,54.7,1.83,61,9,1.06,PointsBet,1.67,,1.67,,1.73,,-8.7,-8.7,0,Pass,28.5,73,0.95,best
+218,Pistons @ Heat,DET@MIA,12:10,Daniss Jenkins,DET,MIA,10+ pts & 4+ reb & 2+ ast,P10R4A2,3,41.5,2.41,30,4,1.19,PointsBet,2.2,,2.2,,2.3,,-8.7,-8.7,0,Pass,28.6,89,1.09,best
+219,Pistons @ Heat,DET@MIA,12:10,Duncan Robinson,DET,MIA,10+ pts & 2+ ast,P10A2,2,53.4,1.87,73,9,1.06,PointsBet,1.71,,1.71,,1.75,,-8.7,-8.7,0,Pass,32.2,120,1.09,best
+220,Pistons @ Heat,DET@MIA,12:10,Daniss Jenkins,DET,MIA,10+ pts & 1+ threes,P10T1,2,70.8,1.41,55,7,1.13,PointsBet,1.29,,1.29,,1.38,,-8.7,-8.7,0,Pass,28.6,89,1.09,best
+221,Nuggets @ Pelicans,DEN@NOP,11:10,Zion Williamson,NOP,DEN,20+ pts & 2+ ast,P20A2,2,50.7,1.97,61,7,1.05,PointsBet,1.8,,1.8,,1.83,,-8.7,-8.7,0,Pass,32.9,120,0.97,best
+222,Nets @ Grizzlies,BRK@MEM,12:10,Cedric Coward,MEM,BRK,10+ pts & 8+ reb & 2+ ast,P10R8A2,3,30.4,3.29,29,5,1.12,Sportsbet,3.0,3.0,2.75,3.33,3.18,-8.8,-16.4,-8.8,0,Pass,28.5,73,0.95,best
+223,Nuggets @ Pelicans,DEN@NOP,11:10,Zion Williamson,NOP,DEN,20+ pts & 4+ reb & 2+ ast,P20R4A2,3,43.4,2.3,51,7,1.11,PointsBet,2.1,,2.1,,2.27,,-8.8,-8.8,0,Pass,32.9,120,0.97,best
+224,Pistons @ Heat,DET@MIA,12:10,John Collins,DET,MIA,10+ pts & 4+ reb,P10R4,2,53.9,1.86,46,4,1.08,PointsBet,1.69,,1.69,,1.75,,-8.9,-8.9,0,Pass,26.4,120,1.09,best
+225,Mavericks @ Cavaliers,DAL@CLE,11:40,Kyrie Irving,DAL,CLE,4+ ast & 2+ threes,A4T2,2,51.5,1.94,58,7,1.13,PointsBet,1.77,,1.77,,1.81,,-8.9,-8.9,0,Pass,30.2,118,1.05,best
+226,Nuggets @ Pelicans,DEN@NOP,11:10,Zion Williamson,NOP,DEN,15+ pts & 6+ reb & 2+ ast,P15R6A2,3,38.0,2.63,28,3,0.98,PointsBet,2.4,,2.4,,2.53,,-8.9,-8.9,0,Pass,32.9,120,0.97,best
+227,Nets @ Grizzlies,BRK@MEM,12:10,Cam Spencer,MEM,BRK,10+ pts & 1+ threes,P10T1,2,63.2,1.58,49,5,1.06,PointsBet,1.44,,1.44,,1.53,,-9.0,-9.0,0,Pass,20.5,109,0.95,best
+228,Nets @ Grizzlies,BRK@MEM,12:10,Nolan Traoré,BRK,MEM,10+ pts & 2+ ast,P10A2,2,51.3,1.95,58,7,1.11,PointsBet,1.77,,1.77,,1.81,,-9.1,-9.1,0,Pass,22.1,66,0.98,best
+229,Pistons @ Heat,DET@MIA,12:10,Bam Adebayo,MIA,DET,15+ pts & 8+ reb,P15R8,2,50.5,1.98,60,8,1.07,PointsBet,1.8,,1.8,,1.86,,-9.1,-9.1,0,Pass,34.9,120,0.87,best
+230,Pistons @ Heat,DET@MIA,12:10,Ausar Thompson,DET,MIA,8+ reb & 2+ ast,R8A2,2,43.3,2.31,47,6,1.05,PointsBet,2.1,,2.1,,2.1,,-9.1,-9.1,0,Pass,28.7,120,1.09,best
+231,Bulls @ Timberwolves,CHI@MIN,12:10,Jaden McDaniels,MIN,CHI,6+ reb & 1+ threes,R6T1,2,43.2,2.31,55,7,1.04,PointsBet,2.1,,2.1,,2.11,,-9.2,-9.2,0,Pass,33.9,120,1.08,best
+232,Mavericks @ Cavaliers,DAL@CLE,11:40,P.J. Washington,DAL,CLE,10+ pts & 1+ threes,P10T1,2,66.8,1.5,66,7,1.07,PointsBet,1.36,,1.36,,1.45,,-9.2,-9.2,0,Pass,32.4,120,1.05,best
+233,Pistons @ Heat,DET@MIA,12:10,Ausar Thompson,DET,MIA,10+ pts & 4+ reb,P10R4,2,53.1,1.88,50,6,1.09,PointsBet,1.71,,1.71,,1.76,,-9.3,-9.3,0,Pass,28.7,120,1.09,best
+234,Mavericks @ Cavaliers,DAL@CLE,11:40,Kyrie Irving,DAL,CLE,20+ pts & 2+ ast,P20A2,2,59.3,1.69,54,5,1.05,PointsBet,1.53,,1.53,,1.58,,-9.3,-9.3,0,Pass,30.2,118,1.05,best
+235,Bulls @ Timberwolves,CHI@MIN,12:10,Jaden McDaniels,MIN,CHI,10+ pts & 6+ reb & 4+ ast,P10R6A4,3,24.1,4.14,29,5,1.16,Sportsbet,3.75,3.75,3.3,3.96,3.98,-9.4,-20.3,-9.4,0,Pass,33.9,120,1.08,best
+236,Pistons @ Heat,DET@MIA,12:10,Davion Mitchell,MIA,DET,6+ ast & 2+ threes,A6T2,2,50.3,1.99,48,7,1.05,PointsBet,1.8,,1.8,,1.84,,-9.5,-9.5,0,Pass,36.6,120,0.87,best
+237,Pistons @ Heat,DET@MIA,12:10,Ausar Thompson,DET,MIA,6+ reb & 4+ ast,R6A4,2,47.6,2.1,43,5,0.98,PointsBet,1.9,,1.9,,1.92,,-9.5,-9.5,0,Pass,28.7,120,1.09,best
+238,Mavericks @ Cavaliers,DAL@CLE,11:40,Donovan Mitchell,CLE,DAL,20+ pts & 4+ reb & 4+ ast,P20R4A4,3,41.1,2.43,39,4,1.14,PointsBet,2.2,,2.2,,2.39,,-9.6,-9.6,0,Pass,31.9,120,0.97,best
+239,Mavericks @ Cavaliers,DAL@CLE,11:40,James Harden,CLE,DAL,10+ pts & 2+ threes,P10T2,2,67.9,1.47,75,9,1.1,PointsBet,1.33,,1.33,,1.42,,-9.6,-9.6,0,Pass,32.1,120,0.97,best
+240,Bulls @ Timberwolves,CHI@MIN,12:10,LaMelo Ball,MIN,CHI,10+ pts & 4+ reb & 6+ ast,P10R4A6,3,44.0,2.27,26,1,0.88,Sportsbet,2.05,2.05,2.0,1.98,2.12,-9.7,-11.9,-9.7,0,Pass,27.9,120,1.08,best
+241,Pistons @ Heat,DET@MIA,12:10,Daniss Jenkins,DET,MIA,4+ reb & 1+ threes,R4T1,2,44.1,2.27,45,5,1.08,PointsBet,2.05,,2.05,,2.07,,-9.7,-9.7,0,Pass,28.6,89,1.09,best
+242,Mavericks @ Cavaliers,DAL@CLE,11:40,James Harden,CLE,DAL,10+ pts & 4+ reb & 6+ ast,P10R4A6,3,39.2,2.55,36,4,1.3,PointsBet,2.3,,2.3,,2.46,,-9.8,-9.8,0,Pass,32.1,120,0.97,best
+243,Nets @ Grizzlies,BRK@MEM,12:10,Jerami Grant,MEM,BRK,10+ pts & 1+ threes,P10T1,2,54.0,1.85,69,8,1.1,Sportsbet,1.67,1.67,1.59,1.79,1.85,-9.9,-14.2,-9.9,0,Pass,23.4,120,0.95,best
+244,Mavericks @ Cavaliers,DAL@CLE,11:40,Kyrie Irving,DAL,CLE,15+ pts & 4+ ast,P15A4,2,53.9,1.85,56,6,1.08,PointsBet,1.67,,1.67,,1.73,,-9.9,-9.9,0,Pass,30.2,118,1.05,best
+245,Mavericks @ Cavaliers,DAL@CLE,11:40,Peyton Watson,CLE,DAL,4+ reb & 2+ ast,R4A2,2,46.1,2.17,54,6,1.09,PointsBet,1.95,,1.95,,1.99,,-10.0,-10.0,0,Pass,27.8,120,0.97,best
+246,Nuggets @ Pelicans,DEN@NOP,11:10,Cameron Johnson,DEN,NOP,10+ pts & 1+ threes,P10T1,2,64.2,1.56,61,7,1.07,PointsBet,1.4,,1.4,,1.51,,-10.2,-10.2,0,Pass,30.5,120,1.05,best
+247,Nuggets @ Pelicans,DEN@NOP,11:10,Cameron Johnson,DEN,NOP,4+ reb & 1+ threes,R4T1,2,44.9,2.23,53,6,1.04,PointsBet,2.0,,2.0,,2.03,,-10.2,-10.2,0,Pass,30.5,120,1.05,best
+248,Nets @ Grizzlies,BRK@MEM,12:10,Nolan Traoré,BRK,MEM,2+ ast & 2+ threes,A2T2,2,38.2,2.62,49,6,1.11,PointsBet,2.35,,2.35,,2.38,,-10.3,-10.3,0,Pass,22.1,66,0.98,best
+249,Mavericks @ Cavaliers,DAL@CLE,11:40,Peyton Watson,CLE,DAL,10+ pts & 4+ reb & 2+ ast,P10R4A2,3,38.2,2.62,31,3,1.1,PointsBet,2.35,,2.35,,2.56,,-10.3,-10.3,0,Pass,27.8,120,0.97,best
+250,Pistons @ Heat,DET@MIA,12:10,Bam Adebayo,MIA,DET,20+ pts & 6+ reb & 2+ ast,P20R6A2,3,32.6,3.07,37,5,1.1,PointsBet,2.75,,2.75,,2.95,,-10.4,-10.4,0,Pass,34.9,120,0.87,best
+251,Nuggets @ Pelicans,DEN@NOP,11:10,Jamal Murray,DEN,NOP,15+ pts & 4+ reb & 4+ ast,P15R4A4,3,49.0,2.04,47,5,1.13,PointsBet,1.83,,1.83,,2.0,,-10.4,-10.4,0,Pass,36.3,120,1.05,best
+252,Nets @ Grizzlies,BRK@MEM,12:10,Cedric Coward,MEM,BRK,10+ pts & 4+ reb & 4+ ast,P10R4A4,3,28.9,3.46,29,4,1.05,Sportsbet,3.1,3.1,3.0,3.2,3.5,-10.5,-13.4,-10.5,0,Pass,28.5,73,0.95,best
+253,Pistons @ Heat,DET@MIA,12:10,Duncan Robinson,DET,MIA,10+ pts & 2+ threes,P10T2,2,73.3,1.36,81,10,1.1,PointsBet,1.22,,1.22,,1.33,,-10.5,-10.5,0,Pass,32.2,120,1.09,best
+254,Nets @ Grizzlies,BRK@MEM,12:10,Day'Ron Sharpe,BRK,MEM,4+ reb & 4+ ast,R4A4,2,50.5,1.98,45,5,1.04,PointsBet,1.77,,1.77,,1.83,,-10.6,-10.6,0,Pass,22.6,120,0.98,best
+255,Mavericks @ Cavaliers,DAL@CLE,11:40,Meleek Thomas,CLE,DAL,10+ pts & 1+ threes,P10T1,2,65.7,1.52,63,7,1.06,PointsBet,1.36,,1.36,,1.48,,-10.6,-10.6,0,Pass,22.4,10,0.97,best
+256,Nuggets @ Pelicans,DEN@NOP,11:10,Saddiq Bey,NOP,DEN,10+ pts & 2+ threes,P10T2,2,65.8,1.52,55,5,1.12,PointsBet,1.36,,1.36,,1.47,,-10.6,-10.6,0,Pass,28.6,120,0.97,best
+257,Nets @ Grizzlies,BRK@MEM,12:10,Julius Randle,BRK,MEM,20+ pts & 6+ reb & 2+ ast,P20R6A2,3,37.2,2.69,28,3,1.1,Sportsbet,2.4,2.4,2.4,2.57,2.62,-10.7,-10.7,-10.7,0,Pass,32.5,120,0.98,best
+258,Pistons @ Heat,DET@MIA,12:10,Davion Mitchell,MIA,DET,8+ ast & 1+ threes,A8T1,2,51.3,1.95,44,6,1.02,PointsBet,1.74,,1.74,,1.81,,-10.8,-10.8,0,Pass,36.6,120,0.87,best
+259,Nets @ Grizzlies,BRK@MEM,12:10,Cedric Coward,MEM,BRK,15+ pts & 6+ reb & 2+ ast,P15R6A2,3,30.7,3.26,29,5,1.11,PointsBet,2.9,2.88,2.9,3.12,3.4,-11.7,-11.1,-11.1,0,Pass,28.5,73,0.95,best
+260,Bulls @ Timberwolves,CHI@MIN,12:10,Josh Giddey,CHI,MIN,10+ pts & 1+ threes,P10T1,2,59.1,1.69,53,7,1.13,PointsBet,1.5,,1.5,,1.65,,-11.3,-11.3,0,Pass,29.2,120,0.88,best
+261,Nets @ Grizzlies,BRK@MEM,12:10,Michael Porter Jr.,BRK,MEM,15+ pts & 3+ threes,P15T3,2,59.9,1.67,62,8,1.14,PointsBet,1.48,1.44,1.48,1.62,1.64,-13.8,-11.4,-11.4,0,Pass,32.4,120,0.98,best
+262,Bulls @ Timberwolves,CHI@MIN,12:10,LaMelo Ball,MIN,CHI,15+ pts & 3+ threes,P15T3,2,61.5,1.62,62,7,1.18,PointsBet,1.44,1.36,1.44,1.54,1.65,-16.3,-11.4,-11.4,0,Pass,27.9,120,1.08,best
+263,Pistons @ Heat,DET@MIA,12:10,Bam Adebayo,MIA,DET,10+ pts & 6+ reb & 4+ ast,P10R6A4,3,39.3,2.55,37,5,1.12,PointsBet,2.25,,2.25,,2.44,,-11.6,-11.6,0,Pass,34.9,120,0.87,best
+264,Bulls @ Timberwolves,CHI@MIN,12:10,Jaden McDaniels,MIN,CHI,15+ pts & 1+ threes,P15T1,2,56.6,1.77,52,5,1.08,PointsBet,1.56,,1.56,,1.72,,-11.7,-11.7,0,Pass,33.9,120,1.08,best
+265,Bulls @ Timberwolves,CHI@MIN,12:10,Jaden McDaniels,MIN,CHI,15+ pts & 6+ reb,P15R6,2,37.5,2.66,52,5,1.04,PointsBet,2.35,,2.35,,2.47,,-11.8,-11.8,0,Pass,33.9,120,1.08,best
+266,Bulls @ Timberwolves,CHI@MIN,12:10,Ayo Dosunmu,MIN,CHI,10+ pts & 2+ threes,P10T2,2,50.7,1.97,50,6,1.1,PointsBet,1.74,,1.74,,1.86,,-11.8,-11.8,0,Pass,31.6,120,1.08,best
+267,Nets @ Grizzlies,BRK@MEM,12:10,Jaylen Wells,MEM,BRK,10+ pts & 1+ threes,P10T1,2,61.2,1.63,58,7,1.14,PointsBet,1.44,,1.44,,1.58,,-11.9,-11.9,0,Pass,27.4,120,0.95,best
+268,Nets @ Grizzlies,BRK@MEM,12:10,Cedric Coward,MEM,BRK,2+ ast & 2+ threes,A2T2,2,46.4,2.16,44,6,1.01,PointsBet,1.9,,1.9,,1.99,,-11.9,-11.9,0,Pass,28.5,73,0.95,best
+269,Mavericks @ Cavaliers,DAL@CLE,11:40,Naji Marshall,DAL,CLE,10+ pts & 2+ ast,P10A2,2,45.2,2.21,54,5,1.06,PointsBet,1.95,,1.95,,2.03,,-11.9,-11.9,0,Pass,24.1,120,1.05,best
+270,Pistons @ Heat,DET@MIA,12:10,Ausar Thompson,DET,MIA,10+ pts & 4+ reb & 4+ ast,P10R4A4,3,38.3,2.61,32,4,1.11,PointsBet,2.3,,2.3,,2.53,,-12.0,-12.0,0,Pass,28.7,120,1.09,best
+271,Mavericks @ Cavaliers,DAL@CLE,11:40,James Harden,CLE,DAL,10+ pts & 6+ reb & 4+ ast,P10R6A4,3,26.6,3.76,29,3,1.02,PointsBet,3.3,,3.3,,3.53,,-12.2,-12.2,0,Pass,32.1,120,0.97,best
+272,Mavericks @ Cavaliers,DAL@CLE,11:40,P.J. Washington,DAL,CLE,6+ reb & 2+ threes,R6T2,2,41.8,2.39,43,5,1.12,PointsBet,2.1,,2.1,,2.17,,-12.2,-12.2,0,Pass,32.4,120,1.05,best
+273,Pistons @ Heat,DET@MIA,12:10,Daniss Jenkins,DET,MIA,10+ pts & 4+ reb & 4+ ast,P10R4A4,3,34.3,2.91,27,4,1.35,PointsBet,2.55,,2.55,,2.84,,-12.5,-12.5,0,Pass,28.6,89,1.09,best
+274,Nuggets @ Pelicans,DEN@NOP,11:10,Cameron Johnson,DEN,NOP,10+ pts & 4+ reb,P10R4,2,37.2,2.69,42,5,1.1,PointsBet,2.35,,2.35,,2.49,,-12.6,-12.6,0,Pass,30.5,120,1.05,best
+275,Bulls @ Timberwolves,CHI@MIN,12:10,Jalen Smith,CHI,MIN,10+ pts & 1+ threes,P10T1,2,60.6,1.65,55,7,1.09,PointsBet,1.44,,1.44,,1.6,,-12.7,-12.7,0,Pass,25.2,120,0.88,best
+276,Nuggets @ Pelicans,DEN@NOP,11:10,Christian Braun,DEN,NOP,4+ reb & 2+ ast,R4A2,2,41.6,2.41,45,4,1.06,PointsBet,2.1,,2.1,,2.19,,-12.7,-12.7,0,Pass,34.3,120,1.05,best
+277,Bulls @ Timberwolves,CHI@MIN,12:10,Josh Giddey,CHI,MIN,10+ pts & 4+ reb & 10+ ast,P10R4A10,3,30.0,3.33,29,4,1.31,PointsBet,2.9,2.88,2.9,3.21,3.24,-13.5,-12.9,-12.9,0,Pass,29.2,120,0.88,best
+278,Pistons @ Heat,DET@MIA,12:10,Duncan Robinson,DET,MIA,2+ ast & 3+ threes,A2T3,2,45.8,2.18,62,7,1.04,PointsBet,1.9,,1.9,,2.01,,-12.9,-12.9,0,Pass,32.2,120,1.09,best
+279,Mavericks @ Cavaliers,DAL@CLE,11:40,Peyton Watson,CLE,DAL,10+ pts & 1+ threes,P10T1,2,60.5,1.65,45,5,1.15,PointsBet,1.44,,1.44,,1.61,,-12.9,-12.9,0,Pass,27.8,120,0.97,best
+280,Mavericks @ Cavaliers,DAL@CLE,11:40,Kyrie Irving,DAL,CLE,20+ pts & 4+ reb & 2+ ast,P20R4A2,3,36.2,2.76,27,2,1.12,PointsBet,2.4,,2.4,,2.71,,-13.2,-13.2,0,Pass,30.2,118,1.05,best
+281,Nuggets @ Pelicans,DEN@NOP,11:10,Zion Williamson,NOP,DEN,20+ pts & 4+ reb,P20R4,2,47.4,2.11,58,7,1.08,PointsBet,1.83,,1.83,,1.97,,-13.2,-13.2,0,Pass,32.9,120,0.97,best
+282,Nuggets @ Pelicans,DEN@NOP,11:10,Jamal Murray,DEN,NOP,20+ pts & 4+ reb & 4+ ast,P20R4A4,3,40.3,2.48,36,3,1.05,PointsBet,2.15,,2.15,,2.44,,-13.3,-13.3,0,Pass,36.3,120,1.05,best
+283,Bulls @ Timberwolves,CHI@MIN,12:10,Norman Powell,CHI,MIN,15+ pts & 2+ threes,P15T2,2,61.0,1.64,51,7,1.11,PointsBet,1.42,,1.42,,1.6,,-13.4,-13.4,0,Pass,28.5,120,0.88,best
+284,Nuggets @ Pelicans,DEN@NOP,11:10,Jordan Poole,NOP,DEN,10+ pts & 2+ ast,P10A2,2,43.2,2.31,40,4,1.04,PointsBet,2.0,,2.0,,2.12,,-13.6,-13.6,0,Pass,20.7,120,0.97,best
+285,Nets @ Grizzlies,BRK@MEM,12:10,Cedric Coward,MEM,BRK,6+ reb & 2+ threes,R6T2,2,40.9,2.44,45,7,1.05,PointsBet,2.1,,2.1,,2.22,,-14.1,-14.1,0,Pass,28.5,73,0.95,best
+286,Pistons @ Heat,DET@MIA,12:10,Klay Thompson,MIA,DET,10+ pts & 2+ threes,P10T2,2,64.6,1.55,57,7,1.11,PointsBet,1.33,,1.33,,1.51,,-14.1,-14.1,0,Pass,25.6,120,0.87,best
+287,Bulls @ Timberwolves,CHI@MIN,12:10,Matas Buzelis,CHI,MIN,10+ pts & 2+ threes,P10T2,2,57.2,1.75,56,7,1.12,PointsBet,1.5,,1.5,,1.69,,-14.2,-14.2,0,Pass,26.7,120,0.88,best
+288,Nets @ Grizzlies,BRK@MEM,12:10,Cedric Coward,MEM,BRK,10+ pts & 6+ reb & 4+ ast,P10R6A4,3,22.9,4.37,28,4,1.07,Sportsbet,3.75,3.75,3.4,4.15,4.4,-14.3,-22.3,-14.3,0,Pass,28.5,73,0.95,best
+289,Pistons @ Heat,DET@MIA,12:10,Duncan Robinson,DET,MIA,15+ pts & 2+ ast,P15A2,2,36.3,2.75,50,6,1.08,PointsBet,2.35,,2.35,,2.5,,-14.6,-14.6,0,Pass,32.2,120,1.09,best
+290,Pistons @ Heat,DET@MIA,12:10,Duncan Robinson,DET,MIA,2+ ast & 4+ threes,A2T4,2,33.4,2.99,44,5,1.09,PointsBet,2.55,,2.55,,2.71,,-14.8,-14.8,0,Pass,32.2,120,1.09,best
+291,Mavericks @ Cavaliers,DAL@CLE,11:40,Kyrie Irving,DAL,CLE,20+ pts & 2+ threes,P20T2,2,55.5,1.8,50,5,1.14,PointsBet,1.53,,1.53,,1.75,,-15.1,-15.1,0,Pass,30.2,118,1.05,best
+292,Nuggets @ Pelicans,DEN@NOP,11:10,Christian Braun,DEN,NOP,4+ reb & 1+ threes,R4T1,2,41.4,2.41,40,3,0.96,PointsBet,2.05,,2.05,,2.15,,-15.1,-15.1,0,Pass,34.3,120,1.05,best
+293,Pistons @ Heat,DET@MIA,12:10,Davion Mitchell,MIA,DET,15+ pts & 1+ threes,P15T1,2,40.3,2.48,48,8,1.14,PointsBet,2.1,,2.1,,2.33,,-15.3,-15.3,0,Pass,36.6,120,0.87,best
+294,Nuggets @ Pelicans,DEN@NOP,11:10,Christian Braun,DEN,NOP,10+ pts & 1+ threes,P10T1,2,53.3,1.88,47,5,1.14,PointsBet,1.59,,1.59,,1.83,,-15.3,-15.3,0,Pass,34.3,120,1.05,best
+295,Pistons @ Heat,DET@MIA,12:10,Duncan Robinson,DET,MIA,15+ pts & 2+ threes,P15T2,2,50.1,2.0,53,6,1.07,PointsBet,1.69,,1.69,,1.91,,-15.4,-15.4,0,Pass,32.2,120,1.09,best
+296,Mavericks @ Cavaliers,DAL@CLE,11:40,Kyrie Irving,DAL,CLE,15+ pts & 4+ reb & 4+ ast,P15R4A4,3,32.6,3.07,29,3,1.16,PointsBet,2.6,,2.6,,2.96,,-15.4,-15.4,0,Pass,30.2,118,1.05,best
+297,Pistons @ Heat,DET@MIA,12:10,Davion Mitchell,MIA,DET,10+ pts & 8+ ast,P10A8,2,44.4,2.25,51,8,1.1,PointsBet,1.9,,1.9,,2.07,,-15.6,-15.6,0,Pass,36.6,120,0.87,best
+298,Mavericks @ Cavaliers,DAL@CLE,11:40,James Harden,CLE,DAL,15+ pts & 2+ threes,P15T2,2,55.2,1.81,58,6,1.12,PointsBet,1.53,,1.53,,1.77,,-15.6,-15.6,0,Pass,32.1,120,0.97,best
+299,Nuggets @ Pelicans,DEN@NOP,11:10,Cameron Johnson,DEN,NOP,4+ reb & 2+ threes,R4T2,2,32.5,3.08,42,4,1.02,PointsBet,2.6,,2.6,,2.75,,-15.6,-15.6,0,Pass,30.5,120,1.05,best
+300,Nets @ Grizzlies,BRK@MEM,12:10,Nolan Traoré,BRK,MEM,10+ pts & 1+ threes,P10T1,2,49.9,2.01,55,7,1.18,PointsBet,1.69,,1.69,,1.95,,-15.7,-15.7,0,Pass,22.1,66,0.98,best
+301,Nuggets @ Pelicans,DEN@NOP,11:10,Cameron Johnson,DEN,NOP,15+ pts & 1+ threes,P15T1,2,36.6,2.73,42,5,1.04,PointsBet,2.3,,2.3,,2.55,,-15.7,-15.7,0,Pass,30.5,120,1.05,best
+302,Mavericks @ Cavaliers,DAL@CLE,11:40,Naji Marshall,DAL,CLE,4+ reb & 2+ ast,R4A2,2,35.1,2.85,47,4,1.05,PointsBet,2.4,,2.4,,2.56,,-15.9,-15.9,0,Pass,24.1,120,1.05,best
+303,Nuggets @ Pelicans,DEN@NOP,11:10,Saddiq Bey,NOP,DEN,15+ pts & 2+ threes,P15T2,2,52.8,1.89,45,5,1.18,PointsBet,1.59,,1.59,,1.85,,-16.0,-16.0,0,Pass,28.6,120,0.97,best
+304,Pistons @ Heat,DET@MIA,12:10,Daniss Jenkins,DET,MIA,15+ pts & 1+ threes,P15T1,2,43.0,2.32,45,5,1.11,PointsBet,1.95,,1.95,,2.2,,-16.1,-16.1,0,Pass,28.6,89,1.09,best
+305,Bulls @ Timberwolves,CHI@MIN,12:10,Nic Claxton,CHI,MIN,10+ pts & 4+ reb & 2+ ast,P10R4A2,3,20.9,4.78,29,4,1.02,Sportsbet,4.0,4.0,,4.88,,-16.2,,-16.2,0,Pass,21.3,120,0.88,best
+306,Nuggets @ Pelicans,DEN@NOP,11:10,Jamal Murray,DEN,NOP,15+ pts & 4+ reb & 6+ ast,P15R4A6,3,34.9,2.87,38,4,1.09,PointsBet,2.4,,2.4,,2.75,,-16.3,-16.3,0,Pass,36.3,120,1.05,best
+307,Pistons @ Heat,DET@MIA,12:10,Davion Mitchell,MIA,DET,15+ pts & 6+ ast,P15A6,2,37.2,2.69,44,7,1.09,PointsBet,2.25,,2.25,,2.44,,-16.4,-16.4,0,Pass,36.6,120,0.87,best
+308,Mavericks @ Cavaliers,DAL@CLE,11:40,James Harden,CLE,DAL,15+ pts & 4+ reb & 6+ ast,P15R4A6,3,32.0,3.13,26,2,1.2,PointsBet,2.6,,2.6,,3.05,,-16.9,-16.9,0,Pass,32.1,120,0.97,best
+309,Nuggets @ Pelicans,DEN@NOP,11:10,Christian Braun,DEN,NOP,10+ pts & 4+ reb,P10R4,2,37.7,2.65,38,2,0.92,PointsBet,2.2,,2.2,,2.37,,-17.0,-17.0,0,Pass,34.3,120,1.05,best
+310,Nuggets @ Pelicans,DEN@NOP,11:10,Jordan Poole,NOP,DEN,10+ pts & 1+ threes,P10T1,2,46.8,2.13,44,5,1.14,PointsBet,1.77,,1.77,,2.05,,-17.1,-17.1,0,Pass,20.7,120,0.97,best
+311,Nuggets @ Pelicans,DEN@NOP,11:10,Zion Williamson,NOP,DEN,25+ pts & 4+ reb & 2+ ast,P25R4A2,3,25.1,3.99,26,4,1.07,PointsBet,3.3,,3.3,,3.85,,-17.2,-17.2,0,Pass,32.9,120,0.97,best
+312,Pistons @ Heat,DET@MIA,12:10,Duncan Robinson,DET,MIA,10+ pts & 3+ threes,P10T3,2,60.6,1.65,68,8,1.1,PointsBet,1.36,,1.36,,1.6,,-17.6,-17.6,0,Pass,32.2,120,1.09,best
+313,Nuggets @ Pelicans,DEN@NOP,11:10,DeMar DeRozan,DEN,NOP,10+ pts & 2+ ast,P10A2,2,39.2,2.55,43,3,1.05,PointsBet,2.1,,2.1,,2.33,,-17.6,-17.6,0,Pass,22.2,120,1.05,best
+314,Nuggets @ Pelicans,DEN@NOP,11:10,Christian Braun,DEN,NOP,10+ pts & 4+ reb & 2+ ast,P10R4A2,3,31.6,3.17,29,2,1.07,PointsBet,2.6,,2.6,,3.11,,-17.9,-17.9,0,Pass,34.3,120,1.05,best
+315,Pistons @ Heat,DET@MIA,12:10,Ausar Thompson,DET,MIA,10+ pts & 8+ reb & 2+ ast,P10R8A2,3,28.3,3.54,27,4,1.15,PointsBet,2.9,,2.9,,3.42,,-18.0,-18.0,0,Pass,28.7,120,1.09,best
+316,Nuggets @ Pelicans,DEN@NOP,11:10,Aaron Gordon,DEN,NOP,15+ pts & 4+ reb & 2+ ast,P15R4A2,3,24.0,4.16,25,2,1.08,PointsBet,3.4,,3.4,,4.07,,-18.3,-18.3,0,Pass,29.0,120,1.05,best
+317,Pistons @ Heat,DET@MIA,12:10,Ausar Thompson,DET,MIA,10+ pts & 6+ reb & 4+ ast,P10R6A4,3,31.4,3.19,26,4,1.14,PointsBet,2.6,,2.6,,3.12,,-18.4,-18.4,0,Pass,28.7,120,1.09,best
+318,Pistons @ Heat,DET@MIA,12:10,Duncan Robinson,DET,MIA,10+ pts & 4+ threes,P10T4,2,44.4,2.25,45,5,1.07,PointsBet,1.83,,1.83,,2.16,,-18.7,-18.7,0,Pass,32.2,120,1.09,best
+319,Nets @ Grizzlies,BRK@MEM,12:10,Nolan Traoré,BRK,MEM,15+ pts & 2+ ast,P15A2,2,24.6,4.07,44,6,1.11,PointsBet,3.3,,3.3,,3.6,,-18.9,-18.9,0,Pass,22.1,66,0.98,best
+320,Pistons @ Heat,DET@MIA,12:10,Davion Mitchell,MIA,DET,10+ pts & 2+ threes,P10T2,2,48.2,2.08,56,8,1.1,PointsBet,1.67,,1.67,,2.02,,-19.5,-19.5,0,Pass,36.6,120,0.87,best
+321,Nuggets @ Pelicans,DEN@NOP,11:10,Zion Williamson,NOP,DEN,15+ pts & 4+ reb & 4+ ast,P15R4A4,3,30.9,3.23,26,3,1.04,PointsBet,2.6,,2.6,,3.09,,-19.6,-19.6,0,Pass,32.9,120,0.97,best
+322,Nets @ Grizzlies,BRK@MEM,12:10,Cedric Coward,MEM,BRK,10+ pts & 2+ threes,P10T2,2,47.0,2.13,48,7,1.14,PointsBet,1.71,,1.71,,2.07,,-19.7,-19.7,0,Pass,28.5,73,0.95,best
+323,Mavericks @ Cavaliers,DAL@CLE,11:40,P.J. Washington,DAL,CLE,10+ pts & 2+ threes,P10T2,2,48.7,2.05,53,6,1.09,PointsBet,1.65,,1.65,,2.0,,-19.7,-19.7,0,Pass,32.4,120,1.05,best
+324,Pistons @ Heat,DET@MIA,12:10,Daniss Jenkins,DET,MIA,15+ pts & 4+ reb & 2+ ast,P15R4A2,3,25.8,3.87,27,4,1.33,PointsBet,3.1,,3.1,,3.68,,-19.9,-19.9,0,Pass,28.6,89,1.09,best
+325,Mavericks @ Cavaliers,DAL@CLE,11:40,Donovan Mitchell,CLE,DAL,20+ pts & 4+ reb & 6+ ast,P20R4A6,3,24.0,4.16,27,3,1.1,PointsBet,3.3,,3.3,,4.02,,-20.7,-20.7,0,Pass,31.9,120,0.97,best
+326,Mavericks @ Cavaliers,DAL@CLE,11:40,Donovan Mitchell,CLE,DAL,15+ pts & 4+ reb & 6+ ast,P15R4A6,3,28.8,3.47,33,5,1.15,PointsBet,2.75,,2.75,,3.3,,-20.8,-20.8,0,Pass,31.9,120,0.97,best
+327,Nuggets @ Pelicans,DEN@NOP,11:10,Cameron Johnson,DEN,NOP,10+ pts & 2+ threes,P10T2,2,48.0,2.09,52,6,1.15,PointsBet,1.65,,1.65,,2.04,,-20.9,-20.9,0,Pass,30.5,120,1.05,best
+328,Mavericks @ Cavaliers,DAL@CLE,11:40,Meleek Thomas,CLE,DAL,10+ pts & 2+ threes,P10T2,2,46.2,2.16,63,7,1.06,PointsBet,1.71,,1.71,,2.11,,-21.0,-21.0,0,Pass,22.4,10,0.97,best
+329,Nuggets @ Pelicans,DEN@NOP,11:10,Jamal Murray,DEN,NOP,25+ pts & 4+ reb & 4+ ast,P25R4A4,3,28.6,3.49,31,3,1.11,PointsBet,2.75,,2.75,,3.42,,-21.3,-21.3,0,Pass,36.3,120,1.05,best
+330,Nets @ Grizzlies,BRK@MEM,12:10,Jaylen Wells,MEM,BRK,10+ pts & 2+ threes,P10T2,2,43.0,2.33,52,7,1.19,PointsBet,1.74,,1.74,,2.28,,-25.2,-25.2,0,Pass,27.4,120,0.95,best
+331,Mavericks @ Cavaliers,DAL@CLE,11:40,Naji Marshall,DAL,CLE,10+ pts & 4+ reb & 2+ ast,P10R4A2,3,22.5,4.45,30,3,1.17,PointsBet,3.3,,3.3,,4.38,,-25.8,-25.8,0,Pass,24.1,120,1.05,best
+332,Pistons @ Heat,DET@MIA,12:10,Duncan Robinson,DET,MIA,15+ pts & 3+ threes,P15T3,2,42.6,2.35,46,5,1.1,PointsBet,1.71,,1.71,,2.3,,-27.2,-27.2,0,Pass,32.2,120,1.09,best
+333,Nets @ Grizzlies,BRK@MEM,12:10,Jerami Grant,MEM,BRK,10+ pts & 2+ threes,P10T2,2,31.9,3.14,60,7,1.16,PointsBet,2.2,,2.2,,3.11,,-29.9,-29.9,0,Pass,23.4,120,0.95,best
+334,Nets @ Grizzlies,BRK@MEM,12:10,Nolan Traoré,BRK,MEM,10+ pts & 2+ threes,P10T2,2,31.1,3.21,45,6,1.21,PointsBet,2.25,,2.25,,3.2,,-29.9,-29.9,0,Pass,22.1,66,0.98,best
+335,Pistons @ Heat,DET@MIA,12:10,Davion Mitchell,MIA,DET,15+ pts & 2+ threes,P15T2,2,29.9,3.34,45,8,1.22,PointsBet,2.3,,2.3,,3.34,,-31.2,-31.2,0,Pass,36.6,120,0.87,best

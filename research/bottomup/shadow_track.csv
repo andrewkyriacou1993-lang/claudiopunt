@@ -525,3 +525,5 @@ date,posted,trigger,tier,game,player,status,market,side,line,book,odds,model_p,m
 2026-11-15,2026-11-15 09:56,news,C,DAL@CLE,Cooper Flagg,,Threes,Under,1.5,PointsBet,1.83,66.7,50.5,55.2,1.0,51.8,1.93,1.0,0.0,0,"vs CLE, F-inside: tpm x1.13",Expected SF,100.0,35,1,1.5,0.0,False,,False,True,pending,,
 2026-11-15,2026-11-15 10:05,news,C,DEN@NOP,Jamal Murray,,Points,Over,24.5,PointsBet,2.0,46.2,47.8,50.4,0.8,43.5,2.3,0.8,0.0,0,"vs NOP, G-play: pts x1.12",Expected PG,100.0,35,0,23.5,-1.0,False,,False,True,pending,,
 2026-11-15,2026-11-15 10:09,news,B,DAL@CLE,P.J. Washington Jr.,,Threes,Under,1.5,PointsBet,2.5,52.1,37.5,41.5,3.6,38.9,2.57,3.6,0.0,0,"vs CLE, F-stretch: tpm x0.99",Expected PF,100.0,33,3,1.8,0.2,False,,False,True,pending,,
+2026-11-15,2026-11-15 10:13,news,C,DAL@CLE,Kyrie Irving,,Points,Over,22.5,PointsBet,2.0,39.6,47.8,50.3,0.5,42.7,2.34,0.5,0.0,0,"vs CLE, G-play: pts x1.01",Expected PG,100.0,33,2,21.9,-0.6,False,,False,False,pending,,
+2026-11-15,2026-11-15 10:13,news,C,DAL@CLE,Daniel Gafford,,Rebounds,Under,5.5,PointsBet,2.15,45.7,44.0,46.5,0.1,44.3,2.26,0.1,0.0,0,"vs CLE, F-inside: reb x0.95",Expected C,100.0,20,0,6.7,1.2,False,,False,True,pending,,

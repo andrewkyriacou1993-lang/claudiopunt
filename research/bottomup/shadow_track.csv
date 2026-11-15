@@ -677,3 +677,6 @@ date,posted,trigger,tier,game,player,status,market,side,line,book,odds,model_p,m
 2026-11-16,2026-11-16 09:55,late,C,HOU@WAS,Trae Young,,Assists,Over,7.5,PointsBet,1.8,61.2,52.0,55.7,0.2,55.0,1.82,0.2,0.0,0,"vs HOU, G-play: ast x0.89",Expected PG,100.0,34,-1,7.4,-0.1,False,,False,True,pending,,
 2026-11-16,2026-11-16 10:09,news,C,HOU@WAS,Amen Thompson,,Points,Over,17.5,PointsBet,2.05,45.0,46.8,48.9,0.3,42.6,2.35,0.3,0.0,0,"vs WAS, G-play: pts x0.96",Expected PG,100.0,36,2,16.9,-0.6,False,,False,True,pending,,
 2026-11-16,2026-11-16 10:13,news,B,HOU@WAS,Reed Sheppard,,Rebounds,Over,3.5,PointsBet,2.6,36.4,38.5,40.8,6.1,36.8,2.72,6.1,0.0,0,"vs WAS, G-play: reb x1.05",,,30,12,3.7,0.2,True,,True,True,pending,,
+2026-11-16,2026-11-16 10:32,news,A,ATL@MIL,Brayden Burries,,Rebounds,Under,5.5,PointsBet,2.1,43.9,44.9,55.3,16.1,43.8,2.28,16.1,0.0,0,"vs ATL, G-wing: reb x0.95",Expected PG,100.0,28,3,6.6,1.1,False,,True,False,pending,,
+2026-11-16,2026-11-16 10:32,news,B,ATL@MIL,Jaime Jaquez Jr.,,Assists,Under,3.5,PointsBet,2.0,41.5,46.9,51.9,3.7,43.5,2.3,3.7,0.0,0,"vs ATL, F-inside: ast x0.98",Expected SF,100.0,27,0,4.2,0.7,False,,True,False,pending,,
+2026-11-16,2026-11-16 10:32,news,B,ATL@MIL,Jalen Johnson,,Threes,Over,1.5,PointsBet,2.3,38.3,40.9,44.4,2.2,39.3,2.54,2.2,0.0,0,"vs MIL, F-inside: tpm x1.19",Expected PF,100.0,35,-1,1.7,0.2,True,,False,False,pending,,

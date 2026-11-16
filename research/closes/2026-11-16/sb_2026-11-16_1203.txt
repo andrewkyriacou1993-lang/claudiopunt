@@ -1,0 +1,565 @@
+###GAMES
+date,tip,away,home,ml_away,ml_home,spread_home,spread_home_odds,spread_away_odds,total,over_odds,under_odds
+2026-11-16,10:11,Dallas Mavericks,Boston Celtics,501.00,1.00,-37.5,2.07,1.73,222.5,1.69,2.08
+2026-11-16,10:12,New York Knicks,Toronto Raptors,3.25,1.33,-5.5,1.97,1.81,193.5,1.93,1.81
+2026-11-16,13:10,Oklahoma City Thunder,Sacramento Kings,1.15,5.90,12.5,1.85,1.96,221.5,1.87,1.93
+2026-11-16,12:10,Atlanta Hawks,Milwaukee Bucks,1.29,3.75,8.5,1.90,1.90,234.5,1.95,1.86
+2026-11-16,11:11,Houston Rockets,Washington Wizards,1.00,26.00,17.5,2.15,1.68,240.5,1.84,1.90
+###PROPS
+game|player|stat|line|over|under
+NYK@TOR|OG Anunoby|Rebounds|5.5|1.80|1.87
+NYK@TOR|OG Anunoby|Points|17.5|1.80|1.87
+NYK@TOR|OG Anunoby|Threes|2.5|2.07|1.68
+NYK@TOR|OG Anunoby|PRA|24.5|1.88|1.84
+NYK@TOR|OG Anunoby|Assists|1.5|2.60|1.42
+NYK@TOR|Mikal Bridges|Rebounds|2.5|2.30|1.52
+NYK@TOR|Mikal Bridges|Points|4.5|1.89|1.82
+NYK@TOR|Mikal Bridges|PRA|8.5|2.12|1.65
+NYK@TOR|Mikal Bridges|Threes|0.5|5.30|1.12
+NYK@TOR|Mikal Bridges|Assists|1.5|2.95|1.33
+NYK@TOR|Scottie Barnes|Rebounds|5.5|1.96|1.73
+NYK@TOR|Scottie Barnes|Points|18.5|1.87|1.80
+NYK@TOR|RJ Barrett|Threes|0.5|2.55|1.44
+NYK@TOR|Scottie Barnes|PRA|27.5|1.93|1.79
+NYK@TOR|RJ Barrett|Assists|6.5|1.73|1.95
+NYK@TOR|Scottie Barnes|Assists|2.5|1.46|2.45
+NYK@TOR|Scottie Barnes|Threes|2.5|4.50|1.16
+NYK@TOR|RJ Barrett|Rebounds|6.5|1.78|1.90
+NYK@TOR|RJ Barrett|PRA|30.5|2.00|1.72
+NYK@TOR|RJ Barrett|Points|16.5|1.77|1.91
+NYK@TOR|Immanuel Quickley|Threes|1.5|1.79|1.93
+NYK@TOR|Immanuel Quickley|Assists|4.5|1.42|2.60
+NYK@TOR|Immanuel Quickley|Points|8.5|1.83|1.83
+NYK@TOR|Immanuel Quickley|PRA|19.5|1.77|1.95
+NYK@TOR|Immanuel Quickley|Rebounds|5.5|1.68|2.02
+NYK@TOR|Landry Shamet|Threes|2.5|2.00|1.72
+NYK@TOR|Landry Shamet|Points|13.5|1.75|1.93
+NYK@TOR|Collin Murray-Boyles|Rebounds|9.5|1.60|2.15
+NYK@TOR|Collin Murray-Boyles|Points|5.5|1.55|2.25
+NYK@TOR|Jamal Shead|Points|19.5|1.84|1.83
+NYK@TOR|Jamal Shead|Rebounds|2.5|2.60|1.42
+NYK@TOR|Jamal Shead|PRA|26.5|1.79|1.93
+NYK@TOR|Jamal Shead|Assists|3.5|1.73|1.96
+NYK@TOR|Jamal Shead|Threes|3.5|4.20|1.19
+OKC@SAC|Jared McCain|Points|13.5|1.86|1.90
+OKC@SAC|Jared McCain|Rebounds|2.5|1.60|2.20
+OKC@SAC|Shai Gilgeous-Alexander|Assists|4.5|1.60|2.20
+OKC@SAC|Kenrich Williams|PRA|15.5|2.00|1.78
+OKC@SAC|S Gilgeous-Alexander|PRA|41.5|1.87|1.89
+OKC@SAC|Isaiah Hartenstein|Assists|4.5|2.15|1.64
+OKC@SAC|Shai Gilgeous-Alexander|Threes|1.5|1.60|2.20
+OKC@SAC|Kenrich Williams|Points|8.5|1.96|1.80
+OKC@SAC|Kenrich Williams|Rebounds|4.5|1.80|1.96
+OKC@SAC|Jared McCain|Threes|2.5|2.10|1.68
+OKC@SAC|Ajay Mitchell|PRA|26.5|1.96|1.80
+OKC@SAC|Jared McCain|Assists|2.5|2.50|1.48
+OKC@SAC|Isaiah Hartenstein|Rebounds|10.5|1.96|1.80
+OKC@SAC|Ajay Mitchell|Points|18.5|1.89|1.87
+OKC@SAC|Aday Mara|Points|9.5|2.00|1.78
+OKC@SAC|Shai Gilgeous-Alexander|Rebounds|3.5|1.58|2.25
+OKC@SAC|Aday Mara|Rebounds|6.5|1.96|1.80
+OKC@SAC|Jared McCain|PRA|19.5|1.96|1.80
+OKC@SAC|Kenrich Williams|Threes|1.5|1.96|1.80
+OKC@SAC|Shai Gilgeous-Alexander|Points|32.5|1.96|1.80
+OKC@SAC|Aday Mara|PRA|17.5|1.86|1.90
+OKC@SAC|Ajay Mitchell|Assists|3.5|1.90|1.86
+OKC@SAC|Isaiah Hartenstein|Points|9.5|1.85|1.91
+OKC@SAC|Ajay Mitchell|Rebounds|3.5|1.74|2.05
+OKC@SAC|Ajay Mitchell|Threes|1.5|2.30|1.56
+OKC@SAC|Isaiah Hartenstein|PRA|24.5|1.90|1.86
+OKC@SAC|Darius Acuff Jr.|PRA|37.5|1.86|1.90
+OKC@SAC|Darius Acuff Jr.|Points|26.5|1.87|1.89
+OKC@SAC|Darius Acuff Jr.|Threes|3.5|2.45|1.50
+OKC@SAC|Darius Acuff Jr.|Assists|6.5|1.80|1.96
+OKC@SAC|Darius Acuff Jr.|Rebounds|3.5|1.72|2.08
+OKC@SAC|Darius Acuff Jr.|Steals|1.5|2.60|1.45
+ATL@MIL|Jalen Johnson|PRA|38.5|1.80|1.96
+ATL@MIL|Jalen Johnson|Threes|1.5|2.10|1.68
+ATL@MIL|Jalen Johnson|Rebounds|9.5|1.86|1.90
+ATL@MIL|Jalen Johnson|Points|21.5|1.83|1.93
+ATL@MIL|Jalen Johnson|Assists|7.5|1.96|1.80
+ATL@MIL|Nickeil Alexander-Walker|Threes|3.5|1.93|1.83
+ATL@MIL|Nickeil Alexander-Walker|Assists|2.5|1.60|2.20
+ATL@MIL|N Alexander-Walker|PRA|28.5|1.96|1.80
+ATL@MIL|Nickeil Alexander-Walker|Rebounds|3.5|2.15|1.64
+ATL@MIL|Nickeil Alexander-Walker|Points|21.5|1.85|1.91
+ATL@MIL|Tyler Herro|Rebounds|4.5|1.89|1.87
+ATL@MIL|Tyler Herro|Assists|5.5|2.20|1.60
+ATL@MIL|Tyler Herro|Threes|2.5|1.83|1.93
+ATL@MIL|Tyler Herro|Points|22.5|2.00|1.78
+ATL@MIL|Tyler Herro|PRA|31.5|1.80|1.96
+ATL@MIL|CJ McCollum|Rebounds|2.5|1.58|2.25
+ATL@MIL|CJ McCollum|PRA|23.5|1.92|1.84
+ATL@MIL|CJ McCollum|Assists|4.5|2.15|1.64
+ATL@MIL|CJ McCollum|Threes|2.5|2.20|1.60
+ATL@MIL|CJ McCollum|Points|15.5|1.80|1.96
+ATL@MIL|Dyson Daniels|Assists|5.5|1.80|1.96
+ATL@MIL|Dyson Daniels|Points|9.5|1.80|1.96
+ATL@MIL|Dyson Daniels|Rebounds|6.5|1.68|2.10
+ATL@MIL|Dyson Daniels|PRA|23.5|1.96|1.80
+ATL@MIL|Onyeka Okongwu|Rebounds|7.5|1.84|1.92
+ATL@MIL|Onyeka Okongwu|Assists|2.5|1.74|2.05
+ATL@MIL|Onyeka Okongwu|Points|13.5|1.87|1.88
+ATL@MIL|Onyeka Okongwu|Threes|1.5|1.90|1.86
+ATL@MIL|Onyeka Okongwu|PRA|24.5|1.96|1.80
+ATL@MIL|Kyle Kuzma|Assists|2.5|1.76|2.02
+ATL@MIL|Kyle Kuzma|Points|11.5|1.80|1.96
+ATL@MIL|Kyle Kuzma|Rebounds|5.5|2.25|1.58
+ATL@MIL|Kyle Kuzma|Threes|1.5|1.92|1.84
+ATL@MIL|Kyle Kuzma|PRA|19.5|1.80|1.96
+ATL@MIL|Brayden Burries|Assists|3.5|1.96|1.80
+ATL@MIL|Brayden Burries|Points|12.5|1.92|1.84
+ATL@MIL|Brayden Burries|Threes|1.5|2.10|1.68
+ATL@MIL|Brayden Burries|Rebounds|5.5|1.76|2.02
+ATL@MIL|Brayden Burries|PRA|22.5|1.96|1.80
+ATL@MIL|Myles Turner|Rebounds|5.5|1.68|2.10
+ATL@MIL|Myles Turner|Assists|2.5|2.30|1.56
+ATL@MIL|Myles Turner|Threes|1.5|1.85|1.91
+ATL@MIL|Myles Turner|PRA|18.5|1.92|1.84
+ATL@MIL|Myles Turner|Points|9.5|1.80|1.96
+ATL@MIL|Nate Ament|Rebounds|3.5|2.08|1.72
+ATL@MIL|Nate Ament|Points|8.5|1.96|1.80
+ATL@MIL|Jaime Jaquez Jr.|PRA|24.5|1.84|1.92
+ATL@MIL|Jaime Jaquez Jr.|Rebounds|5.5|2.10|1.68
+ATL@MIL|Jaime Jaquez Jr.|Threes|1.5|2.25|1.58
+ATL@MIL|Jaime Jaquez Jr.|Points|15.5|1.86|1.90
+ATL@MIL|Jaime Jaquez Jr.|Assists|3.5|1.86|1.90
+ATL@MIL|Aaron Wiggins|Rebounds|3.5|1.91|1.85
+ATL@MIL|Aaron Wiggins|PRA|18.5|1.85|1.91
+ATL@MIL|Aaron Wiggins|Assists|2.5|2.10|1.68
+ATL@MIL|Aaron Wiggins|Points|12.5|1.92|1.84
+ATL@MIL|Aaron Wiggins|Threes|2.5|2.60|1.45
+ATL@MIL|Luguentz Dort|Threes|1.5|2.10|1.68
+ATL@MIL|Luguentz Dort|Points|8.5|1.96|1.80
+ATL@MIL|Kel'el Ware|Points|7.5|1.78|2.00
+ATL@MIL|Kel'el Ware|Rebounds|5.5|1.84|1.92
+ATL@MIL|Luguentz Dort|Rebounds|2.5|1.68|2.10
+ATL@MIL|Luguentz Dort|PRA|12.5|1.80|1.96
+ATL@MIL|Dyson Daniels|Steals|2.5|1.96|1.80
+ATL@MIL|Jalen Johnson|Steals|1.5|2.60|1.45
+ATL@MIL|Nickeil Alexander-Walker|Steals|1.5|2.40|1.52
+ATL@MIL|Myles Turner|Blocks|1.5|1.80|1.96
+ATL@MIL|Jericho Sims|Points|3.5|1.78|2.00
+ATL@MIL|Jericho Sims|Rebounds|4.5|1.80|1.96
+HOU@WAS|Reed Sheppard|Points|14.5|2.00|1.72
+HOU@WAS|Jabari Smith|Rebounds|6.5|2.02|1.68
+HOU@WAS|Jabari Smith|Threes|1.5|1.45|2.55
+HOU@WAS|Amen Thompson|Rebounds|7.5|1.69|2.01
+HOU@WAS|Amen Thompson|Assists|6.5|2.44|1.47
+HOU@WAS|Reed Sheppard|PRA|20.5|1.80|1.92
+HOU@WAS|Jabari Smith|Points|13.5|1.93|1.75
+HOU@WAS|Alperen Sengun|Assists|7.5|2.20|1.57
+HOU@WAS|Reed Sheppard|Threes|3.5|2.20|1.60
+HOU@WAS|Kevin Durant|PRA|32.5|2.03|1.73
+HOU@WAS|Kevin Durant|Points|24.5|1.90|1.78
+HOU@WAS|Alperen Sengun|PRA|33.5|2.10|1.68
+HOU@WAS|Reed Sheppard|Rebounds|2.5|2.25|1.55
+HOU@WAS|Reed Sheppard|Assists|3.5|1.63|2.10
+HOU@WAS|Kevin Durant|Rebounds|3.5|1.59|2.17
+HOU@WAS|Tari Eason|PRA|23.5|1.78|1.93
+HOU@WAS|Alperen Sengun|Points|17.5|1.84|1.83
+HOU@WAS|Tari Eason|Threes|2.5|1.79|1.92
+HOU@WAS|Amen Thompson|PRA|40.5|1.96|1.76
+HOU@WAS|Tari Eason|Rebounds|6.5|1.65|2.07
+HOU@WAS|Tari Eason|Points|15.5|1.80|1.87
+HOU@WAS|Kevin Durant|Threes|1.5|1.72|2.05
+HOU@WAS|Alperen Sengun|Rebounds|7.5|1.95|1.73
+HOU@WAS|Kevin Durant|Assists|3.5|1.93|1.75
+HOU@WAS|Amen Thompson|Points|25.5|1.72|1.97
+HOU@WAS|Bogdan Bogdanovic|Threes|0.5|1.76|1.96
+HOU@WAS|Bogdan Bogdanovic|Points|5.5|1.84|1.83
+HOU@WAS|Kyshawn George|PRA|23.5|1.88|1.84
+HOU@WAS|Kyshawn George|Rebounds|3.5|1.83|1.84
+HOU@WAS|Anthony Davis|Points|11.5|2.05|1.66
+HOU@WAS|Alex Sarr|Points|19.5|1.77|1.91
+HOU@WAS|Trae Young|Threes|0.5|1.49|2.45
+HOU@WAS|Kyshawn George|Threes|1.5|1.58|2.25
+HOU@WAS|Anthony Davis|PRA|22.5|2.00|1.72
+HOU@WAS|Trae Young|Assists|8.5|1.90|1.78
+HOU@WAS|Kyshawn George|Assists|4.5|1.83|1.84
+HOU@WAS|Kyshawn George|Points|15.5|2.01|1.69
+HOU@WAS|Alex Sarr|Rebounds|6.5|1.97|1.72
+HOU@WAS|AJ Dybantsa|Points|14.5|1.93|1.75
+HOU@WAS|Trae Young|PRA|18.5|1.96|1.77
+HOU@WAS|AJ Dybantsa|Threes|1.5|2.12|1.65
+HOU@WAS|Trae Young|Points|8.5|1.96|1.73
+HOU@WAS|Anthony Davis|Rebounds|6.5|1.69|2.01
+###ALT
+game|player|stat|rungs
+NYK@TOR|Landry Shamet|Threes|2.5=2 3.5=5.8
+NYK@TOR|Immanuel Quickley|Points|7.5=1.43 8.5=1.83 9.5=2.12 10.5=2.8 11.5=3.6 12.5=4.5 13.5=6
+NYK@TOR|RJ Barrett|Rebounds|5.5=1.17 6.5=1.82 7.5=3.5 8.5=7
+NYK@TOR|Mikal Bridges|Points|3.5=1.8 4.5=1.87 5.5=3.15 6.5=4.5 7.5=6.5
+NYK@TOR|Scottie Barnes|Threes|2.5=4.5
+NYK@TOR|OG Anunoby|Rebounds|4.5=1.16 5.5=1.78 6.5=3.35 7.5=7
+NYK@TOR|Mikal Bridges|Assists|1.5=2.95
+NYK@TOR|Mikal Bridges|Threes|0.5=5.4
+NYK@TOR|OG Anunoby|Assists|1.5=2.6
+NYK@TOR|RJ Barrett|Threes|0.5=2.55
+NYK@TOR|Landry Shamet|Points|11.5=1.39 12.5=1.42 13.5=1.75 14.5=2.75 15.5=3.1 16.5=4.4
+NYK@TOR|Scottie Barnes|Assists|2.5=1.47 3.5=3.15 4.5=7.5
+NYK@TOR|Immanuel Quickley|Threes|1.5=1.79 2.5=4.75
+NYK@TOR|OG Anunoby|Points|13.5=1.09 14.5=1.12 15.5=1.32 16.5=1.52 17.5=1.83 18.5=2.35 19.5=2.95 20.5=3.9 21.5=5 22.5=6.5
+NYK@TOR|Immanuel Quickley|Rebounds|5.5=1.69 6.5=4
+NYK@TOR|Scottie Barnes|Points|14.5=1.07 15.5=1.1 16.5=1.33 17.5=1.45 18.5=1.87 19.5=2.2 20.5=2.9 21.5=3.5 22.5=4.7 23.5=5.75 24.5=7.5
+NYK@TOR|RJ Barrett|Assists|6.5=1.73 7.5=4.5
+NYK@TOR|Scottie Barnes|Rebounds|4.5=1.24 5.5=1.95 6.5=3.6 7.5=6.5
+NYK@TOR|Mikal Bridges|Rebounds|2.5=2.38 3.5=6.5
+NYK@TOR|RJ Barrett|Points|12.5=1.07 13.5=1.09 14.5=1.29 15.5=1.44 16.5=1.77 17.5=2.15 18.5=2.75 19.5=3.45 20.5=4.5 21.5=6
+NYK@TOR|OG Anunoby|Threes|2.5=2.03
+NYK@TOR|Collin Murray-Boyles|Rebounds|8.5=1.21 9.5=1.6
+NYK@TOR|Collin Murray-Boyles|Points|4.5=1.5 5.5=1.55 6.5=2.45 7.5=3.05 8.5=4.5 9.5=6.5
+NYK@TOR|Landry Shamet|Threes|4.5=16
+NYK@TOR|OG Anunoby|Threes|4.5=16 3.5=4.8 2.5=1.8
+NYK@TOR|Jalen Brunson|Threes|4.5=21
+NYK@TOR|Jamal Shead|Threes|4.5=14 3.5=4.1
+NYK@TOR|Miles McBride|Threes|1.5=2.85 3.5=12 2.5=4.8
+NYK@TOR|Immanuel Quickley|Threes|1.5=1.78 3.5=12 2.5=4.4
+NYK@TOR|Ja'Kobe Walter|Threes|1.5=2.55
+NYK@TOR|RJ Barrett|Threes|1.5=8.25 0.5=2.55
+NYK@TOR|Josh Hart|Threes|0.5=4.5
+NYK@TOR|Mikal Bridges|Threes|0.5=5.3
+NYK@TOR|Scottie Barnes|Threes|3.5=18 2.5=4.4
+OKC@SAC|Jared McCain|PRA|10.5=1.08 11.5=1.1 12.5=1.14 13.5=1.2 14.5=1.3 15.5=1.36 16.5=1.48 17.5=1.64 18.5=1.8 19.5=1.96 20.5=2.15 21.5=2.45 22.5=2.75 23.5=3.1 24.5=3.4 25.5=3.8 26.5=4.6 27.5=5.4 28.5=5.8
+OKC@SAC|Aday Mara|Rebounds|3.5=1.1 4.5=1.25 5.5=1.52 6.5=1.96 7.5=2.5 8.5=3.4 9.5=4.6 10.5=5.8
+OKC@SAC|Aday Mara|Points|4.5=1.11 5.5=1.2 6.5=1.32 7.5=1.48 8.5=1.68 9.5=2 10.5=2.3 11.5=2.75 12.5=3.2 13.5=4.1 14.5=5.2 15.5=5.8 16.5=7
+OKC@SAC|Jared McCain|Threes|1.5=1.36 2.5=2.1 3.5=3.6
+OKC@SAC|Ajay Mitchell|PRA|17.5=1.08 18.5=1.11 19.5=1.16 20.5=1.22 21.5=1.3 22.5=1.36 23.5=1.48 24.5=1.6 25.5=1.78 26.5=1.96 27.5=2.15 28.5=2.45 29.5=2.75 30.5=3.1 31.5=3.6 32.5=4.1 33.5=5 34.5=5.5
+OKC@SAC|Ajay Mitchell|Assists|1.5=1.08 2.5=1.32 3.5=1.9 4.5=2.9 5.5=5.2
+OKC@SAC|Kenrich Williams|PRA|8.5=1.07 9.5=1.11 10.5=1.16 11.5=1.27 12.5=1.4 13.5=1.56 14.5=1.76 15.5=2 16.5=2.25 17.5=2.6 18.5=3.1 19.5=3.6 20.5=4.6 21.5=5.4
+OKC@SAC|Shai Gilgeous-Alexander|Threes|1.5=1.6 2.5=2.9 3.5=5.8
+OKC@SAC|Ajay Mitchell|Rebounds|1.5=1.07 2.5=1.27 3.5=1.74 4.5=2.6 5.5=4.4 6.5=7
+OKC@SAC|Ajay Mitchell|Points|10.5=1.06 11.5=1.1 12.5=1.13 13.5=1.2 14.5=1.3 15.5=1.4 16.5=1.52 17.5=1.68 18.5=1.89 19.5=2.1 20.5=2.4 21.5=2.75 22.5=3.2 23.5=3.6 24.5=4.6 25.5=5.2 26.5=5.8 27.5=7.5
+OKC@SAC|Kenrich Williams|Points|3.5=1.1 4.5=1.16 5.5=1.3 6.5=1.45 7.5=1.68 8.5=1.96 9.5=2.3 10.5=2.9 11.5=3.6 12.5=4.4 13.5=5.4 14.5=6.5
+OKC@SAC|Kenrich Williams|Rebounds|2.5=1.1 3.5=1.32 4.5=1.8 5.5=2.5 6.5=3.8 7.5=5.8
+OKC@SAC|Aday Mara|PRA|10.5=1.1 11.5=1.13 12.5=1.2 13.5=1.3 14.5=1.38 15.5=1.5 16.5=1.68 17.5=1.86 18.5=2.1 19.5=2.4 20.5=2.75 21.5=3.1 22.5=3.6 23.5=4.4 24.5=5.2 25.5=5.8
+OKC@SAC|S Gilgeous-Alexander|PRA|30.5=1.08 31.5=1.1 32.5=1.13 33.5=1.16 34.5=1.22 35.5=1.27 36.5=1.32 37.5=1.4 38.5=1.5 39.5=1.6 40.5=1.74 41.5=1.87 42.5=2.05 43.5=2.15 44.5=2.45 45.5=2.75 46.5=3.1 47.5=3.2 48.5=3.8 49.5=4.4 50.5=5 51.5=5.4 52.5=5.8
+OKC@SAC|Jared McCain|Assists|0.5=1.1 1.5=1.5 2.5=2.5 3.5=4.6 4.5=7.5
+OKC@SAC|Jared McCain|Points|7.5=1.12 8.5=1.18 9.5=1.25 10.5=1.36 11.5=1.5 12.5=1.68 13.5=1.86 14.5=2.08 15.5=2.3 16.5=2.6 17.5=3.1 18.5=3.6 19.5=4.1 20.5=5 21.5=5.5 22.5=6.5 23.5=7.5
+OKC@SAC|Shai Gilgeous-Alexander|Points|21.5=1.06 22.5=1.08 23.5=1.11 24.5=1.16 25.5=1.2 26.5=1.25 27.5=1.32 28.5=1.4 29.5=1.5 30.5=1.64 31.5=1.8 32.5=1.96 33.5=2.1 34.5=2.3 35.5=2.6 36.5=2.9 37.5=3.2 38.5=3.6 39.5=4.4 40.5=5 41.5=5.4 42.5=5.8 43.5=7
+OKC@SAC|Jared McCain|Rebounds|1.5=1.16 2.5=1.6 3.5=2.45 4.5=4.1 5.5=7
+OKC@SAC|Darius Acuff Jr.|Points|16.5=1.08 17.5=1.1 18.5=1.13 19.5=1.18 20.5=1.24 21.5=1.3 22.5=1.36 23.5=1.48 24.5=1.58 25.5=1.72 26.5=1.87 27.5=2.05 28.5=2.2 29.5=2.45 30.5=2.75 31.5=2.9 32.5=3.2 33.5=3.8 34.5=4.4
+OKC@SAC|Darius Acuff Jr.|Rebounds|1.5=1.07 2.5=1.27 3.5=1.72 4.5=2.6 5.5=4.4 6.5=7
+OKC@SAC|Isaiah Hartenstein|Assists|2.5=1.18 3.5=1.5 4.5=2.15 5.5=3.2 6.5=5.4
+OKC@SAC|Isaiah Hartenstein|Rebounds|6.5=1.11 7.5=1.22 8.5=1.4 9.5=1.58 10.5=1.96 11.5=2.5 12.5=3.4 13.5=4.6 14.5=5.8
+OKC@SAC|Darius Acuff Jr.|Threes|1.5=1.16 2.5=1.56 3.5=2.45 4.5=4.1
+OKC@SAC|Darius Acuff Jr.|Assists|3.5=1.06 4.5=1.16 5.5=1.4 6.5=1.8 7.5=2.45 8.5=3.6 9.5=5 10.5=7
+OKC@SAC|Darius Acuff Jr.|PRA|25.5=1.08 26.5=1.1 27.5=1.12 28.5=1.16 29.5=1.2 30.5=1.25 31.5=1.3 32.5=1.36 33.5=1.4 34.5=1.5 35.5=1.6 36.5=1.72 37.5=1.86 38.5=2.02 39.5=2.15 40.5=2.4 41.5=2.6 42.5=2.9 43.5=3.2 44.5=3.6 45.5=3.8 46.5=4.6 47.5=5.2 48.5=5.5
+OKC@SAC|S Gilgeous-Alexander|Rebounds|2.5=1.2 3.5=1.58 4.5=2.3 5.5=3.8 6.5=5.8
+OKC@SAC|Ajay Mitchell|Threes|0.5=1.25 1.5=2.3 2.5=5.4
+OKC@SAC|Kenrich Williams|Threes|0.5=1.18 1.5=1.96 2.5=4.1
+OKC@SAC|S Gilgeous-Alexander|Assists|2.5=1.08 3.5=1.25 4.5=1.6 5.5=2.25 6.5=3.4 7.5=5.5
+OKC@SAC|I Hartenstein|PRA|16.5=1.1 17.5=1.13 18.5=1.18 19.5=1.25 20.5=1.32 21.5=1.44 22.5=1.52 23.5=1.68 24.5=1.9 25.5=2.1 26.5=2.4 27.5=2.6 28.5=3.1 29.5=3.6 30.5=4.1 31.5=5 32.5=5.5
+OKC@SAC|Isaiah Hartenstein|Points|4.5=1.1 5.5=1.16 6.5=1.25 7.5=1.4 8.5=1.58 9.5=1.85 10.5=2.15 11.5=2.6 12.5=3.1 13.5=3.8 14.5=5 15.5=5.8 16.5=7
+OKC@SAC|Jared McCain|Threes|4.5=7 1.5=1.39 5.5=14 2.5=2.12 6.5=36 3.5=3.6 0.5=1.07
+OKC@SAC|Shai Gilgeous-Alexander|Threes|4.5=14 1.5=1.61 2.5=2.9 3.5=6.5 0.5=1.11
+OKC@SAC|Darius Acuff Jr.|Threes|4.5=4.2 1.5=1.17 5.5=7.5 7.5=31 2.5=1.57 6.5=14 3.5=2.4 0.5=1.03
+OKC@SAC|Kenrich Williams|Threes|1.5=1.97 2.5=4 3.5=10 0.5=1.2
+OKC@SAC|Ajay Mitchell|Threes|1.5=2.35 2.5=5.5 3.5=14 0.5=1.27
+OKC@SAC|Darius Acuff Jr.|Steals|0.5=1.32 2.5=6.5 1.5=2.55
+ATL@MIL|Myles Turner|Points|4.5=1.08 5.5=1.16 6.5=1.25 7.5=1.4 8.5=1.58 9.5=1.8 10.5=2.08 11.5=2.45 12.5=2.9 13.5=3.6 14.5=4.4 15.5=5.2 16.5=6.5 17.5=7.5
+ATL@MIL|Onyeka Okongwu|Rebounds|4.5=1.1 5.5=1.22 6.5=1.45 7.5=1.84 8.5=2.4 9.5=2.9 10.5=4.4 11.5=5.8
+ATL@MIL|Nate Ament|Threes|0.5=1.36 1.5=2.75
+ATL@MIL|Dyson Daniels|Assists|3.5=1.13 4.5=1.36 5.5=1.8 6.5=2.5 7.5=3.6 8.5=5.8
+ATL@MIL|Myles Turner|Assists|0.5=1.07 1.5=1.44 2.5=2.3 3.5=4.4
+ATL@MIL|Dyson Daniels|Points|4.5=1.08 5.5=1.13 6.5=1.22 7.5=1.36 8.5=1.52 9.5=1.8 10.5=2.1 11.5=2.45 12.5=3.1 13.5=3.6 14.5=5 15.5=5.8 16.5=7
+ATL@MIL|Nickeil Alexander-Walker|Threes|2.5=1.32 3.5=1.93 4.5=3.1 5.5=5.4
+ATL@MIL|Myles Turner|PRA|10.5=1.07 11.5=1.11 12.5=1.16 13.5=1.22 14.5=1.3 15.5=1.4 16.5=1.56 17.5=1.72 18.5=1.92 19.5=2.15 20.5=2.45 21.5=2.75 22.5=3.2 23.5=3.8 24.5=4.6 25.5=5.2 26.5=5.8
+ATL@MIL|Jalen Johnson|PRA|28.5=1.08 29.5=1.1 30.5=1.13 31.5=1.16 32.5=1.22 33.5=1.3 34.5=1.36 35.5=1.44 36.5=1.52 37.5=1.64 38.5=1.8 39.5=1.96 40.5=2.1 41.5=2.3 42.5=2.6 43.5=2.9 44.5=3.2 45.5=3.6 46.5=4.1 47.5=4.6 48.5=5.4 49.5=5.8
+ATL@MIL|N Alexander-Walker|Rebounds|1.5=1.12 2.5=1.44 3.5=2.15 4.5=3.6 5.5=6.5
+ATL@MIL|Nickeil Alexander-Walker|Points|12.5=1.06 13.5=1.1 14.5=1.13 15.5=1.18 16.5=1.25 17.5=1.32 18.5=1.4 19.5=1.56 20.5=1.68 21.5=1.85 22.5=2.08 23.5=2.25 24.5=2.6 25.5=2.9 26.5=3.4 27.5=4.1 28.5=4.6 29.5=5.4 30.5=6.5 31.5=7
+ATL@MIL|Jalen Johnson|Assists|4.5=1.1 5.5=1.22 6.5=1.5 7.5=1.96 8.5=2.6 9.5=3.1 10.5=5 11.5=7.5
+ATL@MIL|Tyler Herro|Points|12.5=1.06 13.5=1.1 14.5=1.12 15.5=1.16 16.5=1.25 17.5=1.3 18.5=1.4 19.5=1.5 20.5=1.64 21.5=1.8 22.5=2 23.5=2.2 24.5=2.5 25.5=2.8 26.5=3.2 27.5=3.6 28.5=4.1 29.5=5 30.5=5.4 31.5=6.5 32.5=7.5
+ATL@MIL|CJ McCollum|Points|8.5=1.07 9.5=1.11 10.5=1.16 11.5=1.25 12.5=1.32 13.5=1.45 14.5=1.6 15.5=1.8 16.5=2.05 17.5=2.25 18.5=2.6 19.5=3.1 20.5=3.6 21.5=4.4 22.5=5.2 23.5=5.8 24.5=6.5
+ATL@MIL|CJ McCollum|Assists|2.5=1.2 3.5=1.52 4.5=2.15 5.5=3.4 6.5=5.8
+ATL@MIL|Dyson Daniels|Rebounds|4.5=1.13 5.5=1.32 6.5=1.68 7.5=2.15 8.5=3.1 9.5=3.8 10.5=5.5
+ATL@MIL|Jaime Jaquez Jr.|PRA|15.5=1.07 16.5=1.1 17.5=1.13 18.5=1.18 19.5=1.25 20.5=1.32 21.5=1.4 22.5=1.5 23.5=1.64 24.5=1.84 25.5=2.02 26.5=2.2 27.5=2.45 28.5=2.75 29.5=3.2 30.5=3.6 31.5=4.1 32.5=5.2 33.5=5.5
+ATL@MIL|Onyeka Okongwu|Threes|0.5=1.16 1.5=1.9 2.5=3.6
+ATL@MIL|Onyeka Okongwu|PRA|15.5=1.07 16.5=1.1 17.5=1.13 18.5=1.2 19.5=1.25 20.5=1.32 21.5=1.45 22.5=1.58 23.5=1.74 24.5=1.96 25.5=2.1 26.5=2.4 27.5=2.75 28.5=3.1 29.5=3.6 30.5=4.1 31.5=4.6 32.5=5.5
+ATL@MIL|Dyson Daniels|PRA|15.5=1.08 16.5=1.12 17.5=1.18 18.5=1.25 19.5=1.32 20.5=1.45 21.5=1.58 22.5=1.78 23.5=1.96 24.5=2.2 25.5=2.6 26.5=2.9 27.5=3.4 28.5=4.1 29.5=4.6 30.5=5.5
+ATL@MIL|Jalen Johnson|Threes|0.5=1.2 1.5=2.1 2.5=4.6
+ATL@MIL|N Alexander-Walker|PRA|18.5=1.08 19.5=1.1 20.5=1.13 21.5=1.18 22.5=1.25 23.5=1.3 24.5=1.4 25.5=1.5 26.5=1.64 27.5=1.8 28.5=1.96 29.5=2.15 30.5=2.45 31.5=2.75 32.5=3.1 33.5=3.6 34.5=4.1 35.5=4.6 36.5=5.4 37.5=5.8
+ATL@MIL|Kyle Kuzma|Threes|0.5=1.16 1.5=1.92 2.5=3.8
+ATL@MIL|Brayden Burries|Points|6.5=1.1 7.5=1.16 8.5=1.25 9.5=1.36 10.5=1.5 11.5=1.68 12.5=1.92 13.5=2.15 14.5=2.6 15.5=3.1 16.5=3.6 17.5=4.6 18.5=5.2 19.5=6.5 20.5=7.5
+ATL@MIL|Jalen Johnson|Rebounds|5.5=1.07 6.5=1.16 7.5=1.36 8.5=1.64 9.5=1.86 10.5=2.45 11.5=3.4 12.5=5 13.5=7
+ATL@MIL|Aaron Wiggins|Rebounds|1.5=1.1 2.5=1.32 3.5=1.91 4.5=2.9 5.5=4.6
+ATL@MIL|Brayden Burries|Threes|0.5=1.22 1.5=2.1 2.5=4.6
+ATL@MIL|Kyle Kuzma|Rebounds|2.5=1.1 3.5=1.3 4.5=1.64 5.5=2.25 6.5=3.2 7.5=5.2 8.5=7.5
+ATL@MIL|Jaime Jaquez Jr.|Points|8.5=1.08 9.5=1.12 10.5=1.18 11.5=1.25 12.5=1.36 13.5=1.48 14.5=1.64 15.5=1.86 16.5=2.1 17.5=2.4 18.5=2.75 19.5=3.2 20.5=3.6 21.5=4.6 22.5=5.2 23.5=5.8 24.5=7.5
+ATL@MIL|CJ McCollum|PRA|14.5=1.07 15.5=1.1 16.5=1.13 17.5=1.18 18.5=1.25 19.5=1.36 20.5=1.45 21.5=1.58 22.5=1.74 23.5=1.92 24.5=2.1 25.5=2.4 26.5=2.75 27.5=3.1 28.5=3.6 29.5=4.4 30.5=5.2 31.5=5.5
+ATL@MIL|Jaime Jaquez Jr.|Threes|0.5=1.25 1.5=2.25 2.5=5.2
+ATL@MIL|Brayden Burries|Rebounds|3.5=1.14 4.5=1.36 5.5=1.76 6.5=2.4 7.5=3.4 8.5=5.2 9.5=6.5
+ATL@MIL|CJ McCollum|Threes|1.5=1.4 2.5=2.2 3.5=4.1
+ATL@MIL|Tyler Herro|Assists|2.5=1.08 3.5=1.25 4.5=1.6 5.5=2.2 6.5=3.4 7.5=5.4
+ATL@MIL|CJ McCollum|Rebounds|1.5=1.16 2.5=1.58 3.5=2.5 4.5=4.6
+ATL@MIL|Kyle Kuzma|Assists|1.5=1.22 2.5=1.76 3.5=2.9 4.5=5.2
+ATL@MIL|Jaime Jaquez Jr.|Rebounds|2.5=1.08 3.5=1.25 4.5=1.58 5.5=2.1 6.5=3.1 7.5=5 8.5=7.5
+ATL@MIL|Aaron Wiggins|Assists|0.5=1.06 1.5=1.36 2.5=2.1 3.5=3.6 4.5=6.5
+ATL@MIL|Luguentz Dort|Points|3.5=1.11 4.5=1.16 5.5=1.32 6.5=1.48 7.5=1.68 8.5=1.96 9.5=2.3 10.5=2.75 11.5=3.4 12.5=4.4 13.5=5.2 14.5=6.5 15.5=7.5
+ATL@MIL|Kyle Kuzma|PRA|12.5=1.08 13.5=1.13 14.5=1.2 15.5=1.25 16.5=1.36 17.5=1.48 18.5=1.64 19.5=1.8 20.5=2.05 21.5=2.25 22.5=2.6 23.5=2.9 24.5=3.4 25.5=3.8 26.5=4.6 27.5=5.4
+ATL@MIL|Kyle Kuzma|Points|5.5=1.06 6.5=1.1 7.5=1.18 8.5=1.27 9.5=1.4 10.5=1.58 11.5=1.8 12.5=2.08 13.5=2.45 14.5=2.9 15.5=3.4 16.5=4.1 17.5=5.2 18.5=5.8 19.5=7
+ATL@MIL|Brayden Burries|Assists|1.5=1.08 2.5=1.32 3.5=1.96 4.5=2.9 5.5=5.2
+ATL@MIL|Onyeka Okongwu|Assists|1.5=1.22 2.5=1.74 3.5=2.9 4.5=5.4
+ATL@MIL|Myles Turner|Threes|0.5=1.16 1.5=1.85 2.5=3.6
+ATL@MIL|Nate Ament|Points|3.5=1.1 4.5=1.18 5.5=1.32 6.5=1.45 7.5=1.68 8.5=1.96 9.5=2.25 10.5=2.75 11.5=3.2 12.5=3.8 13.5=5 14.5=5.8 15.5=7
+ATL@MIL|Aaron Wiggins|Points|5.5=1.07 6.5=1.11 7.5=1.16 8.5=1.25 9.5=1.36 10.5=1.5 11.5=1.68 12.5=1.92 13.5=2.15 14.5=2.5 15.5=2.9 16.5=3.4 17.5=4.1 18.5=5.2 19.5=5.8 20.5=7
+ATL@MIL|N Alexander-Walker|Assists|1.5=1.18 2.5=1.6 3.5=2.6 4.5=4.6
+ATL@MIL|Tyler Herro|Threes|1.5=1.25 2.5=1.83 3.5=2.9 4.5=5.4
+ATL@MIL|Myles Turner|Rebounds|3.5=1.13 4.5=1.32 5.5=1.68 6.5=2.25 7.5=3.1 8.5=4.6 9.5=5.8
+ATL@MIL|Nate Ament|Rebounds|1.5=1.13 2.5=1.44 3.5=2.08 4.5=3.2 5.5=5.2
+ATL@MIL|Tyler Herro|Rebounds|2.5=1.13 3.5=1.36 4.5=1.89 5.5=2.75 6.5=4.4 7.5=7
+ATL@MIL|Tyler Herro|PRA|21.5=1.08 22.5=1.1 23.5=1.13 24.5=1.18 25.5=1.24 26.5=1.3 27.5=1.36 28.5=1.45 29.5=1.56 30.5=1.68 31.5=1.8 32.5=1.96 33.5=2.15 34.5=2.4 35.5=2.6 36.5=2.9 37.5=3.2 38.5=3.6 39.5=4.1 40.5=4.6 41.5=5.4 42.5=5.8
+ATL@MIL|Onyeka Okongwu|Points|6.5=1.06 7.5=1.1 8.5=1.14 9.5=1.24 10.5=1.32 11.5=1.48 12.5=1.64 13.5=1.87 14.5=2.15 15.5=2.5 16.5=2.9 17.5=3.4 18.5=4.1 19.5=5.2 20.5=5.8 21.5=7
+ATL@MIL|Brayden Burries|PRA|13.5=1.07 14.5=1.1 15.5=1.14 16.5=1.2 17.5=1.3 18.5=1.36 19.5=1.48 20.5=1.6 21.5=1.78 22.5=1.96 23.5=2.15 24.5=2.5 25.5=2.8 26.5=3.2 27.5=3.6 28.5=4.4 29.5=5.2 30.5=5.8
+ATL@MIL|Jalen Johnson|Points|13.5=1.07 14.5=1.1 15.5=1.14 16.5=1.2 17.5=1.3 18.5=1.36 19.5=1.5 20.5=1.64 21.5=1.83 22.5=2.08 23.5=2.25 24.5=2.6 25.5=2.9 26.5=3.4 27.5=3.8 28.5=4.6 29.5=5.4 30.5=5.8 31.5=7
+ATL@MIL|Jaime Jaquez Jr.|Assists|1.5=1.08 2.5=1.32 3.5=1.86 4.5=2.8 5.5=4.6 6.5=7.5
+ATL@MIL|Kel'el Ware|Points|2.5=1.08 3.5=1.12 4.5=1.22 5.5=1.36 6.5=1.52 7.5=1.78 8.5=2.05 9.5=2.4 10.5=2.9 11.5=3.2 12.5=3.8 13.5=4.6 14.5=5.5
+ATL@MIL|Jericho Sims|Points|0.5=1.13 1.5=1.14 2.5=1.52 3.5=1.78 4.5=2.25 5.5=2.9 6.5=3.6 7.5=4.6 8.5=5.5
+ATL@MIL|Aaron Wiggins|Threes|1.5=1.53 3.5=5.1 2.5=2.6 5.5=23 4.5=11 0.5=1.1
+ATL@MIL|CJ McCollum|Threes|1.5=1.41 3.5=4.2 2.5=2.2 5.5=19 4.5=8.75 0.5=1.07
+ATL@MIL|Nickeil Alexander-Walker|Threes|1.5=1.1 3.5=1.92 2.5=1.35 5.5=5.5 6.5=10 4.5=3.1 0.5=1.01 7.5=20
+ATL@MIL|Onyeka Okongwu|Threes|1.5=1.9 3.5=8.5 2.5=3.8 4.5=21 0.5=1.17
+ATL@MIL|Jalen Johnson|Threes|1.5=2.12 3.5=11.5 2.5=4.5 0.5=1.21
+ATL@MIL|Luguentz Dort|Threes|1.5=2.1 3.5=11 2.5=4.5 4.5=26 0.5=1.23
+ATL@MIL|Kyle Kuzma|Threes|1.5=1.91 3.5=9 2.5=3.9 4.5=23 0.5=1.18
+ATL@MIL|Myles Turner|Threes|1.5=1.85 3.5=8.25 2.5=3.6 4.5=19 0.5=1.17
+ATL@MIL|Tyler Herro|Threes|1.5=1.26 3.5=3 2.5=1.83 5.5=11 6.5=23 4.5=5.5 0.5=1.04
+ATL@MIL|Brayden Burries|Threes|1.5=2.12 3.5=11.5 2.5=4.6 0.5=1.23
+ATL@MIL|Jaime Jaquez Jr.|Threes|1.5=2.25 3.5=13 2.5=5.2 0.5=1.26
+ATL@MIL|Nate Ament|Threes|1.5=2.8 3.5=16 2.5=6.75 0.5=1.38
+ATL@MIL|Kel'el Ware|Threes|1.5=3.8 0.5=1.62
+ATL@MIL|Dyson Daniels|Steals|2.5=1.93 3.5=3.35 0.5=1.04 1.5=1.28 4.5=6.25
+ATL@MIL|Nickeil Alexander-Walker|Steals|2.5=5.3 0.5=1.27 1.5=2.35
+ATL@MIL|Jalen Johnson|Steals|2.5=6.25 0.5=1.33 1.5=2.55
+ATL@MIL|Luguentz Dort|Steals|2.5=7.5 0.5=1.43 1.5=2.95
+ATL@MIL|Onyeka Okongwu|Steals|2.5=8.25 0.5=1.41 1.5=3
+ATL@MIL|Kyle Kuzma|Steals|0.5=1.5 1.5=3.4
+ATL@MIL|Tyler Herro|Steals|0.5=1.48 1.5=3.3
+ATL@MIL|Myles Turner|Blocks|3.5=7.5 0.5=1.15 2.5=3.45 1.5=1.81
+ATL@MIL|Onyeka Okongwu|Blocks|0.5=1.54 1.5=3.5
+HOU@WAS|Tari Eason|Rebounds|5.5=1.21 6.5=1.65 7.5=2.5 8.5=4.1 9.5=6
+HOU@WAS|Alex Sarr|Threes|2.5=2.4
+HOU@WAS|Reed Sheppard|Assists|2.5=1.14 3.5=1.63 4.5=2.65 5.5=4.7
+HOU@WAS|Reed Sheppard|Threes|2.5=1.27 3.5=2.2 4.5=4.6
+HOU@WAS|AJ Dybantsa|Points|9.5=1.11 10.5=1.16 11.5=1.31 12.5=1.45 13.5=1.66 14.5=1.93 15.5=2.3 16.5=2.75 17.5=3.25 18.5=4 19.5=4.9 20.5=5.75 21.5=7.25
+HOU@WAS|Amen Thompson|Points|21.5=1.08 22.5=1.15 23.5=1.29 24.5=1.46 25.5=1.72 26.5=2.07 27.5=2.5 28.5=3.1
+HOU@WAS|Kevin Durant|Threes|1.5=1.7 2.5=4.6
+HOU@WAS|Reed Sheppard|Rebounds|1.5=1.3 2.5=2.25 3.5=4.5
+HOU@WAS|Kyshawn George|Threes|1.5=1.58 2.5=3.6
+HOU@WAS|Kevin Durant|Assists|2.5=1.18 3.5=1.93 4.5=3.9
+HOU@WAS|Jabari Smith|Threes|1.5=1.45 2.5=3.35
+HOU@WAS|Anthony Davis|Threes|0.5=3.45
+HOU@WAS|Alperen Sengun|Rebounds|5.5=1.12 6.5=1.4 7.5=1.95 8.5=2.85 9.5=3.8 10.5=6
+HOU@WAS|Kevin Durant|Rebounds|2.5=1.1 3.5=1.59 4.5=2.75 5.5=5.25
+HOU@WAS|Tari Eason|Threes|2.5=1.79 3.5=4.8
+HOU@WAS|Reed Sheppard|Points|9.5=1.06 10.5=1.15 11.5=1.33 12.5=1.41 13.5=1.66 14.5=2 15.5=2.27 16.5=2.8 17.5=3.45 18.5=4.1 19.5=5.25 20.5=6.5
+HOU@WAS|Jabari Smith|Points|9.5=1.11 10.5=1.23 11.5=1.36 12.5=1.62 13.5=1.93 14.5=2.37 15.5=3 16.5=3.7 17.5=4.7 18.5=6 19.5=7.5
+HOU@WAS|Anthony Davis|Rebounds|4.5=1.08 5.5=1.3 6.5=1.69 7.5=2.35 8.5=3.5 9.5=4.9 10.5=7.25
+HOU@WAS|Kyshawn George|Points|11.5=1.17 12.5=1.29 13.5=1.45 14.5=1.72 15.5=2.01 16.5=2.38 17.5=2.9 18.5=3.5 19.5=4.4 20.5=5.25 21.5=6.5
+HOU@WAS|Tari Eason|Points|12.5=1.19 13.5=1.3 14.5=1.5 15.5=1.8 16.5=2.14 17.5=2.65 18.5=3.3 19.5=4.1 20.5=5.25 21.5=6.5
+HOU@WAS|Anthony Davis|Points|11.5=2.05 12.5=2.44 13.5=2.85 14.5=3.35 15.5=4 16.5=4.7 17.5=5.75 18.5=7
+HOU@WAS|Amen Thompson|Rebounds|6.5=1.22 7.5=1.69 8.5=2.62 9.5=3.7 10.5=6.5
+HOU@WAS|Alperen Sengun|Assists|5.5=1.13 6.5=1.48 7.5=2.2 8.5=3.6 9.5=5.5
+HOU@WAS|Kevin Durant|Points|19.5=1.07 20.5=1.17 21.5=1.27 22.5=1.43 23.5=1.63 24.5=1.9 25.5=2.25 26.5=2.75 27.5=3.35 28.5=4.25 29.5=5.25 30.5=6.5
+HOU@WAS|Bogdan Bogdanovic|Threes|0.5=1.76 1.5=4.3
+HOU@WAS|Bogdan Bogdanovic|Points|2.5=1.2 3.5=1.22 4.5=1.44 5.5=1.84 6.5=2.1 7.5=2.7 8.5=3.45 9.5=4.25 10.5=5.5 11.5=7
+HOU@WAS|Alex Sarr|Points|15.5=1.07 16.5=1.08 17.5=1.31 18.5=1.46 19.5=1.77 20.5=2.17
+HOU@WAS|Alex Sarr|Rebounds|5.5=1.34 6.5=1.97 7.5=3.25 8.5=5.5
+HOU@WAS|Trae Young|Points|9.5=2.27 10.5=2.7 11.5=3.15 12.5=3.8 13.5=4.5 14.5=5.5 15.5=6.5
+HOU@WAS|Kyshawn George|Rebounds|2.5=1.17 3.5=1.83 4.5=3.35 5.5=6.5
+HOU@WAS|Alperen Sengun|Points|13.5=1.14 14.5=1.21 15.5=1.4 16.5=1.55 17.5=1.84 18.5=2.14 19.5=2.62 20.5=3.15 21.5=4.1 22.5=4.9 23.5=6 24.5=7.5
+HOU@WAS|Jabari Smith|Rebounds|5.5=1.33 6.5=2.02 7.5=3.45 8.5=6
+HOU@WAS|Amen Thompson|Assists|4.5=1.07 5.5=1.46 6.5=2.44 7.5=4.7
+HOU@WAS|Alperen Sengun|Threes|1.5=3.45
+HOU@WAS|Reed Sheppard|Threes|3.5=2.15 4.5=4.5 5.5=9 2.5=1.26
+HOU@WAS|Tari Eason|Threes|3.5=4.8 4.5=12 2.5=1.78
+HOU@WAS|Jabari Smith|Threes|3.5=8 1.5=1.44 4.5=23 2.5=3.3
+HOU@WAS|Kevin Durant|Threes|3.5=12.5 1.5=1.69 2.5=4.5
+HOU@WAS|Alex Sarr|Threes|3.5=7.5 4.5=23 2.5=2.35
+HOU@WAS|Kyshawn George|Threes|3.5=8.5 1.5=1.57 4.5=19 2.5=3.5
+HOU@WAS|Bub Carrington|Threes|3.5=12.5 1.5=1.95 2.5=5.25
+HOU@WAS|Trae Young|Threes|3.5=15 1.5=3.15 0.5=1.48
+HOU@WAS|AJ Dybantsa|Threes|3.5=16 2.5=6
+HOU@WAS|Alperen Sengun|Threes|1.5=3.4
+HOU@WAS|Bogdan Bogdanovic|Threes|1.5=4.3 0.5=1.75
+HOU@WAS|Anthony Davis|Threes|0.5=3.35
+###GALT
+game|kind|side|rungs
+DAL@BOS|tot|Over|219.5=1.1 220.5=1.18 221.5=1.41 222.5=1.69 223.5=2.17 224.5=3 225.5=4.2
+DAL@BOS|tot|Under|220.5=4.5 221.5=2.75 222.5=2.08 223.5=1.64 224.5=1.35 225.5=1.2 226.5=1.1 227.5=1.04
+DAL@BOS|sp|away|+41.5=1.02 +40.5=1.07 +39.5=1.19 +38.5=1.4 +37.5=1.68 +36.5=2.4 +35.5=3.2 +34.5=5.4 +33.5=8.25
+DAL@BOS|sp|home|-40.5=6.75 -39.5=4.2 -38.5=2.75 -37.5=2.08 -36.5=1.49 -35.5=1.3 -34.5=1.11 -33.5=1.04
+NYK@TOR|sp|away|+15.5=1.02 +14.5=1.04 +13.5=1.07 +12.5=1.1 +11.5=1.14 +10.5=1.19 +9.5=1.27 +8.5=1.34 +7.5=1.46 +6.5=1.63 +5.5=1.78 +4.5=1.96 +3.5=2.2 +2.5=2.4 +1.5=2.85 -1.5=3.7 -2.5=4.4 -3.5=5 -4.5=6 -5.5=7.25 -6.5=8.5
+NYK@TOR|sp|home|-14.5=8.5 -13.5=7 -12.5=5.8 -11.5=5 -10.5=4.1 -9.5=3.4 -8.5=3 -7.5=2.55 -6.5=2.12 -5.5=1.94 -4.5=1.76 -3.5=1.58 -2.5=1.49 -1.5=1.37 +1.5=1.23 +2.5=1.17 +3.5=1.14 +4.5=1.09 +5.5=1.06 +6.5=1.04
+NYK@TOR|tot|Over|180.5=1.02 181.5=1.04 182.5=1.07 183.5=1.09 184.5=1.12 185.5=1.16 186.5=1.21 187.5=1.26 188.5=1.33 189.5=1.41 190.5=1.51 191.5=1.62 192.5=1.76 193.5=1.93 194.5=2.12 195.5=2.35 196.5=2.65 197.5=2.98 198.5=3.3 199.5=3.75 200.5=4.35 201.5=5 202.5=5.6
+NYK@TOR|tot|Under|184.5=5.6 185.5=4.75 186.5=4.2 187.5=3.6 188.5=3.15 189.5=2.75 190.5=2.45 191.5=2.2 192.5=1.98 193.5=1.81 194.5=1.67 195.5=1.55 196.5=1.44 197.5=1.36 198.5=1.3 199.5=1.24 200.5=1.19 201.5=1.15 202.5=1.12 203.5=1.1 204.5=1.08 205.5=1.07 206.5=1.05 207.5=1.04 208.5=1.03 209.5=1.02
+OKC@SAC|sp|away|+10.5=1.02 +9.5=1.02 +8.5=1.03 +7.5=1.04 +6.5=1.05 +5.5=1.06 +4.5=1.08 +3.5=1.1 +2.5=1.11 +1.5=1.13 -1.5=1.17 -2.5=1.2 -3.5=1.22 -4.5=1.28 -5.5=1.31 -6.5=1.35 -7.5=1.44 -8.5=1.52 -9.5=1.59 -10.5=1.7 -11.5=1.81 -12.5=1.93 -13.5=2.05 -14.5=2.2 -15.5=2.35 -16.5=2.5 -17.5=2.73 -18.5=2.98 -19.5=3.24 -20.5=3.45 -21.5=3.75 -22.5=4.2 -23.5=4.6 -24.5=4.8 -25.5=5.2 -26.5=5.5 -27.5=6 -28.5=6.5 -29.5=7.5 -30.5=8 -31.5=8.5 -32.5=9.5
+OKC@SAC|sp|home|-7.5=9.5 -6.5=8.5 -5.5=7.75 -4.5=6.5 -3.5=6 -2.5=6 -1.5=5.4 +1.5=4.65 +2.5=4.25 +3.5=4 +4.5=3.45 +5.5=3.25 +6.5=3.02 +7.5=2.66 +8.5=2.42 +9.5=2.27 +10.5=2.08 +11.5=1.92 +12.5=1.8 +13.5=1.71 +14.5=1.62 +15.5=1.55 +16.5=1.49 +17.5=1.42 +18.5=1.36 +19.5=1.31 +20.5=1.28 +21.5=1.25 +22.5=1.2 +23.5=1.17 +24.5=1.16 +25.5=1.14 +26.5=1.13 +27.5=1.1 +28.5=1.08 +29.5=1.06 +30.5=1.06 +31.5=1.05 +32.5=1.04 +33.5=1.03 +34.5=1.03 +35.5=1.02 +36.5=1.02
+OKC@SAC|tot|Over|189.5=1.01 190.5=1.01 191.5=1.02 192.5=1.02 193.5=1.02 194.5=1.02 195.5=1.03 196.5=1.04 197.5=1.04 198.5=1.05 199.5=1.07 200.5=1.08 201.5=1.09 202.5=1.11 203.5=1.14 204.5=1.16 205.5=1.18 206.5=1.22 207.5=1.24 208.5=1.27 209.5=1.3 210.5=1.33 211.5=1.36 212.5=1.4 213.5=1.43 214.5=1.5 215.5=1.53 216.5=1.57 217.5=1.61 218.5=1.68 219.5=1.73 220.5=1.79 221.5=1.88 222.5=1.96 223.5=2.04 224.5=2.14 225.5=2.26 226.5=2.36 227.5=2.44 228.5=2.56 229.5=2.64 230.5=2.82 231.5=3 232.5=3.15 233.5=3.35 234.5=3.6 235.5=3.8 236.5=4 237.5=4.5 238.5=4.8 239.5=5.2 240.5=5.6
+OKC@SAC|tot|Under|203.5=5.5 204.5=5 205.5=4.7 206.5=4.2 207.5=3.9 208.5=3.65 209.5=3.4 210.5=3.25 211.5=3.05 212.5=2.9 213.5=2.76 214.5=2.6 215.5=2.52 216.5=2.42 217.5=2.32 218.5=2.2 219.5=2.1 220.5=2.02 221.5=1.93 222.5=1.85 223.5=1.78 224.5=1.71 225.5=1.64 226.5=1.59 227.5=1.56 228.5=1.51 229.5=1.48 230.5=1.42 231.5=1.38 232.5=1.34 233.5=1.31 234.5=1.28 235.5=1.26 236.5=1.23 237.5=1.19 238.5=1.17 239.5=1.15 240.5=1.13 241.5=1.11 242.5=1.09 243.5=1.08 244.5=1.07 245.5=1.06 246.5=1.05 247.5=1.04 248.5=1.04 249.5=1.03 250.5=1.02 251.5=1.02 252.5=1.02 253.5=1.02 254.5=1.02 255.5=1.01 256.5=1.01
+ATL@MIL|tot|Over|200.5=1.01 201.5=1.01 202.5=1.02 203.5=1.02 204.5=1.02 205.5=1.02 206.5=1.03 207.5=1.04 208.5=1.04 209.5=1.05 210.5=1.06 211.5=1.07 212.5=1.08 213.5=1.1 214.5=1.12 215.5=1.14 216.5=1.16 217.5=1.18 218.5=1.21 219.5=1.24 220.5=1.27 221.5=1.3 222.5=1.33 223.5=1.36 224.5=1.41 225.5=1.44 226.5=1.5 227.5=1.53 228.5=1.57 229.5=1.61 230.5=1.68 231.5=1.73 232.5=1.78 233.5=1.86 234.5=1.94 235.5=2.02 236.5=2.1 237.5=2.2 238.5=2.32 239.5=2.42 240.5=2.5 241.5=2.58 242.5=2.74 243.5=2.86 244.5=3.05 245.5=3.2 246.5=3.35 247.5=3.6 248.5=3.8 249.5=4.1 250.5=4.4 251.5=4.7 252.5=5 253.5=5.5
+ATL@MIL|tot|Under|215.5=5.5 216.5=5 217.5=4.7 218.5=4.3 219.5=3.9 220.5=3.65 221.5=3.4 222.5=3.25 223.5=3.05 224.5=2.9 225.5=2.74 226.5=2.6 227.5=2.5 228.5=2.42 229.5=2.32 230.5=2.2 231.5=2.1 232.5=2.04 233.5=1.94 234.5=1.86 235.5=1.79 236.5=1.73 237.5=1.68 238.5=1.61 239.5=1.57 240.5=1.53 241.5=1.5 242.5=1.44 243.5=1.41 244.5=1.36 245.5=1.34 246.5=1.31 247.5=1.28 248.5=1.26 249.5=1.23 250.5=1.2 251.5=1.18 252.5=1.16 253.5=1.14 254.5=1.12 255.5=1.1 256.5=1.08 257.5=1.08 258.5=1.07 259.5=1.06 260.5=1.05 261.5=1.04 262.5=1.04 263.5=1.03 264.5=1.03 265.5=1.02 266.5=1.02 267.5=1.02 268.5=1.02 269.5=1.01 270.5=1.01 271.5=1.01
+ATL@MIL|sp|away|+14.5=1.02 +13.5=1.02 +12.5=1.03 +11.5=1.04 +10.5=1.05 +9.5=1.06 +8.5=1.07 +7.5=1.1 +6.5=1.13 +5.5=1.14 +4.5=1.17 +3.5=1.17 +2.5=1.2 +1.5=1.25 -1.5=1.3 -2.5=1.36 -3.5=1.4 -4.5=1.48 -5.5=1.55 -6.5=1.61 -7.5=1.73 -8.5=1.86 -9.5=1.95 -10.5=2.11 -11.5=2.31 -12.5=2.47 -13.5=2.68 -14.5=2.91 -15.5=3.14 -16.5=3.32 -17.5=3.7 -18.5=4 -19.5=4.25 -20.5=4.65 -21.5=5.2 -22.5=5.4 -23.5=6 -24.5=6.5 -25.5=7.5 -26.5=8 -27.5=8.5 -28.5=9.5
+ATL@MIL|sp|home|-11.5=9.5 -10.5=8.5 -9.5=8 -8.5=7 -7.5=6 -6.5=5.4 -5.5=5.2 -4.5=4.65 -3.5=4.5 -2.5=4.25 -1.5=3.7 +1.5=3.3 +2.5=2.97 +3.5=2.82 +4.5=2.54 +5.5=2.34 +6.5=2.21 +7.5=2.02 +8.5=1.87 +9.5=1.78 +10.5=1.67 +11.5=1.57 +12.5=1.5 +13.5=1.43 +14.5=1.38 +15.5=1.33 +16.5=1.3 +17.5=1.25 +18.5=1.22 +19.5=1.2 +20.5=1.17 +21.5=1.14 +22.5=1.13 +23.5=1.11 +24.5=1.09 +25.5=1.07 +26.5=1.06 +27.5=1.05 +28.5=1.04 +29.5=1.03 +30.5=1.03 +31.5=1.02 +32.5=1.02
+HOU@WAS|sp|away|-4.5=1.02 -5.5=1.04 -6.5=1.05 -7.5=1.08 -8.5=1.1 -9.5=1.13 -10.5=1.17 -11.5=1.22 -12.5=1.27 -13.5=1.32 -14.5=1.38 -15.5=1.46 -16.5=1.55 -17.5=1.65 -18.5=1.75 -19.5=1.88 -20.5=2.03 -21.5=2.2 -22.5=2.4 -23.5=2.65 -24.5=2.9 -25.5=3.25 -26.5=3.6 -27.5=4 -28.5=4.4 -29.5=5.1 -30.5=5.6 -31.5=6.25 -32.5=7.25 -33.5=8 -34.5=9
+HOU@WAS|sp|home|+5.5=8.75 +6.5=8 +7.5=6.5 +8.5=5.7 +9.5=5.1 +10.5=4.4 +11.5=3.9 +12.5=3.45 +13.5=3.1 +14.5=2.8 +15.5=2.55 +16.5=2.3 +17.5=2.12 +18.5=1.97 +19.5=1.83 +20.5=1.7 +21.5=1.59 +22.5=1.5 +23.5=1.42 +24.5=1.36 +25.5=1.3 +26.5=1.24 +27.5=1.2 +28.5=1.16 +29.5=1.13 +30.5=1.11 +31.5=1.08 +32.5=1.06 +33.5=1.05 +34.5=1.03 +35.5=1.02
+HOU@WAS|tot|Over|222.5=1.02 223.5=1.03 224.5=1.04 225.5=1.06 226.5=1.07 227.5=1.09 228.5=1.11 229.5=1.14 230.5=1.17 231.5=1.2 232.5=1.24 233.5=1.28 234.5=1.33 235.5=1.4 236.5=1.46 237.5=1.55 238.5=1.65 239.5=1.75 240.5=1.87 241.5=2 242.5=2.15 243.5=2.33 244.5=2.53 245.5=2.75 246.5=3 247.5=3.3 248.5=3.7 249.5=4.1 250.5=4.5 251.5=5 252.5=5.4
+HOU@WAS|tot|Under|229.5=5.2 230.5=4.75 231.5=4.2 232.5=3.75 233.5=3.45 234.5=3.15 235.5=2.8 236.5=2.6 237.5=2.35 238.5=2.15 239.5=2 240.5=1.87 241.5=1.75 242.5=1.65 243.5=1.56 244.5=1.48 245.5=1.41 246.5=1.35 247.5=1.3 248.5=1.25 249.5=1.21 250.5=1.18 251.5=1.15 252.5=1.13 253.5=1.1 254.5=1.08 255.5=1.07 256.5=1.05 257.5=1.04 258.5=1.03
+###FB
+game|player|odds
+OKC@SAC|Shai Gilgeous-Alexander|4.60
+OKC@SAC|Ajay Mitchell|7.25
+OKC@SAC|Isaiah Hartenstein|9.00
+OKC@SAC|Kenrich Williams|11.00
+OKC@SAC|Aday Mara|11.50
+OKC@SAC|Malik Monk|12.00
+OKC@SAC|Darius Acuff Jr.|8.75
+ATL@MIL|Nickeil Alexander-Walker|7.50
+ATL@MIL|Onyeka Okongwu|7.50
+ATL@MIL|Jalen Johnson|6.50
+ATL@MIL|CJ McCollum|8.75
+ATL@MIL|Dyson Daniels|11.00
+ATL@MIL|Tyler Herro|6.75
+ATL@MIL|Jericho Sims|11.50
+ATL@MIL|Kyle Kuzma|9.75
+ATL@MIL|Myles Turner|11.50
+ATL@MIL|Brayden Burries|10.00
+###TT
+book|game|team|line|over|under
+Sportsbet|DAL@BOS|DAL|92.5|1.84|1.90
+Sportsbet|DAL@BOS|BOS|129.5|1.67|2.12
+Sportsbet|NYK@TOR|NYK|93.5|1.70|2.07
+Sportsbet|NYK@TOR|TOR|99.5|1.95|1.78
+Sportsbet|OKC@SAC|SAC|104.5|1.90|1.90
+Sportsbet|OKC@SAC|OKC|117.5|1.95|1.85
+Sportsbet|ATL@MIL|MIL|112.5|1.86|1.94
+Sportsbet|ATL@MIL|ATL|121.5|1.90|1.90
+Sportsbet|HOU@WAS|HOU|129.5|1.77|1.97
+Sportsbet|HOU@WAS|WAS|111.5|2.12|1.67
+###PAIRS
+game|player|stat|line|over|under
+NYK@TOR|OG Anunoby|P+A|19.5|1.79|1.92
+NYK@TOR|OG Anunoby|P+R|22.5|1.69|2.05
+NYK@TOR|OG Anunoby|R+A|7.5|1.69|2.05
+NYK@TOR|Mikal Bridges|P+R|6.5|1.79|1.92
+NYK@TOR|Mikal Bridges|P+A|5.5|1.92|1.79
+NYK@TOR|Mikal Bridges|R+A|3.5|1.74|2.00
+NYK@TOR|RJ Barrett|R+A|13.5|1.85|1.85
+NYK@TOR|Scottie Barnes|P+R|24.5|1.92|1.79
+NYK@TOR|RJ Barrett|P+A|24.5|1.69|2.05
+NYK@TOR|Scottie Barnes|R+A|8.5|1.85|1.85
+NYK@TOR|RJ Barrett|P+R|23.5|1.92|1.79
+NYK@TOR|Scottie Barnes|P+A|21.5|1.85|1.85
+NYK@TOR|Immanuel Quickley|P+A|13.5|1.74|2.00
+NYK@TOR|Immanuel Quickley|P+R|14.5|1.85|1.85
+NYK@TOR|Immanuel Quickley|R+A|10.5|1.69|2.05
+NYK@TOR|Collin Murray-Boyles|P+R|15.5|1.92|1.79
+NYK@TOR|Jamal Shead|P+A|24.5|2.00|1.74
+NYK@TOR|Jamal Shead|P+R|22.5|1.79|1.92
+NYK@TOR|Jamal Shead|R+A|6.5|2.20|1.59
+OKC@SAC|Kenrich Williams|R+A|6.5|1.84|1.92
+OKC@SAC|Ajay Mitchell|P+R|22.5|1.91|1.85
+OKC@SAC|Ajay Mitchell|P+A|22.5|1.96|1.80
+OKC@SAC|Shai Gilgeous-Alexander|P+R|36.5|1.91|1.85
+OKC@SAC|Isaiah Hartenstein|P+R|20.5|1.96|1.80
+OKC@SAC|Shai Gilgeous-Alexander|R+A|9.5|2.10|1.68
+OKC@SAC|Ajay Mitchell|R+A|7.5|1.96|1.80
+OKC@SAC|Jared McCain|P+R|16.5|1.83|1.93
+OKC@SAC|Jared McCain|R+A|5.5|2.10|1.68
+OKC@SAC|Jared McCain|P+A|15.5|1.80|1.96
+OKC@SAC|Isaiah Hartenstein|P+A|14.5|2.00|1.78
+OKC@SAC|Isaiah Hartenstein|R+A|14.5|1.88|1.88
+OKC@SAC|Aday Mara|P+R|15.5|1.80|1.96
+OKC@SAC|Kenrich Williams|P+R|13.5|1.96|1.80
+OKC@SAC|Shai Gilgeous-Alexander|P+A|37.5|1.92|1.84
+OKC@SAC|Kenrich Williams|P+A|10.5|1.96|1.80
+OKC@SAC|Darius Acuff Jr.|P+R|30.5|1.88|1.88
+OKC@SAC|Darius Acuff Jr.|P+A|33.5|1.85|1.91
+OKC@SAC|Darius Acuff Jr.|R+A|10.5|1.87|1.89
+ATL@MIL|Jalen Johnson|P+R|31.5|1.96|1.80
+ATL@MIL|Jalen Johnson|R+A|16.5|1.80|1.96
+ATL@MIL|Jalen Johnson|P+A|29.5|1.88|1.87
+ATL@MIL|Nickeil Alexander-Walker|P+R|24.5|1.80|1.96
+ATL@MIL|Nickeil Alexander-Walker|R+A|6.5|2.08|1.72
+ATL@MIL|Nickeil Alexander-Walker|P+A|24.5|1.85|1.91
+ATL@MIL|Tyler Herro|R+A|9.5|1.80|1.96
+ATL@MIL|Tyler Herro|P+R|26.5|1.86|1.89
+ATL@MIL|Tyler Herro|P+A|27.5|1.96|1.80
+ATL@MIL|CJ McCollum|R+A|7.5|2.10|1.68
+ATL@MIL|CJ McCollum|P+A|20.5|1.96|1.80
+ATL@MIL|CJ McCollum|P+R|18.5|1.80|1.96
+ATL@MIL|Dyson Daniels|R+A|12.5|1.78|2.00
+ATL@MIL|Dyson Daniels|P+A|15.5|1.80|1.96
+ATL@MIL|Dyson Daniels|P+R|17.5|1.96|1.80
+ATL@MIL|Onyeka Okongwu|P+R|21.5|1.89|1.87
+ATL@MIL|Onyeka Okongwu|P+A|16.5|1.92|1.84
+ATL@MIL|Onyeka Okongwu|R+A|10.5|1.89|1.87
+ATL@MIL|Kyle Kuzma|P+A|14.5|1.80|1.96
+ATL@MIL|Kyle Kuzma|P+R|17.5|2.00|1.78
+ATL@MIL|Kyle Kuzma|R+A|7.5|1.80|1.96
+ATL@MIL|Brayden Burries|P+R|18.5|1.93|1.83
+ATL@MIL|Brayden Burries|R+A|9.5|1.91|1.85
+ATL@MIL|Brayden Burries|P+A|16.5|1.96|1.80
+ATL@MIL|Myles Turner|P+A|12.5|1.96|1.80
+ATL@MIL|Myles Turner|P+R|15.5|1.80|1.96
+ATL@MIL|Myles Turner|R+A|8.5|2.08|1.72
+ATL@MIL|Nate Ament|P+R|11.5|1.80|1.96
+ATL@MIL|Jaime Jaquez Jr.|R+A|8.5|1.74|2.05
+ATL@MIL|Jaime Jaquez Jr.|P+A|19.5|1.88|1.88
+ATL@MIL|Jaime Jaquez Jr.|P+R|20.5|1.80|1.96
+ATL@MIL|Aaron Wiggins|P+R|16.5|1.96|1.80
+ATL@MIL|Aaron Wiggins|R+A|5.5|1.68|2.10
+ATL@MIL|Aaron Wiggins|P+A|14.5|1.80|1.96
+ATL@MIL|Kel'el Ware|P+R|13.5|1.80|1.96
+ATL@MIL|Luguentz Dort|P+R|11.5|1.96|1.80
+ATL@MIL|Jericho Sims|P+R|8.5|1.84|1.92
+HOU@WAS|Amen Thompson|P+R|34.5|2.00|1.74
+HOU@WAS|Alperen Sengun|R+A|14.5|1.79|1.92
+HOU@WAS|Tari Eason|P+R|22.5|1.79|1.92
+HOU@WAS|Reed Sheppard|P+A|18.5|1.92|1.79
+HOU@WAS|Reed Sheppard|R+A|6.5|2.05|1.69
+HOU@WAS|Kevin Durant|R+A|7.5|1.92|1.79
+HOU@WAS|Alperen Sengun|P+R|25.5|1.92|1.79
+HOU@WAS|Tari Eason|R+A|7.5|1.74|2.00
+HOU@WAS|Tari Eason|P+A|16.5|1.79|1.92
+HOU@WAS|Kevin Durant|P+R|28.5|1.92|1.79
+HOU@WAS|Alperen Sengun|P+A|25.5|2.00|1.74
+HOU@WAS|Kevin Durant|P+A|28.5|2.00|1.74
+HOU@WAS|Amen Thompson|R+A|13.5|1.64|2.15
+HOU@WAS|Amen Thompson|P+A|32.5|2.00|1.74
+HOU@WAS|Reed Sheppard|P+R|16.5|1.79|1.92
+HOU@WAS|Trae Young|P+A|17.5|2.00|1.74
+HOU@WAS|Anthony Davis|P+R|18.5|2.00|1.74
+HOU@WAS|Trae Young|R+A|9.5|1.85|1.85
+HOU@WAS|Kyshawn George|P+R|18.5|1.85|1.85
+HOU@WAS|Anthony Davis|R+A|10.5|1.74|2.00
+HOU@WAS|Kyshawn George|P+A|19.5|1.79|1.92
+HOU@WAS|Anthony Davis|P+A|15.5|2.05|1.69
+HOU@WAS|Kyshawn George|R+A|8.5|2.05|1.69
+HOU@WAS|Trae Young|P+R|9.5|1.92|1.79
+###PAIRNAMES
+To Record 25+ Reb + Ast
+To Record 25+ Pts + Reb
+To Record 45+ Pts + Reb
+To Record 5+ Reb + Ast
+To Record 35+ Pts + Ast
+To Record 40+ Pts + Reb
+To Record 20+ Pts + Ast
+To Record 10+ Pts + Reb
+To Record 50+ Pts + Ast
+To Record 30+ Pts + Reb
+To Record 10+ Reb + Ast
+To Record 45+ Pts + Ast
+To Record 35+ Pts + Reb
+To Record 25+ Pts + Ast
+To Record 15+ Reb + Ast
+To Record 10+ Pts + Ast
+To Record 15+ Pts + Reb
+To Record 15+ Pts + Ast
+To Record 20+ Reb + Ast
+To Record 20+ Pts + Reb
+To Record 50+ Pts + Reb
+To Record 30+ Pts + Ast
+To Record 40+ Pts + Ast
+Alt Reb + Ast
+Alt Pts + Reb

@@ -1,9 +1,10 @@
 player,team,game,pos,status,mpg,bpm
 Amen Thompson,Rockets,Rockets @ Heat,SF,Questionable,33.4,1.7
+Marcus Smart,Rockets,Rockets @ Heat,PG,Questionable,21.4,-1.5
 Steven Adams,Rockets,Rockets @ Heat,C,Out,10.5,-0.8
 Clint Capela,Rockets,Rockets @ Heat,C,Out,14.2,-0.0
-Pelle Larsson,Heat,Rockets @ Heat,SG,Doubtful,29.5,-1.3
-Nikola Jović,Heat,Rockets @ Heat,PF,Questionable,12.1,-2.4
+Pelle Larsson,Heat,Rockets @ Heat,SG,Out,29.5,-1.3
+Nikola Jović,Heat,Rockets @ Heat,PF,Out,12.1,-2.4
 Stephen Curry,Warriors,Warriors @ Pelicans,PG,Out,26.3,5.5
 Brandon Williams,Warriors,Warriors @ Pelicans,PG,Out,16.1,-0.2
 Gui Santos,Warriors,Warriors @ Pelicans,PF,Questionable,18.6,-1.5
@@ -17,7 +18,7 @@ Isaiah Stewart,Grizzlies,Grizzlies @ Wizards,C,Out,18.2,-0.4
 Zach Edey,Grizzlies,Grizzlies @ Wizards,C,Questionable,20.7,-0.8
 GG Jackson II,Grizzlies,Grizzlies @ Wizards,PF,Out,15.0,-1.8
 Scotty Pippen Jr.,Grizzlies,Grizzlies @ Wizards,PG,Out,16.0,0.3
-Quinten Post,Grizzlies,Grizzlies @ Wizards,C,Out,13.0,-1.3
+Quinten Post,Grizzlies,Grizzlies @ Wizards,C,Questionable,13.0,-1.3
 Justin Champagnie,Wizards,Grizzlies @ Wizards,SF,Out,18.2,-0.3
 Ryan Dunn,Suns,Suns @ Nuggets,SF,Questionable,17.5,-0.6
 Paolo Banchero,Magic,Magic @ Celtics,PF,Out,34.0,1.2
@@ -26,11 +27,10 @@ Joel Embiid,76ers,76ers @ Nets,C,Questionable,31.5,0.7
 LeBron James,76ers,76ers @ Nets,PF,Out,32.5,2.0
 Adem Bona,76ers,76ers @ Nets,C,Out,14.2,-2.7
 Caleb Wilson,Bulls,Bulls @ Cavaliers,PF,Out,30.8,-2.4
-Jalen Smith,Bulls,Bulls @ Cavaliers,C,Questionable,24.7,-0.2
+Jaylin Sellers,Bulls,Bulls @ Cavaliers,PG,Out,8.0,-2.2
 Tobe Awaka,Bulls,Bulls @ Cavaliers,PF,Out,10.2,-2.4
 Evan Mobley,Cavaliers,Bulls @ Cavaliers,PF,Out,32.0,2.3
-Peyton Watson,Cavaliers,Bulls @ Cavaliers,SF,Questionable,28.2,-2.2
-Jaylon Tyson,Cavaliers,Bulls @ Cavaliers,SF,Doubtful,23.8,-1.0
+Jaylon Tyson,Cavaliers,Bulls @ Cavaliers,SF,Out,23.8,-1.0
 Sam Merrill,Cavaliers,Bulls @ Cavaliers,SG,Out,23.1,-0.6
 Ja Morant,Blazers,Blazers @ Timberwolves,PG,Out,25.8,-0.6
 Chris Youngblood,Blazers,Blazers @ Timberwolves,SG,Out,13.3,-2.3

@@ -1,0 +1,23 @@
+###GAMES
+date,tip,away,home,ml_away,ml_home,spread_home,spread_home_odds,spread_away_odds,total,over_odds,under_odds
+2026-11-20,12:10,New York Knicks,Minnesota Timberwolves,1.82,2.03,1.5,1.90,1.90,217.5,1.85,1.96
+2026-11-20,12:10,Los Angeles Clippers,San Antonio Spurs,8.75,1.08,-16.5,1.90,1.90,225.5,1.90,1.90
+###PROPS
+game|player|stat|line|over|under
+
+###ALT
+game|player|stat|rungs
+
+###GALT
+game|kind|side|rungs
+
+###FB
+game|player|odds
+
+###TT
+book|game|team|line|over|under
+
+###PAIRS
+game|player|stat|line|over|under
+
+###PAIRNAMES

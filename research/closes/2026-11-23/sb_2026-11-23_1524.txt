@@ -1,0 +1,262 @@
+###GAMES
+date,tip,away,home,ml_away,ml_home,spread_home,spread_home_odds,spread_away_odds,total,over_odds,under_odds
+2026-11-23,07:40,Detroit Pistons,Atlanta Hawks,1.77,2.09,2.5,1.84,1.96,226.5,1.95,1.86
+2026-11-23,10:10,Oklahoma City Thunder,Miami Heat,2.14,1.74,-2.5,1.90,1.90,231.5,1.95,1.86
+2026-11-23,11:10,Orlando Magic,Washington Wizards,1.45,2.87,5.5,1.90,1.90,221.5,1.95,1.86
+2026-11-23,12:40,Boston Celtics,Golden State Warriors,1.25,4.15,9.5,1.90,1.90,212.5,1.95,1.86
+2026-11-23,11:10,Dallas Mavericks,Utah Jazz,1.85,2.01,1.5,1.90,1.90,226.5,1.97,1.84
+2026-11-23,12:10,Indiana Pacers,New York Knicks,4.25,1.24,-10.5,1.90,1.90,218.5,1.83,1.98
+2026-11-23,11:10,Denver Nuggets,Chicago Bulls,1.28,3.85,8.5,1.90,1.90,237.5,1.90,1.90
+###PROPS
+game|player|stat|line|over|under
+DET@ATL|Cade Cunningham|PRA|40.5|1.90|1.86
+DET@ATL|Cade Cunningham|Threes|2.5|2.45|1.50
+DET@ATL|Cade Cunningham|Points|26.5|1.96|1.80
+DET@ATL|Cade Cunningham|Assists|8.5|1.91|1.85
+DET@ATL|Cade Cunningham|Rebounds|5.5|2.05|1.74
+DET@ATL|Ausar Thompson|PRA|24.5|1.80|1.96
+DET@ATL|Ausar Thompson|Rebounds|7.5|1.74|2.05
+DET@ATL|Ausar Thompson|Assists|4.5|2.05|1.74
+DET@ATL|Ausar Thompson|Points|12.5|2.00|1.78
+DET@ATL|Daniss Jenkins|Assists|4.5|1.64|2.15
+DET@ATL|Daniss Jenkins|Threes|2.5|2.40|1.52
+DET@ATL|Daniss Jenkins|Points|16.5|1.96|1.80
+DET@ATL|Daniss Jenkins|PRA|25.5|1.89|1.87
+DET@ATL|Daniss Jenkins|Rebounds|4.5|2.25|1.58
+DET@ATL|Kevin Huerter|Points|14.5|2.00|1.78
+DET@ATL|Kevin Huerter|Rebounds|3.5|1.58|2.20
+DET@ATL|Kevin Huerter|Threes|2.5|2.50|1.48
+DET@ATL|Kevin Huerter|Assists|3.5|2.15|1.64
+DET@ATL|Kevin Huerter|PRA|21.5|1.84|1.92
+DET@ATL|John Collins|Points|10.5|1.80|1.96
+DET@ATL|John Collins|Rebounds|5.5|1.90|1.86
+DET@ATL|John Collins|Threes|1.5|2.75|1.40
+DET@ATL|Paul Reed|Rebounds|7.5|2.15|1.64
+DET@ATL|Paul Reed|Assists|1.5|1.48|2.50
+DET@ATL|Paul Reed|PRA|20.5|1.92|1.83
+DET@ATL|Paul Reed|Points|10.5|1.80|1.96
+DET@ATL|Isaiah Joe|Threes|1.5|1.68|2.10
+DET@ATL|Isaiah Joe|Points|8.5|1.91|1.85
+DET@ATL|Jalen Johnson|Threes|1.5|2.60|1.45
+DET@ATL|Jalen Johnson|Points|21.5|2.00|1.78
+DET@ATL|Jalen Johnson|Rebounds|8.5|1.74|2.05
+DET@ATL|Jalen Johnson|PRA|37.5|1.89|1.87
+DET@ATL|Jalen Johnson|Assists|6.5|1.68|2.10
+DET@ATL|Dyson Daniels|PRA|24.5|1.91|1.85
+DET@ATL|Dyson Daniels|Assists|5.5|1.64|2.15
+DET@ATL|Dyson Daniels|Points|10.5|1.78|2.00
+DET@ATL|Dyson Daniels|Rebounds|7.5|2.15|1.64
+DET@ATL|Kingston Flemings|Points|8.5|2.02|1.76
+DET@ATL|Kingston Flemings|Threes|0.5|1.78|2.00
+DET@ATL|Kingston Flemings|PRA|14.5|1.80|1.96
+DET@ATL|Kingston Flemings|Assists|3.5|1.68|2.10
+DET@ATL|Kingston Flemings|Rebounds|2.5|1.88|1.88
+DET@ATL|Nickeil Alexander-Walker|Points|21.5|2.02|1.76
+DET@ATL|Nickeil Alexander-Walker|Assists|2.5|1.60|2.20
+DET@ATL|N Alexander-Walker|PRA|27.5|1.83|1.93
+DET@ATL|Nickeil Alexander-Walker|Rebounds|3.5|1.90|1.86
+DET@ATL|Nickeil Alexander-Walker|Threes|3.5|2.20|1.60
+DET@ATL|Onyeka Okongwu|Assists|2.5|2.15|1.64
+DET@ATL|Onyeka Okongwu|Rebounds|7.5|1.87|1.89
+DET@ATL|Onyeka Okongwu|Points|14.5|1.78|2.00
+DET@ATL|Onyeka Okongwu|PRA|25.5|1.93|1.83
+DET@ATL|Onyeka Okongwu|Threes|1.5|1.50|2.45
+DET@ATL|Aaron Wiggins|Threes|2.5|2.15|1.64
+DET@ATL|Aaron Wiggins|Points|13.5|1.80|1.96
+DET@ATL|Aaron Wiggins|PRA|19.5|1.80|1.96
+DET@ATL|Aaron Wiggins|Rebounds|3.5|2.08|1.72
+DET@ATL|Aaron Wiggins|Assists|2.5|2.15|1.64
+DET@ATL|Dyson Daniels|Steals|2.5|2.10|1.68
+ORL@WAS|Anthony Davis|Points|24.5|1.96|1.80
+ORL@WAS|Anthony Davis|Assists|1.5|1.52|2.40
+ORL@WAS|Anthony Davis|Rebounds|10.5|1.96|1.80
+ORL@WAS|Anthony Davis|PRA|36.5|1.83|1.93
+ORL@WAS|AJ Dybantsa|Assists|2.5|2.40|1.52
+ORL@WAS|AJ Dybantsa|Threes|1.5|2.15|1.64
+ORL@WAS|AJ Dybantsa|PRA|27.5|1.91|1.85
+ORL@WAS|AJ Dybantsa|Rebounds|6.5|1.88|1.88
+ORL@WAS|AJ Dybantsa|Points|18.5|1.96|1.80
+ORL@WAS|Trae Young|Rebounds|2.5|1.89|1.87
+ORL@WAS|Trae Young|Assists|7.5|1.68|2.10
+ORL@WAS|Trae Young|Threes|2.5|2.60|1.45
+ORL@WAS|Trae Young|PRA|28.5|1.88|1.88
+ORL@WAS|Trae Young|Points|17.5|1.90|1.86
+ORL@WAS|Franz Wagner|Points|25.5|1.88|1.87
+ORL@WAS|Franz Wagner|PRA|40.5|1.92|1.84
+ORL@WAS|Franz Wagner|Assists|7.5|1.93|1.83
+ORL@WAS|Franz Wagner|Rebounds|6.5|1.90|1.86
+ORL@WAS|Franz Wagner|Threes|1.5|2.05|1.74
+ORL@WAS|Desmond Bane|Points|19.5|1.93|1.83
+ORL@WAS|Desmond Bane|PRA|27.5|1.89|1.87
+ORL@WAS|Desmond Bane|Rebounds|4.5|1.83|1.93
+ORL@WAS|Desmond Bane|Assists|3.5|2.25|1.58
+ORL@WAS|Desmond Bane|Threes|3.5|2.00|1.78
+ORL@WAS|Kyshawn George|Threes|1.5|1.50|2.45
+ORL@WAS|Kyshawn George|Points|16.5|1.96|1.80
+ORL@WAS|Kyshawn George|Rebounds|4.5|1.89|1.87
+ORL@WAS|Kyshawn George|Assists|3.5|1.60|2.20
+ORL@WAS|Kyshawn George|PRA|24.5|1.80|1.96
+ORL@WAS|Anthony Black|Points|15.5|1.96|1.80
+ORL@WAS|Anthony Black|Threes|1.5|1.91|1.85
+ORL@WAS|Anthony Black|PRA|25.5|1.96|1.80
+ORL@WAS|Anthony Black|Assists|4.5|1.74|2.05
+ORL@WAS|Anthony Black|Rebounds|4.5|1.90|1.86
+ORL@WAS|Jalen Suggs|Points|11.5|1.80|1.96
+ORL@WAS|Jalen Suggs|Threes|1.5|1.86|1.90
+ORL@WAS|Jalen Suggs|Rebounds|4.5|2.15|1.64
+ORL@WAS|Jalen Suggs|Assists|3.5|1.64|2.15
+ORL@WAS|Jalen Suggs|PRA|20.5|1.93|1.83
+ORL@WAS|Wendell Carter Jr.|Points|12.5|1.96|1.80
+ORL@WAS|Wendell Carter Jr.|PRA|22.5|1.90|1.86
+ORL@WAS|Wendell Carter Jr.|Rebounds|8.5|2.10|1.68
+ORL@WAS|Alex Sarr|Points|10.5|1.92|1.84
+ORL@WAS|Alex Sarr|Rebounds|6.5|1.76|2.02
+ORL@WAS|Alex Sarr|Threes|1.5|2.60|1.45
+ORL@WAS|Tristan da Silva|Threes|2.5|2.20|1.60
+ORL@WAS|Tristan da Silva|Points|11.5|1.89|1.87
+ORL@WAS|Tristan da Silva|Rebounds|3.5|1.64|2.15
+ORL@WAS|Bilal Coulibaly|Points|6.5|1.85|1.91
+ORL@WAS|Bilal Coulibaly|Rebounds|3.5|1.85|1.91
+###ALT
+game|player|stat|rungs
+DET@ATL|Cade Cunningham|Threes|2.5=2.45 5.5=23 1.5=1.48 4.5=11 0.5=1.08 3.5=4.9
+DET@ATL|Daniss Jenkins|Threes|2.5=2.4 5.5=20 1.5=1.46 4.5=10 0.5=1.07 3.5=4.7
+DET@ATL|Kevin Huerter|Threes|2.5=2.5 5.5=23 1.5=1.48 4.5=10.5 0.5=1.08 3.5=4.9
+DET@ATL|Isaiah Joe|Threes|2.5=3 5.5=26 1.5=1.69 4.5=12.5 0.5=1.13 3.5=5.9
+DET@ATL|Nickeil Alexander-Walker|Threes|2.5=1.5 6.5=14 5.5=7 1.5=1.14 7.5=34 4.5=3.8 0.5=1.02 3.5=2.2
+DET@ATL|Aaron Wiggins|Threes|2.5=2.18 5.5=15 1.5=1.39 4.5=8.5 0.5=1.07 3.5=4
+DET@ATL|Onyeka Okongwu|Threes|2.5=2.55 5.5=23 1.5=1.51 4.5=11 0.5=1.08 3.5=5.1
+DET@ATL|Jalen Johnson|Threes|2.5=6.25 1.5=2.6 0.5=1.33 3.5=17
+DET@ATL|John Collins|Threes|1.5=2.8 0.5=1.37 3.5=19
+DET@ATL|Kingston Flemings|Threes|1.5=5.1 0.5=1.77
+DET@ATL|Dyson Daniels|Steals|1.5=1.35 3.5=3.8 0.5=1.05 4.5=7.5 2.5=2.1
+OKC@MIA|Ajay Mitchell|Threes|0.5=1.27 1.5=2.35
+OKC@MIA|Jared McCain|Threes|0.5=1.04 1.5=1.23
+OKC@MIA|Shai Gilgeous-Alexander|Threes|0.5=1.11 1.5=1.64
+ORL@WAS|Desmond Bane|Threes|5.5=6 6.5=11 0.5=1.01 3.5=2 1.5=1.1 2.5=1.39 4.5=3.3 7.5=23
+ORL@WAS|Tristan da Silva|Threes|5.5=15 6.5=36 0.5=1.07 3.5=4 1.5=1.4 2.5=2.25 4.5=8
+ORL@WAS|Trae Young|Threes|5.5=23 0.5=1.09 3.5=5.1 1.5=1.52 2.5=2.55 4.5=11
+ORL@WAS|Kyshawn George|Threes|5.5=26 0.5=1.09 3.5=5 1.5=1.52 2.5=2.55 4.5=11
+ORL@WAS|Anthony Black|Threes|0.5=1.17 3.5=9.25 1.5=1.91 2.5=3.9 4.5=21
+ORL@WAS|Franz Wagner|Threes|0.5=1.2 3.5=11 1.5=2.05 2.5=4.5 4.5=26
+ORL@WAS|Jalen Suggs|Threes|0.5=1.16 3.5=8.25 1.5=1.86 2.5=3.6 4.5=19
+ORL@WAS|AJ Dybantsa|Threes|0.5=1.25 3.5=13 1.5=2.2 2.5=5
+ORL@WAS|Alex Sarr|Threes|0.5=1.34 3.5=17 1.5=2.6 2.5=6.5
+###GALT
+game|kind|side|rungs
+
+###FB
+game|player|odds
+DET@ATL|Cade Cunningham|7.25
+DET@ATL|John Collins|8.25
+DET@ATL|Daniss Jenkins|8.00
+DET@ATL|Kevin Huerter|9.25
+DET@ATL|Ausar Thompson|10.50
+DET@ATL|Jalen Johnson|7.25
+DET@ATL|Nickeil Alexander-Walker|8.00
+DET@ATL|Onyeka Okongwu|8.75
+DET@ATL|Dyson Daniels|11.00
+DET@ATL|Kingston Flemings|11.00
+ORL@WAS|Franz Wagner|6.75
+ORL@WAS|Wendell Carter Jr.|8.25
+ORL@WAS|Desmond Bane|9.00
+ORL@WAS|Anthony Black|10.00
+ORL@WAS|Jalen Suggs|9.50
+ORL@WAS|Anthony Davis|7.00
+ORL@WAS|Alex Sarr|8.25
+ORL@WAS|Trae Young|9.00
+ORL@WAS|AJ Dybantsa|9.75
+ORL@WAS|Kyshawn George|11.00
+###TT
+book|game|team|line|over|under
+
+###PAIRS
+game|player|stat|line|over|under
+DET@ATL|Cade Cunningham|P+A|34.5|1.80|1.96
+DET@ATL|Cade Cunningham|R+A|13.5|1.72|2.08
+DET@ATL|Cade Cunningham|P+R|31.5|1.86|1.90
+DET@ATL|Ausar Thompson|R+A|12.5|1.91|1.85
+DET@ATL|Ausar Thompson|P+A|16.5|1.86|1.90
+DET@ATL|Ausar Thompson|P+R|20.5|1.96|1.80
+DET@ATL|Daniss Jenkins|P+R|20.5|1.96|1.80
+DET@ATL|Daniss Jenkins|P+A|21.5|1.92|1.83
+DET@ATL|Daniss Jenkins|R+A|9.5|2.08|1.72
+DET@ATL|Kevin Huerter|P+R|18.5|1.92|1.84
+DET@ATL|Kevin Huerter|P+A|17.5|1.89|1.87
+DET@ATL|Kevin Huerter|R+A|7.5|1.96|1.80
+DET@ATL|John Collins|P+R|16.5|1.86|1.90
+DET@ATL|Paul Reed|P+R|18.5|1.96|1.80
+DET@ATL|Paul Reed|R+A|9.5|1.96|1.80
+DET@ATL|Paul Reed|P+A|12.5|1.76|2.02
+DET@ATL|Jalen Johnson|P+R|30.5|1.96|1.80
+DET@ATL|Jalen Johnson|P+A|28.5|1.92|1.84
+DET@ATL|Jalen Johnson|R+A|16.5|2.05|1.74
+DET@ATL|Dyson Daniels|P+A|17.5|1.96|1.80
+DET@ATL|Dyson Daniels|R+A|13.5|2.05|1.76
+DET@ATL|Dyson Daniels|P+R|18.5|1.96|1.80
+DET@ATL|Kingston Flemings|P+A|12.5|1.96|1.80
+DET@ATL|Kingston Flemings|R+A|6.5|1.90|1.86
+DET@ATL|Kingston Flemings|P+R|10.5|1.80|1.96
+DET@ATL|Nickeil Alexander-Walker|P+R|24.5|1.85|1.91
+DET@ATL|Nickeil Alexander-Walker|R+A|6.5|1.84|1.92
+DET@ATL|Nickeil Alexander-Walker|P+A|23.5|1.80|1.96
+DET@ATL|Onyeka Okongwu|R+A|9.5|1.72|2.08
+DET@ATL|Onyeka Okongwu|P+R|22.5|1.80|1.96
+DET@ATL|Onyeka Okongwu|P+A|17.5|1.91|1.85
+DET@ATL|Aaron Wiggins|R+A|5.5|1.80|1.96
+DET@ATL|Aaron Wiggins|P+R|17.5|1.91|1.85
+DET@ATL|Aaron Wiggins|P+A|16.5|1.93|1.83
+ORL@WAS|Anthony Davis|R+A|12.5|1.96|1.80
+ORL@WAS|Anthony Davis|P+A|26.5|1.90|1.86
+ORL@WAS|Anthony Davis|P+R|34.5|1.85|1.92
+ORL@WAS|AJ Dybantsa|R+A|8.5|1.78|2.00
+ORL@WAS|AJ Dybantsa|P+R|25.5|1.96|1.80
+ORL@WAS|AJ Dybantsa|P+A|20.5|1.90|1.86
+ORL@WAS|Trae Young|R+A|10.5|1.80|1.96
+ORL@WAS|Trae Young|P+A|25.5|1.83|1.93
+ORL@WAS|Trae Young|P+R|20.5|1.96|1.80
+ORL@WAS|Franz Wagner|P+R|32.5|1.90|1.86
+ORL@WAS|Franz Wagner|P+A|33.5|1.92|1.84
+ORL@WAS|Franz Wagner|R+A|14.5|1.96|1.80
+ORL@WAS|Desmond Bane|P+R|24.5|1.96|1.80
+ORL@WAS|Desmond Bane|R+A|7.5|1.74|2.05
+ORL@WAS|Desmond Bane|P+A|22.5|1.88|1.88
+ORL@WAS|Kyshawn George|P+A|20.5|1.93|1.83
+ORL@WAS|Kyshawn George|P+R|20.5|1.80|1.96
+ORL@WAS|Kyshawn George|R+A|8.5|1.80|1.96
+ORL@WAS|Anthony Black|P+R|20.5|1.96|1.80
+ORL@WAS|Anthony Black|R+A|9.5|1.90|1.86
+ORL@WAS|Anthony Black|P+A|20.5|1.92|1.84
+ORL@WAS|Jalen Suggs|P+A|16.5|2.00|1.78
+ORL@WAS|Jalen Suggs|R+A|8.5|2.05|1.74
+ORL@WAS|Jalen Suggs|P+R|16.5|1.96|1.80
+ORL@WAS|Wendell Carter Jr.|P+A|13.5|1.78|2.00
+ORL@WAS|Wendell Carter Jr.|P+R|20.5|1.80|1.96
+ORL@WAS|Wendell Carter Jr.|R+A|9.5|1.74|2.05
+ORL@WAS|Alex Sarr|P+R|17.5|1.88|1.88
+ORL@WAS|Tristan da Silva|P+R|15.5|1.85|1.91
+ORL@WAS|Bilal Coulibaly|P+R|10.5|1.96|1.80
+###PAIRNAMES
+To Record 35+ Pts + Reb
+To Record 30+ Pts + Ast
+To Record 5+ Reb + Ast
+To Record 15+ Pts + Ast
+To Record 40+ Pts + Reb
+To Record 50+ Pts + Ast
+To Record 45+ Pts + Reb
+To Record 10+ Pts + Reb
+To Record 20+ Pts + Ast
+To Record 25+ Reb + Ast
+To Record 25+ Pts + Ast
+To Record 25+ Pts + Reb
+To Record 45+ Pts + Ast
+To Record 30+ Pts + Reb
+To Record 15+ Pts + Reb
+To Record 50+ Pts + Reb
+To Record 40+ Pts + Ast
+To Record 20+ Reb + Ast
+To Record 10+ Reb + Ast
+To Record 15+ Reb + Ast
+To Record 35+ Pts + Ast
+To Record 20+ Pts + Reb
+To Record 10+ Pts + Ast

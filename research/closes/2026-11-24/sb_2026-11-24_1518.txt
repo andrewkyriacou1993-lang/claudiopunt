@@ -1,0 +1,309 @@
+###GAMES
+date,tip,away,home,ml_away,ml_home,spread_home,spread_home_odds,spread_away_odds,total,over_odds,under_odds
+2026-11-24,14:10,San Antonio Spurs,Sacramento Kings,1.19,5.00,10.5,1.92,1.88,224.5,1.91,1.89
+2026-11-24,12:40,Los Angeles Clippers,Houston Rockets,5.40,1.17,-12.5,1.88,1.92,225.5,1.91,1.89
+2026-11-24,14:10,Utah Jazz,Los Angeles Lakers,6.80,1.12,-14.5,1.94,1.86,229.5,1.95,1.86
+2026-11-24,11:10,Memphis Grizzlies,Charlotte Hornets,1.61,2.38,3.5,1.90,1.90,216.5,1.90,1.90
+2026-11-24,11:10,Portland Trail Blazers,Philadelphia 76ers,2.28,1.66,-3.5,1.94,1.86,230.5,1.86,1.94
+2026-11-24,11:40,Brooklyn Nets,Minnesota Timberwolves,5.40,1.17,-12.5,1.90,1.90,224.5,1.95,1.86
+2026-11-24,11:40,Milwaukee Bucks,Toronto Raptors,4.65,1.21,-11.5,1.92,1.88,224.5,1.93,1.87
+2026-11-24,12:10,Phoenix Suns,New Orleans Pelicans,1.64,2.32,2.5,1.94,1.86,233.5,1.89,1.91
+2026-11-24,12:10,Cleveland Cavaliers,Chicago Bulls,1.27,3.90,8.5,1.90,1.90,240.5,1.90,1.90
+2026-11-24,11:40,Oklahoma City Thunder,Indiana Pacers,1.52,2.62,5.5,1.85,1.95,221.5,1.85,1.96
+###PROPS
+game|player|stat|line|over|under
+LAC@HOU|Brandon Ingram|Assists|2.5|2.45|1.50
+LAC@HOU|Brandon Ingram|PRA|18.5|1.96|1.80
+LAC@HOU|Brandon Ingram|Threes|0.5|1.64|2.15
+LAC@HOU|Brandon Ingram|Points|12.5|1.85|1.91
+LAC@HOU|Brandon Ingram|Rebounds|3.5|2.25|1.58
+LAC@HOU|Kevin Durant|Threes|1.5|1.91|1.85
+LAC@HOU|Kevin Durant|Points|21.5|1.92|1.84
+LAC@HOU|Kevin Durant|Rebounds|5.5|2.20|1.60
+LAC@HOU|Kevin Durant|Assists|3.5|1.64|2.15
+LAC@HOU|Kevin Durant|PRA|30.5|1.87|1.89
+LAC@HOU|Alperen Sengun|Threes|0.5|1.76|2.02
+LAC@HOU|Alperen Sengun|PRA|37.5|1.84|1.92
+LAC@HOU|Alperen Sengun|Points|21.5|1.96|1.80
+LAC@HOU|Alperen Sengun|Rebounds|9.5|1.96|1.80
+LAC@HOU|Alperen Sengun|Assists|6.5|1.68|2.10
+LAC@HOU|Darius Garland|Rebounds|2.5|2.10|1.68
+LAC@HOU|Darius Garland|Points|18.5|1.80|1.96
+LAC@HOU|Darius Garland|Threes|2.5|1.90|1.86
+LAC@HOU|Darius Garland|PRA|28.5|1.92|1.84
+LAC@HOU|Darius Garland|Assists|6.5|1.80|1.96
+LAC@HOU|Amen Thompson|Rebounds|6.5|1.96|1.80
+LAC@HOU|Amen Thompson|PRA|24.5|1.80|1.96
+LAC@HOU|Amen Thompson|Assists|2.5|1.68|2.10
+LAC@HOU|Amen Thompson|Points|15.5|1.90|1.86
+LAC@HOU|Jabari Smith|Points|13.5|1.80|1.96
+LAC@HOU|Jabari Smith|Rebounds|6.5|2.08|1.72
+LAC@HOU|Jabari Smith|Assists|1.5|2.00|1.78
+LAC@HOU|Jabari Smith|PRA|21.5|1.80|1.96
+LAC@HOU|Jabari Smith|Threes|1.5|1.58|2.25
+LAC@HOU|Rui Hachimura|Rebounds|4.5|1.83|1.93
+LAC@HOU|Rui Hachimura|Threes|1.5|1.64|2.15
+LAC@HOU|Rui Hachimura|Points|12.5|1.83|1.92
+LAC@HOU|Fred VanVleet|Assists|4.5|1.64|2.15
+LAC@HOU|Fred VanVleet|Threes|2.5|1.96|1.80
+LAC@HOU|Fred VanVleet|PRA|21.5|1.85|1.91
+LAC@HOU|Fred VanVleet|Points|13.5|1.87|1.89
+LAC@HOU|Fred VanVleet|Rebounds|2.5|1.72|2.08
+LAC@HOU|Brook Lopez|Points|12.5|1.96|1.80
+LAC@HOU|Brook Lopez|Threes|1.5|1.96|1.80
+LAC@HOU|Brook Lopez|Rebounds|4.5|1.88|1.88
+LAC@HOU|Derrick Jones Jr.|Threes|0.5|1.45|2.60
+LAC@HOU|Derrick Jones Jr.|Points|8.5|1.96|1.80
+LAC@HOU|Derrick Jones Jr.|Rebounds|3.5|1.96|1.80
+LAC@HOU|Max Strus|Assists|2.5|1.74|2.05
+LAC@HOU|Max Strus|PRA|17.5|1.96|1.80
+LAC@HOU|Max Strus|Points|9.5|1.80|1.96
+LAC@HOU|Max Strus|Threes|2.5|2.30|1.56
+LAC@HOU|Max Strus|Rebounds|4.5|2.10|1.68
+LAC@HOU|Keaton Wagler|Points|8.5|1.92|1.84
+LAC@HOU|Keaton Wagler|Assists|1.5|1.56|2.30
+LAC@HOU|Keaton Wagler|Threes|1.5|2.90|1.36
+LAC@HOU|Keaton Wagler|PRA|13.5|1.96|1.80
+LAC@HOU|Keaton Wagler|Rebounds|2.5|1.96|1.80
+LAC@HOU|Rui Hachimura|Assists|1.5|2.90|1.36
+LAC@HOU|Rui Hachimura|PRA|18.5|1.80|1.96
+LAC@HOU|Marcus Smart|Rebounds|1.5|1.52|2.40
+LAC@HOU|Marcus Smart|Points|6.5|1.80|1.96
+LAC@HOU|Marcus Smart|Threes|1.5|2.75|1.40
+LAC@HOU|Marcus Smart|PRA|11.5|2.02|1.76
+LAC@HOU|Marcus Smart|Assists|1.5|1.52|2.40
+LAC@HOU|Reed Sheppard|Assists|1.5|1.64|2.15
+LAC@HOU|Reed Sheppard|Points|8.5|1.96|1.80
+LAC@HOU|Reed Sheppard|Threes|1.5|1.64|2.15
+LAC@HOU|Reed Sheppard|PRA|12.5|1.96|1.80
+LAC@HOU|Reed Sheppard|Rebounds|1.5|1.80|1.96
+MEM@CHO|Ty Jerome|PRA|31.5|1.91|1.85
+MEM@CHO|Ty Jerome|Threes|2.5|1.90|1.86
+MEM@CHO|Ty Jerome|Rebounds|3.5|2.15|1.64
+MEM@CHO|Ty Jerome|Assists|5.5|1.80|1.96
+MEM@CHO|Ty Jerome|Points|21.5|1.80|1.96
+MEM@CHO|Cedric Coward|Threes|1.5|1.50|2.45
+MEM@CHO|Cedric Coward|Assists|3.5|1.88|1.88
+MEM@CHO|Cedric Coward|Rebounds|7.5|2.15|1.64
+MEM@CHO|Cedric Coward|PRA|26.5|1.83|1.93
+MEM@CHO|Cedric Coward|Points|16.5|2.02|1.76
+MEM@CHO|Jaylen Wells|Points|9.5|1.91|1.85
+MEM@CHO|Jaylen Wells|Rebounds|2.5|1.72|2.08
+MEM@CHO|Jaylen Wells|Threes|1.5|1.85|1.91
+MEM@CHO|Zach Edey|Points|9.5|2.02|1.76
+MEM@CHO|Zach Edey|Rebounds|7.5|2.15|1.64
+MEM@CHO|Cam Spencer|PRA|18.5|1.96|1.80
+MEM@CHO|Cam Spencer|Rebounds|2.5|1.64|2.15
+MEM@CHO|Cam Spencer|Threes|1.5|2.05|1.74
+MEM@CHO|Cam Spencer|Points|9.5|1.90|1.86
+MEM@CHO|Cam Spencer|Assists|5.5|2.05|1.74
+MEM@CHO|Taylor Hendricks|Rebounds|4.5|1.87|1.89
+MEM@CHO|Taylor Hendricks|Threes|0.5|1.45|2.60
+MEM@CHO|Taylor Hendricks|Points|8.5|1.87|1.89
+MEM@CHO|Isaiah Stewart|Points|8.5|1.80|1.96
+MEM@CHO|Isaiah Stewart|Rebounds|3.5|1.80|1.96
+MEM@CHO|Brandon Miller|Points|21.5|1.90|1.86
+MEM@CHO|Brandon Miller|Threes|3.5|2.20|1.60
+MEM@CHO|Brandon Miller|Rebounds|4.5|1.88|1.88
+MEM@CHO|Brandon Miller|PRA|29.5|1.92|1.84
+MEM@CHO|Brandon Miller|Assists|3.5|2.40|1.52
+MEM@CHO|Coby White|Threes|1.5|1.52|2.40
+MEM@CHO|Coby White|PRA|24.5|1.80|1.96
+MEM@CHO|Coby White|Points|17.5|1.80|1.96
+MEM@CHO|Coby White|Rebounds|2.5|1.78|2.00
+MEM@CHO|Coby White|Assists|4.5|2.15|1.64
+MEM@CHO|Moussa Diabaté|Points|9.5|1.84|1.92
+MEM@CHO|Moussa Diabaté|Assists|1.5|1.52|2.40
+MEM@CHO|Moussa Diabaté|Rebounds|10.5|2.15|1.64
+MEM@CHO|Moussa Diabaté|PRA|21.5|1.84|1.92
+MEM@CHO|Naz Reid|Rebounds|7.5|1.64|2.15
+MEM@CHO|Naz Reid|Assists|2.5|1.72|2.08
+MEM@CHO|Naz Reid|PRA|30.5|1.92|1.84
+MEM@CHO|Naz Reid|Threes|2.5|2.02|1.76
+MEM@CHO|Naz Reid|Points|18.5|1.80|1.96
+MEM@CHO|Sion James|PRA|14.5|1.80|1.96
+MEM@CHO|Sion James|Assists|2.5|1.56|2.30
+MEM@CHO|Sion James|Points|7.5|1.89|1.87
+MEM@CHO|Sion James|Threes|1.5|2.25|1.58
+MEM@CHO|Sion James|Rebounds|4.5|2.25|1.58
+MEM@CHO|Royce O'Neale|Rebounds|3.5|1.96|1.80
+MEM@CHO|Royce O'Neale|Points|7.5|1.91|1.85
+MEM@CHO|Royce O'Neale|Threes|1.5|1.60|2.20
+MEM@CHO|Ryan Kalkbrenner|Points|5.5|2.00|1.78
+MEM@CHO|Ryan Kalkbrenner|Rebounds|4.5|2.10|1.68
+###ALT
+game|player|stat|rungs
+LAC@HOU|Brandon Ingram|Threes|0.5=1.66 1.5=4.1
+LAC@HOU|Brook Lopez|Threes|0.5=1.2 2.5=4 3.5=9.25 1.5=1.97 4.5=19
+LAC@HOU|Darius Garland|Threes|0.5=1.05 5.5=12 2.5=1.9 6.5=26 3.5=3.2 1.5=1.29 4.5=5.9
+LAC@HOU|Derrick Jones Jr.|Threes|0.5=1.48 1.5=3.3
+LAC@HOU|Keaton Wagler|Threes|0.5=1.43 2.5=6.75 3.5=18 1.5=2.95
+LAC@HOU|Max Strus|Threes|0.5=1.08 5.5=20 2.5=2.35 3.5=4.3 1.5=1.45 4.5=9.25
+LAC@HOU|Rui Hachimura|Threes|0.5=1.12 5.5=31 2.5=2.95 3.5=6.25 1.5=1.65 4.5=13
+LAC@HOU|Alperen Sengun|Threes|0.5=1.76 1.5=4.9
+LAC@HOU|Fred VanVleet|Threes|0.5=1.04 5.5=14 2.5=1.95 6.5=31 3.5=3.4 1.5=1.29 4.5=7
+LAC@HOU|Jabari Smith|Threes|0.5=1.1 2.5=2.95 3.5=6 1.5=1.6 4.5=14
+LAC@HOU|Kevin Durant|Threes|0.5=1.16 2.5=3.8 3.5=9 1.5=1.91 4.5=21
+LAC@HOU|Marcus Smart|Threes|0.5=1.38 2.5=6.75 3.5=17 1.5=2.8
+LAC@HOU|Reed Sheppard|Threes|0.5=1.13 5.5=23 2.5=2.8 3.5=5.5 1.5=1.65 4.5=11
+MEM@CHO|Ty Jerome|Threes|6.5=26 2.5=1.9 1.5=1.28 3.5=3.25 0.5=1.04 4.5=6.25 5.5=13
+MEM@CHO|Brandon Miller|Threes|6.5=14 2.5=1.51 1.5=1.14 3.5=2.25 0.5=1.02 4.5=3.8 7.5=26 5.5=7
+MEM@CHO|Naz Reid|Threes|6.5=36 2.5=2.02 1.5=1.32 3.5=3.6 0.5=1.05 4.5=6.75 5.5=15
+MEM@CHO|Cedric Coward|Threes|2.5=2.55 1.5=1.51 3.5=5.1 0.5=1.09 4.5=11.5 5.5=26
+MEM@CHO|Jaylen Wells|Threes|2.5=3.6 1.5=1.86 3.5=7.75 0.5=1.17 4.5=19
+MEM@CHO|Cam Spencer|Threes|2.5=4.1 1.5=2.03 3.5=9.5 0.5=1.21 4.5=23
+MEM@CHO|Coby White|Threes|2.5=2.55 1.5=1.54 3.5=5.1 0.5=1.09 4.5=11 5.5=23
+MEM@CHO|Royce O'Neale|Threes|2.5=2.8 1.5=1.61 3.5=5.75 0.5=1.12 4.5=12.5 5.5=31
+MEM@CHO|Sion James|Threes|2.5=5.4 1.5=2.25 3.5=14 0.5=1.29
+MEM@CHO|Taylor Hendricks|Threes|1.5=3.35 0.5=1.47
+POR@PHI|Damian Lillard|Threes|0.5=1.02 1.5=1.13
+POR@PHI|Deni Avdija|Threes|0.5=1.12 1.5=1.68
+POR@PHI|Donovan Clingan|Threes|0.5=1.51 1.5=3.4
+POR@PHI|Jrue Holiday|Threes|0.5=1.1 1.5=1.54
+POR@PHI|Scoot Henderson|Threes|0.5=1.32 1.5=2.5
+POR@PHI|Sidy Cissoko|Threes|0.5=1.4 1.5=2.95
+POR@PHI|Toumani Camara|Threes|0.5=1.06 1.5=1.37
+POR@PHI|Anfernee Simons|Threes|0.5=1.12 1.5=1.64
+POR@PHI|Jaylen Brown|Threes|0.5=1.18 1.5=1.92
+POR@PHI|Joel Embiid|Threes|0.5=1.32 1.5=2.55
+POR@PHI|LeBron James|Threes|0.5=1.25 1.5=2.2
+POR@PHI|Tyrese Maxey|Threes|0.5=1.04 1.5=1.27
+POR@PHI|VJ Edgecombe|Threes|0.5=1.14 1.5=1.77
+BRK@MIN|Danny Wolf|Threes|0.5=1.29 1.5=2.4
+BRK@MIN|Egor Demin|Threes|0.5=1.1 1.5=1.54
+BRK@MIN|Julius Randle|Threes|0.5=1.21 1.5=2.12
+BRK@MIN|Michael Porter Jr.|Threes|0.5=1.03 1.5=1.2
+BRK@MIN|Mikel Brown Jr.|Threes|0.5=1.1 1.5=1.54
+BRK@MIN|Moritz Wagner|Threes|0.5=1.62 1.5=4.1
+BRK@MIN|Ayo Dosunmu|Threes|0.5=1.1 1.5=1.6
+BRK@MIN|Jaden McDaniels|Threes|0.5=1.16 1.5=1.85
+BRK@MIN|Jonathan Kuminga|Threes|0.5=1.22 1.5=2.1
+BRK@MIN|LaMelo Ball|Threes|0.5=1.01 1.5=1.09
+BRK@MIN|Terrence Shannon Jr.|Threes|0.5=1.29 1.5=2.4
+PHO@NOP|Collin Gillespie|Threes|1.5=1.32 0.5=1.05
+PHO@NOP|Devin Booker|Threes|1.5=1.53 0.5=1.1
+PHO@NOP|Dillon Brooks|Threes|1.5=1.68 0.5=1.13
+PHO@NOP|Jalen Green|Threes|1.5=1.81 0.5=1.15
+PHO@NOP|Miles Bridges|Threes|1.5=1.76 0.5=1.14
+PHO@NOP|Jordan Goodwin|Threes|1.5=2.4 0.5=1.29
+###GALT
+game|kind|side|rungs
+
+###FB
+game|player|odds
+LAC@HOU|Brandon Ingram|6.50
+LAC@HOU|Darius Garland|7.75
+LAC@HOU|Brook Lopez|9.25
+LAC@HOU|Derrick Jones Jr.|9.50
+LAC@HOU|Rui Hachimura|9.50
+LAC@HOU|Alperen Sengun|6.50
+LAC@HOU|Kevin Durant|9.00
+LAC@HOU|Amen Thompson|10.00
+LAC@HOU|Jabari Smith|10.00
+LAC@HOU|Fred VanVleet|12.00
+MEM@CHO|Ty Jerome|5.50
+MEM@CHO|Zach Edey|6.50
+MEM@CHO|Cedric Coward|6.75
+MEM@CHO|Jaylen Wells|8.00
+MEM@CHO|Brandon Miller|7.50
+MEM@CHO|Naz Reid|9.00
+MEM@CHO|Coby White|12.50
+MEM@CHO|Moussa Diabaté|11.00
+MEM@CHO|Sion James|18.00
+###TT
+book|game|team|line|over|under
+
+###PAIRS
+game|player|stat|line|over|under
+LAC@HOU|Brandon Ingram|P+R|15.5|1.80|1.96
+LAC@HOU|Brandon Ingram|R+A|5.5|2.05|1.74
+LAC@HOU|Brandon Ingram|P+A|14.5|1.80|1.96
+LAC@HOU|Kevin Durant|P+A|25.5|1.93|1.83
+LAC@HOU|Kevin Durant|P+R|26.5|1.88|1.88
+LAC@HOU|Kevin Durant|R+A|8.5|1.68|2.10
+LAC@HOU|Alperen Sengun|P+A|28.5|1.90|1.86
+LAC@HOU|Alperen Sengun|P+R|30.5|1.88|1.88
+LAC@HOU|Alperen Sengun|R+A|16.5|2.00|1.78
+LAC@HOU|Darius Garland|P+A|25.5|1.84|1.92
+LAC@HOU|Darius Garland|P+R|21.5|1.96|1.80
+LAC@HOU|Darius Garland|R+A|9.5|2.05|1.74
+LAC@HOU|Amen Thompson|P+A|18.5|1.90|1.86
+LAC@HOU|Amen Thompson|P+R|21.5|1.80|1.96
+LAC@HOU|Amen Thompson|R+A|9.5|1.96|1.80
+LAC@HOU|Jabari Smith|P+R|20.5|1.96|1.80
+LAC@HOU|Jabari Smith|P+A|15.5|1.91|1.85
+LAC@HOU|Jabari Smith|R+A|7.5|1.74|2.05
+LAC@HOU|Rui Hachimura|P+R|17.5|1.86|1.90
+LAC@HOU|Fred VanVleet|P+R|16.5|1.89|1.87
+LAC@HOU|Fred VanVleet|R+A|7.5|1.74|2.05
+LAC@HOU|Fred VanVleet|P+A|18.5|1.83|1.92
+LAC@HOU|Brook Lopez|P+R|16.5|1.80|1.96
+LAC@HOU|Derrick Jones Jr.|P+R|11.5|1.80|1.96
+LAC@HOU|Max Strus|P+R|14.5|1.92|1.84
+LAC@HOU|Max Strus|R+A|7.5|2.10|1.68
+LAC@HOU|Max Strus|P+A|12.5|1.80|1.96
+LAC@HOU|Keaton Wagler|R+A|4.5|1.83|1.93
+LAC@HOU|Keaton Wagler|P+R|10.5|1.78|2.00
+LAC@HOU|Keaton Wagler|P+A|10.5|1.86|1.90
+LAC@HOU|Rui Hachimura|R+A|5.5|1.76|2.02
+LAC@HOU|Rui Hachimura|P+A|13.5|1.80|1.96
+LAC@HOU|Marcus Smart|P+A|8.5|1.78|2.00
+LAC@HOU|Marcus Smart|R+A|4.5|2.15|1.64
+LAC@HOU|Marcus Smart|P+R|8.5|1.80|1.96
+LAC@HOU|Reed Sheppard|P+R|10.5|1.96|1.80
+LAC@HOU|Reed Sheppard|R+A|3.5|1.80|1.96
+LAC@HOU|Reed Sheppard|P+A|10.5|1.91|1.85
+MEM@CHO|Ty Jerome|P+A|27.5|1.80|1.96
+MEM@CHO|Ty Jerome|R+A|8.5|1.72|2.08
+MEM@CHO|Ty Jerome|P+R|25.5|1.91|1.85
+MEM@CHO|Cedric Coward|P+R|23.5|1.96|1.80
+MEM@CHO|Cedric Coward|P+A|19.5|1.86|1.89
+MEM@CHO|Cedric Coward|R+A|10.5|1.80|1.96
+MEM@CHO|Jaylen Wells|P+R|12.5|1.96|1.80
+MEM@CHO|Zach Edey|P+R|16.5|1.92|1.84
+MEM@CHO|Cam Spencer|P+R|12.5|1.87|1.89
+MEM@CHO|Cam Spencer|P+A|14.5|1.78|2.00
+MEM@CHO|Cam Spencer|R+A|8.5|1.96|1.80
+MEM@CHO|Taylor Hendricks|P+R|13.5|1.96|1.80
+MEM@CHO|Isaiah Stewart|P+R|12.5|1.84|1.92
+MEM@CHO|Brandon Miller|R+A|7.5|1.80|1.96
+MEM@CHO|Brandon Miller|P+A|24.5|1.86|1.90
+MEM@CHO|Brandon Miller|P+R|26.5|1.96|1.80
+MEM@CHO|Coby White|P+R|20.5|1.86|1.90
+MEM@CHO|Coby White|P+A|22.5|1.96|1.80
+MEM@CHO|Coby White|R+A|6.5|1.68|2.10
+MEM@CHO|Moussa Diabaté|P+A|11.5|1.80|1.96
+MEM@CHO|Moussa Diabaté|R+A|11.5|1.74|2.05
+MEM@CHO|Moussa Diabaté|P+R|19.5|1.85|1.91
+MEM@CHO|Naz Reid|P+R|27.5|1.92|1.84
+MEM@CHO|Naz Reid|P+A|21.5|1.80|1.96
+MEM@CHO|Naz Reid|R+A|11.5|2.08|1.72
+MEM@CHO|Sion James|R+A|7.5|2.05|1.74
+MEM@CHO|Sion James|P+A|10.5|1.80|1.96
+MEM@CHO|Sion James|P+R|11.5|1.85|1.91
+MEM@CHO|Royce O'Neale|P+R|11.5|2.02|1.76
+MEM@CHO|Ryan Kalkbrenner|P+R|9.5|1.85|1.91
+###PAIRNAMES
+To Record 40+ Pts + Reb
+To Record 25+ Reb + Ast
+To Record 25+ Pts + Ast
+To Record 10+ Pts + Ast
+To Record 15+ Pts + Reb
+To Record 35+ Pts + Reb
+To Record 15+ Reb + Ast
+To Record 30+ Pts + Ast
+To Record 45+ Pts + Ast
+To Record 45+ Pts + Reb
+To Record 20+ Pts + Reb
+To Record 35+ Pts + Ast
+To Record 20+ Reb + Ast
+To Record 50+ Pts + Ast
+To Record 5+ Reb + Ast
+To Record 15+ Pts + Ast
+To Record 25+ Pts + Reb
+To Record 10+ Pts + Reb
+To Record 40+ Pts + Ast
+To Record 50+ Pts + Reb
+To Record 10+ Reb + Ast
+To Record 30+ Pts + Reb
+To Record 20+ Pts + Ast

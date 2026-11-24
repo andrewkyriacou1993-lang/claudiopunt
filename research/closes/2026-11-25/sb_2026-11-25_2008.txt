@@ -1,0 +1,176 @@
+###GAMES
+date,tip,away,home,ml_away,ml_home,spread_home,spread_home_odds,spread_away_odds,total,over_odds,under_odds
+2026-11-25,11:11,Detroit Pistons,Orlando Magic,1.77,2.10,1.5,1.94,1.86,213.5,1.90,1.90
+2026-11-25,12:10,Boston Celtics,Washington Wizards,1.22,4.50,10.5,1.90,1.90,217.5,1.90,1.90
+2026-11-25,14:10,Dallas Mavericks,Denver Nuggets,3.55,1.32,-7.5,1.85,1.96,231.5,1.87,1.93
+###PROPS
+game|player|stat|line|over|under
+DET@ORL|Cade Cunningham|PRA|39.5|1.92|1.83
+DET@ORL|Ausar Thompson|Points|10.5|1.92|1.84
+DET@ORL|Ausar Thompson|Assists|4.5|2.10|1.68
+DET@ORL|John Collins|Rebounds|5.5|1.85|1.91
+DET@ORL|John Collins|PRA|17.5|1.96|1.80
+DET@ORL|Daniss Jenkins|Points|15.5|1.96|1.80
+DET@ORL|Daniss Jenkins|Assists|4.5|1.80|1.96
+DET@ORL|Cade Cunningham|Threes|2.5|2.45|1.50
+DET@ORL|Cade Cunningham|Points|24.5|1.74|2.05
+DET@ORL|Kevin Huerter|Assists|2.5|1.80|1.96
+DET@ORL|Kevin Huerter|PRA|18.5|1.96|1.80
+DET@ORL|Kevin Huerter|Points|11.5|1.86|1.90
+DET@ORL|Cade Cunningham|Assists|8.5|1.96|1.80
+DET@ORL|Kevin Huerter|Threes|1.5|1.60|2.20
+DET@ORL|Ausar Thompson|Rebounds|7.5|1.74|2.05
+DET@ORL|Daniss Jenkins|PRA|24.5|1.96|1.80
+DET@ORL|Daniss Jenkins|Threes|2.5|2.60|1.45
+DET@ORL|Cade Cunningham|Rebounds|4.5|1.64|2.15
+DET@ORL|Daniss Jenkins|Rebounds|3.5|1.64|2.15
+DET@ORL|John Collins|Points|10.5|1.96|1.80
+DET@ORL|Ausar Thompson|PRA|23.5|1.96|1.80
+DET@ORL|Kevin Huerter|Rebounds|3.5|1.96|1.80
+DET@ORL|John Collins|Threes|1.5|2.75|1.40
+DET@ORL|Paul Reed|Rebounds|6.5|1.78|2.00
+DET@ORL|Isaiah Joe|Points|9.5|1.80|1.96
+DET@ORL|Paul Reed|Points|9.5|1.86|1.90
+DET@ORL|Isaiah Joe|Threes|1.5|1.50|2.45
+DET@ORL|Franz Wagner|PRA|36.5|1.89|1.87
+DET@ORL|Desmond Bane|Assists|2.5|1.72|2.08
+DET@ORL|Jalen Suggs|Points|11.5|2.00|1.78
+DET@ORL|Franz Wagner|Threes|1.5|2.40|1.52
+DET@ORL|Jalen Suggs|Assists|3.5|1.72|2.08
+DET@ORL|Jalen Suggs|Rebounds|4.5|2.15|1.64
+DET@ORL|Tristan da Silva|Points|10.5|1.88|1.88
+DET@ORL|Desmond Bane|Threes|3.5|2.10|1.68
+DET@ORL|Anthony Black|Threes|1.5|1.96|1.80
+DET@ORL|Franz Wagner|Assists|6.5|1.84|1.92
+DET@ORL|Anthony Black|Points|14.5|1.96|1.80
+DET@ORL|Desmond Bane|PRA|24.5|1.96|1.80
+DET@ORL|Jalen Suggs|Threes|1.5|1.74|2.05
+DET@ORL|Desmond Bane|Rebounds|3.5|1.90|1.86
+DET@ORL|Tristan da Silva|PRA|16.5|1.96|1.80
+DET@ORL|Wendell Carter Jr.|Rebounds|8.5|2.10|1.68
+DET@ORL|Anthony Black|Assists|4.5|1.76|2.02
+DET@ORL|Franz Wagner|Points|22.5|1.80|1.96
+DET@ORL|Jalen Suggs|PRA|19.5|1.90|1.86
+DET@ORL|Franz Wagner|Rebounds|6.5|1.96|1.80
+DET@ORL|Tristan da Silva|Threes|2.5|2.10|1.68
+DET@ORL|Wendell Carter Jr.|Threes|0.5|1.58|2.25
+DET@ORL|Tristan da Silva|Assists|1.5|2.02|1.76
+DET@ORL|Wendell Carter Jr.|PRA|20.5|1.89|1.87
+DET@ORL|Tristan da Silva|Rebounds|3.5|1.72|2.08
+DET@ORL|Wendell Carter Jr.|Points|10.5|1.85|1.91
+DET@ORL|Anthony Black|PRA|23.5|1.80|1.96
+DET@ORL|Desmond Bane|Points|17.5|1.90|1.86
+DET@ORL|Anthony Black|Rebounds|4.5|1.83|1.93
+DET@ORL|Wendell Carter Jr.|Assists|1.5|2.00|1.78
+###ALT
+game|player|stat|rungs
+DET@ORL|Cade Cunningham|Threes|0.5=1.08 4.5=10.5 5.5=23 3.5=4.8 2.5=2.4 1.5=1.47
+DET@ORL|Daniss Jenkins|Threes|0.5=1.09 4.5=11.5 5.5=23 3.5=5.1 2.5=2.55 1.5=1.52
+DET@ORL|Isaiah Joe|Threes|0.5=1.09 4.5=9.25 5.5=19 3.5=4.7 2.5=2.55 1.5=1.51
+DET@ORL|John Collins|Threes|0.5=1.36 3.5=19 1.5=2.8
+DET@ORL|Kevin Huerter|Threes|0.5=1.11 4.5=14 5.5=31 3.5=6.25 2.5=2.9 1.5=1.61
+DET@ORL|Anthony Black|Threes|0.5=1.18 4.5=21 3.5=9 2.5=3.9 1.5=1.94
+DET@ORL|Desmond Bane|Threes|0.5=1.01 4.5=3.5 5.5=6 3.5=2.12 6.5=13 2.5=1.44 7.5=23 1.5=1.12
+DET@ORL|Franz Wagner|Threes|0.5=1.28 3.5=14 2.5=5.5 1.5=2.35
+DET@ORL|Jalen Suggs|Threes|0.5=1.14 4.5=17 3.5=7.25 2.5=3.35 1.5=1.76
+DET@ORL|Tristan da Silva|Threes|0.5=1.06 4.5=7 5.5=14 3.5=3.6 6.5=31 2.5=2.1 1.5=1.35
+DET@ORL|Wendell Carter Jr.|Threes|0.5=1.6 1.5=4
+BOS@WAS|Derrick White|Threes|0.5=1.1 1.5=1.57
+BOS@WAS|Jayson Tatum|Threes|0.5=1.02 1.5=1.18
+BOS@WAS|Paul George|Threes|0.5=1.03 1.5=1.21
+BOS@WAS|Payton Pritchard|Threes|0.5=1.1 1.5=1.57
+BOS@WAS|Kyshawn George|Threes|0.5=1.07 1.5=1.4
+BOS@WAS|Trae Young|Threes|0.5=1.09 1.5=1.52
+DAL@DEN|Cooper Flagg|Threes|1.5=1.84 0.5=1.17
+DAL@DEN|Kyrie Irving|Threes|1.5=1.11 0.5=1.02
+DAL@DEN|P.J. Washington|Threes|1.5=1.62 0.5=1.11
+DAL@DEN|Zaccharie Risacher|Threes|1.5=2.55 0.5=1.33
+DAL@DEN|Caleb Martin|Threes|1.5=4.4 0.5=1.72
+DAL@DEN|Naji Marshall|Threes|1.5=4.3 0.5=1.66
+DAL@DEN|Cam Johnson|Threes|1.5=1.52 0.5=1.08
+DAL@DEN|Jamal Murray|Threes|1.5=1.29 0.5=1.04
+DAL@DEN|Aaron Gordon|Threes|1.5=2.25 0.5=1.29
+DAL@DEN|Christian Braun|Threes|1.5=2.1 0.5=1.21
+DAL@DEN|Nikola Jokic|Threes|1.5=2.03 0.5=1.21
+###GALT
+game|kind|side|rungs
+DET@ORL|tot|Over|181.5=1.01 182.5=1.01 183.5=1.02 184.5=1.02 185.5=1.02 186.5=1.02 187.5=1.03 188.5=1.04 189.5=1.05 190.5=1.06 191.5=1.07 192.5=1.08 193.5=1.09 194.5=1.11 195.5=1.13 196.5=1.15 197.5=1.17 198.5=1.2 199.5=1.23 200.5=1.26 201.5=1.28 202.5=1.33 203.5=1.36 204.5=1.4 205.5=1.43 206.5=1.5 207.5=1.52 208.5=1.57 209.5=1.61 210.5=1.68 211.5=1.76 212.5=1.79 213.5=1.88 214.5=1.98 215.5=2.06 216.5=2.16 217.5=2.28 218.5=2.36 219.5=2.46 220.5=2.58 221.5=2.74 222.5=2.86 223.5=3 224.5=3.2 225.5=3.35 226.5=3.6 227.5=3.8 228.5=4.1 229.5=4.5 230.5=4.8 231.5=5.2 232.5=5.6
+DET@ORL|tot|Under|195.5=5.6 196.5=5.2 197.5=4.8 198.5=4.4 199.5=4 200.5=3.75 201.5=3.55 202.5=3.25 203.5=3.1 204.5=2.9 205.5=2.76 206.5=2.6 207.5=2.52 208.5=2.42 209.5=2.32 210.5=2.18 211.5=2.08 212.5=2.02 213.5=1.93 214.5=1.83 215.5=1.77 216.5=1.7 217.5=1.63 218.5=1.59 219.5=1.55 220.5=1.5 221.5=1.44 222.5=1.41 223.5=1.38 224.5=1.33 225.5=1.31 226.5=1.28 227.5=1.26 228.5=1.23 229.5=1.19 230.5=1.17 231.5=1.15 232.5=1.13 233.5=1.11 234.5=1.09 235.5=1.08 236.5=1.07 237.5=1.06 238.5=1.05 239.5=1.04 240.5=1.04 241.5=1.03 242.5=1.02 243.5=1.02 244.5=1.02 245.5=1.02 246.5=1.02 247.5=1.01 248.5=1.01
+DET@ORL|sp|away|+21.5=1.02 +20.5=1.02 +19.5=1.03 +18.5=1.04 +17.5=1.04 +16.5=1.05 +15.5=1.06 +14.5=1.08 +13.5=1.1 +12.5=1.12 +11.5=1.14 +10.5=1.17 +9.5=1.2 +8.5=1.22 +7.5=1.28 +6.5=1.34 +5.5=1.38 +4.5=1.44 +3.5=1.52 +2.5=1.57 +1.5=1.67 -1.5=1.82 -2.5=1.96 -3.5=2.04 -4.5=2.23 -5.5=2.37 -6.5=2.53 -7.5=2.84 -8.5=3.14 -9.5=3.32 -10.5=3.75 -11.5=4.25 -12.5=4.65 -13.5=5.2 -14.5=5.4 -15.5=6 -16.5=6 -17.5=7 -18.5=7.75 -19.5=8.5 -20.5=9.5 -21.5=9.5
+DET@ORL|sp|home|-18.5=9.5 -17.5=9.5 -16.5=8.5 -15.5=7.5 -14.5=6.5 -13.5=6 -12.5=5.7 -11.5=5.2 -10.5=4.65 -9.5=4.25 -8.5=3.98 -7.5=3.45 -6.5=3.09 -5.5=2.87 -4.5=2.65 -3.5=2.41 -2.5=2.3 -1.5=2.11 +1.5=1.91 +2.5=1.78 +3.5=1.72 +4.5=1.61 +5.5=1.54 +6.5=1.48 +7.5=1.39 +8.5=1.33 +9.5=1.3 +10.5=1.25 +11.5=1.2 +12.5=1.17 +13.5=1.14 +14.5=1.13 +15.5=1.11 +16.5=1.1 +17.5=1.08 +18.5=1.06 +19.5=1.05 +20.5=1.04 +21.5=1.04 +22.5=1.03 +23.5=1.02 +24.5=1.02
+###FB
+game|player|odds
+DET@ORL|Cade Cunningham|8.50
+DET@ORL|John Collins|9.00
+DET@ORL|Daniss Jenkins|9.75
+DET@ORL|Kevin Huerter|10.00
+DET@ORL|Ausar Thompson|12.00
+DET@ORL|Franz Wagner|6.25
+DET@ORL|Wendell Carter Jr.|7.25
+DET@ORL|Desmond Bane|8.25
+DET@ORL|Anthony Black|9.00
+DET@ORL|Jalen Suggs|10.00
+###TT
+book|game|team|line|over|under
+Sportsbet|DET@ORL|ORL|106.5|1.90|1.88
+Sportsbet|DET@ORL|DET|107.5|1.88|1.92
+###PAIRS
+game|player|stat|line|over|under
+DET@ORL|Daniss Jenkins|P+R|19.5|1.90|1.86
+DET@ORL|John Collins|P+R|16.5|2.00|1.78
+DET@ORL|Kevin Huerter|P+A|14.5|1.90|1.86
+DET@ORL|Ausar Thompson|P+R|18.5|1.88|1.88
+DET@ORL|Daniss Jenkins|P+A|20.5|1.96|1.80
+DET@ORL|Kevin Huerter|R+A|6.5|2.08|1.72
+DET@ORL|Cade Cunningham|P+A|34.5|1.96|1.80
+DET@ORL|Cade Cunningham|P+R|30.5|1.90|1.85
+DET@ORL|John Collins|R+A|6.5|1.80|1.96
+DET@ORL|Daniss Jenkins|R+A|8.5|1.80|1.96
+DET@ORL|John Collins|P+A|11.5|1.89|1.87
+DET@ORL|Kevin Huerter|P+R|15.5|1.96|1.80
+DET@ORL|Cade Cunningham|R+A|13.5|1.84|1.92
+DET@ORL|Ausar Thompson|P+A|14.5|1.80|1.96
+DET@ORL|Ausar Thompson|R+A|12.5|1.96|1.80
+DET@ORL|Paul Reed|P+R|16.5|1.84|1.92
+DET@ORL|Tristan da Silva|R+A|5.5|2.00|1.78
+DET@ORL|Franz Wagner|P+R|29.5|1.88|1.88
+DET@ORL|Franz Wagner|R+A|13.5|2.08|1.72
+DET@ORL|Desmond Bane|P+R|21.5|1.96|1.80
+DET@ORL|Anthony Black|R+A|9.5|1.90|1.86
+DET@ORL|Desmond Bane|P+A|20.5|1.90|1.86
+DET@ORL|Anthony Black|P+R|18.5|1.80|1.96
+DET@ORL|Anthony Black|P+A|19.5|1.96|1.80
+DET@ORL|Jalen Suggs|P+A|15.5|1.96|1.80
+DET@ORL|Jalen Suggs|R+A|8.5|2.10|1.68
+DET@ORL|Tristan da Silva|P+A|12.5|2.00|1.78
+DET@ORL|Wendell Carter Jr.|P+A|12.5|1.96|1.80
+DET@ORL|Wendell Carter Jr.|P+R|18.5|1.80|1.96
+DET@ORL|Tristan da Silva|P+R|14.5|1.90|1.86
+DET@ORL|Jalen Suggs|P+R|15.5|1.91|1.85
+DET@ORL|Desmond Bane|R+A|6.5|1.96|1.80
+DET@ORL|Wendell Carter Jr.|R+A|9.5|1.80|1.96
+DET@ORL|Franz Wagner|P+A|29.5|1.84|1.92
+###PAIRNAMES
+To Record 30+ Pts + Reb
+To Record 15+ Pts + Ast
+To Record 25+ Pts + Reb
+To Record 25+ Reb + Ast
+To Record 10+ Reb + Ast
+To Record 5+ Reb + Ast
+To Record 40+ Pts + Reb
+To Record 40+ Pts + Ast
+To Record 30+ Pts + Ast
+To Record 50+ Pts + Ast
+To Record 10+ Pts + Ast
+To Record 20+ Pts + Reb
+To Record 45+ Pts + Ast
+To Record 35+ Pts + Reb
+To Record 50+ Pts + Reb
+To Record 15+ Pts + Reb
+To Record 15+ Reb + Ast
+To Record 25+ Pts + Ast
+To Record 35+ Pts + Ast
+To Record 10+ Pts + Reb
+To Record 45+ Pts + Reb
+To Record 20+ Reb + Ast
+To Record 20+ Pts + Ast

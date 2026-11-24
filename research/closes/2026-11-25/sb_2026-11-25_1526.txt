@@ -1,0 +1,155 @@
+###GAMES
+date,tip,away,home,ml_away,ml_home,spread_home,spread_home_odds,spread_away_odds,total,over_odds,under_odds
+2026-11-25,11:11,Detroit Pistons,Orlando Magic,1.76,2.11,1.5,1.94,1.86,213.5,1.90,1.90
+2026-11-25,12:10,Boston Celtics,Washington Wizards,1.22,4.55,10.5,1.90,1.90,217.5,1.90,1.90
+2026-11-25,14:10,Dallas Mavericks,Denver Nuggets,3.70,1.30,-8.5,1.90,1.90,231.5,1.87,1.93
+###PROPS
+game|player|stat|line|over|under
+DET@ORL|Cade Cunningham|PRA|38.5|1.86|1.90
+DET@ORL|Ausar Thompson|Points|10.5|1.96|1.80
+DET@ORL|Ausar Thompson|Assists|4.5|2.15|1.64
+DET@ORL|John Collins|Rebounds|5.5|1.80|1.96
+DET@ORL|John Collins|PRA|17.5|1.87|1.88
+DET@ORL|Daniss Jenkins|Points|15.5|1.92|1.84
+DET@ORL|Daniss Jenkins|Assists|4.5|1.74|2.05
+DET@ORL|Cade Cunningham|Threes|2.5|2.40|1.52
+DET@ORL|Cade Cunningham|Points|24.5|1.91|1.85
+DET@ORL|Kevin Huerter|Assists|2.5|1.72|2.08
+DET@ORL|Kevin Huerter|PRA|18.5|1.88|1.88
+DET@ORL|Kevin Huerter|Points|11.5|1.80|1.96
+DET@ORL|Cade Cunningham|Assists|8.5|1.96|1.80
+DET@ORL|Kevin Huerter|Threes|1.5|1.56|2.30
+DET@ORL|Ausar Thompson|Rebounds|7.5|1.74|2.05
+DET@ORL|Daniss Jenkins|PRA|24.5|1.91|1.85
+DET@ORL|Daniss Jenkins|Threes|2.5|2.60|1.45
+DET@ORL|Cade Cunningham|Rebounds|5.5|2.10|1.68
+DET@ORL|Daniss Jenkins|Rebounds|3.5|1.64|2.15
+DET@ORL|John Collins|Points|10.5|1.91|1.85
+DET@ORL|Ausar Thompson|PRA|22.5|1.84|1.92
+DET@ORL|Kevin Huerter|Rebounds|3.5|1.86|1.90
+DET@ORL|John Collins|Threes|1.5|2.75|1.40
+DET@ORL|Paul Reed|Rebounds|6.5|1.68|2.10
+DET@ORL|Isaiah Joe|Points|9.5|1.80|1.96
+DET@ORL|Paul Reed|Points|9.5|1.84|1.92
+DET@ORL|Isaiah Joe|Threes|1.5|1.48|2.50
+DET@ORL|Franz Wagner|PRA|36.5|1.88|1.88
+DET@ORL|Desmond Bane|Assists|2.5|1.72|2.08
+DET@ORL|Jalen Suggs|Points|11.5|1.96|1.80
+DET@ORL|Franz Wagner|Threes|1.5|2.15|1.64
+DET@ORL|Jalen Suggs|Assists|3.5|1.68|2.10
+DET@ORL|Jalen Suggs|Rebounds|4.5|2.15|1.64
+DET@ORL|Tristan da Silva|Points|10.5|1.87|1.89
+DET@ORL|Desmond Bane|Threes|3.5|2.10|1.68
+DET@ORL|Anthony Black|Threes|1.5|1.96|1.80
+DET@ORL|Franz Wagner|Assists|6.5|1.76|2.02
+DET@ORL|Anthony Black|Points|14.5|1.96|1.80
+DET@ORL|Desmond Bane|PRA|24.5|1.88|1.88
+DET@ORL|Jalen Suggs|Threes|1.5|1.78|2.00
+DET@ORL|Desmond Bane|Rebounds|3.5|1.64|2.15
+DET@ORL|Tristan da Silva|PRA|16.5|1.96|1.80
+DET@ORL|Wendell Carter Jr.|Rebounds|7.5|1.74|2.05
+DET@ORL|Anthony Black|Assists|4.5|1.68|2.10
+DET@ORL|Franz Wagner|Points|22.5|1.80|1.96
+DET@ORL|Jalen Suggs|PRA|19.5|1.91|1.85
+DET@ORL|Franz Wagner|Rebounds|6.5|2.10|1.68
+DET@ORL|Tristan da Silva|Threes|2.5|2.08|1.72
+DET@ORL|Wendell Carter Jr.|Threes|0.5|1.60|2.20
+DET@ORL|Tristan da Silva|Assists|1.5|2.05|1.74
+DET@ORL|Wendell Carter Jr.|PRA|20.5|1.92|1.84
+DET@ORL|Tristan da Silva|Rebounds|3.5|1.74|2.05
+DET@ORL|Wendell Carter Jr.|Points|10.5|1.83|1.93
+DET@ORL|Anthony Black|PRA|24.5|1.96|1.80
+DET@ORL|Desmond Bane|Points|17.5|1.90|1.86
+DET@ORL|Anthony Black|Rebounds|4.5|1.80|1.96
+DET@ORL|Wendell Carter Jr.|Assists|1.5|2.02|1.76
+###ALT
+game|player|stat|rungs
+DET@ORL|Cade Cunningham|Threes|0.5=1.08 4.5=10 5.5=23 3.5=4.8 2.5=2.4 1.5=1.45
+DET@ORL|Daniss Jenkins|Threes|0.5=1.08 4.5=11.5 5.5=23 3.5=5.25 2.5=2.6 1.5=1.52
+DET@ORL|Isaiah Joe|Threes|0.5=1.09 4.5=9.25 5.5=18 3.5=4.7 2.5=2.5 1.5=1.51
+DET@ORL|John Collins|Threes|0.5=1.37 3.5=19 1.5=2.8
+DET@ORL|Kevin Huerter|Threes|0.5=1.09 4.5=12.5 5.5=31 3.5=5.6 2.5=2.7 1.5=1.57
+DET@ORL|Anthony Black|Threes|0.5=1.18 4.5=23 3.5=10 2.5=4.25 1.5=1.98
+DET@ORL|Desmond Bane|Threes|0.5=1.02 4.5=3.5 5.5=6 3.5=2.12 6.5=12 2.5=1.43 7.5=23 1.5=1.13
+DET@ORL|Franz Wagner|Threes|0.5=1.22 3.5=13 2.5=4.8 1.5=2.15
+DET@ORL|Jalen Suggs|Threes|0.5=1.15 4.5=17 3.5=7.5 2.5=3.4 1.5=1.77
+DET@ORL|Tristan da Silva|Threes|0.5=1.06 4.5=6.75 5.5=14 3.5=3.6 6.5=26 2.5=2.07 1.5=1.36
+DET@ORL|Wendell Carter Jr.|Threes|0.5=1.62 1.5=4
+###GALT
+game|kind|side|rungs
+
+###FB
+game|player|odds
+DET@ORL|Cade Cunningham|8.50
+DET@ORL|John Collins|9.50
+DET@ORL|Daniss Jenkins|9.50
+DET@ORL|Kevin Huerter|10.00
+DET@ORL|Ausar Thompson|12.50
+DET@ORL|Franz Wagner|6.00
+DET@ORL|Wendell Carter Jr.|7.50
+DET@ORL|Desmond Bane|8.25
+DET@ORL|Anthony Black|9.25
+DET@ORL|Jalen Suggs|9.25
+###TT
+book|game|team|line|over|under
+
+###PAIRS
+game|player|stat|line|over|under
+DET@ORL|Daniss Jenkins|P+R|19.5|1.91|1.85
+DET@ORL|John Collins|P+R|16.5|1.92|1.84
+DET@ORL|Kevin Huerter|P+A|14.5|1.83|1.93
+DET@ORL|Ausar Thompson|P+R|18.5|1.91|1.85
+DET@ORL|Daniss Jenkins|P+A|20.5|1.96|1.80
+DET@ORL|Kevin Huerter|R+A|6.5|1.96|1.80
+DET@ORL|Cade Cunningham|P+A|33.5|1.96|1.80
+DET@ORL|Cade Cunningham|P+R|29.5|1.80|1.96
+DET@ORL|John Collins|R+A|6.5|1.72|2.08
+DET@ORL|Daniss Jenkins|R+A|8.5|1.74|2.05
+DET@ORL|John Collins|P+A|11.5|1.87|1.89
+DET@ORL|Kevin Huerter|P+R|15.5|1.87|1.89
+DET@ORL|Cade Cunningham|R+A|13.5|1.80|1.96
+DET@ORL|Ausar Thompson|P+A|14.5|1.83|1.93
+DET@ORL|Ausar Thompson|R+A|12.5|2.05|1.74
+DET@ORL|Paul Reed|P+R|16.5|1.80|1.96
+DET@ORL|Tristan da Silva|R+A|5.5|2.00|1.78
+DET@ORL|Franz Wagner|P+R|29.5|1.89|1.87
+DET@ORL|Franz Wagner|R+A|13.5|2.05|1.74
+DET@ORL|Desmond Bane|P+R|21.5|1.87|1.89
+DET@ORL|Anthony Black|R+A|9.5|1.80|1.96
+DET@ORL|Desmond Bane|P+A|20.5|1.92|1.84
+DET@ORL|Anthony Black|P+R|19.5|1.96|1.80
+DET@ORL|Anthony Black|P+A|19.5|1.91|1.85
+DET@ORL|Jalen Suggs|P+A|15.5|1.96|1.80
+DET@ORL|Jalen Suggs|R+A|8.5|2.10|1.68
+DET@ORL|Tristan da Silva|P+A|12.5|1.96|1.80
+DET@ORL|Wendell Carter Jr.|P+A|12.5|1.96|1.80
+DET@ORL|Wendell Carter Jr.|P+R|18.5|1.83|1.93
+DET@ORL|Tristan da Silva|P+R|14.5|1.88|1.88
+DET@ORL|Jalen Suggs|P+R|15.5|1.91|1.85
+DET@ORL|Desmond Bane|R+A|6.5|1.74|2.05
+DET@ORL|Wendell Carter Jr.|R+A|9.5|1.90|1.86
+DET@ORL|Franz Wagner|P+A|30.5|1.96|1.80
+###PAIRNAMES
+To Record 30+ Pts + Reb
+To Record 15+ Pts + Ast
+To Record 25+ Pts + Reb
+To Record 25+ Reb + Ast
+To Record 10+ Reb + Ast
+To Record 5+ Reb + Ast
+To Record 40+ Pts + Reb
+To Record 40+ Pts + Ast
+To Record 30+ Pts + Ast
+To Record 50+ Pts + Ast
+To Record 10+ Pts + Ast
+To Record 20+ Pts + Reb
+To Record 45+ Pts + Ast
+To Record 35+ Pts + Reb
+To Record 50+ Pts + Reb
+To Record 15+ Pts + Reb
+To Record 15+ Reb + Ast
+To Record 25+ Pts + Ast
+To Record 35+ Pts + Ast
+To Record 10+ Pts + Reb
+To Record 45+ Pts + Reb
+To Record 20+ Reb + Ast
+To Record 20+ Pts + Ast

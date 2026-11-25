@@ -1,0 +1,259 @@
+###GAMES
+date,tip,away,home,ml_away,ml_home,spread_home,spread_home_odds,spread_away_odds,total,over_odds,under_odds
+2026-11-26,11:40,Minnesota Timberwolves,Oklahoma City Thunder,2.06,1.80,-2.5,1.92,1.88,223.5,1.87,1.93
+2026-11-26,12:10,Los Angeles Clippers,Memphis Grizzlies,3.06,1.40,-6.5,1.90,1.90,229.5,1.90,1.90
+2026-11-26,11:10,Chicago Bulls,Charlotte Hornets,2.31,1.64,-3.5,1.95,1.85,222.5,1.93,1.87
+2026-11-26,12:10,Brooklyn Nets,Milwaukee Bucks,1.93,1.91,-1.5,1.94,1.86,230.5,1.85,1.96
+2026-11-26,12:40,Phoenix Suns,Houston Rockets,4.05,1.26,-9.5,1.90,1.90,224.5,1.90,1.90
+2026-11-26,14:10,Sacramento Kings,Golden State Warriors,3.07,1.40,-6.5,1.90,1.90,218.5,1.90,1.90
+2026-11-26,11:40,Cleveland Cavaliers,New York Knicks,2.31,1.64,-3.5,1.94,1.86,220.5,1.91,1.89
+2026-11-26,09:10,Miami Heat,Philadelphia 76ers,1.89,1.94,1.5,1.85,1.95,238.5,1.90,1.90
+2026-11-26,14:10,San Antonio Spurs,Portland Trail Blazers,1.66,2.28,2.5,1.90,1.90,225.5,1.89,1.91
+###PROPS
+game|player|stat|line|over|under
+CLE@NYK|Jalen Brunson|Threes|2.5|1.80|1.96
+CLE@NYK|Jalen Brunson|PRA|38.5|1.96|1.80
+CLE@NYK|Jalen Brunson|Points|27.5|1.78|2.00
+CLE@NYK|Jalen Brunson|Rebounds|3.5|2.40|1.52
+CLE@NYK|Jalen Brunson|Assists|6.5|1.88|1.88
+CLE@NYK|Karl-Anthony Towns|Assists|3.5|1.86|1.90
+CLE@NYK|Karl-Anthony Towns|Rebounds|12.5|1.76|2.02
+CLE@NYK|Karl-Anthony Towns|PRA|37.5|1.80|1.96
+CLE@NYK|Karl-Anthony Towns|Points|20.5|1.80|1.96
+CLE@NYK|Karl-Anthony Towns|Threes|1.5|1.58|2.25
+CLE@NYK|Donovan Mitchell|Points|25.5|1.96|1.80
+CLE@NYK|Donovan Mitchell|Threes|2.5|1.80|1.96
+CLE@NYK|Donovan Mitchell|PRA|34.5|1.89|1.87
+CLE@NYK|Donovan Mitchell|Assists|4.5|1.84|1.92
+CLE@NYK|Donovan Mitchell|Rebounds|4.5|1.93|1.83
+CLE@NYK|James Harden|Threes|2.5|2.15|1.64
+CLE@NYK|James Harden|PRA|28.5|1.92|1.84
+CLE@NYK|James Harden|Assists|6.5|1.92|1.84
+CLE@NYK|James Harden|Rebounds|4.5|1.88|1.88
+CLE@NYK|James Harden|Points|17.5|2.05|1.74
+CLE@NYK|Jarrett Allen|Points|12.5|1.78|2.00
+CLE@NYK|Jarrett Allen|Rebounds|8.5|2.02|1.76
+CLE@NYK|Jarrett Allen|PRA|23.5|1.96|1.80
+CLE@NYK|Peyton Watson|Threes|1.5|2.25|1.58
+CLE@NYK|Peyton Watson|Points|11.5|1.91|1.85
+CLE@NYK|Peyton Watson|PRA|17.5|1.92|1.84
+CLE@NYK|Peyton Watson|Rebounds|4.5|2.15|1.64
+CLE@NYK|Sam Merrill|Points|8.5|1.96|1.80
+CLE@NYK|Sam Merrill|Threes|1.5|1.68|2.10
+CLE@NYK|Sam Merrill|Rebounds|2.5|2.15|1.64
+CLE@NYK|Sam Merrill|PRA|12.5|1.96|1.80
+CLE@NYK|Josh Hart|Rebounds|7.5|1.80|1.96
+CLE@NYK|Josh Hart|Assists|4.5|2.15|1.64
+CLE@NYK|Josh Hart|Threes|1.5|2.20|1.60
+CLE@NYK|Josh Hart|PRA|21.5|1.80|1.96
+CLE@NYK|Josh Hart|Points|9.5|1.86|1.90
+CLE@NYK|Mikal Bridges|Threes|1.5|1.96|1.80
+CLE@NYK|Mikal Bridges|Rebounds|2.5|1.52|2.40
+CLE@NYK|Mikal Bridges|PRA|16.5|1.80|1.96
+CLE@NYK|Mikal Bridges|Points|11.5|2.02|1.76
+CLE@NYK|Mikal Bridges|Assists|2.5|2.10|1.68
+CLE@NYK|Landry Shamet|Points|12.5|2.00|1.78
+CLE@NYK|Landry Shamet|Rebounds|2.5|2.50|1.48
+CLE@NYK|Landry Shamet|PRA|16.5|1.96|1.80
+CLE@NYK|Landry Shamet|Assists|1.5|1.68|2.10
+CLE@NYK|Landry Shamet|Threes|2.5|1.84|1.92
+CLE@NYK|Meleek Thomas|Threes|1.5|2.08|1.72
+CLE@NYK|Meleek Thomas|Points|7.5|1.78|2.00
+CLE@NYK|Tyrese Proctor|Points|7.5|2.08|1.72
+CLE@NYK|Tyrese Proctor|Threes|1.5|2.40|1.52
+MIA@PHI|Pelle Larsson|Points|11.5|1.80|1.96
+MIA@PHI|Klay Thompson|Points|13.5|2.02|1.76
+MIA@PHI|Pelle Larsson|PRA|19.5|1.89|1.87
+MIA@PHI|Giannis Antetokounmpo|Points|29.5|1.96|1.80
+MIA@PHI|Bam Adebayo|Threes|1.5|2.60|1.45
+MIA@PHI|Bam Adebayo|Assists|3.5|2.00|1.78
+MIA@PHI|G Antetokounmpo|PRA|47.5|1.87|1.89
+MIA@PHI|Davion Mitchell|Assists|8.5|1.96|1.80
+MIA@PHI|Bam Adebayo|Points|18.5|1.93|1.83
+MIA@PHI|Bam Adebayo|Rebounds|8.5|1.84|1.92
+MIA@PHI|Giannis Antetokounmpo|Rebounds|12.5|2.08|1.72
+MIA@PHI|Klay Thompson|Threes|3.5|1.96|1.80
+MIA@PHI|Pelle Larsson|Rebounds|3.5|1.80|1.96
+MIA@PHI|Pelle Larsson|Assists|3.5|2.10|1.68
+MIA@PHI|Davion Mitchell|PRA|27.5|1.96|1.80
+MIA@PHI|Davion Mitchell|Rebounds|3.5|2.08|1.72
+MIA@PHI|Davion Mitchell|Points|14.5|1.83|1.93
+MIA@PHI|Davion Mitchell|Threes|2.5|2.45|1.50
+MIA@PHI|Giannis Antetokounmpo|Assists|5.5|1.68|2.10
+MIA@PHI|Bam Adebayo|PRA|30.5|1.80|1.96
+MIA@PHI|Tyrese Maxey|Assists|5.5|2.02|1.76
+MIA@PHI|VJ Edgecombe|Threes|1.5|1.80|1.96
+MIA@PHI|VJ Edgecombe|Points|13.5|1.85|1.91
+MIA@PHI|LeBron James|Threes|1.5|2.15|1.64
+MIA@PHI|Jaylen Brown|Rebounds|6.5|2.20|1.60
+MIA@PHI|Tyrese Maxey|Points|25.5|1.91|1.85
+MIA@PHI|Jaylen Brown|Assists|3.5|1.96|1.80
+MIA@PHI|Jaylen Brown|PRA|31.5|1.80|1.96
+MIA@PHI|LeBron James|Points|18.5|1.89|1.87
+MIA@PHI|Jaylen Brown|Points|22.5|1.96|1.80
+MIA@PHI|Tyrese Maxey|PRA|34.5|1.84|1.92
+MIA@PHI|Jaylen Brown|Threes|1.5|1.78|2.00
+MIA@PHI|VJ Edgecombe|Assists|3.5|2.08|1.72
+MIA@PHI|Tyrese Maxey|Rebounds|3.5|1.86|1.90
+MIA@PHI|VJ Edgecombe|Rebounds|5.5|1.80|1.96
+MIA@PHI|VJ Edgecombe|PRA|23.5|1.96|1.80
+MIA@PHI|LeBron James|Assists|6.5|1.96|1.80
+MIA@PHI|LeBron James|PRA|32.5|1.96|1.80
+MIA@PHI|Tyrese Maxey|Threes|2.5|1.80|1.96
+MIA@PHI|LeBron James|Rebounds|6.5|1.93|1.83
+###ALT
+game|player|stat|rungs
+MIN@OKC|Ayo Dosunmu|Threes|0.5=1.13 1.5=1.69
+MIN@OKC|Jaden McDaniels|Threes|0.5=1.18 1.5=1.92
+MIN@OKC|Jonathan Kuminga|Threes|0.5=1.21 1.5=2.05
+MIN@OKC|LaMelo Ball|Threes|0.5=1.01 1.5=1.1
+MIN@OKC|Terrence Shannon Jr.|Threes|0.5=1.26 1.5=2.2
+MIN@OKC|Trey Lyles|Threes|0.5=1.52 1.5=3.45
+MIN@OKC|Ajay Mitchell|Threes|0.5=1.4 1.5=2.9
+MIN@OKC|Alex Caruso|Threes|0.5=1.33 1.5=2.5
+MIN@OKC|Jared McCain|Threes|0.5=1.05 1.5=1.32
+MIN@OKC|Kenrich Williams|Threes|0.5=1.26 1.5=2.2
+MIN@OKC|Shai Gilgeous-Alexander|Threes|0.5=1.1 1.5=1.56
+LAC@MEM|Ty Jerome|Threes|0.5=1.04 1.5=1.24
+CHI@CHO|Buddy Hield|Threes|0.5=1.03 1.5=1.2
+CHI@CHO|Isaac Okoro|Threes|0.5=1.23 1.5=2.15
+CHI@CHO|Jalen Smith|Threes|0.5=1.11 1.5=1.6
+CHI@CHO|Josh Giddey|Threes|0.5=1.24 1.5=2.2
+CHI@CHO|Matas Buzelis|Threes|0.5=1.05 1.5=1.32
+CHI@CHO|Brandon Miller|Threes|0.5=1.01 1.5=1.11
+CHI@CHO|Coby White|Threes|0.5=1.09 1.5=1.51
+CHI@CHO|Grayson Allen|Threes|0.5=1.05 1.5=1.29
+CHI@CHO|Naz Reid|Threes|0.5=1.04 1.5=1.25
+CHI@CHO|Sion James|Threes|0.5=1.28 1.5=2.4
+PHO@HOU|Devin Booker|Threes|0.5=1.11 1.5=1.63
+PHO@HOU|Dillon Brooks|Threes|0.5=1.15 1.5=1.82
+PHO@HOU|Jalen Green|Threes|0.5=1.21 1.5=2.05
+PHO@HOU|Miles Bridges|Threes|0.5=1.15 1.5=1.81
+PHO@HOU|Alperen Sengun|Threes|0.5=1.84 1.5=5.3
+PHO@HOU|Fred VanVleet|Threes|0.5=1.04 1.5=1.32
+PHO@HOU|Jabari Smith|Threes|0.5=1.12 1.5=1.65
+PHO@HOU|Kevin Durant|Threes|0.5=1.17 1.5=1.91
+PHO@HOU|Marcus Smart|Threes|0.5=1.44 1.5=3.05
+CLE@NYK|Donovan Mitchell|Threes|0.5=1.03 2.5=1.78 1.5=1.23 4.5=5.6 5.5=11 6.5=23 3.5=2.95
+CLE@NYK|James Harden|Threes|0.5=1.07 2.5=2.18 1.5=1.39 4.5=8.5 5.5=19 3.5=4
+CLE@NYK|Meleek Thomas|Threes|0.5=1.21 2.5=4.25 1.5=2.08 4.5=19 3.5=9.25
+CLE@NYK|Peyton Watson|Threes|0.5=1.27 2.5=5.2 1.5=2.3 3.5=14
+CLE@NYK|Sam Merrill|Threes|0.5=1.13 2.5=3.05 1.5=1.67 4.5=14 3.5=6.25
+CLE@NYK|Tyrese Proctor|Threes|0.5=1.31 2.5=5.4 1.5=2.4 3.5=13
+CLE@NYK|Jalen Brunson|Threes|0.5=1.04 2.5=1.82 1.5=1.24 4.5=6 5.5=12 6.5=23 3.5=3.05
+CLE@NYK|Josh Hart|Threes|0.5=1.25 2.5=4.9 1.5=2.25 3.5=12
+CLE@NYK|Karl-Anthony Towns|Threes|0.5=1.1 2.5=2.8 1.5=1.58 4.5=13 3.5=5.9
+CLE@NYK|Landry Shamet|Threes|0.5=1.04 2.5=1.84 1.5=1.25 4.5=6 5.5=11 6.5=23 3.5=3.1
+CLE@NYK|Mikal Bridges|Threes|0.5=1.18 2.5=3.9 1.5=1.94 4.5=19 3.5=8.5
+MIA@PHI|Davion Mitchell|Threes|1.5=1.45 0.5=1.07 5.5=21 4.5=9.5 3.5=4.7 2.5=2.4
+MIA@PHI|Klay Thompson|Threes|1.5=1.11 9.5=61 6.5=9 8.5=26 0.5=1.02 5.5=5 7.5=15 4.5=3.1 3.5=1.99 2.5=1.39
+MIA@PHI|Bam Adebayo|Threes|1.5=2.6 0.5=1.32 3.5=18 2.5=6.25
+MIA@PHI|Jaylen Brown|Threes|1.5=1.78 0.5=1.14 4.5=18 3.5=7.5 2.5=3.5
+MIA@PHI|Tyrese Maxey|Threes|1.5=1.25 6.5=23 0.5=1.04 5.5=12 4.5=6 3.5=3.1 2.5=1.82
+MIA@PHI|VJ Edgecombe|Threes|1.5=1.81 0.5=1.16 4.5=15 3.5=7 2.5=3.35
+MIA@PHI|LeBron James|Threes|1.5=2.2 0.5=1.24 3.5=12 2.5=4.8
+###GALT
+game|kind|side|rungs
+
+###FB
+game|player|odds
+CLE@NYK|Jarrett Allen|6.00
+CLE@NYK|Donovan Mitchell|6.75
+CLE@NYK|James Harden|9.25
+CLE@NYK|Peyton Watson|10.00
+CLE@NYK|Sam Merrill|10.00
+CLE@NYK|Jalen Brunson|6.50
+CLE@NYK|Landry Shamet|11.00
+CLE@NYK|Karl-Anthony Towns|7.25
+CLE@NYK|Mikal Bridges|12.50
+CLE@NYK|Josh Hart|13.00
+MIA@PHI|Giannis Antetokounmpo|5.60
+MIA@PHI|Bam Adebayo|8.25
+MIA@PHI|Davion Mitchell|9.50
+MIA@PHI|Klay Thompson|10.00
+MIA@PHI|Pelle Larsson|11.00
+MIA@PHI|Tyrese Maxey|8.00
+MIA@PHI|Jabari Walker|13.00
+MIA@PHI|Jaylen Brown|7.00
+MIA@PHI|LeBron James|9.25
+MIA@PHI|VJ Edgecombe|10.50
+###TT
+book|game|team|line|over|under
+
+###PAIRS
+game|player|stat|line|over|under
+CLE@NYK|Jalen Brunson|R+A|9.5|1.80|1.96
+CLE@NYK|Jalen Brunson|P+R|31.5|1.91|1.85
+CLE@NYK|Jalen Brunson|P+A|34.5|1.80|1.96
+CLE@NYK|Karl-Anthony Towns|P+A|24.5|1.80|1.96
+CLE@NYK|Karl-Anthony Towns|P+R|34.5|1.96|1.80
+CLE@NYK|Karl-Anthony Towns|R+A|16.5|1.86|1.90
+CLE@NYK|Donovan Mitchell|P+A|29.5|1.83|1.93
+CLE@NYK|Donovan Mitchell|P+R|29.5|1.86|1.90
+CLE@NYK|Donovan Mitchell|R+A|9.5|2.02|1.76
+CLE@NYK|James Harden|R+A|11.5|2.02|1.76
+CLE@NYK|James Harden|P+A|23.5|1.86|1.90
+CLE@NYK|James Harden|P+R|21.5|1.86|1.90
+CLE@NYK|Jarrett Allen|R+A|9.5|1.72|2.08
+CLE@NYK|Jarrett Allen|P+A|14.5|1.86|1.90
+CLE@NYK|Jarrett Allen|P+R|21.5|1.86|1.89
+CLE@NYK|Peyton Watson|P+R|15.5|1.84|1.92
+CLE@NYK|Peyton Watson|P+A|13.5|1.96|1.80
+CLE@NYK|Josh Hart|P+A|13.5|1.78|2.00
+CLE@NYK|Josh Hart|P+R|17.5|1.87|1.89
+CLE@NYK|Josh Hart|R+A|11.5|1.72|2.08
+CLE@NYK|Mikal Bridges|P+R|14.5|1.96|1.80
+CLE@NYK|Mikal Bridges|P+A|13.5|1.88|1.88
+CLE@NYK|Mikal Bridges|R+A|5.5|1.90|1.86
+CLE@NYK|Landry Shamet|P+A|14.5|1.96|1.80
+CLE@NYK|Landry Shamet|P+R|14.5|1.96|1.80
+CLE@NYK|Landry Shamet|R+A|3.5|1.64|2.15
+MIA@PHI|Giannis Antetokounmpo|P+A|35.5|1.91|1.85
+MIA@PHI|Bam Adebayo|P+R|27.5|1.91|1.85
+MIA@PHI|Pelle Larsson|R+A|7.5|2.08|1.72
+MIA@PHI|Bam Adebayo|P+A|21.5|1.80|1.96
+MIA@PHI|Davion Mitchell|P+R|18.5|1.96|1.80
+MIA@PHI|Davion Mitchell|P+A|23.5|1.88|1.88
+MIA@PHI|Giannis Antetokounmpo|R+A|18.5|2.02|1.76
+MIA@PHI|Pelle Larsson|P+R|15.5|1.83|1.93
+MIA@PHI|Pelle Larsson|P+A|15.5|1.91|1.85
+MIA@PHI|Bam Adebayo|R+A|12.5|1.96|1.80
+MIA@PHI|Davion Mitchell|R+A|11.5|1.72|2.08
+MIA@PHI|Giannis Antetokounmpo|P+R|41.5|1.90|1.86
+MIA@PHI|Tyrese Maxey|R+A|8.5|1.68|2.10
+MIA@PHI|LeBron James|P+R|25.5|1.91|1.85
+MIA@PHI|VJ Edgecombe|P+R|19.5|1.85|1.91
+MIA@PHI|VJ Edgecombe|R+A|9.5|2.02|1.76
+MIA@PHI|LeBron James|P+A|25.5|1.90|1.86
+MIA@PHI|VJ Edgecombe|P+A|17.5|1.96|1.80
+MIA@PHI|LeBron James|R+A|13.5|2.08|1.72
+MIA@PHI|Jaylen Brown|P+A|25.5|1.83|1.93
+MIA@PHI|Jaylen Brown|P+R|28.5|1.92|1.84
+MIA@PHI|Jaylen Brown|R+A|9.5|1.86|1.90
+MIA@PHI|Tyrese Maxey|P+A|30.5|1.80|1.96
+MIA@PHI|Tyrese Maxey|P+R|29.5|1.96|1.80
+###PAIRNAMES
+To Record 40+ Pts + Reb
+To Record 35+ Pts + Ast
+To Record 10+ Pts + Reb
+To Record 15+ Reb + Ast
+To Record 30+ Pts + Ast
+To Record 15+ Pts + Ast
+To Record 20+ Reb + Ast
+To Record 20+ Pts + Reb
+To Record 20+ Pts + Ast
+To Record 25+ Pts + Reb
+To Record 50+ Pts + Ast
+To Record 45+ Pts + Reb
+To Record 5+ Reb + Ast
+To Record 30+ Reb + Ast
+To Record 25+ Reb + Ast
+To Record 15+ Pts + Reb
+To Record 50+ Pts + Reb
+To Record 30+ Pts + Reb
+To Record 45+ Pts + Ast
+To Record 35+ Pts + Reb
+To Record 10+ Pts + Ast
+To Record 10+ Reb + Ast
+To Record 40+ Pts + Ast
+To Record 25+ Pts + Ast

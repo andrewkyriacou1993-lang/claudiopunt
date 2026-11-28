@@ -1,0 +1,321 @@
+###GAMES
+date,tip,away,home,ml_away,ml_home,spread_home,spread_home_odds,spread_away_odds,total,over_odds,under_odds
+2026-11-29,12:10,Indiana Pacers,Chicago Bulls,2.22,1.70,-2.5,1.88,1.92,235.5,1.90,1.90
+2026-11-29,12:40,Philadelphia 76ers,Houston Rockets,5.10,1.18,-12.5,1.90,1.90,219.5,1.90,1.90
+2026-11-29,09:10,Orlando Magic,Washington Wizards,1.56,2.49,3.5,1.95,1.85,218.5,1.90,1.90
+2026-11-29,10:10,Brooklyn Nets,Charlotte Hornets,2.99,1.42,-5.5,1.85,1.96,213.5,1.90,1.90
+2026-11-29,12:10,Oklahoma City Thunder,Milwaukee Bucks,1.16,5.60,11.5,1.90,1.90,228.5,1.95,1.86
+###PROPS
+game|player|stat|line|over|under
+ORL@WAS|Franz Wagner|Assists|7.5|1.96|1.80
+ORL@WAS|Anthony Black|Points|14.5|1.88|1.87
+ORL@WAS|Anthony Davis|Steals|1.5|2.90|1.36
+ORL@WAS|Desmond Bane|Rebounds|3.5|1.78|2.00
+ORL@WAS|Trae Young|Points|15.5|1.96|1.80
+ORL@WAS|Desmond Bane|Threes|3.5|1.96|1.80
+ORL@WAS|Franz Wagner|Threes|1.5|2.08|1.72
+ORL@WAS|Franz Wagner|Rebounds|6.5|1.87|1.89
+ORL@WAS|AJ Dybantsa|Rebounds|7.5|2.08|1.72
+ORL@WAS|Anthony Black|PRA|23.5|1.93|1.83
+ORL@WAS|Kyshawn George|Threes|2.5|2.10|1.68
+ORL@WAS|Tristan da Silva|Points|11.5|1.88|1.88
+ORL@WAS|AJ Dybantsa|Assists|4.5|2.15|1.64
+ORL@WAS|Trae Young|Steals|1.5|2.50|1.48
+ORL@WAS|Alex Sarr|PRA|16.5|1.80|1.96
+ORL@WAS|Bilal Coulibaly|Rebounds|3.5|1.88|1.87
+ORL@WAS|Jalen Suggs|Threes|1.5|1.68|2.10
+ORL@WAS|AJ Dybantsa|Points|17.5|1.86|1.90
+ORL@WAS|Anthony Davis|Points|23.5|1.96|1.80
+ORL@WAS|Kyshawn George|Assists|4.5|2.15|1.64
+ORL@WAS|Alex Sarr|Blocks|1.5|2.45|1.50
+ORL@WAS|AJ Dybantsa|Steals|1.5|2.50|1.48
+ORL@WAS|Trae Young|Threes|1.5|1.64|2.15
+ORL@WAS|Kyshawn George|Rebounds|4.5|1.96|1.80
+ORL@WAS|Desmond Bane|Steals|1.5|2.20|1.60
+ORL@WAS|Alex Sarr|Points|9.5|1.90|1.86
+ORL@WAS|Jalen Suggs|PRA|21.5|1.96|1.80
+ORL@WAS|Trae Young|PRA|26.5|1.86|1.90
+ORL@WAS|Jalen Suggs|Rebounds|4.5|2.02|1.76
+ORL@WAS|Wendell Carter Jr.|Rebounds|8.5|2.15|1.64
+ORL@WAS|Tristan da Silva|Threes|2.5|1.96|1.80
+ORL@WAS|Wendell Carter Jr.|Points|11.5|1.96|1.80
+ORL@WAS|Franz Wagner|Points|25.5|1.96|1.80
+ORL@WAS|Franz Wagner|Steals|1.5|2.75|1.40
+ORL@WAS|Anthony Davis|PRA|35.5|1.85|1.91
+ORL@WAS|Kyshawn George|PRA|24.5|1.84|1.92
+ORL@WAS|Wendell Carter Jr.|Assists|1.5|1.68|2.10
+ORL@WAS|Wendell Carter Jr.|PRA|21.5|1.87|1.89
+ORL@WAS|Anthony Black|Steals|1.5|2.25|1.58
+ORL@WAS|Trae Young|Assists|8.5|2.00|1.78
+ORL@WAS|Bilal Coulibaly|Points|7.5|2.00|1.78
+ORL@WAS|Trae Young|Rebounds|2.5|1.90|1.86
+ORL@WAS|Tristan da Silva|Rebounds|3.5|1.80|1.96
+ORL@WAS|Jalen Suggs|Assists|4.5|1.88|1.88
+ORL@WAS|Alex Sarr|Threes|1.5|2.60|1.44
+ORL@WAS|Anthony Davis|Assists|2.5|2.40|1.52
+ORL@WAS|Anthony Black|Assists|4.5|2.10|1.68
+ORL@WAS|Desmond Bane|PRA|26.5|1.80|1.93
+ORL@WAS|Franz Wagner|PRA|39.5|1.80|1.96
+ORL@WAS|AJ Dybantsa|PRA|29.5|1.90|1.86
+ORL@WAS|Jalen Suggs|Points|11.5|1.80|1.96
+ORL@WAS|Desmond Bane|Points|19.5|1.93|1.83
+ORL@WAS|Kyshawn George|Points|15.5|1.80|1.96
+ORL@WAS|Jalen Suggs|Steals|1.5|2.10|1.68
+ORL@WAS|Anthony Davis|Rebounds|10.5|2.10|1.68
+ORL@WAS|Anthony Black|Rebounds|4.5|2.15|1.64
+ORL@WAS|Desmond Bane|Assists|3.5|1.96|1.80
+ORL@WAS|Alex Sarr|Rebounds|6.5|2.15|1.64
+ORL@WAS|Anthony Davis|Blocks|1.5|2.60|1.45
+ORL@WAS|Anthony Black|Threes|1.5|1.89|1.87
+ORL@WAS|AJ Dybantsa|Threes|0.5|1.40|2.75
+OKC@MIL|Alex Caruso|Points|7.5|1.80|1.96
+OKC@MIL|Bennett Stirtz|Assists|2.5|2.10|1.68
+OKC@MIL|Isaiah Hartenstein|PRA|25.5|1.85|1.91
+OKC@MIL|Ajay Mitchell|Points|18.5|1.96|1.80
+OKC@MIL|Shai Gilgeous-Alexander|Rebounds|4.5|2.05|1.74
+OKC@MIL|Jared McCain|Assists|1.5|1.90|1.86
+OKC@MIL|Jared McCain|Points|14.5|1.80|1.96
+OKC@MIL|Kenrich Williams|Rebounds|5.5|2.10|1.68
+OKC@MIL|Jared McCain|Threes|2.5|1.80|1.96
+OKC@MIL|Isaiah Hartenstein|Rebounds|11.5|1.83|1.93
+OKC@MIL|Ajay Mitchell|PRA|26.5|1.91|1.85
+OKC@MIL|Isaiah Hartenstein|Assists|4.5|2.15|1.64
+OKC@MIL|Alex Caruso|PRA|14.5|2.00|1.78
+OKC@MIL|Alex Caruso|Rebounds|3.5|1.84|1.92
+OKC@MIL|Jared McCain|PRA|19.5|1.83|1.93
+OKC@MIL|Shai Gilgeous-Alexander|Points|32.5|1.96|1.80
+OKC@MIL|Isaiah Hartenstein|Points|9.5|1.85|1.91
+OKC@MIL|Bennett Stirtz|Threes|1.5|1.64|2.15
+OKC@MIL|Kenrich Williams|Threes|1.5|2.15|1.64
+OKC@MIL|Shai Gilgeous-Alexander|Assists|5.5|1.92|1.84
+OKC@MIL|Jared McCain|Rebounds|2.5|1.60|2.20
+OKC@MIL|Kenrich Williams|PRA|16.5|1.90|1.86
+OKC@MIL|Alex Caruso|Assists|2.5|2.15|1.64
+OKC@MIL|Bennett Stirtz|Points|9.5|1.88|1.87
+OKC@MIL|S Gilgeous-Alexander|PRA|42.5|1.90|1.86
+OKC@MIL|Shai Gilgeous-Alexander|Threes|2.5|2.50|1.48
+OKC@MIL|Kenrich Williams|Points|9.5|2.02|1.76
+OKC@MIL|Ajay Mitchell|Assists|3.5|1.76|2.02
+OKC@MIL|Alex Caruso|Threes|1.5|2.25|1.58
+OKC@MIL|Ajay Mitchell|Rebounds|4.5|2.20|1.60
+OKC@MIL|Kenrich Williams|Assists|1.5|1.68|2.10
+OKC@MIL|Bennett Stirtz|PRA|14.5|1.80|1.96
+OKC@MIL|Ajay Mitchell|Threes|1.5|2.60|1.44
+OKC@MIL|Bennett Stirtz|Rebounds|2.5|1.96|1.80
+OKC@MIL|Shai Gilgeous-Alexander|Steals|1.5|2.90|1.36
+OKC@MIL|Tyler Herro|Rebounds|3.5|1.78|2.00
+OKC@MIL|Myles Turner|Threes|1.5|1.83|1.93
+OKC@MIL|Myles Turner|Rebounds|5.5|1.74|2.05
+OKC@MIL|Tyler Herro|Threes|2.5|1.84|1.92
+OKC@MIL|Kyle Kuzma|Assists|2.5|2.15|1.64
+OKC@MIL|Kyle Kuzma|Points|13.5|1.96|1.80
+OKC@MIL|Kyle Kuzma|Rebounds|4.5|1.68|2.10
+OKC@MIL|Myles Turner|Assists|1.5|1.80|1.96
+OKC@MIL|Kyle Kuzma|PRA|20.5|1.80|1.96
+OKC@MIL|Myles Turner|Points|8.5|1.78|2.00
+OKC@MIL|Tyler Herro|Points|21.5|1.93|1.83
+OKC@MIL|Tyler Herro|Assists|4.5|2.15|1.64
+OKC@MIL|Myles Turner|PRA|16.5|1.80|1.96
+OKC@MIL|Kyle Kuzma|Threes|1.5|1.64|2.15
+OKC@MIL|Tyler Herro|PRA|29.5|1.88|1.88
+OKC@MIL|Jaime Jaquez Jr.|Threes|1.5|2.15|1.64
+OKC@MIL|Jaime Jaquez Jr.|Rebounds|4.5|1.80|1.96
+OKC@MIL|Jaime Jaquez Jr.|Points|13.5|1.96|1.80
+OKC@MIL|Jaime Jaquez Jr.|PRA|21.5|1.91|1.85
+OKC@MIL|Jaime Jaquez Jr.|Assists|2.5|1.56|2.30
+OKC@MIL|Ryan Rollins|PRA|19.5|1.96|1.80
+OKC@MIL|Ryan Rollins|Assists|4.5|2.25|1.58
+OKC@MIL|Ryan Rollins|Rebounds|3.5|1.60|2.20
+OKC@MIL|Ryan Rollins|Threes|1.5|2.02|1.76
+OKC@MIL|Ryan Rollins|Points|10.5|1.80|1.96
+###ALT
+game|player|stat|rungs
+IND@CHI|Andrew Nembhard|Threes|0.5=1.13 1.5=1.69
+IND@CHI|Pascal Siakam|Threes|0.5=1.14 1.5=1.75
+IND@CHI|Buddy Hield|Threes|0.5=1.02 1.5=1.17
+IND@CHI|Isaac Okoro|Threes|0.5=1.25 1.5=2.25
+IND@CHI|Jalen Smith|Threes|0.5=1.1 1.5=1.56
+IND@CHI|Josh Giddey|Threes|0.5=1.22 1.5=2.1
+IND@CHI|Matas Buzelis|Threes|0.5=1.05 1.5=1.34
+PHI@HOU|Anfernee Simons|Threes|0.5=1.03 1.5=1.2
+PHI@HOU|Kentavious Caldwell-Pope|Threes|0.5=1.17 1.5=1.79
+PHI@HOU|Tyrese Maxey|Threes|0.5=1.05 1.5=1.35
+PHI@HOU|VJ Edgecombe|Threes|0.5=1.14 1.5=1.75
+PHI@HOU|Alperen Sengun|Threes|0.5=1.77 1.5=5.1
+PHI@HOU|Fred VanVleet|Threes|0.5=1.04 1.5=1.29
+PHI@HOU|Jabari Smith|Threes|0.5=1.12 1.5=1.64
+PHI@HOU|Kevin Durant|Threes|0.5=1.15 1.5=1.81
+PHI@HOU|Marcus Smart|Threes|0.5=1.36 1.5=2.65
+PHI@HOU|Reed Sheppard|Threes|0.5=1.15 1.5=1.77
+PHI@HOU|Tari Eason|Threes|0.5=1.44 1.5=3
+ORL@WAS|Anthony Black|Threes|0.5=1.17 4.5=21 1.5=1.89 3.5=9 2.5=3.8
+ORL@WAS|Desmond Bane|Threes|0.5=1.01 4.5=3.15 6.5=10 5.5=5.5 1.5=1.09 8.5=51 3.5=1.97 7.5=21 2.5=1.36
+ORL@WAS|Franz Wagner|Threes|0.5=1.21 1.5=2.08 3.5=11 2.5=4.5
+ORL@WAS|Jalen Suggs|Threes|0.5=1.13 4.5=15 1.5=1.71 3.5=6.75 2.5=3.15
+ORL@WAS|Tristan da Silva|Threes|0.5=1.05 4.5=6.5 6.5=26 5.5=13 1.5=1.31 3.5=3.4 2.5=1.97
+ORL@WAS|AJ Dybantsa|Threes|0.5=1.44 1.5=3.05
+ORL@WAS|Alex Sarr|Threes|0.5=1.34 1.5=2.65 3.5=17 2.5=6.5
+ORL@WAS|Anthony Davis|Threes|0.5=1.82 1.5=5.3
+ORL@WAS|Kyshawn George|Threes|0.5=1.05 4.5=8 6.5=36 5.5=15 1.5=1.35 3.5=3.9 2.5=2.12
+ORL@WAS|Trae Young|Threes|0.5=1.11 4.5=14 1.5=1.65 3.5=6 2.5=2.9
+ORL@WAS|Alex Sarr|Blocks|2.5=5.6 0.5=1.33 1.5=2.5
+ORL@WAS|Anthony Davis|Blocks|2.5=6 0.5=1.32 1.5=2.5
+ORL@WAS|Kyshawn George|Blocks|2.5=8.5 0.5=1.46 1.5=3.2
+ORL@WAS|Franz Wagner|Blocks|0.5=1.74 1.5=4.6
+ORL@WAS|Anthony Black|Steals|1.5=2.2 0.5=1.24 2.5=5
+ORL@WAS|Desmond Bane|Steals|1.5=2.2 0.5=1.24 2.5=4.8
+ORL@WAS|Franz Wagner|Steals|1.5=2.75 0.5=1.36 2.5=7
+ORL@WAS|Jalen Suggs|Steals|1.5=2.08 0.5=1.21 2.5=4.3
+ORL@WAS|AJ Dybantsa|Steals|1.5=2.45 0.5=1.33 2.5=5.9
+ORL@WAS|Anthony Davis|Steals|1.5=2.85 0.5=1.39 2.5=7.5
+ORL@WAS|Trae Young|Steals|1.5=2.45 0.5=1.33 2.5=5.8
+ORL@WAS|Kyshawn George|Steals|1.5=3.6 0.5=1.54
+BRK@CHO|Michael Porter Jr.|Threes|1.5=1.29 0.5=1.04
+BRK@CHO|Danny Wolf|Threes|1.5=2.35 0.5=1.28
+BRK@CHO|Julius Randle|Threes|1.5=2.15 0.5=1.22
+BRK@CHO|Brandon Miller|Threes|1.5=1.1 0.5=1.01
+BRK@CHO|Coby White|Threes|1.5=1.36 0.5=1.05
+BRK@CHO|Grayson Allen|Threes|1.5=1.29 0.5=1.05
+BRK@CHO|Naz Reid|Threes|1.5=1.3 0.5=1.04
+OKC@MIL|Ajay Mitchell|Threes|0.5=1.34 1.5=2.65 3.5=18 2.5=6.5
+OKC@MIL|Alex Caruso|Threes|0.5=1.28 1.5=2.3 4.5=23 3.5=11.5 2.5=4.9
+OKC@MIL|Bennett Stirtz|Threes|0.5=1.12 1.5=1.64 4.5=13 3.5=6 5.5=26 2.5=2.95
+OKC@MIL|Jared McCain|Threes|0.5=1.04 6.5=21 1.5=1.25 4.5=5.3 3.5=2.85 5.5=10 2.5=1.8
+OKC@MIL|Kenrich Williams|Threes|0.5=1.24 1.5=2.2 4.5=23 3.5=10 2.5=4.6
+OKC@MIL|Shai Gilgeous-Alexander|Threes|0.5=1.08 1.5=1.49 4.5=11 3.5=5.1 5.5=23 2.5=2.5
+OKC@MIL|Jaime Jaquez Jr.|Threes|0.5=1.24 1.5=2.15 3.5=12 2.5=4.8
+OKC@MIL|Kyle Kuzma|Threes|0.5=1.12 1.5=1.66 4.5=14 3.5=6.25 2.5=3
+OKC@MIL|Myles Turner|Threes|0.5=1.16 1.5=1.84 4.5=18 3.5=8 2.5=3.5
+OKC@MIL|Ryan Rollins|Threes|0.5=1.2 1.5=2.02 4.5=23 3.5=9.5 2.5=4.2
+OKC@MIL|Tyler Herro|Threes|0.5=1.04 6.5=23 1.5=1.27 4.5=6 3.5=3.1 5.5=12 2.5=1.84
+OKC@MIL|Shai Gilgeous-Alexander|Steals|2.5=7.25 0.5=1.39 1.5=2.85
+###GALT
+game|kind|side|rungs
+ORL@WAS|sp|away|+19.5=1.02 +18.5=1.02 +17.5=1.03 +16.5=1.04 +15.5=1.04 +14.5=1.06 +13.5=1.06 +12.5=1.08 +11.5=1.11 +10.5=1.13 +9.5=1.14 +8.5=1.17 +7.5=1.2 +6.5=1.25 +5.5=1.3 +4.5=1.33 +3.5=1.39 +2.5=1.43 +1.5=1.51 -1.5=1.64 -2.5=1.74 -3.5=1.81 -4.5=1.96 -5.5=2.11 -6.5=2.24 -7.5=2.47 -8.5=2.72 -9.5=2.93 -10.5=3.25 -11.5=3.45 -12.5=4 -13.5=4.25 -14.5=4.65 -15.5=5.2 -16.5=5.4 -17.5=6 -18.5=6.5 -19.5=7.5 -20.5=8 -21.5=9.5 -22.5=9.5
+ORL@WAS|sp|home|-16.5=9.5 -15.5=9.5 -14.5=8 -13.5=7.5 -12.5=6.5 -11.5=6 -10.5=5.4 -9.5=5.2 -8.5=4.6 -7.5=4.25 -6.5=3.7 -5.5=3.32 -4.5=3.13 -3.5=2.83 -2.5=2.68 -1.5=2.44 +1.5=2.17 +2.5=2 +3.5=1.92 +4.5=1.78 +5.5=1.67 +6.5=1.6 +7.5=1.5 +8.5=1.42 +9.5=1.37 +10.5=1.31 +11.5=1.28 +12.5=1.22 +13.5=1.2 +14.5=1.17 +15.5=1.14 +16.5=1.13 +17.5=1.11 +18.5=1.08 +19.5=1.06 +20.5=1.06 +21.5=1.04 +22.5=1.04 +23.5=1.03 +24.5=1.02 +25.5=1.02
+ORL@WAS|tot|Over|187.5=1.01 188.5=1.01 189.5=1.02 190.5=1.02 191.5=1.02 192.5=1.03 193.5=1.04 194.5=1.04 195.5=1.05 196.5=1.06 197.5=1.07 198.5=1.09 199.5=1.1 200.5=1.13 201.5=1.15 202.5=1.17 203.5=1.2 204.5=1.23 205.5=1.26 206.5=1.28 207.5=1.33 208.5=1.36 209.5=1.38 210.5=1.43 211.5=1.5 212.5=1.53 213.5=1.57 214.5=1.61 215.5=1.68 216.5=1.73 217.5=1.82 218.5=1.88 219.5=1.98 220.5=2.06 221.5=2.16 222.5=2.28 223.5=2.36 224.5=2.48 225.5=2.58 226.5=2.7 227.5=2.86 228.5=3 229.5=3.2 230.5=3.35 231.5=3.6 232.5=3.8 233.5=4 234.5=4.4 235.5=4.8 236.5=5.2 237.5=5.5
+ORL@WAS|tot|Under|200.5=5.8 201.5=5.3 202.5=4.8 203.5=4.4 204.5=4 205.5=3.75 206.5=3.55 207.5=3.25 208.5=3.1 209.5=2.96 210.5=2.76 211.5=2.6 212.5=2.52 213.5=2.42 214.5=2.32 215.5=2.2 216.5=2.1 217.5=2 218.5=1.91 219.5=1.83 220.5=1.77 221.5=1.7 222.5=1.63 223.5=1.59 224.5=1.54 225.5=1.5 226.5=1.45 227.5=1.41 228.5=1.38 229.5=1.34 230.5=1.31 231.5=1.28 232.5=1.26 233.5=1.23 234.5=1.2 235.5=1.17 236.5=1.15 237.5=1.14 238.5=1.12 239.5=1.1 240.5=1.08 241.5=1.07 242.5=1.06 243.5=1.05 244.5=1.04 245.5=1.04 246.5=1.03 247.5=1.02 248.5=1.02 249.5=1.02 250.5=1.02 251.5=1.02 252.5=1.01 253.5=1.01
+OKC@MIL|tot|Over|194.5=1.01 195.5=1.01 196.5=1.02 197.5=1.02 198.5=1.02 199.5=1.02 200.5=1.03 201.5=1.04 202.5=1.04 203.5=1.05 204.5=1.06 205.5=1.07 206.5=1.08 207.5=1.1 208.5=1.12 209.5=1.14 210.5=1.16 211.5=1.18 212.5=1.22 213.5=1.24 214.5=1.26 215.5=1.3 216.5=1.34 217.5=1.36 218.5=1.4 219.5=1.43 220.5=1.5 221.5=1.53 222.5=1.57 223.5=1.61 224.5=1.68 225.5=1.72 226.5=1.78 227.5=1.88 228.5=1.96 229.5=2.04 230.5=2.14 231.5=2.24 232.5=2.34 233.5=2.44 234.5=2.54 235.5=2.62 236.5=2.82 237.5=2.96 238.5=3.1 239.5=3.3 240.5=3.45 241.5=3.7 242.5=3.9 243.5=4.2 244.5=4.7 245.5=4.9 246.5=5.4 247.5=5.8
+OKC@MIL|tot|Under|209.5=5.4 210.5=5 211.5=4.7 212.5=4.2 213.5=3.9 214.5=3.7 215.5=3.4 216.5=3.2 217.5=3.05 218.5=2.9 219.5=2.76 220.5=2.6 221.5=2.52 222.5=2.42 223.5=2.32 224.5=2.2 225.5=2.12 226.5=2.04 227.5=1.93 228.5=1.85 229.5=1.78 230.5=1.71 231.5=1.65 232.5=1.6 233.5=1.56 234.5=1.52 235.5=1.49 236.5=1.42 237.5=1.38 238.5=1.36 239.5=1.32 240.5=1.29 241.5=1.26 242.5=1.24 243.5=1.22 244.5=1.18 245.5=1.17 246.5=1.14 247.5=1.13 248.5=1.11 249.5=1.09 250.5=1.08 251.5=1.07 252.5=1.05 253.5=1.05 254.5=1.04 255.5=1.04 256.5=1.03 257.5=1.02 258.5=1.02 259.5=1.02 260.5=1.02 261.5=1.02 262.5=1.01 263.5=1.01 264.5=1.01
+OKC@MIL|sp|away|+10.5=1.02 +9.5=1.02 +8.5=1.03 +7.5=1.04 +6.5=1.06 +5.5=1.06 +4.5=1.08 +3.5=1.11 +2.5=1.13 +1.5=1.14 -1.5=1.17 -2.5=1.22 -3.5=1.25 -4.5=1.3 -5.5=1.34 -6.5=1.39 -7.5=1.46 -8.5=1.54 -9.5=1.61 -10.5=1.73 -11.5=1.87 -12.5=2.01 -13.5=2.13 -14.5=2.29 -15.5=2.47 -16.5=2.64 -17.5=2.84 -18.5=3.1 -19.5=3.32 -20.5=3.69 -21.5=4 -22.5=4.25 -23.5=4.65 -24.5=5.2 -25.5=5.4 -26.5=6 -27.5=6 -28.5=6.5 -29.5=7.5 -30.5=8.5 -31.5=9.5 -32.5=9.5
+OKC@MIL|sp|home|-7.5=9.5 -6.5=8 -5.5=7.5 -4.5=6.5 -3.5=6 -2.5=5.5 -1.5=5.2 +1.5=4.6 +2.5=4 +3.5=3.7 +4.5=3.32 +5.5=3.09 +6.5=2.86 +7.5=2.58 +8.5=2.36 +9.5=2.23 +10.5=2.03 +11.5=1.86 +12.5=1.74 +13.5=1.66 +14.5=1.58 +15.5=1.5 +16.5=1.45 +17.5=1.39 +18.5=1.34 +19.5=1.3 +20.5=1.25 +21.5=1.22 +22.5=1.2 +23.5=1.17 +24.5=1.14 +25.5=1.13 +26.5=1.11 +27.5=1.1 +28.5=1.08 +29.5=1.06 +30.5=1.05 +31.5=1.04 +32.5=1.04 +33.5=1.03 +34.5=1.02 +35.5=1.02 +36.5=1.02
+###FB
+game|player|odds
+ORL@WAS|Franz Wagner|7.25
+ORL@WAS|Wendell Carter Jr.|8.50
+ORL@WAS|Desmond Bane|9.25
+ORL@WAS|Jalen Suggs|10.00
+ORL@WAS|Anthony Black|10.00
+ORL@WAS|Anthony Davis|7.00
+ORL@WAS|Alex Sarr|7.25
+ORL@WAS|AJ Dybantsa|9.50
+ORL@WAS|Trae Young|10.00
+ORL@WAS|Kyshawn George|10.00
+OKC@MIL|Shai Gilgeous-Alexander|5.25
+OKC@MIL|Ajay Mitchell|6.50
+OKC@MIL|Isaiah Hartenstein|8.25
+OKC@MIL|Bennett Stirtz|9.00
+OKC@MIL|Kenrich Williams|11.50
+OKC@MIL|Tyler Herro|7.75
+OKC@MIL|Jaime Jaquez Jr.|10.00
+OKC@MIL|Myles Turner|11.00
+OKC@MIL|Ryan Rollins|11.00
+OKC@MIL|Kyle Kuzma|13.00
+###TT
+book|game|team|line|over|under
+Sportsbet|ORL@WAS|ORL|111.5|1.92|1.88
+Sportsbet|ORL@WAS|WAS|107.5|1.84|1.96
+Sportsbet|OKC@MIL|OKC|119.5|1.84|1.96
+Sportsbet|OKC@MIL|MIL|107.5|1.85|1.95
+###PAIRS
+game|player|stat|line|over|under
+ORL@WAS|Jalen Suggs|P+R|16.5|1.92|1.83
+ORL@WAS|Franz Wagner|P+R|32.5|1.96|1.80
+ORL@WAS|AJ Dybantsa|P+R|25.5|1.96|1.80
+ORL@WAS|Anthony Black|R+A|8.5|1.92|1.84
+ORL@WAS|AJ Dybantsa|P+A|21.5|1.80|1.96
+ORL@WAS|Bilal Coulibaly|P+R|10.5|1.80|1.96
+ORL@WAS|AJ Dybantsa|R+A|11.5|1.89|1.86
+ORL@WAS|Trae Young|R+A|11.5|2.10|1.68
+ORL@WAS|Alex Sarr|P+R|15.5|1.85|1.92
+ORL@WAS|Anthony Black|P+A|18.5|1.80|1.96
+ORL@WAS|Wendell Carter Jr.|P+R|19.5|1.85|1.91
+ORL@WAS|Jalen Suggs|P+A|16.5|1.88|1.88
+ORL@WAS|Jalen Suggs|R+A|9.5|2.10|1.68
+ORL@WAS|Franz Wagner|R+A|14.5|2.00|1.78
+ORL@WAS|Trae Young|P+A|23.5|1.80|1.96
+ORL@WAS|Trae Young|P+R|17.5|1.80|1.96
+ORL@WAS|Desmond Bane|P+A|22.5|1.80|1.96
+ORL@WAS|Anthony Davis|P+R|33.5|1.90|1.86
+ORL@WAS|Anthony Black|P+R|18.5|1.80|1.96
+ORL@WAS|Wendell Carter Jr.|R+A|9.5|1.72|2.08
+ORL@WAS|Wendell Carter Jr.|P+A|13.5|1.96|1.80
+ORL@WAS|Desmond Bane|R+A|7.5|2.00|1.78
+ORL@WAS|Desmond Bane|P+R|23.5|1.96|1.80
+ORL@WAS|Franz Wagner|P+A|32.5|1.80|1.96
+ORL@WAS|Kyshawn George|P+R|20.5|1.92|1.84
+ORL@WAS|Kyshawn George|P+A|20.5|1.96|1.80
+ORL@WAS|Tristan da Silva|P+R|15.5|1.90|1.86
+ORL@WAS|Kyshawn George|R+A|8.5|1.80|1.96
+ORL@WAS|Anthony Davis|R+A|12.5|1.96|1.80
+ORL@WAS|Anthony Davis|P+A|25.5|1.88|1.88
+OKC@MIL|Ajay Mitchell|R+A|7.5|1.72|2.08
+OKC@MIL|Kenrich Williams|P+A|11.5|2.02|1.76
+OKC@MIL|Alex Caruso|R+A|5.5|1.68|2.10
+OKC@MIL|Isaiah Hartenstein|P+R|21.5|1.90|1.86
+OKC@MIL|Jared McCain|P+R|17.5|1.80|1.96
+OKC@MIL|Shai Gilgeous-Alexander|R+A|9.5|1.72|2.08
+OKC@MIL|Alex Caruso|P+A|10.5|1.96|1.80
+OKC@MIL|Isaiah Hartenstein|R+A|15.5|1.78|2.00
+OKC@MIL|Ajay Mitchell|P+A|22.5|1.96|1.80
+OKC@MIL|Bennett Stirtz|R+A|4.5|1.68|2.10
+OKC@MIL|Shai Gilgeous-Alexander|P+R|36.5|1.84|1.92
+OKC@MIL|Bennett Stirtz|P+R|12.5|1.96|1.80
+OKC@MIL|Jared McCain|P+A|16.5|1.86|1.90
+OKC@MIL|Jared McCain|R+A|4.5|1.80|1.96
+OKC@MIL|Shai Gilgeous-Alexander|P+A|37.5|1.80|1.96
+OKC@MIL|Alex Caruso|P+R|11.5|1.88|1.88
+OKC@MIL|Bennett Stirtz|P+A|12.5|2.00|1.78
+OKC@MIL|Kenrich Williams|R+A|7.5|2.10|1.68
+OKC@MIL|Ajay Mitchell|P+R|22.5|1.89|1.87
+OKC@MIL|Isaiah Hartenstein|P+A|13.5|1.80|1.96
+OKC@MIL|Kenrich Williams|P+R|14.5|1.89|1.87
+OKC@MIL|Myles Turner|P+R|15.5|1.96|1.80
+OKC@MIL|Tyler Herro|P+A|25.5|1.86|1.90
+OKC@MIL|Kyle Kuzma|R+A|7.5|1.96|1.80
+OKC@MIL|Kyle Kuzma|P+R|18.5|1.91|1.85
+OKC@MIL|Myles Turner|P+A|10.5|1.80|1.96
+OKC@MIL|Tyler Herro|P+R|25.5|1.96|1.80
+OKC@MIL|Myles Turner|R+A|7.5|1.84|1.92
+OKC@MIL|Kyle Kuzma|P+A|15.5|1.83|1.93
+OKC@MIL|Tyler Herro|R+A|7.5|1.68|2.10
+OKC@MIL|Jaime Jaquez Jr.|P+A|16.5|1.87|1.89
+OKC@MIL|Jaime Jaquez Jr.|P+R|18.5|2.00|1.78
+OKC@MIL|Jaime Jaquez Jr.|R+A|7.5|1.76|2.02
+OKC@MIL|Ryan Rollins|P+R|14.5|1.80|1.96
+OKC@MIL|Ryan Rollins|R+A|8.5|2.08|1.72
+OKC@MIL|Ryan Rollins|P+A|14.5|1.78|2.00
+###PAIRNAMES
+To Record 5+ Reb + Ast
+To Record 30+ Pts + Ast
+To Record 25+ Reb + Ast
+To Record 25+ Pts + Ast
+To Record 15+ Pts + Reb
+To Record 45+ Pts + Ast
+To Record 35+ Pts + Reb
+To Record 15+ Pts + Ast
+To Record 50+ Pts + Reb
+To Record 45+ Pts + Reb
+To Record 20+ Pts + Reb
+To Record 30+ Pts + Reb
+To Record 20+ Reb + Ast
+To Record 40+ Pts + Ast
+To Record 15+ Reb + Ast
+To Record 10+ Pts + Ast
+To Record 20+ Pts + Ast
+To Record 10+ Pts + Reb
+To Record 25+ Pts + Reb
+To Record 35+ Pts + Ast
+To Record 10+ Reb + Ast
+To Record 50+ Pts + Ast
+To Record 40+ Pts + Reb

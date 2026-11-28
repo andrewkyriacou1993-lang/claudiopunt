@@ -1,0 +1,46 @@
+###GAMES
+date,tip,away,home,ml_away,ml_home,spread_home,spread_home_odds,spread_away_odds,total,over_odds,under_odds
+2026-11-29,12:10,Indiana Pacers,Chicago Bulls,2.24,1.68,-2.5,1.85,1.95,235.5,1.90,1.90
+2026-11-29,12:40,Philadelphia 76ers,Houston Rockets,5.00,1.19,-12.5,1.94,1.86,221.5,1.90,1.90
+2026-11-29,09:10,Orlando Magic,Washington Wizards,1.55,2.53,3.5,1.95,1.85,217.5,1.84,1.97
+2026-11-29,10:10,Brooklyn Nets,Charlotte Hornets,3.04,1.41,-5.5,1.85,1.96,213.5,1.90,1.90
+2026-11-29,12:10,Oklahoma City Thunder,Milwaukee Bucks,1.18,5.20,11.5,1.90,1.90,228.5,1.95,1.86
+###PROPS
+game|player|stat|line|over|under
+
+###ALT
+game|player|stat|rungs
+IND@CHI|Buddy Hield|Threes|0.5=1.03 1.5=1.17
+IND@CHI|Isaac Okoro|Threes|0.5=1.27 1.5=2.3
+IND@CHI|Jalen Smith|Threes|0.5=1.1 1.5=1.57
+IND@CHI|Josh Giddey|Threes|0.5=1.21 1.5=2.1
+IND@CHI|Matas Buzelis|Threes|0.5=1.05 1.5=1.34
+ORL@WAS|Anthony Black|Threes|0.5=1.18 1.5=1.92
+ORL@WAS|Desmond Bane|Threes|0.5=1.01 1.5=1.1
+ORL@WAS|Franz Wagner|Threes|0.5=1.21 1.5=2.1
+ORL@WAS|Jalen Suggs|Threes|0.5=1.13 1.5=1.73
+ORL@WAS|Tristan da Silva|Threes|0.5=1.05 1.5=1.32
+ORL@WAS|AJ Dybantsa|Threes|0.5=1.43 1.5=3.1
+ORL@WAS|Alex Sarr|Threes|0.5=1.34 1.5=2.65
+ORL@WAS|Anthony Davis|Threes|0.5=1.83 1.5=5.3
+ORL@WAS|Kyshawn George|Threes|0.5=1.05 1.5=1.36
+ORL@WAS|Trae Young|Threes|0.5=1.12 1.5=1.64
+OKC@MIL|Ajay Mitchell|Threes|0.5=1.34 1.5=2.6
+OKC@MIL|Alex Caruso|Threes|0.5=1.29 1.5=2.25
+OKC@MIL|Bennett Stirtz|Threes|0.5=1.11 1.5=1.64
+OKC@MIL|Jared McCain|Threes|0.5=1.04 1.5=1.25
+OKC@MIL|Kenrich Williams|Threes|0.5=1.24 1.5=2.18
+OKC@MIL|Shai Gilgeous-Alexander|Threes|0.5=1.08 1.5=1.49
+###GALT
+game|kind|side|rungs
+
+###FB
+game|player|odds
+
+###TT
+book|game|team|line|over|under
+
+###PAIRS
+game|player|stat|line|over|under
+
+###PAIRNAMES
